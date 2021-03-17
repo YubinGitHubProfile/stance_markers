@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">On the Dynamic Effect of Bilateral Concessional Debts on Living Standards in Sub-Saharan Africa</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ifeoma</forename><forename type="middle">C</forename><surname>Nwakoby</surname></persName>
+							<email>ifeoma.nwakoby@unn.edu.ng</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Banking and Finance</orgName>
+								<orgName type="institution">University of Nigeria</orgName>
+								<address>
+									<postCode>400001</postCode>
+									<settlement>Enugu Campus, Enugu</settlement>
+									<country key="NG">Nigeria</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Banking and Finance</orgName>
+								<orgName type="institution">University of Nigeria</orgName>
+								<address>
+									<postCode>400001</postCode>
+									<settlement>Enugu Campus, Enugu</settlement>
+									<country key="NG">Nigeria</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hillary</forename><forename type="middle">Chijindu</forename><surname>Ezeaku</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Banking and Finance</orgName>
+								<orgName type="institution">University of Nigeria</orgName>
+								<address>
+									<postCode>400001</postCode>
+									<settlement>Enugu Campus, Enugu</settlement>
+									<country key="NG">Nigeria</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Obiamaka</forename><forename type="middle">P</forename><surname>Egbo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Banking and Finance</orgName>
+								<orgName type="institution">University of Nigeria</orgName>
+								<address>
+									<postCode>400001</postCode>
+									<settlement>Enugu Campus, Enugu</settlement>
+									<country key="NG">Nigeria</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Josaphat</forename><forename type="middle">U J</forename><surname>Onwumere</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Banking and Finance</orgName>
+								<orgName type="institution">University of Nigeria</orgName>
+								<address>
+									<postCode>400001</postCode>
+									<settlement>Enugu Campus, Enugu</settlement>
+									<country key="NG">Nigeria</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">On the Dynamic Effect of Bilateral Concessional Debts on Living Standards in Sub-Saharan Africa</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019877879</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>concessionality</term>
+					<term>living standards</term>
+					<term>human development</term>
+					<term>sub-Saharan Africa</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>This article assesses the effectiveness of bilateral concessional debts on living standards in 29 sub-Saharan African (SSA) countries over the period 1999-2017 using the system generalized method of moments (SGMM). The SGMM linear estimate is based on a two-step procedure, which controls for heteroscedasticity. The results provide evidence that bilateral concessional debts had positive and significant impact on living standards as proxied by the human development index (HDI) within the period. It is observed that 1% change in bilateral concessional debts is associated with about 8.4% improvement in living standards. Gross domestic savings are positively and significantly related to living standards and account for 3.1% increase in living standards. However, gross domestic investment and population growth exerted a negative influence on living standards during the period, whereas a 1% increase in gross domestic investment and population led to approximately 1.40% and 1.63% decline in living standards in the region, respectively. We therefore conclude that, although bilateral concessional debts have yielded the desired effect on living standards in the SSA, there is need for improvements in aid effectiveness. Thus, improved donor effort and collaboration with beneficiary governments in determining development needs and priorities in the region is critical.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Over the years, the high indebtedness of developing countries has continued to attract attention from policymakers across the globe and is seen as one of the major factors impeding the development of most poor countries. These countries have persistently accumulated large amounts of loan, often at low interest rates. Although substantial portions of these loans are disbursed at highly concessional interest rates, it has become virtually impossible to repay the outstanding net present value of the obligations, thereby placing severe constraints on the economic development and performance of the debtor countries <ref type="bibr" target="#b65">(Pattillo, Poirson, &amp; Ricci, 2002)</ref>.</p><p>Sub-Saharan Africa (SSA) has been the recipient of the highest level of aid relative to output <ref type="bibr" target="#b74">(Serieux, 2009)</ref>. However, analysts have argued that official development assistance to the region might have little effect in boosting domestic investment and achieving sustainable economic development. Amid the ongoing debate, there seems to be a consensus that developing countries require substantial amounts of external financing to reach their development objectives and increase investment in infrastructure which is crucial for the attainment of sustained growth and development. <ref type="bibr" target="#b66">Prizzon and Mustapha (2014)</ref> assert that borrowing is a prerequisite for investment and is most justified where there is a clear financing gap and where evidence of both creditworthiness and state capacity to repay exists. <ref type="bibr" target="#b63">Ogundipe, Ojeaga, and Ogundipe (2014)</ref> argue that substantial aid flow to SSA is necessary to reverse the consistent declining living standards in the region. However, most SSA countries have poor governance rating, and the rate of debt accumulation is widely regarded as unsustainable <ref type="bibr" target="#b2">(Akanbi, 2016)</ref>, as the region has become excessively aid-dependent <ref type="bibr" target="#b58">(Mistry, 1996)</ref>. Nevertheless, a recent study by the Center for Global Development (in <ref type="bibr" target="#b2">Akanbi, 2016;</ref><ref type="bibr" target="#b74">Serieux, 2009)</ref> allays 877879S GOXXX10.1177/2158244019877879SAGE OpenEzeaku et al.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>research-article20192019</head><p>1 Caritas University, Enugu, Nigeria 2 University of Nigeria, Enugu, Nigeria this apprehension of unsustainable debt level in SSA. They maintain that currently the aggregate external indebtedness ratios of SSA countries are more favorable than those in many other developing regions of the world. For instance, the region has an external debt-to-exports ratio of 85% compared with 127% among the Commonwealth of Independent States, 153% in emerging and developing Europe, and 148% in Latin America and the Caribbean. Furthermore, the external debt service ratios of SSA countries are the lowest among all developing regions <ref type="bibr" target="#b20">(Biti, Leo, Morris, &amp; Moss, 2016)</ref>. However, the International Monetary Fund (2015) contends that although the external position appears sustainable, vulnerabilities have increased.</p><p>Although there is a large amount of literature on external debt, not much is known about the effectiveness of bilateral concessional aid on living standards in the context of the SSA. Continued neglect of this peculiar aid component has created a gap, which this study will fill, in the literature because they are specially designed to improve economic development and social outcomes in developing countries. However, a synthesis of various studies on the responsiveness of economic development to aid flows reveals differing conclusions. As such, whether aid stimulates growth and development remains an empirical question which this study investigates.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>An Overview of Debt Concessionality</head><p>Concessional debt refers to loans provided with an original grant element of at least 25% and a long repayment period. The grant element of a loan is used to measure the overall cost of borrowing <ref type="bibr" target="#b31">(Dippelsman &amp; Kitili, 2004)</ref>. Therefore, the grant equivalent of a claim is expressed as the percentage of the amount committed. The grant element is the commitment (or present) value of a loan less the discounted value of its contractual debt services. Normally, future debt service payments are discounted at 10%. Principal repayments consist of amortization paid by the debtor in currency, goods, or services in the specified year. These loans are provided below market terms, akin to subsidy in production <ref type="bibr" target="#b50">(Kitili, 2006)</ref>. Bilateral (or restricted) aid has remained a critical source of financing for developing countries and includes all aid solely provided by a bilateral donor and other such aid disbursed to recipient governments through multilateral agencies. Funds disbursed through multilateral regional organizations with use restrictions are reported by the Organisation for Economic Co-operation and Development (OECD) as bilateral aid <ref type="bibr" target="#b19">(Biscaye, Harris, Reynolds, &amp; Anderson, 2015)</ref>. A bilateral donor can be a state or local government.</p><p>Multilateral institutions play a major role not only in advancing aid to developing countries but also in devising other mechanisms and initiatives for innovative finance and development <ref type="bibr" target="#b57">(Michael, 2018)</ref>. Aid was primarily designed as a bilateral policy, in line with the understanding that in a somewhat fragmented world, economic development should be the result of nationally based strategies <ref type="bibr" target="#b6">(Alonso, 2018)</ref>. To improve aid outcomes, the OECD Development Assistance Committee (DAC) is developing a new statistical measurement framework called Total Official Support for Sustainable Development (TOSSD). This measure is designed to track all financing provided by official multilateral and bilateral institutions and is expected to capture cross-border flows as well as provide support for development enablers and alleviate global challenges (OECD, 2019a). <ref type="bibr" target="#b43">Gulrajani (2016)</ref> suggests that aid donors are faced with growing demands to explain and justify the choice of disbursement channel between multilateral and bilateral aid conduits. The contention arises from the fact that aid allocation from multilateral agencies looks quite similar to that disbursed by bilateral donors, providing aid on similar terms, within the same jurisdiction, and to the same sector.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Overview of Living Standards in SSA</head><p>Human development index (HDI) is considered to be the most appropriate measure of living standards <ref type="bibr" target="#b5">(Alkire, 2010)</ref>. HDI is the geometric mean of normalized indices for each of the three dimensions: long and healthy life, knowledge, and a decent standard of living <ref type="bibr" target="#b36">(Escosura, 2011;</ref><ref type="bibr" target="#b38">Gallardo, 2009)</ref>. The health and long life dimension is measured by life expectancy at birth, and the knowledge/education dimension is assessed by expected years of schooling and mean years of schooling for children of school enrollment age (United Nations Development Programme [UNDP], 2016).</p><p>The human development approach to assessing living standards centers on improving the lives people lead, and not on the common assumption that economic growth will automatically lead to greater opportunities for all. It involves putting the people at the very center of development (UNDP, 2013) and creating enabling environment for humans to flourish in their fullest sense <ref type="bibr" target="#b4">(Alkire, 2002)</ref>. To this end, UNDP (2016) emphasizes that the HDI was created to highlight the fact that people and their capabilities should be the ultimate standard for gauging the development of a country, rather than economic growth alone. Income growth, for instance, is not an end in itself; rather, it is an essential means to development <ref type="bibr">(UNDP, 2016)</ref>. Thus, HDI has become the most successful index to apply multiple dimensions that address economic development and social well-being in a country <ref type="bibr" target="#b75">(Seth &amp; Villar, 2017)</ref>.</p><p>Based on the facts from UNDP (2016), most of the SSA countries are ranked between low (Comoros, Tanzania, Mauritania, Rwanda, Nigeria, Angola, etc.) and medium (Congo, Zambia, South Africa, Ghana, Kenya, Equatorial Guinea, Namibia, etc.) in the global HDI, with the exception of Mauritius and Seychelles that are ranked high. Moreover, no African country has so far been grouped among the very high human development. Based on regional comparators, the SSA is behind most other regions (see <ref type="table" target="#tab_0">Table 1</ref>).</p><p>Although growth in annual HDI in the sub-Saharan region over the past 25 years has been comparatively significant, the annual HDI values indicate that the region has the lowest HDI ranking in the world. There are relative differences across regions in the dimensions of the HDI-life expectancy, mean years of schooling, and income.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Review</head><p>The designation of Official Development Assistance (ODA) has for many years been the global standard for measuring donor efforts in supporting development objectives in poor developing countries <ref type="bibr">(OECD, 2018)</ref>. The evolution of the ODA concept has equally provided an indicator with which the volume and terms of concessional resources provided are documented. In addition, it has become the yardstick for the evaluation of donor performance with regard to their aid pledges, enabling partner countries and other organizations to hold donors to account. For instance, partner countries and donors of the Paris Declaration agreed to hold each other accountable for making progress against agreed commitments and targets by monitoring their implementation <ref type="bibr">(OECD, 2008)</ref>.</p><p>Barring the contention between political expediency and statistical reality, the underlying definition of ODA is actually founded on the principle of developmental motivation, official character, and a measure of concessionality. Oesterreichische <ref type="bibr" target="#b62">Kontrollbank (2012)</ref> asserts that the OECD consensus requires soft loans to have a concessionality level of at least 35%, whereas concessional loans for the least developed countries (LDCs) in accordance with the UN classification must show a grant element of at least 50%. Although the very concept of ODA appears to be widely acknowledged, the correctness of the measures in assessing its developmental effects remains a subject of ongoing debate <ref type="bibr" target="#b45">(Hynes &amp; Scott, 2013</ref>). <ref type="bibr" target="#b30">Cordella and Ulku (2007)</ref> observed that the degree of concessionality does not have positive correlation with levels of development in the SSA and Asian regions. <ref type="bibr" target="#b52">Lohani (2004)</ref> examined the effect of foreign aid on development in 120 developing countries. The result of the panel regression suggests that foreign aid has a negative relationship with human development. In contrast, Gillanders (2016) used a panel vector autoregressive (VAR) estimate and found that human development as proxied by life expectancy responded positively to aid in SSA. <ref type="bibr" target="#b24">Bruckner (2013)</ref> argued that aid has not significantly advanced the course of development. In a related study, <ref type="bibr" target="#b23">Boone (1995)</ref> examined the effectiveness of foreign aid programs using panel ordinary least squares (OLS). The findings showed that aid does not significantly increase investment, growth, and human development indicators in developing countries. <ref type="bibr" target="#b54">Masud and Yontcheva (2005)</ref> assessed the effect of foreign aid in reducing poverty through its impact on human development indicators. A data set of both bilateral aid and non-governmental organization (NGO) aid flows was used. The results showed that NGO aid reduced infant mortality and did so more effectively than official bilateral aid, while aid impact on illiteracy was less significant. There were mixed evidence of a substitution effect as the study attempted to find out whether foreign aid reduces government efforts in achieving developmental goals (see <ref type="bibr" target="#b37">Farah, Önder, &amp; Ayhan, 2018;</ref><ref type="bibr">Yiew &amp; Lau, 2018)</ref>.</p><p>Similarly, <ref type="bibr" target="#b41">Gomanee, Girma, and Morrissey (2002)</ref> used quantile regression to examine the effect of aid on welfare level in SSA, Asia, and Latin America and the Caribbean. Their findings revealed that aid is associated with higher human development and lower infant mortality.</p><p>The findings of previous studies on other aspects of economic development are mixed as seen in <ref type="bibr" target="#b35">Ekanayake and Chatrna (2010)</ref>. The study analyzed the effects of foreign aid on the economic growth of developing countries with an annualized data set of 85 developing countries from Asia, Africa, and Latin America and the Caribbean, between the period 1980 and 2007. Results show that foreign aid has mixed effects on economic growth in developing countries. <ref type="bibr" target="#b46">Ijaiya and Ijaiya (2004)</ref> examined the aid-poverty nexus in SSA and found that foreign aid does not affect significantly poverty reduction in SSA. <ref type="bibr" target="#b13">Azam, Haseeb, and Samsudin (2016)</ref> paint a more extreme picture as their results suggest that foreign aid and debt have significant negative effects on poverty reduction. The study employed the fully modified OLS (FMOLS) on 39 developing countries and covered the period <ref type="bibr">1990</ref><ref type="bibr" target="#b56">. McGillivray (2006</ref> assessed the macro-level effectiveness of aid, paying special attention to economic growth and poverty reduction. The study reviewed trends in ODA which experienced downturns in the 1990s. The results reveal strong evidence that aid increases growth and other poverty-relevant variables. The implication of the findings, therefore, is that poverty would be higher in the absence of aid.</p><p>Besides the role of aid in promoting welfares and social outcomes <ref type="bibr" target="#b3">(Alimi, 2018;</ref><ref type="bibr" target="#b73">Seedee, 2018</ref>  <ref type="bibr" target="#b79">Tang &amp; Bundhoo, 2017)</ref>. Confronted with novel mixes of economic and social challenges, developing countries in the 21st century are left with no choice but to design their own pathways to improving well-being, growth, and sustainability-a critical element of which is the designing process and content of development strategies (OECD, 2019b).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Framework</head><p>The early development economists strongly argued that aid is a key engine of growth and development <ref type="bibr" target="#b77">(Staicu &amp; Barbulescu, 2017)</ref>. Thus, theoretically, this work is influenced by the dual gap theory and Harrod-Domar growth model based on the articles of <ref type="bibr" target="#b44">Harrod (1939)</ref> and <ref type="bibr" target="#b32">Domar (1946)</ref>, which essentially highlight the role of saving and capital accumulation in promoting economic growth and development. The theory emphasizes that to advance sustainable development, domestic savings must be supplemented with external financing. As a result, we connect our model to the theory by building into our model the savings and capital accumulation components as well as aid (in the form of bilateral concessional advances) in line with the theoretical framework of this study. Mobilizing necessary financial resources (to supplement savings) may be approached through various combinations of domestic and international, public and private sources of finance (United Nations Department of <ref type="bibr">Economic and Social Affairs et al., 2018)</ref>.</p><p>The econometric methodology for this article is based primarily on the generalized method of moments (GMM). The GMM is made up of two approaches: the system generalized method of moments (SGMM) and the difference generalized method of moments (DGMM), otherwise called Arellano-Bond estimator. The SGMM was proposed by <ref type="bibr" target="#b8">Arellano and Bover (1995)</ref> and <ref type="bibr" target="#b21">Blundell and Bond (1998)</ref>, whereas the DGMM was developed by <ref type="bibr" target="#b7">Arellano and Bond (1991)</ref>. Both are general estimators designed for panel data models with "small T and large N," meaning few time periods (T) and many cross-sections or individuals (N), and where the explanatory variables are not strictly exogenous <ref type="bibr" target="#b69">(Roodman, 2006)</ref>.</p><p>In most cases, the SGMM is mostly preferred to the DGMM. The suitability and appropriateness of SGMM is based on the fact that it includes lagged levels as well as lagged differences <ref type="bibr" target="#b0">(Adedokun &amp; Folawewo, 2017)</ref>. In other words, it estimates the regression in differences jointly with the regression in levels and has been proven to perform better compared with DGMM as it is less biased and has more precision <ref type="bibr" target="#b60">(Nordin &amp; Nordin, 2016)</ref>. More so, for the reason that aid is inherently endogenous and heterogeneity is often present in panel models, the SGMM produces unbiased, consistent, and efficient estimation <ref type="bibr" target="#b39">(Ghimire, Mukherjee, &amp; Alvi, 2016)</ref>.</p><p>In modeling the SGMM, we chose the two-step option over the one-step option because it accounts for heteroscedasticity. In the one-step option, the residuals are homoscedastic <ref type="bibr" target="#b9">(Asongu, 2015)</ref>. In our empirical strategy, the prime condition of both N and T being large is not violated in applying the SGMM estimator: N &gt; T (29 &gt; 17). By having more countries (N) than years (T), the system controls for dynamic panel bias (see <ref type="bibr" target="#b22">Bond, 2002;</ref><ref type="bibr" target="#b69">Roodman, 2006</ref><ref type="bibr" target="#b70">Roodman, , 2007</ref><ref type="bibr" target="#b72">Sarafidis, Yamagata &amp; Robertson, 2006)</ref>.</p><p>Our baseline dynamic panel data model is fashioned after Irfan and Nehra (2016) who estimated a dynamic panel data model using the GMM. The model is represented in the following form:</p><formula xml:id="formula_0">Log log log I n S C S X Y rt rt rt rt rt it = + + + + − − − α γ β µ ε 1 1 1 ,<label>(1)</label></formula><p>where r denotes countries, t indicates time, logS rt represents the log of the dependent variable and indicator for living standards, logC rt -1 is the lagged log of the main independent variable, X rt -1 is the vector of log of control variables such as health expenditures relative to gross domestic product (GDP) and population growth, and Y rt is the vector of other control variables if included in the model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model Specification</head><p>We seek to build a model in the given study which analyzes the effectiveness of concessional debts on living standard. Living standard is represented by the HDI. The general approach to the dynamic specification is to apply the GMM technique. The following regressions are therefore estimated using an SGMM specification: </p><formula xml:id="formula_1">HDI</formula><formula xml:id="formula_2">+ + + + 1 1 1 γ β µ ∆ ε log (2)</formula><p>The difference from the baseline model is that S rt is replaced by HDI rt , which is our proxy for living standards, where HDI = human development index. LogBLCD rt -1 represents the lagged log of bilateral concessional debts, and the vector X rt-1 consists of a set of control variables. Y rt is the vector of other control variables if included in the model, and ε is the error term.</p><p>When Equation 2 is expanded, our dynamic SGMM estimation can be fully expressed thus: </p><p>where i and t denote country and time period, respectively, and InHDI represents log of HDI, InHDI it-1 is the 1-year lagged InHDI, InBLCD is the log of bilateral concessional debts, InGDINVT is the log of gross domestic investment, GDS is the gross domestic savings, POPgr is the population growth, ε is the error term, β 1 to β 5 are coefficients, and β 0 is the intercept. Consistent with <ref type="bibr" target="#b14">Baloch and Meng (2019)</ref>, we analyze the nonlinear relationship between bilateral concessional debts and living standards, controlling for gross domestic savings, gross domestic investment, and population growth; the model is expressed as follows: </p><p>In Equation 4, InHDI shows the natural log of HDI proxy for living standards, InBLCD indicates the log of bilateral concessional debts, and InBLCD 2 is the square of bilateral concessional debts implying that InBLCD &gt; 0 and InBLCD 2 &lt; 0, suggesting a U-shaped relationship exists between bilateral concessional debts and living standards. Similarly, GDS is the gross domestic savings; GDS 2 is square of GDS which shows a nonlinear linkage between living standards and gross domestic savings. InGDINVT is the log of gross domestic investment, and POPgr is population growth. i and t denote the number of countries and year selected for the study, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Description</head><p>Data for HDI were obtained from the UNDP, whereas data for the remaining variables were collated from the World Development Indicators from 1999 to 2017. Our cross sections include 29 SSA countries with available data on the variables of interest. <ref type="table" target="#tab_3">Table 2</ref> presents a summary of the descriptive statistics of the variables utilized in our models. It can be observed that the range of bilateral concessional debt is US$29,000 to US$11.6 billion, whereas the mean of HDI ranged from 0.19 to 0.78 within the period 1999-2017. The volume of gross domestic savings ranged between US$2.39 billion and USD$146.8 billion and averaged USD$5.49 billion over the coverage period. Population growth averaged 2.62%. The mean of gross savings investment is USD$5.11 billion and ranged between USD$1,960,426 and USD$85.7 billion during the period.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and Discussion</head><p>The SGMM linear estimation of the effect of bilateral concessional debts on living standards (as proxied by the HDI) is presented in <ref type="table" target="#tab_4">Table 3</ref>. The results indicate that bilateral concessional debt is positively and significantly related to human development in the SSA; when bilateral concessional debt increased by 1%, HDI improved by 8.4%. This supports the theoretical expectation that aid should be positively related to living standards. Hence, increase in concessional aid is expected to impact positively living standards as well as social outcomes. Similarly, the results further revealed that gross domestic savings exert significant positive influence on human development. This outcome is expected given the place of domestic savings in our theoretical framework which essentially highlights the role of savings in promoting economic growth and development. However, gross domestic investment is negatively associated with human development which contradicts a priori expectation that capital accumulation (or domestic investment) promotes growth and development.</p><p>Furthermore, population growth enters the model exogenously to control for population dynamics especially as it affects growth and living standards. From our estimation, population growth was found to be negatively associated with human development. This is in line with our expectation that when population grows rapidly without corresponding improvement in infrastructural investments as well as investment in education, living standard could be on the decline. As such, during the period covered by this study, we observed that 1% increase in population in the region caused HDI to decline by 1.63%. Thus, increase in population in SSA had a deteriorating effect on the level of human development.</p><p>Results in <ref type="table" target="#tab_4">Table 3</ref> can be compared with the nonlinear estimation results in <ref type="table" target="#tab_5">Table 4</ref>. From the results, the coefficient of bilateral concessional debts (InBLCD) is negative and statistically significant, implying that bilateral concessional debts cause a decline in human development in the SSA. On the contrary, the square of bilateral concessional debts (InBLCD 2 ) is positive and statistically significant (0.0004, p &lt; .000), which suggests that a nonlinear relationship does not exist between bilateral concessional debts and human development. It entails that there is no U-shaped relation between the two variables. More precisely, the rise in bilateral concessional debts after reaching a threshold level would not necessarily lead to a decline in human development.</p><p>Regarding gross domestic savings (InGDS), it is found that the coefficient of InGDS is negative and statistically significant. On the contrary, the squared (InGDS 2 ) is positive and statistically significant. First, an increase in GDS (without squaring) causes a decrease in human development, and after considering the square of GDS (GDS 2 ), the human development experiences a boost, implying that when GDS reaches a threshold level, it would not cause a decline in human development. Again, this suggests that a U-shaped relationship does not exist between bilateral concessional debts and human development. The coefficients of gross domestic investment (InGDINVT) and population growth (POPgr) are similar to the linear estimation in both direction and magnitude; while InGDINVT is negative and statistically insignificant, POPgr is negative and statistically significant.</p><p>The Sargan test checks the null hypothesis of correct model specification and valid overidentifying restrictions (i.e., validity of instruments). The Sargan test is one of the most commonly used diagnostic tests in GMM estimation for assessing the suitability of the model. The Sargan test of overidentifying restrictions does not reject the null hypothesis at any conventional level of significance (p = 1.00) and indicates that the model has valid instrumentation. <ref type="bibr" target="#b70">Roodman (2007)</ref> strongly suggests that the number of instruments used in the dynamic panel should be reported because those models can generate a huge number of potentially "weak" instruments that can lead to biased estimates. According to <ref type="bibr" target="#b69">Roodman (2006</ref><ref type="bibr" target="#b70">Roodman ( , 2007</ref>, there are no clear rules regarding how many instruments are "too many," but some rules of thumb and revealing signs may be used. First, the number of instruments should not exceed the number of observations, which is the case here (175 and 177 instruments, respectively &lt;444 observations). Second, an indicative sign is a perfect Sargan test with the p value equal to 1.00. Similarly, in trying to rule out correlation between instruments and the error term, the p value should be greater than the conventional significant levels of .05 or .10 <ref type="bibr" target="#b70">(Roodman, 2007)</ref>. In our model, the Sargan test reports a Note. GMM = generalized method of moments; GDS = gross domestic savings; GDINVT = gross domestic investment; AR = Arellano-Bond test. ***Significant at 1% and 5%. p value of 1.00. These outcomes satisfy both rules and confirm that our specification is valid. The Sargan test thus confirms the validity of the instruments in the SGMM and is complementary to the significant Arellano-Bond test, at Order 1 (AR1) and Order 2 (AR2). Precisely, we based our confirmation of autocorrelation on AR(2) (p = .622 &gt; .05), which did not reject the null hypothesis of no autocorrelation in our estimations at 5% conventional probability level (see <ref type="bibr" target="#b11">Asongu &amp; Nnanna, 2019a;</ref><ref type="bibr" target="#b16">Baum &amp; Schaffer, 2013;</ref><ref type="bibr" target="#b25">Caporale, Cunado, &amp; Gil-Alana, 2008;</ref><ref type="bibr" target="#b27">Chung, Kim, &amp; Park, 2017)</ref>. The endogeneity problem assumption that the dependent variables correlate with the error term is established with the reported p value (.000) being significant at conventional .05 significant level. The regressors were found to be jointly significant in explaining the dependent variables as indicated by the p value of the F statistic (.000 &lt; .05). <ref type="bibr" target="#b69">Roodman (2006)</ref> suggested that the check for the "steady state" assumption can also be used to assess the validity of instruments in SGMM. This assumption requires a kind of steady state in the sense that deviations from long-term values are not systematically related to the fixed effects <ref type="bibr" target="#b69">(Roodman, 2006)</ref>. In other words, the estimated coefficient on the lagged dependent variable in the model is expected to indicate convergence by having a value less than unity <ref type="bibr" target="#b70">(Roodman, 2007)</ref>, otherwise SGMM is invalid <ref type="bibr" target="#b34">(Efendic, Pugh &amp; Adnett, 2010)</ref>. The estimated coefficient on the lagged dependent variable is 0.983, which means that the steady state assumption holds. This is indicative of a high level of persistence and that the series are nearly a random walk and, therefore, validates the usage of the SGMM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The results of our linear estimation revealed that bilateral concessional debts had positive and significant impact on living standards as proxied by the HDI; 1% change in bilateral concessional debts was associated with about 8.4% improvement in living standards in SSA. In the context of existing related studies, this result supports the finding in <ref type="bibr" target="#b41">Gomanee et al. (2002)</ref>, which argued that aid is positively and significantly associated with growth. Similarly, <ref type="bibr" target="#b40">Gillanders (2016)</ref> argued that human development responds positively and significantly to aid in SSA. <ref type="bibr" target="#b42">Gomanee, Girma, and Morrissey (2013)</ref> also maintained that aid is associated with higher human development. Similarly, <ref type="bibr" target="#b49">Karras (2006)</ref>, <ref type="bibr" target="#b28">Clemens, Radelet, and Bhavnani (2004)</ref> and <ref type="bibr">Ardnt et al. (2010)</ref> found a positive and statistically significant relation between aid and growth. In contrast, Wako (2011) had a different perspective and argued that multilateral and bilateral aids are ineffective at enhancing growth. In a related study, <ref type="bibr" target="#b63">Ogundipe et al. (2014)</ref> are of the view that aid has no significant influence on real GDP per capita in SSA. <ref type="bibr" target="#b68">Rajan and Subramanian (2005)</ref> also contend that there is little evidence of a positive (or negative) relation between aid inflows and growth. Specifically, on the perspective of degree of effect, <ref type="bibr" target="#b23">Boone (1995)</ref> asserts that aid does not significantly increase human development indicators in developing countries. From the viewpoint of direction of impact, our main finding is contradicted by <ref type="bibr" target="#b30">Cordella and Ulku (2007)</ref> who observed that the degree of concessionality does not have a positive correlation with levels of development in the SSA and Asian regions. Similarly, <ref type="bibr" target="#b71">Sabra and Eltalla (2016)</ref> and <ref type="bibr" target="#b52">Lohani (2004)</ref> are of the view that aid has a negative relationship with human development in selected developing countries. Our findings further revealed that gross domestic savings exerted significant positive influence on human development, implying that bilateral concessional debts improve human development in SSA. On the contrary, gross domestic investment was found to have a negative effect on human development, implying that an increase in gross domestic investment was associated with a decline in human development in the SSA. Furthermore, population growth has had negative impact on human development. Thus, increase in population in the SSA has a deteriorating effect on the level of human development; thus, during the period covered by this study, 1% increase in population in the region brought about 1.63% decline in human development. This has some ramifications for SSA and seems quite ominous considering the projected staggering increase in population in the region. We recommend that bilateral aid flows should be complemented with increased public spending, especially in health, education, and infrastructure.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Even as debt concessionality is a subject of current debate among the academic and political circle, only few studies have attempted to examine the effects of concessional claims on developing economies in general, and SSA in particular. It is against this backdrop that we examined the effect of bilateral concessional debts on living standard in SSA. From the empirical assessment, we found that bilateral concessional debts were positively and significantly related to living standards in SSA. This contradicts the outcomes of some extant literature reporting the insignificant effect of aid on living standards, which has mostly been attributed to the very nature of this typology of financing as a "restricted aid"-where a donor country has no major say regarding who gets aid and for what to use. Bilateral (or restricted) aids have often come under criticism as they are believed to be predisposed to corruption and government partiality, poor donor coordination, and maldistribution (see <ref type="bibr" target="#b1">Ahlerup et al., 2016;</ref><ref type="bibr" target="#b15">Baulch, 2008;</ref><ref type="bibr" target="#b17">Bigsten &amp; Tengstam, 2015;</ref><ref type="bibr" target="#b33">Easterly &amp; Pfutze, 2008;</ref><ref type="bibr" target="#b67">Rady, 2012)</ref>. In addition, high levels of administrative as well as political corruption and weak implementation capacity in recipient country bureaucracies have been considered undermining factors to aid effectiveness <ref type="bibr" target="#b26">(Chasukwa &amp; Banik, 2019)</ref>. Our main finding is in line with a priori expectation that aid plays a significant role in improving living standards as well as social outcomes. The finding supports the position of <ref type="bibr" target="#b18">Birchler and Michaelowa (2016)</ref> that human development responds positively and significantly to aid in SSA. Similarly, <ref type="bibr" target="#b10">Asongu and Nnanna (2018)</ref> contend that a positive relation exists between aid and human development in the short run but at a decreasing magnitude in the long run. Lee Jung and Sul (2019) equally found that aid has significantly improved human development across selected 15 Asian countries. Furthermore, the rapid population growth is a potentially serious concern in SSA following our finding of the negative impact it had on human development. On the contrary, the growing population could be to the region's advantage if translated into healthy, developed, and decently engaged workforce.</p><p>The results of this study have implications for potential improvement in the quality of life in SSA. Although bilateral concessional aid is found to be positively and significantly related to living standards, there seems to be a need for improvement in aid effectiveness in the region. To this end, improved donor effort as well as the commitment of beneficiary governments in the region is critical. Donors should also collaborate with the beneficiary governments in determining major development needs and priorities. Moreover, it is recommended that prudence should be applied in the application of concessional aids for intended purposes, in addition to the effective appraisal and evaluation of development aid projects and programs, where results can be quantitatively analyzed and tangibly assessed.</p><p>In accordance with theoretical expectation, our results further showed that gross domestic savings have had the desired effect, having exerted significant positive impact on living standard. This underscores the significance of domestic savings to economic development. Following the dual gap theory which is the foundation of our growth model, gross domestic savings and capital accumulation are supplemented by external financing to drive economic development. However, whereas the gross domestic savings conform to a priori expectations, gross domestic investment (or capital accumulation) did not. Thus, our results revealed that gross domestic investment was negatively associated with human development. This raises questions about the effectiveness of gross domestic investment, which underscores the outlays on additions to fixed assets of the economy as well as net changes in the level of inventories which are expected to facilitate economic growth and development. This observed outcome appears to support the findings of Nowak-Lehmann, Dreher, Herzer, Klasen, and Martınez-Zarzoso (2012) which suggest that aid is not significantly associated with gross domestic investment in developing countries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head><p>Hillary Chijindu Ezeaku https://orcid.org/0000-0003-3611-108X</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Human Development Index Across Regions.Source. Own preparation based on data from UNDP (2015). Note. HDI = human development index; GNI = gross national income; PPP = purchasing power parity.</figDesc><table><row><cell></cell><cell></cell><cell>Average annual</cell><cell></cell><cell></cell><cell></cell><cell>Gross national</cell></row><row><cell></cell><cell></cell><cell>HDI growth</cell><cell>Life expectancy</cell><cell>Expected years</cell><cell>Mean years of</cell><cell>income (GNI)</cell></row><row><cell></cell><cell>HDI</cell><cell>(1990-2015)</cell><cell>at birth</cell><cell>of schooling</cell><cell>schooling</cell><cell>per capita</cell></row><row><cell>Region</cell><cell>Value</cell><cell>(%) a</cell><cell>(years)</cell><cell>(years)</cell><cell>(years)</cell><cell>(2011 PPP $)</cell></row><row><cell>Arab states</cell><cell>0.686</cell><cell>0.85</cell><cell>70.6</cell><cell>12</cell><cell>6.4</cell><cell>15,722</cell></row><row><cell>East Asia and the Pacific</cell><cell>0.71</cell><cell>1.35</cell><cell>74</cell><cell>12.7</cell><cell>7.5</cell><cell>11,449</cell></row><row><cell>Europe and Central Asia</cell><cell>0.748</cell><cell>0.59</cell><cell>72.3</cell><cell>13.6</cell><cell>10</cell><cell>12,791</cell></row><row><cell>Latin America and the</cell><cell>0.748</cell><cell>0.74</cell><cell>75</cell><cell>14</cell><cell>8.2</cell><cell>14,242</cell></row><row><cell>Caribbean</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>South Asia</cell><cell>0.607</cell><cell>1.4</cell><cell>68.4</cell><cell>11.2</cell><cell>5.5</cell><cell>5,605</cell></row><row><cell>Sub-Saharan Africa</cell><cell>0.518</cell><cell>1.09</cell><cell>58.5</cell><cell>9.6</cell><cell>5.2</cell><cell>3,363</cell></row></table><note>a Based on data from UNDP (2016).</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 2 .</head><label>2</label><figDesc>Descriptive Statistics of Variables Included in Our Models.</figDesc><table><row><cell>Variable</cell><cell>M</cell><cell>Maximum</cell><cell>Minimum</cell><cell>SD</cell></row><row><cell>Bilateral concessional debt (current USD)</cell><cell>1.36E + 08</cell><cell>1.16E + 10</cell><cell>29,000</cell><cell>5.54E + 08</cell></row><row><cell>Human development index (HDI)</cell><cell>0.441762</cell><cell>0.781</cell><cell>0.194</cell><cell>0.127352</cell></row><row><cell>Gross domestic savings (current US$)</cell><cell>5.49E + 09</cell><cell>1.47E + 11</cell><cell>-2.39E + 09</cell><cell>1.54E + 10</cell></row><row><cell>Gross domestic investment (% GDP)</cell><cell>5.11E + 09</cell><cell>8.57E + 10</cell><cell>1,960,426</cell><cell>1.08E + 10</cell></row><row><cell>Population growth (annual %)</cell><cell>2.61647</cell><cell>7.448556</cell><cell>0.068723</cell><cell>0.83208</cell></row><row><cell cols="2">Source. Authors' computation from World Development Indicators (2017).</cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 .</head><label>3</label><figDesc>GMM: System Dynamic Panel Data (Linear) Estimation Results.</figDesc><table><row><cell>Independent variables</cell><cell>Response variable: Log of human development index (HDI)</cell></row><row><cell>HDI lagged for one period</cell><cell>0.983 (0.000)***</cell></row><row><cell>InBLCD</cell><cell>0.084 (0.000)***</cell></row><row><cell>GDS</cell><cell>0.031 (0.005)***</cell></row><row><cell>GDINVT</cell><cell>-0.014 (0.095)</cell></row><row><cell>POPgr</cell><cell>-0.0163 (0.000)***</cell></row><row><cell>Intercept</cell><cell>0.150 (0.000)***</cell></row><row><cell>Sargan test (p value)</cell><cell>1.0000</cell></row><row><cell>AR1 test: p value</cell><cell>.438</cell></row><row><cell>AR2 test: p value</cell><cell>.622</cell></row><row><cell>Wald test for endogeneity: prob(F statistic)</cell><cell>.000***</cell></row><row><cell>Prob(F statistic): joint determinant</cell><cell>.000***</cell></row><row><cell>Number of instruments</cell><cell>175</cell></row><row><cell>Number of countries included</cell><cell>29</cell></row><row><cell>Periods included</cell><cell>18</cell></row><row><cell>Number of observations</cell><cell>444</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 4 .</head><label>4</label><figDesc>GMM: System Dynamic Panel Data (Nonlinear) Estimation Results.</figDesc><table><row><cell>Independent variables</cell><cell>Response variable: Log of human development index (HDI)</cell></row><row><cell>InHDI lagged for one period</cell><cell>0.985 (0.000)***</cell></row><row><cell>InBLCD</cell><cell>-0.036 (0.000)***</cell></row><row><cell>InBLCD 2</cell><cell>0.007 (0.000)***</cell></row><row><cell>InGDS</cell><cell>-0.027 (0.015)***</cell></row><row><cell>InGDS 2</cell><cell>0.018 (0.007)***</cell></row><row><cell>InGDINVT</cell><cell>-0.016 (0.104)</cell></row><row><cell>POPgr</cell><cell>-0.164 (0.000)***</cell></row><row><cell>Intercept</cell><cell>0.309 (0.000)***</cell></row><row><cell>Sargan test (p value)</cell><cell>1.0000</cell></row><row><cell>AR1 test: p value</cell><cell>.482</cell></row><row><cell>AR2 test: p value</cell><cell>.775</cell></row><row><cell>Wald test for endogeneity: prob(F statistic)</cell><cell>.000***</cell></row><row><cell>Prob(F statistic): joint determinant</cell><cell>.000***</cell></row><row><cell>Number of instruments</cell><cell>177</cell></row><row><cell>Number of countries included</cell><cell>29</cell></row><row><cell>Periods included</cell><cell>18</cell></row><row><cell>Number of observations</cell><cell>444</cell></row></table><note>Note. GMM = generalized method of moments; InBLCD = log of bilateral concessional debts; InGDINVT = log of gross domestic investment; AR = Arellano-Bond test.***Significant at 1% and 5%.</note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biographies</head><p>Hillary Chijindu Ezeaku is a researcher and has a PhD in Finance and Banking from the University of Nigeria, Nsukka. His research interests are in Development Finance, International Finance, Econometrics Modeling and Macroeconomics.</p><p>Ifeoma C. Nwakoby is a senior lecturer in the Department of Banking and Finance, University of Nigeria, Nsukka and has a PhD in banking and finance. She is the coordinator of the Executive Masters Programme of the UNN Business School, Nigeria. She has worked as an accountant and a financial analyst, and consulted for different organisations in the private and public sectors.</p><p>Obiamaka P. Egbo, PhD is a senior lecturer and the current head in the Banking and Finance Department, University of Nigeria, Enugu Campus. She is a competent, efficient and resourceful researcher with enviable research outputs. In 2016, she was recognized in the United States as a Person with Extraordinary Ability in the field of education, where she worked during her sabbatical leave in 2017.</p><p>Josaphat U. J. Onwumere is an economist, banking and finance expert. He is currently the director of University of Nigeria Nsukka (UNN) Business School.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Aid selectivity practice and aid effectiveness in sub-Saharan Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">J</forename><surname>Adedokun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">O</forename><surname>Folawewo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Innovation and Competitiveness</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="43" to="64" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Government impartiality and sustained growth in Sub-Saharan Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ahlerup</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Baskaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bigsten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Development</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="54" to="69" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">External debt accumulation in Sub-Saharan African Countires: How fast is safe? 1-31. Retrieved from</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">A</forename><surname>Akanbi</surname></persName>
+		</author>
+		<ptr target="ess.org.za/fullpaper/essa_2877.pdf" />
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Foreign aid and poverty level: Does public investment matter in Sub-Saharan African countries?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S</forename><surname>Alimi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Global Journal of Management and Business Research: B Economics and Commerce</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Dimensions of human development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Alkire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Development</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="181" to="205" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Human development: Definitions, critiques, and related concepts -Background paper for the</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Alkire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Development Report. OPHI Working Paper</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="1" to="56" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Development cooperation to ensure that none be left behind</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Alonso</surname></persName>
+		</author>
+		<ptr target="https://www.un.org/development/desa/dpad/publication/development-cooperation-to-ensure-that-none-be-left-behind/" />
+		<imprint>
+			<date type="published" when="2018-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Arellano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="277" to="297" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Another look at the instrumental variable estimation of error components models</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Arellano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Bover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="29" to="52" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">On the dynamic effects of foreign aid on corruption (AGDI Working Paper No. WP/15/015)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Asongu</surname></persName>
+		</author>
+		<ptr target="https://mpra.ub.uni-muenchen.de/67852/1/MPRA_paper_67852.pdf" />
+		<imprint>
+			<date type="published" when="2015-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Foreign aid and sustainable inclusive human development in Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Asongu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nnanna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">DBN Journal of Economics and Sustainable Growth</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="29" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Dynamic determinants of access to weapons: Global evidence (AGDI Working Paper No. WP/19/008)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Asongu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nnanna</surname></persName>
+		</author>
+		<ptr target="https://mpra.ub.uni-muenchen.de/93532/1/MPRA_paper_93532.pdf" />
+		<imprint>
+			<date type="published" when="2019-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Foreign aid and sustainable inclusive human development in Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Asongu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nnanna</surname></persName>
+		</author>
+		<idno>No. WP/18/044</idno>
+		<ptr target="https://mpra.ub.uni-muenchen.de/91988/1/MPRA_paper_91988.pdf" />
+		<imprint>
+			<date type="published" when="2019-02" />
+		</imprint>
+	</monogr>
+	<note type="report_type">AGDI Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The impact of foreign remittances on poverty alleviation: Global evidence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Azam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Haseeb</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Samsudin</surname></persName>
+		</author>
+		<idno type="DOI">10.14254/2071-789X.2016/9-1/18</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Economics &amp; Sociology</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="264" to="281" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Modeling the non-linear relationship between financial development and energy consumption: Statistical experience from OECD countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Baloch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environmental Science and Pollution Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="8838" to="8846" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Aid for the poorest? The distribution and maldistribution of international development assistance (CPRC Working Paper No 35)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Baulch</surname></persName>
+		</author>
+		<ptr target="http://citeseerx.ist.psu.edu/view-doc/download?doi=10.1.1.1010.1859&amp;rep=rep1&amp;type=pdf" />
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A general approach to testing autocorrelation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">F</forename><surname>Baum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Schaffer</surname></persName>
+		</author>
+		<ptr target="https://www.stata.com/meeting/new-orleans13/abstracts/materials/nola13-baum.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Stata Conference</title>
+		<meeting><address><addrLine>New Orleans, LA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">International coordination and the effectiveness of aid</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bigsten</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Tengstam</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.worlddev.2013.12.021</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Development</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="75" to="85" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Making aid work for education in developing countries: An analysis of aid effectiveness for primary education coverage and quality</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Birchler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Michaelowa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Educational Development</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="37" to="52" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Relative effectiveness of bilateral and multilateral aid on development and social outcomes (EPAR Brief No. 294, Prepared for the Development, Policy and Finance Team of the Bill &amp; Melinda Gates Foundation)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Biscaye</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">P</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Reynolds</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">L</forename><surname>Anderson</surname></persName>
+		</author>
+		<ptr target="https://evans.uw.edu/sites/default/files/public/EPAR_UW_294_" />
+		<imprint>
+			<date type="published" when="2015-03-30" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Alternatives to HIPC for African debt-distressed countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Biti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Leo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Moss</surname></persName>
+		</author>
+		<ptr target="https://www.cgdev.org/sites/default/files/CGD-Policy-Paper-73-Biti-Leo-Morris-Moss-African-Debt-Dynamics.pdf" />
+		<imprint>
+			<date type="published" when="2016-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Initial conditions and moment restrictions in dynamic panel data models</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Blundell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="115" to="143" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Dynamic panel models: A guide to micro data methods and practice. Institute for Fiscal Studies, Department of Economics, UCL, CEMMAP (Centre for Microdata Methods and practice</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bond</surname></persName>
+		</author>
+		<idno>No. CWPO9/02</idno>
+		<ptr target="http://cemmap.ifs.org.uk/wps/cwp0209.pdf" />
+		<imprint>
+			<date type="published" when="2002-04" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Politics and the effectiveness of foreign aid (Centre for Economic Performance Discussion Paper No</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Boone</surname></persName>
+		</author>
+		<ptr target="http://cep.lse.ac.uk/pubs/download/DP0272.pdf" />
+		<imprint>
+			<date type="published" when="1995-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">On the simultaneity problem in the aid and growth debate</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bruckner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="126" to="150" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Modelling long-run trends and cycles in financial time-series data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M</forename><surname>Caporale</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cunado</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">A</forename><surname>Gil-Alana</surname></persName>
+		</author>
+		<idno>No. 2330</idno>
+		<ptr target="https://ideas.repec.org/p/una/unccee/wp1312.html" />
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note type="report_type">CESIFO Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Institutional bypass and aid effectiveness in Africa (WIDER Working Paper 2019/22)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chasukwa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Banik</surname></persName>
+		</author>
+		<ptr target="https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp-2019-22.pdf" />
+		<imprint>
+			<date type="published" when="2019-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Do all your detailing efforts pay off? Dynamic panel methods revisited (Harvard Business School Working Paper 17-108)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Park</surname></persName>
+		</author>
+		<ptr target="https://dash.harvard.edu/handle/1/33110110" />
+		<imprint>
+			<date type="published" when="2017-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Counting chickens when they hatch: The short-term effect of aid on growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Clemens</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Radelet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Bhavnani</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=567241" />
+		<imprint>
+			<date type="published" when="2004-07" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Center for Global Development Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Foreign aid in the 115th congress: A legislative wrap-up in brief</title>
+		<ptr target="https://fas.org/sgp/crs/row/R45458.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Congressional Research Service</title>
+		<imprint>
+			<biblScope unit="volume">45458</biblScope>
+			<date type="published" when="2019-01" />
+		</imprint>
+	</monogr>
+	<note type="report_type">CRS Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Cordella</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Ulku</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/palgrave.imfsp.9450002</idno>
+		<title level="m">Grants vs. Loans. IMF Staff Papers</title>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="139" to="162" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Concessional debt (IMF Issues Paper</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Dippelsman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kitili</surname></persName>
+		</author>
+		<ptr target="https://www.imf.org/External/NP/sta/bop/pdf/bopteg29.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Balance of Payments Technical Expert Group</title>
+		<imprint>
+			<biblScope unit="issue">29</biblScope>
+			<date type="published" when="2004-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Capital expansion, rate of growth, and employment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">D</forename><surname>Domar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="137" to="147" />
+			<date type="published" when="1946" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Where does the money go? Best and worst practices in foreign aid (Global Economy &amp; Development Working Paper</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Easterly</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Pfutze</surname></persName>
+		</author>
+		<idno type="DOI">https://pubs.aeaweb.org/doi/pdf/10.1257/jep.22.2.29</idno>
+		<ptr target="https://pubs.aeaweb.org/doi/pdf/10.1257/jep.22.2.29" />
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Institutional effects on economic performance in transition: A dynamic panel analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Efendic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Pugh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Adnett</surname></persName>
+		</author>
+		<ptr target="https://pdfs.semanticscholar.org/a356/2583968332ac723f42d94c267c9dac0c613e.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Acta Oeconomica</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="503" to="523" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The effect of foreign aid on economic growth in developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">M</forename><surname>Ekanayake</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Chatrna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Business and Cultural Studies</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Human development in Africa: A Long-Run Perspective (EHES Working Papers in Economic History wp11-09)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">P</forename><surname>Escosura</surname></persName>
+		</author>
+		<ptr target="https://ideas.repec.org/p/cte/whrepe/wp11-09.html" />
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">How foreign aid affect developing countries: The case of Ethiopia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Farah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Önder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Ayhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Avrasya Etüdleri</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="7" to="39" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The human development index as an effort to measure well-being in Honduras</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Gallardo</surname></persName>
+		</author>
+		<ptr target="http://www.oecd.org/site/progresskorea/44110008.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">The 3rd OECD World Forum on &quot;Statistics, Knowledge and Policy&quot; Charting Progress, Building Visions, Improving Life</title>
+		<meeting><address><addrLine>Busan, South Korea</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009-10-27" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Aid-for-trade and export performance of developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ghimire</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Mukherjee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Alvi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Econometrics and International Development</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">The effects of foreign aid in Sub-Saharan Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Gillanders</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Economic and Social Review</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="339" to="360" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Aid and growth in Sub-Saharan Africa: Accounting for transmission mechanisms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Gomanee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Girma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Morrissey</surname></persName>
+		</author>
+		<ptr target="https://www.researchgate.net/publication/23992417_Aid_and_Growth_in_Sub" />
+	</analytic>
+	<monogr>
+		<title level="j">Saharan_ Africa_Accounting_for_Transmission_Mechanisms CREDIT Research Paper</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="47" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Aid, public spending and human welfare: Evidence from quantile regressions (CREDIT Research Paper 02/05)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Gomanee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Girma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Morrissey</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<pubPlace>Nottingham, UK</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Nottingham</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Multilateral and bilateral aid channels: Strategic choice for donors (ODI report)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Gulrajani</surname></persName>
+		</author>
+		<ptr target="https://www.odi.org/publications/10371-bilateral-versus-mul-tilateral-aid-channels-strategic-choices-donors" />
+		<imprint>
+			<date type="published" when="2016-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">An essay in dynamic theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Harrod</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Economic Journal</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="14" to="33" />
+			<date type="published" when="1939" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">The evolution of Official Development Assistance: Achievements, criticisms and a way forward</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Hynes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Scott</surname></persName>
+		</author>
+		<ptr target="http://www.oecd.org/dac/financing-sustainable-development/Scott%20Hynes%20ODA%20paper%20Nov%202013.pdf" />
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>IIIS Discussion Paper 437</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Foreign aid and poverty reduction in Sub-Saharan Africa: A cross-country investigation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">T</forename><surname>Ijaiya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Ijaiya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">South African Journal of Economic and Management Sciences</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="542" to="552" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">pulse-an-analysis-ofissues-shaping-africa-s-economic-future-BCK International Monetary Fund</title>
+		<ptr target="https://www.imf.org›IMF›external›pubs›reo›2015›afr›eng›pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">International Bank for Reconstruction and Development</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note>Regional economic outlook: Sub-Saharan Africa dealing with the gathering clouds</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Analysing the aid effectiveness on the living standard: A check-up on Southeast Asian countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">B</forename><surname>Irfan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Nehra</surname></persName>
+		</author>
+		<idno>doi:10.1016/j. jum.2016.07.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Urban Management</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="23" to="31" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Foreign aid and long-run economic growth: Empirical evidence for a panel of developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Karras</surname></persName>
+		</author>
+		<idno>doi:10.1002/ jid.1187</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Development</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="15" to="28" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">Debt concessionality. Fourth meeting of the Advisory Expert Group on National Accounts</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kitili</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006-01-30" />
+			<pubPlace>Frankfurt, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Searching for the various effects of subprograms in official development assistance on human development across 15 Asian countries: Panel regression and fuzzy set approaches</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sul</surname></persName>
+		</author>
+		<idno>doi:10.3390/ su11041152</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Effect of foreign aid on development: Does more money bring more development? (Honors Projects, 18)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Lohani</surname></persName>
+		</author>
+		<ptr target="http://digitalcommons.iwu.edu/econ_honproj/18" />
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+		<respStmt>
+			<orgName>Department of Economics, Illinois Wesleyan University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Effects of foreign aid on income through international trade (WIDER Working Paper wp-2019-5)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Martínez-Zarzoso</surname></persName>
+		</author>
+		<ptr target="https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp-2019-5.pdf" />
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">Does foreign aid reduce poverty? Empirical evidence from nongovernmental and bilateral aid (IMF Working Paper</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Masud</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Yontcheva</surname></persName>
+		</author>
+		<idno>WP/05/100</idno>
+		<ptr target="https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Does-Foreign-Aid-Reduce-Poverty-Empirical-Evidence-from-Nongovernmental-and-Bilateral-Aid-17973" />
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Agriculture, aid and economic growth in Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Mcarthur</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Sachs</surname></persName>
+		</author>
+		<ptr target="https://openknowledge.worldbank.org/handle/10986/29857" />
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Policy Research Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">Is aid effective? Draft Copy of Paper Presented at the Foundation for Development Co-Operation &quot;Financing Development Colloquium</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">I</forename><surname>Mcgillivray</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006-08" />
+			<pubPlace>Surfers Paradise, Australia</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">The effect of foreign aid on foreign direct investment inflows: Evidence from Africa (Doctoral thesis). The American University in Cairo</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Michael</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<pubPlace>New Cairo, Egypt</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">Resolving Africa&apos;s multilateral debt problem: A response to the IMF and the World Bank</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Mistry</surname></persName>
+		</author>
+		<ptr target="FONDAD.Availablefromwww.fondad.org" />
+		<imprint>
+			<date type="published" when="1996" />
+			<pubPlace>The Hague, The Netherlands</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Does foreign aid promote economic growth in Sudan? Evidence from ARDL bounds testing analysis. A paper prepared for ERF&apos; 24th Annual Conference</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Mustafa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Elshakh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">M</forename><surname>Ebaidalla</surname></persName>
+		</author>
+		<ptr target="https://erf.org.eg/wp-content/uploads/2018/02/4-23-Mahjoub-Ebaidallah.pdf" />
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Determinants of innovation in developing countries: A panel generalized method of moments analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Nordin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Nordin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jurnal Ekonomi Malaysia</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="93" to="105" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Does foreign aid really raise per capita income? A time series perspective</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Nowak-Lehmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dreher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Herzer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Klasen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Martınez-Zarzoso</surname></persName>
+		</author>
+		<ptr target="https://www.oecd.org/publications/perspectives-on-global-development-22224475.htm" />
+	</analytic>
+	<monogr>
+		<title level="j">Canadian Journal of Economics Revue Canadienne d&apos;Economique</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="288" to="313" />
+			<date type="published" when="2008" />
+			<publisher>OECD Development Centre</publisher>
+		</imprint>
+	</monogr>
+	<note>Perspectives on Global Development 2019: Rethinking development strategies</note>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<title level="m" type="main">Credit Department, Oesterreichische Kontrollbank AG</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Oesterreichische</forename><surname>Kontrollbank</surname></persName>
+		</author>
+		<ptr target="https://www.advantageaustria.org/eg/oesterreich-in-egypt/news/local/financing.pdf" />
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>Financing on concessional terms (soft loans)</note>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Is aid really dead? Evidence from Sub-Saharan Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Ogundipe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ojeaga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">M</forename><surname>Ogundipe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Humanities and Social Science</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="300" to="314" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Is foreign aid responsive to environmental needs and performance of developing countries? Case Study of the Czech Republic</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Opršal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Harmácek</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su11020401</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">401</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<title level="m" type="main">External debt and growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Pattillo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Poirson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Ricci</surname></persName>
+		</author>
+		<ptr target="https://www.imf.org/~/media/Websites/IMF/imported-full-text-pdf/external/pubs/ft/wp/2002/_wp0269.ashx" />
+		<imprint>
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Debt sustainability in HIPCs in a new age of choice (ODI Working Paper 397)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Prizzon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mustapha</surname></persName>
+		</author>
+		<ptr target="https://www.odi.org/sites/odi.org.uk/files/odi-assets/publications-opinion-files/9021.pdf" />
+		<imprint>
+			<date type="published" when="2014-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Foreign aid and development: What can developing nations learn</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Rady</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economics and Economic Education Research</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="123" to="132" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<monogr>
+		<title level="m" type="main">Aid and growth: What does the cross-country evidence really show? IMF Working Paper</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">G</forename><surname>Rajan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Subramanian</surname></persName>
+		</author>
+		<idno>WP/05/127</idno>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="1" to="49" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">How to do xtabond2: An introduction to &quot;Difference&quot; and &quot;System</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Roodman</surname></persName>
+		</author>
+		<ptr target="https://ideas.repec.org/e/pro120.html" />
+	</analytic>
+	<monogr>
+		<title level="m">GMM in Stata</title>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Center for Global Development Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">A short note on the theme of too many instruments</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Roodman</surname></persName>
+		</author>
+		<ptr target="https://www.cgdev.org/publication/note-theme-too-many-instruments-working-paper-125" />
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Center for Global Development Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Foreign aid, domestic savings and economic growth in selected MENA countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Sabra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">H A</forename><surname>Eltalla</surname></persName>
+		</author>
+		<idno>doi:10.5296/ ber.v6i1.9204</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Business and Economic Research</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="352" to="362" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">A test of crosssection dependence for a linear dynamic panel model with regressors. Faculty of Economics, University of Cambridge</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Sarafidis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Yamagata</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Robertson</surname></persName>
+		</author>
+		<ptr target="http://www.econ.cam.ac.uk/faculty/robertson/HCSDtest14Feb06.pdf" />
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">The impact of foreign aid on extreme poverty: A case study of Liberia&apos;s development complexities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Seedee</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1980" />
+			<pubPlace>Johnson City, TN</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>East Tennessee State University</orgName>
+		</respStmt>
+	</monogr>
+	<note>Doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<title level="m" type="main">Why aid does not increase savings rate in Sub-Saharan Africa? Centre for Development Policy and Research, School of Oriental and African Studies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Serieux</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page">4496</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<title level="m" type="main">Measuring human development and human deprivations (Oxford Poverty &amp; Human Development Initiative Working Paper</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Seth</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Villar</surname></persName>
+		</author>
+		<ptr target="https://ophi.org.uk/measuring-human-development-and-human-deprivations/" />
+		<imprint>
+			<date type="published" when="2017-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">The effectiveness of development aid for agriculture in Sub-Saharan Africa (MPRA Paper No</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ssozi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Asongu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Amavilah</surname></persName>
+		</author>
+		<ptr target="https://mpra.ub.uni-muenchen.de/88530" />
+		<imprint>
+			<date type="published" when="2018-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<title level="m" type="main">A study of the relationship between foreign aid and human development in Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Staicu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barbulescu</surname></persName>
+		</author>
+		<idno type="DOI">10.5772/67483</idno>
+		<editor>G. Staicu &amp; R. Barbulescu</editor>
+		<imprint>
+			<date type="published" when="2017" />
+			<publisher>IntechOpen</publisher>
+			<biblScope unit="page" from="1" to="19" />
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+	<note>International development</note>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Evaluation of the long-term stability and impact of remittances and development aid on sustainable economic growth in developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Stojanov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Nemec</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Zidek</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su11061538</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">1538</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Foreign aid and economic growth in developing countries: Evidence from Sub-Saharan Africa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bundhoo</surname></persName>
+		</author>
+		<idno>doi:10.4236/ tel.2017.75099</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Theoretical Economics Letters</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="1473" to="1491" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">United Nations regional commissions (Economic Commission for Africa, Economic Commission for Europe, Economic Commission for Latin America and the Caribbean, Economic and Social Commission for Western Asia &amp; The United Nations World Tourism Organization</title>
+		<ptr target="https://www.un.org›uploads›sites›publication›WESP2018_Full_Web-1" />
+	</analytic>
+	<monogr>
+		<title level="m">United Nations Conference on Trade and Development</title>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note>World economic situation and prospect. United Nations</note>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Human development report 2013-The rise of the south: Human progress in a diverse world</title>
+		<ptr target="http://hdr.undp.org/sites/default/files/2016_human_development_report.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">United Nations Development Programme</title>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>Human development report 2016: Human development for everyone</note>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Effectiveness of foreign aid in sub-Saharan Africa: Does disaggregating aid into bilateral and multilateral components make a difference?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">A</forename><surname>Wako</surname></persName>
+		</author>
+		<idno type="DOI">10.5897/JEIF11.126</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economics and International Finance</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="801" to="817" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Does foreign aid contribute to or impeded economic growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename></persName>
+		</author>
+		<idno type="DOI">10.14254/2071-8330.2018/11-3/2</idno>
+		<ptr target="http://databank.worldbank.org/data/reports.aspx?source=world-development-indicatorsYiew" />
+	</analytic>
+	<monogr>
+		<title level="m">World Bank Database</title>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">11</biblScope>
+		</imprint>
+	</monogr>
+	<note>World Bank data</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

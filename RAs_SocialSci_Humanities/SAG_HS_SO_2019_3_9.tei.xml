@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Contribution of Beef, Mutton, and Poultry Meat Production to the Agricultural Gross Domestic Product of Pakistan Using an Autoregressive Distributed Lag Bounds Testing Approach</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Abdul</forename><surname>Rehman</surname></persName>
+							<email>abdlrehman@ahu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">Research Center of Agricultural-Rural-Peasants</orgName>
+								<orgName type="institution">Anhui University</orgName>
+								<address>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Zhang</forename><surname>Deyuan</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Research Center of Agricultural-Rural-Peasants</orgName>
+								<orgName type="institution">Anhui University</orgName>
+								<address>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Abbas</forename><forename type="middle">Ali</forename><surname>Chandio</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">College of Economics</orgName>
+								<orgName type="institution">Sichuan Agricultural University</orgName>
+								<address>
+									<settlement>Chengdu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Research Center of Agricultural-Rural-Peasants</orgName>
+								<orgName type="institution">Anhui University</orgName>
+								<address>
+									<postCode>230039</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">College of Economics</orgName>
+								<orgName type="institution">Sichuan Agricultural University Chengdu</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="department">Agricultural Economics, Agricultural Development, Development Economics, Econometrics, Financial Economics, Microeconomics, Macroeconomics, Regional Economics, Sustainable Agriculture and Regional Rural Development</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Contribution of Beef, Mutton, and Poultry Meat Production to the Agricultural Gross Domestic Product of Pakistan Using an Autoregressive Distributed Lag Bounds Testing Approach</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019877196</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Pakistan</term>
+					<term>meat</term>
+					<term>mutton</term>
+					<term>poultry meat production</term>
+					<term>agricultural gross domestic product</term>
+					<term>ARDL</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Meat is considered an important nutrient of human&apos;s life to gain energy. It accounts as a significant portion of the typical diet in the globe and provides vitamins, minerals, protein, and fats, which are important and have a beneficial effect on the well-being. The major aim of this article is to investigate and explore the association between beef, mutton, poultry meat production, and agricultural gross domestic product in Pakistan. An Augmented Dickey-Fuller unit root test was applied to check the variables&apos; stationarity, while an autoregressive distributed lag (ARDL) bounds testing approach to cointegration was used to investigate the association among the study variables. Furthermore, a forecasting technique was used to project the future production of beef, mutton, and poultry meat in Pakistan. Study results demonstrated the long-standing associations amid the variables. In the long-run analysis, the coefficient of beef production showed a positive effect on the agricultural gross domestic product, while the coefficients of mutton production and poultry meat production showed a nonsignificant association with the agricultural gross domestic product of Pakistan. By applying the ARDL bounds testing approach to cointegration that examines the association between agricultural gross domestic product, beef, mutton, and poultry meat production in Pakistan makes the present study distinctive.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Meat is a consumable food that appears on the market in the various forms. In the traditional economy, meat of freshly slaughtered animals are not refrigerated or processed and can be sold in clothes, stripped, or cut on site and on demand <ref type="bibr" target="#b9">(Brown, Longworth, &amp; Waldron, 2002;</ref><ref type="bibr" target="#b56">Zhou, Xu, &amp; Liu, 2010)</ref>. The commercial meat production and diversification provides meat from certain indigenous species, which may be a valuable source of food <ref type="bibr" target="#b29">(Hoffman &amp; Cawthorn, 2013)</ref>. Meat breeding programs around the world are focused on selecting fast-growing and high production yields; however, there is evidence that continued selection of higher lean meat production may adversely affect the quality of meat in other species <ref type="bibr" target="#b34">(Miar et al., 2014;</ref><ref type="bibr" target="#b51">Swan, Pleasants, &amp; Pethick, 2016)</ref>.</p><p>In Pakistan, the livestock sector including beef, mutton, and poultry industry has rich contribution and share about 50% to the agricultural gross domestic product (AGDP). It has huge share in the agricultural sector because of its general involvement and also has a dynamic role to reduce poverty. In addition, it can grow rapidly in the country, as all necessary contributions for the sector are accessible in sufficient numbers. In 2015, the agricultural sector inclusive performance showed a growth of 2.9%. However, livestock growth rates were recorded at 4.1%, forestry at 3.3%, fishing at 5.8%, and crops at 1.0% (Government of Pakistan <ref type="bibr">[GOP]</ref>, 2015). The annual growth rate reached 3.7% during this period, and the overall gross domestic product of livestock accounted for about 13.4% <ref type="bibr" target="#b10">(Burki, Khan, &amp; Bari, 2005;</ref><ref type="bibr">GOP, 2008)</ref>. The annual increase in the meat production from 2,515,000 to 3,232,000 tons shows a total increase of 4.8% in 2006-2012. In the poultry production, the ratio of growth was recorded at 10.5%, beef at 3.7%, and mutton at 2.3%. The supply and demand gap of meat in Pakistan has increased 4.1% annually <ref type="bibr" target="#b5">(Bashir et al., 2015;</ref><ref type="bibr">GOP, 2013)</ref>. Because due to the good taste of Pakistani meat, it is exported to many Middle East countries <ref type="bibr" target="#b4">(Ayyub, Bilal, &amp; Ahmed, 2011)</ref>.</p><p>The massive majority of cattle are killed and culled for the meat production and also bred for an extensive range of food stuffs and the functions they deliver. As a result, the production of beef involves several varieties of supply chain and receipts the numerous procedures. Beef production discussion and livestock are often due to the deficiency of awareness of this enormous diversity in the production, services, goods, and especially in the context of interaction of environment and also for its improvement. The prevailing view of beef production is biased toward specialized plantations and practices that show a deficient portion of a sector which is dominated by domestic farmhouses <ref type="bibr" target="#b2">(Ashurst &amp; Dennis, 1996;</ref><ref type="bibr" target="#b12">Chaudhry, Ahmad, Chaudhry, &amp; Quddus, 1999;</ref><ref type="bibr" target="#b48">Smith, 2015)</ref>. About 25% breeds of the buffalo and cattle show the worlds 10,512 recorded breeds of mammalian, with comparable shares of goats, horses, sheep, and pigs; all together, these species contribute to about 12% to 14%. In contrast, only 3,505 species of birds were reported, of which chickens represents around 60% (Food and Agriculture Organization of the United Nations <ref type="bibr">[FAO], 2007)</ref>. Several studies have been conducted regarding meat and milk production scenario, livestock production, meat consumption diminution, meat quality, meat packaging and preservation, cultured meat to market, and agriculture <ref type="bibr" target="#b0">(Alexander et al., 2017;</ref><ref type="bibr" target="#b1">Apostolidis &amp; McLeay, 2016;</ref><ref type="bibr" target="#b6">Bosire et al., 2016;</ref><ref type="bibr" target="#b8">Brito et al., 2017;</ref><ref type="bibr" target="#b43">Rehman, Jingdong, Chandio, &amp; Hussain, 2017;</ref><ref type="bibr" target="#b50">Stephens et al., 2018;</ref><ref type="bibr" target="#b53">Wang, Chen, Bai, &amp; Lai, 2018)</ref>. The major objective of this article is to investigate and explore the association between beef, mutton, and poultry meat production to AGDP in Pakistan. Time series data were used in this study, and the data were collected from the Economy Survey of Pakistan annual reports. An Augmented Dickey-Fuller (ADF) unit root test was applied to check the variables stationarity, while an autoregressive distributed lag (ARDL) bounds testing approach to cointegration was applied to check the association amid the variables. Besides the "Introduction" section, the remaining article is organized as follows: the "Literature Review" section show the existing review of literature. "Materials and Methods" section presents the data sources and empirical model specification. "Empirical Estimation Strategy" section shows the unit root test and cointegration with the ARDL model. "Results and Discussion" section shows the results of the descriptive statistics, ADF unit root test results, ARDL bounds test for cointegration and Johansen cointegration test results, results of the long-run and short-run analyses, diagnostic and stability test results, and future projection of beef, mutton, and poultry meat production in Pakistan up to 2030. "Conclusion and Recommendations" section revealed the conclusion of the study and policy recommendations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head><p>Beef and mutton production has not been fully utilized due to its wide range of development opportunities and has grown slowly, and the beef production is cumulative worldwide has experienced one of the largest increase in the production over the past decade <ref type="bibr">(FAO, 2009</ref><ref type="bibr">(FAO, , 2013</ref>. However, beef production and its increasing demand and especially the premium beef as an exhaustive system for production have been developed. With this system, cattle feed and shelters have become concentrated; despite this, the proportion of such dense systems to total current beef production is less than 10% (Japan External Trade Organization, 2013). In the field of livestock production, beef has become the most raising product in terms of environmental impact. Globally, the beef supply chain is projected to produce approximately 2.9 tons of carbon dioxide and near 40% of livestock use the approach of life cycle <ref type="bibr" target="#b27">(Gerber et al., 2013)</ref>.</p><p>Given increasing consumer demand for balanced nutrition and food safety, mutton has become increasingly popular as it is a decent protein source by a lower fat content than beef and a reduced risk of contamination. The increases in demand in the consumer market ensure the high quality of the food that is supplied. This goal is reinforced by advanced nations, and different scientific institutions continually strive to pay attention to the quality of food <ref type="bibr" target="#b19">(Du &amp; Sun, 2006;</ref><ref type="bibr" target="#b41">Qiao, Ngadi, Wang, Gariépy, &amp; Prasher, 2007)</ref>. The scientific study increase in this area indicates that consumers are immediately affected by the superiority and kind of product they eat. Undoubtedly this detail has stimulated the scientific research, as scientists look for novel ways to efficiently appraise the food quality. Such research is particularly suitable for animalderived foods, the most common of which are meat and mutton. Quality characteristics are distinct as issues affecting the taste and final market price of animal carcasses <ref type="bibr" target="#b30">(Jackman et al., 2010;</ref><ref type="bibr" target="#b47">Sikora &amp; Weber, 1995)</ref>. The quality of meat is directly affected by its lipid composition. Meat is determined by the specific aromatics of its lipid fraction, and the proportion of saturated fatty acids in lamb is higher than in pork <ref type="bibr" target="#b14">(Cramer, 1983;</ref><ref type="bibr" target="#b54">Wasserman &amp; Spinelli, 1972)</ref>.</p><p>Moreover, the consumption of meat has been gained the special focus and attention, and several studies concluded that mutton, beef, and pork are the dominant sources of animal protein in urban households. In this concern, we cannot ignore the contribution of fish, but recent studies revealed that these fauna do not make significant contribution for the protein consumption <ref type="bibr" target="#b20">(Ervynck, Boudin, van den Brande, &amp; Van Strydonck, 2014)</ref>. The quality of food and safety for the consumers ensuring and upholding the laws related to the meat products and food is legitimate through a validated process with its description and label. Furthermore, meat legitimacy assessment will solve several problems including fraudulent meat replacement and a highly profitable worth with cheap meat of poor quality <ref type="bibr" target="#b3">(Ashurst &amp; Dennis, 2013)</ref>, in addition to undeclared meat categories that are listed on the product label <ref type="bibr" target="#b7">(Bottaro, Marchetti, Mottola, Shehu, &amp; Di Pinto, 2014;</ref><ref type="bibr" target="#b36">Okuma &amp; Hellberg, 2015)</ref> and accidentally labeled products of meat, even there is concern regarding mislabeling and effect of food safety to the public health and consumers will be deceived into trusting the product they want (D'Amato, Alechine, Cloete, Davison, &amp; Corach, 2013). In some cases, these alternatives affect the public health as well as the economy (Galal-Khallaf, Ardura, Mohammed-Geba, Borrell, &amp; Garcia-Vazquez, 2014; Premanandh, 2013).</p><p>As the global population continues to grow, the agriculture sector faces the most significant challenge to humankind's prosperity: how to use limited resources to produce more food while reducing the agriculture impact on the environment. To meet this challenge, innovations and intensification are needed if the current consumption rate is to be preserved. Without increasing the efficiency of our food production system, more of our natural resources must be allocated to agriculture <ref type="bibr" target="#b45">(Schneider et al., 2011)</ref>. Continuous improvements in agriculture have been linked in particular to the livestock sector, as the environmental impacts of animal products are often higher than those of their plant-based alternatives; their effects continue to escalate as the global demand for meat continues to rise <ref type="bibr" target="#b28">(Heller, Keoleian, &amp; Willett, 2013;</ref><ref type="bibr" target="#b37">Opio et al., 2013)</ref>. Poultry production is one of the most common in the world. It is an imperative part of smallholder livings and an instrument to reduce poverty <ref type="bibr" target="#b18">(Dolberg, 2007;</ref><ref type="bibr">FAO, 2008;</ref><ref type="bibr" target="#b49">Sonaiya, 2007)</ref>.</p><p>In the recent decades, a rapid growth has been seen in the demand for livestock products. To meet this demand, largescale, intensive livestock units have emerged, especially for intensive poultry farms and pig farming. However, there are some serious issues regarding the intensive farming system and long-term sustainability <ref type="bibr" target="#b11">(Cerutti et al., 2011;</ref><ref type="bibr" target="#b33">Lindsey, 2011;</ref><ref type="bibr" target="#b52">Tilman, Cassman, Matson, Naylor, &amp; Polasky, 2002;</ref><ref type="bibr" target="#b55">Zhang, Song, &amp; Chen, 2012)</ref>. Livestock products demand will increase in the future, the demand for livestock products will increase at a fairly high rate due to population growth, increased demand for protein and calcium for health reasons, and a unit-income of milk and meat demand elasticity <ref type="bibr" target="#b21">(Farooq, Young, &amp; Iqbal, 1999;</ref><ref type="bibr" target="#b46">Sharif &amp; Farooq, 2004)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Sources</head><p>Time series data were used in this study over the period 1982-2018, and the data were collected from the Economic Survey of Pakistan (GOP) annual reports. <ref type="table" target="#tab_0">Table 1</ref> illustrates the variables description. <ref type="figure" target="#fig_0">Figure 1</ref> illustrates the beef, mutton, and poultry meat production in Pakistan, and time series data were taken from the Economic Survey of Pakistan annual reports.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Model Specification</head><p>To check the association between AGDP, beef, mutton, and poultry meat production in Pakistan, this study employed a multivariate regression model specified as follows:</p><formula xml:id="formula_0">AGDP BP MP PMP t t t t f = ( ) , ,<label>(1)</label></formula><p>In Equation 1, AGDP t indicates the AGDP, BP t indicates the beef production, MP t represents the mutton production, and PMP t epitomizes the poultry meat production in Pakistan. We can write Equation 1 as follows:</p><formula xml:id="formula_1">AGDP BP MP PMP t t t t t = + + + + λ λ λ λ µ 0 1 2 3<label>(2)</label></formula><p>By using the natural logarithm to Equation 2, a log-linear model is as follows:  Equation 3 demonstrates the log-linear form of the variables. lnAGDP t shows the natural logarithm of the AGDP, lnBP t expresses the natural logarithm of beef production, lnMP t shows the natural logarithm of the mutton production, lnPMP t shows the natural logarithm of the poultry meat production in Pakistan, t is the time dimension, µt is the error term, λ 0 is the constant intercept, and the coefficients of the model λ 1 to λ 3 represent the elasticity of the long run.</p><formula xml:id="formula_2">ln ln ln ln AGDP BP MP PMP t t t t t = + + + + λ λ µ 0 1 2 3 λ λ<label>(3)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Estimation Strategy</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Unit Root Tests</head><p>The ARDL model requires no pre-testing to check the unit root test for the stationarity of variables. So, we used the ADF <ref type="bibr" target="#b17">(Dickey &amp; Fuller, 1979)</ref> unit root test, including trend and intercept, to determine that none of the variables are considered to be integrated in the order 2, because the ARDL bounds testing approach is invalidated in the cases where I(2) variables are used. The ADF unit root tests, therefore, can be specified as follows:</p><formula xml:id="formula_3">∆ ∆ Y T Y Y t t i m t t = + + + + − = − ∑ α β β α µ   1 1 1 1 1<label>(4)</label></formula><p>where Y represents the variables being tested for the unit root, T represents a linear trend, ∆ represents the first difference, t represents the time, μt is the error term, and m represents the achievement of white noise residuals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cointegration With the ARDL Model</head><p>To determine the long-run and short-run analyses between the study variables, this empirical study used an ARDL bounds testing approach developed by <ref type="bibr" target="#b38">Pesaran and Shin (1998)</ref> and <ref type="bibr" target="#b39">Pesaran, Shin, and Smith (2001)</ref>, further extended by <ref type="bibr" target="#b35">Narayan (2005)</ref>. The cointegration testing method is appropriate regardless of the integration order and for the concerned variables, I(0) and/or I(1), except for the existence of I(2). The long-run and short-run analyses are examined in the ARDL by the representation of unrestricted error correction model (UECM). The long-run analysis between the variables can be specified by using Equation 3, as depicted in </p><p>where ∆ presents the difference operator and δ 0 is the constant intercept. Y, T, R, and E demonstrate the lags order and µ t is the error term. The long-run co-movement among the variables of interest is ascertained on the foundation of the projected F-Statistic. The hypothesis that long-run association is not present is rejected if a projected F-Statistic exceeds the upper bound critical values. Similarly, the short-run analysis between the study variables was determined using the ARDL approach with the error correction model (ECM) and specified as follows: where J, H, G, and F show the order of lags in the equation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Descriptive Statistics and ADF Unit Root Test Results</head><p>The results of the descriptive statistics and the ADF unit root test are reported in <ref type="table" target="#tab_2">Tables 2 and 3</ref>. ADF test results show that none of the variables integrated with the order I(2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cointegration Test</head><p>A cointegration test was used when the For W-Statistic is applied to the upper bound of the selected significant level. It is worth noting that the "F" test assumes there is no cointegration null hypothesis between the variables. The various statistics are described in <ref type="table" target="#tab_3">Table 4</ref>.</p><p>The bounds tests shown in the table summarize the cointegration existence and connection between the study variables at 1%, 5%, and 10%. Furthermore, the results of the Johansen cointegration test <ref type="bibr" target="#b32">(Johansen &amp; Juselius, 1990)</ref> are reported in <ref type="table" target="#tab_4">Table 5</ref> with trace statistics and maximum eigenvalue.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Long-Run and Short-Run Analyses Results</head><p>The results of the long-run and short-run analyses are reported in <ref type="table" target="#tab_5">Table 6</ref>. In the short-run analysis, the association between the variables and cointegration existence implies the approximation of the error correction model (ECM) to capture the dynamics of the short run.</p><p>The long-run analysis results revealed that beef production has a coefficient of 2.282195, which is positive and significant with a p value of .0017. This indicates a 1% increase in the beef production. Its explanatory power, 2.282, suggests an increase in the AGDP by 2.282%. While the coefficients of mutton production and poultry meat production illustrates a non-significant association with the AGDP of Pakistan with p values of .4755 and .1813. The demand of beef and mutton production increased with the ratio of 2 million tons and 6.89 million tons in 2015-2016 compared to 1.95 million tons and 6.71 million tons in <ref type="bibr" target="#b40">2013</ref><ref type="bibr" target="#b16">(Dawn News, 2016</ref><ref type="bibr" target="#b44">Sadiq, 2004)</ref>.</p><p>The short-run analysis between the study variables demonstrates that the R 2 value is about 96%, which show 96% change in the dependent variable clarified by the independent. At the 1% level of significance, F-Statistic inveterate the combined significance for the independent variables. The statistical value of Durbin-Watson statistic is 1.955, which does not follow the standard value of the Durbin-Watson and causes the nonappearance of any autocorrelation. However, it is enough to expose the occurrence of autocorrelation. The short-run analysis indicates that the coefficients of beef production, mutton production, and poultry meat production showed a nonsignificant association with the AGDP of Pakistan.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Diagnostic and Stability Test</head><p>The diagnostic and stability test results are shown in <ref type="table" target="#tab_1">Table 7</ref>.  <ref type="bibr">.2137, .8945, and .1706, respectively.</ref> Similarly, the stability tests use CUSUM and CUSUM Square point in a directive to stable the parameters of the long run and short run. The graph of CUSUM test and CUSUM Square test is mentioned in <ref type="figure" target="#fig_3">Figures 2 and 3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Future Projection of Beef, Mutton, and Poultry Meat Production in Pakistan Up to 2030</head><p>The future projection of beef, mutton, and poultry meat production up to 2030 in Pakistan can be projected by following <ref type="bibr" target="#b42">Rehman and Deyuan (2018)</ref> study and can be specified by using following method h + nx, where h m nx = −    Equation 7 can also be written as</p><formula xml:id="formula_6">v x x m m x x = ∑ − ( ) − ( ) ∑ − ( ) 2<label>(8)</label></formula><p>In Equation 8, the variables x and m represent the sample means average (known_x's) and average (known_m's).</p><p>Figures 4 to 6 show the projection of beef, mutton, and poultry meat production up to 2030 in the Pakistan.</p><p>In <ref type="figure" target="#fig_5">Figures 4 to 6</ref>, which show the future projection of beef, mutton, and poultry meat production up to 2030, time series data were used, and the data were collected from the Economy Survey of Pakistan annual reports.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion and Recommendations</head><p>Meat is an important part of our diet to gain energy. Like other countries, the livestock sector in the Pakistan also has main role to get meat and also has rich contribution to the agriculture sector. In this study, an ADF unit root test was used to check the stationarity of the variables, while an ARDL bounds testing approach to cointegration was used to investigate the association amid the study variables. Long-run analysis results show that the beef production has a positive and significant effect on the AGDP, while the variables of mutton production and poultry meat production showed a nonsignificant association with the AGDP of Pakistan. According to the study findings, it recommends that the GOP should focus on livestock sector to increase the production of beef, mutton, and poultry meat in the country. Due to increasing demand of livestock production and meat, the prices continue to increase with the increased fluctuation. It is also necessary to provide financial support to enhance the production of livestock, and    possible policies should be implemented on province level from the government to support this sector. It is essential to ensure that the livestock holders receive adequate rewards by confirming a fair share of consumer prices, not only inducing them to adopt the latest technologies but also rewarding their efforts. The livestock promotion services are particularly helpful in persuading farmers to adopt modern animal husbandry practices. To ensure fair prices for farmers for animal sales, on the basis of live weight, such as poultry, the livestock market should be encouraged.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Beef, mutton, and poultry meat production in Pakistan from 1982 to 2018.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 .</head><label>2</label><figDesc>Plot of CUSUM.Note. CUSUM = cumulative sum.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 .</head><label>3</label><figDesc>Plot of CUSUM of squares.Note. CUSUM = cumulative sum.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 .</head><label>4</label><figDesc>Projected beef production in Pakistan up to 2030.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 5 .</head><label>5</label><figDesc>Projected mutton production in Pakistan up to 2030.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 6 .</head><label>6</label><figDesc>Projected poultry meat production in Pakistan up to 2030.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Variables Description and Data Sources.</figDesc><table><row><cell>Variables</cell><cell>Explanation</cell><cell>Sources</cell></row><row><cell>AGDP</cell><cell>Agricultural gross domestic product</cell><cell>GOP</cell></row><row><cell></cell><cell>(million rupees)</cell><cell></cell></row><row><cell>BP</cell><cell>Beef production in 000 tons</cell><cell>GOP</cell></row><row><cell>MP</cell><cell>Mutton production in 000 tons</cell><cell>GOP</cell></row><row><cell>PMP</cell><cell>Poultry meat production in 000 tons</cell><cell>GOP</cell></row></table><note>Note. GOP = Government of Pakistan.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 7</head><label>7</label><figDesc></figDesc><table><row><cell>results revealed that the p values of Breusch-</cell></row><row><cell>Godfrey Serial Correlation, J-B Normality test,</cell></row><row><cell>Heteroskedasticity Test, and Ramsey Reset Test are .9788,</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Descriptive Statistics Results. The rejection of the null hypothesis of unit root at the 1% and 5% significant level, respectively.</figDesc><table><row><cell>Variables</cell><cell>lnAGDP</cell><cell>lnBP</cell><cell>lnMP</cell><cell>lnPMP</cell></row><row><cell>Mean</cell><cell>12.98335</cell><cell>6.948700</cell><cell>6.393025</cell><cell>5.229755</cell></row><row><cell>Median</cell><cell>13.71403</cell><cell>6.893656</cell><cell>6.444131</cell><cell>4.979145</cell></row><row><cell>Maximum</cell><cell>14.66428</cell><cell>7.675546</cell><cell>8.508769</cell><cell>7.317886</cell></row><row><cell>Minimum</cell><cell>11.28354</cell><cell>6.104793</cell><cell>4.338241</cell><cell>2.730100</cell></row><row><cell>SD</cell><cell>1.377433</cell><cell>0.460670</cell><cell>0.620846</cell><cell>1.136857</cell></row><row><cell>Skewness</cell><cell>0.020047</cell><cell>−0.074411</cell><cell>−0.493311</cell><cell>0.153056</cell></row><row><cell>Kurtosis</cell><cell>1.177272</cell><cell>1.985098</cell><cell>9.400519</cell><cell>2.280518</cell></row><row><cell>Jarque-Bera</cell><cell>5.124416</cell><cell>1.622100</cell><cell>64.65760</cell><cell>0.942513</cell></row><row><cell>Probability</cell><cell>.077134</cell><cell>.444391</cell><cell>.000000</cell><cell>.624218</cell></row><row><cell>Observations</cell><cell>37</cell><cell>37</cell><cell>37</cell><cell>37</cell></row><row><cell>lnAGDP</cell><cell>1.000000</cell><cell></cell><cell></cell><cell></cell></row><row><cell>lnBP</cell><cell>0.922273</cell><cell>1.000000</cell><cell></cell><cell></cell></row><row><cell>lnMP</cell><cell>0.091783</cell><cell>0.227136</cell><cell>1.000000</cell><cell></cell></row><row><cell>lnPMP</cell><cell>0.694138</cell><cell>0.593248</cell><cell>−0.205063</cell><cell>1.000000</cell></row><row><cell cols="4">Table 3. Augmented Dickey-Fuller (ADF) Unit Root Test Results (Trend and Intercept).</cell><cell></cell></row><row><cell></cell><cell>Levels</cell><cell></cell><cell cols="2">First difference</cell></row><row><cell>Variables</cell><cell>Intercept</cell><cell>Intercept + trend</cell><cell>Intercept</cell><cell>Intercept + trend</cell></row><row><cell>lnAGDP</cell><cell>-0.652803</cell><cell>-2.109394</cell><cell>-6.212935***</cell><cell>-6.117790***</cell></row><row><cell>lnBP</cell><cell>-1.088085</cell><cell>-2.198575</cell><cell>-5.672277***</cell><cell>-5.706058***</cell></row><row><cell>lnMP</cell><cell>-7.011278***</cell><cell>-7.188081***</cell><cell>-</cell><cell>-</cell></row><row><cell>lnPMP</cell><cell>-2.865381**</cell><cell>-4.008971***</cell><cell>-</cell><cell>-</cell></row><row><cell>Note. ***, **</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>ARDL Bounds Test for Cointegration Results.</figDesc><table><row><cell>F-statistic</cell><cell>Significance level (%)</cell><cell>Lower bound</cell><cell>Upper bound</cell><cell>Decision</cell></row><row><cell>5.617956</cell><cell>10</cell><cell>2.72</cell><cell>3.77</cell><cell>Cointegrated</cell></row><row><cell></cell><cell>5</cell><cell>3.23</cell><cell>4.35</cell><cell></cell></row><row><cell></cell><cell>1</cell><cell>4.29</cell><cell>5.61</cell><cell></cell></row><row><cell cols="2">Note. ARDL = autoregressive distributed lag.</cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>Johansen Cointegration Test Results. Trace test indicates three cointegrating equation(s) at the .05 level.</figDesc><table><row><cell>Trace statistic</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hypothesized</cell><cell></cell><cell></cell><cell>0.05</cell><cell></cell></row><row><cell>No. of CE(s)</cell><cell>Eigenvalue</cell><cell>Trace statistic</cell><cell>Critical value</cell><cell>Probability a</cell></row><row><cell>None*</cell><cell>0.675099</cell><cell>91.23061</cell><cell>63.87610</cell><cell>.0001</cell></row><row><cell>At most 1*</cell><cell>0.564970</cell><cell>54.13088</cell><cell>42.91525</cell><cell>.0027</cell></row><row><cell>At most 2*</cell><cell>0.382514</cell><cell>26.66366</cell><cell>25.87211</cell><cell>.0398</cell></row><row><cell>At most 3</cell><cell>0.278116</cell><cell>10.75441</cell><cell>12.51798</cell><cell>.0968</cell></row><row><cell>Maximum eigenvalue</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hypothesized</cell><cell></cell><cell></cell><cell>0.05</cell><cell></cell></row><row><cell>No. of CE(s)</cell><cell>Eigenvalue</cell><cell>Maximum eigenvalue</cell><cell>Critical value</cell><cell>Probability a</cell></row><row><cell>None*</cell><cell>0.675099</cell><cell>37.09974</cell><cell>32.11832</cell><cell>.0113</cell></row><row><cell>At most 1*</cell><cell>0.564970</cell><cell>27.46722</cell><cell>25.82321</cell><cell>.0301</cell></row><row><cell>At most 2</cell><cell>0.382514</cell><cell>15.90925</cell><cell>19.38704</cell><cell>.1491</cell></row><row><cell>At most 3</cell><cell>0.278116</cell><cell>10.75441</cell><cell>12.51798</cell><cell>.0968</cell></row><row><cell>Note.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note>a MacKinnon-Haug-Michelis (1999) p values.*Rejection of the hypothesis at the .05 level.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 .</head><label>6</label><figDesc>Long-Run and Short-Run Analyses Results.</figDesc><table><row><cell>Dependent variable is lnAGDP</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Regressors</cell><cell>Coefficients</cell><cell>SE</cell><cell>T-ratio</cell><cell>p value</cell></row><row><cell>Long-run analysis results</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>lnBP</cell><cell>2.282195</cell><cell>0.665394</cell><cell>3.429839</cell><cell>.0017</cell></row><row><cell>lnMP</cell><cell>-0.300429</cell><cell>0.416047</cell><cell>-0.722105</cell><cell>.4755</cell></row><row><cell>lnPMP</cell><cell>0.379222</cell><cell>0.277494</cell><cell>1.366594</cell><cell>.1813</cell></row><row><cell>Constant</cell><cell>-2.606586</cell><cell>3.857332</cell><cell>-0.675749</cell><cell>.5041</cell></row><row><cell>Short-run analysis results</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ΔlnBP</cell><cell>0.498322</cell><cell>0.284864</cell><cell>1.749333</cell><cell>.0898</cell></row><row><cell>ΔlnMP</cell><cell>-0.065599</cell><cell>0.088067</cell><cell>-0.744880</cell><cell>.4618</cell></row><row><cell>ΔlnPMP</cell><cell>0.082804</cell><cell>0.061395</cell><cell>1.348700</cell><cell>.1869</cell></row><row><cell>ECM (−1)</cell><cell>-0.218352</cell><cell>0.098959</cell><cell>-2.206488</cell><cell>.0046</cell></row><row><cell>R 2</cell><cell>0.961377</cell><cell></cell><cell cols="2">Durbin-Watson stat 1.955187</cell></row><row><cell>Adjusted R 2</cell><cell>0.956549</cell><cell></cell><cell cols="2">F-statistic 199.1308 (0.0000)</cell></row><row><cell>Note. ECM = error correction model.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 7 .</head><label>7</label><figDesc>Diagnostic and Stability tests. Note. p values are given in the parenthesis. ARCH = autoregressive conditional heteroskedasticity; LM = Lagrange multiplier; RESET = Regression Equation Specification Error Test.</figDesc><table><row><cell>Test statistics (LM version)</cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The authors are grateful to the anonymous reviewers who helped to improve the content of this paper.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article. Zhang Deyuan is a professor in the Research Center of Agricultural-Rural-Peasants Anhui University Hefei, China. He has an outstanding contribution in the academia by publishing good papers in the reputed journals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iDs</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Could consumption of insects, cultured meat or imitation meat reduce global agricultural land use? Global Food Security</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Alexander</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Arneth</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Dias</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Finnigan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Moran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Rounsevell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="22" to="32" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Should we stop meating like this? Reducing meat consumption through substitution</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Apostolidis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Mcleay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Policy</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="74" to="89" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">An introduction to food authentication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Ashurst</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Dennis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Food authentication</title>
+		<editor>P. R. Ashurst &amp; M. J. Dennis</editor>
+		<meeting><address><addrLine>Boston, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="1" to="14" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Food authentication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Ashurst</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Dennis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Springer</publisher>
+			<pubPlace>Boston, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Meat prices hikes and its forecasting in Pakistan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Ayyub</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bilal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ahmed</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Animal and Plant Sciences</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="256" to="259" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Economics of red meat production in Punjab</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bashir</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Mehmood</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Qasim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Abbas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hassan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pakistan Journal of Agricultural Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="85" to="95" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Meat and milk production scenarios and the associated land footprint in Kenya</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">K</forename><surname>Bosire</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Krol</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Mekonnen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">O</forename><surname>Ogutu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>De Leeuw</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lannerstad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">Y</forename><surname>Hoekstra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Agricultural Systems</title>
+		<imprint>
+			<biblScope unit="volume">145</biblScope>
+			<biblScope unit="page" from="64" to="75" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Detection of mislabeling in packaged chicken sausages by PCR</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bottaro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Marchetti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mottola</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Shehu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Di Pinto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Albanian Journal of Agricultural Sciences</title>
+		<imprint>
+			<biblScope unit="page" from="455" to="460" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Genetic parameters for various growth, carcass and meat quality traits in a New Zealand sheep population</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">F</forename><surname>Brito</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Mcewan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Bain</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Dodds</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Clarke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Small Ruminant Research</title>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="page" from="81" to="91" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Food safety and development of the beef industry in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">G</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Longworth</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Waldron</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0306-9192(02)00017-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Food Policy</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="269" to="284" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The state of Pakistan&apos;s dairy sector: An assessment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Burki</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bari</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<pubPlace>Lahore, Pakistan</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Centre for Management and Economic Research, Lahore University of Management Sciences</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Evaluation of the sustainability of swine manure fertilization in orchard through Ecological Footprint Analysis: results from a case study in Italy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">K</forename><surname>Cerutti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bagliani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">L</forename><surname>Beccaro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Gioelli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Balsari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Bounous</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jclepro.2010.11.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cleaner Production</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="318" to="324" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Growth of livestock production in Pakistan: An analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Chaudhry</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M</forename><surname>Chaudhry</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Quddus</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+	<note>with comments</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">The Pakistan Development Review</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="605" to="614" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Chemical-compounds implicated in lamb flavor</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Cramer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Food Technology</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="249" to="257" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Where is the game? Wild meat products authentication in South Africa: A case study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>D'amato</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Alechine</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">W</forename><surname>Cloete</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Davison</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Corach</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/2041-2223-4-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Investigative Genetics</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">6</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Dawn</forename><surname>News</surname></persName>
+		</author>
+		<ptr target="https://www.dawn.com/news/1266780" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Distribution of the estimators for autoregressive time series with a unit root</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Dickey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">A</forename><surname>Fuller</surname></persName>
+		</author>
+		<idno>doi:10.1080 /01621459.1979.10482531</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Statistical Association</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="427" to="431" />
+			<date type="published" when="1979" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Poultry production for livelihood improvement and poverty alleviation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Dolberg</surname></persName>
+		</author>
+		<ptr target="http://www.fao.org/3/i0323e/i0323e03.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Poultry in the 21st Century: Avian influenza and beyond. Proceedings of the International Poultry Conference</title>
+		<imprint>
+			<date type="published" when="2007-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Learning techniques used in computer vision for food quality evaluation: a review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">J</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">W</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Food Engineering</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="page" from="39" to="55" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Dating human remains from the historical period in Belgium: Diet changes and the impact of marine and freshwater reservoir effects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ervynck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Boudin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Van Den Brande</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Van Strydonck</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiocarbon</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="779" to="788" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">An investigation into the farm households consumption patterns in Punjab, Pakistan. The Pakistan Development Review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Farooq</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Iqbal</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999" />
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="293" to="305" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The state of the world&apos;s animal genetic resources for food and agriculture</title>
+		<editor>Rischkowsky, B., &amp; Pilling, D</editor>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Author</publisher>
+			<pubPlace>Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Biosecurity for highly pathogenic avian influenza: issues and options</title>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>Author</publisher>
+			<pubPlace>Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">The state of food and agriculture: Livestock in the balance</title>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>Author</publisher>
+			<pubPlace>Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m">FAOSTAT. Production e livestock primary</title>
+		<meeting><address><addrLine>Rome, Italy</addrLine></address></meeting>
+		<imprint>
+			<publisher>Author</publisher>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">DNA barcoding reveals a high level of mislabeling in Egyptian fish fillets</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Galal-Khallaf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ardura</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mohammed-Geba</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">J</forename><surname>Borrell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Garcia-Vazquez</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.foodcont.2014.06.016</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Food Control</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="441" to="445" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Tackling climate change through livestock: a global assessment of emissions and mitigation opportunities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Steinfeld</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mottet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Opio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Dijkman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Tempio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Ministry of Food, Agriculture, and Cooperatives. Government of Pakistan</title>
+		<meeting><address><addrLine>Rome, Italy; Islamabad, Pakistan; Pakistan</addrLine></address></meeting>
+		<imprint>
+			<publisher>Food and Agriculture Organization of the United Nations</publisher>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note>Ministry of Food, Agriculture, and Cooperatives</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Toward a life cycle-based, diet-level framework for food environmental impact and nutritional quality assessment: a critical review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">C</forename><surname>Heller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Keoleian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">C</forename><surname>Willett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environmental Science &amp; Technology</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="12632" to="12647" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Exotic protein sources to meet all needs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">C</forename><surname>Hoffman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cawthorn</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.meat-sci.2013.04.027</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Meat Science</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="764" to="771" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Identification of important image features for pork and turkey ham classification using colour and wavelet texture features and genetic selection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Jackman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">W</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">A</forename><surname>Valous</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Mendoza</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ward</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Meat Science</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="711" to="717" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Market structure of food and agricultural products in major countries and regions e beef</title>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Author</publisher>
+			<pubPlace>Tokyo, Japan</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Japan External Trade Organization</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Maximum likelihood estimation and inference on cointegration-With applications to the demand for money</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Johansen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Juselius</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oxford Bulletin of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="169" to="210" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Sustainable principles: Common values for achieving sustainability</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">C</forename><surname>Lindsey</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jclepro.2010.10.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cleaner Production</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="561" to="565" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Genetic and phenotypic correlations between performance traits with meat quality and carcass characteristics in commercial crossbred pigs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Miar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Plastow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Bruce</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Manafiazar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kemp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Mckay</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0110105</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">110105</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The saving and investment nexus for China: Evidence from cointegration tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">K</forename><surname>Narayan</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00036840500278103</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="1979" to="1990" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Identification of meat species in pet foods using a real-time polymerase chain reaction (PCR) assay</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">A</forename><surname>Okuma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">S</forename><surname>Hellberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.food-cont.2014.08.017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Food Control</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="9" to="17" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Greenhouse gas emissions from ruminant supply chains: A global life cycle assessment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Opio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mottet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Falcucci</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Tempio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Macleod</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Steinfeld</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Food and agriculture organization of the United Nations</publisher>
+			<pubPlace>Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">An autoregressive distributedlag modelling approach to cointegration analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Shin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Econometric Society Monographs</publisher>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="371" to="413" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Bounds testing approaches to the analysis of level relationships</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="289" to="326" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Horse meat scandal: A wake-up call for regulatory authorities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Premanandh</surname></persName>
+		</author>
+		<idno>doi:10.1016/j. foodcont.2013.05.033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Food Control</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="568" to="569" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Pork quality and marbling level assessment using a hyperspectral imaging system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">O</forename><surname>Ngadi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Gariépy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">O</forename><surname>Prasher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Food Engineering</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="10" to="16" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Pakistan&apos;s energy scenario: A forecast of commercial energy consumption and supply from different sources through 2030</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Deyuan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Energy, Sustainability and Society</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">26</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Livestock production and population census in Pakistan: Determining their relationship with agricultural GDP using econometric analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Jingdong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Chandio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Hussain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Processing in Agriculture</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="168" to="177" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Pakistan poultry sector still on an upward swing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Sadiq</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Poultry World</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="10" to="11" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Impacts of population growth, economic development, and technical change on global food production and consumption</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><forename type="middle">A</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Havlík</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Schmid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Valin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mosnier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Obersteiner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Fritz</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.agsy.2010.11.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Agricultural Systems</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="page" from="204" to="215" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Study on current and potential market supply and demand, market opportunities and consumer preferences for indigenous breed animals/products</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Sharif</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Farooq</surname></persName>
+		</author>
+		<ptr target="https://cgspace.cgiar.org/bitstream/handle/10568/16431/StudyCurrentPotential.pdf?sequence=2&amp;isAllowed=y" />
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Attempt to explore consumer preferences for meat culinary</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Sikora</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Weber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economy Meat</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="40" to="41" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">The meat we eat, the lives we lift. Livestock (like people) are different the world over. The Economist</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Smith</surname></persName>
+		</author>
+		<ptr target="http://www.economistinsights.com/opinion/meat-we-eat-lives-we-lift" />
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Smallholder family poultry as a tool to initiate rural development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sonaiya</surname></persName>
+		</author>
+		<ptr target="http://www.fao.org/ag/againfo/home/events/bangkok2007/docs/part3/3_2.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Poultry in the Twenty-First Century: Avian Influenza and Beyond. Proceedings of the International Poultry Conference</title>
+		<imprint>
+			<date type="published" when="2007-11-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Bringing cultured meat to market: Technical, socio-political, and regulatory challenges in cellular agriculture</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Stephens</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Dunsford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Di Silvio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Glencross</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Sexton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Food Science &amp; Technology</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="155" to="166" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Breeding to improve meat eating quality in terminal sire sheep breeds. Proceedings of the Association for the Advancement of</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Swan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Pleasants</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Pethick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Animal Breeding and Genetics</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="29" to="32" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Agricultural sustainability and intensive production practices</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Tilman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">G</forename><surname>Cassman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">A</forename><surname>Matson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Naylor</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Polasky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">418</biblScope>
+			<biblScope unit="page" from="671" to="677" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Meat packaging, preservation, and marketing implications: Consumer preferences in an emerging economy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Meat Science</title>
+		<imprint>
+			<biblScope unit="volume">145</biblScope>
+			<biblScope unit="page" from="300" to="307" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Effect of some watersoluble components on aroma of heated adipose tissue</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">E</forename><surname>Wasserman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Spinelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Agricultural and Food Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="171" to="174" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Emergy-based analysis of four farming systems: Insight into agricultural diversification in rural</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jclepro.2011.10.042</idno>
+	</analytic>
+	<monogr>
+		<title level="j">China. Journal of Cleaner Production</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="33" to="44" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Preservation technologies for fresh meat: A review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">H</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">L</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.meatsci.2010.04.033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Meat Science</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="119" to="128" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

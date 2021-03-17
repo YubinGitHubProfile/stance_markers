@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Investigating the Relationship Between Financial Constraint and Growth of SMEs in South Eastern Europe</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mirgul</forename><surname>Nizaeva</surname></persName>
+							<email>mirgulnizaeva@gmail.com</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ali</forename><surname>Coskun</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="institution">Ala-Too International University</orgName>
+								<address>
+									<addrLine>Ankara Street 1/8</addrLine>
+									<postCode>720048</postCode>
+									<settlement>Tunguch, Bishkek</settlement>
+									<country key="KG">Kyrgyzstan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Management Department of International</orgName>
+								<orgName type="institution">Burch University</orgName>
+								<address>
+									<settlement>Sarajevo</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Ala-Too International University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="laboratory">American University of the Middle East, Kuwait. He holds PhD degree in Accounting from</orgName>
+								<orgName type="institution">Istanbul University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Investigating the Relationship Between Financial Constraint and Growth of SMEs in South Eastern Europe</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019876269</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>financial constraints</term>
+					<term>SMEs</term>
+					<term>firm growth</term>
+					<term>emerging economies</term>
+					<term>South Eastern Europe Turkey. His research interest includes accounting</term>
+					<term>managerial accounting</term>
+					<term>financial analysis</term>
+					<term>efficiency analysis</term>
+					<term>performance management</term>
+					<term>and service management</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>This study investigates the determinants of financial constraint and its impact on the growth of small and medium-sized enterprises (SME) in South Eastern Europe (SEE). In this study, enterprise data from the fifth round of the Business Environment and Enterprise Survey (BEEPS V) undertaken in 2012-2016 were used, and an empirical analysis including ordered probit, probit, and feasible generalized least squares (FGLS) specifications was conducted. The findings evidence that financial constraint is significantly detrimental to SME growth in the region. Moreover, SMEs operating in trade sector perceive access to finance comparatively less, whereas mature enterprises perceive it as more constraining. Among country-specific factors, high banking sector concentration adversely affects access to finance, whereas more domestic credit provided to private sector mitigates the financial constraint perception of SMEs.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Financing constraints, among other business environmentrelated obstacles, are severely restricting the growth of small and medium-sized enterprises (SMEs) . Higher transaction costs related to the smaller loans requested by SMEs, information asymmetry, higher risk premiums due to the opaqueness of smaller firms, and the inability of SMEs' assets to meet the collateral requirements of creditors are the main firm-level determinants of nonaccessibility to external funds of SMEs <ref type="bibr" target="#b14">(Beck, Demirgüç-Kunt, &amp; Maksimovic, 2008)</ref>. In addition to these common firm-specific factors which have been broadly evidenced in the relevant literature, SMEs operating in the emerging economies are faced by other country-based obstacles, because business environment including regulatory, legal, and financial infrastructures differs markedly between advanced and developing economies. Regulatory environment in which lending institutions operate, bankruptcy and commercial laws that determine the creditor rights of banks and their enforcement, and information-sharing restrictions are important factors that affect SMEs' access to external finance (De <ref type="bibr" target="#b21">Haas, Ferreira, &amp; Taci, 2010)</ref>. Immature financial development, bureaucracy, inefficient economic reforms, and political instability also characterize the dysfunctionality and lack of credibility of SMEs in transition economies <ref type="bibr" target="#b59">(Ruziev &amp; Midmore, 2015)</ref>. The integration of these two contexts of financing constraints of SMEs and SME development particularly in emerging economies creates an interesting and comprehensive research question.</p><p>This study addresses an issue of great significance for SME sector development in the developing economies of South Eastern Europe (SEE); in particular, it focuses on the determinants of the financial constraint of SMEs and on the effects of financial obstacles on their growth. As it is widely recognized that the SME sector plays a vital role in the overall economic development of emerging economies, investigating and interpreting the linkages between the factors that determine their financial constraint levels and growth rates may contribute substantially to the literature and provide important implications for policy makers.</p><p>Given the important role of SMEs in employment creation and overall economic development, the sector has been on the policy agenda of SEE countries and has been the subject of discussion in academia. Although recent studies have investigated SME sector development in SEE, we provide the following contributions to relevant literature. First, unlike Hashi and <ref type="bibr" target="#b35">Krasniqi (2011)</ref>, our sample includes all non-European Union (EU) SEE countries, and we focus on the effects of financing constraints on SME growth, whereas they examined the impact of SMEs' technological capabilities and environmental factors on growth in three Central European and three SEE economies. Second, unlike the descriptive comparison of firm characteristic patterns in the financing constraints of SMEs among Western Balkan countries by <ref type="bibr" target="#b52">Musta (2017b)</ref>, our analytical methodology is of an empirical nature. Third, <ref type="bibr" target="#b36">Hashi and Toçi (2010)</ref> analyzed only the firm-specific determinants of financing constraints for all SEE countries and <ref type="bibr" target="#b45">Leitner (2016)</ref> focused on the association between financing constraints and SME growth in cases of 10 New Member States (NMS-10) of the EU, Turkey, and the Western Balkans, whereas we investigate both firm-and country-specific determinants of SME financial obstacles and examine the effects of financing constraint on firm growth in the selected non-EU member SEE economies <ref type="bibr">(Albania, Bosnia and Herzegovina, Macedonia, Montenegro, Serbia, and Kosovo)</ref> or Western Balkans only. Referring to the sample of selected economies, we argue that due to the differences in financial infrastructure; regulatory, administrative, and business environment; and other factors, SMEs in EU member and nonmember states have different growth obstacles and opportunities. We claim that focusing on the non-EU member SEE country group with almost the same level of development and similar economic path exposes determinants of financing constraints and access to finance-growth relationship of SMEs in the region. Furthermore, previous studies have examined the SME financing in Western Balkans in the context of large number of developing countries. For instance, <ref type="bibr" target="#b7">Barth, Lin, and Yost (2011)</ref> studied SME financing in 18 developing economies, <ref type="bibr" target="#b25">Dong and Men (2014)</ref> included 119 emerging economies in their analysis, <ref type="bibr" target="#b3">Ayyagari, Demirgüç-Kunt, and Maksimovic (2011)</ref> examined the association between access to external financing and firm innovation in 47 developing countries, and <ref type="bibr" target="#b5">Ayyagari, Juarros, Martinez Peria, and Singh (2016)</ref> investigated the impact of access to finance on employment growth in 70 developing economies. Due to economic, political, administrative, and other differences between developing countries, in investigating financial constraint and SME growth, our study comes up with findings that are specific to Western Balkans particularly.</p><p>The results of the empirical analysis indicate that financial constraints are significantly detrimental to SME growth in the selected SEE countries. Contrary to most previous findings, but in line with recent empirical evidence in the case of the same region, a significant positive association between firm age and financial constraint level was found and interpretations were provided. It was also found that among country-specific factors, more concentrated banking sector adversely affects access to financing for SMEs, and a positive relation between domestic credit provided to private sector and access to financing was found. SMEs operating in economies with higher per capita gross domestic product (GDP) reported less growth, whereas better regulatory environment was associated with higher growth rate. Although firm size had a statistically insignificant effect on access to finance, larger firms report higher growth, and a negative relationship between foreign ownership, age, and growth rate was evidenced and implications were given.</p><p>The structure of the article is as follows: Section "Literature Review" reviews the relevant literature. Sections "Method" and "Results and Discussion" present the data, the statistical properties of the sample, the methodology, and discussion of the results. Finally, the results of the robustness check are provided, and the limitations and conclusion of the study are discussed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head><p>Although a large body of literature presents consistent evidence that a low level of access to external financing is a robust growth constraint on, and obstacle to, SMEs <ref type="bibr" target="#b2">(Ayyagari, Demirgüç-Kunt, &amp; Maksimovic, 2008;</ref><ref type="bibr" target="#b12">Beck, Demirgüç-Kunt, &amp; Levine, 2005;</ref><ref type="bibr" target="#b36">Hashi &amp; Toçi, 2010)</ref>, some recent studies argue that no relationship exists between access to financing and firm growth in some developing economies <ref type="bibr" target="#b15">(Beck, Lu, &amp; Yang, 2015)</ref>. Apart from that, Regasa, Roberts, and Fielding (2017) evidenced a negative relationship between access to external financing and SME growth in Ethiopia. Furthermore, it is also documented that more advanced economies with larger banking systems and liquid equity markets allow firms to grow faster <ref type="bibr" target="#b23">(Demirgüç-Kunt &amp; Maksimovic, 1998)</ref>, whereas in economically less developed countries, financing obstacles, especially high interest rates, collateral requirements, and bureaucracy are detrimental to the growth of SMEs <ref type="bibr" target="#b34">(Hashi, 2001;</ref><ref type="bibr" target="#b45">Leitner, 2016)</ref>. <ref type="bibr" target="#b35">Hashi and Krasniqi (2011)</ref>, employing ordinary least squares (OLS) regression and using data from the Business Environment and Enterprise Survey (BEEPS) in cases of three Central European <ref type="bibr">(Poland, Hungary, Czech Republic)</ref> and three SEE countries (Albania, Macedonia, Serbia, and Montenegro), argued that differences in access to external financing between country groups were related to the growth stages of SMEs and levels of institutional development. <ref type="bibr" target="#b36">Hashi and Toçi (2010)</ref>, applying the tobit and logit models to BEEPS data, examined firm-specific determinants of SMEs' financing constraints in SEE. The authors concluded that compared with large firms, SMEs are more financially constrained, relying mostly on internal financial sources because their loan applications are more likely to be refused. <ref type="bibr" target="#b45">Leitner (2016)</ref> investigated the impact of financial obstacles and other control variables on growth of SMEs in the NMS-10, Turkey, and Western Balkan economies in pre-and post-financial crisis. The findings emphasize that financial obstacles were more detrimental to the employment growth of SMEs in the Western Balkans than in the NMS-10 economies and Turkey.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Firm-Specific Determinants of Financial Constraints</head><p>In the literature, it is widely evidenced that the financial constraint levels of SMEs are determined by firm characteristics and country-specific factors. <ref type="bibr" target="#b7">Barth et al. (2011)</ref>, <ref type="bibr" target="#b36">Hashi and Toçi (2010)</ref>, <ref type="bibr" target="#b25">Dong and Men (2014)</ref>, and other relevant studies that have examined the financing patterns and determinants of SMEs' access to external financing have documented that firm size, accounting information transparency, age, and ownership type are mostly considered to be the firm-specific attributes related to financing constraints.</p><p>Although <ref type="bibr" target="#b48">Mateev, Poutziouris, and Ivanov (2013)</ref> argue that the differences in financing decisions among small firms in different industries are likely to be due to firm characteristics rather than industrial differences, in Western Balkan economies, access to financing seems to have a more severe impact on the performance of manufacturing firms than on the performance of their counterparts in the service sector <ref type="bibr" target="#b43">(Kresic, Milatovic, &amp; Sanfey, 2017)</ref>. SMEs in industries with a higher proportion of fixed assets mostly apply for longterm loans <ref type="bibr" target="#b39">(Johnsen &amp; Richard, 2005)</ref>; firms operating in the wholesale and retail sectors use short-term debt <ref type="bibr" target="#b49">(Menike, 2015)</ref>; and relatively profitable SMEs prefer internal financing. Examining the determinants of financing obstacles on a sample of more than 10,000 firms, <ref type="bibr" target="#b11">Beck, Demirgüç-Kunt, Laeven, and Maksimovic (2006)</ref> found that firms in the manufacturing, agriculture, and construction industries face greater financing constraints. In addition, domestic SMEs are more financially constrained than their foreign-owned counterparts <ref type="bibr" target="#b64">Wang, 2016)</ref>. <ref type="bibr" target="#b7">Barth et al. (2011)</ref> evidence that foreignowned small firms are less risky, whereas domestic small firms are crowded out of domestic financial market, and in economies where banking sector is dominated by foreign banks, informational disadvantages cause them to prefer relatively more transparent foreign-owned firms. <ref type="bibr" target="#b36">Hashi and Toçi (2010)</ref> found mixed results indicating that SMEs with foreign ownership in SEE rely less on commercial bank credits than their domestic counterparts, and at the same time, they do not rely more on internal funds. Such an association may be backed up by the fact that foreign-owned firms in developing countries, especially those that originated from developed economies, may obtain financial resources through their parent firms located in countries with more efficient financial systems. Regarding firm age and access to external financing,  and <ref type="bibr" target="#b18">Berger and Udell (2006)</ref> argue that as younger firms do not have a credit track record, they are usually characterized by informational opaqueness, which leads to reluctance on the part of financial institutions to lend to them. The findings of later studies by <ref type="bibr" target="#b19">Chakravarty and Xiang (2009)</ref>, <ref type="bibr" target="#b4">Ayyagari, Demirgüç-Kunt, and Maksimovic (2013)</ref>, and others support this negative relationship between firm age and financial constraint level. It has been evidenced that younger SMEs rely on internal financing rather than on borrowing from banks <ref type="bibr" target="#b63">(Uyar &amp; Guzelyurt, 2015)</ref>, whereas, as age increases, the share of bank financing gradually increases and informal financing lessens <ref type="bibr" target="#b64">(Wang, 2016)</ref>. In developing economies, younger firms are substantially smaller than older firms <ref type="bibr" target="#b4">(Ayyagari et al., 2013)</ref>. Due to their greater bargaining power, large firms in SEE and Central and Eastern Europe (CEE) have a relatively higher leverage ratio than small firms and use more debt financing, regardless of its maturity <ref type="bibr" target="#b48">(Mateev et al., 2013)</ref>. SMEs, especially small firms, are adversely affected by a lack of collateral, smaller cash flows, an inadequate credit history, high interest rates, a need for special connection with banks, and high-risk premiums in obtaining commercial bank loans <ref type="bibr" target="#b48">(Mateev et al., 2013)</ref>; in contrast, the largest firms are mostly unaffected by these obstacles <ref type="bibr" target="#b13">(Beck, Demirgüç-Kunt, &amp; Maksimovic, 2005)</ref>. Large enterprises are twice as likely to have a credit line and to have a greater usage of banking services than small ones <ref type="bibr" target="#b51">(Musta, 2017a)</ref>, and this pattern is consistent for almost all of the economies in the Western Balkan <ref type="bibr" target="#b52">(Musta, 2017b)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Country-Specific Determinants of Financial Constraints: Economic and Institutional Factors</head><p>SMEs in countries with higher per capita GDP, higher financial deepening ratios <ref type="bibr" target="#b8">(Beck, 2013)</ref>, and greater institutional, legal, and financial system development report lower financing obstacles than their counterparts operating in less developed economies <ref type="bibr" target="#b32">Fowowe, 2017)</ref>. The financing obstacles faced by firms are more growth-constraining and more prevalent in developing economies, while they are not such a severe problem in developed economies <ref type="bibr" target="#b32">(Fowowe, 2017)</ref>. Greater financial deepening and higher per capita GDP levels help to significantly reduce financing constraints on enterprises <ref type="bibr" target="#b50">(Moder &amp; Bonifai, 2017)</ref>, and firms operating in countries with a high GDP per capita report lower levels of financial constraints . Due to the underdevelopment of equity markets in the developing economies of the Western Balkans, as in other developing countries, the banking sector is the main supplier of external financing for firms <ref type="bibr" target="#b47">(Mahmutovic &amp; Coskun, 2016;</ref><ref type="bibr" target="#b48">Mateev et al., 2013)</ref>. Due to the different lending technologies that can be employed by banks, by which they gain a comparative advantage in providing funds to different types of firms, the structure of financial institutions and the overall lending infrastructure have a significant impact on the access SMEs have to financing <ref type="bibr" target="#b18">(Berger &amp; Udell, 2006)</ref>. The effect of the market power of the creditor on the availability of funds for SMEs has been a disputed issue. Examining SME financing in 18 developing economies, <ref type="bibr" target="#b7">Barth et al. (2011)</ref> found that the more consolidated banking sectors reduced the financing obstacles faced by small firms. They argue that creditors with more market power are able to screen borrowers more effectively, which mitigates any reluctance on the part of lenders that stems from SME opaqueness. On the contrary, in more concentrated banking sectors, lenders with greater market power may behave in a more selective way, which constrains small firms more. In emerging economies, commercial banks evaluate the creditworthiness of firms through continual personalized contact with their owners and managers and with the local community in which a firm operates <ref type="bibr" target="#b18">(Berger &amp; Udell, 2006)</ref>. Therefore, as the relationship between a firm and a bank has a significant impact on the probability of a firm's loan application being discouraged or rejected <ref type="bibr" target="#b19">(Chakravarty &amp; Xiang, 2009)</ref>, small domestic niche banks that are closer to a relevant industry may invite applications and provide easier access to financing for smaller firms (de la Torre, Martínez Pería, &amp; Schmukler, 2010). Furthermore, <ref type="bibr" target="#b16">Berger and Black (2011)</ref> evidence that large commercial banks are unwilling to transmit, process, and evaluate soft information through social connections, because they benefit from economies of scale in processing hard information and have a comparative advantage in quantifying and diversifying the risks associated with loans based on the evaluation of hard information. In addition, banks are reluctant to lend under discouraging macroeconomic conditions <ref type="bibr" target="#b44">(Kumar &amp; Rao, 2015)</ref>, because bank performance is affected by macroeconomic factors <ref type="bibr" target="#b0">(Antoun, Coskun, &amp; Georgievski, 2018)</ref>. Higher inflation rates are associated with relatively weakly developed financial systems <ref type="bibr" target="#b10">(Beck, Demirgüç-Kunt, &amp; Honohan, 2009)</ref>. In environments with fixed transaction costs, SMEs requiring relatively smaller loans face the burden of high transaction costs  and high-risk premiums due to high inflation and macroeconomic instability. SMEs operating in a high-inflation environment might substitute, if they are available, leasing, the development of financial sources, and equity financing for debt <ref type="bibr" target="#b14">(Beck et al., 2008)</ref>. Although bank finance is the most prevalent type of external financing, high interest rate is one of the common reasons why SMEs cannot apply for bank credits <ref type="bibr" target="#b2">(Ayyagari et al., 2008)</ref>. Consequently, more than half of the firms report high interest rate as the major obstacle in accessing external finance . In developing economies with underdeveloped equity market, SMEs depend on short-term debts <ref type="bibr" target="#b44">(Kumar &amp; Rao, 2015)</ref>; consequently, more efficient debt market functioning provides more credit opportunities and mitigates the financial constraints of small firms.</p><p>The expected benefits of financial sector enhancements on small business lending are not achievable unless regulatory and institutional developments reach a certain threshold <ref type="bibr" target="#b7">(Barth et al., 2011;</ref> and good government policy nurtures entrepreneurial culture <ref type="bibr" target="#b53">(Nasir, Al Mamun, &amp; Breen, 2017)</ref>. First, the lending policies of banks differ, in part due to regulatory and supervisory differences <ref type="bibr" target="#b17">(Berger &amp; Udell, 1998)</ref>. Second, a better regulatory environment and the protection of investors' rights, regardless of the investor type, promote investors' willingness to provide capital, which has a positive effect on access to external financing <ref type="bibr" target="#b55">(Nofsinger &amp; Wang, 2011)</ref>. Moreover, effective regulation of the business environment, efficient contract enforcement, and a well-functioning legal system mitigate the effects of information asymmetry on creditor-borrower relationships, and better credit rating regulation helps with creditors' evaluations of borrowers <ref type="bibr" target="#b7">(Barth et al., 2011)</ref>. Hence, the literature evidences that a better regulatory environment has a positive impact on SMEs' access to external financing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Financial Constraints and SME Growth</head><p>It is widely evidenced that firms, especially SMEs, with easier access to external financing report higher employment growth <ref type="bibr" target="#b5">(Ayyagari et al., 2016)</ref>. Although financing is the greatest growth-constraining obstacle for firms <ref type="bibr" target="#b32">(Fowowe, 2017)</ref>, its effect on growth differs by firm size, leaving small firms most affected <ref type="bibr" target="#b2">(Ayyagari et al., 2008;</ref>. Among other obstacles, collateral requirements, bank paperwork and bureaucracy, the need for special connections with bank officials, and interest rates are the greatest impediments to the growth of SMEs, more so than to the growth of large enterprises . What is more significant, financial obstacles hamper both the employee and asset growth of Albanian <ref type="bibr" target="#b34">(Hashi, 2001</ref>) and all of the Western Balkan SMEs more than those of their established counterparts in more developed economies <ref type="bibr" target="#b45">(Leitner, 2016)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Control Variables</head><p>In analyzing the impact of financial constraint on firm growth, we control for other firm-specific (manufacturing, trade, foreign ownership, and age) and country-specific (GDP as a proxy for economic development, domestic credit as a proxy for financial intermediation, and regulation as a proxy for regulatory efficiency of private sector) variables. Previous findings evidence that in developing countries, a small firm operating in manufacturing sector cannot grow over time relative to their counterparts in other industries, most likely because of inefficient regulations and market imperfections. Numerous studies have found that size, age, and ownership are important determinants of firm growth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data and Descriptive Statistics</head><p>In this study, we used cross-sectional data obtained from the fifth round of the Business Environment and Enterprise Survey (BEEPS V), which is a joint project of the European Bank for Reconstruction and Development (EBRD) and the World Bank Group (WBG). The fifth round of the survey, which was updated as of August 2017, was undertaken in 2012-2016 and covered 16,600 firms in 32 countries. It is the most recent available cross-country firm-level data that covers the information on the characteristics and performance of firms and on features of the business environment, including physical and financial infrastructure, and the legal, administrative, political, and regulatory systems in different economies. The population of the survey is nonagricultural economy, and industrial distribution (based on the classification of International Standard Industrial Classification of All Economic Activities [ISIC], Revision 3.1) includes all manufacturing, service (hotels, restaurants, transport, storage, communications, and IT), and construction sector, wholesale and retail. Government departments including education, health, police, military, and other similar activities were not included in the survey. Moreover, due to government price regulations and prudential supervisions, establishments operating in financial intermediation, mining and real estate, and all public or utilities sectors were excluded from the survey. It was stated that the available sampling weights accounted for the varying probabilities of selection across different strata, and sampling methodology and survey instruments lead to obtain unbiased estimates for subdivisions with known level of precision (European Bank for Reconstruction and Development and World Bank, 2013). In addition, the macroeconomic data of individual countries were acquired from the World Development Indicators data set of the WBG (2014), and the World Governance Indicators (WGI) by <ref type="bibr" target="#b40">Kaufmann, Kraay, and Mastruzzi (2016)</ref> served as a source of data for measuring the regulatory quality of the countries in the sample. Although the BEEPS V is cross-sectional survey data that had been collected during 2012-2016 in 32 developing economies, firms in countries in our sample are surveyed in 2013 (European Bank for Reconstruction and Development and World Bank, 2014), and country-specific data for the analysis are also obtained for this corresponding year.</p><p>Although the definition of small and medium-sized enterprise differs from country to country, especially in developing economies, and although regulations are inconsistent and national statistics are limited, most cross-country studies define an SME as an enterprise with up to 250 permanent employees <ref type="bibr" target="#b1">(Ayyagari, Beck, &amp; Demirgüç-Kunt, 2007;</ref><ref type="bibr" target="#b68">Yaldiz Hanedar, Broccardo, &amp; Bazzana, 2014)</ref>. For the purpose of this study, based on the common cutoff criteria reported in the literature, enterprises with more than 250 employees were excluded from the analysis. After controlling for missing values and eliminating the large firms, the final sample totaled 1,520 SMEs. The distribution of observations across countries is as follows: Albania-264 firms (16.5% of the overall sample), Bosnia and Herzegovina-342 (21.39%), Macedonia-349 (21.83%), Montenegro-174 (8.88%), Serbia-329 (20.5%), and Kosovo-174 (10.88%).</p><p>In keeping with the literature <ref type="bibr" target="#b7">(Barth et al., 2011;</ref><ref type="bibr" target="#b36">Hashi &amp; Toçi, 2010)</ref>, financial constraint was measured based on the responses of firms' managers to the question, "Is access to finance, which includes its availability and cost, interest rates, fees, and collateral requirements, an obstacle to the operation of this establishment," which ranged from 0 (no obstacle) to 4 (very severe obstacle).</p><p>Following <ref type="bibr" target="#b64">Wang (2016)</ref> and <ref type="bibr" target="#b35">Hashi and Krasniqi (2011)</ref> for the purpose of the analysis, the values of levels of financial constraint were converted into dummy variables; "major obstacle" and "very severe obstacle" were scored as 1; otherwise, the score was 0.</p><p>FirmSize is the number of full-time employees in the enterprises. Age is the number of years during which an enterprise has been operating in the selected country. Firm age was measured by subtracting the firm's year of establishment from the year when the survey was administered. Agesq is the square of the Age variable. Dummy variables for manufacturing and trade industries were given a value of 1 if a firm operated in the manufacturing or trade sectors (wholesale and retailing), and otherwise 0. The service sector served as a base dummy. Foreign ownership is the percentage of a firm's shares that belongs to foreign owners. To check the robustness of the outcomes, we measure firm growth in terms of employment growth and fixed asset growth. Following previous studies (for instance, <ref type="bibr" target="#b24">Dinh, Mavridis, &amp; Nguyen, 2012;</ref><ref type="bibr" target="#b32">Fowowe, 2017;</ref><ref type="bibr" target="#b45">Leitner, 2016;</ref><ref type="bibr" target="#b57">Rahaman, 2011)</ref>, employment growth is operationalized as the difference between logarithm of current permanent employee number and permanent employee number 3 years ago divided by difference between survey years − 3 (employ-</p><formula xml:id="formula_0">ment growth = [(log(Number of employee i,t -Log(Number of Employee i,t−3 ))/3]).</formula><p>In the relevant literature, it was argued that such operationalization diminishes the outlier effect on firm growth. Moreover, it prevents the skewness in employment size distribution, which is typical for SME data sets of developing economies because they consist of micro/ small firms with a few employees and medium firms with hundreds of employees. Although firm size and growth rate can be measured in several ways, including by sales, total assets, and fixed asset values, employee growth is the most appropriate measurement of firm growth (at least in developing economies), for the following reasons. First, the public unavailability of the financial statements of SMEs makes it difficult to use asset values to measure firm size. Second, as sales amounts are more likely to be underreported and contaminated by price fluctuations and inflation rates, employment growth is a reliable measure of firm growth <ref type="bibr" target="#b42">(Krasniqi &amp; Mustafa, 2016)</ref>. Furthermore, fixed asset growth measurement is derived from responses of firms to the question, "In fiscal year, did this establishment purchase any fixed assets, such as machinery, vehicles, equipment, land, or buildings?" If the firm obtained any of these fixed assets, the value takes 1, otherwise 0.</p><p>As an economic development indicator for the selected countries, the logarithmic transformation of GDP per capita (LogGDP) was employed. Inflation (measured by the consumer price index) is the annual change in the cost of acquiring a basket of consumer goods and services. Bank concentration (Bankconc) is the assets of three largest banks as a share of the assets of all the commercial banks in a country. Regulation reflects the quality of government regulatory policies and their enforcement for private sector development. The unit of measurement for regulation, based on a standard normal distribution, with a mean value of 0 and a standard deviation of 1, ranged between -2.5 (weak regulatory governance policies) and + 2.5 (strong regulatory governance). Domestic credit refers to financial resources provided to private sector by financial sector, including finance and leasing companies, insurance firms, moneylenders, and other financial institutions. It is measured as a total domestic credit to private sector as percentage of GDP. Interest rate is the real lending interest rate measured by the GDP deflator and adjusted for inflation. <ref type="table" target="#tab_0">Table 1</ref> presents the descriptive statistics for the variables used in the analysis. As the table shows, most of the variables are dummies and the logarithmic forms of real values. The sample consists of purely domestic (0% foreign ownership), foreign-owned (100% foreign ownership), and partially foreign-owned firms. The average age of the selected firms is 16 years. Average inflation, bank concentration, and regulation indicators are 2.84%, 58.34%, and 0.08, respectively.</p><p>The cross-country statistics for the country-specific variables are given in <ref type="table">Table 2</ref>. The per capita GDP varies from US$4,412.34 (Albania) to US$7,186.81 (Montenegro). The mean value of the inflation rate is 2.84%, ranging from -0.087% (Bosnia and Herzegovina) to 7.69% (Serbia). There are variations in the banking sector concentration of the commercial banks across the region. Serbia (43.01%) and Kosovo (89.94%) have the lowest and highest levels of banking sector concentration, respectively. The private sector regulation indicator is comparatively low for Bosnia and Herzegovina, Kosovo, and Serbia, the highest level being observed in Macedonia. The highest percentage domestic credit to private sector as percentage of GDP is provided in Bosnia and Herzegovina and Montenegro, 54.85% and 53.05%, respectively. In Kosovo, the credit to private sector (34.93%) is low among other economies in the region.</p><p>The value of interest rate is the highest in Albania (9.51%) and the lowest in Serbia (3.64%). <ref type="table" target="#tab_1">Table 3</ref> reports the correlation coefficients for the variables we are considering. A negative correlation is observed between both employment growth and fixed asset growth and the financial constraint levels of the firms. SMEs operating in the manufacturing industry seem to perceive access to external financing as a greater obstacle in comparison with Note. GDP = gross domestic product.</p><p>their counterparts in the service and trade sectors. Older SMEs and enterprises operating in economies with high levels of concentration in the banking sector seem to perceive access to external financing as a serious obstacle. A negative linear association between LogGDP, the inflation and regulation indicator, and financial constraints is observed. Moreover, large firms tend to be older. In economies where the regulation indicator is high, the banking sector is more concentrated. Bank concentration and inflation variables are negatively correlated with domestic credit; in economies where inflation and bank concentration are low, domestic credit to private sector as percentage of GDP is high. Interest rate is negatively and relatively highly correlated with inflation and LogGDP.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model Specification</head><p>The main interest of the analysis lies in how constraint on access to external financing affects the growth of firms. Primarily, to examine the factors that financially constrain small firms, the constraint level was estimated as a function of the firm level and country-specific independent variables (Equation 1). As has been done in most previous studies <ref type="bibr" target="#b7">(Barth et al., 2011;</ref>, considering the dummy nature of the independent variable (Financial constraint), probit regression was employed. Moreover, to test against the same set of parameters, we reran the ordered probit regression by changing the dummy values of the financial constraints variable with its ordinal values (0 = no obstacle, 1 = minor, 2 = moderate, 3 = major, 4 = severe obstacle):</p><formula xml:id="formula_1">Financialconstraint - = + + α β γ Firm characetristics Country spe i k , c cific determinants k ik + ε , ,<label>(1)</label></formula><p>where Firm characteristics is a vector of the firm-specific variables reported by firm i in country k, which includes the industry in which the firm operates (manufacturing or trade), foreign ownership, age, age squared, and firm size. Countryspecific determinants consist of the logarithm of GDP per capita, indicators for the bank concentration, inflation, regulation, domestic credit, and interest rate. In the second stage, we analyzed the extent to which obstacles to access external financing constrained the growth, in terms of employment and fixed asset change, of the selected SMEs. Along with financial constraint, we controlled for the impact of other firm-and country-specific variables on firm growth. The value of the variance inflation factor (VIF), which was 2.13, confirms that the estimation does not suffer from a multicollinearity problem. Furthermore, the Breusch-Pagan/Cook-Weisberg test for constant variances of residuals was performed, and the results confirmed the heteroskedasticity of the error terms. As the data under consideration suffered from heterogeneity problem, in addition to OLS with clustered standard errors by country, feasible generalized least squares (FGLS) specification was employed for employment growth estimates <ref type="bibr" target="#b65">(Wooldridge, 2010)</ref>. Moreover, as fixed asset growth is a dummy variable, probit specification was employed. To observe the prevailing impact of financial constraints and to control for the effects of other selected variables on firm growth, the specification given in Equation 2 was employed: (2) As the omitted country-specific factors may cause error terms to be correlated for firms within countries, we clustered standard errors by country. To control for omitted-variable bias, country dummies were included in the analysis. Furthermore, we explore the impact of some country-specific factors on financial constraint perception level of SMEs. To avoid the multicollinearity problem, the country dummies were replaced with particular country-specific variables, and separate regressions were run with each of them.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and Discussion</head><p>Column 1 of <ref type="table" target="#tab_2">Table 4</ref> presents only the firm-specific factors of the financing constraint perceived by SMEs. SMEs operating in the trade sector reported fewer financing obstacles than their counterparts in the service and manufacturing industries. This may be backed up by the fact that in the Western Balkans, the wholesale and retail trades realize the highest revenues in comparison with other economic activities <ref type="bibr" target="#b26">(Džafić, 2014)</ref>. In economies where external financial sources are unavailable, SMEs with higher profits are able to satisfy their financial needs internally and report fewer financial constraints. Findings show that financing obstacles increase as a firm ages. Although we found a positive association between a firm's age and its financial constraint levels, which runs contrary to most previous findings, this is, in fact, in line with recent empirical evidence from the same region, the Western Balkans <ref type="bibr" target="#b36">(Hashi &amp; Toçi, 2010;</ref><ref type="bibr" target="#b50">Moder &amp; Bonifai, 2017;</ref><ref type="bibr" target="#b54">Nizaeva &amp; Coskun, 2018)</ref>. <ref type="bibr" target="#b50">Moder and Bonifai (2017)</ref> argued that although older firms may have easier access to external financing, their owners do not apply for loans, and they report greater financing obstacles because of their pessimistic views about the availability of external financing and the proper functioning of the banking system. The statistically insignificant effect of firm size on the financial constraint levels of SMEs implies that both small and medium-sized firms are affected by almost the same factors. We do not find significant association between foreign ownership and perception of financial constraints. <ref type="bibr" target="#b56">Pula (2014)</ref> evidenced the resilience of Western Balkan economies on import, remittances, and capital inflow from EU economy, and dramatic changes of these flows in the postcrisis period have direct impact on economy of the "periphery." Moreover, the observed credit expansion in SEE in the precrisis period was financed by foreign sources; as financial cycle turned, banks faced high outflows of foreign funds that could not be financed by their liquid assets. In the period 2008-2014, the Central, Eastern, and Southeastern Europe (CESEE) region experienced peak of credit contraction or at least stagnation <ref type="bibr" target="#b33">(Geršl &amp; Seidler, 2015)</ref>. In the literature, it has been evidenced that foreign-originated SMEs in emerging countries are financed through their parents in developed economies, or due to their less riskiness than their domestic counterparts, they are financed by domestic banks. However, in the postcrisis period, because of economic situation, foreign ownership feature of SMEs in SEE may be insignificantly or weakly (at 10% level in column 2) associated with their financial constraint level.</p><p>In the next regressions, presented in columns 2-7 of <ref type="table" target="#tab_2">Table 4</ref>, in addition to firm characteristics, we controlled for country-specific variables that might influence the SMEs' perceptions of financial constraints. As reported, among firm-specific attributes, only age seems to be a robust predictor of financing obstacles. Among countryspecific variables, except bank concentration and credit to private sector, we found no significant relation between macroeconomic, regulative factors and financial constraint perception level of SMEs. The recent studies evidenced that economies in CESEE experienced a common credit cycle, and in the precrisis period, on average credit-to-GDP ratio increased by about 30% points. The foreign ownership of banks with access to liquidity, which contributed to low interest rates, supported the domestic credit demand boom <ref type="bibr" target="#b56">(Pula, 2014)</ref>. Iwanicz-Drozdowska, Bongini, Smaga, and Witkowski (2019) find evidence of a negative effect of bank credit on economic growth. Authors argue that when the acceleration of credit supply outpaces the speed of credit growth, excessive credit becomes a drag on economic growth. In turn, such trend led to the macroeconomic and financial imbalances. Once financial cycle turned and economies decelerated, households, firms, and banks were left highly indebted <ref type="bibr" target="#b33">(Geršl &amp; Seidler, 2015)</ref>. As income fell, house prices dropped and borrowers ended up highly indebted; consequently, credit demand declined. At the same time, on the supply side, reversal of capital flows to the region reduced the capacity of banks to lend and led to tightening of lending policies <ref type="bibr" target="#b30">(Everaert et al., 2015)</ref>. Generally, better economic performance of countries is associated with favorable institutional, financial, and business environment. Therefore, it was expected that SMEs operating in higher per capita GDP, better macroeconomic environment with low inflation and interest rates, and regulative environment report lower financing obstacles. However, credit bubble burst and growth in nonperforming loans may have loosened the association between macroeconomic indicators and financial constraint perceived by small firms in the region.</p><p>The regression results show a strong statistically significant effect of bank concentration on the financing constraint levels of SMEs. The economic justifications of this result are as follows. On the suppliers' side, due to the opaqueness of SMEs, there is a high information cost burden involved in collecting and evaluating "soft" information on the part of the larger banks.</p><p>On the demand side, as the banking system becomes more concentrated, banks with more market power develop a selective attitude toward SMEs, which financially constrains them more. In SEE, particularly in Bosnia and Herzegovina, the banking sector is dominated by large foreign banks; this consolidation strengthened by foreign direct investment  <ref type="bibr">2,189.8 −2,169.75 −2,188.24 −2,190.13 −2,187.06</ref> Note. Clustered standard errors by country are given in parentheses. *Significance of the coefficient at 10%. **Significance of the coefficient at 5%; ***Significance of the coefficient at 1%.</p><p>(FDI) through acquisition of small private banks <ref type="bibr" target="#b37">(Ilgün &amp; Coşkun, 2009)</ref>. Accordingly, higher concentration and less competition in the banking sector lead to higher financing constraints on SMEs. Moreover, SMEs operating in economies with higher domestic credit provided to private sector as percentage of GDP report lower financial constraint than their counterparts operating in countries with less credit provisions. The outcome makes sense both theoretically and practically, which means in countries with more domestic credit provided to private firms as percentage of GDP, there is better credit opportunities, which makes SMEs relatively financially less constrained. As reported (8-14 columns of <ref type="table" target="#tab_2">Table 4</ref>), the ordered probit estimates confirmed the above findings. Statistically significant impacts of firm age among firm-specific variables and of other country-specific variables are retained. <ref type="table" target="#tab_3">Table 5</ref> presents estimates of the determinants of SME growth. As mentioned above, for the purpose of the analysis of this study, three different regressions-OLS, FGSL, probit-were run. For each of them, as reported in <ref type="table" target="#tab_3">Table 5</ref>, firm-specific estimates with country dummies and estimates of firm-specific variables together with country-specific controls were given as outcomes of different regressions separately. The OLS and FGLS regression results highlight that financing constraints have a detrimental impact on firm growth. In probit regression where explanatory variables are firm-specific attributes together with country dummies and dependent variables are fixed asset growth dummy, the negative and statistically significant association between growth and financial constraint level is retained. It makes sense that SMEs with lower level of financial constraint perception are more likely to be fixed for further expansion. Only in the last regression, when we include country-specific variables, financial constraint-growth association becomes insignificant. However, the overall findings suggest that SMEs which perceive access to finance (which includes the availability of external funding alternatives, interest rates, collateral requirements, the need for additional payments to bank officials or for special connections with banks) as a major obstacle to their operations experience a lower growth rate than enterprises that have no perceptions of financial constraints. The relation between industry type and employment growth is not statistically significant in OLS and FGLS models.</p><p>Although the manufacturing industry is comparatively more labor-intensive, due to other growth-constraining obstacles, it does not exhibit growth. However, a negative significant association between trade and fixed asset growth was found.</p><p>As our dependent variable takes a value of 1 or 0 depending on whether during the year the establishments had bought fixed asset (machinery, vehicles, equipment, land or buildings) or not, respectively, most probably the response of small enterprises in trade sector took a value of 0, because generally small firms in trade sector, particularly retailers, are not machine-intensive and they may not purchase land and building. A significant negative association between foreign ownership and firm growth was found. Such result is in line with <ref type="bibr" target="#b45">Leitner (2016)</ref>, where a negative link between foreign ownership and both sales and employment growths was found in NMS-10, Turkey, and Western Balkan economies. First, although it may have been possible for foreign-owned SMEs to satisfy their financial need for growth, they may have preferred not to grow due to other factors, such as limited market opportunities, administrative and legal constraints, or macroeconomic and political instabilities in the selected developing countries. <ref type="bibr" target="#b27">Estrin and Uvalic (2014)</ref> evidenced that investment inflows to the Western Balkans can be explained by the size of the domestic economies and their regulatory and institutional quality. Second, in the relevant literature, the less financial constraint of foreign-owned firms has been interpreted by whether their investments are funded by parent companies mostly located in more developed economies or due to their relative transparency that foreign-owned small firms are preferred by banks in host countries, especially where banking sector is dominated by foreign-owned banks. As in postglobal financial crisis and Eurozone debt crisis, most probably, those parent companies in developed economies also faced financial shortage and Western Balkan economies also experienced credit burst, SMEs with foreign ownership were unable to finance their growth opportunities. Moreover, following the crisis, FDIrecipient Balkan countries also experienced significant declines in FDI.</p><p>In line with the previous findings on the selected country group, age had a statistically negative impact on employment growth. Also, nonlinearity in the relationship between age and growth can be observed. These findings are similar to the findings of <ref type="bibr" target="#b67">Xheneti and Bartlett (2012)</ref> and <ref type="bibr" target="#b35">Hashi and Krasniqi (2011)</ref> in the case of SEE economies and Albania, respectively. As discussed above, older firms perceive access to external finance as a serious obstacle to their operations, and SMEs mostly rely on internal sources of financing. Hence, it is worth to discuss that the financial constraint levels of SMEs might depend on their growth stage. Most SME owners raise their initial capital from personal sources, relatives, and friends, and in their early years, they may also be able to finance their initial expansions to some extent with internal sources. However, because internal financing is not adequate for continuous expansions and external sources are usually not available, as firms mature they perceive access to financing as more of a major obstacle. Accordingly, older firms report a low employment growth rate. From another perspective, younger firms grow faster than older firms, because as firms mature, their rate of return to learning and experience diminishes. The statistical significance of the variable Agesq indicates that, after some time, the agegrowth relationship becomes positive, but because the value of the coefficient is significantly small, it takes a long time for this to occur.</p><p>The results show that larger firms report higher growth rates. Although firm size did not have a significant effect on the financial constraint levels of the firms in the selected Western Balkan economies, they possess more bargaining power and more social and political connections, which enable them to overcome growth-constraining obstacles and may have facilitated their growth.</p><p>In economies with higher per capita GDPs, SMEs reported a lower growth rate, whereas a better regulatory environment was associated with higher firm growth. In the literature, there is no consistent evidence that associates a large SME sector with income growth in low-income countries  because the link between the SME sector and economic development is distorted by the institutional efficiency levels of the countries. Even in countries with relatively larger economies and higher per capita income, due to low regulatory or institutional policy efficiency levels, the SME sector may be stagnant or adversely affected, because inefficient regulatory polices dampen competition and negatively affect firm growth. For instance, Serbia and Montenegro have comparatively high GDPs per capita (7,186.81 and 6,353.83 current US dollars, respectively), yet, according to the rankings of institutional efficiency by the WGI (WBG, 2014), they rank far behind a number of other countries in the sample (Albania, Bosnia and Herzegovina, Kosovo, and Macedonia) that have relatively lower per capita GDPs <ref type="bibr" target="#b41">(Kempe, 2016)</ref>. Apart from such internal factors, small open economies may be affected by external economic conditions. In the case of Western Balkan economies, Pula (2014) and Fetahi-Vehapi, Sadiku, and Petkovski (2015) evidenced that after 2008-2009, all Western Balkan countries experienced massive declines in exports to EU. This reduction in export or, in another words, decrease in demand in imported EU economies significantly affected the production amount of firms in the SEE region, ranging from 80% of total export in Macedonia to 23% in Kosovo; on average, two thirds of the region's exports are with the EU <ref type="bibr" target="#b60">(Sanfey &amp; Milatovic, 2018)</ref>. Serbia, an exporter with more laborintensive manufacturing goods and complex export structure, suffered more severely than other economies in the region with basic commodities <ref type="bibr" target="#b56">(Pula, 2014)</ref>. Serbia and Macedonia, as given in <ref type="table">Table 2</ref>, countries relatively with higher GDP per capita in the region, however, due to their higher integration with EU economy probably caused their exporting SMEs to be more negatively affected. Moreover, <ref type="bibr" target="#b56">Pula (2014)</ref> argues that in addition to trade partnership, most SEE economies are remittance dependent on EU economies. Reduction of remittances during the Eurozone crisis also decreased the internal demand for goods in Western Balkans. Consequently, decrease in domestic demand and export opportunities may adversely affect firm growth. The findings of the existing literature consistently evidence the positive association between a better business environment and efficient institutional development and entrepreneurial investment. We found no significant association between firm growth and domestic credit in all specifications. <ref type="bibr" target="#b38">Iwanicz-Drozdowska et al. (2019)</ref> found a negative impact of bank credit on economic growth in CESEE economies. Analyzing the structure of credit provided to private sector, <ref type="bibr" target="#b6">Bahadir and Valev (2017)</ref> argue that convergence of credit levels is stronger for household credits, consisting of consumption and mortgage credits; the enterprise credit is weak between Western and Southeastern Europe, which means that in emerging economies a significant portion of credit to private sector is directed to household credits rather than to cover entrepreneurial financial needs. Household credit is not effective to support economic growth; in some cases, it is even detrimental to it <ref type="bibr" target="#b46">(Leon, 2016;</ref><ref type="bibr" target="#b62">Sassi &amp; Gasmi, 2014)</ref>. Analogous credit characteristics of the economies in the sample are likely to have no significant association with the growth of small firms. Moreover, this insignificance stemmed from the above-mentioned credit crunch in the region.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Robustness Check</head><p>To test for the endogeneity of the financial constraint variable, following <ref type="bibr" target="#b66">Wooldridge (2012)</ref> and <ref type="bibr" target="#b20">Davidson and MacKinnon (1993)</ref>, we used the Durbin-Wu-Hausman test of augmented regression, because OLS and FGLS estimates may be biased because of its potential endogeneity. Augmented regression test can be formulated by including the residual of an endogenous variable as a function of all exogenous variables in the original model. In this specification, there is no restriction; suspected endogenous variable can be continuous or binary, or it may have continuous and discrete characteristics <ref type="bibr" target="#b65">(Wooldridge, 2010)</ref>. To illustrate, it is supposed to have a suspected endogenous variable y 2 and the following simultaneous equations: Assuming that each z n and u 1 are uncorrelated, y 2 is uncorrelated with u 1 if, and only if, u 1 is uncorrelated with v 2 ; this is what we want to test. To do so, equation u v e 1 1 2 1 = + π is constructed, where e 1 and v 2 are uncorrelated, and e 1 has zero mean. u 1 is uncorrelated with v 2 , only if, π 1 0 = , e 1 and v 2 are uncorrelated, and e 1 has zero mean. As v 2 is not observed, we estimate the reduced form of y 2 by OLS and obtain reducedform residuals. Therefore, the following equation is estimated to test null hypothesis, π 1 0 = , using t test:</p><formula xml:id="formula_2">y y z z v error.</formula><p>n n 1 0 1 2 2 1 1 2 = + + + + + + β β β β π</p><p>As a result of the Hausman test, we accept the null hypothesis (π 1 = 0.02, t test = 0.53, p value = .62).</p><p>The correlation coefficient between financial constraint, a suspected endogenous variable, and residuals in Model 2, ε, is .000; the correlation coefficient between residual of first and second models is .003. Therefore, we state that our regression results are consistent and reported findings are robust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations</head><p>Although it is not a new problem in firm-level empirical studies, our analysis is subject to some shortcomings. First, SMEs' financial constraint levels were assessed based on self-reported categories rather than on exact figures obtained from the financial statements of the firms. This was because cross-country, firm-level financial data for SMEs were unavailable. Second, the variable regulation, which served as an indicator of the business environment, was based on the assessments of respondents who may have contributed biased perceptions or exaggerations of some issues. Despite these shortcomings, to the best of our knowledge, this is the only available database that provides cross-country, firmlevel data and research outcomes with some important implications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>This study provides empirical evidence on determinants of the financial constraints of SMEs and the effects of financial obstacles on their growth in the emerging economies of the selected SEE countries. While most previous studies have separately examined the determinants of financial constraints and the impact of financial constraints on firm growth, less attention has been paid to their combined analysis and implications. In response, we attempted to investigate the factors affecting perception of financing constraints and perceived financing constraints as a growth determinant of SMEs. Consistent with related empirical findings, our analysis results indicate that financing obstacles are a significant detriment to SME growth in the Western Balkan region. Moreover, the article identifies firm attributes and countryspecific factors that determine the financial constraint levels of SMEs. Specifically, SMEs operating in the trade sector reported fewer financing obstacles than their counterparts in the service and manufacturing industries. Contrary to most previous findings, but in line with recent empirical evidence in the case of the same region, the findings show that financing obstacles increased as firms got older. Furthermore, when we ran separate regressions that included both firmand country-specific variables, among country-specific factors banking industry concentration and credit to private sector retain the significant association with financial constraints in both probit and ordered probit regressions. Thus, it is worth stating that financial infrastructure including banking industry and credit market is an important factor of access to financing for SMEs. SMEs operating in economies with higher per capita GDP reported less growth rate, whereas better regulatory environment was associated with higher growth rate. Although firm size had statistically insignificant effect on access to finance, larger firms report higher growth, and negative relationship between foreign ownership, age, and growth rate was evidenced. To test whether the financial constraint variable is sensitive to measurement changes, we used both dummy and ordinal values of the variable. Moreover, considering potential endogeneity of the financial constraint variable, the Durbin-Wu-Hausman test of augmented regression was employed, and consistency of our regressions was confirmed.</p><p>SMEs make a substantial contribution to economic development, and they are the main employers in the selected emerging economies. As access to external financing is one of the most robust growth-constraining impediments in this sector, investigating its determinants along with the above discussed firm-and country-specific factors determining firm growth is of great importance to SME sector development polices. Specifically, it is recommended that the selected SEE countries provide more efficient governance, stronger banking sector regulation and supervision, and a better business environment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>876269S</head><label></label><figDesc>GOXXX10.1177/2158244019876269SAGE OpenNizaeva and Coskun research-article20192019 1 Ala-Too International University, Bishkek, Kyrgyzstan 2 American University of the Middle East, Egaila, Kuwait</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Descriptive Statistics for the Variables.</figDesc><table><row><cell>Variable observed</cell><cell>Observation</cell><cell>M</cell><cell>SD</cell><cell cols="2">Minimum</cell><cell>Maximum</cell></row><row><cell>Employee growth</cell><cell>1,548</cell><cell>0.009</cell><cell>0.051</cell><cell cols="2">−0.392</cell><cell>0.393</cell></row><row><cell>Fixed asset growth</cell><cell>1,590</cell><cell>0.458</cell><cell>0.498</cell><cell>0</cell><cell></cell><cell>1</cell></row><row><cell>Financial constraint</cell><cell>1,541</cell><cell>0.1940</cell><cell>0.3955</cell><cell>0</cell><cell></cell><cell>1</cell></row><row><cell>Manufacturing</cell><cell>1,554</cell><cell>0.3359</cell><cell>0.4724</cell><cell>0</cell><cell></cell><cell>1</cell></row><row><cell>Trade</cell><cell>1,554</cell><cell>0.4478</cell><cell>0.4974</cell><cell>0</cell><cell></cell><cell>1</cell></row><row><cell>Foreign ownership</cell><cell>1,552</cell><cell>4.8028</cell><cell>20.2068</cell><cell>0</cell><cell></cell><cell>100</cell></row><row><cell>Age</cell><cell>1,541</cell><cell>16.1291</cell><cell>10.8838</cell><cell>4</cell><cell></cell><cell>119</cell></row><row><cell>Agesq</cell><cell>1,541</cell><cell>378.5302</cell><cell>821.319</cell><cell>16</cell><cell></cell><cell>14,161</cell></row><row><cell>FirmSize</cell><cell>1,554</cell><cell>1.1651</cell><cell>0.4519</cell><cell>0</cell><cell></cell><cell>2.3979</cell></row><row><cell>LogGDP</cell><cell>1,554</cell><cell>3.7119</cell><cell>0.0788</cell><cell cols="2">3.5885</cell><cell>3.8565</cell></row><row><cell>Inflation</cell><cell>1,554</cell><cell>2.8406</cell><cell>2.6194</cell><cell cols="2">−0.0866</cell><cell>7.6942</cell></row><row><cell>Bankconc</cell><cell>1,554</cell><cell>58.3403</cell><cell>15.0221</cell><cell cols="2">43.0093</cell><cell>89.9349</cell></row><row><cell>Regulation</cell><cell>1,554</cell><cell>0.0823</cell><cell>0.1652</cell><cell cols="2">−0.0681</cell><cell>0.3343</cell></row><row><cell>Domestic credit</cell><cell>1,554</cell><cell>45.9338</cell><cell>6.5127</cell><cell cols="2">34.9324</cell><cell>54.8572</cell></row><row><cell>Interest rate</cell><cell>1,599</cell><cell>6.310</cell><cell>2.347</cell><cell cols="2">3.64</cell><cell>9.508</cell></row><row><cell cols="3">Table 2. Country-Specific Indicators Across Countries (2013).</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>GDP per capita</cell><cell cols="2">Bank concentration</cell><cell></cell><cell>Domestic</cell><cell></cell></row><row><cell></cell><cell>(current USD)</cell><cell>Inflation (%)</cell><cell>(%)</cell><cell>Regulation</cell><cell>credit (%)</cell><cell>Interest rate (%)</cell></row><row><cell>Albania</cell><cell>4,412.34</cell><cell>1.94</cell><cell>56.58</cell><cell>0.21</cell><cell>39.78</cell><cell>9.51</cell></row><row><cell>Bosnia and Herzegovina</cell><cell>4,748.04</cell><cell>−0.087</cell><cell>44.42</cell><cell>−0.07</cell><cell>54.85</cell><cell>7.28</cell></row><row><cell>Macedonia</cell><cell>5,219.54</cell><cell>2.78</cell><cell>67.80</cell><cell>0.33</cell><cell>46.66</cell><cell>3.83</cell></row><row><cell>Montenegro</cell><cell>7,186.81</cell><cell>2.09</cell><cell>67.11</cell><cell>0.061</cell><cell>53.05</cell><cell>7.09</cell></row><row><cell>Serbia</cell><cell>6,353.83</cell><cell>7.69</cell><cell>43.01</cell><cell>−0.064</cell><cell>43.56</cell><cell>3.64</cell></row><row><cell>Kosovo</cell><cell>3,877.54</cell><cell>1.79</cell><cell>89.94</cell><cell>−0.0335</cell><cell>34.93</cell><cell>8.94</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3 .</head><label>3</label><figDesc>Correlation Matrix.</figDesc><table><row><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>10</cell><cell>11</cell><cell>12</cell><cell>13</cell><cell>14</cell><cell>15</cell></row><row><cell>Employee growth</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Fixed asset growth</cell><cell>.197</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Financial constraint</cell><cell>−.092</cell><cell cols="2">−.005 1.000</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Manufacturing</cell><cell>−.043</cell><cell>.055</cell><cell>.066</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Trade</cell><cell>.033</cell><cell cols="3">−.064 −.073 −.645</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Age</cell><cell>−.137</cell><cell>−.013</cell><cell>.070</cell><cell cols="2">.051 −.032</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Agesq</cell><cell>−.089</cell><cell>−.023</cell><cell>.045</cell><cell cols="2">.073 −.053</cell><cell>.896</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Foreign ownership</cell><cell>−.033</cell><cell cols="2">−.003 −.043</cell><cell>.011</cell><cell cols="2">.036 −.028</cell><cell>.018</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Firm size</cell><cell>.081</cell><cell>.135</cell><cell>.000</cell><cell cols="2">.112 −.079</cell><cell>.199</cell><cell>.211</cell><cell>.168</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>LogGDP</cell><cell>−.096</cell><cell cols="2">−.075 −.097</cell><cell>.002</cell><cell>.074</cell><cell>.106</cell><cell>.091</cell><cell>.035</cell><cell>.046</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inflation</cell><cell>−.075</cell><cell cols="2">−.025 −.017</cell><cell>.009</cell><cell>.029</cell><cell>.070</cell><cell>.081</cell><cell>.023</cell><cell>.025</cell><cell>.617</cell><cell>1</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Bankconc</cell><cell>.126</cell><cell>.099</cell><cell cols="7">.160 −.008 −.061 −.100 −.084 −.061 −.084</cell><cell cols="2">−.396 −.256</cell><cell>1</cell><cell></cell><cell></cell></row><row><cell>Regulation</cell><cell>.085</cell><cell cols="2">−.110 −.020</cell><cell cols="4">.015 −.039 −.104 −.089</cell><cell cols="2">.033 −.114</cell><cell cols="2">−.098 −.124</cell><cell>.398</cell><cell>1</cell><cell></cell></row><row><cell>Domestic credit</cell><cell>−.048</cell><cell cols="3">−.005 −.098 −.011</cell><cell>.073</cell><cell>.110</cell><cell>.058</cell><cell>.024</cell><cell>.066</cell><cell cols="4">.373 −.370 −.606 −.167</cell><cell>1</cell></row><row><cell>Interest rate</cell><cell>.034</cell><cell>−.044</cell><cell>.010</cell><cell cols="6">.003 −.062 −.135 −.097 −.028 −.028</cell><cell cols="2">−.710 −.653</cell><cell cols="3">.251 −.162 −.205</cell><cell>1</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4 .</head><label>4</label><figDesc>Determinants of Financing Constraints Faced by SMEs.</figDesc><table><row><cell></cell><cell>(14)</cell><cell>0.084</cell><cell>(0.078)</cell><cell>−0.056</cell><cell>(0.074)</cell><cell>0.019</cell><cell>(0.006)***</cell><cell>0.001</cell><cell>(0.001)**</cell><cell>−0.002</cell><cell>(0.001)</cell><cell>0.002</cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>−0.011</cell><cell>(0.004)**</cell><cell></cell><cell>−0.497</cell><cell>(0.209)</cell><cell>−0.057</cell><cell>(0.209)</cell><cell>0.587</cell><cell>(0.210)</cell><cell>1.195</cell><cell>(0.210)</cell><cell>1,520</cell><cell>.030</cell></row><row><cell></cell><cell>(13)</cell><cell>0.075</cell><cell>(0.092)</cell><cell>−0.072</cell><cell>(0.077)</cell><cell>0.017</cell><cell>(0.005)***</cell><cell>0.001</cell><cell>(0.001)**</cell><cell>−0.002</cell><cell>(0.002)</cell><cell>−0.001</cell><cell>(0.002)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>−0.001</cell><cell>0.050</cell><cell></cell><cell></cell><cell>−0.039</cell><cell>(0.154)</cell><cell>0.401</cell><cell>(0.151)</cell><cell>1.043</cell><cell>(0.130)</cell><cell>1.646</cell><cell>(0.103)</cell><cell>1,520</cell><cell>.0041</cell></row><row><cell></cell><cell>(12)</cell><cell>0.075</cell><cell>(0.100)</cell><cell>−0.076</cell><cell>(0.093)</cell><cell>0.016</cell><cell>(0.007)**</cell><cell>0.010</cell><cell>(0.010)**</cell><cell>−0.002</cell><cell>(0.002)</cell><cell>−0.001</cell><cell>(0.001)*</cell><cell></cell><cell></cell><cell></cell><cell>−0.333</cell><cell>(0.514)</cell><cell></cell><cell></cell><cell></cell><cell>−0.075</cell><cell>(0.218)</cell><cell>0.365</cell><cell>(0.224)</cell><cell>1.007</cell><cell>(0.251)</cell><cell>1.611</cell><cell>(0.310)</cell><cell>1,520</cell><cell>.005</cell></row><row><cell></cell><cell>(11)</cell><cell>0.105</cell><cell>(0.084)</cell><cell>−0.033</cell><cell>(0.081)</cell><cell>0.019</cell><cell>(0.007)***</cell><cell>0.002</cell><cell>(0.001)**</cell><cell>−0.002</cell><cell>(0.002)</cell><cell>0.010</cell><cell>(0.001)</cell><cell></cell><cell></cell><cell>0.012</cell><cell>(0.005)***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.727</cell><cell>(0.366)</cell><cell>1.171</cell><cell>(0.355)</cell><cell>1.824</cell><cell>(0.328)</cell><cell>2.446</cell><cell>(0.318)</cell><cell>1,520</cell><cell>.014</cell></row><row><cell></cell><cell>(10)</cell><cell>0.077</cell><cell>(0.099)</cell><cell>−0.069</cell><cell>(0.094)</cell><cell>0.017</cell><cell>(0.008)**</cell><cell>0.001</cell><cell>(0.001)**</cell><cell>−0.002</cell><cell>(0.002)</cell><cell>−0.001</cell><cell>(0.001)</cell><cell></cell><cell>−0.009</cell><cell>(0.015)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>−0.056</cell><cell>(0.267)</cell><cell>0.383</cell><cell>(0.270)</cell><cell>1.025</cell><cell>(0.291)</cell><cell>1.629</cell><cell>(0.343)</cell><cell>1,520</cell><cell>.004</cell><cell>−</cell></row><row><cell></cell><cell>(8) (9)</cell><cell>0.114 0.087</cell><cell>(0.081) (0.083)</cell><cell>−0.047 −0.053</cell><cell>(0.066) (0.078)</cell><cell>0.015 0.018</cell><cell>(0.003)*** (0.007)***</cell><cell>0.011 0.010</cell><cell>(0.011)** (0.001)**</cell><cell>−0.001 −0.002</cell><cell>(0.002) (0.002)</cell><cell>−0.001 −0.011</cell><cell>(0.001) (0.001)</cell><cell>−0.939</cell><cell>(1.407)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Yes</cell><cell></cell><cell>0.014 −3.493</cell><cell>(0.066) (5.382)</cell><cell>0.464 −3.053</cell><cell>(0.061) (5.391)</cell><cell>1.127 −2.409</cell><cell>(0.069) (5.417)</cell><cell>1.763 −1.800</cell><cell>(0.114) (5.463)</cell><cell>1,520 1,520</cell><cell>.023 .010</cell><cell>−730.334 −2,186.76</cell></row><row><cell></cell><cell>(7)</cell><cell>0.125</cell><cell>(0.101)</cell><cell>−0.121</cell><cell>(0.099)</cell><cell>0.025</cell><cell>(0.008)***</cell><cell>0.010</cell><cell>(0.001)**</cell><cell>−0.003</cell><cell>(0.002)</cell><cell>0.020)</cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>−0.023</cell><cell>(0.006)**</cell><cell>−0.095</cell><cell>(0.273)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.0254</cell><cell>−730.334</cell></row><row><cell></cell><cell>(6)</cell><cell>0.104</cell><cell>(0.125)</cell><cell>−0.149</cell><cell>(0.065)**</cell><cell>0.021</cell><cell>(0.006)***</cell><cell>0.001</cell><cell>(0.002)**</cell><cell>−0.003</cell><cell>(0.002)</cell><cell>0.010)</cell><cell>(0.011)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.010</cell><cell>(0.055)</cell><cell></cell><cell>−1.150</cell><cell>(0.195)***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.0147</cell><cell>−738.349</cell></row><row><cell></cell><cell>(5)</cell><cell>0.101</cell><cell>(0.139)</cell><cell>−0.155</cell><cell>(0.088)*</cell><cell>0.020</cell><cell>(0.008)***</cell><cell>0.002</cell><cell>(0.000)**</cell><cell>−0.013</cell><cell>(0.002)</cell><cell>−0.001</cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell>−0.140</cell><cell>(0.573)</cell><cell></cell><cell></cell><cell>−1.062</cell><cell>(0.302)***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.0147</cell><cell>−738.339</cell></row><row><cell></cell><cell>(4)</cell><cell>0.148</cell><cell>(0.108)</cell><cell>−0.104</cell><cell>(0.064)*</cell><cell>0.024</cell><cell>(0.007)***</cell><cell>0.001</cell><cell>(0.001)***</cell><cell>−0.002</cell><cell>(0.002)</cell><cell>0.002</cell><cell>(0.001)</cell><cell></cell><cell></cell><cell>0.015</cell><cell>(0.005)***</cell><cell></cell><cell></cell><cell></cell><cell>−2.076</cell><cell>(0.308)***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.0408</cell><cell>−718.792</cell></row><row><cell></cell><cell>(3)</cell><cell>0.103</cell><cell>(0.137)</cell><cell>−0.150</cell><cell>(0.084)*</cell><cell>0.020</cell><cell>(0.008)***</cell><cell>0.001</cell><cell>(0.001)**</cell><cell>−0.003</cell><cell>(0.002)</cell><cell>0.002</cell><cell>(0.001)</cell><cell></cell><cell>−0.010</cell><cell>(0.023)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>−1.054</cell><cell>(0.323)***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.0148</cell><cell>−738.303</cell></row><row><cell></cell><cell>(2)</cell><cell>0.129</cell><cell>(0.110)</cell><cell>−0.116</cell><cell>(0.064)*</cell><cell>0.022</cell><cell>(0.008)***</cell><cell>0.002</cell><cell>(0.001)**</cell><cell>−0.003</cell><cell>0.002)*</cell><cell>0.003</cell><cell>(0.001)</cell><cell>−1.888</cell><cell>(1.446)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>5.862</cell><cell>(5.553)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.0246</cell><cell>−730.945</cell></row><row><cell></cell><cell>(1)</cell><cell>0.159</cell><cell>(0.104)</cell><cell>−0.105</cell><cell>(0.049)**</cell><cell>0.021</cell><cell>(0.004)***</cell><cell>0.010</cell><cell>(0.001)***</cell><cell>−0.002</cell><cell>(0.002)</cell><cell>−0.001</cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Yes</cell><cell>−1.240</cell><cell>(0.090)***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1,520</cell><cell>.056</cell><cell>−707.416</cell></row><row><cell>Financial</cell><cell>constraint</cell><cell>Manufacturing</cell><cell></cell><cell>Trade</cell><cell></cell><cell>Age</cell><cell></cell><cell>Agesq</cell><cell></cell><cell>Foreign</cell><cell>ownership</cell><cell>FirmSize</cell><cell></cell><cell>LogGDP</cell><cell>Inflation</cell><cell>Bankconc</cell><cell>Regulation</cell><cell>Interest rate</cell><cell>Domestic credit</cell><cell>Country dummy</cell><cell>_cons</cell><cell>/cut1</cell><cell></cell><cell>/cut2</cell><cell></cell><cell>/cut3</cell><cell>/cut4</cell><cell>No. of</cell><cell>observations</cell><cell>Pseudo R 2</cell><cell>Log likelihood</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 5 .</head><label>5</label><figDesc>Regression Results for Firm Growth. Clustered standard errors by country are given in parentheses. OLS = ordinary least squares; FGLS = feasible generalized least squares. *Significance of the coefficient at 10%. **Significance of the coefficient at 5%. ***Significance of the coefficient at 1%.</figDesc><table><row><cell></cell><cell>OLS</cell><cell></cell><cell>FGLS</cell><cell></cell><cell>Probit</cell><cell></cell></row><row><cell>Firm growth</cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell><cell>(6)</cell></row><row><cell>Financial constraint</cell><cell>−0.014</cell><cell>−0.011</cell><cell>−0.016</cell><cell>−0.015</cell><cell>−0.208</cell><cell>−0.066</cell></row><row><cell></cell><cell>(0.003)***</cell><cell>(0.005)**</cell><cell>(0.003)***</cell><cell>(0.004)***</cell><cell>(0.076)**</cell><cell>(0.152)</cell></row><row><cell>Manufacturing</cell><cell>−0.03</cell><cell>−0.04</cell><cell>−0.03</cell><cell>0.01</cell><cell>0.080</cell><cell>0.051</cell></row><row><cell></cell><cell>(0.005)</cell><cell>(0.004)</cell><cell>(0.004)</cell><cell>(0.004)</cell><cell>(0.060)</cell><cell>(0.040)</cell></row><row><cell>Trade</cell><cell>0.010</cell><cell>0.003</cell><cell>0.006</cell><cell>0.008</cell><cell>−0.131</cell><cell>−0.115</cell></row><row><cell></cell><cell>(0.006)</cell><cell>(0.006)</cell><cell>(0.005)</cell><cell>(0.006)</cell><cell>(0.036)***</cell><cell>(0.038)***</cell></row><row><cell>Age</cell><cell>−0.002</cell><cell>−0.002</cell><cell>−0.001</cell><cell>0.003</cell><cell>−0.001</cell><cell>−0.001</cell></row><row><cell></cell><cell>(0.001)***</cell><cell>(0.001)***</cell><cell>(0.001)***</cell><cell>(0.002)*</cell><cell>(0.001)</cell><cell>(0.001)</cell></row><row><cell>Agesq</cell><cell>0.001</cell><cell>0.001</cell><cell>0.001</cell><cell>−0.001</cell><cell>−0.003</cell><cell>0.004</cell></row><row><cell></cell><cell>(0.000)**</cell><cell>(0.000)**</cell><cell>(0.000)*</cell><cell>(0.000)</cell><cell>(0.006)</cell><cell>(0.005)*</cell></row><row><cell>Foreign ownership</cell><cell>−0.001</cell><cell>−0.001</cell><cell>−0.001</cell><cell>−0.001</cell><cell>−0.001</cell><cell>−0.001</cell></row><row><cell></cell><cell>(0.000)***</cell><cell>(0.000)***</cell><cell>(0.001)***</cell><cell>(0.003)**</cell><cell>(0.001)</cell><cell>(0.001)</cell></row><row><cell>FirmSize</cell><cell>0.002</cell><cell>0.002</cell><cell>0.001</cell><cell>0.002</cell><cell>0.005</cell><cell>0.005</cell></row><row><cell></cell><cell>(0.001)***</cell><cell>(0.000)***</cell><cell>(0.002)***</cell><cell>(0.001)***</cell><cell>(0.001)***</cell><cell>(0.001)***</cell></row><row><cell>LogGDP</cell><cell></cell><cell>−0.056</cell><cell></cell><cell>−0.009</cell><cell></cell><cell>−1.446</cell></row><row><cell></cell><cell></cell><cell>(0.025)*</cell><cell></cell><cell>(0.005)</cell><cell></cell><cell>(1.163)</cell></row><row><cell>Regulation</cell><cell></cell><cell>0.025</cell><cell></cell><cell>0.027</cell><cell></cell><cell>−0.828</cell></row><row><cell></cell><cell></cell><cell>(0.013)*</cell><cell></cell><cell>(0.010)**</cell><cell></cell><cell>(0.857)</cell></row><row><cell>Domestic credit</cell><cell></cell><cell>0.001</cell><cell></cell><cell>−0.006</cell><cell></cell><cell>0.001</cell></row><row><cell></cell><cell></cell><cell>(0.002)</cell><cell></cell><cell>(0.001)</cell><cell></cell><cell>(0.017)</cell></row><row><cell>Country Dummy</cell><cell>Yes</cell><cell></cell><cell>Yes</cell><cell></cell><cell>Yes</cell><cell></cell></row><row><cell>_cons</cell><cell>0.015</cell><cell>0.229</cell><cell>0.321</cell><cell>2.078</cell><cell>−0.105</cell><cell>5.181</cell></row><row><cell></cell><cell>(0.007)*</cell><cell>(0.102)</cell><cell>(0.272)</cell><cell>(0.977)</cell><cell>(0.079)</cell><cell>(5.161)</cell></row><row><cell>No. of</cell><cell>1,520</cell><cell>1,520</cell><cell>1,520</cell><cell>1,520</cell><cell>1,513</cell><cell>1,513</cell></row><row><cell>observations</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>R 2</cell><cell>.074</cell><cell>.062</cell><cell>.071</cell><cell>.061</cell><cell></cell><cell></cell></row><row><cell>Pseudo R 2</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>.080</cell><cell>.031</cell></row><row><cell>Log pseudolikelihood</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>−958.003</cell><cell>−1,009.22</cell></row><row><cell>Note.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Mirgul Nizaeva</head><p>https://orcid.org/0000-0001-6688-6172</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Determinants of financial performance of banks in Central and Eastern Europe. Business and Economic Horizons</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Antoun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Coskun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Georgievski</surname></persName>
+		</author>
+		<idno>doi:10.15208/ beh.2018.37</idno>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="513" to="529" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Small and medium enterprises across the globe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ayyagari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11187-006-9002-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Small Business Economics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="415" to="434" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">How important are financing constraints? The role of finance in the business environment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ayyagari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/wber/lhn018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The World Bank Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="483" to="516" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Firm innovation in emerging markets: The role of finance, governance, and competition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ayyagari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Financial and Quantitative Analysis</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="1545" to="1580" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Size and age of establishments: Evidence from developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ayyagari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+		<idno type="DOI">https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-6718</idno>
+		<ptr target="https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-6718" />
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Access to finance and job growth: Firm-level evidence across developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ayyagari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Juarros</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Martinez Peria</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Singh</surname></persName>
+		</author>
+		<ptr target="https://ssrn.com/abstract=2748867" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Policy Research Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Catching up or drifting apart: Convergence of household and business credit in Europe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Bahadir</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Valev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Review of Economics &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="101" to="114" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Small and medium enterprise financing in transition economies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Barth</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Yost</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11293-010-9260-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Atlantic Economic Journal</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="19" to="38" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Bank financing for SMEs-Lessons from the literature</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/002795011322500105</idno>
+	</analytic>
+	<monogr>
+		<title level="j">National Institute Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">225</biblScope>
+			<biblScope unit="page" from="23" to="38" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Small and medium-size enterprises: Access to finance as a growth constraint</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbankfin.2006.05.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="2931" to="2943" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Access to financial services: Measurement, impact, and policies. The World Bank Research Observer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Honohan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/wbro/lkn008</idno>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The determinants of financing obstacles</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Laeven</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+		<idno>doi:10.1016/j. jimonfin.2006.07.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="932" to="952" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">SMEs, growth, and poverty: Cross-country evidence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Levine</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10887-005-3533-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Growth</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="199" to="229" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Financial and legal constraints to growth: Does firm size matter?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1540-6261.2005.00727.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="137" to="177" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Financing patterns around the world: Are small firms different</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+		<idno>doi:10.1016/j. jfineco.2007.10.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Financial Economics</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="467" to="487" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Finance and growth for microenterprises: Evidence from rural China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.worlddev.2014.10.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Development</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page" from="38" to="56" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Bank size, lending technologies, and small business finance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">K</forename><surname>Black</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbankfin.2010.09.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="724" to="735" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The economics of small business finance: The roles of private equity and debt markets in the financial growth cycle</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">F</forename><surname>Udell</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0378-4266(98)00038-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="613" to="673" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A more complete conceptual framework for SME finance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">F</forename><surname>Udell</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbankfin.2006.05.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="2945" to="2966" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">What discourages small businesses from asking for loans? The international evidence on borrower discouragement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Chakravarty</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Xiang</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.1344098</idno>
+		<ptr target="http://dx.doi.org/10.2139/ssrn.1344098" />
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Estimation and inference in econometrics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Davidson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Mackinnon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1993" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">What determines the composition of banks&apos; loan portfolios? Evidence from transition countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">De</forename><surname>Haas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ferreira</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Taci</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="388" to="398" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Bank involvement with SMEs: Beyond relationship lending</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>De La Torre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Martínez Pería</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Schmukler</surname></persName>
+		</author>
+		<idno>doi:10.1016/j. jbankfin.2010.02.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="2280" to="2293" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Law, finance, and firm growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Demirgüç-Kunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Maksimovic</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/0022-1082.00084</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="2107" to="2137" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The binding constraint on the growth of firms in developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">T</forename><surname>Dinh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Mavridis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">B</forename><surname>Nguyen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Performance of manufacturing firms in Africa: An empirical analysis</title>
+		<editor>H. T. Dinh &amp; G. R. G. Clarke</editor>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="87" to="137" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Men</surname></persName>
+		</author>
+		<title level="m">SME financing in emerging markets: Firm characteristics, banking structure and institutions. Emerging Markets Finance and Trade</title>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="120" to="149" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Business environment-The case of Western Balkan countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Džafić</surname></persName>
+		</author>
+		<ptr target="https://ideas.repec.org/a/tuz/journl/v12y2014i2p73-89.html" />
+	</analytic>
+	<monogr>
+		<title level="j">Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">FDI into transition economies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Estrin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Uvalic</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/ecot.12040</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Economics of Transition</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="281" to="312" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Business Environment and Enterprise Performance Survey (BEEPS): A report on methodology and observations</title>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>European Bank for Reconstruction and Development</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+	<note>European Bank for Reconstruction and Development and World Bank</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">European Bank for Reconstruction and Development and World Bank</title>
+		<ptr target="http://ebrd-beeps.com/data/2012-2013/" />
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note>Business Environment and Enterprise Performance Survey (BEEPS)</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Does supply or demand drive the credit cycle? Evidence from Central, Eastern, and Southeastern Europe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Everaert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">N X</forename><surname>Che</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">N</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Gruss</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Impavido</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<publisher>International Monetary Fund</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Empirical analysis of the effects of trade openness on economic growth: An evidence for South East European countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fetahi-Vehapi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Sadiku</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Petkovski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Procedia Economics and Finance</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="17" to="26" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Access to finance and firm performance: Evidence from African countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Fowowe</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rdf.2017.01.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Development Finance</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="6" to="17" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Countercyclical capital buffers and Credit-to-GDP gaps: Simulation for central, eastern, and southeastern Europe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Geršl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Seidler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eastern European Economics</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="439" to="465" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Financial and institutional barriers to SME growth in Albania: Results of an enterprise survey. MOST: Economic Policy in Transitional Economies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Hashi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="221" to="238" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Entrepreneurship and SME growth: Evidence from advanced and laggard transition economies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Hashi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">A</forename><surname>Krasniqi</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/A:1013157127524</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Entrepreneurial Behavior &amp; Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="456" to="487" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Financing constraints, credit, rationing, and financing obstacles: Evidence from firm level data in South Eastern Europe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Hashi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">Z</forename><surname>Toçi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Money, banking and financial markets in Central and Eastern Europe: 20 years of transition</title>
+		<editor>R. Matousek</editor>
+		<meeting><address><addrLine>London, England</addrLine></address></meeting>
+		<imprint>
+			<publisher>Palgrave Macmillan</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="62" to="97" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Foreign direct investments in Bosnia and Herzegovina: Banking sector example</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Ilgün</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Coşkun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ala-Too Academic Studies</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="49" to="67" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The role of banks in CESEE countries: Exploring nonstandard determinants of economic growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Iwanicz-Drozdowska</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Bongini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Smaga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Witkowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Post-Communist Economies</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="349" to="382" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Cross-industry differences in SME financing behaviour: An Australian perspective</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Johnsen Richard</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/14626000510594584</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Small Business and Enterprise Development</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="160" to="177" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">The world development indicators</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kaufmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kraay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Mastruzzi</surname></persName>
+		</author>
+		<ptr target="Retrievedfromwww.govindicators.org" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">SME policy in the Western Balkan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Kempe</surname></persName>
+		</author>
+		<ptr target="http://studenttheses.cbs.dk/bitstream/handle/10417/6102/claudia_kempe.pdf?sequence=1" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Small firm growth in a post-conflict environment: The role of human capital, institutional quality, and managerial capacities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">A</forename><surname>Krasniqi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Mustafa</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11365-016-0384-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Entrepreneurship and Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1165" to="1207" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Firm performance and obstacles to doing business in the Western Balkans: Evidence from the BEEPS</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kresic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Milatovic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Sanfey</surname></persName>
+		</author>
+		<ptr target="https://www.ebrd.com/publications/working-papers/firm-performance" />
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">EBRD Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">A conceptual framework for identifying financing preferences of SMEs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Rao</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13215906.2015.1036504</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Small Enterprise Research</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="99" to="112" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Financing constraints and firm growth in emerging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Leitner</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/jeb-2016-0002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Europe. South East European Journal of Economics and Business</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="18" to="40" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Enterprise credit, household credit and growth: New evidence from 126 countries (CREA Discussion Papers No</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Leon</surname></persName>
+		</author>
+		<ptr target="https://ideas.repec.org/p/luc/wpaper/16-17.html" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">The microfinance tale bright and dark side of the narrative Bosnia and Herzegovina experiences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Mahmutovic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Coskun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Regional economic development in the Balkan region</title>
+		<editor>T. Duman, M. Obralic, E. Ilgun, &amp; E. Ergun</editor>
+		<meeting><address><addrLine>Cambridge, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge Scholars</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="322" to="340" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">On the determinants of SME capital structure in Central and Eastern Europe: A dynamic panel analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Mateev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Poutziouris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ivanov</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ribaf.2012.05.002</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Business and Finance</title>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="28" to="51" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Capital structure and financing of small and medium sized enterprises: Empirical evidence from a Sri Lankan survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">M C S</forename><surname>Menike</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Small Business and Entrepreneurship Development</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="54" to="65" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Access to finance in the Western Balkans</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Moder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Bonifai</surname></persName>
+		</author>
+		<ptr target="https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op197.en.pdf?24296e890f7f5c039848046670a9769a" />
+	</analytic>
+	<monogr>
+		<title level="j">European Central Bank Occasional Paper Series</title>
+		<imprint>
+			<biblScope unit="issue">197</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Analyses of financing needs of SMEs by size and age in Albania</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Musta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="30" to="38" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Patterns of constrains in access to finance for SMEs in the Western Balkans region</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Musta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academic Journal of Interdisciplinary Studies</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="209" to="213" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Strategic orientation and performance of SMEs in Malaysia. SAGE Open. Advance online publication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">M N B W M</forename><surname>Nasir</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Al Mamun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Breen</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/2158244017712768</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Determinants of the financing obstacles faced by SMEs: An empirical study of emerging economies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Nizaeva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Coskun</surname></persName>
+		</author>
+		<idno type="DOI">10.14706/JECOSS17725</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic and Social Studies</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="81" to="99" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Determinants of start-up firm external financing worldwide</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Nofsinger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbankfin.2011.01.024</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="2282" to="2294" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Effects of the European financial and economic crisis in Kosovo and the Balkans: Modes of integration and transmission belts of crisis in the &quot;super-periphery</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Pula</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">East European Politics</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="507" to="525" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Access to financing and firm growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Rahaman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="709" to="723" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">Access to financing and firm growth: Evidence from Ethiopia (University of Otago Economic Discussion Papers No. 1707)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Regasa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Fielding</surname></persName>
+		</author>
+		<ptr target="https://www.otago.ac.nz/economics/otago642358.pdf" />
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Connectedness and SME financing in post-communist economies: Evidence from Uzbekistan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ruziev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Midmore</surname></persName>
+		</author>
+		<idno>doi:10.1080 /00220388.2014.989991</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Development Studies</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="586" to="602" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<title level="m" type="main">The Western Balkans in transition: Diagnosing the constraints on the path to a sustainable market economy (Background Paper for the Western Balkans Investment Summit Hosted by the EBRD</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Sanfey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Milatovic</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">26</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">European Bank for Reconstruction and Development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">England</forename><surname>London</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">The effect of enterprise and household credit on economic growth: New evidence from European union countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sassi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Gasmi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Macroeconomics</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="226" to="231" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Impact of firm characteristics on capital structure choice of Turkish SMEs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Uyar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Guzelyurt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Managerial Finance</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="286" to="300" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">What are the biggest obstacles to growth of SMEs in developing countries?-An empirical evidence from an enterprise survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Borsa Istanbul Review</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="167" to="176" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<title level="m" type="main">Econometric analysis of cross section and panel data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>MIT press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Introductory econometrics: A modern approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<ptr target="http://data.worldbank.org/data-catalog/world-development-indicators" />
+		<imprint>
+			<date type="published" when="2012" />
+			<pubPlace>Scarborough, Ontario, Canada</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Nelson Education. World Bank Group.</orgName>
+		</respStmt>
+	</monogr>
+	<note>World Development Indicators</note>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Institutional constraints and SME growth in post-communist Albania</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Xheneti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Bartlett</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/14626001211277424</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Small Business and Enterprise Development</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="607" to="626" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Collateral requirements of SMEs: The evidence from less-developed countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yaldiz</forename><surname>Hanedar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Broccardo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Bazzana</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbankfin.2013.09.019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Banking &amp; Finance</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="106" to="121" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

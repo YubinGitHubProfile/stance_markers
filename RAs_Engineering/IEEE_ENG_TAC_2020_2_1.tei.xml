@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Idiom-Based Features in Sentiment Analysis: Cutting the Gordian Knot</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Irena</forename><surname>Spasi</surname></persName>
+							<email>spasici@cardiff.ac.uk</email>
+							<idno type="ORCID">0000-0002-8132-3885</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Lowri</forename><surname>Williams</surname></persName>
+							<email>williamsl10@cardiff.ac.uk</email>
+							<idno type="ORCID">0000-0002-3794-6145</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Andreas</forename><surname>Buerki</surname></persName>
+							<email>buerkia@cardiff.ac.uk</email>
+							<idno type="ORCID">0000-0003-2151-3246</idno>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science &amp; Informatics</orgName>
+								<orgName type="institution">Cardiff University</orgName>
+								<address>
+									<addrLine>5 The Parade</addrLine>
+									<postCode>CF24 3AA</postCode>
+									<settlement>Cardiff</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">School of English, Communication and Philosophy</orgName>
+								<orgName type="institution">Cardiff University</orgName>
+								<address>
+									<addrLine>Colum Drive</addrLine>
+									<postCode>CF10 3EU</postCode>
+									<settlement>Cardiff</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Idiom-Based Features in Sentiment Analysis: Cutting the Gordian Knot</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TAFFC.2017.2777842</idno>
+					<note type="submission">received 19 May 2017; revised 15 Oct. 2017; accepted 21 Nov. 2017. Date of publication 19 Dec. 2017; date of current version 29 May 2020.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Sentiment analysis</term>
+					<term>natural language processing</term>
+					<term>text mining</term>
+					<term>knowledge engineering</term>
+					<term>feature extraction</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>In this paper we describe an automated approach to enriching sentiment analysis with idiom-based features. Specifically, we automated the development of the supporting lexico-semantic resources, which include (1) a set of rules used to identify idioms in text and (2) their sentiment polarity classifications. Our method demonstrates how idiom dictionaries, which are readily available general pedagogical resources, can be adapted into purpose-specific computational resources automatically. These resources were then used to replace the manually engineered counterparts in an existing system, which originally outperformed the baseline sentiment analysis approaches by 17 percentage points on average, taking the F-measure from 40s into 60s. The new fully automated approach outperformed the baselines by 8 percentage points on average taking the F-measure from 40s into 50s. Although the latter improvement is not as high as the one achieved with the manually engineered features, it has got the advantage of being more general in a sense that it can readily utilize an arbitrary list of idioms without the knowledge acquisition overhead previously associated with this task, thereby fully automating the original approach.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>F IGURATIVE language whose meaning differs from the literal interpretation poses significant challenges to natural language understanding. Idioms are considered to be one of the most prominent types of figurative language. However, there is considerable disagreement about what constitutes an idiom and how idioms might be categorized (for overviews see <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b1">[2]</ref>). From a semantic standpoint, it may be exceptionally difficult to make a conclusive assessment of idiomaticity, because such assessment depends on an often questionable abstraction of word senses away from contexts or on fine judgments of what is literal or metaphorical <ref type="bibr" target="#b2">[3]</ref>. Nevertheless, semantic non-compositionality and a degree of fixedness are often taken as key markers of idioms, e.g., <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b6">[6]</ref>. This definition chimes with the popular understanding of the term idiom and works reasonably well for prototypical cases such as fly off the handle. A distinction is often made between idioms of encoding (where idiomatic knowledge is mainly required to produce an idiom, e.g., long time no see) and idioms of decoding (where idiomatic knowledge is required to understand an idiom, e.g., paint the town red) <ref type="bibr" target="#b7">[7]</ref>, with the latter being of primary interest for natural language understanding.</p><p>In a previous study we investigated the role of idioms in sentiment analysis <ref type="bibr" target="#b8">[8]</ref>, an important subarea of natural language understanding whose aim is to automatically interpret opinions, sentiments, attitudes and emotions expressed in written text <ref type="bibr" target="#b9">[9]</ref>. To estimate the degree to which the inclusion of idioms as features could improve the results of traditional sentiment analysis approaches, we compared our results to two such methods, SentiStrength <ref type="bibr" target="#b10">[10]</ref>, <ref type="bibr" target="#b11">[11]</ref> and Stanford CoreNLP's sentiment annotator <ref type="bibr" target="#b12">[12]</ref>. First, to support the use of idioms as features in sentiment analysis we collected a set of 580 emotionally charged idioms, which were then annotated with sentiment polarity using a web-based crowdsourcing approach. In addition, we manually defined a set of lexico-semantic pattern-matching rules to automate the recognition of idiom occurrences in text. Second, to evaluate the results of sentiment analysis enriched with idiom features, we assembled a corpus of sentences in which these idioms were expressed. Each sentence was annotated with sentiment polarity using the same crowdsourcing approach. These annotations formed the basis for the gold standard, which was used to compare our idiom-enriched sentiment analysis approach against the two baseline methods. The performance was evaluated in terms of precision, recall and F-measure. The relative improvement over the baseline results by 20 and 15 percentage points respectively was found to be statistically significant. While the results were improved significantly across all sentiment polarity classes (i.e., positive, negative and other), the most notable improvement was recorded in the classification of positive sentiments, where recall was improved by 45 percentage points in both experiments without compromising the precision.</p><p>Given the positive findings of the initial study, we are now looking to fully automate the originally proposed sentiment analysis approach enriched with idioms as features.</p><p>The main limitation of the original approach is a significant knowledge-engineering overhead involved in handcrafting lexico-semantic patterns for recognition of idioms and annotation of their polarity. In this study, we describe how we addressed this bottleneck by automating two crucial steps: (1) encoding lexico-semantic patterns that enable idiom recognition in text, and (2) determining idiom polarity. As a result, we fully automated the use of idioms in sentiment analysis and minimized the knowledge engineering bottleneck associated with this task. To demonstrate the effectiveness of the newly proposed approach, we re-ran the experiments described in the original study in order to compare the two cases. <ref type="figure" target="#fig_0">Fig. 1</ref> provides an overview of the originally proposed system, which incorporates idiom as features into sentiment analysis <ref type="bibr" target="#b8">[8]</ref>. We will illustrate its functionality using a set of examples given in <ref type="table" target="#tab_0">Table 1</ref>. We will also use this framework to make references to related work where appropriate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">RELATED WORK</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Extraction of Idiom-Based Features</head><p>Given a sentence, the system will look up occurrences of idioms from a predefined list using a pattern-matching approach that accounts for their lexico-syntactic variations.</p><p>For example, using the patterns associated with idioms given in <ref type="table" target="#tab_1">Table 2</ref>, the system identifies the occurrences of idioms I1-I5 in sentences S1-S5 respectively and interprets them using the crowdsourced sentiment polarity annotations (the last column in <ref type="table" target="#tab_1">Table 2</ref>). Based on the negation recognized in sentence S5, the sentiment polarity associated with idiom I5 is inverted from positive to negative.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Off-the-Shelf Sentiment Analysis</head><p>In parallel, the overall sentiment of the given sentences is calculated using an off-the-shelf approach to sentiment analysis. We provide results of two such systems: SentiStrength <ref type="bibr" target="#b10">[10]</ref>, <ref type="bibr" target="#b11">[11]</ref> and Stanford CoreNLP's sentiment annotator <ref type="bibr" target="#b12">[12]</ref>. If we compare the automatically predicted sentiment polarity to manual annotations (see <ref type="table" target="#tab_0">Table 1</ref>), we can see that all but two predictions were incorrect. SentiStrength uses a rule-based approach to estimate the sentiment of individual words and combines these values to predict the overall sentiment. This approach is not suitable for analyzing idioms in terms of their sentiment, because their meaning, including the associated sentiment, cannot be entirely predicted from the constituent words considered independently <ref type="bibr" target="#b13">[13]</ref>. For example, due to an absence of either positive or negative words in the lexical construction of idioms given in <ref type="table" target="#tab_1">Table 2</ref>, all of them were classified as neutral by SentiStrength even though, as multi-word units, they are strongly polarized in terms of the underlying sentiment.</p><p>Stanford CoreNLP's sentiment annotator, however, uses a deep neural network (DNN) approach to build up sentiment representation of a sentence on top of its grammatical structure. In other words, the sentiment is predicted based on the way in which the words are combined into phrases, which is one of the reasons why this method performed better than SentiStrength on a given set of sentences (see <ref type="table" target="#tab_0">Table 1</ref>). Nonetheless, it still misclassified the sentiment of 3 out of 5 sentences, the main reason being that the use of idioms is relatively infrequent <ref type="bibr" target="#b14">[14]</ref>, <ref type="bibr" target="#b15">[15]</ref>, and, therefore, training data may not contain sufficient representation of idioms for them to be generalized into a sentiment classification model. Focusing on the DNN approach, it has been found that while some features are learnt repeatedly across multiple networks, rare features are not always learnt <ref type="bibr" target="#b16">[16]</ref>. Still, it has been shown that rare features generally improve the quality of text classification <ref type="bibr" target="#b17">[17]</ref>, <ref type="bibr" target="#b18">[18]</ref>. With respect to idioms, our previous study on sentiment analysis identified them as being very predictive but comparatively rare features <ref type="bibr" target="#b8">[8]</ref>. These three facts combined imply that idioms need to be incorporated as features into sentiment analysis   approaches, but that these features would be difficult to learn automatically using machine learning approaches such as DNNs. Therefore, an alternative unsupervised approach is needed in order to systematically incorporate idioms as features into sentiment analysis methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Feature Combination for Supervised Sentiment Classification</head><p>Having extracted two types of sentiment polarities, one related to idioms (see Section 2.1) and the other related to the overall sentiment of the sentence (see Section 2.2), the next step is to combine these features in order to re-calculate the overall sentiment of the sentence by taking idioms into account. Having had no prior knowledge of the significance of idioms for the sentiment classification task, we simply concatenated all features into a single vector (see <ref type="table" target="#tab_2">Table 3</ref> for examples). This approach does not guarantee an optimal performance <ref type="bibr" target="#b19">[19]</ref>, which means that there is further potential for improvement. Nonetheless, the initial results indicated that even this simple approach improved the results of sentiment analysis significantly. A wide range of supervised learning approaches can be used to perform sentiment analysis over the combined feature vectors. We used Weka <ref type="bibr" target="#b20">[20]</ref>, a popular suite of machine learning software, to train a sentiment classification model. The trained model was embedded into the system shown in <ref type="figure" target="#fig_0">Fig. 1</ref> as a sentiment classifier (see bottom right box), where it is used to classify combined feature vectors in terms of their sentiment polarity.</p><p>By this point, we did not refer to specific machine learning algorithms, because the "no free lunch" theorem suggests that there is no universally best learning algorithm <ref type="bibr" target="#b21">[21]</ref>. In other words, the choice of an appropriate algorithm should be based on its performance for the particular problem at hand and the properties of data that characterize the problem. We based our choice on the results of cross-validation experiments on the training dataset, in which a Bayesian network classifier outperformed other methods available in Weka.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Addressing the Resource Bottleneck</head><p>The key functionality of the system, i.e., the extraction of idiom-based features, is supported by a set of lexico-semantic resources (see upper box in <ref type="figure" target="#fig_0">Fig. 1)</ref>. Traditionally, such resources would be created manually by dedicated experts, but crowdsourcing emerged as a viable alternative for creating such resources on a much larger scale <ref type="bibr" target="#b22">[22]</ref>, <ref type="bibr" target="#b23">[23]</ref>, <ref type="bibr" target="#b24">[24]</ref>. In our approach, we used a combination of the two approaches. Idiom formation patterns were hand-crafted by an expert in computational linguistics, whereas their sentiment polarities were crowdsourced from non-experts. The reliability of non-expert annotations has been identified as a risk associated with the use of crowdsourcing <ref type="bibr" target="#b25">[25]</ref>, <ref type="bibr" target="#b26">[26]</ref>. The main strategy for improving the reliability of non-expert annotations appears to be increasing their number <ref type="bibr" target="#b27">[27]</ref>. Combined with the overhead associated with handcrafting lexico-semantic patterns, the need to increase the number of manual annotations per each idiom creates a bottleneck in the acquisition of lexico-semantic resources (see dashed lines in <ref type="figure" target="#fig_0">Fig. 1</ref>).</p><p>In particular, lexicon acquisition is a major bottleneck for sentiment analysis. To address this issue, much of the work in sentiment analysis focused on automating the acquisition of sentiment lexicons. The suggested approaches can be divided into two basic categories-corpus-based and thesaurus-based approaches. Corpus-based approaches rely on a hypothesis that words with the same polarity co-occur in a corpus. Therefore, the polarity of words may be determined from their cooccurrence with the "seed" words of known polarity <ref type="bibr" target="#b28">[28]</ref>, <ref type="bibr" target="#b29">[29]</ref>, <ref type="bibr" target="#b30">[30]</ref>, <ref type="bibr" target="#b31">[31]</ref>. Most of the corpus-based approaches focus on single words. However, the polarity of a phrase may differ from that of its words <ref type="bibr" target="#b32">[32]</ref>, <ref type="bibr" target="#b33">[33]</ref>, which makes these approaches unsuitable for the task of determining the polarity of idioms. To capture non-compositional semantics, a corpusbased approach has been generalized to n-grams <ref type="bibr" target="#b34">[34]</ref>. This approach has been effective in modelling the sentiment of modifier-noun pairs and negations. However, it is not suitable for handling idioms due to their variability (in relation to the use of n-grams) and relative rarity (in relation to the use of distributional semantics).</p><p>Thesaurus-based methods typically explore the structure of a thesaurus (e.g., WordNet <ref type="bibr" target="#b35">[35]</ref>) to determine polarity of unknown words by using their relationships to the "seed" words of known polarity <ref type="bibr" target="#b36">[36]</ref>, <ref type="bibr" target="#b37">[37]</ref>, <ref type="bibr" target="#b38">[38]</ref>, <ref type="bibr" target="#b39">[39]</ref>, <ref type="bibr" target="#b40">[40]</ref>. These approaches rely on a hypothesis that synonyms (e.g., excellent and splendid) have the same polarity, whereas antonyms (e.g., excellent and inferior) have the opposite polarity. Starting with the "seed" set of words, the thesaurus network of lexical relationships is crawled to iteratively propagate the polarity in a rule-based approach. We too explored the use of WordNet for the task of determining the polarity of idioms. We randomly selected 10 percent out of our set of 580 idioms. We then searched WordNet for these idioms. Out of 58 idioms only 7 were found. Our finding concurs with a previous study that concluded that WordNet does not systematically include idiomatic expression <ref type="bibr" target="#b41">[41]</ref>. Therefore, as it stands, the above approaches cannot be applied to idioms.</p><p>In the absence of explicit lexical relationships between some words, further sources of information contained in a thesaurus have been explored. For example, the glosses (i.e., textual definitions) of words have been explored based on a hypothesis that words that have similar glosses have similar polarity <ref type="bibr" target="#b42">[42]</ref>, <ref type="bibr" target="#b43">[43]</ref>. However, these approaches fail to capture contextual polarity of words (e.g., low risk versus low cost). The gloss-based approach has been used in <ref type="bibr" target="#b44">[44]</ref> to generalize their previous approach to determining contextual polarity <ref type="bibr" target="#b32">[32]</ref>, but it still remains limited to adjectivenoun pairs. Nonetheless, the general idea of using glosses to determine the polarity of corresponding lexical items is applicable to idioms. We already concluded that we cannot use WordNet for this purpose. Fortunately, a plethora of readily available pedagogical resources dedicated specifically to the study of idioms can be used instead. In the following section, we describe how we addressed the resource bottleneck by automating two crucial steps: (1) encoding lexico-semantic patterns that enable idiom recognition in text, and (2) determining idiom polarity. As a result, we fully automated the use of idioms in sentiment analysis and minimized the knowledge engineering bottleneck associated with this task. Consequently, this can scale up the semantic coverage of the original system beyond the limited set of 580 manually selected idioms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">METHODS</head><p>The aim of this study was to determine to what extent we can automate the use of idioms in sentiment analysis. To address this aim we:</p><p>1. developed methods to automate resource acquisition (see <ref type="figure" target="#fig_1">Fig. 2</ref>), 2. applied these methods to generate lexico-semantic resources, 3. incorporated these resources into the sentiment analysis system by replacing the original ones, which were generated manually (see upper box in <ref type="figure" target="#fig_0">Fig. 1</ref>), 4. repeated the experiments described in the original study <ref type="bibr" target="#b8">[8]</ref>, and 5. evaluated the performance of the system using the original results as the baseline. In this section, we provide details associated with the approaches used to support steps 1-3 above. The remaining steps, i.e., the experiments and their results, are reported in Section 4.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Pattern-Matching Rule Induction</head><p>When used in discourse, idioms may occur in different surface forms. Hence their occurrences in text cannot be identified using string matching. Much of the work on idiom recognition focused on distinguishing between literal and figurative meaning of idiomatic expressions <ref type="bibr" target="#b45">[45]</ref>, <ref type="bibr" target="#b46">[46]</ref>, <ref type="bibr" target="#b47">[47]</ref>, <ref type="bibr" target="#b48">[48]</ref>, <ref type="bibr" target="#b49">[49]</ref>, <ref type="bibr" target="#b50">[50]</ref> using statistical approaches based on a hypothesis of lexical fixedness or lexical cohesion. These studies impose considerable syntactic restrictions, e.g., by focusing solely on verbþnoun combinations. On the other side, studies that do not impose such restrictions concentrate on segmentation of corpora into multi-word lexical units <ref type="bibr" target="#b51">[51]</ref>, <ref type="bibr" target="#b52">[52]</ref>, a superclass of idioms, and as such are too generic.</p><p>In the original study, we defined a set of lexico-semantic pattern-matching rules to automate the recognition of idiom occurrences in text. The goal of this study is to use the canonical form of an idiom to derive its variations automatically, where the canonical form refers to the main form listed in an idiom dictionary. The difficulty associated with this task is the fact that idioms are very heterogeneous in terms of their transformational capacity <ref type="bibr" target="#b53">[53]</ref>.</p><p>Some idioms allow virtually no variation without the loss of the idiomatic sense while most allow (or in some cases require) various, often extensive, types of variation <ref type="bibr" target="#b54">[54]</ref>, <ref type="bibr" target="#b55">[55]</ref>, <ref type="bibr" target="#b56">[56]</ref>. For the purposes of this study, we focused on generalizing over the following types of common variation: inflection, open slots, adjectival and adverbial modification, passivization and distribution over multiple clauses as they were described in <ref type="bibr" target="#b57">[57]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.1">Inflection</head><p>In terms of inflection of idiom constituents, in many cases verbs can be used in different tenses, whereas some nouns can be either singular or plural. For example, the verb in the idiom stir a hornet's nest is used in the present perfect tense in the following example:</p><p>Forbes has stirred up a hornet's nest.</p><p>Similarly, the noun in the idiom bone to pick is used in plural the following example:</p><p>He generously leaves us one or two bones to pick.</p><p>The problem of inflection can be solved by lemmatizing both the canonical form of an idiom and the text to be matched. For example, lemmatization leaves both idioms unchanged, but transforms the given sentences into forms in which the given idioms can be matched as strings:</p><p>Forbes have stir up a hornet's nest. He generously leave us one or two bone to pick.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.2">Open Slots</head><p>Many idioms contain open slots into which noun phrases can be inserted. For example, in the use idiom send someone packing the open slot, which is indicated by an indefinite pronoun in the citation form, is replaced by a two-word noun phrase in the following example:</p><p>New rule could send some insurers packing.</p><p>The problem of open slots in idioms can be addressed by another type of linguistic processing-shallow parsing or chunking, which groups words into phrases. For example, the result of parsing the given sentence is as follows:</p><formula xml:id="formula_0">[NP New rule] [VP could send] [NP some insurers] [VP packing].</formula><p>The elements of the imposed shallow structure can then be used to generalize the search for idioms with open slots using a pattern send &lt;NP&gt; packing (or its lemmatized version-send &lt;NP&gt; pack) <ref type="bibr" target="#b58">[58]</ref>, where indefinite pronoun in the idiom's canonical form was replaced automatically by &lt;NP&gt; (a non-terminal symbol that can be replaced by any noun phrase) in the corresponding pattern matching rule. Even though state-of-the-art noun phrase chunking methods perform at F-measure of 94 percent <ref type="bibr" target="#b59">[59]</ref>, the problem of incorrectly parsed noun phrases remains a potential problem in this approach. Alternatively, one may choose to ignore the syntactic structure altogether and instead search for a flexgram <ref type="bibr" target="#b60">[60]</ref>, a sequence of tokens with one or more gaps of variable length, e.g., send Ã packing. This is a less accurate method (i.e., it may generate more false positives), but more robust in terms of recall.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.3">Modification</head><p>The components of some idioms are modifiable, e.g., by using adjectives to modify nouns or adverbs to modify verbs. The following example of the idiom grasp at straws contains both types of modification:</p><p>You seem to want to grasp desperately at every single straw.</p><p>Nouns and verbs as potentially modifiable components can be identified using part-of-speech tagging, e.g., grasp/ VB at/IN straws/NN. The results of lemmatization and tagging can be combined to generate the corresponding flexgram automatically by inserting gaps before nouns and after verbs. In the previous example, the automatically generated flexgram grasp Ã at Ã straw would match the modified version of the idiom.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.4">Passivization</head><p>In addition to inflection (see Section 3.1.1) verbs in many idioms may vary in terms of their voice too. Passive voice allows the object of an otherwise active sentence to become the subject of a passive sentence. In this process, the order between the verb and its object gets reversed with the original idiom components becoming separated. For example, compare an active form of the idiom bury the hatchet:</p><p>Christmas looks to be a time for burying the hatchet or exhuming it for re-examination.</p><p>to a passive one:</p><p>From the look of things, the hatchet has been long buried.</p><p>To account for the passivization of idioms, automatically acquired part-of-speech information can be used to identify non-auxiliary verbs at the beginning of an idiom and produce additional flexgram for its passive form, in which the verb should appear at the end with a gap inserted in front. For example, the tagged version of the given idiom, bury/ VB the/DT hatchet/NN, can be used to identify bury as the leading verb and produce the hatchet Ã bury as the passive version of the matching flexgram. The lemmatized versions of the flexgram and the passive sentence now match:</p><p>From the look of thing, the hatchet have be long bury.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.5">Distribution Over Multiple Clauses</head><p>The components of some idioms may be distributed between a main clause and a subordinate one as is the case in the following example:</p><p>You remember [NP the hatchet] [SBAR that we buried last year with such pomp and ceremony]?</p><p>The issue associated with this phenomenon is that idiom components become separated by the introduction of a subordinate clause. Most of the examples of this type variation are related to the use of the verb component of an idiom as the main verb of the subordinate clause <ref type="bibr" target="#b57">[57]</ref> and can be effectively resolved by the pattern-matching rule generated previously to address passivization. For example, the same flexgram the hatchet Ã bury will also match the lemmatized version of the distributed idiom:</p><p>You remember the hatchet that we bury last year with such pomp and ceremony?</p><p>Similarly, most other types of variations discussed in <ref type="bibr" target="#b57">[57]</ref> can be recognized by the pattern-matching rules generated to address passivization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.6">Hand-Crafted versus Automatically Induced Patterns</head><p>We compared the performance of automatically induced pattern-matching rules against that of hand-crafted ones. The rules were applied against the test dataset of 500 sentences in which idiom occurrences were annotated manually. Handcrafted rules retrieved all idiom occurrences, therefore achieving 100 percent recall while achieving 94.44 percent precision. The loss of precision was associated with the literal use of idiomatic expressions. On the other hand, automatically generated rules recorded 92.68 percent precision at 92.87 percent recall. While the precision was comparable down to 2 percent points, the recall dropped by 7 percent points, which would suggest that the flexibility of pattern matching rules was somehow affected. However, a closer inspection of the results revealed that the drop in recall was associated with incorrectly lemmatized words, which in turn was due to incorrectly determined part of speech. Most commonly, participles and adjectives were confused. For example, idiom pleased as punch was tagged as pleased/VB as/IN punch/NN and lemmatized accordingly as please as punch. However, its occurrence in the corpus was tagged as pleased/JJ as/IN punch/NN and lemmatized accordingly as pleased as punch, which caused the above rule to fail. Nonetheless, the overall performance was sufficient to proceed with further experiments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Sentiment Polarity of Idioms</head><p>The main idea behind automatically interpreting the figurative meaning of an idiom is to instead interpret the literal meaning of its dictionary definition <ref type="bibr" target="#b61">[61]</ref>, <ref type="bibr" target="#b62">[62]</ref>. For example, a dictionary definition of the idiom live the life of Riley is "a person who has a comfortable and enjoyable life, without having to make much effort." Most syllabi for English as a second language pay special attention to studying idioms <ref type="bibr" target="#b63">[63]</ref>, hence there is an abundance of teaching material, including dictionaries, dedicated specifically to the study of idioms. These readily available pedagogical resources can be utilized for the purpose of supporting automated interpretation of the figurative meaning of an idiom. In this study, we focus specifically on the interpretation of the underlying sentiment. As reported in the previous sections, in our original study we collected a set of 580 emotionally charged idioms, including their definitions, from an educational web site-Learn English Today [64]. This resource was used to support the functionality described in this section. We originally obtained sentiment polarities for the given set of idioms using a crowdsourcing approach. One of the goals of this study was to extract these polarities automatically from idiom definitions instead. We describe two approaches to this problem, one using off-the-shelf sentiment analysis tools and the other one based on mapping idiom definitions to WordNet-Affect, a hierarchy which includes a subset of WordNet synsets suitable to represent affective concepts such as moods and situations eliciting emotions or emotional responses <ref type="bibr" target="#b64">[65]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Approach 1: Off-the-Shelf Sentiment Analysis</head><p>Off-the-shelf sentiment analysis tools struggle to identify sentiment conveyed by the figurative meaning of idioms. For example, in the absence of any positive or negative words in the idiom live the life of Riley, SentiStrength classifies its sentiment as neutral. However, if we apply the same sentiment analysis approach to its definition "a person who has a comfortable and enjoyable life, without having to make much effort," SentiStrength classifies its sentiment as positive based on the presence of two positive words, comfortable and enjoyable. Similarly, Stanford CoreNLP's sentiment annotator quantifies negative, neutral and positive sentiment of the idiom itself as 3, 77 and 20 respectively, but when applied to its definition the sentiment values change to 2, 5 and 93, thus correctly changing the sentiment classification from neutral to positive.</p><p>To reinforce the point about off-the-shelf sentiment analysis tools struggling to identify sentiment conveyed by the figurative meaning of idioms, we applied them to all 580 idioms and their definitions and compared the outcomes to the crowdsourced sentiment polarity annotations using inter-annotator agreement. The agreement was measured using three versions of Cohen's kappa coefficient <ref type="bibr" target="#b65">[66]</ref>: simple unweighted, with linear weighting and with quadratic weighting. The kappa coefficient is calculated according to the following formula</p><formula xml:id="formula_1">k ¼ 1 À 1 À p o 1 À p e ;<label>(1)</label></formula><p>where p o is the observed agreement (i.e., the proportion of items on which both annotators agree) and p e is the expected chance agreement calculated under the assumption that: (1) both annotators act independently, and (2) random assignment of annotation categories to items is governed by distribution of items across these categories. We report the values for the original kappa coefficient so Cohen's kappa coefficient treats all disagreements equally, which is not suitable when the annotation categories are ordered as they indeed are: negative &lt; neutral &lt; positive. In such case, it is preferable to use weighted kappa coefficient <ref type="bibr" target="#b67">[68]</ref>, which accounts for the degree of disagreement by assigning different weights w i to cases where annotations differ by i categories. If there are n categories, the weights can be calculated according to the following formulas for linear and quadratic weighting respectively</p><formula xml:id="formula_2">w i ¼ 1 À i n À 1 ; w i ¼ 1 À i 2 n À 1 ð Þ 2 :<label>(2)</label></formula><p>For example, for a total of 3 categories, linear weights would be set to 1, 0.5 and 0 when there is a difference of 0, 1 and 2 categories respectively, whereas the quadratic weights would be set to 1, 0.75 and 0. The weights are then used to multiply the corresponding proportion of disagreements in the observed matrix before calculating the kappa coefficient.</p><p>We provided the kappa values in <ref type="figure">Fig. 3</ref>, from which we can observe that the agreement with manual annotation increases by 0.4019 on average when sentiment analysis is applied to the definitions of the corresponding idioms. This improved the agreement from very poor to moderate. We can also notice that SentiStrength performed better than Stanford CoreNLP on this particular dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Approach 2: Identifying Affective Concepts</head><p>WordNet is a lexical database of English nouns, verbs, adjectives and adverbs grouped together into sets of interlinked synonyms known as synsets <ref type="bibr" target="#b35">[35]</ref>. WordNet-Affect <ref type="bibr" target="#b64">[65]</ref> was created specifically as a lexical model for classifying affects, such as moods, situational emotions, or emotional responses, either directly (e.g., joy, sad, happy, etc.) or indirectly (e.g., pleasure, hurt, sorry, etc.). It was formed by aggregating a subset of WordNet synsets into an affect hierarchy (see <ref type="figure">Fig. 4</ref>). WordNet-Affect has been used as a lexical resource to support sentiment analysis studies, e.g., <ref type="bibr" target="#b68">[69]</ref>, <ref type="bibr" target="#b69">[70]</ref>, <ref type="bibr" target="#b70">[71]</ref>.</p><p>Our local version of the lexicon contains approximately 1,500 words including all derivational forms of the word senses originally found in WordNet-Affect. This resource enables a more sophisticated interpretation of the sentiment(s) associated with an idiom. In our approach, we represented each idiom using a vector whose features correspond to nodes in the WordNet-Affect hierarchy. For each non-negated mention of an affective word found in the idiom definition, the corresponding feature is set to 1 together with all other features that correspond to its ancestors. This approach ensures that hierarchical relationships between affects are translated into a flat vector representation. For example, when interpreting the idiom see red using its definition "to suddenly become very angry or annoyed," two affective words are identified, angry and annoyed. As a result, the values corresponding to negative emotion, general dislike, anger and annoyance (see <ref type="figure">Fig. 4</ref> for their hierarchical relationships) would be set to 1, whereas all other coordinates would remain zero. Similarly, when interpreting the idiom bad blood using its definition "intense hatred or hostility," two affective words are identified-hatred and hostility. As a result, the values corresponding to negative emotion, general dislike, hate and hostility (see <ref type="figure">Fig. 4</ref> for their relationships) would be set to 1, whereas all other coordinates would remain zero. Finally, when interpreting the idiom face like a wet weekend, which based on its definition "to look sad and miserable," two affective words are identified-sad and miserable. As a result, the values corresponding to negative emotion, sadness and misery would be set to 1. We summarized these values in <ref type="table" target="#tab_3">Table 4</ref>.</p><p>Generalization. Note that the vectors given in <ref type="table" target="#tab_3">Table 4</ref> are for illustrative purpose only and as such focus only on a small portion of the WordNet-Affect hierarchy. In practice, the length of the vector would match the size of the hierarchy, i.e., each coordinate would correspond to one of 278 nodes in the WordNet-Affect hierarchy. This leads to a relatively high dimensionality of the feature space, which may be associated with poorer classification performance. This problem is known as the curse of dimensionality (or Hughes effect) <ref type="bibr" target="#b71">[72]</ref>, where, given a fixed size of the training dataset, the predictive power of a machine learning algorithm reduces as the dimensionality increases. In order to reduce the number of features, we can exploit the structure of the WordNet-Affect hierarchy by simply projecting the original vectors onto a subspace that corresponds to the upper levels of the hierarchy, thereby selecting more general features. For example, focusing on two upper levels of the hierarchy shown in <ref type="figure">Fig. 4</ref>, we can simply remove the remaining features (shaded cells in <ref type="table" target="#tab_3">Table 4</ref>) from the original vectors. One problem associated with this approach is that the WordNet-Affect hierarchy is unbalanced in the sense that the nodes at the same level may not be of the same generality, which may introduce issues of biased representation.</p><p>Clustering. Alternatively, we can use a data-driven approach to reduce the number of affective features. The given vector representation allows us to compare idioms to one another in terms of their affective content, e.g., by using cosine similarity measure similarity x; y ð Þ¼ cos u ¼</p><formula xml:id="formula_3">P n i¼1 x i y i ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi P n i¼1 x 2 i p Á ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi P n i¼1 y 2 i p ;<label>(3)</label></formula><p>where x and y are two non-zero vectors of dimensionality n and u is the angle between them. In general, the cosine similarity values range from À1 (corresponds to 180 , thus indicating opposite direction) to 1 (corresponds to 0 , thus indicating the same direction), where 0 indicates that the given vectors are orthogonal. In case of our vector representation, all vector components are always non-negative and so are the corresponding cosine similarity values. Therefore, in this special case the cosine similarity will range from 0 to 1 with higher values indicating higher similarity. In this representation, positive and negative affects will be orthogonal to one another. Going back to our examples (see <ref type="table" target="#tab_3">Table 4</ref>), we can establish that see red and bad blood are more similar to each other (similarity ¼ 0:50) than they are to face like a wet weekend (similarity ¼ 0:29), because they share two features as a direct consequence of encoding hierarchical relationships from WordNet-Affect in a flat vector representation.</p><p>To visualize the similarity of affect between idioms, we applied multidimensional scaling to a distance matrix based on cosine similarity. The scatter plot shown in <ref type="figure">Fig. 5</ref> shows a clear separation between idioms in terms of their affect. The first direction (along the x-axis) separates positive affects (to the left) from negative ones (to the right). The second direction (along the y-axis) separates anger (at the bottom) from anxiety (at the top). A clustering algorithm can be used to identify clusters of related idioms. <ref type="table" target="#tab_4">Table 5</ref> illustrates the results of applying k-means clustering (k ¼ 10). In principle, these clusters can be mapped to affects as we indicated in <ref type="table" target="#tab_4">Table 5</ref>. Nonetheless, uncategorized clusters can still be used as affective features to support sentiment analysis. The dimensionality of the problem can be controlled by limiting the number of clusters.</p><p>Mapping Affects to Sentiment Polarities. Either of the two approaches, generalization or clustering, can be used to support the extraction of affective aspects of idiom-based features. However, to support compatibility with the original study so that its results can be used as a baseline, we need to map affects to sentiment polarities and for this we used the former approach. A total of 421 idiom definitions were successfully mapped onto affects and then generalized into sentiment polarities. The results were then compared to crowdsourced annotations and the following values were recorded for the three versions of kappa coefficient: 0.5851 (unweighted), 0.6770 (with linear weights) and 0.7450 (with quadratics weights). These values are much higher than the ones achieved by off-the-shelf sentiment analysis tools (see <ref type="figure">Fig. 3</ref>). However, 159 out of 580 idioms definitions (i.e., 27 percent) remained unclassified as they did not contain nonnegated mentions of affective words listed in WordNet-Affect. To take advantage of both approaches to sentiment polarity classification (described in Sections 3.2.1 and 3.2.2 respectively), their results were combined (see <ref type="figure">Fig. 6</ref>). We applied SentiStrength, which performed better than Stanford CoreNLP's sentiment annotator on these data (see <ref type="figure">Fig. 3</ref>), to the set of 159 idiom definitions that remained unclassified after using the WordNet-Affect approach. The overall results were compared to crowdsourced annotations and the following values were recorded for the three versions of kappa coefficient: 0.5062 (unweighted), 0.5802 (with linear weights) and 0.6409 (with quadratics weights). The resulting sentiment polarity values were used to replace crowdsourced sentiment polarity annotations in the original sentiment analysis system described in <ref type="figure" target="#fig_0">Fig. 1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">RESULTS</head><p>We re-used the gold standard dataset from the original study <ref type="bibr" target="#b8">[8]</ref> to perform evaluation experiments. <ref type="table" target="#tab_5">Table 6</ref> summarizes the methods M1-M6 whose performance we wanted to compare. The main goal of this study was to  investigate whether the results of sentiment analysis enriched with idiom-based features are comparable when crowdsourcing of the supporting lexico-semantic resources is replaced by a fully automated approach (by comparing M2 versus M3 and M5 versus M6). In expectation that a fully automated approach may underperform in comparison to manually crafted features, we also wanted to investigate whether the idiom-based approach would still outperform the original baseline methods, which do not incorporate idioms as features (by comparing M1 versus M3 and M4 versus M6). The classification performance was evaluated in terms of F-measure (see <ref type="figure">Fig. 7</ref>) based on confusion matrices given in <ref type="table" target="#tab_6">Table 7</ref>. As expected, when manually crafted lexico-semantic resources were replaced by automatically generated ones, the performance dropped by 10.6 (M2 versus M3) and 7.6 (M5 versus M6) percentage points. However, the use of automatically generated lexico-semantic resources still improves the performance of the original sentiment analysis methods by 9.0 (M1 versus M3) and 7.4 (M4 versus M6) percentage points. A closer inspection of the confusion matrices (see <ref type="table" target="#tab_6">Table 7</ref>) reveals that the use of idioms as features, either manually or automatically engineered, improves the sensitivity with respect to positive and negative polarities. However, automatically engineered features are more biased towards negative polarities (see the last column in <ref type="table" target="#tab_6">Table 7</ref>). This may be explained by the way in which the idiom polarities were encoded. The crowdsourced idiom polarities allowed for fuzzy representation by means of distributing the number of annotations across the available options: positive, negative and other. For example, the idiom mind someone's own business was originally annotated as pos:0 ;:60 neg:40, thereby allowing different interpretations of the given idiom. On the other hand, the automatically extracted idiom polarities do not support fuzzy representation. For example, the same idiom was represented as pos:0 ;:0 neg:100, which indicates that the given idiom is strictly negative.</p><p>This may be remedied by incorporating the notion of ambiguity and/or intensity into idiom polarity representation. Off-the-shelf sentiment analysis tools used in Section 3.2.1 output the strength of both positive and negative sentiment, which can be used to support fuzzy representation of automatically extracted sentiment polarities. To what extent this could improve the performance of methods M3 and M6 will be the subject of future work. Nonetheless, the experiments conducted in this study confirm its main hypothesis that automatically engineered idiom-based features do improve the results of sentiment analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">CONCLUSIONS</head><p>We demonstrated that automatically engineered idiombased features improve sentiment analysis results. The overall performance in terms of F-measure was improved from 45 to 54 percent in one experiment and from 46 to 53 percent in the other. The results are still poorer than the ones achieved using manually engineered features, which improved the baseline sentiment analysis results from 45 to 64 percent in one experiment and from 46 to 61 percent in the other. However, the advantage of the new approach is that it is more general in a sense that it can readily utilize an arbitrary list of idioms in sentiment analyses. It can also be used to support sentiment analysis that focuses on a full range of emotions (see Section 3.2.2) and not merely sentiment polarity. More importantly, the performance of a fully automated approach to using idioms in sentiment analysis can still be improved.</p><p>First, as we pointed out in Section 4, the fuzzy representation of idiom polarities may reduce misclassification of less strongly polarized idiom examples. Second, to support compatibility with the original study <ref type="bibr" target="#b8">[8]</ref> we re-used the same supervised learning method-a Bayesian network classifier, which outperformed alternative machine learning algorithms in cross-validation experiments performed on the training data in which the idiom-based features were  Rows and columns correspond to actual and predicted sentiment respectively.</p><p>encoded based on manually engineered lexico-semantic resources. According to the "no free lunch" theorem, any two learning algorithms are equivalent when their performance is averaged across all possible problems <ref type="bibr" target="#b21">[21]</ref>. In other words, there is no universally best learning algorithm, which suggests that the choice of an appropriate algorithm should be based on its performance for the particular problem at hand and the properties of data that characterize the problem. The fact that the distribution of the training data has changed by replacing manually engineered features with automatically engineered ones opens a possibility of another machine learning algorithm producing a better classification model. These two hypotheses are outside of the scope of this study and will be the subject of future work. In this study we demonstrated that we can (1) fully automate the use of idioms in sentiment analysis, (2) minimize the knowledge engineering bottleneck associated with this task and (3) still improve the performance of the baseline sentiment analysis approaches.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>The system architecture diagram.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Automated resource acquisition.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>that we can interpret the agreement on the following scale<ref type="bibr" target="#b66">[67]</ref>: 0-0.20 (poor), 0.21-0.40 (fair), 0.41-0.60 (moderate), 0.61-0.80 (good), 0.81-1.00 (very good).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3 .Fig. 4 .</head><label>34</label><figDesc>Kappa agreement with the crowdsourced sentiment polarity annotations. An excerpt from the WordNet-Affect hierarchy.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>10 Fig. 5 .Fig. 6 .</head><label>1056</label><figDesc>; have a whale of a time; paint the town red; over the moon; in seventh heaven22 8 anger come down like a ton of bricks; fly off the handle; go through the roof; hot under the collar: see red 100 9 satisfaction bear fruit, reach first base, foot in the door, place in the sun, have the world by its tail 42 10 contempt fight like cat and dog, good riddance, steamed up, fit of pique, free for all Multidimensional scaling results. A combined approach to sentiment polarity classification.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1 A</head><label>1</label><figDesc>Sample of Input Sentences</figDesc><table><row><cell>ID</cell><cell>Sentence</cell><cell>SentiStrength</cell><cell>Stanford</cell><cell>Sentiment</cell></row><row><cell></cell><cell></cell><cell></cell><cell>CoreNLP</cell><cell>annotation</cell></row><row><cell cols="2">S1 This observation was to</cell><cell>neg:-1 pos:1</cell><cell>neg:22 ;:65 pos: 12</cell><cell>positive</cell></row><row><cell cols="2">bear fruit in later years.</cell><cell>neutral</cell><cell>neutral</cell><cell></cell></row><row><cell cols="2">S2 The noise must have been</cell><cell>neg:-4 pos: 1</cell><cell>neg:60 ;:31 pos:9</cell><cell>positive</cell></row><row><cell cols="2">awful, but it was music to</cell><cell>negative</cell><cell>negative</cell><cell></cell></row><row><cell>my ears.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">S3 You have what is called, I</cell><cell>neg:-1 pos:1</cell><cell>neg:23 ;:53 pos:24</cell><cell>negative</cell></row><row><cell cols="2">believe, a large chip on</cell><cell>neutral</cell><cell>neutral</cell><cell></cell></row><row><cell cols="2">your shoulder.</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">S4 We watch as friendships</cell><cell>neg:-1 pos:2</cell><cell>neg:49 ;:34 pos: 17</cell><cell>negative</cell></row><row><cell cols="2">come apart at the seams.</cell><cell>positive</cell><cell>negative</cell><cell></cell></row><row><cell cols="2">S 5 They are not after an olive</cell><cell>neg:-1 pos:1</cell><cell>neg:5S ;:38 pos:4</cell><cell>negative</cell></row><row><cell>branch.</cell><cell></cell><cell>neutral</cell><cell>negative</cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell cols="3">Lexico-Semantic Information About Idioms</cell></row><row><cell>ID</cell><cell>Idiom</cell><cell>Pattern</cell><cell>Polarity</cell></row><row><cell cols="2">I1 to bear fruit</cell><cell>&lt;BEAR&gt; fruit</cell><cell>neg:0 ;:0 pos:100</cell></row><row><cell cols="2">I2 music to one's ears</cell><cell>music to &lt; PRP$&gt; ears</cell><cell>neg:0 ;:0 pos:100</cell></row><row><cell cols="2">I3 a chip on one's shoulder</cell><cell>chip on &lt;PRP$&gt; shoulder</cell><cell>neg: 100 ;:0 pos:0</cell></row><row><cell cols="4">I4 to come apart at the seams &lt;COME&gt; apart at the seams neg: 100 ;:0 pos:0</cell></row><row><cell cols="2">I5 olive branch</cell><cell>olive branch</cell><cell>neg:0 ;:0 pos:100</cell></row><row><cell cols="4">Non-terminal symbols &lt;BEAR&gt;, &lt;COME&gt; and &lt;PRP$&gt; can be replaced by any</cell></row><row><cell cols="4">form of the verb to bear (i.e., bore, born, borne, bears and bearing), any form of</cell></row><row><cell cols="4">the verb to come (i.e. come, came, comes and coming) and a possessive pronoun</cell></row><row><cell cols="3">(i.e. my, your, his, her, its, our, their and one's) respectively.</cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 3 Sentences</head><label>3</label><figDesc>Represented by Feature Vectors</figDesc><table><row><cell>ID</cell><cell></cell><cell>Idiom</cell><cell></cell><cell></cell><cell>Sentence</cell><cell></cell><cell>Sentiment</cell></row><row><cell></cell><cell>neg</cell><cell>;</cell><cell>pos</cell><cell>neg</cell><cell>;</cell><cell>pos</cell><cell>prediction</cell></row><row><cell>S1</cell><cell>0</cell><cell>0</cell><cell>100</cell><cell>22</cell><cell>65</cell><cell>12</cell><cell>positive</cell></row><row><cell>S2</cell><cell>0</cell><cell>0</cell><cell>100</cell><cell>60</cell><cell>31</cell><cell>9</cell><cell>positive</cell></row><row><cell>S3</cell><cell>100</cell><cell>0</cell><cell>0</cell><cell>23</cell><cell>53</cell><cell>24</cell><cell>negative</cell></row><row><cell>S4</cell><cell>100</cell><cell>0</cell><cell>0</cell><cell>49</cell><cell>34</cell><cell>17</cell><cell>negative</cell></row><row><cell>S5</cell><cell>100</cell><cell>0</cell><cell>0</cell><cell>58</cell><cell>38</cell><cell>4</cell><cell>negative</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 4 Idioms</head><label>4</label><figDesc></figDesc><table><row><cell>SPASI</cell><cell cols="11">C ET AL.: IDIOM-BASED FEATURES IN SENTIMENT ANALYSIS: CUTTING THE GORDIAN KNOT</cell></row><row><cell></cell><cell cols="8">Represented by Future Vectors</cell><cell></cell><cell></cell></row><row><cell cols="2">Idiom</cell><cell>negative</cell><cell>emotion</cell><cell>sadness</cell><cell>misery</cell><cell>general</cell><cell>dislike</cell><cell>anger</cell><cell>annoyance</cell><cell>hate</cell><cell>hostility</cell></row><row><cell cols="2">see red</cell><cell cols="2">1</cell><cell>0</cell><cell>0</cell><cell>l</cell><cell></cell><cell>1</cell><cell>1</cell><cell>0</cell><cell>0</cell></row><row><cell cols="2">bad blood</cell><cell cols="2">1</cell><cell>0</cell><cell>0</cell><cell cols="2">1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>1</cell></row><row><cell cols="2">face like a wet weekend</cell><cell cols="2">1</cell><cell>l</cell><cell>1</cell><cell cols="2">0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 5</head><label>5</label><figDesc>Clustering Results</figDesc><table><row><cell>Cluster</cell><cell>Interpretation</cell><cell>Members</cell><cell>Size</cell></row><row><cell>1</cell><cell>surprise</cell><cell>bolt from the blue; drop a bomb-</cell><cell>28</cell></row><row><cell></cell><cell></cell><cell>shell; jaw drop; mixed feelings;</cell><cell></cell></row><row><cell></cell><cell></cell><cell>knock down with feather</cell><cell></cell></row><row><cell>2</cell><cell>frustration</cell><cell>get someone's knickers in a twist;</cell><cell>81</cell></row><row><cell></cell><cell></cell><cell>fish out of water; groan inwardly;</cell><cell></cell></row><row><cell></cell><cell></cell><cell>put foot in mouth; slip through</cell><cell></cell></row><row><cell></cell><cell></cell><cell>fingers</cell><cell></cell></row><row><cell>3</cell><cell>relief</cell><cell>take a load off someone's mind;</cell><cell>11</cell></row><row><cell></cell><cell></cell><cell>break the back of the beast; come</cell><cell></cell></row><row><cell></cell><cell></cell><cell>up roses; save the day; weather</cell><cell></cell></row><row><cell></cell><cell></cell><cell>the storm</cell><cell></cell></row><row><cell>4</cell><cell>affection</cell><cell>eat, sleep and breathe something;</cell><cell>30</cell></row><row><cell></cell><cell></cell><cell>have a soft spot; on cloud nine;</cell><cell></cell></row><row><cell></cell><cell></cell><cell>knock someone's socks off; in the</cell><cell></cell></row><row><cell></cell><cell></cell><cell>good books</cell><cell></cell></row><row><cell>5</cell><cell>anxiety</cell><cell>break out in a cold sweat; cat on</cell><cell>89</cell></row><row><cell></cell><cell></cell><cell>hot bricks; shake like a leaf; alarm</cell><cell></cell></row><row><cell></cell><cell></cell><cell>bells ringing; cloud on the</cell><cell></cell></row><row><cell></cell><cell></cell><cell>horizon</cell><cell></cell></row><row><cell>6</cell><cell>happiness</cell><cell>lick someone's lips; pleased as</cell><cell></cell></row><row><cell></cell><cell></cell><cell>punch; live the life of Riley; grin</cell><cell></cell></row><row><cell></cell><cell></cell><cell>like a Cheshire cat; walking on air</cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>TABLE 6</head><label>6</label><figDesc>Sentiment Analysis Methods</figDesc><table><row><cell>ID</cell><cell>Method</cell><cell>Features</cell><cell>Supporting</cell></row><row><cell></cell><cell></cell><cell></cell><cell>resources</cell></row><row><cell cols="3">Ml SentiStrength [10], [11] words</cell><cell>sentiment lexicon</cell></row><row><cell cols="3">M2 supervised learning [8] sentiment polarities</cell><cell>SentiStrength</cell></row><row><cell></cell><cell></cell><cell>idioms</cell><cell>crowdsourcing</cell></row><row><cell cols="2">M3 supervised learning</cell><cell>sentiment polarities</cell><cell>SentiStrength idiom</cell></row><row><cell></cell><cell>(this study)</cell><cell>idioms</cell><cell>dictionary</cell></row><row><cell cols="3">M4 Stanford CoreNLP [12] phrases of variable</cell><cell>sentiment treebank</cell></row><row><cell></cell><cell></cell><cell>length</cell><cell></cell></row><row><cell cols="3">M5 supervised learning [8] sentiment polarities</cell><cell>Stanford CoreNLP</cell></row><row><cell></cell><cell></cell><cell>idioms</cell><cell>crowdsourcing</cell></row><row><cell cols="2">M6 supervised learning</cell><cell>sentiment polarities</cell><cell>Stanford CoreNLP</cell></row><row><cell></cell><cell>(this study)</cell><cell>idioms</cell><cell>idiom dictionary</cell></row></table><note>Fig. 7. Evaluation results using F-measure.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>TABLE 7</head><label>7</label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell></cell><cell cols="2">Confusion Matrices</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Ml</cell><cell>pos</cell><cell>;</cell><cell>neg</cell><cell>M2</cell><cell>pos</cell><cell>;</cell><cell>neg</cell></row><row><cell>pos</cell><cell>40</cell><cell>62</cell><cell>36</cell><cell>pos</cell><cell>102</cell><cell>18</cell><cell>13</cell></row><row><cell>;</cell><cell>22</cell><cell>72</cell><cell>30</cell><cell>;</cell><cell>39</cell><cell>49</cell><cell>36</cell></row><row><cell>neg</cell><cell>31</cell><cell>96</cell><cell>1 1 1</cell><cell>neg</cell><cell>24</cell><cell>44</cell><cell>170</cell></row><row><cell>M3</cell><cell>pos</cell><cell>;</cell><cell>neg</cell><cell>M4</cell><cell>pos</cell><cell>;</cell><cell>neg</cell></row><row><cell>pos</cell><cell>75</cell><cell>18</cell><cell>45</cell><cell>pos</cell><cell>41</cell><cell>23</cell><cell>74</cell></row><row><cell>;</cell><cell>41</cell><cell>26</cell><cell>57</cell><cell>;</cell><cell>19</cell><cell>19</cell><cell>86</cell></row><row><cell>neg</cell><cell>32</cell><cell>38</cell><cell>168</cell><cell>neg</cell><cell>25</cell><cell>43</cell><cell>170</cell></row><row><cell>M5</cell><cell>pos</cell><cell>;</cell><cell>neg</cell><cell>M6</cell><cell>pos</cell><cell>;</cell><cell>neg</cell></row><row><cell>pos</cell><cell>104</cell><cell>10</cell><cell>24</cell><cell>pos</cell><cell>64</cell><cell>13</cell><cell>61</cell></row><row><cell>;</cell><cell>46</cell><cell>20</cell><cell>58</cell><cell>;</cell><cell>24</cell><cell>13</cell><cell>87</cell></row><row><cell>neg</cell><cell>35</cell><cell>22</cell><cell>181</cell><cell>neg</cell><cell>33</cell><cell>15</cell><cell>190</cell></row></table><note></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">C ET AL.: IDIOM-BASED FEATURES IN SENTIMENT ANALYSIS: CUTTING THE GORDIAN KNOT</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>LW gratefully acknowledges the support of the Engineering and Physical Sciences Research Council (ref: 1511905). We are thankful to Kathleen Beke, the creator of the web site Learn English Today, for kindly letting us use their data. We would also like to thank David Bevan for proof reading the manuscript.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>" For more information on this or any other computing topic, please visit our Digital Library at www.computer.org/csdl.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Formulaic Language and the Lexicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Wray</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Cambridge Univ. Press</publisher>
+			<pubPlace>Cambridge, U.K.</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Formulaic sequences: A drop in the ocean of constructions or something more significant?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Buerki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. English Studies</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="15" to="34" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">From usage to grammar: The mind&apos;s response to repetition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Bybee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="711" to="733" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Manning</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Sch€ Utze</surname></persName>
+		</author>
+		<title level="m">Foundations of Statistical Natural Language Processing</title>
+		<meeting><address><addrLine>Cambridge, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Multiword expressions: A pain in the neck for NLP</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">A</forename><surname>Sag</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Baldwin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Copestake</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Flickinger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 3rd</title>
+		<meeting>3rd</meeting>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Int</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Conf</surname></persName>
+		</author>
+		<title level="m">Comput. Linguistics Intell. Text Process</title>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="1" to="15" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Lexical encoding of MWEs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Villavicencio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Copestake</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Waldron</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lambeau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Workshop Multiword Expressions: Integrating Process</title>
+		<meeting>Workshop Multiword Expressions: Integrating ess</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="80" to="87" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Idiom Structure in English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Makkai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1972" />
+			<publisher>Mouton</publisher>
+			<pubPlace>The Hague, The Netherlands</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The role of idioms in sentiment analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bannister</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Arribas-Ayllon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Preece</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Spasi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Syst. Appl</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="7375" to="7385" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Sentiment Analysis: Mining Opinions, Sentiments and Emotions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<publisher>Cambridge Univ. Press</publisher>
+			<pubPlace>Cambridge, U.K.</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">SentiStrength</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+		<ptr target="http://sentistrength.wlv.ac.uk/" />
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Sentiment strength detection in short informal text</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Thelwall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Buckley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Paltoglou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kappas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Soc. Inf. Sci. Technol</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="2544" to="2558" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Recursive deep models for semantic compositionality over a Sentiment Treebank</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Conf. Empirical Methods Natural Language Process</title>
+		<meeting>Conf. Empirical Methods Natural Language ess</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1631" to="1642" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Idioms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Nunberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">A</forename><surname>Sag</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Wasow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="491" to="538" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Frequencies and forms of phrasal lexemes in English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Moon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Phraseology: Theory, Analysis and Applications, A. P. Cowie</title>
+		<meeting><address><addrLine>Oxford, U.K.</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford Univ. Press</publisher>
+			<date type="published" when="1998" />
+			<biblScope unit="page" from="79" to="100" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Frequency of &apos;core idioms&apos; in the British National Corpus (BNC)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">E</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Corpus Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="429" to="451" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Convergent learning: Do different neural networks learn the same representations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yosinski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Clune</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Lipson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hopcroft</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 1st NIPS Int. Workshop Feature Extraction: Modern Questions Challenges</title>
+		<meeting>1st NIPS Int. Workshop Feature Extraction: Modern Questions Challenges</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="196" to="212" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The clustering power of low frequency words in academic Webs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Thelwall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Assoc. Inf. Sci. Technol</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="883" to="888" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Exploiting extremely rare features in text categorization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Sch€</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Bencz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 17th Eur. Conf. Mach. Learn</title>
+		<meeting>17th Eur. Conf. Mach. Learn</meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="759" to="766" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Combining feature spaces for classification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Damoulas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Girolami</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognit</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="2671" to="2683" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The Weka data mining software: An update</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Frank</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Pfahringer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Reutemann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">H</forename><surname>Witten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGKDD Explorations Newsletter</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="10" to="18" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The lack of a priori distinctions between learning algorithms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">H</forename><surname>Wolpert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="1341" to="1390" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Acquiring high quality nonexpert knowledge from on-demand workforce</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Besana</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zajac</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Workshop People&apos;s Web Meets NLP: Collaboratively Constructed Semantic Resources</title>
+		<meeting>Workshop People&apos;s Web Meets NLP: Collaboratively Constructed Semantic Resources</meeting>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="51" to="56" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Phrase detectives: Utilizing collective intelligence for internet-scale language resource creation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Poesio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Chamberlain</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Kruschwitz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Robaldo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Ducceschi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Interactive Intell. Syst</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing a word-emotion association lexicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Mohammad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">D</forename><surname>Turney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Intell</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="436" to="465" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing for relevance evaluation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Alonso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Rose</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Stewart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGIR Forum</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="9" to="15" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Towards methods for the collective gathering and quality control of relevance assessments</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Kazai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Milic-Frayling</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Costello</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 32nd Int</title>
+		<meeting>32nd Int</meeting>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="452" to="459" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Cheap and fast -but is it good? Evaluating non-expert annotations for natural language tasks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Snow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>O'connor</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Jurafsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Conf. Empirical Methods Natural Language Process</title>
+		<meeting>Conf. Empirical Methods Natural Language ess</meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="254" to="263" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Predicting the semantic orientation of adjectives</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Hatzivassiloglou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Mckeown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 35th Annu. Meeting Assoc. Comput. Linguistics Eighth Conf</title>
+		<meeting>35th Annu. Meeting Assoc. Comput. Linguistics Eighth Conf</meeting>
+		<imprint>
+			<date type="published" when="1997" />
+			<biblScope unit="page" from="174" to="181" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Measuring praise and criticism: Inference of semantic orientation from association</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Turney</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Littman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="315" to="346" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Methods for creating semantic orientation dictionaries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Taboada</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Anthony</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Voll</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 5th Int. Conf. Language Resources Eval</title>
+		<meeting>5th Int. Conf. Language Resources Eval</meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="427" to="432" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Adapting information bottleneck method for automatic construction of domain-oriented sentiment lexicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Yun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 3rd ACM Int. Conf. Web Search Data Mining</title>
+		<meeting>3rd ACM Int. Conf. Web Search Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="111" to="120" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Latent variable models for semantic orientations of phrases</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Takamura</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Inui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Okumura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 11th Conf. Eur. Chapter Assoc</title>
+		<meeting>11th Conf. Eur. Chapter Assoc</meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="201" to="208" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Recognizing contextual polarity: An exploration of features for phrase-level sentiment analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Hoffmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="399" to="433" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Distributional semantic models for affective text analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Malandrakis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Potamianos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Iosif</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Narayanan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Audio Speech Language Process</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2379" to="2392" />
+			<date type="published" when="2013-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">WordNet: A lexical database for English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Miller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. ACM</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="39" to="41" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Determining the sentiment of opinions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S.-M</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Hovy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 20th Int. Conf. Comput. Linguistics</title>
+		<meeting>20th Int. Conf. Comput. Linguistics</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note>Art. no. 1367</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Using Word-Net to measure semantic orientations of adjectives</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kamps</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Marx</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Mokken</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Rijke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 4th Int. Conf. Language Resources Eval</title>
+		<meeting>4th Int. Conf. Language Resources Eval</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="1115" to="1118" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Identifying text polarity using random walks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Radev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 48th Annu. Meeting Assoc. Comput. Linguistics</title>
+		<meeting>48th Annu. Meeting Assoc. Comput. Linguistics</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="395" to="403" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Construction of a sentimental word dictionary</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">C</forename><surname>Dragut</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Sistla</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 19th ACM Int. Conf. Inf. Knowl. Manag</title>
+		<meeting>19th ACM Int. Conf. Inf. Knowl. Manag</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="1761" to="1764" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Automatic construction of a context-aware sentiment lexicon: An optimization approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Castellanos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Dayal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Zhai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 20th Int. Conf. World Wide Web</title>
+		<meeting>20th Int. Conf. World Wide Web</meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="347" to="356" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">The representation of idioms in WordNet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Osherson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Fellbaum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 5th Global WordNet Conf</title>
+		<meeting>5th Global WordNet Conf</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Mining WordNet for a fuzzy sentiment: Sentiment tag extraction from WordNet glosses</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Andreevskaia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bergler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 11th Conf. Eur. Chapter Assoc</title>
+		<meeting>11th Conf. Eur. Chapter Assoc</meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="209" to="216" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Determining the semantic orientation of terms through gloss classification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Esuli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sebastiani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 14th ACM Int. Conf. Inf. Knowl. Manag</title>
+		<meeting>14th ACM Int. Conf. Inf. Knowl. Manag</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="617" to="624" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Extracting semantic orientations of phrases from dictionary</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Takamura</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Inui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Okumura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Annu. Conf. North American Chapter Assoc</title>
+		<meeting>Annu. Conf. North American Chapter Assoc</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="292" to="299" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Unsupervised type and token identification of idiomatic expressions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Fazly</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Stevenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="61" to="103" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Unsupervised recognition of literal and non-literal use of idiomatic expressions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Sporleder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 12th Conf. Eur. Chapter Assoc</title>
+		<meeting>12th Conf. Eur. Chapter Assoc</meeting>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="754" to="762" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Using Gaussian Mixture models to detect figurative language in context</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Sporleder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Annu. Conf. North American Chapter Assoc</title>
+		<meeting>Annu. Conf. North American Chapter Assoc</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="297" to="300" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Automatic detection of idiomatic clauses</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Feldman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 14th Int. Conf. Comput. Linguistics Intell. Text Process</title>
+		<meeting>14th Int. Conf. Comput. Linguistics Intell. Text ess</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="435" to="446" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Automatic idiom recognition with word embeddings</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Feldman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Annu. Int. Symp</title>
+		<meeting>Annu. Int. Symp</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="17" to="29" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Idiom token classification using sentential distributed semantics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">D</forename><surname>Salton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Kelleher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 54th Annu. Meeting Assoc. Comput. Linguistics</title>
+		<meeting>54th Annu. Meeting Assoc. Comput. Linguistics</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="194" to="204" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Unsupervised multiword segmentation of large corpora using prediction-driven decomposition of n-grams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Brooke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Tsang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">H F</forename><surname>Shein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 25th Int. Conf. Comput. Linguistics</title>
+		<meeting>25th Int. Conf. Comput. Linguistics</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="753" to="761" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Discriminative lexical semantic segmentation with gaps: Running the MWE gamut</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Danchik</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Dyer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">A</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Assoc. Comput. Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="193" to="206" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Creativity and Convention: The Pragmatics of Everyday Figurative Speech</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Vega-Moreno</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>John Benjamins Publishing Company</publisher>
+			<pubPlace>Amsterdam, The Netherlands</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">Fixed Expressions and Idioms in English: A Corpus-Based Approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Moon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>OUP</publisher>
+			<pubPlace>Oxford, U. K.</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Idiomatic Creativity: A Cognitive-Linguistic Model of Idiom-Representation and Idiom-Variation in English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Langlotz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>John Benjamins</publisher>
+			<pubPlace>Amsterdam, The Netherlands</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Exploring the Boundaries of Formulaic Sequences: A Corpus-Based Study of Lexical Substitution and Insertion in Contemporary</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Dutton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">British English. Saarbr€ ucken</title>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>VDM Verlag</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">A constructional approach to idioms and word formation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">Z</forename><surname>Riehemann</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+			<pubPlace>Stanford, CA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Dept. Linguistics, Stanford Univ.</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Ngram search engine with patterns combining token, POS, chunk and NE information</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sekine</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Dalwani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 7th Int. Conf. Language Res. Eval</title>
+		<meeting>7th Int. Conf. Language Res. Eval</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Bidirectional LSTM-CRF models for sequence tagging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1508.01991</idno>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Efficient n-gram, skipgram and flexgram modelling with Colibri Core</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Van Gompel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Van Den</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Bosch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Open Res. Softw</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note>Art. no. e30</note>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">A new approach for idiom identification using meanings and the Web</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Vuppuluri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 10th Int. Conf. Recent Advances Natural Language Process</title>
+		<meeting>10th Int. Conf. Recent Advances Natural Language ess</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="681" to="687" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Phrasal substitution of idiomatic expressions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Hwa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 15th Annu. Conf. North American Chapter Assoc. Comput. Linguistics: Human Language Technol</title>
+		<meeting>15th Annu. Conf. North American Chapter Assoc. Comput. Linguistics: Human Language Technol</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="363" to="373" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">The most frequently used spoken American English idioms: A corpus analysis and its implications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TESOL Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="671" to="700" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Developing affective lexical resources</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Valitutti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Strapparava</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Stock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychology</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="61" to="83" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">A coefficient of agreement for nominal scales</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cohen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Edu. Psychological Meas</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="37" to="46" />
+			<date type="published" when="1960" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Practical Statistics for Medical Research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G</forename><surname>Altman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Chapman and Hall/CRC</publisher>
+			<pubPlace>London, U.K</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Weighted Kappa: Nominal scale agreement with provision for scaled disagreement or partial credit</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cohen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Bulletin</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="213" to="220" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Learning to identify emotions in text</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Strapparava</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Mihalcea</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. ACM Symp</title>
+		<meeting>ACM Symp</meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="1556" to="1560" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Sentiment analysis in the news</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Balahur</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf. Language, Resources Eval</title>
+		<meeting>Int. Conf. Language, Resources Eval</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">A na€ ıve Bayes approach to topic classification in suicide notes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Spasi C</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Burnap</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Greenwood</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Arribas-Ayllon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biomed. Inf. Insights</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="87" to="97" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">On the mean accuracy of statistical pattern recognizers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">F</forename><surname>Hughes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Theory</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="55" to="63" />
+			<date type="published" when="1968-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">Following posts with the Universities of Belgrade, Salford and Manchester, she joined Cardiff School of Computer Science &amp; Informatics, in 2010, and became full professor in 2016. Her research interests include text mining, knowledge representation, machine learning and information management with applications in healthcare, life sciences and social sciences. She leads the text and data mining research theme with Cardiff University and is a co-founder of the UK Healthcare</title>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+		<respStmt>
+			<orgName>Irena Spasi c received the PhD degree in computer science from the University of Salford, United Kingdom</orgName>
+		</respStmt>
+	</monogr>
+	<note>Text Analytics Research Network (HealTex</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

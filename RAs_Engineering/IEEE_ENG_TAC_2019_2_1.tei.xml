@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Exploring User Experience with Image Schemas, Sentiments, and Semantics</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Obokhai</forename><forename type="middle">K</forename><surname>Asikhia</surname></persName>
+							<email>asikhia.ok@esitmusen.edu.ng</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Setchi</surname></persName>
+							<email>setchi@cardiff.ac.uk</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Cardiff School of Engineering</orgName>
+								<orgName type="institution">Cardiff University</orgName>
+								<address>
+									<addrLine>14-17 The Parade</addrLine>
+									<postCode>CF24 3AA</postCode>
+									<settlement>Cardiff</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Edo State Institute of Technology and Management, Usen</orgName>
+								<address>
+									<addrLine>Edo State</addrLine>
+									<postCode>1104</postCode>
+									<settlement>Benin City</settlement>
+									<region>P.M.B</region>
+									<country key="NG">Nigeria</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Exploring User Experience with Image Schemas, Sentiments, and Semantics</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TAFFC.2017.2705691</idno>
+					<note type="submission">received 19 Aug. 2016; revised 14 Apr. 2017; accepted 8 May 2017. Date of publication 31 May 2017; date of current version 6 June 2019.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Affect</term>
+					<term>computational semantics</term>
+					<term>image schema</term>
+					<term>interaction design</term>
+					<term>ontology</term>
+					<term>sentiment analysis</term>
+					<term>usability</term>
+					<term>user experience</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Although the concept of user experience includes two key aspects, experience of meaning (usability) and experience of emotion (affect), the empirical work that measures both the usability and affective aspects of user experience is currently limited. This is particularly important considering that affect could significantly influence a user&apos;s perception of usability. This paper uses image schemas to quantitatively and systematically evaluate both these aspects. It proposes a method for evaluating user experience that is based on using image schemas, sentiment analysis, and computational semantics. The aim is to link the sentiments expressed by users during their interactions with a product to the specific image schemas used in the designs. The method involves semantic and sentiment analysis of the verbal responses of the users to identify (i) task-related words linked to the task for which a certain image schema has been used and (ii) affect-related words associated with the image schema employed in the interaction. The main contribution is in linking image schemas with interaction and affect. The originality of the method is twofold. First, it uses a domain-specific ontology of image schemas specifically developed for the needs of this study. Second, it employs a novel ontology-based algorithm that extracts the image schemas employed by the user to complete a specific task and identifies and links the sentiments expressed by the user with the specific image schemas used in the task. The proposed method is evaluated using a case study involving 40 participants who completed a set task with two different products. The results show that the method successfully links the users&apos; experiences to the specific image schemas employed to complete the task. This method facilitates significant improvements in product design practices and usability studies in particular, as it allows qualitative and quantitative evaluation of designs by identifying specific image schemas and product design features that have been positively or negatively received by the users. This allows user experience to be assessed in a systematic way, which leads to a better understanding of the value associated with particular design features.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>U SER experience is a multi-faceted concept that refers to the experiential and affective aspects of using a particular product, system, or service. Understanding user experience is critical to the design of high-quality interactive products because it helps identify the meaningful and valuable aspects of that interactive experience and improves the overall usability of these products.</p><p>User experience is defined as a person's perceptions and responses that result from the use or anticipated use of a product, system, or service <ref type="bibr" target="#b0">[1]</ref>. The concept refers to all aspects of the interaction, including utility, ease of use, and efficiency, and is influenced by the context of use and individual beliefs, preferences, and emotions <ref type="bibr" target="#b1">[2]</ref>. User experience is dynamic, situated, context-dependent, and subjective; it stems from a broad range of potential benefits users may derive from a product <ref type="bibr" target="#b2">[3]</ref>. It is measured through attributes related to the usability of a product (e.g., efficiency, perspicuity) and measures associated with perceptions (e.g., attractiveness, stimulation, dependability, and novelty). Studies suggest a clear relationship between need fulfilment and positive affect, with stimulation, relatedness, competence, and popularity being especially salient needs <ref type="bibr" target="#b3">[4]</ref>. Therefore, the concept of user experience includes two key aspects: experience of meaning (usability) and experience of emotion (affect).</p><p>Usability is widely studied and well understood in the domains of Human-Computer Interaction (HCI) and design. It is defined as the extent to which a product can be used by a specific user to achieve a specified goal with effectiveness, efficiency, and satisfaction in a specified context of use <ref type="bibr" target="#b0">[1]</ref>. Performance measures for usability evaluation include effectiveness, efficiency, guessability, flexibility, learnability, memorability, and satisfaction <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b5">[6]</ref>.</p><p>The second aspect, affect, is less well understood in the context of product design <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b3">[4]</ref>, and the main focus is user satisfaction with products. Techniques used to assess user satisfaction include identifying subjective feelings through interviews and various physiological and motor measurements. However, there is a limited body of empirical work that explores in a holistic way both the usability and affective aspects of user experience. This is particularly important considering that affect could negatively influence a user's perception of usability.</p><p>Recently, the use of image schemas has been proposed as a means for exploring intuitive interaction <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>. Image schemas are defined as mental patterns that structure human experiences in the world <ref type="bibr" target="#b8">[9]</ref>. However, most of the studies conducted using image schemas have predominantly focused on the usability aspect. This includes studies employing direct observation <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b10">[11]</ref>, and think-aloud protocols <ref type="bibr" target="#b11">[12]</ref>, <ref type="bibr" target="#b12">[13]</ref>.</p><p>The research hypothesis of this paper is that users' attitudes and feelings can not only be identified but can be directly linked to the image schemas employed during their interactions with a product. The implication is the possibility of using image schemas to quantitatively measure user experience in its entirety, in terms of both usability and affect. This would lead to a better understanding of the value associated with particular design features.</p><p>To address this challenge, this paper proposes a semantic method for exploring users' experience that is based on using image schemas. The method includes an ontology of image schemas and a novel algorithm to identify the image schemas employed to complete a task and link a user's emotional response to the specific image schemas employed in the task. The method uses task-oriented and affective words employed by the users during their interactions with products.</p><p>The remainder of the paper is organized as follows. Section 2 provides background information and discusses relevant research in product design, including that dealing with user experience, image schemas, and sentiment analysis. Section 3 introduces the method developed, while Section 4 outlines its experimental evaluation. Section 5 consists of the results and the discussion. Finally, Section 6 offers conclusions and suggestions for future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">BACKGROUND</head><p>This section discusses user experience, image schemas, and sentiment analysis in the context of product design.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">User Experience</head><p>The concept of user experience encompasses both the functional (cognitive) and perceptual/emotional (affective) needs of the users <ref type="bibr" target="#b1">[2]</ref>. It is about the relationship between the objective and the subjective, the internal and the external aspects constituting human-product interactions <ref type="bibr" target="#b13">[14]</ref>. While the functional needs refer to the usability of the product, the affective aspect is concerned with the emotion that occurs as a result of the interaction with a product. The affective aspects of user experience are less well studied than the functional needs of users, as indicated by Hassenzahl and Tractinsky <ref type="bibr" target="#b1">[2]</ref> who suggest that the emotional needs of the user must be better understood, defined, and operationalized.</p><p>This duality between reason and emotion has been studied by several prominent scholars, including Damasio <ref type="bibr" target="#b14">[15]</ref> and Minsky <ref type="bibr" target="#b15">[16]</ref>. For example, Damasio <ref type="bibr" target="#b14">[15]</ref> argues that emotion is in the loop of reason; that is, emotion can assist in the reasoning process and on some occasions can even replace reason. He views emotion as delivering cognitive information, directly and via feelings. His theory suggests that when making decisions, people use physiological signals (or "somatic markers") associated with their past experiences. Several techniques have been developed to measure the affective state of the user; each technique has its strengths and weaknesses <ref type="bibr" target="#b16">[17]</ref>. The most comprehensive among them is the multi-component model for measuring affect, which accommodates five dimensions of affective measurement-cognitive appraisal, subjective feeling, physiological measurement, motor expression, and behavioral tendencies <ref type="bibr" target="#b17">[18]</ref>.</p><p>Forlizzi and Battarbee <ref type="bibr" target="#b18">[19]</ref> classify the existing frameworks for structuring user experience as product-centered, user-centered, and interaction-centered models. The product-centered frameworks <ref type="bibr" target="#b19">[20]</ref>, <ref type="bibr" target="#b20">[21]</ref> predominantly focus on the experience evoked by the product. They are mostly developed as guidelines to help designers incorporate aspects that can evoke pleasurable experiences when using the product. The usercentered frameworks <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b22">[23]</ref> focus on the aspects of the user's behavior that designers can embody into the design in order to facilitate the ease of use of the product. The interaction-centered frameworks <ref type="bibr" target="#b23">[24]</ref>, <ref type="bibr" target="#b24">[25]</ref> focus on the experiences that the product evokes as a mediator between the designer and the user. Such frameworks incorporate aspects of the product-centered and the user-centered approaches.</p><p>Several researchers have identified the affective experience (emotion) as an integral component of the user experience <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b25">[26]</ref>. In particular, Hekkert <ref type="bibr" target="#b25">[26]</ref> describes user experience as the entire set of effects that are elicited by the interaction between a user and a product, including the degree to which all senses are gratified (aesthetic experience), the meaning attached to a product (experience of meaning or usability), and the emotion that is elicited (emotional experience). People naturally use their cognitive, motor, and affective skills to interact with objects <ref type="bibr" target="#b26">[27]</ref>. The experience of meaning is linked to cognition; previous experience plays a key role in the association, interpretation, and retrieval of features from memory <ref type="bibr" target="#b25">[26]</ref>. A product that is designed with the user's previous experience in mind does what the user expects, with minimal cognitive effort and within the shortest possible timeframe. Usability is measured using a number of criteria including effectiveness, efficiency, guessability, flexibility, learnability, memorability, and satisfaction <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b5">[6]</ref>. The performance indicators commonly used are time on task for efficiency, accuracy for effectiveness, and preferences for measuring satisfaction.</p><p>Subjective feelings can be assessed through the use of questionnaires, rating scales, checklists, and analyses of verbal responses. Several tools have been developed for measuring the affective state based on subjective feelings. These include the Geneva Affect Label Code (GALC) <ref type="bibr" target="#b16">[17]</ref>, the Affect Grid <ref type="bibr" target="#b27">[28]</ref>, and dimensional emotion theory <ref type="bibr" target="#b28">[29]</ref>. These tools are based on a fixed or free response of the user. For example, the affect grid, which is a fixed response tool, assesses the emotional state on a scale from 1 to 9 using such measures as pleasure-displeasure and arousal-sleepiness. Users are asked to rate their emotional state by selecting one field of the affect grid. However, the priming effect of the fixed response is one of the greatest limitations of the fixed response tool <ref type="bibr" target="#b16">[17]</ref>. The free response is based on the assumption that people are aware to some extent of their emotional state and are able to describe their emotions <ref type="bibr" target="#b29">[30]</ref>. GALC <ref type="bibr" target="#b16">[17]</ref> is a free response tool that uses a limited number of emotional categories. It includes 36 categories of types of affect-related experiences and their associated word stems. For example, "disappointment" is a GALC category with 12 word stems: comedown, disappoint Ã , discontent Ã , disenchant Ã , disgruntle Ã , disillusion Ã , frustrate Ã , jilt Ã , letdown, resign Ã , sour Ã , and thwart Ã .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Image Schemas</head><p>An image schema is defined as a dynamic pattern of organism-environment interaction that gives understanding to experience emanating from human bodily interaction with the physical world <ref type="bibr" target="#b8">[9]</ref>. Image schemas are formed on the basis of interactions, pre-linguistic metaphors, and historical context.</p><p>For example, Johnson <ref type="bibr" target="#b8">[9]</ref> describes the verticality image schema as providing "a basis for our up-down orientation based on different experiences such as perceiving a tree, our felt sense of standing upright, the activity of climbing stairs, forming a mental image of a flagpole, measuring our children's height, and experiencing water rising in a bathtub". These various experiences represent the abstract structure of the verticality schema. Over time, an association relating these recurring experiences with the observed relationship is established in the user's subconscious. These associations are "metaphoric extensions" of the recurring experience. Such experiences acquired by the user over a long period of time can form interesting patterns that can subsequently be used for interaction with minimum cognitive effort and in a quicker time frame <ref type="bibr" target="#b30">[31]</ref>. For example, simple everyday experiences include seeing an object being inside or outside of a container, experiencing water rising in a river, or being at the center or periphery of a spatial scene <ref type="bibr" target="#b8">[9]</ref>, <ref type="bibr" target="#b31">[32]</ref>. The words used to describe these experiences act as a gateway to the structure the brain has composed to store the corresponding information. In the above examples, container, updown, and center-periphery are all image schemas developed from recurring and similar interactions with the world that have left traces in the brain.</p><p>Furthermore, each container image schema can be described as having an inside, outside, and a boundary that allows movement in and out of the container <ref type="bibr" target="#b32">[33]</ref>. The container image schemas can be instantiated by the words in, out, enter, emerge, come out, come in, etc. Similarly, the updown image schema is grounded in our experiences of gravity coded in words such as up, down, top, increase, decrease, rise, and fall, while center-periphery captures the experience of humans as being the perceptual center of their world <ref type="bibr" target="#b8">[9]</ref>. Several image schemas, such as up-down big-small, near-far, and left-right have been studied extensively in cognitive linguistics using verbal and nonverbal stimuli. These studies show that image schemas can be activated in audio, visual, and motor modalities.</p><p>The complete taxonomy of image schemas is still debated in the literature, but researchers agree that the image schemas can be grouped based on the relationships between cognitive domains. <ref type="table" target="#tab_0">Table 1</ref> includes an inventory of image schemas as categorized in <ref type="bibr" target="#b33">[34]</ref> based on a large body of knowledge developed by Johnson <ref type="bibr" target="#b8">[9]</ref>, Lakoff <ref type="bibr" target="#b34">[35]</ref>, Clauster and Croft <ref type="bibr" target="#b35">[36]</ref>, and other researchers.</p><p>As mentioned in the introduction, image schemas have been used to explore the usability aspects of human interaction with products. Examples of products used in studies include cameras <ref type="bibr" target="#b36">[37]</ref> and mobile phones <ref type="bibr" target="#b9">[10]</ref>. One of the limitations of these studies is that the image schemas have been extracted manually from the experimental data. This is a significant limitation because the coding process is dependent on the expertise of the researcher conducting the study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Sentiment Analysis in Product Design</head><p>Interacting with an interface is an experience that involves stimulus and response. Users' responses can be identified through their language and behavior. In the context of the think-aloud protocol widely used in product design evaluation experiments, humans use language to express their thoughts about their experience with a product. The opinions expressed by different people on the use of the same product vary based on many factors, one of which is their prior experience with the product. Several theories, including Slovic's "affect heuristic" theory <ref type="bibr" target="#b37">[38]</ref> and Damasio's somatic marker theory <ref type="bibr" target="#b14">[15]</ref>, support the idea that user experiences are stored in the long-term memory along with emotion. During the retrieval process, the emotion acts as a reminder of the previously stored information. In the context of user interactions with products, emotional responses are generated based on the "affective tag" that has been attached to similar situations experienced in the past.</p><p>A paper aimed to clarify the terminological differences between affect, feelings, emotions, sentiments, and opinions <ref type="bibr" target="#b38">[39]</ref> points out that 'sentiments involve emotional dispositions formed toward an object, and unlike emotions that are brief, sentiments about an object are enduring'. Sentiment analysis can be used to analyze the opinion expressed by the user and to identify their affective state during the interaction. It is defined as the use of natural language processing to characterize opinions, sentiments, evaluations, appraisals, attitudes, and emotions relating to entities such as products, services, organizations, individuals, issues, events, and other attributes in a source material <ref type="bibr" target="#b39">[40]</ref>.</p><p>Even though Natural Language Processing (NLP) in general has many unresolved problems related to deep language understanding, sentiment analysis is one of its success stories because it only requires understanding of the positive or negative sentiments of each sentence and the referent or topic in it <ref type="bibr" target="#b40">[41]</ref>. It involves polarity classification, mood identification, emotion recognition, agreement detection, subjectivity analysis, and identifying the degree of positivity or negativity <ref type="bibr" target="#b39">[40]</ref>, <ref type="bibr" target="#b40">[41]</ref>.</p><p>Existing approaches to sentiment analysis include keyword spotting, lexical affinity, and statistical modelling <ref type="bibr" target="#b40">[41]</ref>. As the name implies, keyword spotting classifies texts based on the presence of affective words. The lexical affinity approach assigns an arbitrary word a probabilistic affinity for a particular emotion, while statistical modelling is based on machine learning applied to large data sources. All three approaches have their strengths and weaknesses. Although considered the most na€ ıve approach, keyword spotting is popular due to its simplicity, accuracy, and low computational cost <ref type="bibr" target="#b40">[41]</ref>. Sentiments can be discovered at document level, sentence level, or aspect level. In particular, aspect-level sentiment analysis aims to find sentiment-target pairs in a given text about an entity (i.e., the target) and its main characteristics (aspects) <ref type="bibr" target="#b41">[42]</ref>. The four main approaches for identifying the sentiment-target pairs are machine learning, dictionarybased, statistical, and semantic <ref type="bibr" target="#b42">[43]</ref>.</p><p>A large amount of work has been undertaken to develop collections of affect-related words and reasoners that use such resources. Examples include the aforementioned GALC <ref type="bibr" target="#b16">[17]</ref> and Affect Grid <ref type="bibr" target="#b27">[28]</ref>, as well as the Linguistic Annotation Scheme <ref type="bibr" target="#b43">[44]</ref>, WordNet-Affect <ref type="bibr" target="#b44">[45]</ref> and SentiFul <ref type="bibr" target="#b46">[47]</ref>. While earlier studies were dominated by statistical modelling and supervised learning, more recent work indicates a noticeable shift towards using concept-based approaches linked to common sense and linguistic knowledge bases. This trend has been also noticed by Schouten and Frasincar <ref type="bibr" target="#b41">[42]</ref> who believe that the future of aspect-level sentiment analysis is semantically-rich concept-centric approaches.</p><p>In the domain of product design, sentiment analysis has been used in customer satisfaction studies <ref type="bibr" target="#b47">[48]</ref> and marketing to analyze consumers' preferences for particular products and to establish a new product range <ref type="bibr" target="#b48">[49]</ref>. It has been also employed in online personalized recommendation systems <ref type="bibr" target="#b49">[50]</ref> and reputation management to analyze opinions about brands and products in product reviews and online fora <ref type="bibr" target="#b50">[51]</ref>, <ref type="bibr" target="#b51">[52]</ref>. Most of the existing studies analyze the positive or negative opinions expressed by consumers in terms of overall opinion about products and particular usability functions. Such studies lack the in-depth analysis needed to link these opinions to specific design features.</p><p>To summarize, previous studies have shown the potential of image schemas in evaluating usability, but there is no work linking user experience with image schemas. In addition, sentiment analysis has been successfully applied in marketing and branding, but there is insufficient understanding of how it can be used to evaluate user experience. Moreover, none of the existing approaches to aspect-level sentiment analysis deal with metaphorical abstract categories (such as those used at the subconscious level of mental images), which are very challenging to express and therefore detect. This paper addresses these research gaps by proposing a method based on image schemas for assessing the affective aspects of users' interactions with products.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">PROPOSED SEMANTIC METHOD FOR EXPLORING USERS' EXPERIENCE 3.1 Conceptual Model</head><p>The method supports evaluation studies of user experience based on the think-aloud protocol, which is a widely used tool in usability studies as it offers insight into non-observable aspects of interactions and can reveal misconceptions and misinterpretations of design elements or instructions. Similar to direct observation, the think-aloud protocol allows the investigator to explore specific areas of interest in the context of a specified task. The utterances contain task-related and affect-related words and phrases. For example, the utterance "The use of the down button to increase the time seems weird" extracted from a participant's think-aloud transcript as part of this study contains the phrase down button to increase, which is related to a design feature and the task, while the word "weird" refers to the experience of using this particular design feature.</p><p>The identification of task-related and affect-related words requires the use of a different type of lexical resource. While a number of affect-related and generic lexical resources are currently available, the analysis of the taskrelated words and phrases requires the development of a new domain-specific ontology.</p><p>The proposed method aims at analyzing the utterances of the participants in the evaluation studies and linking them to particular image schemas used in the product designs (see <ref type="figure" target="#fig_0">Fig. 1</ref> in which the novel contributions of this paper are indicated in italics). The method consists of a domain-specific ontology of image schemas and a novel algorithm developed to extract the image schemas used to complete a task; to determine, based on sentiment analysis, the affective words used and their polarity; and to link them to the specific image schemas used to complete the task. In addition to the ontology of image schemas, the method uses a general-purpose lexical ontology and a vocabulary of affective words.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Ontology of Image Schemas</head><p>Ontology is a branch of Philosophy that studies the nature and structure of reality. In Knowledge Engineering, however, the term refers to a domain model and is defined as a "formal, explicit specification of a shared conceptualization" <ref type="bibr" target="#b52">[53]</ref>, <ref type="bibr" target="#b53">[54]</ref> and as "a logical theory designed to account for the intended meaning of a vocabulary" <ref type="bibr" target="#b54">[55]</ref>. These two definitions support the rationale for developing a computational ontology of image schemas. In particular, in the context of this study, such an ontology would provide a simplified view and a structured representation of the knowledge about image schemas. Moreover, the ontology would provide a shared vocabulary of terms, which will allow reasoning about interactions with products and what the quality of particular product design features is A number of methodologies is employed to develop and maintain domain ontologies. A major limitation of many of them is "tying the ontology closely to a specific task" <ref type="bibr" target="#b55">[56]</ref>. This research uses METHONTOLOGY because it enables the construction of ontologies at the knowledge level (i.e., starting with conceptualization rather than implementation). Its standard development cycle includes the following steps: specification, knowledge acquisition, conceptualization, integration, implementation, evaluation, and documentation <ref type="bibr" target="#b56">[57]</ref>.</p><p>The specification phase in the development of the ontology of image schemas involves analyzing the existing classifications of image schemas and making decisions about the purpose, scope, formality, and granularity of the ontology to be developed. The starting point is the taxonomy shown in <ref type="table" target="#tab_0">Table 1</ref>  <ref type="bibr" target="#b33">[34]</ref>, which includes seven classes and 41 categories. As the ontology developed in this research was conceived as an aid to identify image schemas that can be associated with user's experiences with physical products, it was decided to limit the scope to image schemas that are extensively used during interactions. These image schemas are: containment, force, space, multiplicity, and attributes. <ref type="table" target="#tab_1">Table 2</ref> shows the scope of the developed ontology, which includes five classes and twenty categories of image schemas. In terms of granularity, it was felt that the ontology needs three more levels in addition to classes and categories: a third level, which includes the most essential properties of each type of image schema; a forth level, which contains the linguistic concept associated with each property; and a fifth level, which contains the linguistic terms semantically related to each of those properties.</p><p>The knowledge acquisition phase involves using knowledge sources to identify the properties of each category of image schema. It has to be noted that not all metaphorical extensions are studied extensively or have precise definitions in the literature. It was found that one of the best resources available is the online catalogue of image schemas called ISCAT <ref type="bibr" target="#b57">[58]</ref>, which includes descriptions, definitions, references, evidence of experiential grounding, relationships to other image schemas, and a large amount of linguistic examples from the English and German languages. For example, content is listed in ISCAT as belonging to containment and is defined as "everything that is inside a container". Examples of metaphorical extensions of content are physical and emotional states, such as anger, fear, sadness, and happiness. Some among the many linguistic examples given for content are: "He has a pain in his shoulder" <ref type="bibr" target="#b30">[31]</ref>, "The smile left his face" <ref type="bibr" target="#b30">[31]</ref>, "She is boiling with anger" <ref type="bibr" target="#b58">[59]</ref>, and "My cold has gone from my head to my chest" <ref type="bibr" target="#b30">[31]</ref>. Content is only related to containment, its parent class, but most image schemas are related to other entities. For example, container is related to in-out, surface, blockage, center-periphery, and scale.</p><p>The conceptualization phase includes using the definitions of the image schemas to associate properties with the image schema categories. A property in this context is a lexical term that represents an essential element of an image schema category that could be related to the way a user interacts with a design feature. <ref type="table" target="#tab_2">Table 3</ref> contains examples of image schema categories, one from each class, and their corresponding properties. For example, container has four essential properties: interior, exterior, ingress, and egress; path is characterized by source, goal, and path (trajectory), etc. An important part of the conceptualization phase is linking properties to semantic concepts and linguistic terms.</p><p>The lexical resource used for this purpose is OntoRo. This is an electronic resource based on Roget's Thesaurus <ref type="bibr" target="#b59">[60]</ref> and has been employed in several other studies related to design <ref type="bibr" target="#b60">[61]</ref> and information retrieval <ref type="bibr" target="#b61">[62]</ref>, <ref type="bibr" target="#b62">[63]</ref>. Moreover, the use of OntoRo is also justified by linguistic studies <ref type="bibr" target="#b35">[36]</ref>, which have found that many of the names of image schemas correspond to Roget's subcategories.</p><p>Similar to Roget's Thesaurus, OntoRo has a hierarchical structure comprising six classes, 39 sections, 95 subsections, and 990 semantic concepts. The linguistic terms within these concepts are organized in 'semicolon' groups that belong to one of the four parts of speech (i.e., noun, adjective, verb, and adverb). Within each part of speech, there are separate paragraphs that link related words semantically. For example, Roget's category capacity (found both under the heading physical states and the heading qualities of matter) parallels the content of a container image schema <ref type="bibr" target="#b35">[36]</ref>.</p><p>Next, the image schema properties are manually linked to the most suitable semantic concept in OntoRo <ref type="table">(Table 4)</ref>.  Each of the 990 concepts in OntoRo is labelled with its number and the first word of all the words belonging to that concept (e.g., #224 interiority). All concept numbers in this study use a # tag. Most properties are polysemic words that can be linked to more than one concept. For example, the word interior, which is one of the properties of the image schema container, has six senses and can therefore be linked to six linguistic concepts: #5: intrinsic, #58: component, #78: inclusion, #224 interiority, #344 land, and #553 painting. However, only one of these concepts, #224 interiority, is related to interior as a space enclosed by a boundary, which is the description of container. Even though concept disambiguation using algorithms developed by the authors in previous design studies <ref type="bibr" target="#b60">[61]</ref> and information retrieval research <ref type="bibr" target="#b61">[62]</ref>, <ref type="bibr" target="#b62">[63]</ref> is possible, this was considered unnecessary because this procedure is only performed as part of the conceptualization phase of the ontology.</p><p>Each concept in Roget's Thesaurus is linked to a large number of linguistic terms that are semantically related. For example, concept #224 interiority is semantically linked to 191 words and phrases grouped in five paragraphs-two paragraphs with nouns, one with adjectives, one with verbs, and one with adverbs. It must be noted that not all words and phrases make immediate sense in the domain of product design and interactions, but Roget's Thesaurus is a general-purpose lexical resource and some associations are only applicable within a certain context. However, image schemas are used as metaphorical extensions where physical and emotional states are entities within a person (see the previously given example "My cold has gone from my head to my chest" <ref type="bibr" target="#b30">[31]</ref>), so it is appropriate that concept #224 interiority includes words related to internal organs, such as chest, belly, lungs, and guts. <ref type="figure" target="#fig_1">Fig. 2</ref> shows the structure of the developed ontology. It contains five classes, 20 categories, and 46 properties linked to the same number of linguistic concepts. Each concept is semantically related to between 120 and 450 words and phrases. The ontology also captures the semantic similarity between some image schemas. For example, center-periphery is semantically linked, according to the Catalogue of Image Schemas <ref type="bibr" target="#b57">[58]</ref>, to container, in-out, near-far, and scale. <ref type="table" target="#tab_2">Table 3</ref> shows the image schemas implemented in the ontology and their linguistic concepts. The number of related concepts corresponds to the number of properties associated with each image schema.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Algorithm for Extracting Image Schemas and</head><p>the Sentiments Associated with Them <ref type="figure" target="#fig_2">Fig. 3</ref> shows the algorithm, which starts with transcribing the utterances of the participants in the think-aloud experiment. An utterance is an uninterrupted chain of spoken (or written) language. The transcription can be performed semi-automatically or automatically, where the utterances are differentiated when a longer pause occurs. The prosody (e.g., intonation, rhythmic quality, stress patterns, etc.) that accompanies speech is not included in the language transcript. All utterances are numbered, and these numbers are used later to link the extracted image schemas with the associated sentiment. The transcripts are then pre-processed, which involves removing all words with very high frequency in the English language (e.g., the, of, to, a, this, haveç know, look, etc.), as well as interjections, that is, words that have no grammatical meaning but are used in spoken language to signify emotions (e.g., ahh, ahhh, aww, nah, etc.). In addition, the words in plural forms (e.g., buttons), gerund forms (e.g., looking),  and past tense (e.g., asked) are stemmed. However, rather than using the standard Porter stemmer <ref type="bibr" target="#b63">[64]</ref>, which removes all suffixes, this work uses the semantic stemmer SETS <ref type="bibr" target="#b62">[63]</ref>, which has shown good results with OntoRo. SETS keeps the words in the form they are used (e.g., connecting is not stemmed to connect) as the inflected words may have different meaning and different semantic representation (i.e., can be linked to different OntoRo concepts).The Porter stemmer creates more polysemic stems, which makes concept disambiguation-especially when working with short sentencesextremely difficult and inaccurate. Every word that occurs in an utterance is searched first in OntoRo using its morphological form as it is used by the participant in the experiment. If the word is found in OntoRo, it is considered stemmed, and the SETS algorithm proceeds to the next word. If the word does not occur in it, the algorithm proceeds with the first, second, third, etc., step of the Porter stemmer, repeating the search in OntoRo after each step <ref type="bibr" target="#b62">[63]</ref>. Finally, if the algorithm does not find a stem, the word is considered a named entity and is not linked to any concepts. The SETS algorithm carefully avoids treating phrases as words (e.g., present time is treated as a phrase and not two individual words).</p><p>The next step is extracting the task-related and affective words in each stemmed utterance. This can be accomplished semi-automatically or automatically. A simple practical approach is removing all affective words using a collection of affect-related words and treating the rest as task-related words.</p><p>For example, the utterance »1: I have to press this part to change the mode, nice is given a number (1) and a tag (»), which are used in this research to code utterances. The utterance is preprocessed; the words I, have, to, this, to, the are ignored; and the stemmed utterance is recorded as »»1: press part change mode nice (the tag »» indicates that the utterance has been stemmed). There is one affective word in this sequence, so two more strings are recorded: »»1.t: press part change mode (for task-related words) and »»1.a: nice (for affective words).</p><p>The next step is identifying all possible senses for each task-related word. The step uses a semantic algorithm <ref type="bibr" target="#b60">[61]</ref>, <ref type="bibr" target="#b62">[63]</ref>, which identifies all possible senses and their corresponding concept numbers in OntoRo. <ref type="table" target="#tab_4">Table 5</ref> shows this process of semantic expansion using the example discussed above. The next step is matching the task-related words with the image schemas by comparing the lists of concept numbers related to each word using the image schema ontology <ref type="table" target="#tab_2">(Table 3</ref>). In the previously used example, each of the 16 semantically related concepts associated with the task word press is matched with the image schema ontology ( <ref type="table" target="#tab_2">Table 3</ref>, <ref type="figure" target="#fig_1">Fig. 2</ref>). Only one of the 16 concepts is related to an image schema, and this is concept #740: compulsion, related to the image schema compulsion of class force. Similarly, part is associated with #53: part, image schema part-whole of class multiplicity, and mode is related to #624: way, image schema pathç class space. No direct match is found for the taskrelated word change. This step is recorded by generating a string »»»1.t: 740 53 0 624.</p><p>Next, the affective words are analyzed in terms of expressing positive or negative sentiments using a vocabulary of affective words. Then a new string is recorded, which converts the string representing the affective words in an utterance (»»1.a: nice) into a string representing the sentiments expressed (»»»1.a: positive).</p><p>The final step involves linking the two strings and associating the identified image schemas with the sentiment expressed (»»»1.t: 740 53 0 624) ! (»»»1.a: positive).</p><p>The algorithm is implemented in Cþþ.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">EXPERIMENTAL VALIDATION OF THE PROPOSED METHOD</head><p>The proposed method is evaluated using an empirical study involving 40 participants completing a set task with two different alarm clocks. Both of these products had design flaws, so the purpose of the experiment was to verify if the method is sensitive to identifying the specific issues experienced by the users during their interactions. In total, 80 observations were recorded.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Participants</head><p>Forty participants were recruited for the study. The group is multicultural, but this aspect was not considered important in the study. <ref type="figure" target="#fig_3">Fig. 4</ref> shows a participant interacting with Product 2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Apparatus</head><p>Two multifunctional alarm clocks were used in the study. These products were chosen because they provided many interaction opportunities based on a wide range of image schemas. The first alarm clock had seven features-changing the mode, setting time, setting timer, enabling sound, up and down buttons, and display. The second alarm clock also had seven features-switching on the alarm, setting up alarm, setting up hour, minute, timer, snooze button (which stops the alarm and sets it to ring again a short time later), and display. These features are common to most digital products and people feel confident in interacting with them. The equipment used in the experiment included the following:</p><p>(i) Four digital cameras. These cameras recorded participants' interactions from four angles. (ii) Noldus Observer XT software for capturing, analyzing, and presenting behavioral data <ref type="bibr" target="#b64">[65]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Procedure</head><p>The participants in the study were given the task to set the alarm clock to 11:30 am. Before the start of the experiment, all clocks were set to 3:00 am and were in alarm mode. The participants were not told how to complete the tasks and were not given any product documentation or instruction manuals. The correct execution of the tasks was extracted by the researchers from the product documentation. It included a sequence of three subtasks for Product 1 (activate the time mode, set the hour, set the minutes) and five subtasks for Product 2 (activate the alarm mode, activate the set option, set the hour mark, set the minute mark, and activate the set time). <ref type="figure" target="#fig_4">Fig. 5</ref> shows the design of Product 1. It consists of a display at the front and five buttons (alarm, time, hour, minutes, and snooze) located at the top of the product. In addition, an alarm switch is located at the right side of the product. As indicated in the instruction manual for the alarm clock, the task requires the execution of three subtasks:</p><p>(1). Activate the time mode. This requires pressing the alarm switch up to enter the time mode. (2). Set the hour. This step involves holding the time button down and pressing the hour button until it gets to 11 am. (3). Set the minutes. This involves holding the time button down and pressing the minute button until it gets to 30. The product description for the same alarm clock adds more detail. It states that "the time mode environment is displayed on the top left corner of the screen with a dot sign."</p><p>The text describing the subtasks and the product was used to identify the image schemas that have to be activated according to the designer's intent.</p><p>Based on the information in the instruction manual, the image schemas involved in completing subtask 1 are compulsion, path, and container. The compulsion image schema is associated with the action word "press". The external force in the form of the users physically pushing the button causes the passive entity (alarm clock) to move from the alarm mode to the time mode. The path image schema is extracted from the movement along a path initiated by the force involving pressing. The alarm mode corresponds to the start point; the action press initiates a movement along a path to the end point, which is the normal mode. The container image schema is extracted from the word enter. The normal mode represents the location out of the container; the action word press initiates a movement through the portal into the container, which represents the alarm mode. Two additional image schemas were extracted from the product description. These are part-whole and matching. The central location of the screen creates a spatial relationship with other features. The screen represents the part of the whole configuration. The dot symbol was used to represent the time mode, and the requirement to find the dot symbol expects the use of the matching image schema. Therefore, five image schemas were expected to be used for the completion of subtask 1: compulsion, path, container, part-whole, and matching.</p><p>The participants were timed and observed during the task; all interactions were video-recorded. The participants were encouraged to verbalize their thoughts during their interaction with the products. The participants' verbal responses were recorded and later transcribed. The time to complete the task and the number of errors were processed using the Observer XT10 software. A structured questionnaire was completed by the participants immediately after completion of the task. The participants were also asked to rate each product in terms of their overall satisfaction using a five-point Likert scale. The study lasted approximately 30 minutes per participant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">RESULTS AND DISCUSSION</head><p>In total, 80 interactions were recorded as a result of 40 participants completing tasks with two products. The participants needed between 85 and 502 seconds to complete the task with Product 1 and between 34 and 396 seconds to complete the task with Product 2. The number of words captured  through the think-aloud protocol were between 30 and 185 for Product 1 and between 27 and 162 words for Product 2.</p><p>Two aspects of the subtasks for Product 2 were the most problematic for the majority of the participants: increasing the hour setting and accessing the alarm mode. When attempting to increase the hour, the majority of the participants were affected by the implementation of the up-down image schema. The down feature was used to increase the time while an up feature to decrease it. Participants' mental model of experience associating an increase with up and decrease to down was violated and though the subtask was completed quickly, many errors were also made. The second aspects of the difficulties experienced by the majority of the participants in Product 2 involve accessing the alarm mode. While trying to enter the alarm mode, the majority of the participants used variations of the statement "I am looking for how to get into alarm mode", which speaks of the difficulty in locating the right button for the sub-task. Participants had problems differentiating between the buttons that were similar in labels, which increased their cognitive load of finding the right way to complete the task.</p><p>Even though Product 1 had fewer subtasks, the majority of the participant spent more time trying to figure out how to complete the task. For example, to get into alarm mode, participants had to combine the alarm and hour buttons, which appeared very confusing to the majority of the participants during the experiment.</p><p>Overall, the majority of the participants in the study made several mistakes while completing the task using the two products, but the majority of the participants were quicker to recover from the mistakes after several trials for product 2 than for Product 1. <ref type="table" target="#tab_5">Table 6</ref> shows the type of data recorded for one of the participants in the study as a result of direct observation and the think-aloud protocol.</p><p>The analysis of the direct observation data in <ref type="table" target="#tab_5">Table 6</ref> shows that the participant attempted to use compulsion, path, container, and part-whole to activate the time (sub-task 1). However, the image schema matching has manifested itself as a problem.</p><p>The analysis of the think-aloud data for the same subtask shows that the meaningful task-related words (i.e., those linked to image schemas) used are: arrangement (related to concept #53: part and image schema part-whole), press (#740: compulsion and image schema compulsion), move in (#297: ingress and image schema container), mode (# 624: way and image schema path), and represent (#18: similarity and image schema matching). The affective words accompanying these task-related words are lovely (positive sentiment associated with pleasure/enjoyment, linked in this example to part-whole) and weird (negative sentiment indicating surprise, related in this context to the image schema matching). For this participant, distinguishing between the time mode and the alarm mode, which involves using a matching image schema, appears to have been a problem (the affect word unexpected is used to describe the interaction). In contrast, the arrangement of the features that are linked to the partwhole image schema is referred to positively as lovely. No affective words were used in relation to the image schemas compulsion, path, and container.</p><p>In total, 65 affective words were used in the whole experimental study, including 32 positive words from nine GALC categories of positive sentiments and 33 negative words from six GALC categories. <ref type="table" target="#tab_6">Table 7</ref> lists the affective words used by the participants, the category they belong to, and their valence (P-positive, N-negative).</p><p>As previously mentioned, the image schemas expected to be used in subtask 1 according to the designer's intent, as extracted from the manual and the product description, were compulsion, path, container, part-whole, and matching. All these image schemas were identified by the two methods of direct observation and the think-aloud protocol. However, the image schema matching was identified as problematic. <ref type="table" target="#tab_7">Table 8</ref> shows the data analysis for the experiment. It includes data from direct observations and the think-aloud protocol for all 40 participants interacting with the two products. The success rate for each participant is calculated as the ratio of the correctly used image schemas over the total number of image schemas. The total number is a sum of the correctly used, the incorrectly used (attempted but causing difficulties), and the unidentified (not attempted). The success rate of all participants was 37.81% with Product 1 and 25 percent with Product 2 (as mentioned previously, both products had design flaws and so a low success rate was expected). These low percentages indicate that the method is very sensitive, even when applied to a relatively simple type of product that most people attempt to operate without reading a manual.</p><p>As mentioned earlier, the participants were asked to indicate their level of satisfaction with the two products as The participant was observed to search for the switch controlling the time and alarm mode. The participant pushed (indicating the use of compulsion) the switch forward (use of path). The participant was observed to examine the content of the screen (container) to see if there is an indication of the time mode (matching).</p><p>"I have to look carefully to know where to begin. The arrangement of the features is lovely. Okay. I have seen the switch. I have to press the switch forward to move into time mode. I can't really see anything that represents time mode. This is unexpected."</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Set the hour</head><p>The participant was observed to try out different buttons and different combinations, occasionally looking at the screen to see if there was a change.</p><p>"I have pressed almost all the buttons and nothing seems to be changing. This is very difficult. Aha, okay, I got it. You will need to hold the alarm and press the hour to set the hour to 11."</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Set the minutes</head><p>The participant was observed to search for the time and the minute buttons. The participant repeated the same procedure as in the previous subtask.</p><p>"The minutes are quite simple to set. Hold the time and press the minutes until it gets to 30." part of the structured questionnaire they completed after the experiment. The levels of satisfaction were used to group the participants in three groups: low (group 1), medium (group 2), and high satisfaction (group 3).</p><p>Next, a statistical analysis was conducted to determine if there were significant differences in the number of positive sentiments expressed by the three groups. Only participants who completed the tasks successfully were considered in this analysis. Out of all forty participants in the study, twenty seven participants successfully completed the task with Product 1, and thirty participants successfully completed the task with Product 2.</p><p>A Shapiro-Wilks test (p ¼ 0:257) showed that the sentiments expressed in relation to Product 1 were approximately normally distributed in the three groups with effect size (d ¼ 0:500). Homogeneity of variance was violated, as assessed by the Levene test of equality of variance (p ¼ 0:040), and so separate variances and the Welch correction were used. There were statistical differences in the three groups: Fð2; 24Þ ¼ 6:381 (p ¼ 0:060). A Tukey post hoc test revealed there was a statistically significant difference between the sentiments expressed in the high and low satisfaction groups (p ¼ 0:0060) and the high and medium groups (p ¼ 0:036). No statistically significant difference was found between the low and medium satisfaction groups (p ¼ 0:733).</p><p>Similarly for Product 2, the Shapiro-Wilks test (p ¼ 0:135) showed that the sentiments expressed were normally distributed in the three groups, with effect size d ¼ 0.416 and a Levene test of equality of variance p ¼ 0:862. There were statistically significant differences in the three groups: Fð2; 27Þ ¼ 3:619 (p ¼ 0:001). A Tukey post hoc test revealed a statistically significant difference between the sentiments expressed in the high and low satisfaction groups (p ¼ 0:037). No statistically significant difference was found between the high and medium groups (p ¼ 0:168) and the low and medium groups (p ¼ 0:739). These results confirmed that participants with high satisfaction ranking were more likely to use positive affective words to describe the image schemas employed in the  interactions. As expected, there is a positive correlation between the level of satisfaction and the number of positive sentiments expressed through affective words. The most significant result, however, is demonstrated in <ref type="figure" target="#fig_5">Fig. 6</ref>, which shows the negative sentiments expressed towards individual image schemas. The image schemas associated with more negative sentiments were path, brightdark, attraction, and matching for Product 1 and path, up-down, and bright-dark for Product 2. These image schemes were also identified in the questionnaire completed by the participants as causing difficulties and as responsible for the relatively low levels of satisfaction with the two products.</p><p>A closer examination of the image schemas responsible for the task difficulties with Product 1 reveals that the path image schemas affected the performance of the participants. The designer's idea of combining buttons to set the alarm time (subtask 1) created interaction problems for many participants. Similarly, the majority of the participants applied trial and error in subtask 2, which resulted in more errors and longer task completion time. The matching image schema affected the participants in terms of the appearance of the icon used to represent the alarm mode. The use of a "dot" symbol to represent the alarm mode on the screen was not meaningful to the users.</p><p>For Product 2, the up-down image schema affected the participants in terms of the spatial arrangement of the features. The participants made more errors and had increased search times as a result of placing the feature to increase the time in the reverse location. Furthermore, the path image schema (comprising the feature used to get into the "alarm" mode) was again problematic. The majority of the participants affirmed that they were used to the features "set" and "mode" to assess menus in most digital products. This particular product comes with mode and set features.</p><p>Participants were split between the use of the two buttons to get into "alarm" mode. Many errors and longer times were observed in this subtask (subtask 1). The brightdark and matching image schemas affected the participants in terms of the appearance of the features (color, label, and the icon used). The poor contrast in terms of the color used for the label and the background created visual perception problems for the majority of the participants. In addition, the icon used to represent the "alarm" mode was presented with a poor color choice that did not attract the attention of the majority of the participants.</p><p>These results suggest that the method used in this study can be used for in-depth analyses of user interfaces and their design elements. The method allows identifying the effects of using particular image schemas, and if the effect is not the one intended by the designer, changes can be recommended to improve the product design. Furthermore, the mental model of the participants regarding the functionality of the system based on the sequencing of action and system response can be evaluated based on this approach. This can help in detecting interaction difficulties and potential design flaws in the early phase of design.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">CONCLUSIONS AND FUTURE WORK</head><p>This is the first study that experimentally investigates the link between image schemas and affect. This is significant because sentiment analysis in product design has been primarily used in customer satisfaction studies, marketing, branding, and reputation management. This study proposes a method that can be used to analyze interactions and the quality of specific design features.</p><p>The main contribution of the paper is the semantic method, which identifies and links the sentiments expressed by the user relating to the specific image schemas used in a task. Another important innovative aspect of the method is the domain-specific ontology of image schemas developed for this study. In addition to this ontology, the method uses general-purpose and specialized linguistic resources.</p><p>The empirical study conducted to validate the approach shows that the user experience can be directly linked to the image schemas used during an interaction with a product. This can potentially lead to significant improvement in design for intuitive use, as the approach directly links experience to the specific image schemas employed in the design. The ontology of image schemas can be used in any study investigating intuitive interactions in the area of design for intuitive use.</p><p>Some of the limitations of this study suggest opportunities for further research. First, the ontology of image schemas can be extended with more categories and more relationships between semantic concepts and image schema properties. Second, other, more advanced, sentiment analysis techniques and more advanced linguistic resources and reasoners can be employed. Finally, the semantic and affective analysis can be extended to include interjections, that is, words that have no grammatical meaning, but are used in spoken language to signify emotions and the prosody that accompanies speech.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Conceptual model of the proposed method. The elements in italics are the specific contributions of this paper.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Ontology of image schemas.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>Algorithm for extracting image schemas and the sentiments associated with them.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 .</head><label>4</label><figDesc>A participant during the experimental study.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 .</head><label>5</label><figDesc>Design features of Product 1.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 6 .</head><label>6</label><figDesc>Negative sentiments expressed during interactions with Product 1 and Product 2. The participants are grouped according to the level of their satisfaction: low (group 1), medium (group 2), and high satisfaction (group 3).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1</head><label>1</label><figDesc>Categories of Image Schemas [34] Space Up-down, left-right, near-far, front-back, center-periphery, contact, path, scale Containment Container, in-out, content, full-empty, surface</figDesc><table><row><cell>Class</cell><cell>Category</cell></row><row><cell>Basic schemas</cell><cell>Substance, object</cell></row><row><cell>Multiplicity</cell><cell>Merging, collection, splitting, part-whole, count-mass, link, matching</cell></row><row><cell>Process</cell><cell>Iteration, cycle</cell></row><row><cell></cell><cell>Diversion, counterforce, restraint removal,</cell></row><row><cell>Force</cell><cell>resistance, attraction, compulsion, blockage,</cell></row><row><cell></cell><cell>balance, momentum, enablement</cell></row><row><cell>Attribute</cell><cell>Heavy-light, dark-bright, big-small, warm-cold, strong-weak, straight, smooth-rough</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2 Image</head><label>2</label><figDesc></figDesc><table /><note>Schemas Employed in the Ontology Class Category Space Up-down, near-far, front-back, center-periphery, contact, path, scale, rotation Containment Container, in-out, content Multiplicity Part-whole, link, matching Force Attraction, compulsion, blockage, balance Attribute Dark-bright, big-small</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 3</head><label>3</label><figDesc>Properties of Image Schemas container consists of a boundary that separates an interior (space enclosed by the boundary) from the exterior (the surrounding area/space not enclosed by the boundary) and, often, a portal (an opening in the boundary that allows movement between the interior and the exterior).</figDesc><table><row><cell>Class</cell><cell>Category</cell><cell>Definition [58]</cell><cell>Properties</cell></row><row><cell cols="2">Containment Container</cell><cell cols="2">A Interior, exterior, movement into (ingress),</cell></row><row><cell></cell><cell></cell><cell></cell><cell>movement out (egress)</cell></row><row><cell>Space</cell><cell>Path</cell><cell>A path consists of a source or starting point, a goal or</cell><cell>Source, goal, path</cell></row><row><cell></cell><cell></cell><cell>end-point, and a sequence of contiguous locations</cell><cell></cell></row><row><cell></cell><cell></cell><cell>connecting the source with the goal.</cell><cell></cell></row><row><cell cols="3">Multiplicity Part-whole Part-whole is an image schema that consists of a whole,</cell><cell>Whole, part, configuration</cell></row><row><cell></cell><cell></cell><cell>parts, and a configuration.</cell><cell></cell></row><row><cell>Attribute</cell><cell cols="2">Big-Small Big is conspicuous in size, extent, position, or impor-</cell><cell>Big, small</cell></row><row><cell></cell><cell></cell><cell>tance; it is significant. Small is insignificant, of a size</cell><cell></cell></row><row><cell></cell><cell></cell><cell>that is less than normal or usual.</cell><cell></cell></row><row><cell>Force</cell><cell>Attraction</cell><cell>Attraction is a force image schema in which a (passive)</cell><cell>Attraction</cell></row><row><cell></cell><cell></cell><cell>object exerts a force on another object, either physi-</cell><cell></cell></row><row><cell></cell><cell></cell><cell>cally or metaphorically, to pull it toward itself.</cell><cell></cell></row></table><note>#417: light; #418: darkness; #425: color Big-small #32: greatness; #33: smallness; #195: size; #196: littleness; #638: importance; #639: unimportance</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>The breakdown shows 13 females, with age ranging from 22 to 43 years (mean ¼ 30.54, SD ¼ 6.05), and 27 males, with age ranging from 22 to 45 years (mean ¼ 30:31, SD ¼ 5:07).</figDesc><table /><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 5</head><label>5</label><figDesc>; 198: make smaller; 216: flatter; 218: be supported, 258: smooth; 279: impel; 322: weigh; 587: press; 599: resolute; 612: incite; 678: acting; 691: advice; 740: compel; 761: request; 786: take away; 889: caress. Part 13 46: disunite; 53: part; 55: incompleteness; 58: component; 263: open; 294: diverge; 296: depart; 410: melody; 412: vocal music; 589: reading matter; 594: acting; 622: function; 783: portion.</figDesc><table><row><cell>Semantic Expansion</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>TABLE 6 A</head><label>6</label><figDesc></figDesc><table><row><cell></cell><cell cols="2">User's Interactions with Product 1 (Subtask 1)</cell></row><row><cell>Subtask</cell><cell>Direct observation</cell><cell>Think-aloud protocol</cell></row><row><cell>Activate</cell><cell></cell><cell></cell></row><row><cell>the time</cell><cell></cell><cell></cell></row><row><cell>mode</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>TABLE 7</head><label>7</label><figDesc>Affective Words Used by the Participants</figDesc><table><row><cell>Affective Word</cell><cell>Affect Category</cell><cell>Valence</cell></row><row><cell></cell><cell>(GALC)</cell><cell></cell></row><row><cell>Fascinated, wondering,</cell><cell>Admiration</cell><cell>P</cell></row><row><cell>Funny</cell><cell>Amusement</cell><cell>P</cell></row><row><cell>Comfortable, satisfying</cell><cell>Contentment</cell><cell>P</cell></row><row><cell>Disappointed, frustration</cell><cell>Disappointment</cell><cell>N</cell></row><row><cell>Disliked</cell><cell>Disgust</cell><cell>N</cell></row><row><cell>Clear, easy, feel, instinctive,</cell><cell>Feeling</cell><cell>P</cell></row><row><cell>intuitive, like, perceived, sim-</cell><cell></cell><cell></cell></row><row><cell>ple, useful, user, friendly</cell><cell></cell><cell></cell></row><row><cell>Confident</cell><cell>Hope</cell><cell>P</cell></row><row><cell>Interest</cell><cell>Interest</cell><cell>P</cell></row><row><cell>Awful, distracted, unpleasant</cell><cell>Irritation</cell><cell>N</cell></row><row><cell>Attractive, wish</cell><cell>Longing</cell><cell>P</cell></row><row><cell>Bad, challenge, incompatible,</cell><cell>Negative</cell><cell>N</cell></row><row><cell>poor, uncertain, unfamiliar,</cell><cell></cell><cell></cell></row><row><cell>useless,</cell><cell></cell><cell></cell></row><row><cell>Classical, compatible,</cell><cell>Positive</cell><cell>P</cell></row><row><cell>expected, explicit, familiar,</cell><cell></cell><cell></cell></row><row><cell>fine, good, helpful, obvious,</cell><cell></cell><cell></cell></row><row><cell>preferable</cell><cell></cell><cell></cell></row><row><cell>Appealing, beautiful, lovely,</cell><cell>Pleasurable/</cell><cell>P</cell></row><row><cell>nice</cell><cell>Enjoyment</cell><cell></cell></row><row><cell>Amaze, strange, surprising,</cell><cell>Surprise</cell><cell>N</cell></row><row><cell>unexpected, weird</cell><cell></cell><cell></cell></row><row><cell>Awkward, complex, compli-</cell><cell>Tension/ stress</cell><cell>N</cell></row><row><cell>cated, confusing, difficult,</cell><cell></cell><cell></cell></row><row><cell>disagree, discomfort, hard,</cell><cell></cell><cell></cell></row><row><cell>obscure, problematic, terrible,</cell><cell></cell><cell></cell></row><row><cell>tough, tricky, uncomfortable</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>TABLE 8</head><label>8</label><figDesc>Users' Interactions with Products 1 and 2 (All Subtasks)</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell cols="4">Product 1</cell><cell></cell><cell></cell><cell></cell><cell cols="4">Product 2</cell><cell></cell></row><row><cell>Participant</cell><cell>Correctly used</cell><cell>image schemas</cell><cell>Incorrectly used</cell><cell>image schemas</cell><cell>Unidentified</cell><cell>image schemas</cell><cell>Success rate</cell><cell>Correctly used</cell><cell>image schemas</cell><cell>Incorrectly used</cell><cell>image schemas</cell><cell>Unidentified</cell><cell>image schemas</cell><cell>Success rate</cell></row><row><cell>1</cell><cell cols="2">5</cell><cell cols="2">1</cell><cell cols="2">2</cell><cell>0.625</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.500</cell></row><row><cell>2</cell><cell cols="2">2</cell><cell cols="2">3</cell><cell cols="2">3</cell><cell>0.250</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.500</cell></row><row><cell>3</cell><cell cols="2">5</cell><cell cols="2">-</cell><cell cols="2">3</cell><cell>0.625</cell><cell cols="2">1</cell><cell cols="2">2</cell><cell cols="2">5</cell><cell>0.125</cell></row><row><cell>4</cell><cell cols="2">4</cell><cell cols="2">1</cell><cell cols="2">3</cell><cell>0.500</cell><cell cols="2">1</cell><cell cols="2">2</cell><cell cols="2">5</cell><cell>0.125</cell></row><row><cell>5</cell><cell cols="2">5</cell><cell cols="2">-</cell><cell cols="2">3</cell><cell>0.500</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.500</cell></row><row><cell>6</cell><cell cols="2">3</cell><cell cols="2">2</cell><cell cols="2">5</cell><cell>0.375</cell><cell cols="2">5</cell><cell cols="2">-</cell><cell cols="2">3</cell><cell>0.625</cell></row><row><cell>7</cell><cell cols="2">4</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell>0.500</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>8</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.250</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.250</cell></row><row><cell>9</cell><cell cols="2">4</cell><cell cols="2">-</cell><cell cols="2">4</cell><cell>0.500</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>10</cell><cell cols="2">4</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell>0.500</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.250</cell></row><row><cell>11</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.250</cell><cell cols="2">1</cell><cell cols="2">1</cell><cell cols="2">6</cell><cell>0.125</cell></row><row><cell>12</cell><cell cols="2">3</cell><cell cols="2">2</cell><cell cols="2">3</cell><cell>0.374</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>13</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.250</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>14</cell><cell cols="2">1</cell><cell cols="2">2</cell><cell cols="2">5</cell><cell>0.125</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>15</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell><cell cols="2">3</cell><cell cols="2">-</cell><cell cols="2">5</cell><cell>0.375</cell></row><row><cell>16</cell><cell cols="2">3</cell><cell cols="2">1</cell><cell cols="2">4</cell><cell>0.375</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.500</cell></row><row><cell>17</cell><cell cols="2">3</cell><cell cols="2">-</cell><cell cols="2">5</cell><cell>0.375</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>18</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.250</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>19</cell><cell cols="2">3</cell><cell cols="2">-</cell><cell cols="2">5</cell><cell>0.375</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>20</cell><cell cols="2">4</cell><cell cols="2">1</cell><cell cols="2">3</cell><cell>0.500</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>21</cell><cell cols="2">3</cell><cell cols="2">3</cell><cell cols="2">5</cell><cell>0.375</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>22</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.500</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>23</cell><cell cols="2">3</cell><cell cols="2">-</cell><cell cols="2">5</cell><cell>0.375</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>24</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>25</cell><cell cols="2">3</cell><cell cols="2">1</cell><cell cols="2">4</cell><cell>0.375</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>26</cell><cell cols="2">4</cell><cell cols="2">-</cell><cell cols="2">4</cell><cell>0.500</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>27</cell><cell cols="2">5</cell><cell cols="2">-</cell><cell cols="2">3</cell><cell>0.625</cell><cell cols="2">1</cell><cell cols="2">1</cell><cell cols="2">6</cell><cell>0.125</cell></row><row><cell>28</cell><cell cols="2">3</cell><cell cols="2">2</cell><cell cols="2">3</cell><cell>0.375</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>29</cell><cell cols="2">3</cell><cell cols="2">1</cell><cell cols="2">4</cell><cell>0.375</cell><cell cols="2">1</cell><cell cols="2">1</cell><cell cols="2">6</cell><cell>0.125</cell></row><row><cell>30</cell><cell cols="2">1</cell><cell cols="2">2</cell><cell cols="2">5</cell><cell>0.125</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>31</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.250</cell><cell cols="2">-</cell><cell cols="2">-</cell><cell cols="2">-</cell><cell>-</cell></row><row><cell>32</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.250</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>33</cell><cell cols="2">4</cell><cell cols="2">-</cell><cell cols="2">4</cell><cell>0.500</cell><cell cols="2">3</cell><cell cols="2">-</cell><cell cols="2">5</cell><cell>0.375</cell></row><row><cell>34</cell><cell cols="2">5</cell><cell cols="2">1</cell><cell cols="2">2</cell><cell>0.625</cell><cell cols="2">1</cell><cell cols="2">1</cell><cell cols="2">6</cell><cell>0.125</cell></row><row><cell>35</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.250</cell><cell cols="2">3</cell><cell cols="2">-</cell><cell cols="2">5</cell><cell>0.375</cell></row><row><cell>36</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.250</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>37</cell><cell cols="2">2</cell><cell cols="2">2</cell><cell cols="2">4</cell><cell>0.250</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.500</cell></row><row><cell>38</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell cols="2">5</cell><cell>0.250</cell><cell cols="2">1</cell><cell cols="2">-</cell><cell cols="2">7</cell><cell>0.125</cell></row><row><cell>39</cell><cell cols="2">3</cell><cell cols="2">2</cell><cell cols="2">5</cell><cell>0.375</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row><row><cell>40</cell><cell cols="2">5</cell><cell cols="2">2</cell><cell cols="2">1</cell><cell>0.625</cell><cell cols="2">2</cell><cell cols="2">-</cell><cell cols="2">6</cell><cell>0.250</cell></row></table><note></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">SETCHI AND ASIKHIA: EXPLORING USER EXPERIENCE WITH IMAGE SCHEMAS, SENTIMENTS, AND SEMANTICS</note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>" For more information on this or any other computing topic, please visit our Digital Library at www.computer.org/publications/dlib.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m">ISO 9241: Ergonomic Requirements for Office Work with Visual Display Terminals (VDTs). Part 11: Guidance on Usability, International Organization for Standardization</title>
+		<imprint>
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">User experience-A research agenda</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hassenzahl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Tractinsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Behaviour Inf. Technol</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="91" to="97" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Understanding, scoping and defining user eXperience: A survey approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">L</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Roto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hassenzahl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P O S</forename><surname>Vermeeren</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kort</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. SIGCHI Conf. Human Factors Comput</title>
+		<meeting>SIGCHI Conf. Human Factors Comput</meeting>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="719" to="728" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Needs, affect, and interactive products -facets of user experience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hassenzahl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Diefenbach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>G€</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interacting Comput</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="353" to="362" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Usability Engineering</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nielsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">AP Professional</title>
+		<meeting><address><addrLine>Rochester, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Introduction to Usability. Park Drive</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">W</forename><surname>Jordan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Taylor and Francis</publisher>
+			<pubPlace>U.K</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Cooking up real world business application combining physicality, digitality, and image schema</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hurtienne</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">H</forename><surname>Israel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Weber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf. Tangible Embedded Interaction</title>
+		<meeting>Int. Conf. Tangible Embedded Interaction</meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="239" to="246" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Conceptual framework for evaluating intuitive interactions based on image schemas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">K</forename><surname>Asikhia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Setchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Hicks</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Andrews</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/iwc/iwu050</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Interacting Comput</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="287" to="310" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">The Body in the Mind: The Bodily Basis of Meaning, Imagination and Reason</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Johnson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1987" />
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago, IL, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Intuitive interaction with multifunctional mobile interfaces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Britton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Setchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Marsh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. King Saud Univ. Comput. Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="87" to="196" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Springboard: Designing image schema based embodied interaction for an abstract domain</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Antle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Corness</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bevans</surname></persName>
+		</author>
+		<editor>D. England</editor>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="7" to="18" />
+			<pubPlace>Berlin, Germany</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Human-Computer Interaction Series: Whole Body Interaction</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The conceptual structure of information space</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">P</forename><surname>Maglio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Matlock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Social Navigation of Information Space</title>
+		<editor>London, U.K.</editor>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1999" />
+			<biblScope unit="page" from="155" to="173" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Keeping warm in winter: Imageschematic metaphors and their role in design of central heating controls</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hurtienne</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Langdon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 4th Int. Conf. German Cognitive Linguistics Assoc</title>
+		<meeting>4th Int. Conf. German Cognitive Linguistics Assoc</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="53" to="54" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A framework for user experience, needs and affordances</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Picillo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Cascini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Des. Studies</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="160" to="179" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Descartes&apos; Error: Emotion, Reason and the Human Brain</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">R</forename><surname>Damasio</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994" />
+			<publisher>Putnam</publisher>
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">The Emotion Machine: Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Minsky</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Simon Schuster</publisher>
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">What are emotions? and how can they be measured?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Scherer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Soc. Sci. Inf</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="695" to="729" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">On the nature and function of emotion: A component process approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Scherer</surname></persName>
+		</author>
+		<editor>K. R. Scherer and P. Ekman</editor>
+		<imprint>
+			<date type="published" when="1984" />
+			<publisher>Erlbaum</publisher>
+			<biblScope unit="page" from="293" to="317" />
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Approaches to Emotion</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Understanding experience in interactive systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Forlizzi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Battarbee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Conf. Designing Interactive Syst</title>
+		<meeting>Conf. Designing Interactive Syst</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page">261</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Quality of experience: Defining the criteria for effective interaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Alben</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interactions</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="11" to="15" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Observing and probing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Mattelm€</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf. Designing Pleasurable Products interfaces</title>
+		<meeting>Int. Conf. Designing Pleasurable Products interfaces</meeting>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="126" to="131" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Supporting users&apos; creativity: Design to induce pleasurable experiences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">Fulton</forename><surname>Suri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Conf. Affective Human Factors</title>
+		<meeting>Conf. Affective Human Factors</meeting>
+		<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="page" from="387" to="391" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The thing and I: Understanding the Relationship between User and Product</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hassenzahl</surname></persName>
+		</author>
+		<editor>M. Blythe, C. Overbeeke, A. F. Monk, and P. C. Wright</editor>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Kluwer</publisher>
+			<biblScope unit="page" from="31" to="42" />
+			<pubPlace>Norwell, MA, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Funology: From Usability to Enjoyment</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The building blocks of experience: An early framework for interaction designers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Forlizzi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Des. Interactive Syst</title>
+		<meeting>Des. Interactive Syst</meeting>
+		<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="419" to="423" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Collecting stories on user experiences to inspire design -A pilot</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Mattelm€</surname></persName>
+		</author>
+		<editor>Pleasure with Product, W. S. Green and P. W. Jordan</editor>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Taylor Francis</publisher>
+			<biblScope unit="page" from="333" to="344" />
+			<pubPlace>Park Drive, U.K.</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Design aesthetics: Principles of pleasure in product design</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Hekkert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychology Sci</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="57" to="172" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">A Tangibility Approach to Affective Interaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A G</forename><surname>Wensveen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Univ. Technol</title>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The affect grid: A single-item scale of pleasure and arousal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Mendelssohn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Soc. Psychology</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="493" to="502" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Pleasure-arousal-dominance: A general framework for describing and measuring individual differences in temperament</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mehrabian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Current Psychology</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="261" to="292" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Framework for a comprehensive description and measurement of emotional states</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mehrabian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Genetic Psychology</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="339" to="361" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Lakoff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Johnson</surname></persName>
+		</author>
+		<title level="m">Metaphor We Live By</title>
+		<meeting><address><addrLine>Chicago, IL, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Univ. Chicago Press</publisher>
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Designing with image schemas: Resolving the tension between innovation, inclusion and intuitive use</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hurtienne</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Kl€ Ockner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Diefenbach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Nass</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Maier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interacting Comput</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="235" to="255" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">From Perception to Meaning: Image Schema in Cognitive Linguistics</title>
+		<editor>B. Hampe and J. E. Grady</editor>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Mouton de Gruyter</publisher>
+			<biblScope unit="page" from="1" to="12" />
+			<pubPlace>Berlin, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Design for intuitive use-testing image schema theory for user interface design</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hurtienne</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Blessing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 16th Int. Conf. Eng. Des</title>
+		<meeting>16th Int. Conf. Eng. Des</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">What Categories Reveal about the Mind</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Lakoff</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1987" />
+			<publisher>Univ. Chicago Press</publisher>
+			<pubPlace>Chicago, IL, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Women, Fire, and Dangerous Things</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Domains and image schemas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">C</forename><surname>Clausner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Croft</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Cognitive Linguistics</title>
+		<imprint>
+			<date type="published" when="1999" />
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="32" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">A formalisation of metaphors and image schema in user interfaces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Kuhn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">U</forename><surname>Frank</surname></persName>
+		</author>
+		<editor>Cognitive and Linguistic Aspect of Geographical Space, D. M. Mark and A. U. Frank</editor>
+		<imprint>
+			<date type="published" when="1991" />
+			<publisher>Kluwer Academic</publisher>
+			<biblScope unit="page" from="419" to="434" />
+			<pubPlace>Dordrecht, The Netherlands</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The affect heuristic</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Slovic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Finucane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G</forename><surname>Macgregor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Heuristics and Biases: The Psychology of Intuitive Judgment</title>
+		<editor>T. Gilovich, D. Griffin, and D. Kahneman</editor>
+		<meeting><address><addrLine>Cambridge, U.K.</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge Univ. Press</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="397" to="420" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Are they different? Affect, feeling, emotion, sentiment, and opinion detection in text</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Munezero</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">S</forename><surname>Montero</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Sutinen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Pajunen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="101" to="111" />
+			<date type="published" when="2014-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Semantic Analysis and Opinion Mining</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Morgan Claypool Publisher</publisher>
+			<pubPlace>Williston, VT, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">New avenues in opinion mining and sentiment analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Cambria</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Schuller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Havasi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MIS.2013.30</idno>
+		<idno>doi:10.1109/ MIS.2013.30</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Intell. Syst</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="15" to="21" />
+			<date type="published" when="2013-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Survey on aspect-level sentiment analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Schouten</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Frasincar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Knowl. Data Eng</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="813" to="830" />
+			<date type="published" when="2016-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Survey on mining subjective data on the web</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tsytsarau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Palpanas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Data Mining Knowl. Discovery</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="478" to="514" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Annotating expressions of opinions and emotions in language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Cardie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Resources Evalu</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="165" to="210" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">WordNet-Affect: An affective extension of WordNet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Strapparava</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Valitutti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 4th Int. Conf. Language Resources Evalu</title>
+		<meeting>4th Int. Conf. Language Resources Evalu</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="1083" to="1086" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">SenticNet 3: A common and common-sense knowledge base for cognition-driven sentiment analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Cambria</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Olsher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Rajagopal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 28th AAAI Conf</title>
+		<meeting>28th AAAI Conf</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="1515" to="1521" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">SentiFul: A lexicon for sentiment analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Neviarouskaya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Prendinger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ishizuka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="22" to="36" />
+			<date type="published" when="2011-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Aspect-based opinion polling from customer reviews</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">K</forename><surname>Tsou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="49" />
+			<date type="published" when="2011-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">User feedback analysis system using natural language processing and artificial intelligence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">N</forename><surname>Kolhe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">V</forename><surname>Darade</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">B</forename><surname>Suryavanshi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Ahire</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">D</forename><surname>Sonawane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Recent Innovation Trends Comput. Commun</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="5574" to="577" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Generation of personalized ontology based on consumer emotion and behavior analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C M</forename><surname>Fong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Hong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="152" to="164" />
+			<date type="published" when="2012-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Sentiment analysis in multiple languages: feature selection for opinion classification in web forums</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Abbasi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Salem</surname></persName>
+		</author>
+		<idno>1-12:34</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Affective computing in consumer electronics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Fong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Westerink</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="129" to="131" />
+			<date type="published" when="2012-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Knowledge Engineering: Principles and Methods</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Studer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Benjamins</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Fensel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Data Knowl. Eng</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="161" to="198" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">A translation approach to portable ontologies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">R</forename><surname>Gruber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Knowl. Acquisition</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="199" to="220" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">What is an Ontology?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Guarino</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Oberle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Staab</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook on Ontologies</title>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Methodologies for ontology development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Bench-Capon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Visser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 15th FIP World Comput. Congr</title>
+		<meeting>15th FIP World Comput. Congr</meeting>
+		<imprint>
+			<date type="published" when="1998" />
+			<biblScope unit="page" from="62" to="75" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">METHONTOLOGY: From ontological art towards ontological engineering</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fern Andez-L Opez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Juristo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Spring Symp. Ontological Eng. AAAI</title>
+		<meeting>Spring Symp. Ontological Eng. AAAI</meeting>
+		<imprint>
+			<date type="published" when="1997" />
+			<biblScope unit="page" from="33" to="40" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Iscat</surname></persName>
+		</author>
+		<ptr target="http://iscat.stefciu.de" />
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Words and their metaphors: A corpus-based approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Stefanowitsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Corpus-Based Approaches to Metaphor and Metonymy</title>
+		<editor>A. Stefanowitsch and S. T. Gries</editor>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Mouton de Gruyter</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="61" to="105" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Evaluation of automatic updates of Roget&apos;s thesaurus</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kennedy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Szpakowicz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Language Model</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="49" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Semantic-based information retrieval in support of concept design</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Setchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Stankov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Eng. Inf</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="131" to="146" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Concept-based indexing of annotated images using Semantic DNA</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Fadzli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Setchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eng. Appl. Artif. Intell</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1644" to="1655" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Enhanced cross-domain document clustering with a semantically enhanced text stemmer (SETS)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Stankov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Todorov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Setchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Knowl.-based Intell. Eng. Syst</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="113" to="126" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">An algorithm for suffix stripping</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Porter</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1980" />
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="130" to="137" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Program</note>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Innovative Solutions for Behavioral Research</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="5" to="39" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note>Noldus Observer XT</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

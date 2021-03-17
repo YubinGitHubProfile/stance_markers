@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2019-07-18">18 July 2019</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Garau</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computing and Mathematics</orgName>
+								<orgName type="institution">Keele University</orgName>
+								<address>
+									<postCode>ST5 5BG</postCode>
+									<settlement>Keele</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+							<email>m.nieves@keele.ac.uk</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computing and Mathematics</orgName>
+								<orgName type="institution">Keele University</orgName>
+								<address>
+									<postCode>ST5 5BG</postCode>
+									<settlement>Keele</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Mechanical, Chemical and Material Engineering</orgName>
+								<orgName type="institution">University of Cagliari</orgName>
+								<address>
+									<postCode>09123</postCode>
+									<settlement>Cagliari</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">Liverpool John Moores University, Mechanical Engineering and Materials Research Centre</orgName>
+								<address>
+									<postCode>L3 3AF</postCode>
+									<settlement>Liverpool</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Mechanical, Chemical and Material Engineering</orgName>
+								<orgName type="institution">University of Cagliari</orgName>
+								<address>
+									<postCode>09123</postCode>
+									<settlement>Cagliari</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2019-07-18">18 July 2019</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2019.05.007</idno>
+					<note type="submission">Received 5 January 2019 Revised 12 April 2019 Accepted 26 May 2019</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Gyroscopic spinners Elastic lattices Transient analysis Interfacial waves Edge waves Cloaking</keywords>
+			</textClass>
+			<abstract>
+				<p>The transient analysis of gyro-elastic structured media, composed of periodically placed masses interconnected by elastic rods and attached to gyroscopic spinners, is presented. The analysis is based on an asymptotic transient model, developed in this paper, that describes the interaction between a gyroscopic spinner and a mass embedded in a truss system. Several examples are given that illustrate the transient features of special dynamic phenomena, including unidirectional interfacial waves and highly localised waveforms. Two important applications of the model are also proposed, which demonstrate that gyro-elastic systems can be utilised to design an efficient structured topological insulator and a cloaking device for a discrete medium.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Gyro-elastic structured media exhibit unique dynamic properties, at both low and high frequencies, that can be used to generate special dynamic phenomena unachievable with other mechanical systems. A gyro-elastic structured medium consists of a lattice of masses, connected to each other by elastic links (such as rods or beams) and attached to gyroscopic spinners. The latter confer chirality to the lattice and can be used to break time-reversal symmetry.</p><p>The transient motion of a gyroscopic spinner is geometrically non-linear. However, if the nutation angle is small, the motion can be described by a linearised model, presented for the first time in this paper. Even within this linearised setting, masses in a gyro-elastic medium can undergo a range of atypical trajectories depending on the properties of the system. As an example, in <ref type="figure">Fig. 1</ref> we show the motion of a gyroscopic spinner with a hinged base and a mass at its tip, which is constrained by a system of six extensional elastic springs. The results, based on a numerical scheme implemented in Matlab , show that the system traces a complicated trajectory. Nonetheless, the formulation presented in this paper can fully predict the transient motion of this system.</p><p>The first model of a gyro-elastic lattice was proposed in <ref type="bibr" target="#b7">Brun, Jones, and Movchan (2012)</ref> , where the time-harmonic analysis of a monatomic and bi-atomic triangular array of masses connected to gyroscopic spinners was carried out. In <ref type="bibr" target="#b10">Carta, Brun, Movchan, Movchan, and Jones (2014)</ref> , the dynamic response of this system subjected to different external excitations was investigated, with special attention given to tunable dynamically induced anisotropy occurring at specific fre- <ref type="figure">Fig. 1</ref>. The motion of a single gyroscopic spinner. The gyroscopic spinner is hinged at its base and connected to a mass m at its tip. The mass is also constrained by a system of six extensional springs. The spinner is represented by the blue line and the mass m by the black dot. The six grey lines indicate the springs attached to the mass. (a) Representation of the system with the trajectory of the mass shown in red. (b) Planar view of the system showing a magnification of the path traced by the mass. The motion of this system is illustrated in the Video 1 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</p><p>quencies. In particular, it was observed that in correspondence with the stationary points of the dispersion surfaces, waves are forced to travel along some preferential directions, depending on the orientation of the external force. Wave propagation can even be localised in a single narrow line, if two types of spinners with ad hoc properties are introduced into the structure, as discussed in <ref type="bibr" target="#b11">Carta, Jones, Movchan, Movchan, and Nieves (2017a)</ref> . This localised wave pattern, which resembles a Gaussian beam, can be deviated by changing the arrangement of the spinners inside the lattice. As a result, the localised wave can be forced to follow a closed path through multiple deviations, causing the wave amplitude to increase significantly. This phenomenon has been named DASER (Dynamic Amplification by Spinners in Elastic Reticulated systems). In <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> , the localised wave pattern was obtained in the time-harmonic regime, while here we demonstrate that this dynamic effect can also be attained in the transient regime.</p><p>Gyroscopic spinners have been utilised to break time-reversal symmetry and create topological insulators. In <ref type="bibr" target="#b61">Wang, Lu, and Bertoldi (2015)</ref> and <ref type="bibr" target="#b25">Garau, Carta, Nieves, Jones, Movchan, and Movchan (2018)</ref> it was shown that hexagonal gyro-elastic structures can support edge and interfacial waves at frequencies associated with dispersion degeneracies possessed by such media. The gyroscopic spinners allow one to modify the topology of these degeneracies, also known as Dirac points. At frequencies in the vicinity of such points, waves can propagate along the boundary of the structured medium or the boundary of a sub-domain, leaving the bulk of the medium almost undisturbed. Unidirectionally propagating edge modes immune to backscattering and localisation due to geometrical and material defects were firstly observed in photonic crystals <ref type="bibr" target="#b31">He et al., 2010;</ref><ref type="bibr" target="#b37">Khanikaev, Mousavi, Tse, Kargarian, MacDonald, &amp; Shvets, 2013;</ref><ref type="bibr" target="#b58">Raghu &amp; Haldane, 2008;</ref><ref type="bibr" target="#b62">Wang, Chong, Joannopoulos, &amp; Solja či ć, 2008 )</ref>. In <ref type="bibr" target="#b58">Raghu and Haldane (2008)</ref> , it was shown that these modes are analogs of the edge states associated with the quantum Hall effect. The existence of unidirectional edge states in plasmons was demonstrated in <ref type="bibr" target="#b35">Jin, Christensen, Solja či ć, Fang, Lu, and Zhang (2017)</ref> at infrared frequencies. Topological acoustic insulators supporting one-way edge sound modes were proposed in <ref type="bibr" target="#b36">Khanikaev, Fluery, Mousavi, and Alú (2015)</ref> , <ref type="bibr" target="#b45">Ni, He, Sun, Liu, Lu, and Feng (2015)</ref> , <ref type="bibr" target="#b64">Yang et al. (2015)</ref> , <ref type="bibr" target="#b15">Chen and Wu (2016)</ref> , <ref type="bibr" target="#b32">He et al. (2016)</ref> , <ref type="bibr" target="#b59">Souslov, van Zuiden, Bartolo, and Vitelli (2017)</ref> and <ref type="bibr" target="#b65">Zhou and Zhao (2019)</ref> . An elastic analog of the quantum Hall effect for plates was discussed in <ref type="bibr" target="#b54">Pal and Ruzzene (2017)</ref> . Helical edge states were experimentally observed in a lattice of mechanical oscillators in <ref type="bibr" target="#b60">Süsstrunk and Huber (2015)</ref> . Recently, oneway interfacial rotational waves were generated in a granular crystal, where the interaction between the beads is based on non-central contact forces <ref type="bibr" target="#b64">( Zheng, Teocharis, Tournat, &amp; Gusev, 2018 )</ref>. A theoretical approach based on group theory and topological concepts were used in <ref type="bibr">Makwana &amp; Craster (2018a,b)</ref> to design platonic crystals possessing topological valley supernetworks and multi-directional energy splitters.</p><p>In this paper, we demonstrate the existence of unidirectional interfacial and edge waves in a hexagonal gyro-elastic lattice. While in <ref type="bibr" target="#b25">Garau et al. (2018)</ref> the formulation was developed in the time-harmonic regime, here the analysis of topologically protected edge modes is performed in the transient regime using the asymptotic model developed in this paper. An illustrative example is shown in <ref type="figure">Fig. 2</ref> , where we consider waves propagating in a rectangular slab of hexagonal lattice, that is partitioned into two subdomains defined by the arrangement of spinners to which the lattice is connected. The subdomains have a zig-zag type interface and the lattice is excited at a specific frequency at the location shown in the figure. A unidirectional interfacial wave propagates along the sharp bends of this internal boundary and travels along the interface to the right side of the lattice. We remark that the direction is reversible by either interchanging the properties of the spinners on either side of the interface or by adjusting the frequency of excitation. The model is detailed in Section 3 .</p><p>Gyroscopic spinners have further applications in the design of elastic cloaking devices <ref type="bibr">Brun, Guenneau, &amp; Movchan, 2009;</ref><ref type="bibr" target="#b16">Colquitt, Brun, Gei, Movchan, Movchan, &amp; Jones, 2014;</ref><ref type="bibr" target="#b23">Farhat, Guenneau</ref>  Hexagonal lattice connected to an array of gyroscopic spinners. Interfacial waves are produced by a concentrated load applied at the point indicated with a black dot. Waves propagate in the transient regime following a zig-zag pattern. Technical details are reported in Section 3 and a video of the motion is included in the Supplementary Material (see Video 2). (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.) <ref type="bibr" target="#b7">Brun et al. (2012)</ref> , the time-harmonic equations of the triangular gyro-elastic lattice were homogenised to show a possible design for an inertial micro-polar elastic continuum. The elastic metamaterial is capable of strongly reducing the scattering caused by the presence of a stiff defect in a homogeneous elastic material. In <ref type="bibr" target="#b7">Brun et al. (2012)</ref> the effectiveness of this cloaking device was shown numerically in the time-harmonic regime. In this article, we also show that the model considered allows one to create a structured cloaking device for a hexagonal lattice and the effectiveness of this cloak is analysed in the transient regime.</p><p>Recently, a renewed interest in structural mechanics has grown from the development of new concepts in different technological fields, for example in locomotion <ref type="bibr" target="#b2">( Bigoni, Dal Corso, Misseroni, &amp; Bosi, 2014;</ref><ref type="bibr" target="#b17">Dal Corso, Misseroni, Pugno, Movchan, Movchan, &amp; Bigoni, 2017;</ref><ref type="bibr" target="#b58">Rafsanjani, Zhang, Liu, Rubinstein, &amp; Bertoldi, 2018 )</ref>, structural folding <ref type="bibr" target="#b4">( Bosi, Misseroni, Dal Corso, &amp; Bigoni, 2015 )</ref>, soft robotics <ref type="bibr" target="#b0">( Armanini, Dal Corso, Misseroni, &amp; Bigoni, 2017;</ref><ref type="bibr" target="#b14">Cazzolli &amp; Dal Corso, 2019 )</ref>, and metamaterials <ref type="bibr" target="#b3">( Bordiga, Cabras, Bigoni, &amp; Piccolroaz, 2018;</ref><ref type="bibr" target="#b9">Cabras, Movchan &amp; Piccolroaz, 2017;</ref><ref type="bibr" target="#b40">Kochmann &amp; Bertoldi, 2017;</ref><ref type="bibr" target="#b44">Misseroni, Colquitt, Movchan, Movchan, &amp; Jones, 2016;</ref><ref type="bibr" target="#b56">Piccolroaz, Movchan, &amp; Cabras, 2017a;</ref>.</p><p>With respect to the analysis of gyroscopic effects in mechanics, we mention <ref type="bibr" target="#b39">Kirillov (2013)</ref> , where perturbation methods were developed to analyse the stability of multi-parameter gyroscopic systems in the presence of non-conservative forces. In addition, the Krein-space approach for tackling non-conservative gyroscopic systems was proposed in <ref type="bibr" target="#b38">Kirillov (2009)</ref> .</p><p>The notion of a gyro-elastic system introduces a potentially vast array of new pathways, not only in the construction of microstructured materials, but also in the design of larger scale structures commonly encountered in civil engineering. Innovative tunable resonator systems that utilise gyroscopic spinners can be implemented in civil engineering structures to help in inhibiting failure processes. Simplified models of dynamic failure processes in civil engineering structures have been considered in <ref type="bibr" target="#b8">Brun, Movchan, and Slepyan (2013)</ref> , <ref type="bibr" target="#b6">Brun, Giaccu, Movchan, and Slepyan (2014)</ref> , <ref type="bibr" target="#b47">Nieves, Mishuris, and Slepyan (2016)</ref> and <ref type="bibr" target="#b48">Nieves, Mishuris, and Slepyan (2017)</ref> . In Carta, Jones, Movchan, Movchan, and Nieves (2017b) a resonator system composed of gyro-elastic beams was designed to suppress the vibrations of a long structure, such as a bridge, subjected to seismic waves. The theory of gyro-elastic beams was firstly developed in D'Eleuterio and <ref type="bibr" target="#b21">Hughes (1984)</ref> and <ref type="bibr" target="#b34">Hughes and D'Eleuterio (1986)</ref> and gyroscopic problems in elasticity were studied in <ref type="bibr" target="#b51">Padovan (1978</ref><ref type="bibr" target="#b52">Padovan ( , 1979</ref> and <ref type="bibr" target="#b53">Padovan and Adams (1980)</ref> . In practice, gyro-elastic beams can be designed and constructed by attaching gyroscopic spinners to elastic beams, as detailed in <ref type="bibr" target="#b13">Carta, Nieves, Jones, Movchan, and Movchan (2018)</ref> ,  , and this has led to the micro-structural characterisation of a gyro-elastic beam. Functionally graded microbeams, possessing microstructure and having applications in the design of micro-electro-mechanical systems, have been considered in <ref type="bibr" target="#b28">Ghayesh, Farokhi, and Gholipour (2017)</ref> , Farokhi, <ref type="bibr" target="#b23">Ghayesh, Gholipour, and Hussain (2017)</ref> and <ref type="bibr" target="#b26">Ghayesh (2018</ref><ref type="bibr" target="#b27">Ghayesh ( , 2019</ref> . The dynamics of rotating microbeams can be found in Dehrouyeh-Semnani (2015) , <ref type="bibr">Dehrouyeh-Semnani, Jouybari, and Dehrouyeh (2016)</ref> and <ref type="bibr">Shafiei, Kazemi, &amp; Ghadiri (2016)</ref> . Other applications of gyro-elastic continua can be found in aerospace engineering, where they allow for the control of the attitude and shape of spacecraft <ref type="bibr" target="#b33">Hughes (1986)</ref> , D'Eleuterio and <ref type="bibr" target="#b22">Hughes (1987)</ref> , <ref type="bibr" target="#b63">Yamanaka, Heppler, &amp; Huseyin (1996)</ref> and <ref type="bibr">Hassanpour and Heppler (2016a,b)</ref> . Gyroscopic coupling is also exploited to design smart structures that optimise the dissipation of vibration energy <ref type="bibr" target="#b20">( Del Vescovo &amp; Giorgio, 2014 )</ref>. For a lattice, the coupling of in-plane motions may be achieved through the tuning of its micro-structural geometry, supplying chirality to the system ( Bacigalupo &amp; Gambarotta, 2016; Lepidi &amp; Bacigalupo, 2018 ).</p><p>The time-harmonic models for gyro-elastic lattices studied in <ref type="bibr" target="#b7">Brun et al. (2012)</ref> , <ref type="bibr" target="#b10">Carta et al. (2014</ref><ref type="bibr" target="#b11">Carta et al. ( , 2017a</ref> and <ref type="bibr" target="#b25">Garau et al. (2018)</ref> show how the presence of gyroscopic spinners at the lattice junctions affects the motion of the system, allowing one to achieve a variety of special dynamic phenomena. In particular, the spinners enforce a coupling between the angular momentum balance of the gyroscopic spinners and the linear momentum balance of the lattice particles. The transient analysis developed here allows us to fully describe various wave propagation phenomena, such as unidirectional waves. Within the scope of possible technological applications, the transient regime enables us to completely determine the performance of the new generation of structured elastic metamaterials.</p><p>The paper is organised as follows. In Section 2 , we develop the formulation for the transient motion of a gyroscopic spinner connected to a mass embedded in a finite truss of elastic rods. There, we also provide illustrative examples that demonstrate how the model can be used to characterise the transient behaviour of the system. Moreover, to check the validity of the formulation, we compare the analytical results with the numerical outcomes obtained from an independent finite element model. In Section 3 , we consider periodic elastic systems connected to arrays of gyroscopic spinners. Specifically, we focus on a triangular elastic medium connected to two types of spinners and show how to realise highly localised waveforms in this medium in the transient regime. The second problem considered involves a gyro-elastic hexagonal lattice containing an interface defined by a heterogeneous system of spinners and we provide transient simulations demonstrating how to produce unidirectional interfacial waves. In Section 4 , two important applications for a hexagonal gyro-elastic lattice are presented. First, we discuss the problem of topological protection in a lattice with a hexagonal domain that contains a cavity and is excited on the exterior boundary. There, unidirectional edge waves travel along the external boundary of the lattice, leaving the interior almost undisturbed. Second, we design a discrete gyro-elastic invisibility cloak, which is capable of hiding a defect in a periodic structured medium. In Section 5 we provide some concluding remarks. In the appendices, we give additional details on the angular momentum balance of the gyroscopic spinner and on the dispersion relations of the elastic lattices considered in this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Motion of the gyroscopic oscillator</head><p>In this section, we study the transient motion of a single gyroscopic spinner that is hinged at its base and connected to a mass at its tip. The mass m is elastically constrained by a system of six extensional springs having stiffness c (see <ref type="figure" target="#fig_2">Fig. 3 (a)</ref>). The effect of gravity will be neglected throughout.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Non-linear governing equations of the gyroscopic spinner</head><p>The generalised coordinates or Euler angles <ref type="bibr" target="#b28">( Goldstein, Poole, &amp; Safko, 2001</ref> ) that describe the motion of the gyroscopic spinner are denoted by φ, θ and ψ, and represent the precession, nutation and spin angle of the gyroscopic spinner, respectively. They are shown in <ref type="figure" target="#fig_2">Fig. 3 (b)</ref>. constrained by six non-inertial truss elements depicted in grey and having stiffness c . The mass displacement is u ( t ). The spinner has length l , moments of inertia I 0 and I 1 , and gyricity . (b) The Euler angles: precession φ, nutation θ and spin ψ of the gyroscopic spinner. In addition, the fixed frame F with coordinate system Ox 1 x 2 x 3 and the moving frame F with coordinate system Ox 1 x 2 x 3 are shown. The frame F precesses with angle φ and nutates with angle θ. (c) Planar view in the reference configuration. The extensional springs have initial length L , and the basis vectors for the in-plane elastic system are a (1) , a (2) and a <ref type="bibr">(3)</ref> .</p><p>The angular momentum balance for the spinner takes the form</p><formula xml:id="formula_0">M e = d d t (I g ω g ) ,<label>(1)</label></formula><p>where M e represents the vector of external moments applied to the spinner, and I g and ω g denote the spinner's moment of inertia tensor and angular velocity vector, respectively (see <ref type="bibr" target="#b7">Brun et al., 2012;</ref><ref type="bibr" target="#b13">Carta et al., 2018;</ref><ref type="bibr" target="#b28">Goldstein et al., 2001;</ref><ref type="bibr" target="#b46">Nieves et al., 2018 )</ref>. Due to the axial symmetry of the spinner with respect to the moving frame F , the tensor I g is diagonal and is assumed to have the form I g = I 0 ( e 1 e 1 + e 2 e 2 ) + I 1 e 3 e 3 .</p><p>( <ref type="formula">2)</ref>The angular velocity of the gyroscopic spinner ω g is conveniently expressed in terms of Euler angles. The full derivation is reported in Appendix A , where it is shown that the angular momentum balance (1) in fixed coordinates ( Ox 1 x 2 x 3 ) is given by the following system of non-linear ordinary differential equations</p><formula xml:id="formula_1">M 1 = I 0 d d t [ −˙ φ sin (φ) sin (θ ) cos (θ ) + ˙ θ cos (φ)] + I 1 d d t [ sin (θ ) sin (φ)( ˙ φ cos (θ ) + ˙ ψ )] , M 2 = I 0 d d t [ ˙ φ cos (φ) sin (θ ) cos (θ ) + ˙ θ sin (φ)] − I 1 d d t [ sin (θ ) cos (φ)( ˙ φ cos (θ ) + ˙ ψ )] , M 3 = I 0 d d t ( ˙ φ sin 2 (θ )) + I 1 d d t [ cos (θ )( ˙ ψ + ˙ φ cos (θ ))] .<label>(3)</label></formula><p>2.1.1. External actions on the gyroscopic spinner The position vector of the mass m is</p><formula xml:id="formula_2">l (t) = l sin (θ (t )) sin (φ(t )) e 1 − l sin (θ (t )) cos (φ(t )) e 2 + l cos (θ (t )) e 3 ,<label>(4)</label></formula><p>where l is the length of the spinner (see <ref type="figure" target="#fig_2">Fig. 3 (a)</ref>). The mass displacement is u (t) = l (t) − l (0) , and we assume that</p><formula xml:id="formula_3">l (0) = le 3 .</formula><p>At the tip of the gyroscopic spinner, there acts the force</p><formula xml:id="formula_4">F = −c h [ u (t)] − m ü (t) ,<label>(5)</label></formula><p>which embeds the inertia term brought by the mass m and the elastic reaction of the extensional springs of stiffness c , described by the non-linear vectorial function h . Using the basis vectors</p><formula xml:id="formula_5">a (i ) = cos (i − 1) 2 π 3 e 1 + sin (i − 1) 2 π 3 e 2 , i = 1 , 2 , 3 ,<label>(6)</label></formula><p>shown in <ref type="figure" target="#fig_2">Fig. 3 (c)</ref>, the function h can be computed as</p><formula xml:id="formula_6">h = 3 i =1 (| u (t) −L a (i ) | −L ) u (t) − L a (i ) | u (t) − L a (i ) | + (| u (t) + L a (i ) | −L ) u (t) + L a (i ) | u (t) + L a (i ) | ,<label>(7)</label></formula><p>where L is the initial length of the extensional springs (see <ref type="figure" target="#fig_2">Fig. 3 (c)</ref>). The corresponding external moment acting on the gyroscopic spinner is </p><formula xml:id="formula_7">M e = l × F .<label>(8)</label></formula><formula xml:id="formula_8">˜ l = l l , ˜ t = c mγ t, γ = 1 + I 0 ml 2 , δ = l L , ˜ u ( ˜ t ) = u (t) L , ˜ h [ ˜ u ] = h [ u ] L , ˜ F = F cL , ˜ M e = M e cLl , ˜ I j = I j mlL ( j = 0 , 1) ,<label>(9)</label></formula><p>where the quantities with the symbol "˜ " are dimensionless.</p><p>In the following we omit the symbol "˜ " for ease of notation. We will also use the same notations for the Euler angles but assume these are now functions of the dimensionless time. After employing the previous normalisations, we obtain from (3) and (8)</p><formula xml:id="formula_9">M 1 = − cos (θ ) F 2 − cos (φ) sin (θ ) F 3 = I 0 γ d d t [ −˙ φ sin (φ) sin (θ ) cos (θ ) + ˙ θ cos (φ)] + I 1 γ d d t [ sin (θ ) sin (φ)( ˙ φ cos (θ ) + ˙ ψ )] , M 2 = cos (θ ) F 1 − sin (φ) sin (θ ) F 3 = I 0 γ d d t [ ˙ φ cos (φ) sin (θ ) cos (θ ) + ˙ θ sin (φ)] − I 1 γ d d t [ sin (θ ) cos (φ)( ˙ φ cos (θ ) + ˙ ψ )]<label>(10)</label></formula><p>and</p><formula xml:id="formula_10">M 3 = sin (θ )[ cos (φ) F 1 + sin (φ) F 2 ] = I 0 γ d d t [ ˙ φ sin 2 (θ )] + I 1 γ d d t [ cos (θ )( ˙ ψ + ˙ φ cos (θ ))] .<label>(11)</label></formula><p>Furthermore, (5) is updated to</p><formula xml:id="formula_11">F = −h [ u (t)] − γ −1 ü (t) .<label>(12)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">The linearised problem</head><p>We now assume that the nutation angle and its time derivatives satisfy</p><formula xml:id="formula_12">d j θ (t) d t j ≤ Const ε, j = 0 , 1 , 2 ,</formula><p>where ε is a small dimensionless quantity such that 0 &lt; ε 1.</p><p>Linearising <ref type="formula" target="#formula_10">11</ref>with respect to the nutation angle yields</p><formula xml:id="formula_13">γ θ (F 2 sin (φ) + F 1 cos (φ)) + O (ε 3 γ (| F 1 | + | F 2 | )) = I 1 ( ψ + φ ) + O (I 1 ε 2 (| ˙ ψ + ˙ φ| + | ψ + φ | )) + O ((I 1 + I 0 ) ε 2 (| ˙ φ| + | φ | )) .<label>(13)</label></formula><p>It also follows from (4) that u 3 = O (ε 2 ) . In addition, the function h [ u ( t )] in (7) can be linearised so that (12) becomes</p><formula xml:id="formula_14">F = −K u (t) − γ −1 ü (t) + O (ε 2 δ(δ + γ −1 )) ,<label>(14)</label></formula><p>where K is the stiffness matrix characterising the action of the springs. We note in (14) that</p><formula xml:id="formula_15">F 3 = O (ε 2 δ(δ + γ −1 ))</formula><p>. As a result, in going forward we neglect the e 3 component of the motion for the mass and set</p><formula xml:id="formula_16">F = (F 1 , F 2 ) T and u = (u 1 , u 2 ) T .</formula><p>Moreover, the stiffness matrix K in (14) takes the form</p><formula xml:id="formula_17">K = 2 3 j=1 a ( j) a ( j) = 3 I 2 ,<label>(15)</label></formula><p>where I 2 is the 2 × 2 identity matrix. We now derive the form of the in-plane forces acting on the mass. Due to the smallness of F 3 its contribution to M 1 and M 2 in Eq. (10) can be neglected. Accordingly, after introducing the normalised forms of the displacements u 1 and u 2 , we rewrite Eq. <ref type="formula" target="#formula_9">10</ref>as</p><formula xml:id="formula_18">F 1 = 1 γ cos (θ ) I 0 d d t ˙ u 1 δ cos (θ ) + ˙ θ sin 2 (θ ) sin (φ) + I 1 δ d d t (( ˙ φ cos (θ ) + ˙ ψ ) u 2 ) + O ε 3 δ δ + 1 γ , F 2 = 1 γ cos (θ ) I 0 d d t ˙ u 2 δ cos (θ ) −˙ θ sin 2 (θ ) cos (φ) − I 1 δ d d t (( ˙ φ cos (θ ) + ˙ ψ ) u 1 ) + O ε 3 δ δ + 1 γ .<label>(16)</label></formula><p>Carrying out the linearisation with respect to the nutation angle once more shows that</p><formula xml:id="formula_19">F 1 = I 0 γ δü 1 + I 1 γ δ [( ψ + φ ) u 2 + ( ˙ ψ + ˙ φ) ˙ u 2 ] + O (I 0 + I 1 ) γ ε 3 (| ˙ φ| + | ˙ φ| 2 + | φ | ) + O I 0 γ ε 3 + O I 1 γ ε 3 | φ + ψ | O I 1 γ ε 3 (1 + | ˙ φ| )(| ˙ φ + ˙ ψ | ) + O ε 3 δ δ + 1 γ , F 2 = I 0 γ δü 2 − I 1 γ δ [( ψ + φ ) u 1 + ( ˙ ψ + ˙ φ) ˙ u 1 ] + O (I 0 + I 1 ) γ ε 3 (| ˙ φ| + | ˙ φ| 2 + | φ | ) + O I 0 γ ε 3 + O I 1 γ ε 3 | φ + ψ | O I 1 γ ε 3 (1 + | ˙ φ| )(| ˙ φ + ˙ ψ | ) + O ε 3 δ δ + 1 γ .<label>(17)</label></formula><p>The last two equalities lead to</p><formula xml:id="formula_20">γ F j = O (εI 0 [(1 + | ˙ φ| ) 2 + | φ | ]) + O (εI 1 (| ˙ ψ + ˙ φ| (1 + | ˙ φ| ) + | ψ + φ | )) ,<label>(18)</label></formula><p>for j = 1 , 2 . Returning to (13) , we have</p><formula xml:id="formula_21">0 = I 1 ( ψ + φ ) + O (I 0 ε 2 (1 + | ˙ φ| 2 )) + O ((I 1 + I 0 ) ε 2 (| ˙ φ| + | φ | )) + O (I 1 ε 2 (| ˙ ψ + ˙ φ| (1 + | ˙ φ| ) + | ψ + φ | )) ,<label>(19)</label></formula><p>which implies that, to leading order, the sum of the precession and spin rates is independent of time. Therefore, we define = ˙</p><formula xml:id="formula_22">ψ (0) + ˙ φ(0) = ˙ ψ (t) + ˙ φ(t) .<label>(20)</label></formula><p>From here on, is referred to as the gyricity of the gyroscopic spinner. In this case, (19) is satisfied if the gyricity , the precession and its time derivatives do not compete with ε. Here the gyricity is given in normalised form; the normalisation factor is mγ /c , and the dimension is radians per unit time. We note that although the gyricity is constant throughout the motion of the spinner, the spin and precession rates can change with time and in general are not constant. This fact is further illustrated in Section 2.3 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.1.">Linearised governing equations for the mass</head><p>The linearised equations for the mass m are obtained by combining <ref type="formula" target="#formula_19">17</ref>with <ref type="formula" target="#formula_14">14</ref>and <ref type="formula" target="#formula_17">15</ref>. In doing so, to leading order one can obtain the governing equation for the mass as</p><formula xml:id="formula_23">ü (t) + α R ˙ u (t) + 3 u (t) = 0 ,<label>(21)</label></formula><p>where now u = (u 1 , u 2 ) T . In addition,</p><formula xml:id="formula_24">α = I 1 (δ + I 0 ) and R = 0 1 −1 0 .<label>(22)</label></formula><p>In (21) the matrix R provides the coupling of the in-plane components of the displacement of the mass, and the intensity of this is determined by the parameters α and characterising the gyroscope and its motion. The result (21) also illustrates that the gyricity is a fundamental quantity in characterising how a gyroscopic spinner interacts with an elastic system and we refer to Carta et al. <ref type="formula">2018</ref>, <ref type="bibr" target="#b46">Nieves et al. (2018)</ref> , where this quantity also appears in the modelling of other systems composed of spinners connected to Euler-Bernoulli beams.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Transient motion of the gyroscopic oscillator</head><p>In the small nutation regime, the motion is governed by Eq. <ref type="formula" target="#formula_23">21</ref>, where the skew-symmetric matrix R describes the chiral effect induced by the gyroscopic spinner.</p><p>One can construct the solution of (21) through a modal analysis by studying the existence of solutions in the form</p><formula xml:id="formula_25">u (t) = A e i ωt ,<label>(23)</label></formula><p>where the constant amplitude vector A and the radian frequency ω should be determined. Insertion of (23) into (21) leads to the homogeneous system</p><formula xml:id="formula_26">−ω 2 + 3 i α ω −i α ω −ω 2 + 3 A = 0 .<label>(24)</label></formula><p>Non-trivial solutions A of this system are obtained by analysing when the determinant of the preceding Hermitian matrix vanishes:</p><formula xml:id="formula_27">(3 − ω 2 ) 2 − (α ω) 2 = 0 .<label>(25)</label></formula><p>The positive solutions of the equation above are</p><formula xml:id="formula_28">ω ± = 1 2 ±α + (α ) 2 + 12 .<label>(26)</label></formula><p>We also write the non-trivial vector A in the form</p><formula xml:id="formula_29">A (ω) = 1 i 3 −ω 2 α ω .<label>(27)</label></formula><p>Next, we consider some numerical illustrations of the solution obtained for a system with the parameter α = 0 . 25 . The frequencies (26) are plotted as functions of the gyricity in <ref type="figure" target="#fig_3">Fig. 4</ref> , where it can be seen that one frequency is monotonically increasing while the other is monotonically decreasing. When the gyricity is zero, we have a double eigenfrequency for the system; in this case, the gyroscope does neither spin nor precess during its motion. In addition, in <ref type="figure" target="#fig_3">Fig. 4</ref> we show the vertical dashed line for the gyricity = 6 , where the two eigenfrequencies are ω + = 2 . 6375 and ω − = 1 . 1375 . These values will be used in the numerical results presented below.  In general, the motion of the system can be written as a linear combination of modes of the form (23) , with (27) , so that the solution u of (21) is</p><formula xml:id="formula_30">u (t) = c 1 A (ω + ) e i ω + t + c 2 A (ω + ) e −i ω + t + c 3 A (ω − ) e i ω −t + c 4 A (ω − ) e −i ω −t ,<label>(28)</label></formula><p>where the constant coefficients c 1 , c 2 , c 3 and c 4 are determined from the initial conditions for the system.</p><p>The mode corresponding to the eigenfrequency ω + = 2 . 6375 , obtained for = 6 , assuming δ = 1 , is shown in <ref type="figure" target="#fig_4">Fig. 5</ref> , where the mass moves anticlockwise along a circular trajectory with radius 0.01 and centre at the origin. This is further illustrated in Video 3 in the Supplementary Material, where it can be seen that the normalised period is 2 π /ω + = 2 . 3823 . The motion of the system coincides with the mode corresponding to the frequency ω + if one sets the initial conditions of the system as</p><formula xml:id="formula_31">u (0) = 0 . 01 0 , ˙ u (0) = 0 0 . 0264 .<label>(29)</label></formula><p>This initial data is associated with the following initial conditions for the precession, nutation and spin of the spinner: and</p><formula xml:id="formula_32">φ(0) = π / 2 , ˙ φ(0) = 2 . 6375 , θ (0) = 0 . 01 , ˙ θ (0) = 0 ,<label>(30)</label></formula><formula xml:id="formula_33">ψ (0) = 0 , ˙ ψ (0) = −˙ φ(0) = 3 . 3625 .<label>(31)</label></formula><p>For the mode corresponding to ω − = 1 . 1375 , the mass m moves clockwise on a circular trajectory, with a normalised period 2 π /ω − = 5 . 5239 . We note that in association with the eigenmodes the precession and spin rates of the spinner are constant and these quantities sum to give the prescribed value of the gyricity, in this case = 6 . As an illustration showing a more general motion of the system that combines the modes corresponding to both frequencies ω ± , we set the initial conditions as</p><formula xml:id="formula_34">u (0) = 0 −0 . 05 , ˙ u (0) = 0 . 05 0 .<label>(32)</label></formula><p>These can be linked to the following initial data for the generalised coordinates of the spinner:</p><formula xml:id="formula_35">φ(0) = 0 , ˙ φ(0) = 1 , θ (0) = 0 . 05 , ˙ θ (0) = 0 ,<label>(33)</label></formula><p>and</p><formula xml:id="formula_36">ψ (0) = 0 , ˙ ψ (0) = −˙ φ(0) = 5 .<label>(34)</label></formula><p>As shown in <ref type="figure" target="#fig_5">Fig. 6</ref> , the trajectory traced by the mass is non-circular and is contained inside an annulus with the origin as its centre and its inner and outer radii approximately equal to 0.007 and 0.05, respectively. This motion results from the combination of both modes of the system and can be further examined in Video 4 of the Supplementary Material. There, it is clear that the precession rate of the spinner is not constant and hence its spin rate is also dependent on time. However, as shown in Section 2.2 the sum of these quantities is constant.</p><p>As mentioned above, the behaviour of the system can allow for a variety of trajectories for the mass. As an additional example of this, we refer to <ref type="figure">Fig. 1</ref> , which was computed for the parameters and initial conditions specified in the caption of <ref type="figure" target="#fig_5">Fig. 6</ref> , except that α = 1 . The motion is also reported in Video 1 of the Supplementary Material.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Finite element simulation</head><p>Here, we compare the analytical results based on (21) with the numerical outcomes obtained from a finite element simulation developed in Comsol Multiphysics 5.3 .</p><p>A non-linear transient analysis has been performed based on the model shown in <ref type="figure" target="#fig_6">Fig. 7</ref> . The gyroscopic spinner is implemented as a solid rigid body, the mass m as a cylindrical rigid element of small size and six truss elements represent the extensional springs. The values of the material and geometrical parameters are given in the caption of <ref type="figure" target="#fig_6">Fig. 7</ref> . The normalised values are the following: I 0 = 0 . 637 , I 1 = 0 . 1 , γ = 1 . 637 and α = 0 . 061 .</p><p>The following normalised initial conditions have been imposed:  which correspond to the gyricity = 202 . 30 and</p><formula xml:id="formula_37">φ(0) = θ (0) = ψ (0) = 0 , ˙ θ (0) = 0 . 040 , ˙ φ(0) = ˙ ψ (0) = 101 . 15 ,<label>(35)</label></formula><formula xml:id="formula_38">u (0) = 0 0 , ˙ u (0) = 0 −0 . 040 .<label>(36)</label></formula><p>The results of the transient simulation are shown in <ref type="figure" target="#fig_7">Fig. 8</ref> together with the analytical ones. It is evident that the numerical results obtained from a non-linear transient simulation in Comsol are in excellent agreement with the analytical predictions. The results confirm the correctness of the analytical approach and the validity of the proposed linearisation.</p><p>Once again, the motion shown in <ref type="figure" target="#fig_7">Fig. 8</ref> demonstrates the coupling effect induced by the spin and precession rates of the spinner. Despite the fact that the initial conditions (36) excite the motion only in direction x 2 , both displacement components u 1 and u 2 vary sinusoidally with similar amplitude.</p><p>The model developed here extends the results previously reported in <ref type="bibr" target="#b7">Brun et al. (2012)</ref> , in addition to providing the first comparison between analytical and independent numerical models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Transient analysis of gyro-elastic lattices</head><p>In this section, we extend the theoretical results of Section 2 to model the interaction of masses, placed at the junctions of various lattice systems that are connected to inhomogeneous arrays of spinners. The inhomogeneity will be associated with a non-constant distribution of the parameter α or the gyricity constant . In addition, for some of the examples considered below, the gyricity constant in the gyro-elastic lattice will be chosen as | | = ω, where ω is the radian frequency of vibration of the lattice particles (see <ref type="bibr" target="#b7">Brun et al., 2012;</ref><ref type="bibr" target="#b10">Carta et al., 2014;</ref><ref type="bibr" target="#b11">Carta et al., 2017a;</ref><ref type="bibr" target="#b25">Garau et al., 2018</ref> where such cases are analysed). On the other hand, for some of the problems considered, we provide examples where the gyricity will be taken as a parameter independent of the radian frequency of the lattice. In those cases, we will also find that the desired dynamic effects can be retrieved.</p><p>The steady-state analyses presented in <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> and <ref type="bibr" target="#b25">Garau et al. (2018)</ref> have shown that the gyro-elastic lattice may lead to special waveforms due to the dynamic chirality conferred by the spinners to the lattice. In this paper, we investigate several possibilities that also allow these special waveforms to appear in the transient regime. In addition, the transient analysis may bring new interesting dynamic features that cannot be revealed through a steady-state analysis. Moreover, in some cases we will study the response of the gyro-elastic systems for different initial conditions or when subjected to fully transient loads.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Localised waveforms</head><p>We consider a periodic triangular lattice as shown in <ref type="figure" target="#fig_8">Fig. 9</ref> , composed of masses m periodically constrained by elastic links having stiffness c and length L . Each mass is attached to a gyroscopic spinner that spins about its axis parallel to 0 x 3 .</p><p>The spinners have normalised parameters α A or α B , and alternating gyricities = ±ω as shown in <ref type="figure" target="#fig_8">Fig. 9</ref> . The unit cell of the periodic system contains two nodal points, and the lattice basis vectors are t (1) = (2 , 0) T and t <ref type="bibr">(2)</ref> </p><formula xml:id="formula_39">= (1 / 2 , √ 3 / 2) T . Each</formula><p>unit cell is identified by the multi-index n = (n 1 , n 2 ) T and the displacements of the two nodes within each cell are indicated</p><formula xml:id="formula_40">with u (n ) A = u (n 1 ,n 2 ) A and u (n ) B = u (n 1 ,n 2 ) B</formula><p>. Following the theoretical model developed in Section 2 and assuming nearest neighbour interactions only, the linearised governing equations of the lattice are</p><formula xml:id="formula_41">ü (n 1 ,n 2 ) A = a (1) • u (n 1 ,n 2 ) B + u (n 1 −1 ,n 2 ) B − 2 u (n 1 ,n 2 ) A a (1) + a (2) • u (n 1 −1 ,n 2 +1) B + u (n 1 ,n 2 −1) B − 2 u (n 1 ,n 2 ) A a (2) + a (3) • u (n 1 ,n 2 +1) A + u (n 1 ,n 2 −1) A − 2 u (n 1 ,n 2 ) A a (3) − α A ωR ˙ u (n 1 ,n 2 ) A ,<label>(37)</label></formula><formula xml:id="formula_42">ü (n 1 ,n 2 ) B = a (1) • u (n 1 +1 ,n 2 ) A + u (n 1 ,n 2 ) A − 2 u (n 1 ,n 2 ) B a (1) + a (2) • u (n 1 ,n 2 +1) A + u (n 1 +1 ,n 2 −1) A − 2 u (n 1 ,n 2 ) B a (2) + a (3) • u (n 1 ,n 2 +1) B + u (n 1 ,n 2 −1) B − 2 u (n 1 ,n 2 ) B a (3) + α B ωR ˙ u (n 1 ,n 2 ) B ,<label>(38)</label></formula><p>where the basis vectors a ( j) , j = 1 , 2 , 3 , shown in <ref type="figure" target="#fig_2">Fig. 3 (c)</ref>, were given in (6) . The last terms appearing in the right-hand sides of Eqs. (37) and (38) represent the influence of two different spinners in the unit cell having gyricities of equal magnitude but opposite sign, i.e., A = − B = ω. </p><formula xml:id="formula_43">= (1 / 2 , √ 3 / 2) T .</formula><p>Nodal points are identified by the multi-index n = (n 1 , n 2 ) T . The gyricity has magnitude ω and alternates in sign switching from A to B .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.1.">Generation of localised waveforms in the transient regime</head><p>In <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> it was demonstrated that waveforms localised in a single line can be created at specific frequencies in a gyro-elastic lattice with two types of spinners, shown in <ref type="figure" target="#fig_8">Fig. 9</ref> . This phenomenon is associated with the dispersion properties of the structured medium.</p><p>The derivation of the dispersion properties for such a system is reported in Appendix B . In <ref type="figure">Fig. 10 (a)</ref> we show the dispersion surfaces obtained from (B.3) , where α A = 0 . 8 and α B = 0 . 9 . The slowness contours at ω = 1 . 717 π = 5 . 394 are given in <ref type="figure">Fig. 10 (b)</ref>. The first Brillouin zone is also indicated, defined by the reciprocal vectors</p><formula xml:id="formula_44">b (1) = (π , −π / √ 3 ) , b (2) = (0 , 4 π / √ 3 ) .<label>(39)</label></formula><p>The slowness contours are associated with wave propagation in the direction normal to the contour lines, namely</p><p>(1 / 2 , √ 3 / 2) . In <ref type="figure" target="#fig_9">Fig. 11</ref> we show the results of a transient analysis, which is performed on a finite lattice with dimensions 100 × 50 √ 3 . A Matlab code has been implemented in order to solve the equations of motion (37) and (38) on the 50 0 0 unit cells of <ref type="figure">Fig. 10</ref>. Dispersion properties of the gyro-elastic lattice in <ref type="figure" target="#fig_8">Fig. 9</ref> . The computations are given for α A = 0 . 8 and α B = 0 . 9 . (a) Dispersion surfaces. (b) Slowness contours at ω = 1 . 72 π = 5 . 39 . These contours are associated with the propagation of localised waves in the direction (1 / 2 , √ 3 / 2) . The grey region represents the first Brillouin zone. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)   <ref type="figure" target="#fig_9">Fig. 11</ref> ; the node is of the type A (see <ref type="figure" target="#fig_8">Fig. 9</ref> ). The applied force is P sin (ωt) , where the amplitude vector P = (0 , 0 . 96) T .</p><p>In <ref type="figure" target="#fig_9">Fig. 11</ref> the displacement magnitude | u | is given at time t = 233 . 58 , while in the Video 5 of the Supplementary Material it is possible to see the propagation of the localised waveform during the entire numerical computation. It is evident that the wave is highly localised along the direction predicted by the dispersion properties in <ref type="figure">Fig. 10</ref> , namely perpendicular to the straight slowness contours at ω = 1 . 72 π .</p><p>A deeper inspection of the numerical results, evidenced by the inset on the left of <ref type="figure" target="#fig_9">Fig. 11</ref> , reveals that, while the force is applied to a node of type A (see <ref type="figure" target="#fig_8">Fig. 9</ref> ), the wave is mainly localised in the lattice nodes of type B . Video 5 of the Supplementary Material shows that there is an initial stage 0 ≤ t ≤ 13, in which the wave propagates from the node where the force is applied to the neighboring nodes, without an evident preferential direction. There is also a second stage where two highly localised waves are generated that depart from the two nodes of type B adjacent to the node where the force is applied. An additional simulation, not reported here for brevity, shows that also in the case when the force is applied to a node of type B the wave is highly localised along a line of nodes of this type. This is in agreement with the steady-state results reported in <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> , which show that waves tend to propagate along the lines where the parameter α is larger. However, the steady-state analysis neither gives any information about the initial range when the wave moves from point A to point B , nor any indication about the wave speed, which can be estimated from the present transient simulation.</p><p>In particular, the latter shows that the localised waves can be achieved in the elastic system in a relatively short finite time interval.</p><p>Next, we investigate if localised waveforms can be generated in a gyro-elastic lattice possessing uniform gyricity, but in the case | | = ω. In this scenario, in the last terms in the right-hand sides of (37) and (38) , ω is replaced by G . <ref type="figure" target="#fig_10">Fig. 12 (a)</ref> shows the slowness contours for ω = 1 . 15 π . Once again, it can be seen that the slowness contours in <ref type="figure" target="#fig_10">Fig. 12 (a)</ref> are straight lines associated with waves that propagate in the direction (1 / 2 , √ 3 / 2) . In <ref type="figure" target="#fig_10">Fig. 12 (b)</ref>, the response of the system at t = 169 . 64 when subjected to the sinusoidal load P sin ( ωt ) is reported. There, a clear localised waveform can be observed that propagates in the direction parallel to the inclined rows of the lattice. This response is realised in a similar way to that encountered in the previous example in <ref type="figure" target="#fig_9">Fig. 11</ref> and Video 5. However, as evidenced by the magnification of <ref type="figure" target="#fig_10">Fig. 12 (b)</ref> and Video 6, the load is able to excite more neighboring nodes, as seen in the interval 0 ≤ t ≤ 17 of Video 6. As a consequence, this also leads to more than one localised wave propagating parallel to each other. These additional localised waves appear along the first and the second neighboring inclined rows to the load that contain the nodes of type B .</p><p>The results of <ref type="figure" target="#fig_10">Fig. 12</ref> and Video 6 demonstrate that highly localised waves can be achieved in a gyro-elastic medium without the requirement | | = ω on the gyricity. Finally, we conclude the analysis of these waves by asking a natural question: "Can the localised waveforms be realised in a gyro-elastic lattice subjected to different initial conditions?" To answer this question, we consider non-zero initial conditions in a neighborhood of the load. The initial conditions of the system are now modified inside a 10 × 10 rectangle centered at the point where the load is applied in the lattice (see <ref type="figure" target="#fig_2">Fig. 13</ref> ). Each node in this region is given an initial displacement of 0.02 and an initial velocity 0.05 in the horizontal and vertical directions. All other nodes are considered to be initially at rest. A snapshot of the lattice within the initial stage of its response is shown in <ref type="figure" target="#fig_2">Fig. 13 (a)</ref>. Once more, a clearly visible highly localised wave can be seen propagating along the nodes of the type B . Accompanying this is a vortex-type transient wave propagating outward from the load. The displacements produced by this wave are small in comparison with the dominant dynamic feature in <ref type="figure" target="#fig_2">Fig. 13 (a)</ref>. Hence, in this figure the maximum displacement of the color bar has been truncated to highlight this transient effect. In <ref type="figure" target="#fig_2">Fig. 13 (b)</ref>, the behaviour of the lattice at a much later time is shown. It is seen that the effects of the transient vortex wave are negligible and, in accordance with the slowness contours of <ref type="figure">Fig. 10 (b)</ref>, the highly localised waveform predicted by the dispersion analysis is achieved.</p><p>Video 7 demonstrates the effect of the non-homogeneous distribution of the initial conditions on the evolution of the system's motion. There the motion can be described in three stages. For 0 ≤ t ≤ 4, the intensity of the deformations created by the non-homogeneous initial conditions within the prescribed rectangle decreases. During this time interval there are also visible deformations created by the load in its vicinity. The second stage of the lattice motion occurs for 4 ≤ t ≤ 25, where the deformations created by the initial lattice configuration and the source interact. In this period, no preferential direction of the deformation is observed. The third stage takes place for t ≥ 25, where the waveform possessing preferential directions expected from the dispersion analysis (see <ref type="figure">Fig. 10</ref> ) becomes clearly visible. In this stage, nodes of the type B to the left and right of the load are excited and begin to generate the highly localised waveform similar to the scenario of the lattice with homogeneous initial conditions. As this happens, the influence of the initial conditions can still be seen as the vortex wave propagates outwardly from the load and interacts with the upper and lower lattice boundaries at approximately t = 78 .</p><p>The example presented in <ref type="figure" target="#fig_2">Fig. 13</ref> and Video 7 demonstrates that changing the initial conditions of the system will produce different transient effects but the waveforms predicted by the theoretical model of <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> in the timeharmonic regime are still realisable. We also tested the case of uniform non-homogeneous initial conditions in the whole computational domain and we obtained qualitatively the same results with the generation of a highly localised waveform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Interfacial waves in a hexagonal elastic lattice attached to gyroscopic spinners</head><p>Here, we consider a hexagonal lattice connected to an inhomogeneous array of spinners that divides the lattice into subdomains. In particular, our aim is to analyse the transient behaviour of interfacial waveforms that can appear when the boundaries between subdomains are excited at selected frequencies.</p><p>The configuration of the lattice system is shown in <ref type="figure" target="#fig_3">Fig. 14</ref> . We define the elementary cell of the lattice with the basis vectors t (1) = (3 / 2 , − √ 3 / 2) T and t (2) = (3 / 2 , √ 3 / 2) T . The multi-index n is used again to identify the elementary cells in the lattice. In this system, the gyricity is uniform and is set equal to the radian frequency of vibration in the lattice. The displacements u ( n ) j , j = A, B, of the nodes in the cell with index n satisfy the dynamic equations:  with p 1 = (0 , 0) T , p 2 = (1 , 0) T and p 3 = (0 , 1) T . The last terms in the preceding right-hand sides represent the dynamic contribution of the uniform array of spinners to the lattice system. A detailed dispersion analysis of the system was carried out in <ref type="bibr" target="#b25">Garau et al. (2018)</ref> and is briefly reported in Appendix C . Based on this analysis, later we describe how this model is used to determine the frequencies at which interfacial waves can propagate in hexagonal systems connected to spinners with an inhomogeneous arrangement of gyricities.</p><formula xml:id="formula_45">ü ( n ) A = 3 j=1 a ( j) • { u ( n −p j ) B − u ( n ) A } a ( j) − αω R ˙ u ( n ) A ,<label>(40)</label></formula><formula xml:id="formula_46">ü ( n ) B = 3 j=1 a ( j) • { u ( n + p j ) A − u ( n ) B } a ( j) − αω R ˙ u ( n ) B ,<label>(41)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1.">Unidirectional interfacial waves in hexagonal chiral media with distributed gyricity</head><p>Here, we show that by using an inhomogeneous distribution of gyricities one can generate interfacial waveforms. We demonstrate how to obtain such an effect in the transient regime for the case α = 0 . 9 . The dispersion diagram for this value of α is shown in <ref type="figure" target="#fig_4">Fig. 15</ref> . We note that the curves admit a narrow stop band in the interval 3.685 &lt; ω &lt; 3.963. In addition, in this figure we indicate the frequencies ω = 3 . 79 , 4 . 02 for the harmonic excitation of the lattice, where one will encounter interfacial waves propagating in opposite directions (see <ref type="bibr" target="#b25">Garau et al., 2018 )</ref>. We consider the system shown in <ref type="figure" target="#fig_5">Fig. 16</ref> . A rectangular slab of lattice, with dimensions 100 × 50 √ 3 , is divided into two subdomains, having a zig-zag interface. The parameter α = 0 . 9 and we distribute the gyricity of the spinners such that in the lower portion of the lattice = ω (nodes shown in blue in <ref type="figure" target="#fig_5">Fig. 16</ref> ), while in the upper portion of the lattice = −ω (nodes shown in red in <ref type="figure" target="#fig_5">Fig. 16</ref> ).</p><p>A Matlab code has been implemented to solve equations analogous to (40) and (41) on the 4332 nodes of the lattice in <ref type="figure" target="#fig_5">Fig. 16</ref> . The system is assumed to be initially at rest and the lattice nodes along the exterior of the slab are clamped.</p><p>At the node indicated with a black dot in <ref type="figure" target="#fig_6">Fig. 17</ref> , we apply the harmonic force P sin (ωt) . Here, that the force is aligned with the interface. The forcing frequency ω is chosen to coincide with either ω = 3 . 79 or ω = 4 . 02 , indicated in the dispersion diagram of <ref type="figure" target="#fig_4">Fig. 15 (b)</ref>.</p><formula xml:id="formula_47">P = 0 . 29 (1 / 2 , √ 3 / 2) T , so</formula><p>For ω = 3 . 79 the displacement magnitude is shown in <ref type="figure" target="#fig_6">Fig. 17 (a)</ref> at t = 711 . In the figure, one can clearly see that a localised wave has appeared, that follows the internal interface to reach the right boundary of the domain.</p><p>In <ref type="figure" target="#fig_6">Fig. 17 (b)</ref>, the displacement magnitude is shown for ω = 4 . 02 at t = 957 . The wave propagates along the interface, but in the direction opposite to that in <ref type="figure" target="#fig_6">Fig. 17 (a)</ref>. The transient analysis shows a different speed of propagation of the two interfacial waves at the frequencies ω = 3 . 79 and ω = 4 . 02 , where the speed of propagation is higher in the first case.</p><p>As a further illustration, in Videos 8 and 9 of the Supplementary Material we show the results of the transient simulations during the entire motion, for the two cases analysed in <ref type="figure" target="#fig_6">Fig. 17 (a)</ref> and (b), respectively. The videos show some common features and differences. As in the previous example of Section 3.1.1 , initially the wave propagates from the forced node to the neighboring ones without an evident preferential direction, before developing localised patterns in a finite and relatively short time-interval. For ω = 3 . 79 , the interfacial wave propagates downwards from the beginning along the inclined part of the lattice interface, while for ω = 4 . 02 initially the wave propagates in both directions and after this initial period only upward.</p><p>In both cases, the wave slows down when it reaches one of the corners in the zig-zag interface. As the wavefront tries to pass through the corner, it produces some scattering into the bulk of the lattice, which is also evidenced by the lower amplitude of the displacement in the horizontal part of the interface.</p><p>It is worth mentioning that the effects shown here are independent of the position of the load. In <ref type="figure">Fig. 2</ref> we show the displacement amplitude when the load is applied on the upper horizontal edge of the interface. In particular, we considered a harmonic force P sin (ωt) , with P = 0 . 29 (1 , 0) T and ω = 3 . 79 , applied at the node indicated with a black dot in the figure. As for the case in <ref type="figure" target="#fig_6">Fig. 17 (a)</ref>, the interfacial wave propagates to the right of the load and, after passing the two corners, towards the right boundary of the lattice slab. The generation and propagation of the interfacial waves for this case can be observed in the Video 2 of the Supplementary Material.</p><p>Finally, we investigate the response of the inhomogeneous gyro-elastic medium when subjected to a transient load along the interface. In what follows, we consider a gyro-elastic lattice with cLm −1 = 1 m s −2 and L = γ −1 m . In this way, the magnitude of the loading and the radian frequency of the structure in the physical and dimensionless settings coincide. The load is chosen to represent the acceleration history measured by an accelerogram (labelled NORTHR _ ORR090.AT2) that recorded the famous seismic event in Northridge, 1994. The data for this event was captured within a 40 s period. The real signal is shown in <ref type="figure" target="#fig_7">Fig. 18 (a)</ref>. For the simulation below we have implemented a load that repeats the signal generated by this earthquake after every 40 time units.</p><p>In <ref type="figure" target="#fig_7">Fig. 18</ref> (b) the frequency spectrum (in rad s −1 ) obtained using the Fast Fourier Transform of the signal data is given.</p><p>The last result shows that the load is the superposition of multiple frequency components, with the largest amplitudes in the frequency interval <ref type="bibr">[0,</ref><ref type="bibr">30]</ref>, which includes some of the pass bands of the lattice structure, reported in <ref type="figure" target="#fig_4">Fig. 15</ref> . Hence, we may anticipate multiple harmonic wave components to be excited by such a load. As in the examples of <ref type="figure" target="#fig_6">Fig. 17</ref> , we apply the load along the zig-zag interface at the node indicated at the black dot in <ref type="figure" target="#fig_8">Fig. 19</ref> , and this acts parallel to the inclined part of the internal boundary. <ref type="figure" target="#fig_8">Fig. 19</ref> shows the behaviour of the inhomogeneous gyro-elastic lattice at t = 757 . 49 . While less localised than in the examples shown in <ref type="figure" target="#fig_6">Fig. 17</ref> , a propagating interfacial wave is still clearly visible. In particular, the most prominent dynamic feature that can be observed is an interfacial wave that propagates to the right-hand boundary of the lattice. There is also some evidence of an interfacial wave that attempts to move along the interface in the opposite direction, but has not reached the left lattice boundary of the computational domain at the end of the analysis. One possible explanation for this is based on the results of <ref type="figure" target="#fig_6">Fig. 17</ref> , associated with the harmonic excitation of the gyro-elastic lattice. There, it was revealed that the interfacial wave travels faster to the right boundary.</p><p>Video 10 of the Supplementary Material shows how the behaviour of the lattice evolves in time as a result of the load with multiple frequency content. As expected, it can be seen that many waves are created by the load that propagate in multiple directions within the time interval 0 ≤ t ≤ 250. Following this interval, these processes are accompanied by an interfacial wave that begins to propagate downward along the interface in the lattice from the load. The propagation of the interfacial wave is not as clear as in the example of <ref type="figure" target="#fig_6">Fig. 17</ref> , due to the wave radiation produced by the source. There is a region in the vicinity of the load where the deformations in each direction of the lattice are comparable. This occurs until t = 350 and following this the interfacial wave can be clearly seen to propagate towards the right-hand boundary of the lattice.</p><p>The example presented in <ref type="figure" target="#fig_8">Fig. 19</ref> and Video 10 indicates that multiple waves can be generated by a transient source, including waveforms occurring at special frequencies. The frequency spectrum of the load chosen here contains information about such frequencies, but they are not the dominant frequencies composing the signal (see inset of <ref type="figure" target="#fig_7">Fig. 18 (b)</ref>). Nevertheless, here we have shown that the interfacial waveforms obtained at selected frequencies are still realisable and represent a significant dynamic effect in transient loading configurations. <ref type="figure" target="#fig_8">Fig. 19</ref>. Response of an inhomogeneous gyro-elastic lattice with a zig-zag interface subjected to transient loading. The geometry and material details are given in <ref type="figure" target="#fig_5">Fig. 16</ref> . The displacement magnitude | u | is given for t = 757 . 49 . The full transient solution is illustrated in Video 10 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Advanced applications</head><p>In this section, we give some further illustrations showing that the hexagonal gyro-elastic lattice model analysed in Section 3.2 can be used to design structured devices with wave-guiding properties having applications in topological protection and cloaking.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Topological protection</head><p>Here, we investigate the capability of the gyro-elastic lattice in supporting edge waves. To this end, we perform the transient analysis of a gyro-elastic hexagonal lattice arranged as in <ref type="figure" target="#fig_17">Fig. 20</ref> , containing a hexagonal cavity. The unit cell of the gyro-elastic lattice is as in <ref type="figure" target="#fig_3">Fig. 14</ref>   The gyricity and parameters characterising the motion and type of the spinners are uniform and taken as = ω and α = 0 . 9 , respectively. The lattice is assumed to be at rest initially and it is excited on the external boundary at the point indicated by the dot in <ref type="figure" target="#fig_17">Fig. 20</ref> with the sinusoidal force P sin (ωt) . In this case, P = A (1 / 2 , − √ 3 / 2) T , with A = 7 . 7 × 10 −2</p><p>and ω = 3 . 95 . This frequency is within the narrow high-frequency stop band indicated in <ref type="figure" target="#fig_4">Fig. 15</ref> .</p><p>Video 11 shows that the external force generates a wave that propagates along the external boundary of the domain in the clockwise direction. Some snapshots of this video are presented in <ref type="figure" target="#fig_18">Fig. 21</ref> at various times of the computation. This displacement is ten times larger than the maximum displacement inside the rest of the system and the displacement is concentrated near the external boundary of the lattice. In order to better visualise the displacement field in the whole domain, in Video 11 and <ref type="figure" target="#fig_18">Fig. 21</ref> we have truncated the total displacement scale at | u | = 0 . 1 . In the bulk of the lattice, and in particular on the internal hexagonal boundary, the displacements are negligibly small with respect to the values attained on the external hexagonal boundary. Accordingly, an object placed in the cavity of the domain would be protected from any dynamic disturbance produced outside the lattice for the considered loading.</p><p>Video 12 shows a magnified view of the lattice near the point of application of the external force. The masses rotate in the plane in the anti-clockwise direction, yet the edge wave propagates along the exterior boundary in the clockwise direction. This counter-intuitive phenomenon is typical with wave motion in discrete gyro-elastic media.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Cloaking</head><p>In the final example considered in this paper, we show that one can design a structured gyro-elastic medium that can act as an efficient cloaking device to hide a defect in a discrete lattice (see <ref type="figure" target="#fig_19">Fig. 22 (a)</ref>). The cloak possesses an inner and outer hexagonal annulus, each of which is split into two domains, as shown in <ref type="figure" target="#fig_19">Fig. 22 (b)</ref>. Throughout the cloak the quantity α| |, characterising the magnitude of the effective input of the gyroscopes to the cloak, is uniform. The value of α in each subdomain of the cloak is indicated in <ref type="figure" target="#fig_19">Fig. 22 (b)</ref>.</p><p>We remark that the design of the cloaking device is similar to that proposed in <ref type="bibr" target="#b7">Brun et al. (2012)</ref> . However, here we are considering a discrete medium, while in <ref type="bibr" target="#b7">Brun et al. (2012)</ref> a homogenised continuum was implemented in the design and simulations.</p><p>We consider a rectangular slab of hexagonal lattice with dimensions 241 . 5 × 199 √ 3 / 2 . We study the dynamic response of this lattice in three scenarios: (i) when there is no defect and hence the lattice is homogeneous; (ii) when the lattice contains a defect, represented by the black hexagon in <ref type="figure" target="#fig_19">Fig. 22 (a)</ref> and (b); (iii) when the defect is coated by the gyroelastic cloak, marked in red and blue in <ref type="figure" target="#fig_19">Fig. 22 (a)</ref> and (b). As demonstrated below, without the cloak the defect would create noticeable effects, such as scattering and shielding, when interacting with waves propagating in the ambient medium. Conversely, when the cloak designed as in <ref type="figure" target="#fig_19">Fig. 22 (b)</ref> is inserted, these effects are reduced, especially in particular directions, reconstructing the wave pattern as if the defect were not present.</p><p>In all the computations presented here, the lattice is assumed to be initially at rest. Perfectly Matched Layers (PML) are used to minimise the reflections produced at the edges of the lattice. Elastic waves are generated by an applied displacement, indicated by a black arrow in <ref type="figure" target="#fig_19">Fig. 22 (a)</ref>. The imposed displacement is positioned at (75 , 50 √ 3 ) (represented by the black dot in <ref type="figure" target="#fig_19">Fig. 22 (a)</ref>) and is expressed by Q sin (ωt) , where Q = (0 . 5 , 0) T and ω = 0 . 3 . We note that the chosen value of the frequency ω is relatively low.</p><p>We start by considering the case (i), when the lattice is homogeneous. Video 13 of the Supplementary Material shows the response of the medium to the external excitation. Waves with a circular front propagate outward from the applied displacement and shadow regions can be observed in the vertical directions relative to the excitation. As expected, due to the hexagonal lattice microstructure, the wave field is not radially symmetric. Additionally, we observe that the waves propagating in the lattice are not affected by their interactions with the boundary due to the presence of the PML. The displacement field in the lattice taken at a large time instant is illustrated in <ref type="figure" target="#fig_2">Fig. 23 (a)</ref>.</p><p>Next, we consider the case (ii) when a defect is situated in the lattice. The defect is represented by a region of nodes that are connected to each other by links stiffer than those in the ambient medium. The region of the defect, indicated by the black hexagon in <ref type="figure" target="#fig_19">Fig. 22 (b)</ref>, has side length equal to 7. <ref type="figure" target="#fig_2">Fig. 23 (b)</ref> shows the response of the system for a large value of time. A clear shadow can be seen to the right of the defect, in addition to other shadows created in the vertical direction. Furthermore, there are scattered waves produced by the left-most vertex of the defect that propagate at ± 60 • and ± 90 • to the positive horizontal direction relative to this vertex.</p><p>Video 14 in the Supplementary Material shows how the displacement field in <ref type="figure" target="#fig_2">Fig. 23 (b)</ref> is achieved. The outgoing waves from the applied displacement reach the defect at t = 36 . Until this time, the wave pattern is similar to the field produced in the homogeneous lattice. After t = 36 , the left-most vertex of the defect also begins to act as a source, creating scattered waves that interact with the waves generated by the imposed displacement. In addition, the shadow regions described in <ref type="figure" target="#fig_2">Fig. 23 (b)</ref> take form after t = 36 . <ref type="figure" target="#fig_2">Fig. 23 (c)</ref> shows the response of the system for the case (iii) when the defect is coated by the gyro-elastic cloak shown in <ref type="figure" target="#fig_19">Fig. 22 (b)</ref>. In particular, we notice that the coating is capable of reconstructing the wave pattern to the right of the defect. As can be seen from <ref type="figure" target="#fig_2">Fig. 23 (c)</ref>, the cloak acts like a resonator, keeping the displacements in the defect region very small. Accordingly, the gyroscopic spinners inside the cloak re-route the incoming waves around the defect, leaving the cloak interior almost disturbed. The resulting wave pattern to the right of the cloaked defect is in good agreement with the pattern  whereas in the ambient medium the link stiffness is equal to unity. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.) <ref type="figure" target="#fig_2">Fig. 23</ref>. The displacement field produced by a point excitation when the hexagonal lattice (a) is homogeneous, (b) contains the defect and (c) contains the defect that is coated by the gyro-elastic cloak (see <ref type="figure" target="#fig_19">Fig. 22</ref> ). The figures show the responses of the lattices at t = 1353 . (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.) <ref type="figure" target="#fig_3">Fig. 24</ref>. Total displacement of the hexagonal lattice subjected to a harmonic excitation, computed along the grey dashed line shown in <ref type="figure" target="#fig_19">Fig. 22</ref> , for the case when the structure (i) is homogeneous, (ii) contains the defect and (iii) contains the defect that is coated by the gyro-elastic cloak (see <ref type="figure" target="#fig_19">Fig. 22</ref> ). The location of the defect along this line is indicated by the vertical dotted lines and the gyro-elastic cloak is contained in the region between the dashed and dotted lines. A magnification of the results obtained for 130 ≤ d ≤ 180 is also presented for the sake of comparison. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.).</p><p>in <ref type="figure" target="#fig_2">Fig. 23 (a)</ref> for the case without any inhomogeneity. We also note that there exist narrow regions in oblique directions where the cloaking device is less efficient in reconstructing the wave field obtained in the case of the homogeneous lattice.</p><p>In Video 15 we show the results of the transient analysis for the lattice with the coated defect. Until t = 26 , the displacement pattern of the system is similar to that of the homogeneous lattice. After this instant, waves begin to interact with the gyro-elastic cloak. For 26 &lt; t &lt; 93, we see scattering due to the left-most vertex of the cloak in the vertical directions and waves being re-routed through the coating around the defect. In this time interval, the displacements in the defect are visibly small. After t = 93 , the right-most vertices of the cloak begin to act as sources, producing elastic waves with circular fronts propagating away from the cloak in several directions. These waves lead to a visibly excellent reconstruction of the wave pattern observed in the homogeneous medium to the right of the cloak. It is noted that as this reconstruction occurs, the gyro-elastic medium undergoes displacements with larger amplitudes in comparison to the behaviour of the far-field generated in the ambient lattice by the source.</p><p>In order to illustrate the efficiency of the cloak quantitatively, we determine the total displacements of the lattice nodes for a given time and along the horizontal dashed grey line shown in <ref type="figure" target="#fig_19">Fig. 22 (a)</ref>. Along this line, the distance between two lattice nodes is alternatively equal to one or two lattice units. The total displacements along this line are calculated for all three computations presented in <ref type="figure" target="#fig_2">Fig. 23</ref> and they are plotted in <ref type="figure" target="#fig_3">Fig. 24</ref> . The results for the case of the lattice with the defect show a significant reduction in the amplitude of the displacement field to the right of the defect, when compared with the results of the homogeneous lattice. On the other hand, the introduction of the cloak allows for a good reconstruction of the displacement field to the right of the cloak, to the extent that in some regions the results for the coated defect and the homogeneous case are indistinguishable. In scenario (iii), we also note larger displacements in the gyro-elastic cloak, which re-routes the external waves around the defect, and very small displacements in the defect region.</p><p>Video 16 shows how the displacement profiles in the three scenarios change with time. The video reveals that it takes 438 time units for the cloak to approximately reproduce the displacement field in the homogeneous lattice. After t = 438 , in the region to the right of the cloak, the total displacements for the cases of the cloaked defect and the homogeneous lattice agree very well and move together in phase.</p><p>Finally, we recall that in the illustrations of <ref type="figure" target="#fig_2">Fig. 23</ref> and Video 15, the quantity α| |, within the gyro-elastic cloak, is uniform. We remark that the proposed design in <ref type="figure" target="#fig_19">Fig. 22</ref> corresponds to a wide class of arrays of gyroscopes, with uniform distributions of the gyricity magnitude | | and physical properties characterised by α, for which the cloaking effect identified here is achievable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>We have developed a new asymptotic model that describes the transient motion of a mass connected to a gyroscopic spinner and to a truss system of elastic rods. For this gyro-elastic structure, we have derived a linearised model using the assumption that the nutation angle of the spinner is a small quantity. For simple configurations, we have obtained an analytical solution, that is in excellent agreement with the numerical results based on the finite element method, despite the fact that the dimensionality of the two models is different.</p><p>We have extended this study to the dynamic analysis of an elastic lattice attached to a system of gyroscopic spinners, focussing on special dynamic regimes possessed by the medium and previously identified in <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> and <ref type="bibr" target="#b25">Garau et al. (2018)</ref> under time-harmonic conditions. Specifically, we have shown how highly localised waveforms and unidirectional interfacial waves are generated and propagate through a gyro-elastic lattice in the transient regime.</p><p>We have demonstrated that these dynamic effects can be obtained for different initial conditions and under an exciting load with broadband frequency content such as the recorded accelerogram of a real seismic event.</p><p>We have also developed two important applications of a gyro-elastic system. The first one shows that a gyro-elastic medium can be used to construct a robust topological insulator that, when excited on the exterior boundary at a given frequency, is capable of confining the waves to this boundary, leaving the interior of the structure almost undisturbed. The second application concerns the design of a structured gyro-elastic cloak, that can be efficiently used to hide the presence of a defect in the discrete medium, preventing the defect from having significant interactions with external excitations. We envisage that the models proposed in this paper will be very useful in seismic protection and civil engineering, where systems capable of controlling or suppressing the effects of unwanted vibrations are of great importance. </p><formula xml:id="formula_48">S = i α diag ( R , R ) . (C.3)</formula><p>We note that the considered structure admits dispersive degeneracies such as Dirac cones when α = 0 , corresponding to the case of an ordinary hexagonal lattice without spinners, as shown in <ref type="figure" target="#fig_4">Fig. 25 (a)</ref>. The Dirac Point is at K = (2 π / 3 , 2 π / (3 √ 3 )) and ω = 3 / 2 in the reciprocal lattice. For α → 1 − , at the same point in the reciprocal space, another Dirac cone appears at a higher frequency. Such a case is shown in <ref type="figure" target="#fig_4">Fig. 25 (b)</ref>, for α = 0 . 999 . Actually, in this case the Dirac cone has not formed yet and an extremely narrow stop band is opened at the reciprocal point K = (2 π / 3 , 2 π / (3 √ 3 )) , in the vicinity of the vertex of the Dirac cone appearing for α → 1 − .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary material</head><p>Supplementary material associated with this article can be found, in the online version, at https://doi.org/10.1016/j. ijengsci.2019.05.007 .</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>, Enoch, &amp; Movchan, 20 09; Milton, Briane, &amp; Willis, 20 06; Norris, 20 08; Norris &amp; Shuvalov, 2011; Parnell, 2012 ). In</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig</head><label></label><figDesc>Fig. 2. Hexagonal lattice connected to an array of gyroscopic spinners. Interfacial waves are produced by a concentrated load applied at the point indicated with a black dot. Waves propagate in the transient regime following a zig-zag pattern. Technical details are reported in Section 3 and a video of the motion is included in the Supplementary Material (see Video 2). (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>The gyroscopic oscillator. (a) A gyroscopic spinner hinged at its base and having a spin rate ˙ ψ . At the top of the spinner a concentrated mass m is</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 .</head><label>4</label><figDesc>Eigenfrequencies of the gyroscopic oscillator in Fig. 3 as a function of the gyricity . Computations are based on (26) , with the parameter α = 0 . 25 . The dashed line indicates the case = 6 , considered in Figs. 5 and 6 . The values of ω ± in (26) when = 6 are also shown.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 .</head><label>5</label><figDesc>Motion of the gyroscopic oscillator shown inFig. 3. The result corresponds to gyricity = 6 , α = 0 . 25 and initial conditions (29) -(31) . (a) The linearised motion of the mass m in the time interval 0 ≤ t ≤ 2.42 is given in red. Note the different scales used for the plane ( x 1 , x 2 ) and the axis x 3 . (b) Planar view of the trajectory traced by the mass m , where the direction of the motion of the mass is indicated with the arrow. The behaviour of the system is further illustrated in Video 3 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 6 .</head><label>6</label><figDesc>Motion of the gyroscopic oscillator shown in Fig. 3 . The result corresponds to the same parameters of Fig. 5 , but initial conditions (32) -(34) . (a) The trajectory of the mass m in the time interval 0 ≤ t ≤ 47.5 is given in red. (b) Planar view of the trajectory traced by the mass m . The motion of the system is further illustrated in Video 4 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 7 .</head><label>7</label><figDesc>The geometry of the model implemented in Comsol , consisting of a gyroscopic spinner (represented by a rigid solid) that is pinned at the base and whose tip is connected to a mass m (represented by a small cylinder), that is also connected to an array of six extensional springs (shown as lines). The gyroscopic spinner has moments of inertia 63.7 kg m 2 about the x 1,2 -axes and 10.0 kg m 2 about the x 3 -axis, respectively, and the length l = 1 m. The initial spin and precession rates are ˙ ψ = ˙ φ = 250 rad/s. The mass at the tip of the spinner is m = 100 kg. Each rod has longitudinal stiffness c = 10 0 0 N m −1 and length L = 1 m.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 8 .</head><label>8</label><figDesc>(a) The trajectory traced by the mass in the system shown inFig. 7, resulting from a transient analysis in Comsol , and the comparison with the analytical results. Displacements (b) u 1 and (c) u 2 of the mass m as a function of time.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 9 .</head><label>9</label><figDesc>Infinite triangular elastic lattice attached to an array of gyroscopic spinners. Masses m at the nodal points are connected by extensional springs of stiffness c and length L . The unit cell of the periodic system is indicated in grey and it is defined by the vectors t (1) = (2 , 0) T and t(2)  </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 11 .</head><label>11</label><figDesc>Transient dynamic analysis in a finite gyro-elastic lattice composed of 50 0 0 unit cells with spinners possessing α A = 0 . 8 , α B = 0 . 9 and gyricities A = − B = ω = 1 . 72 π. The displacement magnitude | u | is given at the normalised time t = 233 . 58 . The full transient solution is illustrated in Video 5 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Fig. 12 .</head><label>12</label><figDesc>(a) Slowness contours at G = 3 and ω = 1 . 15 π based on a modification of the results in Appendix B . The grey region represents the first Brillouin zone. (b) Transient dynamic analysis in a finite gyro-elastic lattice composed of 50 0 0 unit cells with spinners possessing α A = 0 . 8 , α B = 0 . 9 and gyricity G = 3 . The displacement magnitude | u | is given at the normalised time t = 169 . 64 . The full transient solution is illustrated in Video 6 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)Fig. 11. The system is initially at rest and the exterior lattice nodes are clamped. A wave is produced by a concentrated load, acting at the central node indicated by a yellow dot in</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig. 13 .</head><label>13</label><figDesc>Transient dynamic analysis in a finite gyro-elastic lattice subjected to non-homogeneous initial conditions within the black rectangles, centred on the position of the applied force (the yellow dots). The lattice is composed of 50 0 0 unit cells with spinners possessing α A = 0 . 8 , α B = 0 . 9 and gyricities A = − B = ω = 1 . 72 π. The displacement magnitude | u | is given at the normalised time (a) t = 59 . 76 and (b) t = 233 . 58 . The full transient solution is illustrated in Video 7 of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Fig. 14 .</head><label>14</label><figDesc>An infinite lattice composed of elastic links connecting a periodic hexagonal array of masses. The junctions are also attached to a uniform array of gyroscopic spinners characterised by the material parameter α and having gyricity ω, which is the radian frequency of the entire system. The elementary cell is defined by the vectors t(1)  = (3 / 2 , − √ 3 / 2) T and t (2) = (3 / 2 , √ 3 / 2) T .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Fig. 15 .</head><label>15</label><figDesc>Dispersion properties of the hexagonal gyro-elastic lattice of Fig. 14 . (a) Dispersion surfaces and curves are given for α = 0 . 9 . The narrow stop bandin the high-frequency regime is highlighted in the inset in part (b), which also includes the frequencies of the external excitation used in the numerical simulations. The computations are based on the results of Appendix C . (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Fig. 16 .Fig. 17 .</head><label>1617</label><figDesc>Computational domain for the example of Section 3.2.1 , involving a rectangular slab of a hexagonal lattice connected to gyroscopic spinners. The lattice is divided into two subdomains defined by the gyricities of the spinners, taken as = −ω ( = ω) for the red (blue) nodes. The parameter α = 0 . 9 is uniform throughout the medium. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.) Interfacial waves produced by a point force varying sinusoidally in time and applied at the interfacial node indicated with a black dot. The geometry and material details are given inFig. 16. The displacement magnitude | u | is given for (a) ω = 3 . 79 , t = 711 and (b) ω = 4 . 02 , t = 957 . The full transient solution is illustrated in Video 8 for the case (a) and Video 9 for the case (b) of the Supplementary Material. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head>Fig. 18 .</head><label>18</label><figDesc>(a) Accelerations produced by the accelerogram NORTHR _ ORR090.AT2 as a function of time. (b) The Fast Fourier Transform of the data in (a); a magnification of the magnitude of frequency spectrum in the frequency interval [0,10] (highlighted by the red dashed box) is presented in the inset of the figure. There, the frequencies 3.82 and 4.02, corresponding to the interfacial wave frequencies ofFig. 16, are shown by vertical dashed black lines. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><head></head><label></label><figDesc>.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17"><head>Fig. 20 .</head><label>20</label><figDesc>Geometry of the domain analysed in Section 4.1 . The parameters of the gyroscopic spinners are = ω = 3 . 95 and α = 0 . 9 . (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18"><head>Fig. 21 .</head><label>21</label><figDesc>A selection of snapshots from the numerical computation shown in Video 11 that illustrates the response of the gyro-elastic lattice excited on the external boundary. The displacement magnitude | u | is given at times t indicated on the bar on the right of each figure. (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_19"><head>Fig. 22 .</head><label>22</label><figDesc>(a) A hexagonal lattice containing a defect (black hexagonal region), coated by a gyro-elastic cloak (red and blue regions). Along the exterior boundary of the lattice Perfectly Matched Layers are used, whose interior boundary is represented by a white dashed line. The position of the external excitation is indicated by a black arrow. (b) A magnification of the cloaked defect. The region bounded by the red (blue) lines contains lattice nodes connected to gyroscopic spinners with α = 0 . 51 ( α = −0 . 51 ). The defect is represented by the black dots, connected by links of stiffness equal to 12,</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_20"><head>Fig. 25 .</head><label>25</label><figDesc>Dispersion properties of the hexagonal gyro-elastic lattice of Fig. 14 . (a) α = 0 , (b) α = 0 . 9999 . The computations are based on the dispersion relation (B.3) , with (C.2) and (C.3) . (For interpretation of the references to colour in this figure, the reader is referred to the web version of this article.) with η = (3 k 1 − √ 3 k 2 ) / 2 and σ = (3 k 1 + √ 3 k 2 ) / 2 , and the gyroscopic matrix</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>M.J.N and M.B. gratefully acknowledge the support of the EU H2020 grant MSCA-IF-2016-747334-CAT-FFLAP . G.C. would like to thank the EPSRC (UK) for its support through Programme Grant no. EP/L024926/1 . The authors would also like to thank the Reviewers, whose valuable comments and suggestions helped to improve the manuscript.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Angular momentum balance of the gyroscopic spinner</head><p>The derivation of the equations of motion (3) of the gyroscopic spinner are presented here (see also <ref type="bibr" target="#b13">Carta et al., 2018;</ref><ref type="bibr" target="#b28">Goldstein et al., 2001;</ref><ref type="bibr" target="#b46">Nieves et al., 2018 )</ref>. The generalised coordinates or Euler angles are the precession φ, the nutation θ and the spin ψ angles (see <ref type="figure">Fig. 3</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>(b)).</head><p>We introduce both a fixed frame of reference F, with basis { e 1 , e 2 , e 3 } and coordinate system Ox 1 x 2 x 3 , and a moving frame of reference F , which follows the gyroscopic spinner as it precesses and nutates (but not as it spins). The moving frame F has basis { e 1 , e 2 , e 3 } (which is time-dependent) and coordinate system Ox 1 x 2 x 3 . The basis in the moving frame can be written via the basis { e 1 , e 2 , e 3 } in the fixed frame as e 1 = cos (φ(t)) e 1 + sin (φ(t)) e 2 , e 2 = − cos (θ (t)) sin (φ(t)) e 1 + cos (θ (t)) cos (φ(t)) e 2 + sin (θ (t)) e 3 , e 3 = sin (θ (t)) sin (φ(t)) e 1 − sin (θ (t)) cos (φ(t)) e 2 + cos (θ (t)) e 3 .</p><p>(A.1)</p><p>Starting from the angular momentum balance (1) , we express the angular velocity of the gyroscopic spinner ω g as</p><p>where the dot denotes differentiation with respect to time. Here, ω F F is the angular velocity of the basis in F relative to the basis in F and the last term in the right-hand side corresponds to the angular velocity of the spinner about the local axis Ox 3 in F . The angular velocity ω F F can be written in terms of the Euler angles as</p><p>Taking into account that ˙ e j = ω F F × e j , (A.4) the angular momentum balance (1) takes the form</p><p>(A.5)</p><p>In the above,</p><p>is the angular acceleration in the rotating frame of reference. The explicit components of (A.5) are</p><p>where M j , 1 ≤ j ≤ 3, are the components of the external moment vector M e when written in terms of the basis { e 1 , e 2 , e 3 } .</p><p>We denote by M j , 1 ≤ j ≤ 3, the components of the external moment vector M e when interpreted in terms of the basis of the fixed frame F. From (A.1) , we have</p><p>Finally, from (A.7) and (A.8) the components of the external moment (3) in the fixed coordinate system are derived.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix B. Dispersion relation for the triangular lattice</head><p>Here the dispersion relation for the triangular lattice of <ref type="figure">Fig. 9</ref> is derived, following the analytical treatment described in <ref type="bibr" target="#b11">Carta et al. (2017a)</ref> . To identify waves in the lattice, one can look for the solutions in the form</p><p>The amplitudes U ( n ) j , j = A, B, satisfy the Bloch-Floquet conditions</p><p>where k = (k 1 , k 2 ) T is the Bloch or wave vector. Combining this with (37) and (38) , we retrieve the dispersion relation</p><p>where I 4 is the 4 × 4 identity matrix and the matrix characterising the effect of the spinners is</p><p>In addition, in (B.3) the stiffness matrix C is given by</p><p>where</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix C. Dispersion relation for the hexagonal lattice</head><p>Waves propagating in the hexagonal medium of </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">From the elastica compass to the elastica catapult: An essay on the mechanics of soft robot arm</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Armanini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Dal Corso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Misseroni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bigoni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">473</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Simplified modelling of chiral lattice materials with local resonators</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bacigalupo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Gambarotta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="126" to="141" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Torsional locomotion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bigoni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Dal Corso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Misseroni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bosi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">470</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Free and forced wave propagation in a Rayleigh-beam grid: Flat bands, Dirac cones, and vibration localization vs isotropization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Bordiga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cabras</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bigoni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Piccolroaz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">161</biblScope>
+			<biblScope unit="page" from="64" to="81" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Self-encapsulation, or the &apos;dripping&apos; of an elastic rod</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bosi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Misseroni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Dal Corso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bigoni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">471</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Transformation cloaking and radial approximations for flexural waves in elastic plates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Colquitt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page">93020</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Transition wave in the collapse of the San Saba Bridge</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">F</forename><surname>Giaccu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">I</forename><surname>Slepyan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Physics Letters</title>
+		<editor>12 . Brun, M. , Guenneau, S. , &amp; Movchan, A. B.</editor>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">61903</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Frontiers in Materials</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Vortex-type elastic structured media and dynamic shielding</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">468</biblScope>
+			<biblScope unit="page" from="3027" to="3046" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Transition wave in a supported heavy beam</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">I</forename><surname>Slepyan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2067" to="2085" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Floquet-Bloch waves in periodic networks of the Rayleigh beams: Honeycomb systems, dispersion degeneracies and structured interfaces. Mechanics of Solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cabras</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Piccolroaz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A Journal of Russian Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="93" to="108" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Dispersion properties of vortex-type monatomic lattices</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="2213" to="2225" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Deflecting elastic prism&quot; and unidirectional localisation for waves in chiral elastic systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">26</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Gyro-elastic beams for the vibration reduction of long flexural systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">473</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Elastic chiral waveguides with gyro-hinges</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Mechanics and Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="page" from="157" to="185" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Snapping of elastic strips with controlled ends</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Cazzolli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Corso</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="page" from="285" to="303" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Tunable topological phononic crystals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">G</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Applied</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">54021</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Transformation elastodynamics and cloaking for flexural waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Colquitt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="page" from="131" to="143" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Serpentine locomotion through elastic energy release</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Dal Corso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Misseroni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">M</forename><surname>Pugno</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bigoni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Royal Society Interface</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The influence of size effect on flapwise vibration of rotating microbeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Dehrouyeh-Semnani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="150" to="163" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">On size-dependent lead-lag vibration of rotating microcantilevers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Dehrouyeh-Semnani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Behboodijouybari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Dehrouyeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="page" from="50" to="63" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Dynamic problems for metamaterials: Review of existing models and ideas for further research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Del</forename><surname>Vescovo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Giorgio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="153" to="172" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Dynamics of gyroelastic continua</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M T</forename><surname>D'eleuterio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="415" to="422" />
+			<date type="published" when="1984" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Dynamics of gyroelastic spacecraft</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M T</forename><surname>D'eleuterio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Guidance</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="401" to="405" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Motion characteristics of bilayered extensible Timoshenko microbeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Farhat</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Guenneau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Enoch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Farokhi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Ghayesh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Gholipour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hussain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Physical Review B</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Topological photonic phase in chiral hyperbolic metamaterials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lawrence</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Béri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page">37402</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Interfacial waveforms in chiral lattices with gyroscopic spinners</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Garau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">474</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Dynamics of functionally graded viscoelastic microbeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Ghayesh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="page" from="115" to="131" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Viscoelastic dynamics of axially FG microbeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Ghayesh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">135</biblScope>
+			<biblScope unit="page" from="75" to="85" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Oscillations of functionally graded microbeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Ghayesh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Farokhi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Gholipour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Goldstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Poole</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Safko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Classical Mechanics</title>
+		<imprint>
+			<publisher>Pearson</publisher>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page" from="35" to="53" />
+		</imprint>
+	</monogr>
+	<note>3rd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Dynamics of 3D Timoshenko gyroelastic beams with large attitude changes for the gyros</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hassanpour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">R</forename><surname>Heppler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Astronautica</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page" from="33" to="48" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Theory of micropolar gyroelastic continua</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hassanpour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">R</forename><surname>Heppler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Mechanica</title>
+		<imprint>
+			<biblScope unit="volume">227</biblScope>
+			<biblScope unit="page" from="1469" to="1491" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Left-handed and right-handed one-way edge modes in a gyromagnetic photonic crystal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">F</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">W</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">S</forename><surname>Qian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="page">123117</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Acoustic topological insulator and robust one-way sound transport</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Ni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">C</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">B</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Lu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Physics</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1124" to="1129" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Spacecraft attitude dynamics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1986" />
+			<publisher>Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Modal parameter analysis of gyroelastic continua</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M T</forename><surname>Eleuterio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="918" to="924" />
+			<date type="published" when="1986" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Infrared topological plasmons in graphene</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Christensen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Solja Či Ć</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">X</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Topologically robust sound propagation in an angular-momentum-biased graphene like resonator lattice</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Khanikaev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fluery</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">H</forename><surname>Mousavi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Alú</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">8260</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Photonic topological insulators</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Khanikaev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">H</forename><surname>Mousavi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">K</forename><surname>Tse</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kargarian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">H</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Shvets</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Materials</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="233" to="239" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Campbell diagrams of weakly anisotropic flexible rotors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">N</forename><surname>Kirillov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">465</biblScope>
+			<biblScope unit="page" from="2703" to="2723" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Nonconservative Stability Problems of Modern Physics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">N</forename><surname>Kirillov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>De Gruyter</publisher>
+			<pubPlace>Berlin; Boston</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Exploiting microstructural instabilities in solids and structures: From metamaterials to structural transitions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kochmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bertoldi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mechanics Reviews</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page">50801</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Multi-parametric sensitivity analysis of the band structure for tetrachiral acoustic metamaterials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lepidi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bacigalupo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="page" from="186" to="202" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Geometrically navigating topological platonic modes around gentle and sharp bends</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Makwana</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">V</forename><surname>Craster</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Makwana</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">V</forename><surname>Craster</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review B</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="page">184105</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note>Physical Review B</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">On cloaking for elasticity and physical equations with a transformation invariant form</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">W</forename><surname>Milton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Briane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Willis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">248</biblScope>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Cymatics for the cloaking of flexural vibrations in a structured plate</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Misseroni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Colquitt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">23929</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Topologically protected one-way edge mode in networks of acoustic resonators with circulating air flow</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Ni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">C</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">P</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Feng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<imprint>
+			<biblScope unit="page">53016</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Vibrations and elastic waves in chiral multi-structures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Carta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">V</forename><surname>Movchan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="387" to="408" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Analysis of dynamic damage propagation in discrete beam structures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">S</forename><surname>Mishuris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">I</forename><surname>Slepyan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="page" from="699" to="713" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Transient wave in a transformable periodic flexural structure</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Nieves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">S</forename><surname>Mishuris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">I</forename><surname>Slepyan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page" from="185" to="208" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Acoustic cloaking theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Norris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">464</biblScope>
+			<biblScope unit="page" from="2411" to="2434" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Elastic cloaking theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Norris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">L</forename><surname>Shuvalov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Wave Motion</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="525" to="538" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">On gyroscopic problems in elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Padovan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="1061" to="1073" />
+			<date type="published" when="1978" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Gyroscopic effects in micropolar elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Padovan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="433" to="439" />
+			<date type="published" when="1979" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">On nonconservative gyroscopic eigenvalue problems in elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Padovan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="1333" to="1348" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Edge waves in plates with resonators: an elastic analogue of the quantum valley Hall effect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">K</forename><surname>Pal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ruzzene</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page">25001</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Nonlinear pre-stress for cloaking from antiplane elastic waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">J</forename><surname>Parnell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">468</biblScope>
+			<biblScope unit="page" from="563" to="580" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Dispersion degeneracies and standing modes in flexural waves supported by Rayleigh beam structures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Piccolroaz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cabras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="page" from="152" to="165" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Rotational inertia interface in a dynamic lattice of flexural beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Piccolroaz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Movchan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cabras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page" from="43" to="53" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">On size dependent vibration of rotary axially functionally graded microbeam</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rafsanjani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Rubinstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bertoldi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Raghu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">D M</forename><surname>Haldane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<editor>033834 . Shafiei, N. , Kazemi, M. , &amp; Ghadiri, M.</editor>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page" from="29" to="44" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note>Physical Review A</note>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Topological sound in active-liquid metamaterials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Souslov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">C</forename><surname>Van Zuiden</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Bartolo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Vitelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Physics</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1091" to="1094" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Observation of phononic helical edge states in a mechanical topological insulator</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Süsstrunk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">D</forename><surname>Huber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">349</biblScope>
+			<biblScope unit="issue">6243</biblScope>
+			<biblScope unit="page" from="47" to="50" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Topological phononic crystals with one-way elastic edge waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bertoldi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page">104302</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Reflection-free one-way edge modes in a gyromagnetic photonic crystal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">D</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Joannopoulos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Solja Či Ć</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page">13905</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Stability of gyroelastic beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Yamanaka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">R</forename><surname>Heppler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Huseyin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AIAA Journal</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1270" to="1278" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Quasitopological rotational waves in mechanical granular graphene</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Teocharis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Tournat</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Gusev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page">60101</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note>Physical Review B</note>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Unusual one-way edge state in acoustic gyroscopic continuum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">C</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science China Physics, Mechanics and Astronomy</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page">14612</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

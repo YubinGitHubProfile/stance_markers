@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2019-01-08">8 January 2019</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hiromichi</forename><surname>Itou</surname></persName>
+							<email>h-itou@rs.tus.ac.jp</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Tokyo University of Science</orgName>
+								<address>
+									<addrLine>1-3 Kagurazaka, Shinjuku-ku</addrLine>
+									<postCode>162-8601</postCode>
+									<settlement>Tokyo</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Victor</forename><forename type="middle">A</forename><surname>Kovtunenko</surname></persName>
+							<email>victor.kovtunenko@uni-graz.at</email>
+							<affiliation key="aff1">
+								<orgName type="department">Institute for Mathematics and Scientific Computing</orgName>
+								<orgName type="institution" key="instit1">University of Graz</orgName>
+								<orgName type="institution" key="instit2">NAWI Graz</orgName>
+								<address>
+									<addrLine>Heinrichstr.36</addrLine>
+									<postCode>8010</postCode>
+									<settlement>Graz</settlement>
+									<country key="AT">Austria</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="institution" key="instit1">Lavrentyev Institute of Hydrodynamics</orgName>
+								<orgName type="institution" key="instit2">Siberian Division of the Russian Academy of Sciences</orgName>
+								<address>
+									<postCode>630090</postCode>
+									<settlement>Novosibirsk</settlement>
+									<country key="RU">Russia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kumbakonam</forename><forename type="middle">R</forename><surname>Rajagopal</surname></persName>
+							<email>krajagopal@tamu.edu</email>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Mechanical Engineering</orgName>
+								<orgName type="institution">Texas A&amp;M University</orgName>
+								<address>
+									<postCode>77843</postCode>
+									<settlement>College Station</settlement>
+									<region>TX</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>35q74</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="department">Institute for Mathematics and Scientific Computing</orgName>
+								<orgName type="institution" key="instit1">University of Graz</orgName>
+								<orgName type="institution" key="instit2">NAWI Graz</orgName>
+								<address>
+									<addrLine>Heinrichstr.36</addrLine>
+									<postCode>8010</postCode>
+									<settlement>Graz</settlement>
+									<country key="AT">Austria</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2019-01-08">8 January 2019</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2018.12.005</idno>
+					<note type="submission">Received 23 December 2018 Accepted 26 December 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Nonlinear elasticity Neo-Hookean law Implicit constitutive response Inhomogeneous media Concrete Crack with non-penetration Variational inequality</keywords>
+			</textClass>
+			<abstract>
+				<p>The well-posedness of the problem of non-penetrating crack in an elastic body whose material moduli depends on the mean normal stress is studied. The type of models considered are based on a new implicit theory for the response of elastic bodies. Bodies defined by these implicit theories are more general than Cauchy elastic bodies. The problem is studied within the context of a variational inequality.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>There is considerable evidence that properties which characterize the mechanical, optical, electrical response of materials depend on the mean normal stress (see <ref type="bibr" target="#b1">Bridgman, 1931 )</ref>. Much of the work that pertains to the response of such materials appeal to models that do not have a sound basis. Ad hoc generalizations of classical models are used which often times contradict the tenets on which the classical models are based. In order to justify, for instance, models that contain material moduli that depend on both the invariants of the stress (such as its mean value) and invariants of appropriate kinematic variables (second principal invariant of the strain to describe shear softening or hardening in solids or the second invariant of the symmetric part of the velocity gradient to describe shear thinning or shear thickening in fluids) one needs to systematically develop implicit constitutive relations in which to imbed them. Within the context of elastic bodies, in order to describe in a rational manner properties the dependence of the Young's modulus or the shear modulus on the mean normal stress one needs to generalize the classical framework of elasticity due to <ref type="bibr" target="#b3">Cauchy (1823</ref><ref type="bibr" target="#b4">Cauchy ( , 1828</ref> and <ref type="bibr" target="#b5">Green (1838</ref><ref type="bibr" target="#b6">Green ( , 1839</ref> .</p><p>Recently, <ref type="bibr" target="#b20">Rajagopal (2003</ref><ref type="bibr" target="#b21">Rajagopal ( , 2007</ref> showed that the class of bodies that qualify to be called elastic are much larger than Cauchy elastic bodies (Green elastic bodies are a sub-class of Cauchy elastic bodies, see <ref type="bibr" target="#b29">( Truesdell &amp; Noll, 2004 )</ref> for a detailed discussion of <ref type="bibr">Cauchy and Green elasticity)</ref>. <ref type="bibr">Rajagopal and Srinivasa (20 07,</ref><ref type="bibr">20 09</ref>) provided a thermodynamic basis for this enlarged class of elastic bodies. Unlike Cauchy elasticity where one assumes that the stress is a function of the deformation gradient, the starting point for the larger class of elastic bodies is the assumption that the stress and deformation gradient are related in the sense of "relations" in mathematics, that is</p><formula xml:id="formula_0">f (T , F ) = 0 ,<label>(1)</label></formula><p>where T denotes the Cauchy stress and F the deformation gradient. If one assumes that the body is isotropic (see <ref type="bibr" target="#b22">Rajagopal, 2015a</ref> for a discussion of the material symmetry of bodies defined through implicit constitutive relations), then one obtains</p><formula xml:id="formula_1">f (T , B ) = 0 ,<label>(2)</label></formula><p>where B = FF is referred to as the Left Cauchy-Green tensor. If f is an isotropic function, then (see <ref type="bibr" target="#b27">Spencer, 1971 )</ref> </p><formula xml:id="formula_2">α 0 1 + α 1 T + α 2 B + α 3 T 2 + α 4 B 2 + α 5 (TB + BT ) + α 6 (T 2 B + BT 2 ) + α 7 (TB 2 + B 2 T ) + α 8 (T 2 B 2 + B 2 T 2 ) = 0 ,<label>(3)</label></formula><p>where 1 is the matrix of ones, and the material moduli α i , i = 0 , . . . , 8 depend upon the density ρ and the following traces</p><formula xml:id="formula_3">tr T , tr B , tr T 2 , tr B 2 , tr T 3 , tr B 3 , tr (TB ) , tr (T 2 B ) , tr (TB 2 ) , tr (T 2 B 2 ) . (4)</formula><p>Two very important sub-classes of the above general class of implicit constitutive relations are</p><formula xml:id="formula_4">T = δ 1 I + δ 2 B + δ 3 B 2 (5)</formula><p>employing the identity matrix I , where the material functions δ i , i = 1 , 2 , 3 depend on ρ, tr B , tr B 2 , tr B 3 , namely the Cauchy elastic model, and</p><formula xml:id="formula_5">B = α s 0 1 + α s 1 T + α s 2 T 2 ,<label>(6)</label></formula><p>where the α s i , i = 0 , 1 , 2 depend on tr T , tr T 2 , tr T 3 and the density ρ. Eqs. (5) and (6) simply constitute the Hamilton-Cayley representation, for an isotropic tensor function (and hence do not require any additional assumptions). Since in virtue of the balance of mass the current density can be expressed in terms of the reference density and the determinant det F , the model (6) is yet an implicit model. If the α s i , i = 0 , 1 , 2 do not depend on the density ρ, then the model (6) becomes an explicit expression for the Cauchy-Green tensor in terms of the stress. The model might not necessarily be invertible, that is, one may not be able to express the stress in terms of B . <ref type="bibr" target="#b28">Truesdell and Moon (1975)</ref> have obtained necessary conditions for the semi-invertibility and invertibility of (5) , but this is not relevant to the work being carried out here.</p><p>In this study we shall use a constitutive relation wherein the material moduli depend on the mechanical pressure, and here by pressure we mean the mean normal stress. For implicit models for fluids with pressure dependent material moduli, see <ref type="bibr" target="#b2">( Bulìček, Màlek, &amp; Rajagopal, 2009 )</ref>. Before getting into a discussion of our model, it would be instructive to make the following observation. Let us consider the following incompressible elastic material given by the constitutive relation</p><formula xml:id="formula_6">T = −pI + μ(p) B ,<label>(7)</label></formula><p>where p is the indeterminate part of the stress that enforces the constraint. Notice that is not the mean normal stress, that is p = − tr T 3 since tr B is not necessarily zero in all motions (the constraint of incompressibility requires that det B = 0 in all motions). Unfortunately, one loosely and incorrectly uses the term pressure to refer to the Lagrange multiplier p (see Rajagopal, 2015b for a detailed discussion on the various uses, misuses and abuses of the terminology "pressure"). Thus, the dependence on the mean value of the stress and on the Lagrange multiplier are not the same and this is important to recognize in this study. <ref type="bibr" target="#b24">Rajagopal and Saccomandi (2009)</ref> , in their study of the response of a class of polymeric solids, used the constitutive relation of the form</p><formula xml:id="formula_7">T = α( tr T ) I + β( tr T ) B . (8)</formula><p>The above model belongs to the class of bodies described by (6) as B can be expressed as</p><formula xml:id="formula_8">B = T − α( tr T ) I β( tr T ) .<label>(9)</label></formula><p>The model that we use in our study arises as a linearization of the above model. We first note that if one linearizes the expression (6) by assuming that the maximum of the Frobenius norm of the gradient of displacement u for all particles X belonging to the body in a stress-free reference configuration and for all time t is small in the sense max</p><formula xml:id="formula_9">X ,t ∂u ∂X 1 ,<label>(10)</label></formula><p>then one obtains</p><formula xml:id="formula_10">ε = ˆ α 0 1 + ˆ α 1 T + ˆ α 2 T 2 ,<label>(11)</label></formula><p>where the ˆ α i , i = 0 , 1 , 2 depend on ρ, tr T , tr T 2 , and tr T 3 . It is possible that the material moduli ˆ α i depend linearly on the tr ε in virtue of the fact that the material moduli could depend on the density in virtue of the balance of mass and the linearization det F ≈ 1 + tr ε . The model considered by <ref type="bibr" target="#b24">Rajagopal and Saccomandi (2009)</ref> , namely (8) does not depend explicitly on the density but it is a compressible model nonetheless as the tr ε is not necessarily zero in all motions. If we linearize (9) by assuming that (10) holds, then linearization of the constitutive expression (9) would give rise to a sub-class of (11) and take the form</p><formula xml:id="formula_11">ε = T β( tr T ) − α( tr T ) β( tr T ) I = T β( tr T ) + γ ( tr T ) I .<label>(12)</label></formula><p>Expressing the stress in terms of its deviatoric and spherical parts by using</p><formula xml:id="formula_12">T = T * + tr T 3 I ,<label>(13)</label></formula><p>the constitutive expression (12) can be expressed as</p><formula xml:id="formula_13">ε = T * β( tr T ) + φ( tr T ) I .<label>(14)</label></formula><p>The model that will be studied in this paper is a special case of (14) .</p><p>Recall that the classical linearized elastic solid is described by the constitutive expression</p><formula xml:id="formula_14">ε = 1 + ν E T − ν E ( tr T ) I ,<label>(15)</label></formula><p>where E and ν are the Young's modulus and Poisson's ratio, respectively, or equivalently as</p><formula xml:id="formula_15">T = λ( tr ε ) I + 2 με ,<label>(16)</label></formula><p>where λ and μ are Lame' constants related to E and ν through</p><formula xml:id="formula_16">λ = Eν (1 + ν)(1 − 2 ν) , μ = E 2(1 + ν) .<label>(17)</label></formula><p>Suppose we generalize the above constitutive expression in an ad hoc manner by assuming that the Young's modulus and Poisson's ratio depend on the stress (this is possible within the context of the constitutive relation (11) ), then</p><formula xml:id="formula_17">ε = 1 + ν( tr T ) E( tr T ) T − ν( tr T ) E( tr T ) ( tr T ) I .<label>(18)</label></formula><p>We immediately observe that (18) is the same as (12) with the following identification</p><formula xml:id="formula_18">β( tr T ) = E( tr T ) 1 + ν( tr T ) , γ ( tr T ) = − ν( tr T ) E( tr T ) tr T .<label>(19)</label></formula><p>Also, it follows from (12) and <ref type="formula" target="#formula_13">14</ref>that</p><formula xml:id="formula_19">φ( tr T ) = γ ( tr T ) + tr T 3 β( tr T ) .<label>(20)</label></formula><p>Let us suppose that the Lame' constants λ, μ, and the bulk modulus K can be generalized to depend on the mean value of the stress (once again such a model is not possible within the Cauchy theory of elasticity but possible with the context of the implicit theory), and let us further suppose that these generalized material moduli obey the same relationship that K bears to λ and μ in the classical linearized theory of elasticity, that is,</p><formula xml:id="formula_20">K( tr T ) = 3 λ( tr T ) + 2 μ( tr T ) 3 ,<label>(21)</label></formula><p>then the constitutive expression (14) can be re-written, by virtue of (19) and (20) as</p><formula xml:id="formula_21">ε = 1 2 μ T * + tr T 9 K( tr T ) I .<label>(22)</label></formula><p>We shall use this generalization of a Hookean model to study the state of stress and strain adjacent to a non-penetrating crack in a body described by the constitutive expression (22) . In the engineering literature, various heuristic relations of the elastic moduli on pressure are considered, linear as well as nonlinear ones, e.g. of the exponential type. To fit the experimental data of <ref type="bibr" target="#b19">Paterson (1964)</ref> , <ref type="bibr" target="#b24">Rajagopal and Saccomandi (2009)</ref> suggested an inverse tangent function (see Formula (4.7) in <ref type="bibr" target="#b24">Rajagopal &amp; Saccomandi, 2009 )</ref>. Applying this ansatz to the generalization of the bulk modulus, namely the function K , with the convention that arctan ζ ∈ (− π 2 , π</p><p>2 ) for a scalar parameter ζ ∈ R , we set a bounded function K :</p><formula xml:id="formula_22">R → (K 0 , K 0 (2 + )) of the general form K(ζ ) = K 0 1 + + 2 π arctan (α 1 ζ + α 2 )<label>(23)</label></formula><p>with positive parameters K 0 , α 1 , and parameter α 2 may be positive as well as negative. While ϰ &gt; 0 is important in (23) for the mathematical consistency:</p><formula xml:id="formula_23">1 K(ζ ) ∈ 1 K 0 (2+ ) , 1 K 0</formula><p>is bounded, otherwise unbounded from above if = 0 . A function curve (23) is sketched in <ref type="figure" target="#fig_0">Fig. 1</ref> , where α 2 &lt; 0 and its critical value − π 2 (1 + ) is from Lemma 1 in Appendix A . Following (23) , we can generalize also the shear modulus to a variable function μ :</p><formula xml:id="formula_24">R → (μ 0 γ , μ 0 (2 + γ )) of the same form μ(ζ ) = μ 0 1 + γ + 2 π arctan (β 1 ζ + β 2 )<label>(24)</label></formula><p>with parameters β 2 and μ 0 , β 1 , γ &gt; 0, and consider the fully nonlinear response</p><formula xml:id="formula_25">ε = T * 2 μ( T * ) + tr T 9 K( tr T ) I ,<label>(25)</label></formula><p>which is a neo-Hookean model, where T * = tr (T * ) 2 . It is worth noting that the models (22) and (25) belong to implicit constitutive theories that describe non-dissipative response of solids introduced by Rajagopal, see <ref type="bibr" target="#b21">( Rajagopal, 2007 )</ref> and other works with co-authors. The other specialty of our modeling concerns the possibility that the faces may be in contact, that is of especial importance in the context of fracture mechanics, see <ref type="bibr" target="#b0">( Bratov, Morozov, &amp; Petrov, 2009 )</ref>. For the engineering theory of heterogeneous materials with micro-structures and their effective properties we refer to <ref type="bibr" target="#b12">Kachanov and Sevostianov (2018)</ref> . The variational theory describing contacting crack faces in linear elastic solids and plates with the help of non-penetration conditions was established in Khludnev and Kovtunenko (20 0 0) , <ref type="bibr" target="#b14">Khludnev, Kovtunenko, and Tani (2010)</ref> , <ref type="bibr" target="#b15">Khludnev, Ohtsuka, and Sokołowski (2002)</ref> and <ref type="bibr" target="#b17">Kovtunenko and Leugering (2016)</ref> and other works by the authors. In particular, they took into consideration dissipative contact phenomena due to friction and cohesion in <ref type="bibr" target="#b8">Itou, Kovtunenko, and Tani (2011)</ref> and <ref type="bibr" target="#b16">Kovtunenko (2011)</ref> ), orthotropic materials were considered in Hintermüller, <ref type="bibr" target="#b7">Kovtunenko, and Kunisch (2007)</ref> , and Timoshenko's plate in <ref type="bibr" target="#b18">Lazarev and Rudoy (2014)</ref> . Further development of the nonlinear crack problems adjacent to nonpenetration was carried out in <ref type="bibr">Rajagopal (2017, 2018)</ref> for the limiting small strain model.</p><p>In Section 3 we prove the mathematical well-posedness for nonlinear elastic models of the type (22) and (25) , when the solid possesses a crack subject to the non-penetration condition, based on the Browder-Minty theorem and penalty approximation. In the following Section 2 we start with the rigorous definition of geometry and functions used.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Theory</head><p>Let be a bounded domain in the Euclidean space R 3 with the Lipschitz continuous boundary ∂ and the unit normal vector n = (n 1 , n 2 , n 3 ) which is directed outward to . Let ∂ = N ∪ D consist of two disjoint parts: the Neumann boundary N and the Dirichlet boundary D such that D = ∅ is nonempty. Let c be a crack inside . We assume that c ⊆ is a part of the two-dimensional oriented open manifold with a unit normal vector n = (n 1 , n 2 , n 3 ) , and that splits into two sub-domains ± with Lipschitz continuous boundaries ∂ ± . Two opposite crack faces ± c can be distinguished as the parts of ∂ ± . We call the geometric set c = \ c with the boundary ∂ c = ∂ ∪ + c ∪ − c the domain with the crack.</p><p>For spatial points x = (x 1 , x 2 , x 3 ) in the domain with crack and its boundary c = c ∪ ∂ c we define a displacement vector u = (u 1 , u 2 , u 3 )(x ) . The displacement obeys a jump across the crack faces, which is generally non-zero:</p><formula xml:id="formula_26">[[ u ]](x ) := u x ∈ + c − u x ∈ − c .<label>(26)</label></formula><p>Following ( Khludnev and Kovtunenko, 20 0 0 , Section 1.1.7) we interpret the non-penetration of the crack faces by means of non-negativeness of the normal jump as follows</p><formula xml:id="formula_27">[[ u ]] • n ≥ 0 on c ,<label>(27)</label></formula><p>where <ref type="bibr">[[ u ]]</ref> • n = [[ u i ]] n i implies the scalar product of vectors under the convention of summation over the repeated index i = 1 , 2 , 3 .</p><p>Given the body force f = ( f 1 , f 2 , f 3 )(x ) for x ∈ c and the boundary traction g = (g 1 , g 2 , g 3 )(x ) for x ∈ N , we look for the displacement vector u ( x ), symmetric 3-by-3 tensors of the strain ε = { ε i j } 3 i, j=1 (x ) and the Cauchy stress</p><formula xml:id="formula_28">T = { T i j } 3 i, j=1 (x )</formula><p>for x ∈ c which satisfy: the equilibrium equation</p><formula xml:id="formula_29">− ∂ ∂x j T i j = f i , i = 1 , 2 , 3 , in c ,<label>(28)</label></formula><p>where the convention of summation over the repeated index j = 1 , 2 , 3 was used; the linearized strain is defined as</p><formula xml:id="formula_30">ε i j (u ) = 1 2 ∂u i ∂x j + ∂u j ∂x i , i, j = 1 , 2 , 3 ;<label>(29)</label></formula><p>and the implicit constitutive response equation according to (25)</p><formula xml:id="formula_31">ε i j (u ) = T * i j 2 μ( T * ) + tr T 9 K( tr T ) δ i j , i, j = 1 , 2 , 3 ,<label>(30)</label></formula><p>where tr T = T ii , T * = (T * i j ) 2 with the summation convention, and the Kronecker delta δ i j = 1 for i = j, otherwise δ i j = 0</p><formula xml:id="formula_32">for i = j.</formula><p>The governing Eqs. (28) -(30) are augmented by the following boundary conditions: the Dirichlet condition for the clamp</p><formula xml:id="formula_33">u = 0 on D ;<label>(31)</label></formula><p>the Neumann type condition for the traction</p><formula xml:id="formula_34">T • n = g on N ;<label>(32)</label></formula><p>and the complete system of conditions due to the non-penetration <ref type="formula" target="#formula_27">27</ref>:</p><formula xml:id="formula_35">T • n − (T • n ) • n n = 0 on ± c ,<label>(33)</label></formula><formula xml:id="formula_36">([[ T ]] • n ) • n = 0 on c ,<label>(34)</label></formula><formula xml:id="formula_37">[[ u ]] • n ≥ 0 , (T • n ) • n ≤ 0 , (T • n ) • n [[ u ]] • n = 0 on c ,<label>(35)</label></formula><p>where the stress jump [[ T ]] is defined according to (26) , the boundary stress vector T</p><formula xml:id="formula_38">• n = { T i j n j } i =1 , 2 , 3 and (T • n ) • n =</formula><p>T i j n j n i with the usual summation convention. In the system of conditions at the crack, (33) stands for zero tangential stress, </p><formula xml:id="formula_40">(35) . Let f ∈ L 2 ( c ; R 3 ) , g ∈ L 2 ( N ; R 3 ) , and let R 3 ×3</formula><p>sym denote 3-by-3 symmetric tensors. Find functions u ∈ H 1 ( c ; R 3 ) and T ∈ L 2 ( c ; R 3 ×3 sym ) such that they satisfy the non-penetration condition (27) , the Dirichlet boundary condition (31) , the implicit response Eq. (30) , and the following variational inequality:</p><formula xml:id="formula_41">c T • ε (v ) − ε (u ) dx ≥ c f • (v − u ) dx + N g • (v − u ) dS x (36) for all admissible test functions v ∈ H 1 ( c ; R 3 ) such that [[ v ]]</formula><p>• n ≥ 0 on c and v = 0 at D , where the linearized strain tensors ε ( u ) and ε ( v ) are defined according to formula (29) . In the left hand side of (36) , T • ε = T i j ε i j (in the usual summation convention) implies the scalar product of tensors. The variational inequality is obtained in a standard way after multiplication of the equilibrium Eq. (28) with v − u , integration by part over c with the help of boundary conditions (32) and (33) -(35) , for details see <ref type="bibr">( Khludnev and Kovtunenko,</ref><ref type="bibr">20 0 0 ,</ref><ref type="bibr">Section 1.4.4)</ref>.</p><p>Based on the examples (23) and (24) , we generalize the elastic coefficient functions in (30) to μ : R → (a μ , b μ ) with 0 &lt; a μ ≤ b μ &lt; ∞ and K : R → (a K , b K ) with 0 &lt; a K ≤ b K &lt; ∞ , satisfying the uniform growth conditions with 0 &lt; c μ ≤ C μ &lt; ∞ and 0 &lt; c K ≤ C K &lt; ∞ :</p><formula xml:id="formula_42">c μ ≤ d dζ ζ μ(ζ ) ≤ C μ , c K ≤ d dζ ζ K(ζ ) ≤ C K for ζ ∈ R .<label>(37)</label></formula><p>The properties (37) (see (A.3) ) are proven for (23) and (24) in Lemma 1 in Appendix A .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">The main result</head><p>Theorem 1 (Well-posedness) . Under conditions (37) on the variable material moduli μ and K, there exists the unique solution u ∈ H 1 ( c ; R 3 ) , T ∈ L 2 ( c ; R 3 ×3 sym ) which satisfies the nonlinear inhomogeneous problem with the crack, namely: the nonpenetration condition (27) , the Dirichlet boundary condition (31) , the implicit response equation <ref type="formula" target="#formula_31">30</ref>, the variational inequality (36) .</p><p>That is the following a-priori estimates hold:</p><formula xml:id="formula_43">ε (u ) L 2 ( c ;R 3 ×3 sym ) ≤ max 1 2 a μ , 1 9 a K √ 2 T L 2 ( c ;R 3 ×3 sym ) ,<label>(38)</label></formula><formula xml:id="formula_44">T L 2 ( c ;R 3 ×3 sym ) ≤ C f √ 2 max { 1 2 a μ , 1 9 a K } min { 1 2 b μ , 1 9 b K } ,<label>(39)</label></formula><p>where constant C f &gt; 0 is related to the given forces that meets the estimate</p><formula xml:id="formula_45">c f • v dx + N g • v dS x ≤ C f ε (v ) L 2 ( c ;R 3 ×3 sym )<label>(40)</label></formula><formula xml:id="formula_46">for v ∈ H 1 ( c ; R 3 ) such that v = 0 at D .</formula><p>Proof. To deal with the variational inequality (36) , penalization avoiding the non-penetration condition (27) is applied.</p><p>Namely, for small penalization parameter δ &gt; 0, we set the approximate problem: Find functions u δ ∈ H 1 ( c ; R 3 ) and T δ ∈ L 2 ( c ; R 3 ×3 sym ) which satisfy the Dirichlet boundary condition:</p><formula xml:id="formula_47">u δ = 0 on D ;<label>(41)</label></formula><p>the implicit response equation from <ref type="formula" target="#formula_31">30</ref>:</p><formula xml:id="formula_48">ε (u δ ) = F (T δ ) , F (T δ ) := (T δ ) * 2 μ( (T δ ) * ) + tr T δ 9 K( tr T δ ) I<label>(42)</label></formula><p>with ε ( u δ ) defined according to (29) , and the variational equation:</p><formula xml:id="formula_49">c T δ • ε (v ) dx + 1 δ c min 0 , [[ u δ ]] • n ([[ v ]] • n ) dS x = c f • v dx + N g • v dS x<label>(43)</label></formula><p>for all admissible test functions v ∈ H 1 ( c ; R 3 ) such that v = 0 at D . It is well-known that the penalty function δ (ζ ) := 1 δ min { 0 , ζ } in the left-hand side of Eq. (43) is positive semidefinite:</p><formula xml:id="formula_50">δ ( ζ ) ζ ≥ 0, bounded: | δ (ζ ) | ≤ 1 δ | ζ | , monotone: ( δ (ζ ) − δ (η))(ζ − η) ≥ 0 , and continuous: | δ (ζ ) − δ (η) | ≤ 1 δ | ζ − η| for ζ , η ∈ R</formula><p>, see e.g. <ref type="bibr">( Khludnev and Kovtunenko,</ref><ref type="bibr">20 0 0 ,</ref><ref type="bibr">Section 1.3.2)</ref>. Under the conditions (37) , the nonlinear function F in the right-hand side of Eq. (42) is coercive, bounded, strongly monotone, and continuous as proved in Lemma 2 in Appendix A . Therefore, the Browder-Minty theorem provides a unique solution to the problem (41) -(43) (see Itou, Kovtunenko, &amp; Rajagopal, 2019 , Theorem 2.1 for the problem (2.6) here with the identity operator I and powers p = p = 2 ). Next, according to the boundedness property (A.7) of the response function F in Lemma 2 in Appendix A , from (42) it follows that there exists the upper bound</p><formula xml:id="formula_51">ε (u δ ) L 2 ( c ;R 3 ×3 sym ) ≤ max 1 2 a μ , 1 9 a K √ 2 T δ L 2 ( c ;R 3 ×3 sym ) .<label>(44)</label></formula><p>Then we test the variational Eq. (43) with v = u δ . The coercivity property (A.6) of F from Lemma 2 is applied to the lefthand side of (43) , while its right-hand side is estimated with the help of (40) by virtue of the Poincaré-Korn and trace inequalities. As a result we get</p><formula xml:id="formula_52">min 1 2 b μ , 1 9 b K T δ 2 L 2 ( c ;R 3 ×3 sym ) + 1 δ min 0 , [[ u δ ]] • n 2 L 2 ( c ;R ) ≤ C f ε (u δ ) L 2 ( c ;R 3 ×3 sym ) ,</formula><p>which together with (44) leads to the following two upper bounds:</p><formula xml:id="formula_53">1 δ min 0 , [[ u δ ]] • n 2 L 2 ( c ;R ) ≤ C f max 1 2 a μ , 1 9 a K √ 2 T δ L 2 ( c ;R 3 ×3 sym ) ,<label>(45)</label></formula><formula xml:id="formula_54">T δ L 2 ( c ;R 3 ×3 sym ) ≤ C f √ 2 max { 1 2 a μ , 1 9 a K } min { 1 2 b μ , 1 9 b K } .<label>(46)</label></formula><p>By the compactness principle, the uniform estimates (44), (46) imply that there exist a subsequence u δ k , T δ k weakly convergent as δ k → 0 to an accumulation point u ∈ H 1 ( c ; R 3 ) , T ∈ L 2 ( c ; R 3 ×3 sym ) , and min 0 ,</p><formula xml:id="formula_55">[[ u ]] • n = 0 that is [[ u ]] • n ≥ 0</formula><p>on c due to (45) . Therefore, in the standard manner we pass to the limit as δ k → 0 the relations (41), (42) , and <ref type="formula" target="#formula_49">43</ref> </p><formula xml:id="formula_56">T δ • ε (v − u ) + T • ε (u − u δ ) dx ≥ c T δ • ε (v − u δ ) dx ≥ c T δ • ε (v − u δ ) dx + 1 δ c min 0 , [[ u δ ]] • n ([[ v − u δ ]] • n ) dS x = c f • (v − u δ ) dx + N g • (v − u δ ) dS x</formula><p>based on the properties of monotony (A.9) and continuity (A.10) of F from Lemma 2 and non-negativeness of δ , thus deriving the reference relations (27), (31), (30), (36) . On taking the limit of (44) and <ref type="formula" target="#formula_54">46</ref>we get the a-priori estimates <ref type="formula" target="#formula_43">38</ref>and <ref type="formula" target="#formula_44">39</ref>, respectively. The uniqueness of the solution follows from the strong monotonous property (A.9) of the response function F. The proof is completed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>We introduced a class of nonlinear elastic models in which the linearized strain is expressed as a function of the stress with the material moduli depending on the mean normal stress. Such models can describe the behavior of several metallic alloys as well as materials like concrete. Our model stems as an approximation from implicit models developed to describe the response of elastic bodies. We established the well-posedness of the problem of bodies that contain non-penetrating cracks.</p><p>Admissible functions for the material moduli μ and K are uniformly positive, bounded, and should satisfy the growth condition (37) . The example (23) is based on the inverse tangent, the other admissible function is</p><formula xml:id="formula_57">K(ζ ) = K 0 1 + + α 1 ζ + α 2 1 + (α 1 ζ + α 2 ) 2 .<label>(47)</label></formula><p>Although our study is carried out for the fully three dimensional spatial formulation, it can be easily adapted to the two dimensional anti-plane and in-plane setting when the material moduli depend on the mean normal stress satisfying the conditions imposed on them in this study.  <ref type="figure">(A.4)</ref> for the example function K ( ζ ) from (A.1) with K 0 = 1 , = 0 . 1 , α 1 = 1 and α 2 ∈ {−2 . 5 , α cr 2 , −1 } , where α cr</p><formula xml:id="formula_58">2 = − π 2 (1 + ) ≈ −1 . 728 . The function d dζ ζ K(ζ )</formula><p>is continuous, and both its limits <ref type="bibr">2+ )</ref> as ζ → ∞ are positive. For illustration, three curves of d dζ ζ K(ζ ) from (A.4) for the example function K ( ζ ) from (A.1) are sketched in <ref type="figure">Fig. A.2</ref> , when varying α 2 with respect to the critical value α cr</p><formula xml:id="formula_59">d dζ ζ K(ζ ) = 1 K(ζ ) − ζ K (ζ ) K(ζ ) 2 → 1 K 0 as ζ → −∞ and d dζ ζ K(ζ ) → 1 K 0 (</formula><formula xml:id="formula_60">2 = − π 2 (1 + ) due to (A.3) .</formula><p>To estimate minimum of this function we study the following cases:</p><formula xml:id="formula_61">• if η = 0 , then f (0) = 1 + + 2 π α 2 ; • if η &gt; 0, since arctan (η) &gt; η √ 1+ η 2 , then f (η) &gt; (1 + )(1 + η 2 ) 3 / 2 + 2 π η( 1 + η 2 − 1) + 2 π α 2 ( 1 + η 2 ) 3 / 2 &gt; 1 + + 2 π α 2 ( 1 + η 2 ) 3 / 2 ; • if − π 2 (1 + ) &lt; η &lt; 0 , since arctan (η) &gt; η, then f (η) &gt; 1 + + (1 + + 2 π η) η 2 + 2 π α 2 1 + η 2 &gt; 1 + + 2 π α 2 1 + η 2 ; • if η ≤ − π 2 (1 + ) , since arctan (η) &gt; − π 2 , then f (η) &gt; + − 2 π η + 2 π α 2 1 + η 2 ≥ + 1 + + 2 π α 2 1 + η 2 .</formula><p>In all cases, f ( η) &gt; 0 for α 2 &gt; − π 2 (1 + ) . On the contrary, for α 2 ≤ − π 2 (1 + ) we have f (0) = 1 + + 2 π α 2 ≤ 0 , that finishes the proof.</p><p>Lemma 2. For material moduli μ : R → (a μ , b μ ) with 0 &lt; a μ ≤ b μ &lt; ∞ and K : R → (a K , b K ) with 0 &lt; a K ≤ b K &lt; ∞ , the response function F : R 3 ×3 sym → R 3 ×3 sym defined from (25) as</p><formula xml:id="formula_62">F (T ) := T * 2 μ( T * ) + tr T 9 K( tr T ) I (A.5)</formula><p>is coercive:</p><formula xml:id="formula_63">F (T ) • T ≥ min 1 2 b μ , 1 9 b K T 2 (A.6)</formula><p>and bounded:</p><formula xml:id="formula_64">F (T ) ≤ max 1 2 a μ , 1 9 a K √ 2 T . (A.7)</formula><p>In particular, for the functions K and μ from (23) and (24) we have the bounds: a μ = μ 0 γ , b μ = μ 0 (2 + γ ) , a K = K 0 , b K = K 0 (2 + ) .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>(A.8)</head><p>Under the conditions (37) (equivalently (A.4) ) F is strongly monotone:</p><formula xml:id="formula_65">F (T ) − F ( T ) • (T − T ) ≥ min 1 2 c μ , 1 9 c K T − T 2 (A.9)</formula><p>and continuous:</p><formula xml:id="formula_66">F (T ) − F ( T ) ≤ max 1 2 C μ , 1 9 C K √ 2 T − T . (A.10)</formula><p>Proof. The properties (A .6) and (A .7) follow in a straightforward manner from the uniform bounds a K &lt; K ( ζ ) &lt; b K and a μ &lt; μ( ζ ) &lt; b μ for all ζ ∈ R .</p><p>To prove (A .9) and (A .10) we express in the integral form the difference</p><formula xml:id="formula_67">F (T ) − F ( T ) = 1 0 d dζ F ( ξ) dζ , ξ := ζ T + (1 − ζ ) T , (A.11)</formula><p>then apply d dζ ξ = T − T and decomposition ξ = ξ * + tr ξ 3 I from (13) to calculate the derivative of the nonlinear function (A.5) as follows d dζ</p><formula xml:id="formula_68">F ( ξ) = 1 2 d d ξ * ξ * μ( ξ * ) ξ * ξ * (T * − T * ) + 1 9 d d( tr ξ)</formula><p>tr ξ K( tr ξ) tr (T − T ) I .</p><p>(A.12)</p><p>On the one side, estimating from above the norm of (A.12) with the help of the upper bounds in (A.4) , using T * − T * + | tr (T − T ) | ≤ √ 2 T − T , and inserting the result in (A.11) we get the continuity (A.10) . On the other side, multiplying (A.12) element-wisely with T − T and inserting it in (A.11) , with the help of the lower bounds in (A.4) we derive directly the monotony inequality (A.9) . The proof is completed.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>The example function K ( ζ ) in (23) for K 0 = 1 , = 0 . 1 , α 1 = 1 , α 2 = −1 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>describes continuity of the normal stress ( T • n ) • n , and the complementarity conditions (35) imply that the crack faces are pointwise either in contact: [[ u ]] • n = 0 and ( T • n ) • n ≤ 0, or open: [[ u ]] • n &gt; 0 and (T • n ) • n = 0 .Now we give a variational formulation to the nonlinear boundary value problem (28) -</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig</head><label></label><figDesc>Fig. A.2. The curves d dζ</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>which we express for the test function v such that [[ v ]] • n ≥ 0 on c by the chain of inequalities c</figDesc><table /><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" />
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>with positive parameters K 0 , α 1 , ϰ, and</p><p>satisfy the uniform conditions (37) . That is, there exist constant 0 &lt; c μ ≤ C μ &lt; ∞ and 0 &lt; c</p><p>Proof. It suffices to prove the property (A.4) for the function K in (A.1) , since μ in (A.2) is of the same structure.</p><p>We easy calculate the derivative</p><p>, where the auxiliary f is defined with respect η := α 1 ζ + α 2 as follows f (η) := 1 + + 2 π</p><p>arctan (η) − η − α 2 1 + η 2 .</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Dynamic strength of continuum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Bratov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Morozov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Petrov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+		<respStmt>
+			<orgName>St. Petersburg University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">The physics of high pressure</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Bridgman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1931" />
+			<publisher>Macmillan</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Mathematical analysis of unsteady flows of fluids with pressure, shear-rate, and temperature dependent material moduli that slip at solid boundaries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bulìček</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Màlek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/07069540X</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM Journal on Mathematical Analysis</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="665" to="707" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Recherches sur l&apos;équilibre et le mouvement intérieur des corps solides ou fluides, élastiques ou non élastiques</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A.-L</forename><surname>Cauchy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin Sci. Société Philomathique de Paris</title>
+		<imprint>
+			<biblScope unit="page" from="9" to="13" />
+			<date type="published" when="1823" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Sur les équations qui expriment les conditions d&apos;équilibre ou les lois du mouvement intérieur d&apos;un corps solide, élastique, ou non élastique</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A.-L</forename><surname>Cauchy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ex. Math</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="160" to="187" />
+			<date type="published" when="1828" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">On the laws of reflexion and refraction of light at the common surface of two non-crystallized media</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Green</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions of the Cambridge Philosophical Society</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="1838" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">On the propagation of light in crystallized media</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Green</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions of the Cambridge Philosophical Society</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="121" to="140" />
+			<date type="published" when="1839" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Constrained optimization for interface cracks in composite materials subject to non-penetration conditions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hintermüller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Kunisch</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10665-006-9113-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Engineering Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="301" to="321" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The interface crack with coulomb friction between two bonded dissimilar elastic media</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Itou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Tani</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10492-011-0010-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="69" to="97" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Nonlinear elasticity with limiting small strain for cracks subject to non-penetration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Itou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1081286516632380</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics and Mechanics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1334" to="1346" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">On the states of stress and strain adjacent to a crack in a strain-limiting viscoelastic body</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Itou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1081286517709517</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics and Mechanics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="433" to="437" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Crack problem within the context of implicitly constituted quasi-linear viscoelasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Itou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1142/S0218202519500118</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Models and Methods in Applied Sciences</title>
+		<imprint>
+			<biblScope unit="page">29</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Micromechanics of materials, with applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kachanov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sevostianov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Solid Mech. Its Appl</title>
+		<imprint>
+			<biblScope unit="page">249</biblScope>
+			<date type="published" when="2018" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Analysis of cracks in solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Khludnev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. Ser. Adv. Fract. Mech : 6. Southampton</title>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>WIT-Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">On the topological derivative due to kink of a crack with non-penetration. anti-plane model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Khludnev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Tani</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.matpur.2010.06.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal de Mathématiqued Pures et Appliquées</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="571" to="596" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">On derivative of energy functional for elastic bodies with cracks and unilateral conditions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Khludnev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ohtsuka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sokołowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1090/qam/1878261</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterlyof Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="99" to="109" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A hemivariational inequality in crack problems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/02331934.2010.534477</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Optimization</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="1071" to="1089" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A shape-topological control problem for nonlinear crack -defect interaction: The anti-plane variational model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kovtunenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Leugering</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/151003209</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM Journal on Control and Optimization</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="1329" to="1351" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Shape sensitivity analysis of timoshenko&apos;s plate with a crack under the nonpenetration condition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Lazarev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Rudoy</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.1713063</idno>
+		<idno>doi: 10.10 02/zamm.20120 0229</idno>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="730" to="739" />
+		</imprint>
+		<respStmt>
+			<orgName>Zeitschrift für Angewandte Mathematik und Mechanik</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The effect of pressure on the young&apos;s modulus and glass transition in rubbers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Paterson</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.1713063</idno>
+		<idno>doi: 10.1063/1. 1713063</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="176" to="179" />
+			<date type="published" when="1964" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">On implicit constitutive theories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/A:1026062615145</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="279" to="319" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Elasticity of elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00033-006-6084-5</idno>
+		<idno>doi: 10.10 07/s0 0 033-0 06-6084-5</idno>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="309" to="317" />
+		</imprint>
+		<respStmt>
+			<orgName>Zeitschrift für Angewandte Mathematik und Physik</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A note on the classification of anisotropy of bodies defined by implicit constitutive relations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mechrescom.2014.11.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanics Research Communications</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="38" to="41" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Remarks on the notion of &quot;pressure</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijnonlinmec.2014.11.031</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Journalof Non-Linear Mechanics</title>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="page" from="165" to="172" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The mechanics and mathematics of the effect of pressure on the shear modulus of elastomers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Saccomandi</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspa.2009.0416</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A</title>
+		<imprint>
+			<biblScope unit="volume">465</biblScope>
+			<biblScope unit="page" from="3859" to="3874" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">On the response of non-dissipative solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Srinivasa</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspa.2006.1760</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A</title>
+		<imprint>
+			<biblScope unit="volume">463</biblScope>
+			<biblScope unit="page" from="357" to="367" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">On a class of non-dissipative materials that are not hyperelastic</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Srinivasa</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspa.2008.0319</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A</title>
+		<imprint>
+			<biblScope unit="volume">465</biblScope>
+			<biblScope unit="page" from="493" to="500" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Theory of invariants</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Spencer</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/BF00126983</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Continuum phys</title>
+		<editor>A. Eringen</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1971" />
+			<biblScope unit="page" from="239" to="353" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Inequalities sufficient to ensure semi-invertibility of isotropic functions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Truesdell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Moon</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/BF00126983</idno>
+		<idno>doi: 10.1007/ BF00126983</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Elasticity</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="183" to="189" />
+			<date type="published" when="1975" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">The non-linear field theories of mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Truesdell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Noll</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Springer</publisher>
+			<pubPlace>Berlin, Heidelberg</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

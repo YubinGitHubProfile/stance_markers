@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Accurate Parallel Floating-Point Accumulation</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Student Member, IEEE</roleName><forename type="first">Edin</forename><surname>Kadric</surname></persName>
+							<email>ekadric@seas.upenn.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electrical and Systems Engineering</orgName>
+								<orgName type="institution">University of Pennsylvania</orgName>
+								<address>
+									<addrLine>200 S. 33rd St</addrLine>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Paul</forename><surname>Gurniak</surname></persName>
+							<email>pgurniak@seas.upenn.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electrical and Systems Engineering</orgName>
+								<orgName type="institution">University of Pennsylvania</orgName>
+								<address>
+									<addrLine>200 S. 33rd St</addrLine>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Member, IEEE</roleName><surname>Dehon</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electrical and Systems Engineering</orgName>
+								<orgName type="institution">University of Pennsylvania</orgName>
+								<address>
+									<addrLine>200 S. 33rd St</addrLine>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Accurate Parallel Floating-Point Accumulation</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TC.2016.2532874</idno>
+					<note type="submission">received 31 July 2015; revised 15 Jan. 2016; accepted 11 Feb. 2016. Date of publication 22 Feb. 2016; date of current version 14 Oct. 2016.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Floating-point arithmetic</term>
+					<term>IEEE-754</term>
+					<term>parallel</term>
+					<term>accumulation</term>
+					<term>accuracy</term>
+					<term>correct rounding</term>
+					<term>FPGA</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Using parallel associative reduction, iterative refinement, and conservative early termination detection, we show how to use tree-reduce parallelism to compute correctly rounded floating-point sums in Oðlog NÞ depth. Our parallel solution shows how we can continue to exploit the scaling in transistor count to accelerate floating-point performance even when clock rates remain flat. Empirical evidence suggests our iterative algorithm only requires two tree-reduce passes to converge to the accurate sum in virtually all cases. Furthermore, we develop the hardware implementation of two residue-preserving IEEE-754 double-precision floating-point adders on a Virtex 6 FPGA that run at the same 250 MHz pipeline speed as a standard adder. One adder creates the residue by truncation, requires only 22 percent more area than the standard adder, and allows us to support directed-rounding modes and to lower the cost of round-to-nearest modes. The second adder creates the residue while directly producing a round-to-nearest sum at 48 percent more area than a standard adder.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>M ICROPROCESSOR clock speeds grew exponentially during the VLSI era until the mid 2000's. Limits to pipelining <ref type="bibr" target="#b0">[1]</ref> and power density ended processor clock scaling <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b2">[3]</ref>. Nonetheless, Moore's Law feature size scaling continues to deliver an exponential growth in transistors per integrated chip. To increase performance, we now also have to increase parallelism instead of simply increasing clock speed.</p><p>The end of frequency scaling presents a challenge for floating-point (FP) arithmetic. In this paper, we focus on the problem of summing N floating-point values. With integer arithmetic, we can exploit the associativity of addition to reorder the sum into a tree of depth Oðlog NÞ that admits significant parallelism. However, since floating-point addition is not associative, performing a similar reordering for the floating-point sum would produce a different result.</p><p>In consequence, floating-point addition must normally be performed sequentially as originally specified in the source code. This is a choice to sacrifice parallelism in order to maintain the determinism of the answer, an approach that not only fails to address the current need for increased parallelism, but also fails to provide guarantees on the accuracy of the answer. Although the sequential sum operation always gives the same result, it may still be inaccurate.</p><p>We extend our preliminary work <ref type="bibr" target="#b3">[4]</ref> where we developed an algorithm for parallelizing floating-point addition while still guaranteeing a correctly rounded result. That is, we simultaneously address parallelism, accuracy, and determinism, by formulating the basic summation as one that computes a correctly rounded result. This directly addresses the IEEE-1788-2015 requirement for correctly rounded sum and dot-product reductions. We use an iterative, convergent tree-reduce summation that distills the sum (Section 3). Distillation reduces the original sequence to a lossless representation of the sum using a constant number of non-zero floating-point values (Section 4). Using a novel bound on residues, we can almost always determine the correctly rounded result long before the distillation completes (Section 5)-completing in only two iterations in virtually all cases (Section 8.1). We prove that the algorithm always terminates (Section 6.2). Our algorithm has Oðlog NÞ depth, providing a significant speed improvement over the commonly used sequential summation technique, with only twice the delay of the non-deterministic parallel one. Our contributions include:</p><p>(1) efficient early termination detection for accurate parallel reduction for all IEEE-754 rounding modes; (2) residue feedback structure for the parallel reduction that guarantees eventual distillation; (3) residue-preserving floating-point adder using only 22 percent more area than a standard floating-point adder; (4) generalization of approach to arbitrary floating-point precision and exponent range; <ref type="bibr" target="#b4">(5)</ref> proper handling to avoid spurious overflows; (6) characterization of the iterations required for convergence based on the condition number of the sum.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">BACKGROUND 2.1 Non-Associativity of Floating-Point</head><p>Floating-point addition is non-associative since the information lost after each operation depends on the order of the operations. Hence, compilers, high-level synthesis tools and modern implementations are often forbidden from transforming floating-point operations to avoid producing a different result from the source program. Unfortunately, the original versions were often written as sequential summations because it was most straightforward to capture the summation as a loop, and when hardware was more expensive, there was little concern for parallelism.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Correct Rounding</head><p>Given N floating-point numbers x i , our goal is to compute the correct rounding, S c , of the exact sum S r ¼ P N i¼1 x i . Correct rounding means that if S r is a floating-point number, then S c will be its exact value, and if it is not, S c will be one of the immediate floating-point neighbors of S r , chosen according to the rounding mode used. That is, S c is the value we would get if we computed S r with infinite precision, then rounded it to the appropriate floating-point number. Note that correct rounding defines correctness of the result not in terms of the order of operations but in terms of the error introduced in the final result. This gives us freedom to transform the computation for additional parallelism as long as we can guarantee to achieve the correctly rounded result. Faithful rounding is similar, except that when S r falls between two neighboring floating-point numbers, either can be chosen. The literature shows sequential software algorithms that compute both faithfully and correctly rounded sums using standard FPUs <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b6">[7]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Residue-Preserving Addition</head><p>Most of the accurate accumulation software algorithms such as <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b6">[7]</ref> rely on the same basic building block that was studied in detail by <ref type="bibr">Kornerup et al. [8]</ref>, a floating-point adder with residue (FPAR), which computes:</p><formula xml:id="formula_0">s ¼ IEEE754RoundToNearestða þ bÞ;</formula><p>(1)</p><formula xml:id="formula_1">r ¼ ða þ bÞ À s:<label>(2)</label></formula><p>This returns the sum of two floating-point numbers, s-the same sum one would get from a normal floating-point addition-as well as the error (or residue), r, resulting from the operation, which is known to also be representable as a floating-point value when rounding to nearest <ref type="bibr" target="#b8">[9]</ref>. With the residue preserved, the following invariant holds:</p><formula xml:id="formula_2">s þ r ¼ a þ b:<label>(3)</label></formula><p>To also support directed rounding, or simply to reduce implementation costs when rounding to nearest, we consider an FPAR with Truncation (FPART) and suggest performing the addition operations with truncation until the end of the summation algorithm. When a and b overlap, the FPART performs addition with truncation, which means that the pair ðs; rÞ is such that s carries the MSBs of a þ b, and r carries the remaining bits (s and r have the same sign when non-zero), and no effort is made to round s in a standard way based on the value of r. When a and b do not overlap, s gets the input with larger magnitude and r the smaller. In either case, the invariant in Eq. (3) still holds.</p><p>The FPAR building block can be implemented on a standard IEEE-754 FPU, for instance with Møller-Knuth's Two-Sum algorithm <ref type="bibr" target="#b9">[10]</ref>:</p><formula xml:id="formula_3">ðs; rÞ ¼ TwoSumða; bÞ: //implements FPAR s ¼ a þ b b 0 ¼ s À a a 0 ¼ s À b 0 ; d b ¼ b À b 0 d a ¼ a À a 0 r ¼ d a þ d b .</formula><p>Kornerup et al. <ref type="bibr" target="#b7">[8]</ref> show that TwoSum is minimal, both in terms of number of operations (six) and depth of the dependency graph (five). They argue that algorithms with fewer floating-point operations that also require branching (e.g., <ref type="bibr" target="#b8">[9]</ref>) are inferior, due to possible drastic performance losses after a mispredicted branch causing the instruction pipeline to drain. Previous work suggested that a hardware implementation of the FPAR could be faster with only a minor area overhead <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref>, as it avoids the overhead of TwoSum due to FPUs, where residual bits computed early are discarded and then recomputed during later stages. Manoukian and Constantinides <ref type="bibr" target="#b12">[13]</ref> showed an FPGA implementation of the FPAR for single-precision arithmetic. In Section 7, we provide a fast, native hardware implementation of the FPAR and FPART modules for double-precision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Exploiting Hardware</head><p>There have been previous attempts at accelerating floatingpoint accumulation using specialized hardware. For example, Luo and Martonosi implement delayed addition techniques <ref type="bibr" target="#b13">[14]</ref>. They reorder the addition operations but do not address the fact that the results would be different from the original summation (as well as inaccurate). <ref type="bibr">Kapre and</ref> DeHon demonstrate that an iterative approach can be used to exploit parallelism and still generate the same result as a sequential sum <ref type="bibr" target="#b14">[15]</ref>. This introduces determinism in the parallel approach, but it spends more time to reach a solution that is still not correct. Demmel and Nguyen's schemes <ref type="bibr" target="#b15">[16]</ref>, <ref type="bibr" target="#b16">[17]</ref> also guarantee determinism, but not correctness. They trade off computation efficiency and accuracy. Leuprecht and Oberaigner <ref type="bibr" target="#b17">[18]</ref> use a parallel reduce tree and recycle residues to compute an accurate sum, employing two full floating-point operations per sum per iteration to compute upper and lower bounds on the sum to detect convergence. Similar to <ref type="bibr" target="#b17">[18]</ref>, our work addresses the accuracy and parallelism issues at the same time: We speed up computations by exploiting parallelism in what is commonly thought to be a non-parallel operation while guaranteeing that the computed result is correctly accumulated and rounded. We use a tree-like structure in the spirit of Leuprecht and Oberaigner <ref type="bibr" target="#b17">[18]</ref> but with a more efficient convergence test that can be adapted for all IEEE-754 rounding modes. <ref type="figure" target="#fig_1">Fig. 1</ref> is a high-level illustration of our strategy for accurate parallel summation; it works as follows: 1) Use the truncation-based, floating-point adder (FPART) (Section 7.3) to perform additions preserving residues; this produces both a sum output s and a residue output r. 2) Perform a parallel tree-reduce sum on the sum output of the FPART with dlog Ne stages and N À 1 nodes; keep the residue output of each FPART for potential refinement and error estimation. 3) Perform the same parallel tree reduce on the FPART residues and compute an early termination condition-a conservative upper bound on the magnitude of the sum of residues, and, hence, potential error in our calculation (Section 5). 4) Iterate reducing the residues and refining the most significant output until our early termination condition indicates that the residues can be ignored. In this example, a sequential software sum yields the inaccurate result of 1.00e4. A simple parallel reduce tree yields 1.00e5, a different, also inaccurate, result. Our approach yields the accurate result of 1.10e5. Our early termination detection allows us to determine that the non-zero residues left in the tree (1:00e0 and À1:00e0) are too small to affect the sum of the main outputs of the two tree-reduce steps (1.00e5+1.00e4=1.10e5). We thus converge after two iterations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">PARALLEL ACCUMULATION STRATEGY</head><p>We arrange the feedback of residues in the tree to guarantee that they are eventually distilled (Section 4.1) to a fixedlength sequence of floating-point values that will perfectly represent the sum to provide more easily provable guarantees on convergence (Section 4.2). We also identify difficult, but typically uncommon, cases that are not resolved with our conservative upper bound, and we organize the sum to guarantee their eventual resolution (Section 5.2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">DISTILLATION AND REDUCTION</head><p>In this section, we describe the structure of the parallel reduce tree that also performs distillation. We first introduce a distill chain that accumulates the exact sum by representing the complete sum as a collection of floating-point values, the distillation <ref type="bibr" target="#b18">[19]</ref>, <ref type="bibr" target="#b19">[20]</ref>. We argue that the distill chain will always converge, and we identify loose bounds on the cycles required for convergence (Section 4.1). We then show that we can integrate distillation into a reduce tree (Section 4.2).</p><p>To make our results general, we use p to define the number of mantissa bits (53 for IEEE double-precision floatingpoint, 24 for single-precision, including the implicit 1) and e to define the number of exponent bits (11 for double-precision and 8 for single-precision).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Distill Chain</head><p>We can completely represent any sum of floating-point values, within the limits of the floating-point precision range, using a set of non-overlapping floating-point values:</p><formula xml:id="formula_4">Sum ¼ X 0 i &lt; L d D½i:<label>(4)</label></formula><p>In the worst case, we need enough mantissa bits to cover the entire floating-point range. The range is from the p bits at the minimum exponent, emin, of À2 eÀ1 þ 2 to the maximum exponent, emax, of 2 eÀ1 À 1, for a total of 2 e þ p À 3 mantissa bits. Each floating-point value provides p bits, so we can cover the entire range with L d floating-point numbers:</p><formula xml:id="formula_5">L d ¼ 2 e þ p À 3 p $ % ¼ 2 e À 3 p $ % þ 1:<label>(5)</label></formula><p>For IEEE double-precision floating-point,</p><formula xml:id="formula_6">L d ¼ 40.</formula><p>Claim. We can distill any sequence of N floating-point numbers into L d floating-point numbers using the distill chain ( <ref type="figure" target="#fig_4">Figs. 3 and 4)</ref>.</p><p>The distill chain is arranged as an odd-even transposition sort <ref type="bibr" target="#b20">[21]</ref> using FPART units to sort by exponent instead of sort units. When the mantissa ranges of the inputs to the FPART    To understand how the chain works, we can first think of it as an exponent sorter. On each cycle, two neighbors are compared. If they are in the appropriate order, the exponent of the value in the smaller position is larger than the exponent of the value in the larger position: they remain in the same position. If they are out of order, the positions are swapped to place them in order. The two stages guarantee that each cycle through the distill chain will compare each value with its left and right neighbors, allowing it to move one position to the left or right in each cycle. If the elements are properly ordered, then no values change positions in a cycle. In the worst case, a value moves from one end of the chain to the other, a total of N positions. Now consider the FPART units instead of sort units. On each cycle, we add two floating-point values. If the values do not overlap, the FPART simply sorts the values by the exponent. When the values overlap, the FPART adds the values and the sum output, s, has a larger exponent than the residue output, r, so the outputs are also in sorted order. However, unlike a sorter, the values that come out can be very different from the ones that went in. Due to cancellation, they could both have smaller exponents. When the signs of the values are the same, we can end up with a larger exponent for the s output and a smaller one for r. Either case may leave the results unsorted within the distill chain. However, if we continue to cycle the chain, the values will be moved to their proper position where they will potentially interact to produce a new sum and residue.</p><p>To get a weak bound on the number of cycles until the distill chain converges, we can reason about the sum of the exponents in the distill chain and the maximum number of cycles to sort the values into order or into a position that allows overlap and hence intersection. We establish convergence by arguing that one of two things occurs on every cycle: either there is an overlap that results in a reduction in the total weighted exponent sum, or there is no overlap and the distill chain makes progress on sorting the values. If the distill chain manages to only sort the values for N cycles with no overlaps, the distill chain has converged.</p><p>We define the weighted exponent sum, ESUM, as:</p><formula xml:id="formula_7">ESUM ¼ X 0 i &lt; N ð1 À 2 eminÀD½i:exp Þ:<label>(6)</label></formula><p>This has the property that the cost of an exponent grows with its magnitude (elements with exponent=emin have value 0, while elements with exponent=emax have value almost 1), so the sum reduces as magnitudes reduce. It also has the property that smaller exponents, when reduced by one, provide a larger reduction than increasing a large exponent by one. This means that, if we transform from A þ B to s þ r with A:exp &gt; B:exp, such that s:exp ¼ A:exp þ 1 and r ¼ B:exp À 1, there is a net reduction in ESUM</p><formula xml:id="formula_8">DESUM ¼ ESUMðs þ rÞ À ESUMðA þ BÞ (7) ¼ ð1 À 2 eminÀ A:expþ1 ð Þ Þ þ ð1 À 2 eminÀ B:expÀ1 ð Þ Þ À ð1 À 2 eminÀA:exp Þ þ ð1 À 2 eminÀB:exp Þ À Á ¼2 eminÀA:expÀ1 À 2 eminÀB:exp :<label>(8)</label></formula><p>This is negative since A:exp &gt; B:exp. Each FPART will do one of three things: 1) (maxðA:exp; B:expÞ À minðA:exp; B:expÞ &lt; p À 1): s will have an exponent at most max(A:exp,B:exp)þ1 and r will have an exponent less than or equal to min (A:exp,B:exp)À1, resulting in a reduction in ESUM.</p><p>2) (maxðA:exp; B:expÞ À minðA:exp; B:expÞ ¼ p À 1): the r exponent reduces by at least one compared to minðA:exp; B:expÞ. The s result may be equal to maxðA:exp; B:expÞ, be reduced, or be one larger. Even in the case when r:exp is only one smaller than the minimum exponent and s:exp increases the maximum exponent by one, ESUM is reduced as shown above (Eq. (8)).</p><p>3) (maxðA:exp; B:expÞ À minðA:exp; B:expÞ ! p): the values will be sorted by the exponents, and ESUM will remain unchanged.</p><p>Consequently, on every cycle one of two things happens. Either ESUM is reduced, or the distill chain performs a cycle of sorting the values. To get a weak upper bound on the number of times a reduction can occur, we note that all reductions are larger than 2 eminÀemax . If we take DESUM min ¼ 2 eminÀemax ¼ 2 3À2 e and note that the worst case is reducing ESUM from all values at emax (ESUM slightly below N) to all values at emin (ESUM ¼ 0), the bound on the number of reduce operations is: This is the maximum number of times our N sort steps can be interrupted, giving us:</p><formula xml:id="formula_9">T reduce &lt; N 2 À2 e ¼ 2 2 e N:<label>(9)</label></formula><formula xml:id="formula_10">T distill converge N Â T reduce 2 2 e N 2 :<label>(10)</label></formula><p>This weak bound can likely be tightened considerably by exploiting the fact that the minimum reduction is actually much larger than assumed above. Since we avoid running the distill chain to convergence in the results that follow, thanks to early termination detection (Section 5), we leave tightening this result as an open question for future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Distillation Tree</head><p>Ignoring residues, a parallel reduce tree computes the sum in log ðNÞ depth. We can feed the residues back into the tree to sum the residues. What is less obvious is (a) where to route the residues in the tree, and (b) how to guarantee that the residues in the tree will reduce. This is important to our early termination detection (Section 5). The distill chain provides guidance for arranging the residue feedbacks in the tree and guarantees of convergence. The idea is to perform the tree reduce on the s output of the FPART units and arrange the residue connections to guarantee that each pair of passes through the tree performs an odd-even sort step similar to the distill chain. As a result, the tree acts like a distill chain, eventually sorting all the non-zero residues to the low position so that they interact and are sorted into decreasing exponent order. The reduce tree portion accelerates the production of the most significant floating-point residue as with any tree reduce. To achieve the sorting, the basic step is two reduce trees offset by one so that one interacts residues with their nominally larger position neighbor and one with the nominally smaller similar to the odd-even transposition sort in the distill chain (Figs. 5 and 6). Worst case, this will converge like the distillation chain. When there are no changes in values between the input and output of the FPARTs, the distillation tree has converged.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">EARLY TERMINATION DETECTION</head><p>While the details above show that the distill chain and tree will converge in a bounded amount of time, it could take a long time to completely converge. However, we can almost always determine the converged value for the accurate sum long before the distill tree has converged. Section 8 shows cases where early termination detection reduces the number of iterations from 73 down to 2 <ref type="table">(Table 1a</ref>, d ¼ 1;500, Data1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Termination Condition</head><p>To determine when we have enough information to return the correctly rounded result, we look at S t and R t , the largest two values in the distillation (D½0, D½1 when converged) and gross summary information on the remaining residues in the distill tree to calculate a conservative upper bound to the magnitude of the sum of the remaining residues, rsb, the Residue Sum Bound. We can then check for convergence by testing the condition CONVðS t ; R t ; rsbÞ <ref type="figure" target="#fig_9">(Fig. 8</ref>). If the condition succeeds, we conclude that even an upper bound on what is left in the tree is not sufficient to influence the most-significant floating-point values, S t , R t , and they can be rounded to determine the accurate sum. CONV also identifies a third case, which we call undet, where it will not be possible to determine convergence by only examining S t , R t , and rsb, and a fourth case where we must modify S t and R t to drive convergence. We show how to handle these cases in Sections 5.1.4 and 5.2.  To derive an expression for rsb and CONV, we first define nzcnt as the number of non-zero residues left in the tree and maxexp as the maximum exponent of these residues, both of which can be trivially computed during the summation tree reduction (see end of Section 7.1). We then write an upper bound on the sum of the residues:</p><formula xml:id="formula_11">jerrorj nzcnt Â 2 maxexpþ1 :<label>(11)</label></formula><p>By definition, we want rsb to be an upper bound on jerrorj:</p><formula xml:id="formula_12">rsb ¼ nzcnt Â 2 maxexpþ1 ! jerrorj:<label>(12)</label></formula><p>We can now approximate rsb as an exponent only:</p><formula xml:id="formula_13">rsb:exp:ub ¼ log 2 ðnzcntÞ d e þ maxexp þ 1:<label>(13)</label></formula><p>rsb:exp:ub is an upper bound on the exponent of rsb: the smallest integer k such that 2 k ! rsb.</p><p>The function CONVðS t ; R t ; rsbÞ is shown in <ref type="figure" target="#fig_9">Fig. 8</ref>. It takes two non-overlapping inputs S t ; R t FPART(D½0,D½1) with jS t j ! jR t j (since S t and R t are outputs from an FPART following each distill tree step (see <ref type="figure" target="#fig_1">Fig. 14)</ref>, this relation always holds), as well as rsb. Based on the values of S t , R t , and rsb, we are able to decide whether we can round S t and make it the final converged sum, or whether other iterations of the algorithm are required. Convergence is achieved if and only if the following condition is satisfied:</p><formula xml:id="formula_14">roundðS t þ R t þ rsbÞ ¼ roundðS t þ R t À rsbÞ:<label>(14)</label></formula><p>Furthermore, when convergence fails, CONV distinguishes cases that may converge with additional iterations from "undetermined" (undet) cases. An undet case means that rsb is low enough that S t would not change by more than 1 ULP (Units in the Last Place), and that it is so low that it may not be able to interact with R t . Undet cases may not resolve simply by continuing to iterate residue reduction on the distill tree. When an undet case is reached, we modify the values in the summation and change our convergence condition (Section 5.2). We show example strings that cause undet cases in <ref type="figure" target="#fig_10">Fig. 9</ref> (with p ¼ 13).</p><p>To better describe the conditions in Figs. 8 and 9, we introduce a few more definitions. In <ref type="figure" target="#fig_9">Fig. 8</ref>, jR t j patterns, patt (jR t j), are shown assuming their MSB starts right after the LSB of S t (that is, they start at 1/2 ULP); we conceptually pad jR t j so that it immediately follows S t . We also define a function lco (Lowest in Chain of Ones), which gives the index of the least significant 1 in the first chain of ones of a string-the most significant of these chains when there are more than one (see <ref type="figure" target="#fig_10">Fig. 9</ref>). Note that the indices are assumed to increase towards the right, with the first bit not included in S t being at index 0, the second at index 1, and so on.</p><p>rsb:i (rsb index) compares how rsb:exp:ub aligns with R t :exp:</p><formula xml:id="formula_15">rsb:i ¼ S t :exp À p À rsb:exp:ub;<label>(15)</label></formula><p>rsb:i marks the dividing line between sum bits that have been resolved and bits that have not. The bits more significant than rsb:i are resolved in that they will at most change due to a carry from the resolution of bits at or below rsb:i.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.1">CONV Algorithm</head><p>Certainly, when rsb is zero, there is no residue to impact the result, so we converge. Otherwise, as shown in <ref type="figure" target="#fig_9">Fig. 8</ref>, if rsb:exp:ub!R t :exp, a different result may be obtained if rsb is added or subtracted, so convergence fails (i). When rsb:exp:ub &lt; R t :exp, we know that we have resolved everything up to the most significant bit of R t , except for a potential carry. We further require rsb:i ! 3, so at least the first three bits past S t are resolved (1/2, 1/4 and 1/8 ULP), except for a potential carry (ii); we could relax this requirement but it would complicate the case analysis that follows. With rsb:i ! 3, we can reason about jR t j patterns that include the top three bits of R t since we know those bits are resolved and can only be impacted by a carry into the low bit. We distinguish between two rounding mode families: round-to-nearest (Section 5.1.2), and directed rounding (Section 5.1.3). We must also resolve the special case where rounding can reduce the S t exponent (Section 5.1.4).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.2">Round to Nearest Modes</head><p>Assuming we do not need to address a reduction in the S t exponent, we identify four cases from the jR t j pattern. patt(jR t j)=00xxx. There are two zeros after the LSB of S t and before any jR t j bit is set (at indices 0 and 1). The zero at index 1 is a squash bit that stops carries from propagating into index 0. Hence, no carry can propagate into S t , and the round bit cannot be set: we can round to nearest (iii).</p><p>patt(jR t j)=11xxx. If R t is positive, R t À rsb is greater than 1/2 ULP so we round up. R t þ rsb is also greater than 1/2 ULP and may carry into S t but then would leave the remainder below 1/2 ULP, so we round up in this case as well: we converge (iv). A similar reasoning applies if R t is negative, but we round down.</p><p>patt(jR t j)=01xxx. Here we have two cases. If rsb:i &gt; lcoðjR t jÞ, then neither R t þ rsb nor R t À rsb can cause a carry that will set the bit to the left of the chain of ones: we converge (v-a). Otherwise, if rsb:i lcoðjR t jÞ, then R t þ rsb and R t À rsb may or may not cause a carry that changes index 0 in a different way: convergence fails (v-b); this leads to an undet case.</p><p>patt(jR t j)=10xxx. Again we have two cases: either rsb:i is greater than the index of the first 1 of jR t j after the 1 in the most significant bit, in which case neither R t þ rsb nor R t À rsb would have an effect on that 1, and the tie is resolved in the same way: we converge (vi-a). Otherwise, R t þ rsb would make the tie deviate in a different way than R t À rsb, so convergence fails (vi-b), leading to an undet case.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.3">Directed Rounding Modes</head><p>Directed rounding modes round in a specific direction (toward 0, toward þ1, toward À1). In directed rounding, we first check if rsb ¼ 0. If it is, we know how to round based on R t , and we converge (x). Otherwise (rsb 6 ¼ 0) we check the jR t j pattern: patt(jR t j)=0xxx. If there is a zero at index 0, then convergence is achieved (xi), since the zero acts as a squash bit, preventing the sum of residues to propagate into S t . Furthermore, because rsb:exp:ub &lt; R t :exp, we know that the sum of residues, including R t , will not be zero.</p><p>patt(jR t j)=1xxx. If there is a one at index 0, we do the same check as above for round-to-nearest: Either rsb:i &gt; lcoðjR t jÞ, in which case there will be no overflow into S t , and we know how to round (xii-a), or rsb:i lcoðjR t jÞ, in which case there could be an overflow, so convergence fails (xii-b). This leads to an undet case.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.4">DROPEXP</head><p>As described above, round-to-nearest modes look at the bit immediately below S t (index 0, 1/2 ULP), the round bit, to determine whether to round up or round down, except in the exceptional case when S t is a power of two and has a different sign from R t . In this case, the S t exponent may drop by 1 due to cancellations in the residues, so we call it <ref type="bibr">DROPEXP</ref>  <ref type="figure" target="#fig_8">(Fig. 7)</ref>. A similar DROPEXP issue can arise for directed rounding modes. We thus first check if we have a DROPEXP case and transform the DROPEXP case into a non-DROPEXP case so it can be resolved with the same steps as the general cases above.</p><p>The problem here is the different signs, so our strategy is to resolve S t and R t to the same sign, which we can do by borrowing a low bit from S t when R t is sufficiently large. If R t is small (patt(jR t j)=000xxx and rsb:i ! 3), both S t þ R t þ rsb and S t þ R t À rsb round the same way due to the squash bit at index 2 (1/8 ULP), so we converge (vii). Otherwise, we subtract Z ¼ 2 S t :expÀpþ1 from S t if S t is positive, Z ¼ À2 S t :expÀpþ1 if S t is negative, i.e., we subtract the least significant bit of S t , such that it is not a power of two any more-the new S t has an exponent that is lower by 1, and all 1's in the mantissa, except the least significant bit, to which we assign the value Y , defined below. We also update (R t ,r 0 ) FPART(Z, R t ), which flips the sign of R t , so S t and R t now have the same sign. If the new R t has exponent S t :exp À p þ 1 (if the new S t and R t overlap), we transfer the most significant bit of R t to the least significant bit of S t : we set Y ¼ 1, and we update R t accordingly. Otherwise, if the new R t has exponent less than S t :exp À p þ 1, we set Y ¼ 0, and we do not update R t . <ref type="figure" target="#fig_10">Fig. 9</ref> shows an example of this, where (viii-a) gets transformed into (viii-b). The 1 bit shown in red is r 0 , an extra residue that we may have displaced from R t by this addition. We add r 0 to the current set of residues. At this point we do not have a DROPEXP case any more. Note that r 0 will be at most one bit, which can happen when patt(jR t j)=00xxx. For it to be 2-bit wide, it would need to come out of the patt(jR t j)=000xxx case, but that is a convergence case.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Handling Undetermined Cases (Undet)</head><p>As <ref type="figure" target="#fig_9">Fig. 8</ref> notes, there are a few cases that cannot be directly resolved by examining only S t , R t , and rsb. These are cases where we could perform faithful rounding based on the information in S t , R t , and rsb, but correct rounding demands  that we know the resolution of bits that are below the ones we have resolved in S t and R t . We call these "undet" since we cannot break the tie between rounding up or down based on the information available. If the undet cases are not treated, the early convergence check may always fail once we reach the undet condition, forcing us to (a) run until the distill tree converges and (b) look at all the distilled values to determine the final rounded result.</p><p>Consider the following example corresponding to failure (vii-b) in <ref type="figure" target="#fig_9">Fig. 8</ref>, with p ¼ 5 and assuming rsb is set by the only residue remaining in the tree:</p><formula xml:id="formula_16">S t ¼ 1:1010e27; R t ¼ 1:0000e22; rsb ¼ 1:0000e10 roundðS t þ R t þ rsbÞ ¼ 1:1011e27 roundðS t þ R t À rsbÞ ¼ 1:1010e27</formula><p>While convergence is not achieved, R t is non-overlapping with the remaining residue and no reduction can be performed. Indeed, 1:0000e10 and 1:0000e22 could be the only non-zero values in the tree other than S t and they cannot combine. 1:0000e22 is ultimately summed with the previous total 1:1010e27, and again, we end up with:</p><formula xml:id="formula_17">S t ¼ 1:1010e27; R t ¼ 1:0000e22; rsb ¼ 1:0000e10</formula><p>That is, we really need to know if the residue sum will be negative, leading to a round down, or positive, leading to a round up. Knowing that would demand that we resolve bits or distilled values lower than R t , but our simple definition for rsb does not capture that. We could define a more complicated termination condition that kept track of convergence of other elements of the distillation (D <ref type="bibr" target="#b1">[2]</ref>, D <ref type="bibr" target="#b2">[3]</ref>,...) and move the approximation in the residue sum to the suffix. However, these cases can be handled more compactly by modifying the sum and keeping a few additional bits of state. This allows us to keep the convergence check simple, looking at only a small, constant number of bits.</p><p>Undetermined cases are resolved differently depending on the rounding mode chosen.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.1">Round-to-Nearest</head><p>In round-to-nearest, we start by subtracting a 1 right after the LSB of S t (index 0 in <ref type="figure" target="#fig_10">Fig. 9</ref>). That is, we add À2 S t :expÀp to the set of distillation residues if R t is positive, 2 S t :expÀp if R t is negative. This way, we remove the round bit, and we then only check for the following condition:</p><formula xml:id="formula_18">signðR t þ rsbÞ ¼ signðR t À rsbÞ:</formula><p>Indeed, we now only need to know whether what is left in the tree is positive or negative to determine whether it will shift the tie up or down, and hence whether it will affect the LSB of S t or not. This prevents the distillation from being clogged, allowing smaller values to interact and resolve within R t . <ref type="figure" target="#fig_1">Fig. 10</ref> shows the complete algorithm for resolving the undet case in round-to-nearest mode.</p><p>In fact, this handling of undet conditions deals with the case that Kornerup et al. use to prove the impossibility of correctly rounding the sum of three or more floating-point numbers using a round-to-nearest, ties-to-even approach with depth less than 1,939 double-precision IEEE-754 operations <ref type="bibr" target="#b7">[8]</ref>. We are able to cover such a depth with limited resources because repeated iterations allow us to dynamically increase the DAG depth until termination, exceeding 1,939 if needed.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2">Directed Rounding</head><p>The problem in the undet directed rounding case (xii-b) is that we may have a chain of ones following S t and into R t at least up to the position that could be affected by the rsb. So, if S t and R t are positive and rsb is the maximum possible positive value, it is possible there will be a carry into S t , but if rsb is the maximum possible negative value, there will not be. As a result, we cannot determine the rounding. Even if we continue distillation, the chain of 1's could extend through many distilled terms.</p><p>The question here is whether or not R t and the remaining residues carry a 1 into S t . We can use a similar trick to the nearest rounding case by assuming the carry and adding a 1 to the LSB of S t . To determine if this was correct, we compensate by adding a À1 LSB to the residue. If the residue sign is positive, it turns out we were correct to treat the carry, and keep it. However, if the residue sign comes out negative, we know that R t and the residue would not have generated the carry, so we remove it. Thus, this case, too, can be reduced to determining the sign of the residue.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">DETAILED ALGORITHM AND CONVERGENCE</head><p>The last three sections have described all the components of our accurate summation. This section addresses the technicalities of how it all works, showing how the components come together (Section 6.1), proving that this full formulation will converge (Section 6.2), and dealing with the case of potential overflow (Section 6.3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">Algorithm</head><p>The complete, correctly-rounded parallel accumulation algorithm is shown in <ref type="figure" target="#fig_8">Figs. 7 and 8</ref>, and Figs. 10 through 14. The main loop in <ref type="figure" target="#fig_0">Fig. 14 calls a tree reduction (Fig. 12</ref>) and residue computation <ref type="figure" target="#fig_1">(Fig. 13</ref>) on every iteration, before checking for convergence ( <ref type="figure" target="#fig_9">Fig. 8</ref>) and returning the result. If convergence fails, we proceed with another iteration until it is successful. It also identifies the undet conditions and handles their resolution separately <ref type="figure" target="#fig_1">(Figs. 10 and 11</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">Termination Condition Convergence</head><p>In this section we prove the theorem that establishes that the early termination detection conditions defined in Section 5.1 and used in the correctly rounded sum algorithm <ref type="figure" target="#fig_1">(Fig. 14)</ref> and the undet resolution algorithms <ref type="figure" target="#fig_1">(Figs. 10 and 11</ref>) will always be met, eventually. The bound on the convergence of the distillation tree (Section 4.2) provides a bound on the number of iterations it requires to reach these conditions.</p><p>Since the tree distills its inputs, we know that the largest exponent, maxexp, outside of the most significant two values, S t and R t , will eventually not overlap with R t . So, we know the following will eventually hold:</p><formula xml:id="formula_19">maxexp R t :exp À p:<label>(16)</label></formula><p>Here, if R t is a subnormal, we take R t :exp as the exponent of the most significant 1. Also due to distillation, the total number of non-zeros will be at most L d . Excluding S t and R t , this leaves:</p><formula xml:id="formula_20">nzcnt L d À 2:<label>(17)</label></formula><p>Theorem 1. If p &gt; e þ 3, eventually, rsb:exp:ub &lt; R t :exp À 2.  rsb:exp:ub &lt; R t :exp À 2 will hold as long as:</p><formula xml:id="formula_21">log 2 ðL d Þ d eÀ p þ 1 &lt; À2; (18) log 2 2 e À 3 p $ % þ 1 $ % À p þ 3 &lt; 0:</formula><p>Since p ! 1, the first term can be bounded as:</p><formula xml:id="formula_22">log 2 2 e À 3 p $ % þ 1 $ % log 2 2 e À 3 þ 1 ð Þ d e e:<label>(19)</label></formula><p>Substituting Eq. <ref type="bibr" target="#b18">(19)</ref> into Eq. (18), this gives:</p><p>e À p þ 3 &lt; 0:</p><p>This final equation reduces to p &gt; e þ 3.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>t u</head><p>Together with distillation convergence and the treatment for undet cases, this guarantees that we will always be able to detect convergence by looking at S t , R t , nzcnt and maxexp. rsb:exp:ub &lt; R t :exp À 2 guarantees that the rsb:i ! 3 condition eventually holds, so we can safely wait on it to become true before making an undet decision.</p><p>Note that both IEEE single-and double-precision meet the p &gt; e þ 3 requirement. IEEE half-precision (binary16, e ¼ 5 and p ¼ 11) and quadruple-precision (binary128, e ¼ 15 and p ¼ 113) also meet the p &gt; e þ 3 requirement. In general, the other binary interchange formats also meet the p &gt; e þ 3 requirement since IEEE 754-2008 requires e ¼ roundð4log 2 ðkÞÞÀ 13 where k ¼ p þ e (k ! 128). For floating-point number systems where p e þ 3, this just means that we must examine more residues as part of the largest residue, R t . The generalization is to separate out k values, R t0 ; R t1 ; . . . ; R t kÀ1 ð Þ . maxexp and nzcnt are computed on the residues smaller than R t kÀ1 ð Þ , and the revised CONV must look at all k of the R ti values. k is set such that k ¼ eþ3 p l m .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3">Special Case: Overflow</head><p>Although the FPA, FPAR and FPART modules we describe in Section 7 support infinity, the algorithm we have detailed so far does not handle intermediate overflows.</p><p>In particular, an unfortunate ordering of the inputs could cause an intermediate sum to overflow to infinity, driving the final sum to infinity in cases where the accurate sum is finite and can be represented in the given floating-point system. Using the distill tree, we can handle this case as follows: When the addition of two numbers would overflow, instead of producing AE1, we make the FPART return the outputs in sorted order (larger input as s, smaller input as r). This way, no information is lost. The distillation and sorting continue. If the distillation eventually produces values that would cancel with these values, the sorting would bring them together, cancellation would occur, and the distillation can converge normally. Our early convergence detection scheme will work once proper cancellation of these large values is allowed to occur. However, if we reach a steady state where all numbers are in stable, sorted order and there are still adjacent entries that would overflow, we know that no cancellation will occur-every pair of adjacent numbers has gone through an FPART, meaning there must be no adjacent, overlapping numbers with opposite signs. In this steady state, we can correctly determine that the result is AE1. We can detect this by having each FPART provide an output signal to indicate when it has performed a sort to avoid overflow. If we reach the distillation tree termination condition and any of the FPARTs has asserted this signal, we can conclude that a real overflow has occurred. These intermediate overflows cause more iterations on average. This technique allows us to provide correct operation in all cases, without complicating the implementation. In typical usage, we expect this to be an uncommon case.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">ADD WITH RESIDUE UNIT</head><p>The key operation in our tree reduce is the FPART unit. For completeness, this section describes the design of the FPART unit and quantifies its resources. We start by describing the base FPA design and its extension to an FPAR that supports "round-to-nearest, ties-away-from-0", the most complex of the IEEE-754 rounding modes. Independent of our development of the FPAR <ref type="bibr" target="#b3">[4]</ref>, other groups have developed FPAR units with similar resource requirements <ref type="bibr" target="#b12">[13]</ref>, <ref type="bibr" target="#b21">[22]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1">Floating-Point Adder</head><p>A 64-bit IEEE-754 double-precision number contains 1 sign bit, 11 exponent bits (e ¼ 11), and 52 mantissa bits plus an implicit leading 1 (p ¼ 53), and handles subnormal numbers, zero, infinity and Not-A-Number <ref type="figure">(NaN)</ref>. The adder computes a rounded IEEE-754 sum, s, according to Eq. (1).</p><p>Our FPA is divided into seven pipeline stages. The white part of <ref type="figure" target="#fig_1">Fig. 15</ref> shows the general organization, which is similar to the improved single-path floating-point adder in <ref type="bibr" target="#b22">[23]</ref> ( <ref type="figure" target="#fig_0">Fig. 8.8, p. 428</ref>), except that we use a Leading One Detector (LOD) instead of a Leading One Predictor (LOP) in order to save area. The datapath operates as follows: First, the mantissas are compared and the exponents subtracted (stage 1), before being used to shift right the smaller one's mantissa (stage 2). During the right shift, the bits that would have normally been discarded are saved and used to compute rounding requirements in stage 4. Before that, the mantissas are added together (stage 3) and the LOD determines the resulting change in exponent (stage 4), which is then used to determine rounding requirements (also stage 4), as well as in stage 5 to normalize the mantissa. Stage 5 rounds and shifts the number, which can be parallelized to improve delay since the costly dynamic left shift is only needed when a and b are completely overlapping, and thus no rounding is needed. Otherwise, the position of the mantissa's MSB can only change by at most one in either direction, so that in the case where rounding is added, normalization is performed with a much cheaper 1-bit right or left shift as suggested in <ref type="bibr" target="#b22">[23]</ref>. A multiplexer is then used to select the proper case. Stage 6 checks if the result is zero (zero mantissa), subnormal (negative exponent), and if it has overflowed to infinity (maximum exponent), at the same time as computing a subnormal version assuming the exponent is negative. Finally, stage 7 selects among the rounded normalized number, its subnormal version, a 0 output, and a special case number determined in stage 1.</p><p>We described this hardware design in Bluespec System-Verilog <ref type="bibr" target="#b23">[24]</ref> and implemented it on a Virtex 6 FPGA (xc6vlx240t, speed grade of -1). It occupies an area of 1517 Lookup Tables (LUTs) and runs at 250 MHz (the critical path delay is 3.996 ns after place and route). The slowest and most area consuming operations are the dynamic shifts, the additions, and the 54-bit comparison in stage 1. Computing an update to nzcnt and maxexp from a single residue (Section 5.1) has a critical path of 2.378 ns and only costs 53 LUTs, making the rsb calculation small compared to the floating-point additions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2">Floating-Point Adder with Residue</head><p>The FPAR can be built by extending the FPA. <ref type="figure" target="#fig_1">Fig. 15</ref> shows its organization, with the additional hardware shown in gray. Stages 1, 2 and 3 are mostly the same, except for the additional registers to communicate the residue bits to the subsequent stages instead of discarding them. Unfortunately, we cannot perform a leading-1 search on r at the same time as s (stage 4) since we first need to know where the s mantissa will end in order to know where to start the search for r. Therefore, this step is moved to stage 5, and is performed after "residue adjustment", which is moved to stage 4. Residue adjustment is the process of subtracting from the residue the number that is added to the sum due to rounding; it is controlled by a rounding unit similar to the one for the sum: adding 1 to the LSB of s is coupled with subtracting 1 one position above the MSB of r and vice versa. However, we only need to know whether the MSB of the sum has moved by one bit at most in order to determine the position at which the residue should be adjusted, since moving by more than one position would mean that a and b are canceling each other and that the residue is zero. This three-case check can be performed at low cost during stage 4 even without knowing the sum's leading-1 information and is followed by an adder to compute the rounded residue. Stage 5 then performs a leading-1 search on the residue. Stage 6 normalizes and computes a subnormal version, both of which require dynamic shifts, together with checking whether the residue is 0 (0 mantissa) or subnormal (this time checking for a negative normalized exponent exp norm ¼ exp À LO idx , where LO idx is the index of the leading 1). Finally, in stage 7, a second multiplexer chooses among the different possible residue outputs.</p><p>We are thus able to exploit parallelism to produce the residue without affecting the clock frequency and number of pipeline stages. In particular, since we are able to determine the index at which the residue must be adjusted one cycle earlier than for the sum, we can change the order of operations while maintaining a similar delay: first round, then search for the leading-1. During stages 6 and 7, the final checks can also be performed in parallel, and because the FPAR already performs costly dynamic shifts for the subnormal cases, performing another dynamic shift for the common residue case in parallel does not impact the delay (except for extra routing). This parallelization also works because even though exp norm must be computed, that result is not required by the dynamic shifters in stage 6, but only by the comparator of stage 7 to check whether the result is subnormal. Indeed, if the number is subnormal then only the exponent information is needed to shift the mantissa properly (not the leading-1's position). When it is not subnormal then only the leading-1 information is needed to shift the mantissa (not the exponent).</p><p>The FPAR requires 2252 LUTs, only 48 percent more than the FPA. It also uses seven pipeline stages running at 250 MHz. The critical path delay is 3.999 ns. Manoukian and Constantinides implemented a similar single-precision FPAR on a Virtex 6, also with no delay overhead, and 47 percent area overhead <ref type="bibr" target="#b12">[13]</ref>. Nathan et al. implemented a custom chip for a similar unit with 54 percent area overhead <ref type="bibr" target="#b21">[22]</ref>. These comparable overheads from independent implementations confirm that they are a good estimate of the required resources.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.3">FPART</head><p>We observe that the FPAR unit can be simplified if it only truncates the sum. We thus introduce the FPART (FPAR with Truncation), which "PARTitions" the exact sum into two parts: the sum and the residue. This does not give an IEEE-754 compliant sum for every operation but still yields an information-preserving sum and residue (Eq. (3)) that is adequate for the algorithm described in the previous sections, where we only round once at the end.</p><p>The FPART is similar to the FPAR, except that it does not contain any of the rounding modules, shown in <ref type="figure" target="#fig_1">Fig. 15</ref> with a dotted contour. Therefore, the sum portion of the computation can determine all of its bits simply by summing the aligned a and b mantissas and detecting the leading 1; there is no need to know the shape of the discarded bits. However, the residue portion of the computation still needs the LOD information from the sum portion before it can perform an LOD on its own mantissa. The LOD information is needed because a shift in the sum's exponent will change the index of the first bit considered part of the residue, although it will not change the shape of the residue bits; that is, no bit is added or subtracted.</p><p>The FPART occupies an area of 1,851 LUTs, only 22 percent more than the FPA. It is also comprised of seven pipeline stages running at 250 MHz: The critical path delay is 3.994 ns.</p><p>While we quote specific results from our FPGA implementation, we expect a custom implementation would achieve similar results-The FPAR should achieve the same latency as the base FPA and require only fractionally more area, either an extra half if it rounds at every step or only an extra quarter otherwise. The custom implementation of FPAR in <ref type="bibr" target="#b21">[22]</ref> supports this expectation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">EXPERIMENTAL RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8.1">Experimental Setup and Results</head><p>In order to evaluate the expected number of iterations of our CorrectRound algorithm <ref type="figure" target="#fig_1">(Fig. 14)</ref>, we implemented and simulated it. We use different datasets, which can be more or less suited to the algorithm depending on the amount of cancellation that occurs. For example, if all the numbers are small except for two large opposite numbers whose sum is zero, this will force an additional iteration over the case where those numbers are not there. To measure how much the sum can change with respect to a small change in the summands, we define the condition number of the N x i datapoints similarly to <ref type="bibr" target="#b24">[25]</ref>, <ref type="bibr" target="#b25">[26]</ref>:</p><formula xml:id="formula_23">k ¼ P N i¼1 jx i j j P N i¼1 x i j :</formula><p>For low k, the data is said to be well-conditioned, and the algorithm should easily converge, whereas for high k, it is said to be ill-conditioned and is expected to make convergence more difficult. We generate datasets similar to those used by Zhu and Hayes <ref type="bibr" target="#b25">[26]</ref>. Data #1 consists of random positive numbers, so that k ¼ 1. Data #2 is similar except that it contains both positive and negative numbers, resulting in a low k. Data #3 is similar to Anderson's ill-conditioned data <ref type="bibr" target="#b4">[5]</ref>: we first generate Data #2, then compute the mean using standard floating-point arithmetic (thus introducing some error), before subtracting it from each data point. This results in a higher k. Half of Data #4 is randomly generated positive numbers, and the other half is their exact opposites, such that the exact sum is 0, and k ¼ 1.</p><p>In addition to the uniformly distributed random data used in previous work (e.g., <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b25">[26]</ref>), we also use an exponential one. We define an exponential distribution as one where the individual bits of the IEEE-754 representation are randomly picked from a uniform distribution, thus tending to produce numbers with all allowed exponent values instead of concentrating them on the highest positive and negative exponents. This prevents the numbers from being too close together and reduces mantissa overlap, resulting in data that does not reduce as efficiently as a uniform distribution.</p><p>We define the parameter d as the maximum possible difference in exponent ranges in the original summands, which is taken into account when generating the random data. We use N ¼ 2 <ref type="bibr" target="#b11">12</ref> as the number of summands in the dataset. The results are similar for other values of N, except for very low ones such as N ¼ 4, where convergence sometimes happens after only 1 iteration, or after 3 iterations due to an undet case. <ref type="table">Tables 1a and 1b</ref> show results after repeating each experiment 1,000 times, for the round-to-nearesttie-to-even mode and the four basic datasets. The other four rounding modes have similar results and they are not shown here. We report both average and standard deviation for the different metrics: the number of iterations the algorithm takes before converging (with and without Early Detection (ED) of termination), the percentage of non-zero values remaining in the tree when convergence is achieved, and the percentage error when computing the sum using a simple sequential software, non-exact summation. <ref type="table">Table 1a</ref> shows that even when there are many non-zeros left in the tree (Data #1 and #2), our algorithm is able to determine that they will not affect the final sum, so that it can discard them and converge faster, significantly reducing the number of iterations before convergence. <ref type="table">Table 1</ref> also reminds us that the non-accurate summation error can become intolerably large (Data #3 and #4).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8.2">Discussion of the Results</head><p>We observe that in virtually all cases, the algorithm takes exactly two iterations to converge (with a 0 standard deviation in number of iterations), no matter how ill-conditioned the data is, except for the extreme case of k ¼ 1 and exponentially distributed data. This empirically validates our inexpensive convergence test since we get the same number of iterations suggested in <ref type="bibr" target="#b17">[18]</ref>, whose termination detection was much more expensive (two full floating-point additions per tree node). We also note that the highly unlikely undet case was never encountered in these experiments. <ref type="figure" target="#fig_1">Fig. 16</ref> illustrates why exactly two iterations are needed most of the time. After two numbers a and b are processed by an FPART unit, they come out as two new numbers with non-overlapping mantissas, where the MSB has typically only shifted by a few bits at most: a major shift of m positions is extremely unlikely for randomly chosen bits, in the order of 2 Àm . Therefore, with extremely high probability, the final sum S t at the end of the tree will occupy the 53 bits to the immediate left of the final residue R t , whereas R t will occupy the same bits as several other residues remaining in the tree, including the largest one that determines maxexp. Since rsb:exp:ub ¼ log 2 ðnzcntÞ d e þ maxexp þ 1 (Eq. (13)), rsb easily overlaps with S t and the convergence test fails. However, after a second pass in the tree, the new R t still occupies the bits to the immediate right of S t , but this time the remaining residues and maxexp occupy the bits to the immediate right of R t , making it extremely unlikely that log 2 ðnzcntÞ would be large enough to cause an overlap with S t . A dataset needs to be carefully designed to get more than two iterations, as we did with the exponentially distributed Data #4. In that case, major cancellations throughout the tree translate into a maxexp that is often larger than S t , thus failing the convergence test. In fact, we observe empirically that in this case, the number of iterations is about i % d 53 þ 1, 53 being the mantissa range of an IEEE-754 number. The exponent range d translates into d þ 53 bits that can be covered by the dataset. We can then divide this range into i equal parts of 53 bits each, where each part is being resolved as zero during one iteration, thus taking i iterations before convergence overall.</p><p>Therefore, in order to see more than two iterations, we had to define extremely ill-conditioned cases that are unlikely to occur in practice (condition number k ! 1). In order to determine how large k must be to exceed two iterations, we introduce Data #5, which is generated in the same way as Data #4, except that we do not replicate a numbers (a 2 ½0; N=2). a ¼ 0 is equivalent to Data #4; a ¼ N=2 is equivalent to Data #2. The a parameter allows us to explore even larger k values than Data #3, before reaching k ¼ 1 in Data #4. For d ¼ 1;500, we find that k &gt; 10 20 is required before we need more than two iterations (see, <ref type="figure" target="#fig_1">Fig. 17</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="9">COMPARISONS</head><p>Assuming a constant number of iterations, our algorithm achieves the asymptotically optimal FLOP count QðNÞthe same as simple summations that ignore precision and other efficient correctly rounded approaches ( e.g., <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b19">[20]</ref>). With sufficient hardware, our design can achieve Oðlog NÞ latency, superior to traditional correctly rounded summations including iFastSum <ref type="bibr" target="#b5">[6]</ref> and Demmel and Hida's Radix sort <ref type="bibr" target="#b19">[20]</ref>, both of which are QðNÞ. Only Leuprecht and Oberaigner's correct summation algorithm achieved Oðlog NÞ latency <ref type="bibr" target="#b17">[18]</ref>. Our Oðlog NÞ latency is the same as a precision-ignoring sum, and Kapre and DeHon's sequential-semantics-preserving sum <ref type="bibr" target="#b14">[15]</ref>. <ref type="table" target="#tab_1">Table 2</ref> compares the FLOP counts of the major, representative algorithms, including the revision of prior work <ref type="figure" target="#fig_1">Fig. 16</ref>. Effects of the algorithm on the mantissa ranges.  using our FPAR. We count 1.5 FLOP for our FPAR and 1.25 FLOP for our FPART due to their area (Section 7). All three correct rounding algorithms (iFastSum, Leuprecht and Oberaigner, and ours) take two iterations in almost all cases. We estimate Kapre and DeHon as eight iterations with 5 FLOP per iteration. Leuprecht and Oberaigner use two FLOP per tree node for convergence detection. We do not count our termination computation as a FLOP since it takes less than 4 percent of the area of the FPA (see end of Section 7.1). Our algorithm achieves a lower FLOP count than previous algorithms, tying only with iFastSum, which has depth OðNÞ instead of our Oðlog NÞ depth.</p><p>To avoid OðNÞ area on the reduce tree, the strategy can be adapted to support pipelined, streaming accumulations consuming any number of inputs per cycle <ref type="bibr" target="#b3">[4]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="10">CONCLUSION</head><p>Floating-point values can be summed in parallel to produce a correctly rounded result in Oðlog NÞ depth. We have introduced a lightweight test for early termination detection and provided evidence that our algorithm is fast and predictable-only requiring two iterations in virtually all cases-and a proof that it will terminate. We have shown that our algorithm can support all five IEEE-754 standard rounding modes using an FPART unit. We implemented the FPART as an extension of a standard FPA, performing all the additional computations in parallel with already necessary operations; as a result, the FPART runs as fast as the standard FPA, while requiring only 22 percent more area.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2</head><label>2</label><figDesc>shows our summation strategy using an N ¼ 8 input example with mantissa of size p ¼ 3.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1 .</head><label>1</label><figDesc>Parallel accumulation strategy: accumulate using a reduce tree and feed back residues (errors): no information is discarded until the end.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 .</head><label>2</label><figDesc>Example summation through our reduce tree (p ¼ 3).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3 . 2 Ä Å in a first stage and N 2 Ä Å in a second stage as shown in Fig. 3 .</head><label>3223</label><figDesc>Distill chain.do not overlap, (max(A:exp, B:exp))À(min(A:exp, B:exp)) &gt; p À 1, the FPART will simply sort the results by the magnitude of the exponent. The sort is arranged to eventually order the components from largest exponent (D½0) to smallest (D½N À 1). It uses N FPARTs to perform distillation with NÀ1 The first stage pairs odd elements, 2i þ 1, with their larger even neighbor at 2ði þ 1Þ, while the second stage pairs odd elements, 2i þ 1, with their smaller even neighbor at 2i.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 4</head><label>4</label><figDesc>defines the operation of the distill chain.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 4 .</head><label>4</label><figDesc>Distill chain.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 5 .</head><label>5</label><figDesc>Distilling tree.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 6 .</head><label>6</label><figDesc>Iterative distillation tree.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 7 .</head><label>7</label><figDesc>Function to resolve special case when rounding.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 8 .</head><label>8</label><figDesc>Early convergence detection function: CONVðS t ; R t ; rsbÞ:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Fig. 9 .</head><label>9</label><figDesc>Example input configurations in the CONV function.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig. 10 .</head><label>10</label><figDesc>Nearest rounding undet resolution.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Fig. 11 .</head><label>11</label><figDesc>Directed rounding undet resolution.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Fig. 12 .Fig. 13 .ðnzcntÞ d e þ maxexp þ 1 :</head><label>12131</label><figDesc>Distill tree step. Residue summary.Proof. By definition (Eq. (13)): rsb:exp:ub ¼ log 2 Combining the bounds on maxexp and nzcnt: rsb:exp:ub log 2 ðL d Þ d eþ R t :exp À p þ 1:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Fig. 14 .</head><label>14</label><figDesc>Correctly rounded sum algorithm.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head>Fig. 15 .</head><label>15</label><figDesc>Structure of the FPAR unit.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><head>Fig. 17 .</head><label>17</label><figDesc>Average number of iterations versus k.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1 Experimental Results</head><label>1Results</label><figDesc></figDesc><table /><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2 FLOP</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell cols="2">Count Comparison</cell><cell></cell><cell></cell></row><row><cell>Accumulation Algorithm</cell><cell>FLOP</cell><cell>Expected</cell><cell>Expected</cell><cell>Depth</cell></row><row><cell></cell><cell>/input</cell><cell># of</cell><cell>FLOP</cell><cell></cell></row><row><cell></cell><cell>/iter</cell><cell>iter</cell><cell>/input</cell><cell></cell></row><row><cell>iFastSum [6]</cell><cell>6</cell><cell>2</cell><cell>12</cell><cell>OðNÞ</cell></row><row><cell>with our FPAR</cell><cell>1.5</cell><cell>2</cell><cell>3</cell><cell></cell></row><row><cell>Simple, inaccurate</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>Oðlog NÞ</cell></row><row><cell>Optimistic Sequential [15]</cell><cell>5</cell><cell>8</cell><cell>40</cell><cell>Oðlog NÞ</cell></row><row><cell cols="2">Leuprecht and Oberaigner [18] 7</cell><cell>2</cell><cell>14</cell><cell>Oðlog NÞ</cell></row><row><cell>with our FPAR</cell><cell>2.5</cell><cell>2</cell><cell>5</cell><cell></cell></row><row><cell>This Work (FPAR)</cell><cell>1.5</cell><cell>2</cell><cell>3</cell><cell>Oðlog NÞ</cell></row><row><cell>FPART</cell><cell>1.25</cell><cell>2</cell><cell>2.5</cell><cell></cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>Support for Paul Gurniak from the Rachleff Scholar's Program was instrumental in initiating this work. This material is based in part upon work supported by the office of naval research (ONR) under Contract No. N000141010158. The views expressed are those of the authors and do not reflect the official policy or position of ONR or the U.S. Government. Valuable feedback from the anonymous reviewers on our preliminary work <ref type="bibr" target="#b3">[4]</ref> and the journal submission improved the generality, clarity, precision, and presentation of the paper.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Paul Gurniak received the BS degree in electrical engineering from the University of Pennsylvania, Philadelphia, PA, USA. He is a staff software engineer at MaxPoint Interactive. He was a member of the Rachleff Scholars Program and has received the Atwater Kent Prize in electrical engineering for his academic accomplishments. Contact him at pgurniak@seas.upenn.edu.</p><p>Andr e DeHon received the SB, SM, and PhD degrees in electrical engineering and computer science from the Massachusetts Institute of Technology, Cambridge, MA, USA, in 1990, 1993, and 1996, respectively. From 1996 to 1999, he co-ran the BRASS group in the Computer Science Department, University of California at Berkeley. From 1999 to 2006, he was an assistant professor of computer science at the California Institute of Technology, Pasadena, CA, USA. Since 2006, he has been in the Electrical and Systems Engineering Department, University of Pennsylvania where he is currently a full professor. He is broadly interested in how we physically implement computations from substrates, including VLSI and molecular electronics, up through architecture, CAD, and programming models. He places special emphasis on spatial programmable architectures (e.g., FPGAs) and interconnect design and optimization. He is a member of IEEE.</p><p>" For more information on this or any other computing topic, please visit our Digital Library at www.computer.org/publications/dlib.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Clock rate versus IPC: The end of the road for conventional microarchitectures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Hrishikesh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Keckler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Burger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 27th Annu. Int. Symp. Comput. Archit</title>
+		<meeting>27th Annu. Int. Symp. Comput. Archit</meeting>
+		<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="248" to="259" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Scaling, power, and the future of CMOS</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Horowitz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Alon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Naffziger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bernstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Electron Devices Meet</title>
+		<meeting>IEEE Int. Electron Devices Meet</meeting>
+		<imprint>
+			<date type="published" when="2005-12" />
+			<biblScope unit="page" from="7" to="15" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">The Future of Computing Performance: Game Over or Next Level?</title>
+		<ptr target="http://www.nap.edu/catalog.php?record_id=12980" />
+		<editor>S. H. Fuller and L. I. Millett</editor>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>National Academies Press</publisher>
+			<pubPlace>Washington, DC, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Accurate parallel floatingpoint accumulation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Kadric</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Gurniak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dehon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Symp. Comput. Arithmetic</title>
+		<meeting>IEEE Symp. Comput. Arithmetic</meeting>
+		<imprint>
+			<date type="published" when="2013-04" />
+			<biblScope unit="page" from="153" to="162" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A distillation algorithm for floating-point summation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">J</forename><surname>Anderson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Sci. Comput</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1797" to="1806" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Correct rounding and a hybrid approach to exact floating-point summation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y.-K</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">B</forename><surname>Hayes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Sci. Comput</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2981" to="3001" />
+			<date type="published" when="2009-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Ultimately fast accurate summation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Rump</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Sci. Comput</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3466" to="3502" />
+			<date type="published" when="2009-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">On the computation of correctly rounded sums</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Kornerup</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Lef Evre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Louvet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-M</forename><surname>Muller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="289" to="298" />
+			<date type="published" when="2012-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A floating-point technique for extending the available precision</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">J</forename><surname>Dekker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Numerische Mathematik</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="224" to="242" />
+			<date type="published" when="1971" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">The Art of Computer Programming: Seminumerical Algorithms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Knuth</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997" />
+			<publisher>Addison-Wesley</publisher>
+			<biblScope unit="volume">2</biblScope>
+			<pubPlace>Boston, MA, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>3rd ed</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">When FPGAs are better at floating-point than microprocessors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>De Dinechin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Detrey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Cret</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Tudoran</surname></persName>
+		</author>
+		<ptr target="http://prunel.ccsd.cnrs.fr/ensl-00174627" />
+	</analytic>
+	<monogr>
+		<title level="j">ENS Lyon</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Tech. Rep. ensl-00174627</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Low-cost microarchitectural support for improved floating-point accuracy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Dieter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kaveti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Dietz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Comput. Archit. Lett</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="13" to="16" />
+			<date type="published" when="2007-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Accurate floating point arithmetic through hardware error-free transformations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">V</forename><surname>Manoukian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Constantinides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf. Reconf. Comput</title>
+		<meeting>Int. Conf. Reconf. Comput</meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="94" to="101" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Accelerating pipelined integer and floating-point accumulations in configurable hardware with delayed addition techniques</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Martonosi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="208" to="218" />
+			<date type="published" when="2000-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Optimistic parallelization of floatingpoint accumulation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Kapre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dehon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Symp. Comput. Arithmetic</title>
+		<meeting>IEEE Symp. Comput. Arithmetic</meeting>
+		<imprint>
+			<date type="published" when="2007-06" />
+			<biblScope unit="page" from="205" to="213" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Fast reproducible floating-point summation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Demmel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">D</forename><surname>Nguyen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Symp. Comput. Arithmetic</title>
+		<meeting>IEEE Symp. Comput. Arithmetic</meeting>
+		<imprint>
+			<date type="published" when="2013-04" />
+			<biblScope unit="page" from="163" to="172" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Numerical reproducibility and accuracy at exascale</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Demmel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">D</forename><surname>Nguyen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Symp. Comput. Arithmetic</title>
+		<meeting>IEEE Symp. Comput. Arithmetic</meeting>
+		<imprint>
+			<date type="published" when="2013-04" />
+			<biblScope unit="page" from="235" to="237" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Parallel algorithms for the rounding exact summation of floating point numbers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Leuprecht</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Oberaigner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computing</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="89" to="104" />
+			<date type="published" when="1982" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Algorithms for arbitrary precision floating point arithmetic</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Priest</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Symp. Comp. Arithmetic</title>
+		<meeting>IEEE Symp. Comp. Arithmetic</meeting>
+		<imprint>
+			<date type="published" when="1991-06" />
+			<biblScope unit="page" from="132" to="143" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Accurate and efficient floating point summation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Demmel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Hida</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Sci. Comput</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1214" to="1248" />
+			<date type="published" when="2003-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Introduction to Parallel Algorithms and Architectures: Arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">T</forename><surname>Leighton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992" />
+			<publisher>Morgan Kaufmann</publisher>
+			<pubPlace>Trees, Hypercubes. Burlington, ON, Canada</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Recycled error bits: Energy-efficient architectural support for floating point accuracy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nathan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Anthonio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S.-L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Naeimi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Sorin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SC.2014.15</idno>
+		<ptr target="http://dx.doi.org/10.1109/SC.2014.15" />
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf. High Perform</title>
+		<meeting>Int. Conf. High Perform</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="117" to="127" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Digital Arithmetic (ser. The Morgan Kaufmann Series in Computer Architecture and Design)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ercegovac</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Lang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Morgan Kaufmann</publisher>
+			<pubPlace>ON, Canada</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Burlington</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Bluespec SystemVerilog 2012.01.A</title>
+		<ptr target="http://www.bluespec.com" />
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Bluespec, Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The accuracy of floating point summation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">J</forename><surname>Higham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Sci. Comput</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="783" to="799" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Algorithm 908: Online exact summation of floating-point streams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y.-K</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">B</forename><surname>Hayes</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1824801.1824815</idno>
+		<ptr target="http://doi.acm.org/10.1145/1824801.1824815" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Math. Softw</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="37" />
+			<date type="published" when="2010-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">His research interests include high-performance, low-power, and highreliability computer architectures and applications</title>
+	</analytic>
+	<monogr>
+		<title level="m">Edin Kadric received the BEng and MEng degrees in electrical engineering from McGill University</title>
+		<meeting><address><addrLine>Philadelphia, PA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note>Since 2012, he has been working towards the PhD degree at the University of Pennsylvania. He is a student member of IEEE</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

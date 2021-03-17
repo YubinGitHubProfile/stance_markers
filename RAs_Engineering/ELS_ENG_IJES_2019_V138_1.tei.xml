@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2019-03-11">11 March 2019</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Continuum Mechanics and Structural Analysis</orgName>
+								<orgName type="institution">Universidad Carlos III de Madrid</orgName>
+								<address>
+									<addrLine>Av. de la Universidad 30</addrLine>
+									<postCode>28911</postCode>
+									<settlement>Leganés, Madrid</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ó</forename><surname>Serrano</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Continuum Mechanics and Structural Analysis</orgName>
+								<orgName type="institution">Universidad Carlos III de Madrid</orgName>
+								<address>
+									<addrLine>Av. de la Universidad 30</addrLine>
+									<postCode>28911</postCode>
+									<settlement>Leganés, Madrid</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Continuum Mechanics and Structural Analysis</orgName>
+								<orgName type="institution">Universidad Carlos III de Madrid</orgName>
+								<address>
+									<addrLine>Av. de la Universidad 30</addrLine>
+									<postCode>28911</postCode>
+									<settlement>Leganés, Madrid</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2019-03-11">11 March 2019</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2019.02.004</idno>
+					<note type="submission">Received 4 December 2018 Revised 16 February 2019 Accepted 18 February 2019</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Nanobeams Nonlocal strain gradient Constitutive boundary conditions Bending Axial</keywords>
+			</textClass>
+			<abstract>
+				<p>The nonlocal strain gradient elasticity theory is being widely used to address structural problems at the micro-and nano-scale, in which size effects cannot be disregarded. The application of this approach to bounded solids shows the necessity to fulfil boundary conditions, derived from an energy variational principle, to achieve equilibrium, as well as constitutive boundary conditions inherent to the formulation of the constitutive equation through convolution integrals. In this paper we uncover that, in general, is not possible to accomplish simultaneously the boundary conditions, which are all mandatory in the framework of the nonlocal strain gradient elasticity, and therefore, the problems formulated through this theory have no solution. The model is specifically applied to the case of static axial and bending behaviour of Bernoulli-Euler beams. The corresponding governing equation in terms of displacements results in a fourth-order ODE with six boundary conditions for the axial case, and in a sixth-order ODE with eight boundary conditions for the bending case. Therefore, the problems become overconstrained. Three study cases will be presented to reveal that all the boundary conditions cannot be simultaneously satisfied. Although the ill-posedness has been pointed out for an elastostatic 1D problem, this characteristic holds for other structural problems. The conclusion is that the nonlocal strain gradient theory is not consistent when applied to finite structures and leads to problems with no solution in a general case.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The academic interest in generalised continuum mechanics theories accounting for microstructure and scale effects in the mechanical behaviour of solids is not new. The early attempts can be found in the works by Cauchy and Voigt in the 19th century and by Cosserat brothers at the beginning of the 20th century. These generalised formulations experienced a major revival in the second half of the 20th century with the contributions of <ref type="bibr" target="#b34">Mindlin and Tiersten (1962)</ref> , <ref type="bibr" target="#b22">Kröner (1963</ref><ref type="bibr" target="#b23">Kröner ( , 1967</ref> , <ref type="bibr" target="#b44">Toupin (1963</ref><ref type="bibr" target="#b45">Toupin ( , 1964</ref> , <ref type="bibr" target="#b20">Green and Rivlin (1964)</ref> , <ref type="bibr" target="#b31">Mindlin (1964</ref><ref type="bibr" target="#b32">Mindlin ( , 1965</ref> , <ref type="bibr" target="#b24">Krumhansl (1968)</ref> , <ref type="bibr" target="#b33">Mindlin and Eshel (1968)</ref> , <ref type="bibr" target="#b25">Kunin (1968)</ref> , <ref type="bibr">Eringen (1972a,b)</ref> , <ref type="bibr" target="#b15">Eringen and Edelen (1972)</ref> and <ref type="bibr" target="#b13">Eringen (1983)</ref> . Nowadays, the exponential growth of the nanotechnology and of the applications in the field of nanostructures has soared the studies related to generalised continuum mechanics.</p><p>Regarding the literature published in the last fifteen years, it can be observed that two of the most popular approaches to analyse the mechanical behaviour of nanostructures are the modified strain gradient elasticity and different versions of the nonlocal elasticity of <ref type="bibr">Eringen.</ref> The modified strain gradient elasticity was proposed by <ref type="bibr" target="#b26">Lam, Yang, Chong, Wang, and Tong (2003)</ref> based on previous developments by <ref type="bibr" target="#b32">Mindlin (1965)</ref> and <ref type="bibr" target="#b18">Fleck and Hutchinson (1997)</ref> . This model needs new additional equilibrium equations to govern the behaviour of higher-order stresses and requires three non-classical constants for isotropic linear elastic materials. The number of papers related to the application of the modified strain gradient elasticity to nanostructures is quite large. The interested reader can see the recent review by <ref type="bibr" target="#b43">Thai, Vo, Nguyen, and Kim (2017)</ref> to have a broad perspective on the subject. Moreover, <ref type="bibr">Morassi and coworkers</ref>  <ref type="bibr" target="#b8">( Dilena, Fedele Fedele Dell' Oste, Fernández-Sáez, Morassi, &amp; Zaera, 2019;</ref><ref type="bibr" target="#b16">Fernández-Sáez, Morassi, Rubio, &amp; Zaera, 2019;</ref><ref type="bibr" target="#b35">Morassi, Fernández-Sáez, Zaera, &amp; Loya, 2017 )</ref> used this approach to identify a small mass attached to a uniform nanorod <ref type="bibr" target="#b35">( Morassi et al., 2017 )</ref>, to a uniform nanobeam <ref type="bibr" target="#b8">( Dilena et al., 2019 )</ref>, or to a rectangular nanoplate . It is important to highlight that these studies are relevant in biomechanical sensing applications. The use of this theory to nanostructures requires both standard and non-standard boundary conditions (BCs), and the results showed stiffening with the non-local material parameter.</p><p>The nonlocal continuum mechanics theories initiated by <ref type="bibr" target="#b23">Kröner (1967)</ref> , <ref type="bibr" target="#b24">Krumhansl (1968)</ref> , and <ref type="bibr" target="#b25">Kunin (1968)</ref> were later simplified by Eringen and coworkers <ref type="bibr" target="#b11">( Eringen, 1972a;</ref><ref type="bibr" target="#b12">1972b;</ref><ref type="bibr" target="#b13">1983;</ref><ref type="bibr" target="#b15">Eringen &amp; Edelen, 1972 )</ref>, and formulated originally in integral form for linear homogeneous isotropic nonlocal elastic materials. In this model, called strain-driven formulation of the nonlocal elasticity, the stress at a point of the solid depends on the strain at all points of the domain. This dependence is represented by a convolution integral with a smoothing kernel. The recent reviews of <ref type="bibr" target="#b9">Eltaher, Khater, and Emam (2016)</ref> , <ref type="bibr" target="#b38">Rafii-Tabar, Ghavanloo, and Fazelzadeh (2016)</ref> , and <ref type="bibr" target="#b43">Thai et al. (2017)</ref> , related to the application of nonlocal continuum theories to nanostructures, summarise the huge number of publications on the subject since the pioneer work of <ref type="bibr" target="#b36">Peddieson, Buchanan, and McNitt (2003)</ref> . Nevertheless, <ref type="bibr" target="#b41">Romano, Barretta, Diaco, and Marotti de Sciarra (2017)</ref> showed that, in the majorities of cases, the fully nonlocal elasticity theory (strain-driven) leads to problems that have to be considered as ill-posed. Therefore, this model is not feasible to assess scale effects in nanostructures.</p><p>A way to remove the ill-posedness of the pure strain-driven nonlocal problem is to use the two-phase local/nonlocal strain-driven constitutive model, which was first proposed by <ref type="bibr" target="#b11">Eringen (1972a</ref><ref type="bibr" target="#b14">Eringen ( , 1987</ref> . In this respect, several problems related to the statics and dynamics of nanostructures have been addressed using the mentioned two-phase theory by <ref type="bibr" target="#b21">Khodabakhshia and Reddy (2015)</ref> , <ref type="bibr" target="#b46">Wang, Zhu, and Dai (2016)</ref> , <ref type="bibr" target="#b49">Zhu, Wang, and Dai (2017)</ref> , <ref type="bibr" target="#b10">Eptaimeros, Koutsoumaris, and Tsamasphyros (2016)</ref> , and Fernández-Sáez and Zaera (2017) .</p><p>Romano and  proposed an alternative formulation of the pure nonlocal elastic model. The new model, called stress-driven, considers that elastic strain at a point is represented by a convolution integral of the stress field and a smoothing kernel. The approach leads to well-posed problems when it is applied to several kinds of nanostructures <ref type="bibr" target="#b1">( Apuzzo, Barretta, Luciano, de Sciarra, &amp; Penna, 2017;</ref><ref type="bibr" target="#b2">Barretta, Canadija, Luciano, &amp; de Sciarra, 2018;</ref><ref type="bibr" target="#b6">Barretta, Luciano, de Sciarra, &amp; Ruta, 2018;</ref><ref type="bibr" target="#b30">Mahmoudpour, Hosseini-Hashemi, &amp; Faghidian, 2018 )</ref>. Moreover, the twophase local/nonlocal stress-driven constitutive model has been recently developed <ref type="bibr" target="#b3">( Barretta, Fabbrocino, Luciano, &amp; de Sciarra, 2018;</ref><ref type="bibr" target="#b5">Barretta, Faghidian, Luciano, Medaglia, &amp; Penna, 2018 )</ref>.</p><p>The nonlocal elastic strain-driven models predict a decrease of the structural stiffness when the scale parameter increases, while the nonlocal stress-driven (and the strain gradient formulation, as stated above), prompts the stiffening of the nanostructures with the non-classical parameter. <ref type="bibr" target="#b28">Lim, Zhang, and Reddy (2015)</ref> combined in a unique theory both the pure nonlocal strain-driven elasticity theory of Eringen and the strain gradient elasticity. The resulting approach, called nonlocal strain gradient theory ( NSGT ), contains two non-classical material parameters (the nonlocal parameter and the gradient coefficient) and is able to reproduce both the increase and decrease of structural stiffness. Since then, a large number of papers has been published applying this theory to nanostructures. Here we only quote a few examples <ref type="bibr" target="#b27">( Li, Li, &amp; Hu, 2016;</ref><ref type="bibr" target="#b29">Lu, Guo, &amp; Zhao, 2017;</ref><ref type="bibr" target="#b42">Ş im ¸s ek, 2016;</ref><ref type="bibr" target="#b47">Xu, Wang, Zheng, &amp; Ma, 2017;</ref><ref type="bibr" target="#b48">Zhu &amp; Li, 2017 )</ref>. The application of the theory to bounded domains implies the need to fulfil both standard and non-standard (higher-order) boundary conditions. However, the inherent boundary conditions imposed by the constitutive equations are obviated in these works. Precisely,  pointed out the need of considering this kind of boundary conditions (called constitutive). Moreover,  and <ref type="bibr" target="#b0">Apuzzo, Barretta, Faghidian, Luciano, and de Sciarra (2018)</ref> replaced the non-standard boundary conditions with the constitutive boundary conditions derived from the integral constitutive equations.</p><p>In this work we give a complete picture of the problem showing that standard, non-standard, and constitutive boundary conditions are all of them mandatory. Thus, an ill-posed problem arises with more BCs than those strictly required, which has no solution in general. The model is specifically applied to the case of static axial and bending behaviour of Bernoulli-Euler beams. However, the new insights and conclusions can be extended to other problems related to the application of NSGT to nanostructures.</p><p>The paper is organised as follows. Section 2 is devoted to the general formulation of the NSGT showing the overconstrained character of the problem. In Section 3 , the elastostatic governing equations of the axial and bending behaviour of a Bernoulli-Euler beam are derived from the Principle of Minimum Total Potential Energy, as well as the standard and non-standard boundary conditions, all of them being mandatory to fulfil the equilibrium. The additional boundary conditions, emerging from the integral constitutive equations, are pointed out in Section 4 . In Section 5 the problem is formulated in displacements, showing its ill-posedness. Numerical evidences of the impossibility to accomplish all the boundary conditions (standard, non-standard, and constitutive) of the problem at once are presented in Section 6 through several examples. Section 7 presents a brief discussion on the boundary conditions that have to be fulfilled when the different nonlocal theories are applied to nanobeams. Finally, Section 8 contains the main conclusions of this work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">General formulation of the isotropic nonlocal strain gradient elasticity theory</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">General formulation with integral constitutive equations</head><p>Following the original work by <ref type="bibr" target="#b28">Lim et al. (2015)</ref> , the 3D governing Eq. (1) , boundary conditions at the surface S of the body (2), and initial conditions (3) of the nonlocal strain gradient elasticity theory, derived from the Hamilton's Principle, are</p><formula xml:id="formula_0">∇ • σ + f = ρü , (1) u = U on S U ,<label>(2a)</label></formula><formula xml:id="formula_1">D u = U (1) on S U , (2b) n • σ + L • ( n • σ 1 ) = (0) on S T ,<label>(2c)</label></formula><p>n n :</p><formula xml:id="formula_2">σ 1 = (1) on S T ,<label>(2d)</label></formula><formula xml:id="formula_3">u ( x , t = 0 ) = u 0 ( x ) ,<label>(3a)</label></formula><formula xml:id="formula_4">˙ u ( x , t = 0 ) = v 0 ( x ) ,<label>(3b)</label></formula><p>where n is the unit outward vector normal to the surface of the body, ∇ is the del operator (</p><formula xml:id="formula_5">∇ = ∂ x , ∂ y , ∂ z in cartesian coordinates)</formula><p>, L is the operator defined as <ref type="bibr" target="#b32">( Mindlin, 1965</ref> )</p><formula xml:id="formula_6">L = n S ∇ • n − S ∇ ,<label>(4)</label></formula><p>and S ∇ the surface gradient operator defined as</p><formula xml:id="formula_7">S ∇ = ( I − n n ) • ∇,<label>(5)</label></formula><p>with I i j = δ i j , and D is the normal gradient operator</p><formula xml:id="formula_8">D = n • ∇.<label>(6)</label></formula><p>Additionally, f ( x , t ) is the body force per unit volume, ρ is the mass density, u ( x , t ) is the displacement vector, and σ( x , t ) is the total stress tensor defined as</p><formula xml:id="formula_9">σ = σ 0 − ∇ • σ 1<label>(7)</label></formula><p>with σ 0 ( x , t ) being the classical nonlocal stress tensor, and σ 1 ( x , t ) the higher-order stress tensor, defined as</p><formula xml:id="formula_10">σ 0 ( x , t ) = V k 0 ( | x −x | , κ 0 ) C : ε ( x , t ) d V ,<label>(8)</label></formula><formula xml:id="formula_11">σ 1 ( x , t ) = l 2 V k 1 ( | x −x | , κ 1 ) C : ∇ ε ( x , t ) d V .<label>(9)</label></formula><p>In the two previous constitutive equations, C is the linear isotropic fourth-order tensor ( C i jkl = λδ i j δ kl + μ(δ ik δ jl + δ il δ jk ) , λ and μ being the Lamé constants), ε = 1 / 2((∇ u ) T + ∇ u ) denotes the infinitesimal strain tensor, and l is the material length scale parameter introduced to account for the effect of the strain gradient field. The functions k 0</p><formula xml:id="formula_12">( | x −x | , κ 0 ) and k 1 ( | x −x | , κ 1 )</formula><p>are two nonlocal attenuation kernels, where κ i = e i a ( i = 0 , 1 ) are the nonlocal parameters introduced to consider the effect of nonlocal stress field, and | x −x | is the Euclidean norm of the vector x −x . (0) , <ref type="bibr">(1)</ref> , U and U <ref type="bibr">(1)</ref> appearing in boundary conditions given by Eq. (2) are, respectively, classical traction vector, couple vector, displacement and displacement gradient (imposed on S T or S U , which refer to the surfaces associated to natural and essential boundary conditions, with S T ∪ S U = S and S T ∩ S U = ∅ ). Finally, u 0 ( x ) and v 0 ( x ), appearing in initial conditions given by Eq. <ref type="formula" target="#formula_3">3</ref>, are initial displacement and velocity fields, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">General formulation with differential constitutive equations: constitutive boundary conditions</head><p>According to <ref type="bibr" target="#b13">Eringen (1983)</ref> , it is possible to assume that each nonlocal kernel is the Green's function of a specific</p><formula xml:id="formula_13">linear differential operator L i such that L i [ k i ( | x −x | , κ i ) ] = δ( | x −x | )</formula><p>. One of the most common operators used in nonlocal theories is L i = 1 − κ 2 i ∇ 2 , ∇ 2 being the Laplacian, for which the associated Green's functions k i ( | x −x | , κ i ) can be found in the literature for 1D, 2D and 3D formulations <ref type="bibr" target="#b13">( Eringen, 1983;</ref><ref type="bibr" target="#b19">Ghosh, Sundararaghavan, &amp; Waas, 2014 )</ref>. For instance, for the 3D problem, the corresponding kernel reads</p><formula xml:id="formula_14">k i ( | x −x | , κ i ) = 1 4 πκ 2 i r ( x , x ) e − r ( x , x ) κ i ,<label>(10)</label></formula><formula xml:id="formula_15">with r ( x , x ) = ( x −x ) 2 + ( y −ȳ ) 2 + ( z −z ) 2 in cartesian coordinates.</formula><p>Applying the operator L i (with i = 0 , 1 ) to the corresponding Eqs. <ref type="formula" target="#formula_10">8</ref>and <ref type="formula" target="#formula_11">9</ref>, we get alternative expressions of the nonlocal constitutive equations in differential form</p><formula xml:id="formula_16">1 − κ 2 0 ∇ 2 σ 0 = C : ε ,<label>(11)</label></formula><formula xml:id="formula_17">1 − κ 2 1 ∇ 2 σ 1 = l 2 C : ∇ ε .<label>(12)</label></formula><p>For simplicity, assuming that κ = κ 0 = κ 1 , and combining Eqs. <ref type="formula" target="#formula_9">7</ref>, <ref type="formula" target="#formula_16">11</ref>and <ref type="formula" target="#formula_17">12</ref>we get the constitutive equation for the total stress in differential form <ref type="bibr" target="#b29">( Lu et al., 2017 )</ref> 1</p><formula xml:id="formula_18">− κ 2 ∇ 2 σ = 1 − l 2 ∇ 2 C : ε .<label>(13)</label></formula><p>The Navier equations for the nonlocal strain gradient problem can be obtained by applying the operator L = 1 − κ 2 ∇ 2 to the governing Eq. <ref type="formula">1</ref>and, using standard properties of tensor analysis, we get</p><formula xml:id="formula_19">∇ • 1 − κ 2 ∇ 2 σ + 1 − κ 2 ∇ 2 f = 1 − κ 2 ∇ 2 ρü .<label>(14)</label></formula><p>Now using the constitutive Eq. <ref type="formula" target="#formula_18">13</ref>in <ref type="formula" target="#formula_19">14</ref>we obtain</p><formula xml:id="formula_20">1 − l 2 ∇ 2 ( ∇ • ( C : ε ) ) + 1 − κ 2 ∇ 2 f = 1 − κ 2 ∇ 2 ρü .<label>(15)</label></formula><p>From the definition of C and ε , we can write</p><formula xml:id="formula_21">∇ • ( C : ε ) = ( λ + μ) ∇ ( ∇ • u ) + ∇ 2 u ,<label>(16)</label></formula><p>thus, the Navier equation for the NSGT becomes</p><formula xml:id="formula_22">1 − l 2 ∇ 2 ( λ + μ) ∇ ( ∇ • u ) + ∇ 2 u + 1 − κ 2 ∇ 2 f = 1 − κ 2 ∇ 2 ρü ,<label>(17)</label></formula><p>which is of fourth-order in the displacement variable u , as opposed to the Navier equations for the classical elasticity theory that are of second-order. Therefore, the non-standard BCs (2b) or (2d) are required for the solution of the problem. Nonetheless, the integral character of the constitutive equation imposes additional boundary conditions. Particularising the integral constitutive equations for σ 0 ( Eq. (8) ) and σ 1 ( Eq. (9) ) at the boundary x = x S , and using Eqs. <ref type="formula" target="#formula_16">11</ref>and <ref type="formula" target="#formula_17">12</ref>, we get the corollaries</p><formula xml:id="formula_23">σ 0 ( x S , t ) = V 1 4 πκ 2 r ( x S , x ) e − r ( x S , x ) κ σ 0 ( x , t ) d V − V 1 4 πκ 2 r ( x S , x ) e − r ( x S , x ) κ κ 2 ∇ 2 x σ 0 ( x , t ) d V ,<label>(18)</label></formula><formula xml:id="formula_24">σ 1 ( x S , t ) = V 1 4 πκ 2 r ( x S , x ) e − r ( x S , x ) κ σ 1 ( x , t ) d V − V 1 4 πκ 2 r ( x S , x ) e − r ( x S , x ) κ κ 2 ∇ 2 x σ 1 ( x , t ) d V .<label>(19)</label></formula><p>Thus, the stress field derived from the displacement solution u fulfilling equilibrium (Hamilton's Principle), i.e. the Navier Eq. (17) and the standard and non-standard boundary conditions defined in (2), has also to satisfy the conditions defined by Eqs. (18) and (19) at the boundary points x = x S , and the problem becomes overconstrained. Summarising, the stress field fulfilling equilibrium is different to that obtained through the nonlocal elastic constitutive laws, for the same displacement field.</p><p>The one-dimensional case is enlightening and permits to reveal the constitutive boundary conditions for a bounded domain x ∈ [ a, b ] in a simple way. In 1D, the kernel becomes</p><formula xml:id="formula_25">k ( | x −x | , κ ) = 1 2 κ e − | x −x | κ ,<label>(20)</label></formula><p>which constitutes the Green function of the 1D linear differential operator L = 1 − κ 2 ∂ xx <ref type="bibr" target="#b13">( Eringen, 1983;</ref><ref type="bibr" target="#b19">Ghosh et al., 2014 )</ref>. The integral constitutive equations for σ 0 is</p><formula xml:id="formula_26">σ 0 ( x, t ) = b a 1 2 κ e − | x −x | κ E ε ( x , t ) d x ,<label>(21)</label></formula><p>or, in differential form</p><formula xml:id="formula_27">1 − κ 2 ∂ xx σ 0 = Eε,<label>(22)</label></formula><p>Now setting x = a in Eq. <ref type="formula" target="#formula_26">21</ref>, substituting E ε by (1 − κ 2 ∂ xx ) σ 0 , and integrating by parts twice, we get</p><formula xml:id="formula_28">σ 0 ( a, t ) = − κ 2 e ( a −b ) κ ∂ x σ 0 ( b, t ) − ∂ x σ 0 ( a, t ) + 1 2 −e ( a −b ) κ σ 0 ( b, t ) + σ 0 ( a, t ) ,<label>(23)</label></formula><p>Similarly, for x = b we get</p><formula xml:id="formula_29">σ 0 ( b, t ) = − κ 2 ∂ x σ 0 ( b, t ) − e ( a −b ) κ ∂ x σ 0 ( a, t ) + 1 2 σ 0 ( b, t ) − e ( a −b ) κ σ 0 ( a, t ) .<label>(24)</label></formula><p>Eqs. <ref type="formula" target="#formula_28">23</ref>and <ref type="formula" target="#formula_29">24</ref>are equivalent to</p><formula xml:id="formula_30">σ 0 ( a, t ) − κ ∂ x σ 0 ( a, t ) = 0 ,<label>(25a)</label></formula><formula xml:id="formula_31">σ 0 ( b, t ) + κ ∂ x σ 0 ( b, t ) = 0 ,<label>(25b)</label></formula><p>which constitute the constitutive boundary conditions for σ 0 in the 1D case. The constitutive equation for higher-order stress σ 1 is</p><formula xml:id="formula_32">σ 1 ( x, t ) = l 2 b a 1 2 κ e − | x −x | κ E ∂ x ε ( x , t ) d x ,<label>(26)</label></formula><p>or, in differential form</p><formula xml:id="formula_33">1 − κ 2 ∂ xx σ 1 = l 2 E∂ x ε.<label>(27)</label></formula><p>Following a similar procedure, we get the constitutive boundary conditions for σ 1</p><formula xml:id="formula_34">σ 1 ( a, t ) − κ ∂ x σ 1 ( a, t ) = 0 , (28a) σ 1 ( b, t ) + κ ∂ x σ 1 ( b, t ) = 0 .<label>(28b)</label></formula><p>The conclusions drawn from the analysis of the general nonlocal strain gradient theory are illustrated in the following sections by computations of simple one-dimensional models, which provide evidence of the impossibility to satisfy all mandatory boundary conditions at once, and reveal the ill-posedness of this theory. The selected examples are elastostatic, but the inconsistency is of general nature, not limited to static one-dimensional problems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Application to 1D nonlocal strain gradient elastostatic problem: Bernoulli-Euler beam</head><p>In this section we present the integro-differential formulation of the nonlocal strain gradient model applied to the study of the static axial and bending behaviour of a Bernoulli-Euler beam.</p><p>Let us consider a beam of length L , constant Young modulus E , and uniform section with area A and second order moment I , submitted to both axial q x and transverse q z distributed loads. The variables x, y, z represent, respectively, the axial, out-of-plane, and transverse coordinates. The variables U x , U y , U z correspond to the displacements in the coordinate directions. Using the kinematics of the Bernoulli-Euler beam, we have</p><formula xml:id="formula_35">U x = u − z∂ x w ; U y = 0 ; U z = w,<label>(29)</label></formula><p>where u and w represent, respectively, the axial and transverse displacement of the cross-section's centroid. The longitudinal strain in x direction, ε, follows the expression</p><formula xml:id="formula_36">ε = ∂ x U x = ∂ x u − z ∂ xx w.<label>(30)</label></formula><p>The normal stress in x direction is given by the 1D nonlocal strain gradient integral constitutive equation <ref type="bibr" target="#b28">( Lim et al., 2015 )</ref> </p><formula xml:id="formula_37">σ = σ 0 − ∂ x σ 1 ,<label>(31)</label></formula><p>where σ 0 and σ 1 represent the nonlocal and higher order stresses, respectively, defined in Eqs. (21) and (26) . Assuming the previous hypotheses, the axial force is given by</p><formula xml:id="formula_38">N = A σ dA = N 0 − ∂ x N 1 (32) with N 0 = EA L 0 k ( | x −x | , κ ) ∂ x u d x ,<label>(33)</label></formula><p>and</p><formula xml:id="formula_39">N 1 = l 2 EA L 0 k ( | x −x | , κ ) ∂ x x u d x ,<label>(34)</label></formula><p>being the nonlocal and higher order axial forces, respectively. Likewise, the bending moment is given by</p><formula xml:id="formula_40">M = A σ z dA = M 0 − ∂ x M 1 (35) with M 0 = −EI L 0 k ( | x −x | , κ ) ∂ x x w d x ,<label>(36)</label></formula><p>and</p><formula xml:id="formula_41">M 1 = −l 2 EI L 0 k ( | x −x | , κ ) ∂ x x x w d x ,<label>(37)</label></formula><p>being the nonlocal and higher order bending moments, respectively. The governing equation and the corresponding boundary conditions are derived applying the Principle of Minimum Total</p><p>Potential Energy δ = δU − δV = 0 , where , U, and V are the total potential energy, the elastic strain energy, and the potential energy, respectively. Given the following expression for the elastic strain energy</p><formula xml:id="formula_42">U = U N 0 + U N 1 + U M 0 + U M 1 (38) with U N 0 = 1 2 EA L 0 L 0 k ( | x −x | , κ ) ∂ x u d x ∂ x u dx (39) U N 1 = 1 2 l 2 EA L 0 L 0 k ( | x −x | , κ ) ∂ x x u d x ∂ xx u dx,<label>(40)</label></formula><formula xml:id="formula_43">U M 0 = 1 2 EI L 0 L 0 k ( | x −x | , κ ) ∂ x x w d x ∂ xx w dx (41) U M 1 = 1 2 l 2 EI L 0 L 0 k ( | x −x | , κ ) ∂ x x x w d x ∂ xxx w dx,<label>(42)</label></formula><p>the first variation </p><formula xml:id="formula_44">δU = δU N 0 + δU N 1 + δU M 0 + δU M 1 can</formula><formula xml:id="formula_45">δU N 0 = EA L 0 k ( | x −x | , κ ) ∂ x u d x δu L 0 − EA L 0 ∂ x L 0 k ( | x −x | , κ ) ∂ x u d x δu dx,<label>(43)</label></formula><formula xml:id="formula_46">δU N 1 = l 2 EA L 0 k ( | x −x | , κ ) ∂ x x u d x δ∂ x u L 0 − l 2 EA∂ x L 0 k ( | x −x | , κ ) ∂ x x u d x δu L 0 + l 2 EA L 0 ∂ xx L 0 k ( | x −x | , κ ) ∂ x x u d x δu dx,<label>(44)</label></formula><formula xml:id="formula_47">δU M 0 = EI L 0 k ( | x −x | , κ ) ∂ x x w d x δ∂ x w L 0 − EI∂ x L 0 k ( | x −x | , κ ) ∂ x x w d x δw L 0 + EI L 0 ∂ xx L 0 k ( | x −x | , κ ) ∂ x x w d x δw dx,<label>(45)</label></formula><formula xml:id="formula_48">δU M 1 = l 2 EI L 0 k ( | x −x | , κ ) ∂ x x x w d x δ∂ xx w L 0 − l 2 EI∂ x L 0 k ( | x −x | , κ ) ∂ x x x w d x δ∂ x w L 0 + l 2 EI∂ xx L 0 k ( | x −x | , κ ) ∂ x x x w d x δw L 0 − l 2 EI L 0 ∂ xxx L 0 k ( | x −x | , κ ) ∂ x x x w d x δw dx.<label>(46)</label></formula><p>Similarly, the first variation of the potential energy becomes</p><formula xml:id="formula_49">δV = L 0 ( q x δu + q z δw ) dx.<label>(47)</label></formula><p>Thus, according to the Principle of Minimum Total Potential Energy and using the Fundamental Lemma of Variational Calculus <ref type="bibr" target="#b39">( Reddy, 2002 )</ref>, we get the Euler equations</p><formula xml:id="formula_50">∂ x N + q x = 0 ,<label>(48)</label></formula><formula xml:id="formula_51">∂ xx M + q z = 0 ,<label>(49)</label></formula><p>with the following pairs of essential and natural boundary conditions at x = 0 and at</p><formula xml:id="formula_52">x = L u = 0 ; or N = 0 ,<label>(50)</label></formula><formula xml:id="formula_53">∂ x u = 0 ; or N 1 = 0 ,<label>(51)</label></formula><formula xml:id="formula_54">w = 0 ; or ∂ x M = 0 ,<label>(52)</label></formula><formula xml:id="formula_55">∂ x w = 0 ; or M = 0 ,<label>(53)</label></formula><formula xml:id="formula_56">∂ xx w = 0 ; or M 1 = 0 .<label>(54)</label></formula><p>According to the previous equations, the problems of axial and bending vibrations become uncoupled, as in the local elasticity theory.</p><p>It is worth to remark that, similarly to the standard boundary conditions ( Eqs. (50) , (52), (53) ), the fulfillment of nonstandard boundary conditions ( Eqs. (51) , (54) ) -whether essential or natural-is necessary, if the equilibrium condition δ = 0 is to be satisfied.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Nondimensional problem formulation</head><p>The problem can be formulated in terms of the following nondimensional variables and parameters:</p><formula xml:id="formula_57">ū = u L ;w = w L ; ξ = x L ; s = x L ; N = 1 EA N;N 0 = 1 EA N 0 ;N 1 = 1 EAL N 1 ; M = L EI M;M 0 = L EI M 0 ;M 1 = 1 EI M 1 ; q x = L EA q x ;q z = L 3 EI q z ; h = κ L ; g = l L ;<label>(55)</label></formula><p>leading to the following governing equations</p><formula xml:id="formula_58">∂ ξN + q x = 0 ,<label>(56)</label></formula><formula xml:id="formula_59">∂ ξξM + q z = 0 ,<label>(57)</label></formula><p>and boundary conditions at ξ = 0 and ξ = 1</p><formula xml:id="formula_60">ū = 0 ; or N = 0 ,<label>(58)</label></formula><formula xml:id="formula_61">∂ ξū = 0 ; or N 1 = 0 ,<label>(59)</label></formula><formula xml:id="formula_62">w = 0 ; or ∂ ξM = 0 ,<label>(60)</label></formula><formula xml:id="formula_63">∂ ξw = 0 ; or M = 0 ,<label>(61)</label></formula><formula xml:id="formula_64">∂ ξξw = 0 ; or M 1 = 0 .<label>(62)</label></formula><p>The integral constitutive equations for nondimensional axial forces and bending moments reads</p><formula xml:id="formula_65">N = N 0 − ∂ ξN 1 ,<label>(63)</label></formula><formula xml:id="formula_66">M = M 0 − ∂ ξM 1 ,<label>(64)</label></formula><p>where N 0 , N 1 , M 0 and M 1 are given by the expressions</p><formula xml:id="formula_67">N 0 = 1 0 1 2 h e − | ξ −s | h ∂ s ū ds,<label>(65)</label></formula><formula xml:id="formula_68">N 1 = g 2 1 0 1 2 h e − | ξ −s | h ∂ ss ū ds,<label>(66)</label></formula><formula xml:id="formula_69">M 0 = − 1 0 1 2 h e − | ξ −s | h ∂ ss w ds,<label>(67)</label></formula><formula xml:id="formula_70">M 1 = −g 2 1 0 1 2 h e − | ξ −s | h ∂ sss w ds.<label>(68)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Constitutive boundary conditions for the Bernoulli-Euler beam</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Axial problem</head><p>The equivalence between the integral equation (integral constitutive equation) and the BVP (differential constitutive equation with constitutive boundary conditions), that has been stated in Section 2.2 (see discussion for the 1D problem), can be generalised as follows <ref type="bibr" target="#b37">( Polyanin &amp; Manzhirov, 2008 )</ref>.</p><p>The linear Fredholm integral equation of first kind with exponential kernel, of the general form</p><formula xml:id="formula_71">b a e μ| ξ −s | ϕ ds = f, −∞ &lt; a &lt; b &lt; ∞<label>(69)</label></formula><p>is equivalent to a boundary value problem consisting of the ODE</p><formula xml:id="formula_72">ϕ = 1 2 μ f − μ 2 f<label>(70)</label></formula><p>equipped with boundary conditions</p><formula xml:id="formula_73">f ( a ) + μ f ( a ) = 0 ; f ( b ) − μ f ( b ) = 0 ;<label>(71)</label></formula><p>with ( • ) representing spatial derivative, for simplicity. Thus, the integral Eq. (69) implicitly contains the boundary conditions (71) , which are necessary and sufficient for the existence and unicity of its solution . </p><formula xml:id="formula_74">ū = −h 2 N 0 + N 0<label>(72)</label></formula><p>equipped with -necessary and sufficient-constitutive boundary conditions</p><formula xml:id="formula_75">N 0 ( 0 ) − h N 0 ( 0 ) = 0 ;N 0 ( 1 ) + h N 0 ( 1 ) = 0 .<label>(73)</label></formula><p>Likewise, the integral constitutive Eq. (66) is fully equivalent to the differential constitutive equation</p><formula xml:id="formula_76">ū = − h 2 g 2 N 1 + 1 g 2 N 1 (74)</formula><p>equipped with -necessary and sufficient-constitutive boundary conditions</p><formula xml:id="formula_77">N 1 ( 0 ) − h N 1 ( 0 ) = 0 ;N 1 ( 1 ) + h N 1 ( 1 ) = 0 .<label>(75)</label></formula><p>From these two BVPs, an additional differential relation between the total axial force and the longitudinal strain at the cross-section's centroid can be derived. From Eqs. (63) , (72) , and (74) we get the constitutive ODE</p><formula xml:id="formula_78">ū − g 2 ū = N − h 2 N ,<label>(76)</label></formula><p>for which the corresponding constitutive BCs have to be obtained. Differentiating Eq. <ref type="formula" target="#formula_65">63</ref> </p><formula xml:id="formula_79">N = N 0 − 1 h 2 N 1 − g 2 ū .<label>(77)</label></formula><p>Specialising Eq. (77) for ξ = 0 and using BCs (73) and (75) , we get</p><formula xml:id="formula_80">N ( 0 ) − 1 h N ( 0 ) = g 2 h 2 ū ( 0 ) .<label>(78)</label></formula><p>Similarly for ξ = 1 , we get</p><formula xml:id="formula_81">N ( 1 ) + 1 h N ( 1 ) = g 2 h 2 ū ( 1 ) .<label>(79)</label></formula><p>As it has been stated by  for a formally equivalent problem, the constitutive boundary conditions (78) and (79) are necessary and sufficient for the existence and unicity of the solution of the integral constitutive relation (63) . Likewise, the integral constitutive relation (63) is fully equivalent to the differential constitutive Eq. (76) equipped with constitutive BCs (78) and (79) .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Bending problem</head><p>As in the case of the axial problem, the nonlocal constitutive relations (67) and (68) relate the bending moments with the curvature (and its derivative) through the linear Fredholm integral equation <ref type="formula" target="#formula_71">69</ref>, with a = 0 , b = 1 , μ = −1 /h, and ϕ = ∂ ss w , f = −2 h M 0 for Eq. <ref type="formula" target="#formula_69">67</ref>, and ϕ = ∂ sss w , f = −2 h/g 2 M 1 for Eq. (68) . Accordingly, the integral constitutive Eq. <ref type="formula" target="#formula_69">67</ref>is fully equivalent to the differential constitutive equation</p><formula xml:id="formula_82">w = h 2 M 0 −M 0<label>(80)</label></formula><p>equipped with -necessary and sufficient-constitutive boundary conditions</p><formula xml:id="formula_83">M 0 ( 0 ) − h M 0 ( 0 ) = 0 ;M 0 ( 1 ) + h M 0 ( 1 ) = 0 .<label>(81)</label></formula><p>Likewise, the integral constitutive Eq. (68) is fully equivalent to the differential constitutive equation</p><formula xml:id="formula_84">w = h 2 g 2 M 1 − 1 g 2 M 1<label>(82)</label></formula><p>equipped with -necessary and sufficient-constitutive boundary conditions</p><formula xml:id="formula_85">M 1 ( 0 ) − h M 1 ( 0 ) = 0 ;M 1 ( 1 ) + h M 1 ( 1 ) = 0 .<label>(83)</label></formula><p>From these two BVPs, an additional differential relation between the total bending moment and the curvature can be derived. From Eqs. (64) , (80) , and (82) we get the constitutive ODE</p><formula xml:id="formula_86">−w + g 2 w IV = M − h 2 M ,<label>(84)</label></formula><p>for which the corresponding constitutive BCs have to be obtained. Differentiating Eq. (64) and considering Eq. (82) we get</p><formula xml:id="formula_87">M = M 0 − 1 h 2 M 1 + g 2 w .<label>(85)</label></formula><p>Specializing Eq. (85) for ξ = 0 and using BCs (81) and (83) , we get</p><formula xml:id="formula_88">M ( 0 ) − 1 h M ( 0 ) = − g 2 h 2 w ( 0 ) .<label>(86)</label></formula><p>Similarly for ξ = 1 , we get</p><formula xml:id="formula_89">M ( 1 ) + 1 h M ( 1 ) = − g 2 h 2 w ( 1 ) .<label>(87)</label></formula><p>As stated by  , the constitutive boundary conditions (86) and (87) are necessary and sufficient for the existence and unicity of the solution of the integral constitutive relation (64) . Likewise, the integral constitutive relation (64) is fully equivalent to the differential constitutive Eq. (84) equipped with constitutive BCs (86) and (87) .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Formulation of the Bernoulli-Euler beam problem in the displacement variable</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Axial problem</head><p>The problem of axial deformation of a beam using NSGT can be formulated in terms of the displacement variable ū as follows. From Eqs. (56) and (76) , the total axial force is written in terms of ū as</p><formula xml:id="formula_90">N = −h 2 q x + ū − g 2 ū .<label>(88)</label></formula><p>Integrating the constitutive differential Eq. (74) with constitutive boundary conditions (75) , the higher-order axial force N 1 can be written in terms of the displacement variable ū as</p><formula xml:id="formula_91">N 1 = e − ξ h 2 h e 2 ξ h 1 ξ e − ρ h g 2 ū (ρ) dρ + ξ 0 e ρ h g 2 ū (ρ) dρ .<label>(89)</label></formula><p>It is worth to mention that the field N 0 satisfying the differential constitutive Eq. (72) and constitutive boundary conditions (73) , can be obtained from the expressions of N ( Eq. (88) ) and N 1 ( Eq. (89) ), by using Eq. (63) . Now taking N from Eq. (88) , the governing Eq. (56) can be written as</p><formula xml:id="formula_92">1 − g 2 ∂ ξξ ū + 1 − h 2 ∂ ξξ q x = 0 ,<label>(90)</label></formula><p>which has to satisfy the following boundary conditions:</p><p>• Two standard boundary conditions: given by Eq. (58) .</p><p>• Two non-standard boundary conditions: given by Eq. (59) .</p><p>• Two constitutive boundary conditions for N : using Eq. <ref type="formula" target="#formula_90">88</ref>, the constitutive BCs (78) and (79) can be written in terms of the displacement variable ū as</p><formula xml:id="formula_93">h q x ( 0 ) − h q x ( 0 ) − 1 h ū ( 0 ) + 1 − g 2 h 2 ū ( 0 ) + g 2 h ū ( 0 ) − g 2 ū IV ( 0 ) = 0 ,<label>(91)</label></formula><formula xml:id="formula_94">−h q x ( 1 ) + h q x ( 1 ) + 1 h ū ( 1 ) + 1 − g 2 h 2 ū ( 1 ) − g 2 h ū ( 1 ) − g 2 ū IV ( 1 ) = 0 .<label>(92)</label></formula><p>The previous six boundary conditions are all of them mandatory, standard and non-standard in order to fulfil equilibrium ( δ = 0 ), and constitutive since they are intrinsic to the nonlocal strain gradient constitutive equation given by expression (63) . On the other side, the governing Eq. (90) is of fourth-order, thus the problem has more boundary conditions than those required. The issue is not solved either by using the integro-differential formulation presented in Section 3 , since the constitutive boundary conditions are necessary for the existence of the solution <ref type="bibr" target="#b37">Polyanin &amp; Manzhirov, 2008;</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Bending problem</head><p>The problem of static bending of a Bernoulli-Euler beam using NSGT can be formulated in terms of the displacement variable w as follows. From Eqs. (57) and (84) , the total bending moment can be written in terms of w as</p><formula xml:id="formula_95">M = −h 2 q z −w + g 2 w IV .<label>(93)</label></formula><p>Integrating the constitutive differential Eq. (82) with constitutive boundary conditions (83) , the higher-order moment M 1 can be written in terms of the displacement variable w as</p><formula xml:id="formula_96">M 1 = − e − ξ h 2 h e 2 ξ h 1 ξ e − ρ h g 2 w (ρ) dρ + ξ 0 e ρ h g 2 w (ρ) dρ .<label>(94)</label></formula><p>It is worth to mention that the field M 0 satisfying the differential constitutive Eq. (80) and constitutive boundary conditions (81) , can be obtained from the expressions of M ( Eq. (93) ) and M 1 ( Eq. (94) ), by using Eq. (64) . Now taking M from Eq. (93) , the governing Eq. (57) can be written as</p><formula xml:id="formula_97">1 − g 2 ∂ ξξ w IV − 1 − h 2 ∂ ξξ q z = 0 ,<label>(95)</label></formula><p>which has to satisfy the following boundary conditions:</p><p>• Four standard boundary conditions: given by Eqs. (60) and (61) .</p><p>• Two non-standard boundary conditions: given by Eq. (62) .</p><p>• Two constitutive boundary conditions for M : using Eq. (93) , the constitutive BCs (86) and (87) can be written in terms of the displacement variable w as</p><formula xml:id="formula_98">h q z ( 0 ) − h q z ( 0 ) + 1 h w ( 0 ) − 1 − g 2 h 2 w ( 0 ) − g 2 h w IV ( 0 ) + g 2 w V ( 0 ) = 0 , (96) h q z ( 1 ) + h q z ( 1 ) + 1 h w ( 1 ) + 1 − g 2 h 2 w ( 1 ) − g 2 h w IV ( 1 ) − g 2 w V ( 1 ) = 0 .<label>(97)</label></formula><p>The previous eight boundary conditions are all of them mandatory for the same reasons stated in the axial problem. On the other side, the governing Eq. (95) is of sixth-order, thus the bending problem has also more boundary conditions than those required. Nor is this situation solved by using the integro-differential formulation presented in Section 3 , since the constitutive boundary conditions are necessary for the existence of the solution <ref type="bibr" target="#b37">Polyanin &amp; Manzhirov, 2008;</ref>.</p><p>In the following section, three study cases will be presented to reveal that the whole set of boundary conditions cannot be simultaneously satisfied, thus leading to ill-posed problems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Case study</head><p>Next, three study cases, one for the axial problem and two for the bending problem, with different support conditions and loads will be solved by integrating the governing equation under standard and constitutive boundary conditions. Subsequently, the non-standard boundary conditions (thus equilibrium) will be checked in order to reveal the inconsistency of the model. Clearly, integration of the governing equation under a different set of boundary conditions would also lead to a solution which is incompatible with the remaining ones.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">Axial problem: cantilever beam with linear distributed load</head><p>Let us consider a cantilever beam clamped at ξ = 0 and submitted to a linear distributed load q x = q ξ . Integration of the governing Eq. (90) under the standard boundary conditions ( u ( 0 ) = 0 , N ( 1 ) = −h 2 q + ū ( 1 ) − g 2 ū = 0 ), as well as constitutive boundary conditions (91) and (92) , leads to the displacement field ū = q 6</p><formula xml:id="formula_99">ξ −6 g 2 − ξ 2 + 3 + 6 h 2 ξ + 3 h + q 2 csch 1 g 2(g − h )(g + h ) sinh ξ g − h sinh 1 − ξ g ,<label>(98)</label></formula><p>from which the total and higher order axial forces can be derived using Eqs. (88) and (89) respectively</p><formula xml:id="formula_100">N = q 2 1 − ξ 2 ,<label>(99)</label></formula><formula xml:id="formula_101">N 1 = g q coth 1 g − 1 e − 2 gξ + g+ hξ gh 8(g − h )(g + h ) −2 h 2 e ξ g + 1 g + 3 ξ h − 2 ghe 2 g + 2 ξ h + 1 h + 2 ghe 2 ξ (g+ h ) g +1 h + 4 g(g − h )(g + h ) e (2 ξ +1)(g+ h ) gh − 4 g(g − h )(g + h ) e 1 g + 2 ξ h + 1 h + 4 h (g − h )(g + h ) e (ξ +1)(g+ h ) gh + 2(g + 1) h h 2 − g 2 e ξ ( 1 g + 3 h ) + 2(g − 1) h (g − h )(g + h ) e ξ +2 g + 3 ξ h − h −2 g 3 + 2 gh 2 + g − h e ξ (g+ h )+ g gh + h −2 g 3 + 2 gh 2 + g + h e ξ (g+ h )+ g+2 h gh + 4 gξ (g − h )(g + h ) e ξ g + 2 ξ h + 1 h − 4 gξ (g − h )(g + h ) e 2 gξ + g+ h (ξ +2) gh .<label>(100)</label></formula><p>It is important to highlight that the previous displacement field given by Eq. (98) does not satisfy the Principle of Minimum Total Potential Energy (consequently, equilibrium is not fulfilled) since none of the non-standard boundary conditions (59) are fulfilled neither at ξ = 0 nor at ξ = 1 . The axial strain field ū reads</p><formula xml:id="formula_102">ū = q csch 1 g h cosh 1 −ξ g + 2(g − h )(g + h ) cosh ξ g − g q 2 g 2 − 2 h 2 + ξ 2 − 1 2 g ,<label>(101)</label></formula><p>which, in general (unless specific values of the nonlocal parameters h and g are chosen), is not zero neither at ξ = 0 nor at ξ = 1 . <ref type="figure" target="#fig_1">Fig. 1</ref> a shows the axial strain along the cantilever beam for a given set of values q = 0 . 1 , h = 0 . 05 , and g = 0 . 1 with the following non-nil values at the ends: ū ( 0 ) = 7 . 425 • 10 −2 and ū ( 1 ) = 6 . 752 • 10 −3 . Regarding the higher-order axial force N 1 , it can be seen from expression (100) that, in a general case, is not zero neither at ξ = 0 nor at ξ = 1 . <ref type="figure" target="#fig_1">Fig. 1 b</ref> shows the higher-order axial force along the cantilever beam, with the following non-nil values at the ends: N 1 ( 0 ) = −8 . 583 • 10 −4 and N 1 ( 1 ) = −2 . 251 • 10 −4 . Thus, the displacement field given by Eq. (98) is not in equilibrium. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">Bending problem: cantilever beam with uniformly distributed load</head><p>Let us consider a cantilever beam clamped at ξ = 0 and submitted to a uniformly distributed load q z = q . Integration of the governing Eq. (95) under the standard boundary conditions ( w</p><formula xml:id="formula_103">( 0 ) = 0 , w ( 0 ) = 0 , M ( 1 ) = −h 2 q −w ( 1 ) + g 2 w IV ( 1 ) = 0 , M ( 1 ) = −w ( 1 ) + g 2 w V</formula><p>( 1 ) = 0 ), as well as constitutive boundary conditions (96) and (97) , leads to the displacement field</p><formula xml:id="formula_104">w = q ξ 4 24 −q ξ 3 6 + 1 4 q 2 g 2 − 2 h 2 + 1 ξ 2 + 1 2 q −2 g 2 + 2 h 2 + h ξ − g q 2 g 2 − 2 h 2 − h 2 e 2 /g − 1 e ξ g + e 2 g − ξ g − e 2 /g + 1 ,<label>(102)</label></formula><p>from which the total and higher-order bending moments can be derived using Eqs. (93) and (94) respectively</p><formula xml:id="formula_105">M = −q ξ 2 2 − ξ + 1 2 ,<label>(103)</label></formula><formula xml:id="formula_106">M 1 = g q coth 1 g − 1 e 1 g − ξ +1 h 4(g − h )(g + h ) h −e 2 ξ h 2 g h 2 − g 2 sinh 1 g + 2 g 2 − h (2 h + 1) + e 1 h h g −2 g 2 + 2 h 2 − 1 sinh 1 g + 2 g 2 − h (2 h + 1) cosh 1 g + 2 ge ξ +1 h −2 g 2 + 2 h 2 + h sinh 1 − ξ g − 2(ξ − 1)(g − h )(g + h ) sinh 1 g .<label>(104)</label></formula><p>The displacement field given by Eq. (102) does not satisfy the Principle of Minimum Total Potential Energy (consequently, equilibrium is not fulfilled) since none of the non-standard boundary conditions (62) are fulfilled neither at ξ = 0 nor at ξ = 1 . The curvature field w reads</p><formula xml:id="formula_107">w = g q 2 g 2 − 2 h 2 + (ξ − 1) 2 + q −2 g 2 + 2 h 2 + h csch 1 g cosh 1 −ξ g 2 g ,<label>(105)</label></formula><p>which, in general (unless specific values of the nonlocal parameters h and g are chosen), is not zero neither at ξ = 0 nor at ξ = 1 . <ref type="figure" target="#fig_2">Fig. 2</ref> a shows the curvature along the cantilever beam for a given set of values q = 0 . 1 , h = 0 . 05 , and g = 0 . 1 with the following non-nil values at the ends: w ( 0 ) = 6 . 825 • 10 −2 and w ( 1 ) = 7 . 516 • 10 −4 . Regarding the higher-order bending moment M 1 , it can be seen from expression (104) that, in a general case, is not zero neither at ξ = 0 nor at ξ = 1 . <ref type="figure" target="#fig_2">Fig. 2 b</ref> shows the higher-order bending moment along the cantilever beam, with the following non-nil values at the ends:</p><p>M 1 ( 0 ) = 1 . 058 • 10 −3 and M 1 ( 1 ) = 2 . 505 • 10 −5 . Thus, the displacement field given by Eq. <ref type="formula" target="#formula_104">102</ref>is not in equilibrium.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">Bending problem: simply supported beam with uniformly distributed load</head><p>Let us consider a simply supported beam submitted to a uniformly distributed load q z = q . Integration of the governing Eq. (95) under the standard boundary conditions ( w ( 0 w ( 1 ) + g 2 w IV ( 1 ) = 0 ), as well as constitutive boundary conditions <ref type="formula">96</ref>and <ref type="formula" target="#formula_98">97</ref>, leads to the displacement field</p><formula xml:id="formula_108">) = 0 , M ( 0 ) = −h 2 q −w ( 0 ) + g 2 w IV ( 0 ) = 0 , w ( 1 ) = 0 , M ( 1 ) = −h 2 q −</formula><formula xml:id="formula_109">w = q ξ 4 24 −q ξ 3 12 + 1 2 q (g − h )(g + h ) ξ 2 + 1 24 q −12 g 2 + 12 h 2 + 1 ξ − 1 2 g q (g − h )(g + h ) sinh ξ g − coth 1 2 g cosh ξ g − 1 ,<label>(106)</label></formula><p>from which the total and higher-order bending moments can be derived using Eqs. <ref type="formula" target="#formula_95">93</ref>and <ref type="formula" target="#formula_96">94</ref>respectively</p><formula xml:id="formula_110">M = −q 2 ξ 2 − ξ ,<label>(107)</label></formula><formula xml:id="formula_111">M 1 = g q 4 − 4 e 1 g e 1 g (1 − 2 g) + 2 g + 1 he ξ −1 h + −2 g + e 1 g (2 g − 1) − 1 he − ξ h + 2 g e 1 g − 1 (2 ξ − 1) + e 1 −ξ g − e ξ g .<label>(108)</label></formula><p>As in the previous cases, the displacement field given by Eq. (106) does not satisfy the Principle of Minimum Total Potential Energy (consequently, equilibrium is not fulfilled) since none of the non-standard boundary conditions (62) are accomplished neither at ξ = 0 nor at ξ = 1 . The curvature field w reads</p><formula xml:id="formula_112">w = g q 2 g 2 − 2 h 2 + (ξ − 1) ξ + q h 2 − g 2 csch 1 2 g cosh 1 −2 ξ 2 g 2 g ,<label>(109)</label></formula><p>which, in general, is not zero neither at ξ = 0 nor at ξ = 1 . <ref type="figure" target="#fig_3">Fig. 3</ref> a shows the distribution of curvatures along the simply supported beam for a given set of parameters q = 0 . 1 , h = 0 . 05 and g = 0 . 1 , with the following non-nil values at the ends w ( 0 ) = w ( 1 ) = −3 . 0 0 0 • 10 −3 . Regarding the higher-order bending moment M 1 , it can be seen from expression (108) that, in general, is not zero neither at ξ = 0 nor at ξ = 1 . <ref type="figure" target="#fig_3">Fig. 3</ref> b shows the distribution of higher-order bending moment along the beam, with the following non-nil values at the ends M 1 ( 0 ) = −M 1 ( 1 ) = 1 . 0 0 0 • 10 −4 . Thus, the displacement field given by Eq. (106) is not in equilibrium.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Discussion on the different nonlocal theories</head><p>In the previous section we showed the inconsistency of the nonlocal strain gradient theory when applied to bounded solids. The drawback has been extensively exemplified by the study of a 1D elastostatic problem: a Bernoulli-Euler beam submitted to axial and transverse loads. The solution of this problem has to satisfy three kinds of boundary conditions: standard, non-standard and constitutive. The standard and non-standard boundary conditions come from the application of Principle of Minimum Total Potential Energy and they are necessary to fulfil equilibrium. The non-standard ones are a consequence of the consideration of the strain gradient field in the formulation of the model. The constitutive boundary conditions arise from the integral character of the constitutive equations, and they have also to be accomplished. Therefore, as it has been presented in the previous sections, the studied problem is ill-posed since the number of boundary conditions is higher than the order of the differential operator. In this section we discuss the consistency of other nonlocal elastic theories which also use the constitutive equations in integral form, namely, a) nonlocal strain-driven elasticity; b) two-phase local/non-local strain-driven elasticity; c) nonlocal stress-driven elasticity; d) two-phase local/non-local stress-driven elasticity.</p><p>For each nonlocal theory, the 1D integral constitutive equation, as well as the governing equation (in terms of displacements) are provided for the static problem of a Bernoulli-Euler beam submitted to axial and transverse loads. a) Nonlocal strain-driven elasticity . This model was originally prosed by <ref type="bibr" target="#b13">Eringen (1983)</ref> and, since the paper by <ref type="bibr" target="#b36">Peddieson et al. (2003)</ref> , it was extensively applied to nanostructures. In this model the stress in a given point depends on the strain in the whole domain through a positive-decaying kernel function.</p><p>-1D Constitutive equation</p><formula xml:id="formula_113">σ ( x ) = b a k ( | x − x | , κ ) E ε ( x ) d x .<label>(110)</label></formula><p>-Governing equation for the axial problem</p><formula xml:id="formula_114">EA ∂ xx u + 1 − κ 2 ∂ xx q x = 0 .<label>(111)</label></formula><p>-Governing equation for the bending problem</p><formula xml:id="formula_115">EI ∂ xxxx w − 1 − κ 2 ∂ xx q z = 0 .<label>(112)</label></formula><p>b) Two-Phase local/nonlocal strain-driven elasticity. The model consists in a convex combination of the local response and the non-local strain-driven one given by Eq. (110) . It was proposed by <ref type="bibr" target="#b11">Eringen (1972a</ref><ref type="bibr" target="#b14">Eringen ( , 1987</ref> and later applied to nanostructures by different authors (see <ref type="bibr" target="#b46">Wang et al., 2016;</ref> , among others).</p><p>-1D Constitutive equation</p><formula xml:id="formula_116">σ ( x ) = ζ Eε ( x ) + ( 1 − ζ ) b a k ( | x − x | , κ ) ε ( x ) d x .<label>(113)</label></formula><p>ζ being the mixture parameter.</p><p>-Governing equation for the axial problem</p><formula xml:id="formula_117">ζ κ 2 EA ∂ xxxx u − EA ∂ xx u − 1 − κ 2 ∂ xx q x = 0 .<label>(114)</label></formula><p>-Governing equation for the bending problem</p><formula xml:id="formula_118">ζ κ 2 EI ∂ xxxx xx w − EI ∂ xxxx w + 1 − κ 2 ∂ xx q z = 0 .<label>(115)</label></formula><p>c) Nonlocal stress-driven elasticity. In this model, introduced by Romano and  , the roles of stress and strain fields are swapped with respect to the strain-driven model of Eq. (110) .</p><p>-1D Constitutive equation  -Governing equation for the axial problem</p><formula xml:id="formula_119">Eε ( x ) = b a k ( | x − x | , κ ) σ ( x ) d x .<label>(116)</label></formula><formula xml:id="formula_120">κ 2 EA ∂ xxxx u − EA ∂ xx u − q x = 0 .<label>(117)</label></formula><p>-Governing equation for the bending problem</p><formula xml:id="formula_121">κ 2 EI ∂ xxxx xx w − EI ∂ xxxx w + q z = 0 .<label>(118)</label></formula><p>d) Two-Phase local/nonlocal stress-driven elasticity. The model was first proposed by <ref type="bibr" target="#b3">Barretta, Fabbrocino et al. (2018)</ref> ; <ref type="bibr">Barretta, Faghidian, Luciano, Medaglis et al. (2018)</ref> , and the constitutive equation is defined as a convex combination of local and nonlocal response, in which the last one is governed by Eq. (116) , corresponding to the stress-driven model. -1D Constitutive equation</p><formula xml:id="formula_122">Eε ( x ) = ζ σ ( x ) + ( 1 − ζ ) b a k ( | x − x | , κ ) σ ( x ) d x .<label>(119)</label></formula><p>-Governing equation for the axial problem </p><formula xml:id="formula_123">EA ∂ xxxx u − EA ∂ xx u − 1 − ζ κ 2 ∂ xx q x = 0 .<label>(120)</label></formula><p>It is worth to note that, in the above cited formulation (a) to (d), the strain gradient field is not involved in the model. Then, the boundary conditions required to fulfil equilibrium are exclusively the standard ones. Moreover, the constitutive boundary conditions arisen from the integral character of the constitutive equation have to be considered in every approach quoted above. For the different nonlocal theories, Tables 1 and 2 collect the order of the leading term in the governing equation, as well as the number and type of BCs (all mandatory), for the problem of a Bernoulli-Euler beam submitted to axial and bending loads, respectively. As it can be seen, the nonlocal strain-driven formulation, as well as the nonlocal strain gradient theory (specifically studied in this paper) lead to ill-posed problems with no solution in general.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8.">Conclusions</head><p>The present work shows the inconsistency of the nonlocal strain gradient elasticity theory when applied to bounded solids. The reason lies in the impossibility of fulfilling three types of boundary conditions at once: standard, non-standard, and constitutive. This limitation has been exemplified with the static axial and bending behaviour of Bernoulli-Euler beams. The elastostatic problem has been formulated using the Principle of Minimum Total Potential Energy, which leads to the differential governing equation as well as to the corresponding standard and non-standard boundary conditions that are necessary to fulfil equilibrium. Moreover, two additional constitutive boundary conditions, which are inherent to the formulation of the constitutive equation through convolution integrals, have to be satisfied as other authors have pointed out ( Barretta &amp; de Sciarra, 2018; Romano et al., 2017 ). The problem is formulated in terms of displacements leading, in the axial case, to a fourth-order ODE with six boundary conditions and, in the bending case, to a sixth-order ODE with eight boundary conditions, all of them being mandatory. Therefore the problem becomes ill-posed and has no solution in general. The inconsistency is evidenced through three examples with different loads and boundary conditions. In all of them, the displacement fields, obtained from the governing equation and fulfilling standard and constitutive boundary conditions, are not compatible with equilibrium since the non-standard boundary conditions are not satisfied by these solutions.</p><p>The ill-posedness of the problem has been revealed for the static bending of Bernoulli-Euler beams, but this characteristic holds for other structural problems. Therefore, the use of the NSGT formulation to predict the behaviour of nanostructures must be prevented.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>For</head><label></label><figDesc>the axial elastostatic problem we have a = 0 , b = 1 , μ = −1 /h, and ϕ = ∂ s ū , f = 2 h N 0 for Eq. (65) , and ϕ = ∂ ss ū , f = 2 h/g 2 N 1 for Eq. (66) . Accordingly, the integral constitutive Eq. (65) is fully equivalent to the differential constitutive equation</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1 .</head><label>1</label><figDesc>Fields of: (a) axial strain ū , and (b) higher-order axial force N 1 , for a cantilever beam with linear distributed load ( q = 0 . 1 , h = 0 . 05 , and g = 0 . 1 ).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 .</head><label>2</label><figDesc>Fields of: (a) curvature w , and (b) higher-order bending moment M 1 , for a cantilever beam with uniformly distributed load ( q = 0 . 1 , h = 0 . 05 , and g = 0 . 1 ).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3 .</head><label>3</label><figDesc>Fields of: (a) curvature w , and (b) higher-order bending moment M 1 , for a simply supported beam with uniformly distributed load ( q = 0 . 1 , h = 0 . 05 , and g = 0 . 1 ).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>be obtained. Taking advantage of the symmetry of the 1D kernel ( Eq. (20) ) with respect to coordinates x and x , and integrating by parts, we get</figDesc><table /><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1</head><label>1</label><figDesc>Main characteristics of different nonlocal models for the elastostatic axial behaviour of a Bernoulli-Euler beam (St. = Standard, NSt. = Non-Standard, C. = Constitutive).</figDesc><table><row><cell>Nonlocal theory</cell><cell>Order of leading term in governing equation</cell><cell cols="3">Boundary conditions</cell><cell></cell></row><row><cell></cell><cell></cell><cell>St.</cell><cell>NSt.</cell><cell>C.</cell><cell>Total</cell></row><row><cell>Strain driven</cell><cell>2</cell><cell>2</cell><cell>-</cell><cell>2</cell><cell>4</cell></row><row><cell>Two-phase strain driven</cell><cell>4</cell><cell>2</cell><cell>-</cell><cell>2</cell><cell>4</cell></row><row><cell>Stress driven</cell><cell>4</cell><cell>2</cell><cell>-</cell><cell>2</cell><cell>4</cell></row><row><cell>Two-phase stress driven</cell><cell>4</cell><cell>2</cell><cell>-</cell><cell>2</cell><cell>4</cell></row><row><cell>NSGT</cell><cell>4</cell><cell>2</cell><cell>2</cell><cell>2</cell><cell>6</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 2</head><label>2</label><figDesc>Main characteristics of different nonlocal models for the elastostatic bending behaviour of a Bernoulli-Euler beam (St. = Standard, NSt. = Non-Standard, C. = Constitutive).</figDesc><table><row><cell>Nonlocal theory</cell><cell>Order of leading term in governing equation</cell><cell cols="3">Boundary conditions</cell><cell></cell></row><row><cell></cell><cell></cell><cell>St.</cell><cell>NSt.</cell><cell>C.</cell><cell>Total</cell></row><row><cell>Strain driven</cell><cell>4</cell><cell>4</cell><cell>-</cell><cell>2</cell><cell>6</cell></row><row><cell>Two-phase strain driven</cell><cell>6</cell><cell>4</cell><cell>-</cell><cell>2</cell><cell>6</cell></row><row><cell>Stress driven</cell><cell>6</cell><cell>4</cell><cell>-</cell><cell>2</cell><cell>6</cell></row><row><cell>Two-phase stress driven</cell><cell>6</cell><cell>4</cell><cell>-</cell><cell>2</cell><cell>6</cell></row><row><cell>NSGT</cell><cell>6</cell><cell>4</cell><cell>2</cell><cell>2</cell><cell>8</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>-</head><label></label><figDesc>Governing equation for the bending problemEI ∂ xxxx xx w − EI ∂ xxxx w + 1 − ζ κ 2 ∂ xx q z = 0 .</figDesc><table /><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The authors are indebted to the Ministerio de Ciencia e Innovación de España (Projects DPI-2014-57989-P and BES-2015-073720) for the financial support.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Free vibrations of elastic beams by modified nonlocal strain gradient theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Apuzzo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Faghidian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>De Sciarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="page" from="99" to="108" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Free vibrations of Bernoulli-Euler nano-beams by the stress-driven nonlocal integral model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Apuzzo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>De Sciarra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Penna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composites Part B: Engineering</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="105" to="111" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Stress-driven modeling of nonlocal thermoelastic behavior of nanobeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Canadija</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>De Sciarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="page" from="53" to="67" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Closed-form solutions in stress-driven two-phase integral elasticity for bending of functionally graded nano-beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Fabbrocino</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>De Sciarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Physica E: Low-dimensional Systems and Nanostructures</title>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page" from="13" to="30" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Longitudinal vibrations of nano-rods by stress-driven integral elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Faghidian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanics of Advanced Materials and Structures</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Stress-driven two-phase integral elasticity for torsion of nano-beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Faghidian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Medaglia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Penna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composites Part B: Engineering</title>
+		<imprint>
+			<biblScope unit="volume">145</biblScope>
+			<biblScope unit="page" from="62" to="69" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Stress-driven nonlocal integral model for Timoshenko elastic nano-beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Luciano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>De Sciarra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Ruta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Mechanics-A/Solids</title>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Constitutive boundary conditions for nonlocal strain gradient elastic nano-beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>De Sciarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<biblScope unit="page" from="187" to="198" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Mass detection in nanobeams from bending resonant frequency shifts</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Dilena</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fedele Fedele Dell' Oste</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Morassi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanical Systems and Signal Processing</title>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="page" from="261" to="276" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A review on nonlocal elastic models for bending, buckling, vibrations, and wave propagation of nanoscale beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Eltaher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Khater</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Emam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mathematical Modelling</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="4109" to="4128" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Nonlocal integral approach to the dynamical response of nanobeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Eptaimeros</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Koutsoumaris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Tsamasphyros</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Mechanical Science</title>
+		<imprint>
+			<biblScope unit="page" from="68" to="80" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Linear theory of nonlocal elasticity and dispersion of plane-waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="233" to="248" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Nonlocal polar elastic continua</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">On differential-equations of nonlocal elasticity and solutions of screw dislocation and surface-waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="4703" to="4710" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Theory of nonlocal elasticity and some applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res Mechanica</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="313" to="342" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Nonlocal elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G B</forename><surname>Edelen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="233" to="248" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Transverse free vibration of resonant nanoplate mass sensors: Identification of an attached point mass</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Morassi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Rubio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Mechanical Sciences</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page" from="217" to="225" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Vibrations of Bernoulli-Euler beams using the two-phase nonlocal elasticity theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page" from="232" to="248" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Strain gradient plasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">A</forename><surname>Fleck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Hutchinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="295" to="361" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Construction of multi-dimensional isotropic kernels for nonlocal elasticity based on phonon dispersion data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Sundararaghavan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Waas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="392" to="401" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Multipolar continuum mechanics. Archive for rational mechanics and analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">E</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">S</forename><surname>Rivlin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964" />
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="113" to="147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A unified integro-differential nonlocal model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Khodabakhshia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="60" to="75" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">On the physical reality of torque stresses in continuum mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Kröner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="261" to="278" />
+			<date type="published" when="1963" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Elasticity theory of materials with long range cohesive forces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Kröner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="731" to="742" />
+			<date type="published" when="1967" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Some considerations of the relation between solid state physics and generalized continuum mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Krumhansl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanics of generalized continua. IUTAM symposia</title>
+		<editor>E. Kröner</editor>
+		<meeting><address><addrLine>Berlin Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1968" />
+			<biblScope unit="page" from="298" to="311" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The theory of elastic media with microstructure and the theory of dislocations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">A</forename><surname>Kunin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanics of generalized continua. IUTAM symposia</title>
+		<editor>E. Kröner</editor>
+		<meeting><address><addrLine>Berlin Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1968" />
+			<biblScope unit="page" from="321" to="329" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Experiments and theory in strain gradient elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">C C</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C M</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Tong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="1477" to="1508" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Free vibration analysis of nonlocal strain gradient beams made of functionally graded material</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Hu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="page" from="77" to="92" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A higher-order nonlocal elasticity and strain gradient theory and its applications in wave propagation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Reddy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="298" to="313" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A unified nonlocal strain gradient model for nanobeams and the importance of higher order terms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page" from="265" to="277" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Nonlinear vibration analysis of fg nano-beams resting on elastic foundation in thermal environment using stress-driven nonlocal integral model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Mahmoudpour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hosseini-Hashemi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Faghidian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mathematical Modelling</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="302" to="315" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Micro-structure in linear elasticity. Archive for Rational Mechanics and Analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964" />
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="51" to="78" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Second gradient of strain and surface-tension in linear elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="417" to="438" />
+			<date type="published" when="1965" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">On first strain-gradient theories in linear elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Eshel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="109" to="124" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Effects of couple-stresses in linear elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">F</forename><surname>Tiersten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Archive for Rational Mechanics and Analysis</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="415" to="448" />
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Resonator-based detection in nanorods</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Morassi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Loya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanical Systems and Signal Processing</title>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="645" to="660" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Application of nonlocal continuum models to nanotechnology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peddieson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">R</forename><surname>Buchanan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>Mcnitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3-5</biblScope>
+			<biblScope unit="page" from="305" to="312" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Handbook of integral equations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Polyanin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Manzhirov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>CRC Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Nonlocal continuum-based modeling of mechanical characteristics of nanoscopic structures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Rafii-Tabar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Ghavanloo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Fazelzadeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Reports</title>
+		<imprint>
+			<biblScope unit="volume">638</biblScope>
+			<biblScope unit="page" from="1" to="97" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Energy principles and variational methods in applied mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Reddy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>John Wiley &amp; Sons</publisher>
+			<pubPlace>New Jersey</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Stress-driven versus strain-driven nonlocal integral model for elastic nano-beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Romano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composites Part B</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page" from="184" to="188" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Constitutive boundary conditions and paradoxes in nonlocal elastic nanobeams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Romano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barretta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Diaco</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Marotti De Sciarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Mechanical Sciences</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="151" to="156" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Nonlinear free vibration of a functionally graded nanobeam using nonlocal strain gradient theory and a novel hamiltonian approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ş</forename><surname>Im ¸s Ek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="page" from="12" to="27" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">A review of continuum mechanics models for size-dependent analysis of beams and plates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">T</forename><surname>Thai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">P</forename><surname>Vo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">K</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page" from="196" to="219" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Elastic materials with couple-stresses. Archive for Rational Mechanics and Analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Toupin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1963" />
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="385" to="414" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Theories of elasticity with couple-stress. Archive for Rational Mechanics and</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Toupin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Analysis</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="85" to="112" />
+			<date type="published" when="1964" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Exact solutions for the static bending of Euler-Bernoulli beams using Eringen&apos;s two-phase local/nonlocal model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">W</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Dai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AIP Advances</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">85114</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Bending and buckling of nonlocal strain gradient elastic beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X.-J</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X.-C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M.-L</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="page" from="366" to="377" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Closed form solution for a nonlocal strain gradient rod in tension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page" from="16" to="28" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Buckling analysis of Euler-Bernoulli beams using Eringen&apos;s two-phase nonlocal model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Dai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">1116</biblScope>
+			<biblScope unit="page" from="130" to="140" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

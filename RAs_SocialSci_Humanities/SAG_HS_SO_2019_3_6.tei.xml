@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Government Size and Economic Growth: A Review of International Literature</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Sheilla</forename><surname>Nyasha</surname></persName>
+							<email>sheillanyasha@gmail.com</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of South Africa</orgName>
+								<address>
+									<settlement>Pretoria</settlement>
+									<country key="ZA">South Africa</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nicholas</forename><forename type="middle">M</forename><surname>Odhiambo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of South Africa</orgName>
+								<address>
+									<settlement>Pretoria</settlement>
+									<country key="ZA">South Africa</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Economics</orgName>
+								<orgName type="institution">University of South Africa</orgName>
+								<address>
+									<postBox>P.O. Box 392</postBox>
+									<postCode>0003</postCode>
+									<settlement>Pretoria</settlement>
+									<country key="ZA">South Africa</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Government Size and Economic Growth: A Review of International Literature</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019877200</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>government size</term>
+					<term>government expenditure</term>
+					<term>economic growth</term>
+					<term>Granger-causality</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>In this article, we survey the existing literature on the causal relationship between government size and economic growth, highlighting the theoretical and empirical evidence from topical work. To our knowledge, this study may well be the first study of its kind to survey, in detail, the existing literature on the causal relationship between government size and economic growth-in all the countries, whether developing or developed. By and large, our study shows that direction of causality between these two variables has four possible outcomes, and that all the outcomes have found empirical support, based on variations in the country or region under study, methodology, proxies, data set used, and time frame considered. However, of the four, the most prominent is the second view, which validates unidirectional Granger-causality from economic growth to government size, followed by the bidirectional Granger-causality category. The study, therefore, concludes that the causal relationship between government size and economic growth is far from being clear-cut.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The relationship between government size and economic growth has been a topic of discussion more than a century ago, when <ref type="bibr">Wagner (1883</ref><ref type="bibr" target="#b51">Wagner ( /1958</ref> came up with Wagner's Law, which places importance on economic growth as a driver of government size. Recent decades have seen the escalation of this debate as increased government size and low economic growth rates have become a prominent feature of today's economies. The thrust of the discussion is on whether it is government expenditure that drives economic growth or it is economic growth that causes government expenditure.</p><p>To date four views exist. The first view is the "government size-led economic growth view," or the "supply-leading response," also known as the "Keynesian view." This view places importance on the size of the government and argues that it is the government size that causes economic growth, and not the other way round (see <ref type="bibr" target="#b21">Ebaidalla, 2013;</ref><ref type="bibr" target="#b24">Ghali, 1998;</ref><ref type="bibr" target="#b31">Loizides &amp; Vamvoukas, 2005)</ref>. On the extreme continuum of this view is the "growth-led government size," alternatively known as the "demand-following response" or "Wagner's Law," as it is also popularly known. According to this view, government is inefficient in providing services; hence, it cannot drive economic growth. Instead, it is economic growth that propels government size increases as the government responds to the demand placed on it by the growing economy (see <ref type="bibr" target="#b14">Bohl, 1996;</ref><ref type="bibr" target="#b27">Islam, 2001;</ref><ref type="bibr" target="#b39">Samudram, Nair, &amp; Vaithilingam, 2009;</ref><ref type="bibr" target="#b48">Thabane &amp; Lebina, 2016)</ref>. <ref type="bibr">Wagner (1883</ref><ref type="bibr" target="#b51">Wagner ( /1958</ref> termed this as Wagner's Law. Of the Wagner's Law and the Keynesian view, it is debatable which one of the two is the most widely favored view.</p><p>The middle ground is the third view, known as the "bidirectional causality view" or the "feedback response," which places importance on both the government size and the economic growth as they are deemed to mutually cause each other in a feedback response fashion (see <ref type="bibr" target="#b1">Abu-Bader &amp; Abu-Qarn, 2003;</ref><ref type="bibr" target="#b2">Abu-Eideh, 2015;</ref><ref type="bibr" target="#b42">Singh &amp; Sahni, 1984;</ref><ref type="bibr" target="#b52">Wu, Tang, &amp; Lin, 2010)</ref>. Then, there is the fourth and unpopular strand, known as the "neutrality view" or the "independent view." This view places importance neither on the government size nor on economic growth as the two are seen to be independent of each other and therefore do not cause each other (see <ref type="bibr" target="#b3">Afxentiou &amp; Serletis, 1996;</ref><ref type="bibr" target="#b9">Ansari, Gordon, &amp; Akuamoah, 1997;</ref><ref type="bibr" target="#b45">Taban, 2010)</ref>.</p><p>On the empirical front, each of these views has found support in one study or the other, giving rise to a far from conclusive debate, yet the outcome has perilous policy implications. A review of literature shows that various studies that explored the government size-economic growth causal nexus had different study country/region coverage over varied time periods, using varied variables and proxies and varied econometric techniques. The outcomes were, therefore, also varied, inconsistent, and inconclusive in providing any policy recommendations that can be applied uniformly across countries.</p><p>The objective of this study is to take stock of what has been scientifically produced on the government size-economic growth causality space, highlighting both the theoretical frameworks and empirical evidence on the subject. The review is fundamentally different from previous reviews. It has dedicated focus on the causality between government size and economic growth, unlike isolated reviews that are more generalized and focus on several aspects of government expenditure and economic growth, which tend to end up scratching the surface of various issues. The confined focus of this study allows it to have a deep review and analysis of previous works, leading to a rich study.</p><p>The rest of this article is organized into four sections. "The Causal Relationship Between Government Size and Economic Growth: A Theoretical Framework" section reviews the theoretical literature on the causal relationship between government size and economic growth, whereas "The Causal Relationship Between Government Size and Economic Growth: Empirical Evidence" section reviews the empirical evidence on the causal relationship between government size and economic growth. The "Conclusion" section presents some concluding remarks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Causal Relationship Between Government Size and Economic Growth: A Theoretical Framework</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Government Size in a Nutshell</head><p>Following <ref type="bibr" target="#b30">Lane (2000)</ref> and <ref type="bibr" target="#b25">Häge (2003)</ref>, government can be defined as a state's body for general decision making and its outcomes. A government, thus, imparts direction to its society through various collective decision-making means, and it exercises the state's authority on a daily basis. The government usually has two arms, the direct arm and the indirect arm. Through the direct arm, the government raises revenue through collection of taxes, allocates and redistributes resources through subsidies and welfare grants, and produces and consumes goods and services <ref type="bibr" target="#b25">(Häge, 2003)</ref>. All these activities performed by the direct arm can be narrowed down to a monetary value. However, the indirect arm of the government-that is responsible for costs and benefits associated with regulations, indirect taxes, and subsidies in the form of tax allowances-allows the government substantial power over national resources, nonetheless, with little reflection on expenditure and employment data.</p><p>Government size can be measured in terms of expenditure, revenue, or employment. However, the expenditure measure is the most commonly used indicator. This expenditure is derived from the national accounts. On an aggregate basis, total government expenditure is often used to signify the size of the government. The less the government spends, the smaller its size, and the more the government spends in aggregate terms, the larger its size. Although this measure is commonly used, it can be argued that it is an appropriate measure of government size in some instances but not in others, due to impact differentials associated with the components of government expenditure <ref type="bibr" target="#b17">(Cusack &amp; Fuchs, 2002;</ref><ref type="bibr" target="#b40">Sedrakyan &amp; Varela-Candamio, 2019)</ref>. <ref type="bibr" target="#b17">Cusack and Fuchs (2002)</ref> further split government expenditure into five components-investment and consumption expenditure, as well as subsidies, social transfers, and interest payments. Some studies have gone beyond the overall government spending when analyzing the relationship between government size and various macroeconomic variables. The consideration of various components of government expenditure by various researchers is premised on the understanding that different government expenditure categories may have a different impact on various macroeconomic variables. Even when components of government expenditure are considered, the more expenditure on the considered category, the larger the government size, and the opposite holds.</p><p>A small government is considered advantageous based on the crowding-out effect principle. On the consumption front, governments can only spend what they have taken out of the real economy via taxes or they can alternately finance their spending through borrowing. An increase in tax revenue means reduced private consumption by the same amount of tax increase. The result is stagnation in overall demand and subsequently no wealth creation. From the investment angle, the same principle applies. Government borrowing from private lenders makes resources available for lending to private investors decline by the same amount lent to the government by the private lender. Thus, by and large, if government spending and borrowing go up, private spending and borrowing go down by the same margin, its government counterpart has gone up. However, on the flipside are the pro-big government size proponents who argue that a big government is good for the economy as it provides jobs and financial security to a number of people-to the tune of millions in most cases. Big governments are also known to create economies of scale and to provide infrastructural development, which is a precursor to private investment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Government Size and Economic Growth</head><p>The relationship between government size-as measured by the level of government expenditure-and economic growth has brought widespread debate, not only empirically but also theoretically. Dominating the theoretical platform are the Keynesians and the Classicals. The Keynesian school of thought places importance on the size of the government through fiscal policies. According to this school of thought, fiscal policies boost economic activity, especially during recession, when the self-regulatory mechanisms in the economy fail to drive the economy back to equilibrium as a result of rigidities in the labor market. The Keynesians are, therefore, ardent supporters of expansionary fiscal policies for economies to shy away from long and economy-crippling recessions.</p><p>With the entrance of new growth theories on the debate platform, the Keynesian argument for fiscal policies as economic growth enhancers has gained traction and additional support. In contrast to the Neoclassical growth models (see <ref type="bibr" target="#b43">Solow, 1956</ref>) that did not prescribe the transmission channels through which government expenditure could affect long-run economic growth, the new growth theorists argue that there is both a short-term (temporary) impact and a longterm impact of government intervention through fiscal stimulation on economic growth during the transition to equilibrium (see <ref type="bibr" target="#b32">Lucas, 1988;</ref><ref type="bibr" target="#b38">Romer, 1986)</ref>. It is, therefore, the Keynesian view that even causality runs from increased government expenditure to increased economic growth through an expansionary fiscal policy.</p><p>On the other side are the Classicals and the Neoclassicals that consider fiscal policies to be futile as a result of the crowding-out effect, directly and indirectly. Directly, these two groups of theorists believe increasing public spending leads to the substitution of private goods by public goods, giving rise to lower private expenditure even on key goods and services. Indirectly, government, as a way of financing its spending, exerts pressure on the market for credit, thereby pushing up interest rates. When interest rates rise, they do not rise for the government only but for everyone, including the private sector-which tends to suppress private investment and overall hamper economic growth.</p><p>Furthermore, according to the Classicals and the Neoclassicals, government may choose to finance its increased expenditure by increasing taxes-an act which can distort market prices and resource allocation, and may even attract tax evasions and avoidance. The ultimate outcome is a negative impact on economic growth.</p><p>Unlike the Keynesian view, the Classicals and the Neoclassicals are consistent with <ref type="bibr">Wagner's (1883</ref><ref type="bibr" target="#b51">Wagner's ( /1958</ref> Law, which advocates that the direction of causality runs from economic growth to government expenditure for three reasons: first, the administrative and protective public functions of the state substituting for private activity; second, economic development results in the expansion of cultural and welfare expenditures; and third, government intervention is required to manage and finance natural monopolies. Therefore, in Wagner's view, an expansion in government expenditure is a function of economic development, and not vice versa.</p><p>In sum, the Keynesian view and Wagner's Law present two different positions, placed at each end of the continuum, concerning the relationship in general, and the causal relationship in particular, between government spending and economic growth. While the Keynesian view postulates that the causality runs from government spending to economic growth, Wagner's Law suggests that causality runs from economic growth to government spending. Both contentions could, however, be correct in their own right, depending on the nature of the particular economy under scrutiny. In economies dominated by monopolies and where product and factor markets are underdeveloped, the first view may be applicable. On the contrary, in economies where key products and services are provided by the government at subsidized rates, and where inefficient public corporations are abundant, private investment and long-run economic growth are likely to be significantly reduced. Hence, on this premise, government size impedes economic growth, thereby validating the second view.</p><p>Some recent theoretical literature has attempted to reconcile the two conflicting views-Keynesian view and Wagner's Law-by proposing a non-linear relationship that is positive when the share of government in economic activity is low but negative when the relative size of the government grows <ref type="bibr" target="#b11">(Barro, 1989;</ref><ref type="bibr" target="#b20">Easterly, 1999)</ref>. It is through the reconciliation of the two prominent views that gave birth to the other two causality views-bidirectional view and the neutrality view, where the former postulates that government size and economic growth are mutually causal while the latter sees no causality between the two variables, and deem them independent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Causal Relationship Between Government Size and Economic Growth: Empirical Evidence</head><p>The relationship between government size and economic growth has been on center stage for some time now as economists and politicians debate on whether it is government expenditure that drives economic growth or vice versa. Empirical literature on the four views, aforementioned in the "Introduction" section, is systematically and chronologically reviewed in the subsections that follow.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Supply-Leading Response/The Government Expenditure-Led Growth/The Keynesian View</head><p>A number of studies on the causal relationship between government size and economic growth lend support to the "Keynesian view"-alternatively known as the government size-led growth. The view has increasingly been referred to as the supply-leading response-where economic growth is deemed as a mere response to the growth of the government. <ref type="bibr" target="#b24">Ghali's (1998)</ref> results confirmed the predominance of the Keynesian view in the case for 10 Organisation for Economic Co-Operation and Development (OECD) countries. The objective of the study was to assess the direction of causality between government expenditure and economic growth in these countries. Based on a vector error-correction model (VECM), developed through multivariate co-integration techniques, Ghali concluded that it is the government size that Granger-causes economic growth in all the study countries. <ref type="bibr" target="#b31">Loizides and Vamvoukas (2005)</ref> examined the causal relationship between government size and economic growth in three countries-Greece, the United Kingdom, and Ireland-using bivariate and trivariate error-correction models (ECMs) within a Granger-causality framework. The results of the study showed that government size Grangercauses economic growth in all the study countries in the short run while the same outcome for Ireland and the United Kingdom was realized only in the long run. These results applied irrespective of the model used-bivariate or trivariate. <ref type="bibr" target="#b18">Dogan and Tang (2006)</ref> revisited the government sizegrowth nexus as they examined the causality between government expenditure and economic growth in five South East Asian countries. The countries were the Philippines, Indonesia, Malaysia, Singapore, and Thailand. Based on the Granger-causality test methodology, a unidirectional causality running from government expenditures to national income was found, but only in the case of the Philippines. Thus, the Keynesian view was supported in the Philippines.</p><p>Another year later, <ref type="bibr" target="#b13">Blankenau, Simpson, and Tomljanovich (2007)</ref> examined the relationship between government expenditure and economic growth in developed and developing countries. Based on the developed country sample, the results of the study were consistent with the Keynesian view.</p><p>Chandran, Rao, and Anwar (2011) utilized annual data covering the 1970-2006 period to examine the causality between government expenditure and economic growth in Malaysia. The thrust of the study was to examine Wagner's Law and the Keynesian hypothesis concerning the link between real government spending and real gross domestic product (GDP). Two models were used-a bivariate and a multivariate. In addition, the study considered aggregate government expenditure and economic growth, on one hand, and government expenditure on education and economic growth, on the other hand. Using the autoregressive distributed lag (ARDL) approach, the results of both the bivariate and the multivariate models, on the whole, revealed that in Malaysia, aggregate government expenditure was the driver of economic growth-thereby confirming the Keynesian view. <ref type="bibr" target="#b21">Ebaidalla (2013)</ref> investigated the causality between government expenditure and national income in Sudan during the period from 1970 to 2008. Using the Granger-causality test and the ECM, the results were consistent with the Keynesian view, where causality was found running from government expenditure to national income, irrespective of whether the analysis was in the short or in the long run (see <ref type="table" target="#tab_0">Table 1</ref>).</p><p>The Demand-Following Response/The Growth-Led Government Expenditure View/Wagner's Law <ref type="bibr" target="#b14">Bohl (1996)</ref> put the causal nexus between government expenditure and economic growth under examination in the G7 countries. The results revealed that in the United Kingdom and Canada, it is Wagner's Law that predominates, where unidirectional causality was confirmed to run from economic growth to government expenditure. <ref type="bibr" target="#b9">Ansari et al. (1997)</ref> put the causal relationship between government expenditure and national income for three African countries (Ghana, Kenya, and South Africa) to the test, using data from 1957 to 1990, and using the standard Granger causality test. Although the study found no evidence of causality between government expenditure and national  income in Kenya and South Africa, in the short run, it validated Wagner's Law in the case of Ghana. <ref type="bibr" target="#b0">Abizadeh and Yousefi (1988)</ref> empirically tested the validity of Wagner's Law in the case of South Korea over the period from 1961 to 1992. Using the Granger-type causality tests, their results attested to the existence of unidirectional causality from economic growth to government expenditure-thereby certifying the validity of Wagner's Law. <ref type="bibr" target="#b27">Islam (2001)</ref>, in the same vein, examined the causal relationship between government expenditures and economic growth, proxied by real GDP per capita, for the United States. Using annual data for the period from 1929 to 1996 and the error-correction approach, the results of the study were consistent with the demand-following response, satisfying Wagner's Law-where economic growth was found to Granger-cause government expenditure.</p><p>In the case of Malaysia, T. C. <ref type="bibr" target="#b47">Tang (2001)</ref> empirically tested the direction of causality between government expenditure and economic growth, proxied by national income in Malaysia during the period from 1960 to 1998. Using Johansen's multivariate co-integration tests and Grangercausality methodology, the study concluded that in the short run, it is national income that Granger-causes government expenditure, confirming the relevance of Wagner's Law in the study country.</p><p>A year later, Al-Faris (2002) also revisited the causal nexus between government expenditure and economic growth for Gulf Cooperation Council (GCC) countries using multivariate co-integration and Granger-causality tests. The results indicated the presence of unidirectional Granger causality from economic growth to government expenditure in the majority of the gulf countries-leading to the acceptance of Wagner's Law and the rejection of the Keynesian view in the study countries.</p><p>Abu-Bader and Abu-Qarn (2003) investigated the direction of causal flow between government expenditure and economic growth in three countries-Egypt, Israel, and Syria-covering a period of 30 years. Using multivariate cointegration and variance decomposition techniques, they found a unidirectional causal flow from economic growth to government expenditure only in the short run and only for one study country, Egypt, thereby lending support to Wagner's Law.</p><p>A year later, <ref type="bibr" target="#b19">Dritsakis (2004)</ref> also investigated the direction of causality between government expenditure and economic growth in Greece and Turkey. The results of the study were consistent with the growth-led government expenditure hypothesis that places importance on the economic growth as a driver of government expenditure. <ref type="bibr" target="#b31">Loizides and Vamvoukas (2005)</ref> examined the causal relationship between government size and economic growth in three countries-Greece, the United Kingdom, and Ireland-using bivariate and trivariate ECM within a Granger-causality framework. The results of the study were in support of Wagner's Law, where economic growth was found to Granger-cause increases in the relative size of government in Greece, irrespective of the model used, and in the United Kingdom when a trivariate model with inflation was considered.</p><p>The direction of causality between government expenditure and economic growth was also empirically examined by <ref type="bibr" target="#b7">Akitoby, Clements, Gupta, and Inchauste (2006)</ref> using a sample of developing countries. They found evidence of the growth-led government expenditure, where unidirectional Granger causality ran from economic growth to government expenditure, thus confirming that Wagner's Law holds in the developing countries studied. <ref type="bibr" target="#b41">Sideris (2007)</ref> carried out a similar empirical study with an objective of testing the validity of Wagner's Law in Greece during the 1833-1938 period. According to Sideris, the study period consideration was well calculated as it represented a period of growth, industrialization, and modernization of the economy-conditions which should be conducive to Wagner's Law. Using Granger-causality tests, the results of the study found causality to run from income to government expenditure, validating Wagner's Law in Greece. <ref type="bibr" target="#b34">Narayan, Nielsen, and Smyth (2008)</ref> empirically tested Wagner's Law in Chinese provinces. Using a panel unit root, co-integration, and Granger-causality approach, the results of the study confirmed the presence of Wagner's Law but only for the central and western provinces, and not the eastern provinces.</p><p>In the same year, <ref type="bibr" target="#b33">Mohammadi, Cak, and Cak (2008)</ref> also examined empirically the causal relationship between government expenditure and economic growth in the case of Turkey. The results were consistent with Wagner's Law, confirming that, in Turkey, it is economic growth that drives government expenditure. <ref type="bibr" target="#b39">Samudram et al. (2009)</ref> assessed the direction of causality between government expenditure and economic growth in the case of Malaysia. Unidirectional Granger causality was found flowing from economic growth to various categories of government expenditure-defense, education, development, and agriculture, in the long run. C. F. <ref type="bibr" target="#b46">Tang (2009)</ref> re-examined the causality between various components of government spending and economic growth for Malaysia-with government expenditure disaggregated. The study covered the period from 1960 to 2007. Using the bounds testing for co-integration and the leveraged bootstrap simulation approaches, together with the Modified Wald (MWALD) causality test, the results showed strong evidence of unidirectional causal relationship running from national income to the three major government spending in Malaysia (health, education, and defense)-thereby confirming the validity of Wagner's Law when certain pockets of government expenditure were considered.</p><p>A year later, Taban (2010) re-investigated the government expenditure-economic growth nexus for the Turkish economy using quarterly data covering the period from 1987:Q1 to 2006:Q4. Various proxies were used to capture government expenditure-total government expenditure, the share of the government consumption spending to GDP, government investment expenditure to GDP, and government consumption spending to GDP ratio. Based on the bounds testing approach and MWALD Granger-causality test, unidirectional causality was found running from the per capita output growth to the ratio of the government investment to GDP, thereby confirming Wagner's Law in Turkey when government spending was proxied by government investment expenditure to GDP ratio. <ref type="bibr" target="#b29">Lamartina and Zaghini (2011)</ref> also revisited the causal nexus between government expenditure and economic growth in 23 OECD countries. Granger causality was found to flow from economic growth to government expenditure in the sample countries-thereby validating Wagner's Law. In the same vein, <ref type="bibr" target="#b28">Kumar, Webber, and Fargher (2012)</ref> also examined empirically the direction of causality between government size and economic growth, this time in New Zealand. Based on the results of the study, they established that in New Zealand, it is economic growth that drives government expenditure in the long run.</p><p>Using data over the period from 1973 to 2012 for India, Srinivasan (2013) also tested the causality between public expenditure and economic growth. Based on the co-integration approach and ECM, the empirical results showed that causality was one way, flowing from economic growth to public expenditure, irrespective of whether the analysis was done in the short run or in the long run. The study, therefore, lent support to Wagner's Law. <ref type="bibr" target="#b6">Akinlo (2013)</ref> revisited the causality between government spending and national income in Nigeria during the period from 1961 to 2009. The main objective was to assess the applicability of Wagner's Law in the study country. Using a multivariate framework incorporating population size variable, the study found Wagner's Law to hold.</p><p>Biyase and Zwane (2015) investigated whether Wagner's Law holds in African countries, using panel data techniques and for a sample of 30 African countries during the period from 1990 to 2005. The causality results confirmed the existence of unidirectional causality from economic growth to government expenditure in the study countries, irrespective of different panel data techniques used. Thus, the study lent support to Wagner's Law.</p><p>One of the most recent studies on the government expenditure-growth nexus subject is by <ref type="bibr" target="#b48">Thabane and Lebina (2016)</ref>. They empirically examined the causal relationship between government spending and economic growth in Lesotho for the period from 1980 to 2012, using the ARDL bounds testing procedure. The results of the Grangercausality test show the existence of unidirectional causal flow from economic growth to government expenditure, confirming that the government expenditure in the study country is real sector-led. Thus, the results validate Wagner's Law in Lesotho (see <ref type="table" target="#tab_1">Table 2</ref>). <ref type="bibr" target="#b42">Singh and Sahni (1984)</ref> examined the causal link between provincial government expenditure and income for India. The thrust of the study was on whether it is public expenditure growth that stimulates income or it is the increase in provincial income, which causes government spending to rise. The results of the study showed that just as in the cases of national variables, the provincial variable in the study exhibited neither Wagnerian Law nor the Keynesian view but a feedback relationship. The authors, therefore, concluded that increases in public expenditure and provincial income in one of India's provinces reinforce each other, in spite of exogenous forces. <ref type="bibr" target="#b16">Cheng and Lai (1997)</ref> empirically examined the direction of causality between government expenditure and economic growth in South Korea, during the period from 1954 to 1994, using vector autoregressive (VAR) techniques within a trivariate framework. Unlike most studies that had confirmed the direction of causality between government expenditure and economic growth to be consistent with either the Keynesian view or Wagner's Law, the study found that in South Korea, there exists bidirectional Granger causality between government expenditures and economic growth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Bidirectional Causality/Feedback Response</head><p>Abu-Bader and Abu-Qarn (2003) investigated the direction of causal flow between government expenditure and economic growth in three countries-namely, Egypt, Israel, and Syria-covering a period of 30 years, using multivariate co-integration and variance decomposition techniques. When causality was examined within a bivariate framework, the Keynesian view and Wagner's Law were found to coexist in Israel and Syria, strongly suggesting the feedback hypothesis where government expenditure and economic growth caused each other. <ref type="bibr" target="#b5">Ahmad and Ahmad (2005)</ref> examined the causality between government expenditure and per capita income for D-8 member countries. Using standard Granger procedure, the results of the study revealed that of all the study countries, it is only in Iran where short-run bidirectional causality between government size and per capita income existed.</p><p>Huang <ref type="bibr">(2006)</ref> empirically tested Wagner's Law in China and Taiwan using annual time-series data stretching from 1979 to 2002. Based on <ref type="bibr">Pesaran et al.'s (2001)</ref> bounds test on unrestricted error-correction model (UECM) estimation and <ref type="bibr" target="#b49">Toda and Yamamoto's (1995)</ref> Granger non-causality test, the empirical results of the study showed that Wagner's Law does not apply in the study countries. Instead, the results found bidirectional causality to dominate, implying that in China and Taiwan, government expenditure and economic growth are mutually causal. <ref type="bibr" target="#b39">Samudram et al. (2009)</ref> put the Keynesian view and Wagner's Law under test for Malaysia during the period from 1970 to 2004. Using the ARDL bounds testing approach, the results revealed the existence of bidirectional causality between GNP and government expenditures on administration and health in the long run. C. F. <ref type="bibr" target="#b46">Tang (2009)</ref> re-examined the causality between government spending and economic growth for Malaysia-with government expenditure disaggregated. The study covered the period from 1960 to 2007. Using the bounds testing for co-integration and the leveraged bootstrap simulation approaches, together with the MWALD causality test, the  results found bidirectional causality to exist between national income and government spending on health. <ref type="bibr" target="#b52">Wu et al. (2010)</ref> re-examined the Granger causality between government expenditure and economic growth using a 182-country panel data set covering the period from 1950 to 2004. This was one of the studies with the largest sample and longest time period. Using the panel Grangercausality test, the results of the study strongly supported both the Keynesian view and Wagner's Law-thereby confirming that the direction of causality between government expenditure and economic growth is bidirectional. The results were found to hold regardless of how the government size/spending and economic growth were measured.</p><p>In the same year, Taban (2010) re-investigated the government expenditure-economic growth nexus for the Turkish economy using quarterly data covering the period from 1987:Q1 to 2006:Q4. Various proxies were used to capture government expenditure-total government expenditure, the share of the government consumption spending to GDP, government investment expenditure to GDP, and government consumption spending to GDP ratio. Based on the bounds testing approach and MWALD Granger-causality test, the study found strong evidence of bidirectional causality between total government spending and economic growth.</p><p>Abu-Eideh (2015) explored the causal relationship between public expenditure and the GDP growth in the Palestinian territories during the period from 1994 to 2013. The validity of the six versions of Wagner's Law in the study country was also tested. On the basis of the Granger-causality tests, the results showed the existence of bidirectional causality, where government expenditure and economic growth were mutually causal (see <ref type="table" target="#tab_2">Table 3</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>No Causality/The Independent View/The Neutrality View</head><p>Using annual data covering the 1950-1981 period, <ref type="bibr" target="#b42">Singh and Sahni (1984)</ref> examined the direction of causality between national income and public expenditures in India. Based on the Granger's causality test, they found no evidence of causality between government spending and national income in most provinces. Therefore, their finding neither confirmed the Wagner's Law nor the Keynesian view. <ref type="bibr" target="#b3">Afxentiou and Serletis (1996)</ref> examined government expenditure convergence within the expanded European Union and also tested the validity of Wagner's Law in the study countries. Government expenditure was further disaggregated into government consumption, transfers, and subsidies. Causality tests failed to validate Wagner's Law; neither  did they confirm the reverse causality, irrespective of the proxy used for government expenditure. <ref type="bibr" target="#b9">Ansari et al. (1997)</ref> put the causal relationship between government expenditure and national income for three African countries (Ghana, Kenya, and South Africa) to the test, using data from 1957 to 1990, and using the standard Granger test and its modified version, the Holmes-Hutton (1990) causality test. The study found no evidence of causality between government expenditure and national income for Kenya and South Africa, in the short run. <ref type="bibr" target="#b10">Bagdigen and Cetintas (2003)</ref> also put Wagner's Law to the test in Turkey, using data from 1965 to 2000. Based on the co-integration test and the Granger-causality test, the study found no evidence of any causal relationship between government expenditure and economic growth in the study country-lending support to the neutrality hypothesis. <ref type="bibr" target="#b5">Ahmad and Ahmad (2005)</ref> examined the causality between government expenditure and per capita income for D-8 member countries. Using the standard Granger procedure, the results of the study revealed that in the short run, there is no causality between government expenditure and per capita income in all D-8 member countries except for Iran. This led the authors to conclude that, in these study countries, prudent policies, with or without government intervention, are conducive for economic growth. <ref type="bibr" target="#b18">Dogan and Tang (2006)</ref> tested the causal relationship between national income and government expenditure for five South East Asian Countries-Indonesia, Malaysia, The Philippines, Singapore, and Thailand. Based on the Grangercausality test methodology, neither the Keynesian view nor Wagner's Law was confirmed in Indonesia, Malaysia, Singapore, and Thailand. Thus, no causal relationship was found to exist between government expenditure and economic growth in these four countries.</p><p>Frimpong and Oteng-Abayie (2009) empirically examined the Granger-causal relationship between government expenditure and economic growth proxied by per capita GDP growth for three of the five West African Monetary Zone (WAMZ) countries comprising the Gambia, Ghana, and Nigeria. The main objective was to test Wagner's Law and the Keynesian view in the study countries. The study was prompted by the issue of whether increasing government expenditure is the cause of economic growth or economic growth is the cause of growth in government expenditure-as the issue has policy implications for the WAMZ economies, among other economies. Using the cointegration test and Granger-causality test, the results of the study confirmed that neither Wagner's Law nor the Keynesian view was valid, as they lent support to the neutrality view, where no causality was found to exist between government expenditure and economic growth in the study counties. Based on the findings of the study, the authors then concluded that noneconomic factors could be playing an important role in influencing government spending in these countries. <ref type="bibr" target="#b50">Verma and Arora (2010)</ref> put to the test the validity of Wagner's Law and all (six) its versions in India over the <ref type="bibr">period 1950/1951 to 2007/2008</ref>. Two phases were identified-the mild liberalization phase and the intensive liberalization phase. Although the results confirmed the validity of Wagner's Law during the intensive phase of liberalization given a significant fall in the elasticity, short-run empirical evidence rejected the validity of the law. Instead, it confirmed the neutrality hypothesis, where no relationship was found to exist between economic growth and the size of the government expenditure in India.</p><p>In the same year, Taban (2010) re-investigated the government expenditure-economic growth nexus for the Turkish economy using quarterly data covering the period from 1987:Q1 to 2006:Q4. Various proxies were used to capture government expenditure-total government expenditure, the share of the government consumption spending to GDP, government investment expenditure to GDP, and government consumption spending to GDP ratio. Based on the bounds testing approach and MWALD Granger-causality test, no causality was found to exist between government expenditure, as measured by the government consumption spending to GDP ratio, and economic growth.</p><p>Using traditional and time-series econometric techniques, Afzal and Abbas (2010) re-investigated the application of the Wagner's Law to Pakistan during the period from 1960 to 2007. The study found no causality between income and public spending. <ref type="bibr" target="#b36">Rauf, Qayum, and Zaman (2012)</ref> empirically examined the applicability of Wagner's Law-national income-led public expenditure growth-in the case of Pakistan for the period from 1979 to 2009. Using the ARDL approach to cointegration and Todo and Yamamoto's approach to causality, the results confirmed the neutrality of government expenditure and economic growth as there was no causality found between the two.</p><p>In the same vein, <ref type="bibr" target="#b37">Ray and Ray (2012)</ref> examined the Granger causality between economic growth and various components of government expenditure in India. The results confirmed the absence of short-run causality between economic growth and developmental expenditure of government, thereby dispelling both the Keynesian view and Wagner's Law in India (see <ref type="table">Table 4</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In this article, theoretical and the empirical literature on the causal relationship between government size and economic growth has been reviewed, providing coverage for both developed and developing countries. The academic literature on the relationship between government size and economic growth dates back to as early as the late 19th century <ref type="bibr">(Wagner, 1883</ref><ref type="bibr" target="#b51">(Wagner, /1958</ref>, as the researchers battle to establish the impact of government size on economic growth. However, as the research intensified, the causality aspect of the relationship gained traction, leading to the intensification of the debate on whether it is government size that drives economic growth or it is economic growth that propels government size. To date, there is little consensus on the exact direction of causality between these two key macroeconomic variables. Previous literature on the subject can be divided into four categories. The first category is the government size-led growth, which consists of studies that support the Keynesian view. According to this group, it is the government size that propels the real sector. The second category is the growth-led government size, which is based on the premise that it is economic growth that leads to government size increase. This category supports the famous Wagner's Law. Then, there is the third view, which is a middle ground. This category consists of studies that validate both the Keynesian view and Wagner's Law, and therefore concluded that government size and economic growth are mutually causal-thereby confirming the bidirectional causality between the two variables. The fourth and less popular category is made up of studies that support the neutrality or the independent view, where government size and economic growth are independent of each other and, therefore, do not cause each other. Our study shows that all views have found empirical support, based on variations in the country or region under study, methodology, proxies, data set used, and time frame considered. Also revealed by this study is that of the four views on the causality between government size and economic growth, the most prominent one is the second view, the Wagner's Law, which validates unidirectional Granger-causality from economic growth to government size, followed by the bidirectional Granger-causality category. Notwithstanding this outcome, the study also finds empirical literature in favor of government size-led growth and no causality to be increasing. The study, therefore, concludes that the causal relationship between government size and economic growth is not clear-cut.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Note. OECD = Organisation for Economic Co-Operation and Development; VECM = vector error-correction model; Size = government size; Growth = economic growth; → = direction of flow; ARDL = autoregressive distributed lag.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Note.</head><label></label><figDesc>Growth = economic growth; Size = government size; → = direction of flow; GCC = Gulf Cooperation Council; ARDL = autoregressive distributed lag; GDP = gross domestic product; OECD = Organisation for Economic Co-Operation and Development; MWALD = Modified Wald.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Note.</head><label></label><figDesc>Size = government size; ↔ = direction of flow; Growth = economic growth; UECM = unrestricted error-correction model; ARDL = autoregressive distributed lag; MWALD = Modified Wald.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Studies in Favor of Unidirectional Causality From Government Size to Economic Growth.</figDesc><table><row><cell>Author(s)</cell><cell>Region/country</cell><cell>Methodology</cell><cell>Direction of causality</cell></row><row><cell>Ghali (1998)</cell><cell>OECD countries</cell><cell>VECM</cell><cell>Size → Growth</cell></row><row><cell>Loizides and Vamvoukas</cell><cell>Greece, the United Kingdom, and</cell><cell>Bivariate and trivariate error-</cell><cell>Size → Growth</cell></row><row><cell>(2005)</cell><cell>Ireland</cell><cell>correction models within a</cell><cell>In the short run</cell></row><row><cell></cell><cell></cell><cell>Granger causality</cell><cell></cell></row><row><cell>Dogan and Tang (2006)</cell><cell>Five South East Asian countries-The</cell><cell>Granger-causality test</cell><cell>Size → Growth</cell></row><row><cell></cell><cell>Philippines, Indonesia, Malaysia,</cell><cell></cell><cell>In the case of the Philippines</cell></row><row><cell></cell><cell>Singapore, and Thailand</cell><cell></cell><cell></cell></row><row><cell>Blankenau, Simpson, and</cell><cell cols="2">Developed and developing countries Causality tests</cell><cell>Size → Growth</cell></row><row><cell>Tomljanovich (2007)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Chandran, Rao, and Anwar</cell><cell>Malaysia</cell><cell>ARDL approach</cell><cell>Size → Growth</cell></row><row><cell>(2011)</cell><cell></cell><cell>Bivariate and the multivariate</cell><cell></cell></row><row><cell></cell><cell></cell><cell>models</cell><cell></cell></row><row><cell>Ebaidalla (2013)</cell><cell>Sudan</cell><cell>Granger-causality test and</cell><cell>Size → Growth</cell></row><row><cell></cell><cell></cell><cell>error-correction model</cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Studies in Favor of Unidirectional Causality From Economic Growth to Government Size.</figDesc><table><row><cell>Author(s)</cell><cell>Region/country</cell><cell>Methodology</cell><cell>Direction of causality</cell></row><row><cell>Bohl (1996)</cell><cell>G7 countries</cell><cell>Causality tests</cell><cell>Growth → Size UK and Canada</cell></row><row><cell>Ansari, Gordon, and Akuamoah</cell><cell>Three African countries-</cell><cell>Granger test and the Holmes-</cell><cell>Growth → Size Ghana</cell></row><row><cell>(1997)</cell><cell>Ghana, Kenya, and South</cell><cell>Hutton (1990) causality test</cell><cell></cell></row><row><cell></cell><cell>Africa</cell><cell></cell><cell></cell></row><row><cell>Abizadeh and Yousefi (1988)</cell><cell>South Korea</cell><cell>Granger-type causality tests</cell><cell>Growth → Size</cell></row><row><cell>Islam (2001)</cell><cell>The United States</cell><cell>The Engle-Granger (1987)</cell><cell>Growth → Size</cell></row><row><cell></cell><cell></cell><cell>error-correction</cell><cell></cell></row><row><cell>T. C. Tang (2001)</cell><cell>Malaysia</cell><cell>Johansen's multivariate</cell><cell>Growth → Size</cell></row><row><cell></cell><cell></cell><cell>co-integration tests and</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Granger-causality methodology</cell><cell></cell></row><row><cell>Al-Faris (2002)</cell><cell>GCC countries</cell><cell>Multivariate co-integration and</cell><cell>Growth → Size majority of the</cell></row><row><cell></cell><cell></cell><cell>Granger-causality tests</cell><cell>gulf countries</cell></row><row><cell cols="2">Abu-Bader and Abu-Qarn (2003) Three countries-Egypt,</cell><cell>Multivariate co-integration and</cell><cell>Growth → Size</cell></row><row><cell></cell><cell>Israel, and Syria</cell><cell>variance decomposition techniques</cell><cell></cell></row><row><cell>Dritsakis (2004)</cell><cell>Greece and Turkey</cell><cell>Causality tests</cell><cell>Growth → Size</cell></row><row><cell>Loizides and Vamvoukas (2005)</cell><cell>Greece, the United</cell><cell>Bivariate and trivariate ECMs</cell><cell>Growth → Size</cell></row><row><cell></cell><cell>Kingdom, and Ireland</cell><cell>within a Granger causality</cell><cell>Greece and UK</cell></row><row><cell>Akitoby, Clements, Gupta, and</cell><cell>Developing countries</cell><cell>Causality tests</cell><cell>Growth → Size</cell></row><row><cell>Inchauste (2006)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Sideris (2007)</cell><cell>Greece</cell><cell>Granger-causality tests</cell><cell>Growth → Size</cell></row><row><cell>Narayan, Nielsen, and Smyth</cell><cell>Chinese provinces</cell><cell>Panel unit root, co-integration,</cell><cell>Growth → Size only for the</cell></row><row><cell>(2008)</cell><cell></cell><cell>and Granger-causality approach</cell><cell>central and western provinces</cell></row><row><cell cols="2">Mohammadi, Cak, and Cak (2008) Turkey</cell><cell>ARDL bounds tests</cell><cell>Growth → Size</cell></row><row><cell>Samudram, Nair, and Vaithilingam</cell><cell>Malaysia</cell><cell>ARDL bounds testing approach</cell><cell>Growth → Size</cell></row><row><cell>(2009)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>C. F. Tang (2009)</cell><cell>Malaysia</cell><cell>Bounds testing for co-integration</cell><cell>Growth → Size when</cell></row><row><cell></cell><cell></cell><cell>and the leveraged bootstrap</cell><cell>government expenditure on</cell></row><row><cell></cell><cell></cell><cell>simulation approaches, together</cell><cell>health, education. and defense</cell></row><row><cell></cell><cell></cell><cell>with the MWALD causality test</cell><cell>was considered</cell></row><row><cell>Taban (2010)</cell><cell>Turkey</cell><cell>Bounds testing approach and</cell><cell>Growth →Size when</cell></row><row><cell></cell><cell></cell><cell>MWALD Granger-causality test</cell><cell>government spending was</cell></row><row><cell></cell><cell></cell><cell></cell><cell>proxied by government</cell></row><row><cell></cell><cell></cell><cell></cell><cell>investment expenditure to</cell></row><row><cell></cell><cell></cell><cell></cell><cell>GDP ratio</cell></row><row><cell>Lamartina and Zaghini</cell><cell>23 OECD countries</cell><cell>Causality tests</cell><cell>Growth →Size</cell></row><row><cell>(2011)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Kumar, Webber, and</cell><cell>New Zealand</cell><cell>ARDL bounds test, General to</cell><cell>Growth →Size</cell></row><row><cell>Fargher (2012)</cell><cell></cell><cell>Specific, Engle and Granger,</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Phillip Hansen's Fully Modified</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Ordinary Least Squares, and</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Johansen's time-series techniques</cell><cell></cell></row><row><cell>Srinivasan (2013)</cell><cell>India</cell><cell>Co-integration approach and</cell><cell>Growth →Size</cell></row><row><cell></cell><cell></cell><cell>error-correction mode</cell><cell></cell></row><row><cell>Akinlo (2013)</cell><cell>Nigeria</cell><cell>Multivariate framework</cell><cell>Growth → Size</cell></row><row><cell>Biyase and Zwane (2015)</cell><cell>30 African countries</cell><cell>Various panel data techniques</cell><cell>Growth → Size</cell></row><row><cell>Thabane and Lebina (2016)</cell><cell>Lesotho</cell><cell>ARDL bounds testing procedure</cell><cell>Growth → Size</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Studies in Favor of Bidirectional Causality Between Government Size and Economic Growth.</figDesc><table><row><cell>Author(s)</cell><cell>Region/country</cell><cell>Methodology</cell><cell>Direction of causality</cell></row><row><cell>Singh and Sahni (1984)</cell><cell>India</cell><cell>Granger's causality test</cell><cell>Size ↔ Growth in one of India's</cell></row><row><cell></cell><cell></cell><cell></cell><cell>provinces</cell></row><row><cell>Cheng and Lai (1997)</cell><cell>South Korea</cell><cell>VAR techniques within a</cell><cell>Size ↔ Growth</cell></row><row><cell></cell><cell></cell><cell>trivariate framework</cell><cell></cell></row><row><cell>Abu-Bader and Abu-Qarn</cell><cell>Three countries-Egypt,</cell><cell>Multivariate co-integration</cell><cell>Size ↔ Growth in Israel and Syria</cell></row><row><cell>(2003)</cell><cell>Israel, and Syria</cell><cell>and variance decomposition</cell><cell></cell></row><row><cell></cell><cell></cell><cell>techniques</cell><cell></cell></row><row><cell>Ahmad and Ahmad (2005)</cell><cell>D-8 member countries</cell><cell>Standard Granger procedure</cell><cell>Size ↔ Growth only in Iran</cell></row><row><cell>Huang (2006)</cell><cell>China and Taiwan</cell><cell>Pesaran et al.'s (2001) Bounds</cell><cell>Size ↔ Growth</cell></row><row><cell></cell><cell></cell><cell>Test on UECM estimation and</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Toda and Yamamoto's (1995)</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Granger non-causality test</cell><cell></cell></row><row><cell>Samudram, Nair, and</cell><cell>Malaysia</cell><cell>ARDL bounds testing approach</cell><cell>Size ↔ Growth</cell></row><row><cell>Vaithilingam (2009)</cell><cell></cell><cell></cell><cell>Government expenditures on</cell></row><row><cell></cell><cell></cell><cell></cell><cell>administration and health in the</cell></row><row><cell></cell><cell></cell><cell></cell><cell>long run</cell></row><row><cell>C. F. Tang (2009)</cell><cell>Malaysia</cell><cell>Bounds testing for co-integration</cell><cell>Size ↔ Growth when government</cell></row><row><cell></cell><cell></cell><cell>and the leveraged bootstrap</cell><cell>expenditure on health was</cell></row><row><cell></cell><cell></cell><cell>simulation approaches, together</cell><cell>considered</cell></row><row><cell></cell><cell></cell><cell>with the MWALD causality test</cell><cell></cell></row><row><cell>Wu, Tang, and Lin (2010)</cell><cell>182 countries</cell><cell>Panel Granger-causality test</cell><cell>Size ↔ Growth</cell></row><row><cell>Taban (2010)</cell><cell>Turkey</cell><cell>Bounds testing approach and</cell><cell>Size ↔ Growth total government</cell></row><row><cell></cell><cell></cell><cell>MWALD Granger-causality test</cell><cell>spending</cell></row><row><cell>Abu-Eideh (2015)</cell><cell>Palestinian territories</cell><cell>Granger-causality tests</cell><cell>Size ↔ Growth</cell></row></table><note></note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head><p>Sheilla Nyasha https://orcid.org/0000-0003-2930-094X  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biographies</head><p>Sheilla Nyasha holds a doctoral degree in Economics from the University of South Africa (UNISA) and is currently a senior research fellow in the Macroeconomic Policy Analysis (MPA) research programme at the University of South Africa. She is also with the Department of Trade and Industry as a director. Sheilla Nyasha has done extensive research covering the financial sector development, public sector and economic growth, among other areas, in a number of countries; and her research has been published in a number of internationally recognised journals.</p><p>Nicholas M. Odhiambo holds a PhD in Economics from the University of Stellenbosch, South Africa and is currently the research chair of the Macroeconomic Policy Analysis (MPA) programme at the University of South Africa (UNISA). His research profile is broad, rich and multifaceted. During the past 17 years, he has published more than 150 articles in 60 internationally recognised journals.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">An empirical re-examination of Wagner&apos;s Law. Economic Letters</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Abizadeh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Yousefi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988" />
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="169" to="173" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Government expenditures, military spending and economic growth: Causality evidence from Egypt, Israel, and Syria</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Abu-Bader</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S</forename><surname>Abu-Qarn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Policy Modeling</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="567" to="583" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Causality between public expenditure and GDP growth in Palestine: An econometric analysis of Wagner&apos;s</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">M</forename><surname>Abu-Eideh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Law. Journal of Economics and Sustainable Development</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="189" to="199" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Government expenditure in the European Union: Do they converge or follow Wagner&apos;s Law?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">C</forename><surname>Afxentiou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Serletis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Economic Journal</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="33" to="47" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Wagner&apos;s Law in Pakistan: Another look</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Afzal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Abbas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economics and International Finance</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="12" to="19" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Does government size matter? A case study of D-8 member countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Ahmad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pakistan Economic and Social Review</title>
+		<imprint>
+			<biblScope unit="volume">XLIII</biblScope>
+			<biblScope unit="page" from="199" to="212" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Government spending and national income nexus for Nigeria</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">E</forename><surname>Akinlo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Global Journal of Business Research</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="41" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Public spending, voracity, and Wagner&apos;s Law in developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Akitoby</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Clements</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Inchauste</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="908" to="924" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Public expenditure and economic growth in the Gulf Cooperation Council countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">F</forename><surname>Al-Faris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1187" to="1195" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Keynes versus Wagner: Public expenditure and national income for three African countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">I</forename><surname>Ansari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">V</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Akuamoah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="543" to="550" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Causality between public expenditure and economic growth: The Turkish case</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bagdigen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Cetintas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic and Social Research</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="53" to="72" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Economic growth in a cross section of countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Barro</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989" />
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>National Bureau of Economic Research</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">NBER Working Paper No. 3120</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Economic growth and government expenditures in Africa: Panel data analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Biyase</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Zwane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environmental Economics</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="15" to="19" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Public education expenditure, taxation, and growth: Linking data to theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">B</forename><surname>Blankenau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">B</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tomljanovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review: Papers and Proceedings</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page" from="393" to="397" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Some international evidence on Wagner&apos;s Law</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Bohl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Public Finance</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="185" to="200" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Economic growth and government spending in Malaysia: A re-examination of Wagner and Keynesian views. Economic Change and Restructuring</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Chandran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Anwar</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="203" to="219" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Government expenditures and economic growth in South Korea: A VAR approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">W</forename><surname>Lai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Development</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="24" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Ideology, institutions, and public spending (Discussion Paper P02-903)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">R</forename><surname>Cusack</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Fuchs</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Wissenschaftszentrum für Sozialforschung</publisher>
+			<pubPlace>Berlin, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Government expenditure and national income: Causality tests for five South East Asian countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Dogan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">C</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Business and Economics Research Journal</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="49" to="58" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Defence spending and economic growth: An empirical investigation for Greece and Turkey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Dritsakis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Policy Modeling</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="249" to="264" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Life during growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Easterly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Growth</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="239" to="276" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Causality between government expenditure and national income: Evidence from Sudan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">M</forename><surname>Ebaidalla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Cooperation and Development</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="61" to="76" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Does the Wagner&apos;s hypothesis matter in developing economies? Evidence from three West African Monetary Zone (WAMZ) countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Frimpong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">F</forename><surname>Oteng-Abayie</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Economics and Business Administration</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="141" to="147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Government size and economic growth: Evidence from a multivariate cointegration analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">H</forename><surname>Ghali</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="975" to="987" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Determinants of government size: The capacity for Partisan policy under political constraints</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>Häge</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<pubPlace>Konstanz, Germany</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Politics and Management, University of Konstanz</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Government expenditures in China and Taiwan: Do they follow Wagner&apos;s Law?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">J</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Development</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="139" to="148" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Wagner&apos;s Law revisited: Cointegration and exogeneity test for the USA</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Islam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economic Letters</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="509" to="515" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Wagner&apos;s Law revisited: Cointegration and causality tests for New Zealand</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Webber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Fargher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="607" to="616" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Increasing public expenditure: Wagner&apos;s Law in OECD countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Lamartina</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Zaghini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">German Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="149" to="164" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">The public sector: Concepts, models and approaches</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lane</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>Sage</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Government expenditure and economic growth: Evidence from trivariate causality testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Loizides</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Vamvoukas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="125" to="152" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">On the mechanics of economic development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Lucas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Monetary Economics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="3" to="42" />
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Wagner&apos;s hypothesis: New evidence from Turkey using the bounds testing approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Mohammadi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economics Studies</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="94" to="106" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Panel data, cointegration, causality and Wagner&apos;s Law: Empirical evidence from Chinese provinces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">K</forename><surname>Narayan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Smyth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="297" to="307" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Bounds testing approaches to the analysis of level relationships</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pesaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="289" to="326" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Relationship between public expenditure and national income: An empirical investigation of Wagner&apos;s Law in case of Pakistan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rauf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Qayum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Zaman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academic Research International</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="533" to="538" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">On the relationship between government&apos;s developmental expenditure and economic growth in India: A cointegration analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">A</forename><surname>Ray</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Applied Economics and Finance</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="86" to="94" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Increasing returns and long-run growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">M</forename><surname>Romer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="1002" to="1037" />
+			<date type="published" when="1986" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Keynes and Wagner on government expenditures and economic development: The case of a developing economy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Samudram</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Vaithilingam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Empirical Economics</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="697" to="712" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Wagner&apos;s Law vs. Keynes&apos; hypothesis in very different countries (Armenia and Spain)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">S</forename><surname>Sedrakyan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Varela-Candamio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Policy Modeling</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="747" to="762" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Wagner&apos;s Law in 19th century Greece: A cointegration and causality analysis (Bank of Greece Working Paper No. 64). Athens: Bank of Greece</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sideris</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Causality between public expenditure and national income</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">S</forename><surname>Sahni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">664</biblScope>
+			<biblScope unit="page" from="630" to="644" />
+			<date type="published" when="1984" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">A contribution to the theory of economic growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Solow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="65" to="94" />
+			<date type="published" when="1956" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Causality between public expenditure and economic growth: The Indian case</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Srinivasan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Economics and Management</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="335" to="347" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">An examination of the government spending and economic growth nexus for Turkey using the bound test approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Taban</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Research Journal of Finance and Economics</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="184" to="193" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">An examination of the government spending and economic growth nexus for Malaysia using the leveraged bootstrap simulation approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">F</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Global Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="215" to="227" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Testing the relationship between government expenditure and national income in Malaysia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">C</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Analisis</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1&amp;2</biblScope>
+			<biblScope unit="page" from="37" to="51" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Economic growth and government spending nexus: Empirical evidence from Lesotho</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Thabane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Lebina</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">African Journal of Economic Review, IV</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="86" to="100" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Statistical inference in vector autoregressions with possibly integrated processes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">Y</forename><surname>Toda</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Yamamoto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="225" to="250" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Does the Indian economy support Wagner&apos;s Law? An econometric analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Arora</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eurasian Journal of Business and Economics</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="77" to="91" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Three extracts on public finance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Wagner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Classics in the theory of public finance</title>
+		<editor>R. A. Musgrave &amp; A. T. Peacock</editor>
+		<meeting><address><addrLine>London, England</addrLine></address></meeting>
+		<imprint>
+			<publisher>Macmillan</publisher>
+			<date type="published" when="1958" />
+			<biblScope unit="page">1883</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The impact of government expenditure on economic growth: How sensitive to the level of development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">H</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">S</forename><surname>Lin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Policy Modeling</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="804" to="817" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

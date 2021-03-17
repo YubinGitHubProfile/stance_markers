@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The Influence of Stigma and Views on Mental Health Treatment Effectiveness on Service Use by Age and Ethnicity: Evidence From the CDC BRFSS 2007, 2009, and 2012</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Professor,</roleName><forename type="first">Jong</forename><surname>Won Min</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jong</forename><surname>Won</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">San Diego State University</orgName>
+								<address>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">School of Social Work</orgName>
+								<orgName type="institution">San Diego State University</orgName>
+								<address>
+									<addrLine>5500 Campanile Dr</addrLine>
+									<postCode>92182</postCode>
+									<settlement>San Diego</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The Influence of Stigma and Views on Mental Health Treatment Effectiveness on Service Use by Age and Ethnicity: Evidence From the CDC BRFSS 2007, 2009, and 2012</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019876277</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>mental health stigma</term>
+					<term>views on treatment effectiveness</term>
+					<term>perceived public stigma</term>
+					<term>mental health use</term>
+					<term>ethnicity</term>
+					<term>race</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Prevention [CDC], 2012a). Despite these grave consequences, older Americans underutilize mental health services (Bartels, Blow, Brockmann, &amp; Van Citters, 2005), especially among ethnic minority elders such as older African Americans with mental health disorders (Conner et al., 2010) and older Latinos (Alegría et al., 2008; Jimenez, Cook, Bartels, &amp; Alegría, 2013). Mental health and access to mental health services are one of many essential elements to ensure quality of life in the aging process. To better understand the aging process, some conceptual and theoretical frameworks of aging such disengagement theory (</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Mental disorders are common among older adults, yet often go undiagnosed and untreated. A lifetime prevalence rate of being diagnosed with a mental disorder is estimated at 26.1% among those aged 60 years or more in the United States <ref type="bibr" target="#b32">(Kessler et al., 2005)</ref>, and the previous 12-month prevalence rate of having a mental disorder among those aged 65 and older is 20.4% <ref type="bibr" target="#b29">(Karel, Gatz, &amp; Smyer, 2012)</ref>. Mental disorders among older adults (e.g., mood, anxiety, substance abuse disorders, or dementia such as Alzheimer's disease and vascular dementia) are a significant burden on both an individual's health and also on society. Depressive disorders not only impair daily functioning and cause great suffering, but research has shown depression to have deleterious effect on the treatment of other chronic diseases <ref type="bibr" target="#b7">(Chapman, Perry, &amp; Strine, 2005)</ref> and hinder recovery from an illness <ref type="bibr" target="#b22">(Groessl et al., 2007)</ref>. Untreated mental disorders may lead to the fatal consequence of suicide. Older men have the highest suicide rate, especially among those aged 75 and older (36 per 100,000 individuals; Centers for Disease Control and part of the 20th century <ref type="bibr" target="#b28">(Johnson &amp; Mutchler, 2014)</ref>. Such frameworks evolved into alternative views of later life such as selective optimization with compensation (SOC; <ref type="bibr" target="#b3">Baltes &amp; Baltes, 1990)</ref> and "successful" aging <ref type="bibr" target="#b39">(Rowe &amp; Kahn, 1997)</ref>. The successful aging framework by <ref type="bibr">Kahn (1997, 2015)</ref> includes three components: low probability of disease and disease-related disability, maintenance of high mental functioning, and active social engagement. In particular, one of three components, "maintenance of high mental functioning," may be closely associated with older individuals' ability to access mental health resources and utilize relevant mental health services and programs. Nevertheless, older individuals are faced with multiple barriers to access and utilization of mental health service use such as cost, transportation, lack of insurance, and use of culturally sanctioned services. Stigma and attitude about mental illness have been pointed out as other barriers <ref type="bibr" target="#b4">(Bartels et al., 2005;</ref><ref type="bibr">Substance Abuse and Mental Health Services Administration, 2005</ref>). An investigation into mental health stigma among older adults as a possible barrier in their later life would make an important contribution to ongoing efforts to develop and refine interventions and programs aimed at maintaining and enhancing mental health functioning and their qualities of life.</p><p>Stigma is defined as having a negative belief about either the self or a group and a resulting prejudiced behavioral response <ref type="bibr" target="#b13">(Corrigan &amp; Watson, 2002)</ref>. Stigma can be understood through three major theoretical frameworks: social identity, self-stigma, and structural stigma <ref type="bibr" target="#b37">(Overton &amp; Medina, 2008)</ref>. The first theory is based on the construct of social identity by <ref type="bibr" target="#b20">Goffman (1963)</ref> and involves how societies or large groups within societies use socially constructed norms when assessing someone who is different. When applied to mental health, persons with mental illness would be considered "different." Stigma results from a discrepancy between two identities: "virtual social identity" (how a person is characterized by society) and "actual social identity" (the attributes really possessed by a person) <ref type="bibr" target="#b20">(Goffman, 1963;</ref><ref type="bibr" target="#b45">Yang et al., 2007)</ref>. The second theory, self-stigma, suggests that stigma occurs as an internal evaluation process whereby individuals judge themselves as being dehumanized, devalued, and inferior and feel shame as a result <ref type="bibr" target="#b13">(Corrigan &amp; Watson, 2002;</ref><ref type="bibr" target="#b37">Overton &amp; Medina, 2008)</ref>. Finally, structural stigma is an external evaluation of a person with regard to societal norms <ref type="bibr" target="#b34">(Link &amp; Phelan, 2001</ref>) that focuses more on the relationship between structural (e.g., discriminatory and/or exclusionary policies and laws) and interpersonal factors (e.g., prejudice and behaviors leading to increased social distance and status loss; <ref type="bibr" target="#b43">Ungar, Knaak, &amp; Szeto, 2016)</ref>. This type of stigma may mean denying people with a mental illness their entitlement or access to experiences that people who are considered "normal" may easily access. For example, persons with mental illness may face difficulty engaging in empathetic and supportive relationships with others, happiness, participatory citizenship, and peace of mind. Structural stigma further posits that the effects of social processes in the greater sociocultural environment can be observed on an individual level in the form of discrimination.</p><p>Building upon the second and third theories of stigma, self-stigma and structural stigma, public stigma of mental illness refers to the extent to which the general population collectively holds negative beliefs and attitudes about mental illness and the degree to which they discriminate against those with mental illness <ref type="bibr" target="#b11">(Corrigan, 2000)</ref>. As one type of stigma under investigation in the present study, perceived public stigma is further defined as an individual perception of how the public holds stigmatizing attitudes toward those with mental illnesses <ref type="bibr" target="#b12">(Corrigan, 2004)</ref>. Greater perceived public stigma is known to adversely affect help-seeking intentions and behaviors <ref type="bibr" target="#b10">(Cooper, Corrigan, &amp; Watson, 2003;</ref><ref type="bibr" target="#b23">Gulliver, Griffiths, &amp; Christensen, 2010)</ref>, particularly among older adults <ref type="bibr" target="#b9">(Conner et al., 2010;</ref><ref type="bibr" target="#b27">Jimenez et al., 2013)</ref>. Stigma was identified as the fourth leading barrier to accessing mental health services <ref type="bibr" target="#b8">(Clement et al., 2015)</ref> and is considered as one of many causes for older adults to not seek mental health treatment <ref type="bibr" target="#b30">(Katona &amp; Livingston, 2000)</ref>. As a result, the adverse impacts of mental health stigma among older adults have received growing attention <ref type="bibr" target="#b9">(Conner et al., 2010;</ref><ref type="bibr" target="#b29">Karel et al., 2012)</ref>. Specifically, high levels of perceived public stigma may cause a lack of engagement in treatment as well as lack of help-seeking intention. Rather than seek services for mental health, older adults will turn to primary care, as mental health issues are often accompanied by concurrent physical conditions <ref type="bibr">(IOM, 2012)</ref>.</p><p>Mental health stigma may be more pronounced among older adults from minority ethnic communities due to additional access barriers stemming from their cultural and linguistic background. Cultural values as well as advanced age may deepen stigma and negatively affect mental health treatment-seeking behavior and quality of care among older minority groups <ref type="bibr" target="#b18">(Gary, 2005)</ref>. Older African Americans were found to have experienced more stigma about mental illness than their White counterparts <ref type="bibr" target="#b9">(Conner et al., 2010)</ref>. Compared with non-Hispanic Whites, older African Americans tended to hold more negative views of depression and its treatment, considered it socially embarrassing, and were less likely to accept pharmacotherapy and psychotherapy treatments <ref type="bibr" target="#b1">(Anglin, Link, &amp; Phelan, 2006)</ref>. There is, however, contrasting research by <ref type="bibr" target="#b19">Gitlin, Chernett, Dennis, and Hauck (2012)</ref> who reported that less than 33% of older African Americans viewed depression as stigmatizing. African Americans from the 1990-1992 National Comorbidity Survey reported comparable and more favorable views on seeking care for their mental illness than did White respondents <ref type="bibr" target="#b15">(Diala et al., 2001)</ref>. When it comes to older Latinos, one study indicated that they viewed depression as a sign of personal weakness and reported believing that it would cause several consequences within the family, such as disappointment, burden, shame, or embarrassment <ref type="bibr" target="#b27">(Jimenez et al., 2013)</ref>. However, older Latinos have also been shown to hold positive perceptions of mental health treatment <ref type="bibr" target="#b26">(Jang, Chiriboga, Herrera, Tyson, &amp; Schonfeld, 2011)</ref>. Due to conflicting results, the emerging body of literature on the topic remains inconclusive.</p><p>As an additional dimension, while many studies have investigated on individuals' views on seeking mental health treatment, little attention has been given to the views on mental health treatment and its impact on service use. Only one European study was available which found positive association between perceived effectiveness of professional help and increased likelihood of using mental health services <ref type="bibr">(ten Have et al., 2010)</ref>.</p><p>In light of mixed results from previous comparative studies on the perceived public stigma and the paucity of comparative research on views on mental health service effectiveness among non-Hispanic White, non-Hispanic Black, and Hispanic groups of adults, this study attempts to address the following three main research questions, using a national sample of the three groups of adult population aged 55 years or older in the United States:</p><p>Research Question 1: What are the ethnic/racial and age differences in perceived public stigma and views on mental health treatment effectiveness? Research Question 2: What are the correlates of perceived public stigma and views on mental health treatment effectiveness? Research Question 3: Is perceived public stigma and views on mental health treatment effectiveness associated with mental health service use?</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Design and Participants</head><p>This secondary survey research design is based on the pooled data from the 2007, 2008, and 2012 Behavioral Risk Factor Surveillance System (BRFSS) surveys by the U.S. CDC (CDC, 2015). Since 1984, the BRFSS survey has been conducted as a monthly cross-sectional telephone survey by state health departments. The BRFSS survey typically collects prevalence data among the adult population aged 18 years or older from all 50 states, the District of Columbia, Puerto Rico, the U.S. Virgin Islands, and Guam on their risk behaviors, preventive health practices, and health care access for chronic disease and injury <ref type="bibr">(CDC, 2015)</ref>. The BRFSS conducted the survey only using landline telephones until 2011, at which point it began to include cellular telephone-based surveys. For the landline telephone survey, data are collected from a randomly selected adult in a household based on a disproportionate stratified sample (DSS) except in Guam and Puerto Rico which use a simple random sample design. The cellular telephone-based survey utilizes the Telcordia database of telephone exchanges and 1,000 banks to randomly select participants. State health departments conduct the interviews either in-house or by using contractors following guidelines provided by CDC <ref type="bibr">(CDC, 2013)</ref>.</p><p>In 2007, the CDC included an optional module on "Mental Illness and Stigma" that examined mental illness stigma (CDC, 2012b) along with its core components. The "Mental Illness and Stigma" module was repeated in 2009 and 2012; however, the module was not available to all the states and different states participated in the module each survey year. This study draws upon the data on perceived public stigma and attitudes toward mental health treatment effectiveness from adults in data from 21 states (i.e., AK, AR, CO, CT, IL, IN, IA, KY, LA, ME, MN, MT, NH, NM, OH, OK, OR, RI, TX, VA, and WI), the District of Columbia, and Puerto Rico in 2007, 16 states (i.e., CA, GA, HI, KS, MA, MI, MS, MO, NE, NV, SC, TN, UT, VT, WA, and WI) in 2009 (CDC, 2012b), and 13 states (i.e., IL, IA, KS, MN, MO, MT, NE, NV, NJ, NM, NY, OR, and WA) and Puerto Rico in 2012. While it was not a longitudinal panel study, the merged data from three survey years allow for an opportunity to conduct the investigation on the research questions across all of states in the United States. A sample used for this study includes non-Hispanic White, non-Hispanic Black, and Hispanic adults aged 55 years or older who were interviewed in 2007, 2009, and 2012. The unweighted pooled sample sizes were 149,344 Whites, 11,156 Blacks, and 11,072 Hispanic adults.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measures</head><p>Perceived Public Stigma was assessed by one item, "People are generally caring and sympathetic to people with mental illness." The degree to which respondents agreed or disagreed with this item was used to measure the perception of public attitudes toward persons with mental illness. Five responses ranging from agree strongly to disagree strongly were grouped into two: 0 = the low level (agree strongly or slightly) and 1 = the high level of perceived public stigma (disagree strongly or slightly) including a response category of neither agreed nor disagreed. This measure is consistent with the definition of perceived public stigma by <ref type="bibr" target="#b12">Corrigan (2004)</ref> mentioned above. Previously, this single item to measure perceived public stigma was used by both CDC in the United States (2012) and the Scottish Government <ref type="bibr">(2009)</ref>.</p><p>Views on mental health treatment effectiveness was measured by one item, "Treatment can help people with mental illness lead normal lives." Depending on the level of agreement or disagreement with the item, responses fell into two categories of attitude toward treatment effectiveness: 0 = favorable (agree strongly or slightly) and 1 = unfavorable (disagree strongly or slightly and neither agreed nor disagreed).</p><p>Mental health service use was assessed by one question, "Are you now taking medicine or receiving treatment from a doctor or other health professional for any type of mental health condition or emotional problem?" Response categories were "Yes," "No," "Don't know," and "Refused." An affirmative response of "Yes" was considered as having used mental health services/treatment. The "Don't know" and "Refused" responses were treated as missing.</p><p>Serious psychological distress was measured using the Kessler-6 scale <ref type="bibr" target="#b31">(Kessler et al., 2003)</ref>. The Kessler-6 scale assesses the respondents' self-reported frequency of six items relating to psychological distress in the past 30 days with 0 (none of the time) to 4 (all of the time). Those with a cut-off score of 13 or more were considered as having serious psychological distress.</p><p>Frequent mental distress (FMD) was assessed by the number of days in the past 30 days that the respondents' mental health was not good due to stress, depression, or problems with emotions. Respondents reporting 14 or more days of not good mental health were identified as having FMD <ref type="bibr" target="#b46">(Zahran et al., 2004)</ref>.</p><p>Sociodemographic variables of ethnicity, gender, age, education level, and income were included. Three ethnic groups were identified in the study: non-Hispanic White, non-Hispanic Black, and Hispanic adults. Although two separate questions were asked in the BRFSS survey instrument in terms of ethnicity (Hispanic and non-Hispanic) and race, in this study, all the respondents were initially coded into four groups of non-Hispanic White, non-Hispanic Black, Hispanic, and others. For the present study, the first three groups were selected for subsequent analyses. Age was divided into two categories: "55 to 64 years" and "65 years and older." Four categories comprised education level: "less than high school," "high school graduates," "attended college," and "college graduates." Finally, income was measured by the following five categories: "&gt;US$15,000," "US$15,000 to US$25,000," "US$25,000 to US$35,000" "US$35,000 to US$50,000" and "&lt;US$50,000."</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Analysis</head><p>The data analysis procedure was guided by the research questions to be addressed. First, for ethnic and age differences in perceived public stigma and views on mental health treatment effectiveness, descriptive information was reported in terms of percentages, along with chi-square statistics. Second, logistic regressions were performed to identify significant correlates of perceived public stigma and views on mental health treatment effectiveness using dichotomous variables, 0 = agree and 1 = disagree. Third, adjusted odds ratios and the 95% confidence interval (CI) are presented. Finally, multivariate logistic regressions were performed on mental health service use (0 = No and 1 = Yes) to examine the effects of perceived public stigma and mental health treatment attitude on mental health help-seeking behaviors. Income as a correlate was dropped due to its multicollinearity with education. Separate analyses were conducted for each ethnic group. Missing data in the data set were analyzed with listwise deletion. Assumption for binary logistic regression include that two dependent variables are grouped into two categories which are binary. In addition, as the observations did not come from repeated measurements, an assumption of the independence of the observations is met. Finally, after dropping income variable, no multicollinearity among the independent variables was found.</p><p>All analyses were conducted without applying the weights to account for the difference in household size and for age, gender, and race distribution of the population. The primary reason for that decision is that there was a difference in the calculation of weights between data from 2007/2009 and 2012. The 2007 and 2009 BRFSS surveys used only landline telephones, whereas the 2012 BRFSS survey began to use both landline telephones and cellular telephones <ref type="bibr">(CDC, 2012c)</ref>. Therefore, the 2007 and 2009 surveys assigned the final weight based on the formula (FINALWT = STRWT × 1 OVER NPH × NAD × POSTSTRAT), and the 2012 survey was based on the raking weighting methodology consisting of design weight and raking (Design Weight = STRWT*(1/ NUMPHON2)*NUMADULT). All statistical analyses were performed using Stata 11. This research was reviewed and approved as exempt by the institutional review board of the institution with which the author is affiliated. <ref type="table" target="#tab_0">Table 1</ref> presents the descriptive information of sociodemographic characteristics and mental health status of the sample by ethnicity and age. Approximately two thirds of the respondents were female, ranging from 60% for middle-aged non-Hispanic Whites to 69.5% for older non-Hispanic Black respondents. In both age groups, more than half of Black (51.0% and 63.4%) and Hispanic respondents (56.4% and 70.9%) reported an education level of a high school diploma or less. Conversely, the majority of White respondents either attended college or graduated from college (68.9% for 55-64 age group and 54.1% for 65 or older group). In regard to income, slightly more than half of the middle-aged White respondents (52.6%) reported an annual income of more than US$50,000; however, less than one quarter of any other ethnic or age group reported a figure this high. Older Black and Hispanic respondents were more likely to report an income of less than US$15,000 a year, 32.6% and 48.2%, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sociodemographic Characteristics and Mental Health Status</head><p>In regard to the mental health status of survey respondents, middle-aged respondents (aged 55-64 years) were more likely than their older counterparts (65 or older) to be clinically distressed across all ethnic groups (3.7% vs. 2.0% for White, 6.2% vs. 3.9% for Black, and 9.9% vs. 5.3% for Hispanic). When it comes to cross-ethnic group comparison, Hispanic adults reported the highest prevalence rate of serious psychological distress in both middle and old age, 5.3% and 9.9%, respectively. This same pattern was observed for another measure of mental health status, FMD (i.e., reporting 14 or more days of not good mental health out of 30 days). A greater proportion of middle-aged respondents had FMD than their older counterparts, and middle-aged and older Hispanic adults reported the highest level of FMD. Finally, regarding the use of mental health services, which was measured by one item asking "whether they are currently taking medicine or receiving treatment from a doctor or other health professional for any type of mental health condition or emotional problem," both middle-aged and older Hispanic adults reported the highest utilization rate (17.1% and 10.8%), followed by White (16.3% and 10.5%) and Black respondents (12.9% and 9.3%).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Age and Ethnic Difference in Perceived Public Stigma and the Views on Mental Health Treatment Effectiveness</head><p>As depicted in <ref type="table" target="#tab_1">Table 2</ref>, non-Hispanic White and Hispanic adults tended to hold the highest level of perceived public stigma on mental health. Approximately 45% to 46% of middle-aged non-Hispanic Whites and Hispanic adults disagreed, whereas older adults of respective groups showed much lower level of disagreement at 36.8% and 40.8%, to the statement, "People are generally caring and sympathetic to people with mental illness." Older non-Hispanic Black adults showed the lowest level of perceived public stigma at 31.2%. Results for the attitude toward mental health treatment effectiveness measured by the item, "Treatment can help people with mental illness lead normal lives," indicated that both middle-and old-aged Hispanic adults showed the highest level of disagreement to the statement (i.e., the most unfavorable attitude), at 12.8% and 13.9%, respectively. In contrast, non-Hispanic White adults in general showed the lowest level of disagreement at 4.2% and 7.3%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Correlates of Views on Mental Health Treatment Effectiveness</head><p>Results from multivariate logistic regressions on the views on mental health treatment effectiveness (1 = disagree, that is, having an unfavorable view on the treatment) are presented in <ref type="table" target="#tab_2">Table 3</ref>. Across the three ethnic groups, the following correlates appear to increase the likelihood of having an unfavorable view on mental health treatment effectiveness: being female, being serious psychologically distressed, and suffering from FMD. Only among White respondents was advanced age (65 years or older) significantly associated with an unfavorable view toward mental health treatment effectiveness (odds ratio = 1.52, p &lt; .001). <ref type="table" target="#tab_3">Table 4</ref> shows multivariate logistic regression results on the correlates of perceived public stigma. Across all three ethnic groups, being female was significantly less likely to disagree to the statement "People are generally caring and sympathetic to people with mental health," indicating for a lower level of perceived public stigma than their male counterparts (odds ratios = .61 for White, .78 for Black, .73 for Hispanic at the level of p &lt; .001). In contrast, having a higher level of education increased the likelihood of reporting perceived public stigma than those with less than high school educational level. The effect of education was the most pronounced among the most educated group of Hispanic adults (i.e., college graduates), who were 2.82 times more likely to show perceived public stigma than those with less than high school education (odds ratio = 2.82, p &lt; .001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Correlates of Perceived Public Stigma</head><p>Also reported in <ref type="table" target="#tab_3">Table 4</ref> is the effect of serious psychological distress and FMD on the level of perceived public stigma. The presence of both psychological distress and FMD was significantly associated with a greater likelihood of reporting perceived public stigma. Non-Hispanic White adults with serious psychological distress were about 55% more likely than those without distress to hold perceived public stigma (odds ratio = 1.55, p &lt; .001), compared with 28% for both Hispanic and non-Hispanic Black adults. Similarly, White adults reporting FMD were about 41% more likely than those without the distress to hold perceived public stigma (odds ratio = 1.41, p &lt; .001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Effects of Views on Mental Treatment Effectiveness and Perceived Public Stigma on Service Use</head><p>A final step in the analysis was to examine the effect of views on mental health treatment effectiveness and perceived public stigma on mental health service utilization, while controlling for their correlates. Tables 5 and 6 present subgroup analyses on the effect of (a) views on mental health treatment effectiveness and (b) perceived public stigma on mental 12.8 13.9 (χ 2 = 820.3/df = 2, p &lt; .001) d a Perceived public stigma was assessed by one item, "People are generally caring and sympathetic to people with mental illness." b "Agree" includes both agree slightly and agree strongly from the original response categories. c "Disagree" includes disagree slightly, disagree strongly, and neither agreed nor disagreed from the original response categories. Chi-square statistics presented indicate test of independence between ethnicity and two types of stigma in the study. The same analyses were conducted for each age-group (55-64 and 65+), and the results (not reported here) were all significant at p &lt; .001. e Views on mental health treatment effectiveness was measured by one item, "Treatment can help people with mental illness lead normal lives." health service use, respectively. Results from multivariate logistic regressions on the use of mental health service (1 = Used) are reported in each ethnic group. Adjusted odds ratios with their 95% CIs are shown in the tables.</p><p>First, as reported in <ref type="table" target="#tab_4">Table 5</ref>, views on mental health treatment effectiveness had a significant effect on mental health service utilization only for non-Hispanic White adults (odds ratio = 0.68, p &lt; .001), after controlling for all other covariates. Non-Hispanic Whites with an unfavorable views on treatment effectiveness were significantly less likely to use mental health services than those with the favorable views, that is, by about 32% less likely to seek mental health service.</p><p>With regard to the effects of perceived public stigma on mental health service utilization, as shown in <ref type="table" target="#tab_5">Table 6</ref>, the effect of perceived public stigma on mental health service use was significant for all ethnic groups, even controlling for the presence of serious psychological distress as well as other correlates. Respondents with a higher level of perceived public stigma had a greater likelihood of seeking mental health help than those with a lower level of perceived stigma (odds ratio = 1.32 for non-Hispanic Whites, 1.22 for non-Hispanic Black, and 1.29 for Hispanic).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The present study examined age and ethnic differences in perceived public stigma and views on mental health treatment effectiveness, identified their correlates, and investigated their potential effects on mental health service use. Age was divided into two groups, adults aged 55 to 64 years and 65 years or older, and the U.S. participants were of three ethnic backgrounds-White, Black, and Hispanic. Results from the study indicated that (a) age and ethnic differences were significant in perceived public stigma and views on mental health treatment effectiveness; (b) gender, age, and education level turned out to be significant correlates of perceived public stigma and views on mental health treatment effectiveness; and (c) an unfavorable view was associated with lower level of mental health service use, whereas greater perceived public stigma was related to higher level of service use.</p><p>First, older Black adults reported a significantly lower level of perceived public stigma than other ethnic groups. This appears to be consistent with previous studies reporting more tolerable views of mental illness among older Black adults <ref type="bibr" target="#b1">(Anglin et al., 2006;</ref><ref type="bibr" target="#b19">Gitlin et al., 2012)</ref>. Among older Hispanics, the level of perceived public stigma was lower  <ref type="formula">7</ref>131.9*** <ref type="formula">7</ref>112.93*** <ref type="formula">7</ref>a "Agree" (favorable attitude) combines two categories of agree slightly and agree strongly and "Disagree" (unfavorable attitude) combines two categories of disagree slightly and disagree strongly from the original response categories for one item, "Treatment can help people with mental illness lead normal lives." *p &lt; .05. **p &lt; .01. ***p &lt; .001.</p><p>than that of older Whites. However, these results are at odds with recent findings on older Hispanics reporting greater shame or embarrassment of having a mental illness than non-Hispanic White counterparts <ref type="bibr" target="#b27">(Jimenez et al., 2013)</ref>. The inconsistency of this finding may be attributed to the fact that Jimenez et al. (2013) measured a different type of stigma than the one assessed in the present study. Although this study may be the first to report on attitudes toward mental health treatment effectiveness across different ethnic groups, <ref type="bibr" target="#b26">Jang et al. (2011)</ref> have previously looked at the attitudes of older Hispanics alone. The study reported somewhat an unfavorable attitude of older Hispanics toward mental health treatment effectiveness, as the results indicated that Hispanics perceived counseling to cause anger or sadness. Results from the present study appear to confirm such previous findings among Hispanic adults, who reported the most unfavorable views on mental health treatment effectiveness. However, when these results are considered in an international context, Hispanic's overall rate of unfavorable attitudes about treatment effectiveness of 6% (ranging from 3.2% to 8.1% for middle-aged and older adults, respectively) was substantially lower than that of 32.2% reported in one European study <ref type="bibr">(ten Have et al., 2010)</ref>.</p><p>Second, gender, age, and level of education were found to be correlates of views on mental health treatment effectiveness and perceived public stigma among middle-and old-aged adults in the United States. These findings are somewhat consistent with previous studies on attitude toward mental health help-seeking behaviors <ref type="bibr" target="#b38">(Riedel-Heller, Matschinger, &amp; Angermeyer, 2005;</ref><ref type="bibr">ten Have et al., 2010)</ref>. The present study found that females, older age group, and those with lower level of education were more likely to show favorable views on mental health treatment effectiveness and have a lower level of public perceived stigma. In contrast, males, younger age groups, and adults with a higher education level tended to have higher levels of perceived public stigma. The finding on the relationship between age and perceived public stigma appear to be consistent with previous research which suggests that older adults showed more positive perceptions of help seeking than their younger counterparts <ref type="bibr" target="#b35">(Mackenzie, Scott, Mather, &amp; Sareen, 2008)</ref>. It should be noted that contrary to previous studies reporting that those in lower socioeconomic status (SES; income, or education) tend to express higher level of stigma are higher <ref type="bibr" target="#b16">(Eisenberg, Downs, Golberstein, &amp; Zivin, 2009;</ref><ref type="bibr" target="#b17">Evans-Lacko, Brohan, Mojtabai, &amp; Thornicroft, 2012)</ref>, this study found the association to be the opposite. As the perceived public stigma was measured by one single item in the study due to the constraints of the available data, direct comparison with other previous studies is not possible, but this shows a complex nature of the construct in the  <ref type="formula">7)</ref>a "Agree" (lower level of stigma) combines two categories of agree slightly and agree strongly, and "Disagree" (high level of stigma) combines two categories of disagree slightly and disagree strongly from the original response categories for one item, "People are generally caring and sympathetic to people with mental illness." *p &lt; .05. **p &lt; .01. ***p &lt; .001.</p><p>relationship between SES and mental illness stigma <ref type="bibr" target="#b24">(Holman, 2015)</ref>. Finally, having an unfavorable view on mental health treatment effectiveness significantly decreased use of mental health services among Whites and Hispanic adults in this study. These results are congruent with one research in Europe showing that perceived effectiveness of professional help increased the likelihood of using mental health services <ref type="bibr">(ten Have et al., 2010)</ref>. However, the relationship between perceived public stigma and mental health help-seeking behaviors has previously been inconclusive: While <ref type="bibr" target="#b21">Golberstein, Eisenberg, and Gollust (2008)</ref> and <ref type="bibr" target="#b36">Lally, Conghaile, Quigley, Bainbridge, and McDonald (2013)</ref> found no such relationship, <ref type="bibr" target="#b44">Vogel, Wade, and Hackler (2007)</ref> reported an effect of perceived public stigma on psychological help-seeking behavior, but the effect was mediated by internalized stigma. It would seem logical that significant perceived stigma would reduce the tendency to seek mental health help or service. However, this study found that a higher level of perceived public stigma corresponded to a greater use of mental health services, which appears to be counterintuitive. Nevertheless, the similar result was reported by <ref type="bibr" target="#b9">Conner et al. (2010)</ref> in their study of internalized stigma. They found that contrary to their hypothesis, higher levels of internalized stigma were significantly associated with greater intention to seek mental health treatment. They attributed their counterintuitive findings to the observation that older adults who perceived the most stigma also had the highest level of psychiatric symptoms. <ref type="bibr" target="#b9">Conner et al. (2010)</ref> concluded that even with high levels of stigma and negative attitudes, they were more likely to intend to seek treatment due to having a greater need. <ref type="bibr" target="#b26">Jang et al. (2011)</ref> also reported the paradox that even with positive attitudes toward mental health services, older Hispanic adults underutilized these services. The present study showed similar paradoxical results consistent with previous research <ref type="bibr" target="#b9">(Conner et al., 2010;</ref><ref type="bibr" target="#b26">Jang et al., 2011)</ref> even among those three different ethnic groups and lower rates of serious psychological distress or FMD. This could be in part because perceived public stigma was measured by a single item rather than a multi-item scale. Moreover, as noted above, different types of stigma (selfstigma vs. perceived public stigma) could have different effects on mental health service utilization or help-seeking behaviors. While the present study is expected to contribute to the growing body of literature on mental health stigma, the following limitations should be noted. First, geographic location may have had an effect on the responses to perceived public stigma and views on mental health treatment as the place of residence may be a proxy measure of underlying socioeconomic conditions. As such, the 2012 CDC report based on 2007 and 2009 data included state-level information from other data sources in its analysis. However, it should be noted that neither state-level predictors nor geography was included in this study. The decision to exclude the geographical information was based on two reasons: (a) some states participated in two survey years and (b) there was a different sampling frame used in 2007/2009 (landline-based telephone only) versus 2012 (landline and cellular telephone-based survey). In addition to geography, contextual or environmental factors such as perceived discrimination or acculturative stress experienced by non-White respondents may influence not only their perception of stigma and views on mental health service but also their tendency to seek or not seek appropriate services. However, such contextual or environmental factors were not available in the data. Second, this study used a single-item measure each to assess the level of perceived public stigma and views on mental health treatment effectiveness. While multi-item scales of perceived public stigma do exist, only a one-item measure was available due to the nature of BRFSS as a surveillance or monitoring tool for population health. The use of a single-item measure might not have captured complex psychosocial construct of attitude or the stereotypes. This may also influence the study findings in a way that is not consistent with the previous studies that utilized the multi-item scales of stigma. For example, while non-Hispanic Black adults reported somewhat lower level of perceived pubic stigma compared with the other two groups, it may not indicate they have less stigma in general. Given the use of a single-item, this study cannot establish whether they internalize more stigma than other groups. Third, there is an absence of information on national origin for Hispanics. Mexican American and Puerto Rican Latinos often report very different perceptions about mental health and satisfaction with mental health services, which may influence the findings of the study. Lumping all Hispanic respondents together may represent heterogeneity of the group, limiting our understanding of their perceived stigma and views on mental health service effectiveness. Such differences might have accounted for the somewhat counterintuitive findings reported on perceived stigma and mental health-seeking behaviors. Finally, with a cross-sectional sample, since information at one point in time is used, it is possible for the individuals receiving treatment to perceive more stigma.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>The results of this study suggest that perceived mental health stigma and views on treatment effectiveness are a function of a complex array of correlates such as age, ethnicity, gender, education level, and psychological distress status, which in turn affects service utilization. Communitylevel interventions aimed at reducing public stigma should take such correlates into account by customizing public messaging for intended groups, utilizing community health persons indigenous to the target group, and tailoring assessment and programming around the correlates. The development of a clear and accurate message about available mental health treatment and its effectiveness, unique to each ethnic background and age group, will be an important way to address barriers to accessing mental health services and will lead to better mental health outcomes across a diverse spectrum.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>d</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Sociodemographic Characteristics and Mental Health Status by Ethnicity and Age.</figDesc><table><row><cell></cell><cell cols="2">Non-Hispanic White (%)</cell><cell cols="2">Non-Hispanic Black (%)</cell><cell cols="2">Hispanic (%)</cell></row><row><cell></cell><cell>55-64</cell><cell>65+</cell><cell>55-64</cell><cell>65+</cell><cell>55-64</cell><cell>65+</cell></row><row><cell></cell><cell>(n = 61,922)</cell><cell>(n = 87,422)</cell><cell>(n = 5,453)</cell><cell>(n = 5,703)</cell><cell>(n = 4,887)</cell><cell>(n = 6,185)</cell></row><row><cell>Gender</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Male</cell><cell>40.0</cell><cell>35.7</cell><cell>31.9</cell><cell>30.5</cell><cell>36.5</cell><cell>34.9</cell></row><row><cell>Female</cell><cell>60.0</cell><cell>64.3</cell><cell>68.1</cell><cell>69.5</cell><cell>63.5</cell><cell>65.1</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">(χ 2 = 183.6/df = 2, p &lt; .001) a</cell><cell></cell><cell></cell></row><row><cell>Education</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Less than HS</cell><cell>4.7</cell><cell>10.4</cell><cell>17.6</cell><cell>33.4</cell><cell>27.5</cell><cell>42.7</cell></row><row><cell>HS graduates</cell><cell>26.4</cell><cell>35.5</cell><cell>33.5</cell><cell>30.0</cell><cell>28.9</cell><cell>28.2</cell></row><row><cell>Attended college</cell><cell>28.5</cell><cell>25.3</cell><cell>25.9</cell><cell>19.7</cell><cell>20.9</cell><cell>14.9</cell></row><row><cell>College graduates</cell><cell>40.4</cell><cell>28.8</cell><cell>23.0</cell><cell>16.9</cell><cell>22.7</cell><cell>14.2</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">(χ 2 = 11,396.3/df = 6, p &lt; .001)</cell><cell></cell><cell></cell></row><row><cell>Income</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Less than US$15,000</cell><cell>7.7</cell><cell>12.5</cell><cell>23.6</cell><cell>32.6</cell><cell>30.1</cell><cell>48.2</cell></row><row><cell>US$15,000 to</cell><cell>12.2</cell><cell>24.8</cell><cell>24.4</cell><cell>30.0</cell><cell>25.6</cell><cell>25.6</cell></row><row><cell>&gt;US$25,000</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>US$25,000 to</cell><cell>10.6</cell><cell>17.2</cell><cell>13.8</cell><cell>14.4</cell><cell>12.3</cell><cell>10.0</cell></row><row><cell>&gt;US$35,000</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>US$35,000 to</cell><cell>17.0</cell><cell>17.7</cell><cell>14.7</cell><cell>10.8</cell><cell>11.9</cell><cell>8.1</cell></row><row><cell>&gt;US$50,000</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>US$50,000 or more</cell><cell>52.6</cell><cell>27.9</cell><cell>23.5</cell><cell>12.1</cell><cell>20.1</cell><cell>8.1</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">(χ 2 = 10,537.2/df = 8, p &lt; .001)</cell><cell></cell><cell></cell></row><row><cell cols="2">Serious psychological distress (K-6) b</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No</cell><cell>96.3</cell><cell>98.0</cell><cell>93.8</cell><cell>96.1</cell><cell>90.1</cell><cell>94.7</cell></row><row><cell>Yes</cell><cell>3.7</cell><cell>2.0</cell><cell>6.2</cell><cell>3.9</cell><cell>9.9</cell><cell>5.3</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">(χ 2 = 817.5/df = 2, p &lt; .001)</cell><cell></cell><cell></cell></row><row><cell cols="2">Frequent mental distress (FMD) c</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No</cell><cell>89.6</cell><cell>93.8</cell><cell>86.0</cell><cell>91.6</cell><cell>84.7</cell><cell>91.0</cell></row><row><cell>Yes</cell><cell>10.4</cell><cell>6.2</cell><cell>14.0</cell><cell>8.4</cell><cell>15.3</cell><cell>9.0</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">(χ 2 = 307.9/df = 2, p &lt; .001)</cell><cell></cell><cell></cell></row><row><cell>Mental health service</cell><cell>16.3</cell><cell>10.5</cell><cell>12.9</cell><cell>9.3</cell><cell>17.1</cell><cell>10.8</cell></row><row><cell>use (1 = Yes)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>(χ</cell><cell></cell><cell></cell><cell></cell></row></table><note>2 = 37.8/df = 2, p &lt; .001) Note. HS = high school.a Chi-square statistics presented indicate test of independence between ethnicity and sociodemographic characteristics/mental health status. The same analyses were conducted for each age group (55-64 and 65+), and the results (not reported here) were all significant at the p values of less than .001.b K6 score of 13+ was considered as the presence of serious psychological distress.c A report of 14+ day of poor mental health in a month was considered as having frequent mental distress (FMD).</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Age and Ethnic Comparison of Views on Mental Health Treatment Effectiveness and Perceived Public Stigma.</figDesc><table><row><cell></cell><cell cols="2">Non-Hispanic White (%)</cell><cell cols="2">Non-Hispanic Black (%)</cell><cell cols="2">Hispanic (%)</cell></row><row><cell></cell><cell>55-64</cell><cell>65+</cell><cell>55-64</cell><cell>65+</cell><cell>55-64</cell><cell>65+</cell></row><row><cell></cell><cell>(n = 60,151)</cell><cell>(n = 81,182)</cell><cell>(n = 5,187)</cell><cell>(n = 5,143)</cell><cell>(n = 4,649)</cell><cell>(n = 5,674)</cell></row><row><cell>Perceived public stigma a</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Agree (low level) b</cell><cell>54.8</cell><cell>63.2</cell><cell>61.6</cell><cell>68.8</cell><cell>54.0</cell><cell>59.2</cell></row><row><cell>Disagree (high level) c</cell><cell>45.2</cell><cell>36.8</cell><cell>38.4</cell><cell>31.2</cell><cell>46.0</cell><cell>40.8</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="2">(χ 2 = 113.2/df = 2, p &lt; .001) d</cell><cell></cell><cell></cell></row><row><cell cols="2">Views on mental health treatment effectiveness e</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Agree (favorable) b</cell><cell>95.8</cell><cell>92.7</cell><cell>92.2</cell><cell>91.1</cell><cell>87.2</cell><cell>86.1</cell></row><row><cell>Disagree (unfavorable) c</cell><cell>4.2</cell><cell>7.3</cell><cell>7.8</cell><cell>8.9</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Multivariate Logistic Regression (LR) Results: Correlates of Attitudes Toward Mental Health Treatment Effectiveness.Views on mental health treatment effectiveness (adjusted odds ratios and 95% CI)</figDesc><table><row><cell>"Treatment can help people with</cell><cell></cell><cell></cell><cell></cell></row><row><cell>mental illness lead normal lives"</cell><cell></cell><cell></cell><cell></cell></row><row><cell>(0 = agree; 1 = disagree) a</cell><cell>Non-Hispanic White</cell><cell>Non-Hispanic Black</cell><cell>Hispanic</cell></row><row><cell>Gender</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Male (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Female</cell><cell>1.82*** [1.91, 2.13]</cell><cell>1.27*** [1.91, 2.13]</cell><cell>1.01 [1.91, 2.13]</cell></row><row><cell>Age group (years)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>55-64 (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>65+</cell><cell>1.52*** [1.45, 1.60]</cell><cell>1.09 [1.91, 2.13]</cell><cell>1.10 [0.98, 1.25]</cell></row><row><cell>Education</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Less than high school (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>High school graduates</cell><cell>0.69*** [0.64, 0.74]</cell><cell>0.69*** [0.57, 0.83]</cell><cell>0.85* [0.73, 0.98]</cell></row><row><cell>Attended college</cell><cell>0.59*** [0.51, 0.60]</cell><cell>0.52*** [0.42, 0.65]</cell><cell>0.75** [0.63, 0.89]</cell></row><row><cell>College graduates</cell><cell>0.34*** [0.32, 0.37]</cell><cell>0.41*** [0.32, 0.52]</cell><cell>0.58***[0.49, 0.70]</cell></row><row><cell>Serious psychological distress</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>1.96*** [1.75, 2.20]</cell><cell>1.58*** [1.19, 2.10]</cell><cell>1.82*** [1.48, 2.25]</cell></row><row><cell>Frequent mental distress (FMD)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>1.26*** [1.16, 1.37]</cell><cell>1.51*** [1.22, 1.88]</cell><cell>1.29** [1.08, 1.55]</cell></row><row><cell>N</cell><cell>136,885</cell><cell>9,658</cell><cell>9,876</cell></row><row><cell>Log likelihood</cell><cell>-30,279.9</cell><cell>-2,656.48</cell><cell>-3,812.59</cell></row><row><cell>LR chi-square (df)</cell><cell>2,103.6***</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Multivariate Logistic Regression (LR) Results: Correlates of Perceived Public Stigma.</figDesc><table><row><cell>"People are generally caring</cell><cell cols="3">Perceived public stigma (adjusted odds ratios and 95% CI)</cell></row><row><cell>and sympathetic to people with</cell><cell></cell><cell></cell><cell></cell></row><row><cell>mental illness"</cell><cell></cell><cell></cell><cell></cell></row><row><cell>(0 = agree; 1 = disagree) a</cell><cell>Non-Hispanic White</cell><cell>Non-Hispanic Black</cell><cell>Hispanic</cell></row><row><cell>Gender</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Male (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Female</cell><cell>0.61*** [0.60, 0.63]</cell><cell>0.78*** [0.71, 0.85]</cell><cell>0.73*** [0.67, 0.93]</cell></row><row><cell>Age group (years)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>55-64 (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>65+</cell><cell>0.75*** [0.73, 0.77]</cell><cell>0.89** [0.71, 0.85]</cell><cell>0.95 [0.87, 1.03]</cell></row><row><cell>Education</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Less than high school (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>High school graduates</cell><cell>1.12*** [1.07, 1.18]</cell><cell>1.05 [0.93, 1.19]</cell><cell>1.46*** [1.32, 1.63]</cell></row><row><cell>Attended college</cell><cell>1.49*** [1.42, 1.56]</cell><cell>1.46*** [1.29, 1.65]</cell><cell>1.87*** [1.66, 2.11]</cell></row><row><cell>College graduates</cell><cell>1.69*** [1.61, 1.77]</cell><cell>1.80*** [1.59, 2.05]</cell><cell>2.82*** [2.51, 3.18]</cell></row><row><cell>Serious psychological distress</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>1.55*** [1.44, 1.67]</cell><cell>1.28* [1.05, 1.57]</cell><cell>1.28** [1.07, 1.52]</cell></row><row><cell>Frequent mental distress (FMD)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>1.41*** [1.35, 1.48]</cell><cell>1.38***[1.20, 1.59]</cell><cell>1.33***[1.15, 1.52]</cell></row><row><cell>N</cell><cell>136,457</cell><cell>9,631</cell><cell>9,833</cell></row><row><cell>Log likelihood</cell><cell>-89,977.21</cell><cell>-6,216.97</cell><cell>-6,523.89</cell></row><row><cell>LR chi-square (df)</cell><cell>4,102.26*** (7)</cell><cell>192.86*** (7)</cell><cell>403.47*** (</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>The Effects of Views on Mental Health Treatment Effectiveness on the Use of Mental Health Service: Multivariate Binary Logistic Regression (LR).Mental health service refers to taking medicine or receiving treatment from a doctor or other health professional for any type of mental health condition or emotional problem. *p &lt; .05. **p &lt; .01. ***p &lt; .001.</figDesc><table><row><cell>sUsed mental health service a</cell><cell>Non-Hispanic White</cell><cell>Non-Hispanic Black</cell><cell>Hispanic</cell></row><row><cell>(1 = Yes)</cell><cell>Odds ratio [95% CI]</cell><cell>Odds ratio [95% CI]</cell><cell>Odds ratio [95% CI]</cell></row><row><cell cols="2">Treatment can help people with mental illness lead normal lives.</cell><cell></cell><cell></cell></row><row><cell>Agree (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Disagree</cell><cell>0.68*** [0.63, 0.74]</cell><cell>0.94 [0.73, 1.19]</cell><cell>0.84 [0.69, 1.01]</cell></row><row><cell>Gender</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Male (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Female</cell><cell>0.57*** [0.55, 0.59]</cell><cell>1.06 [0.92, 1.23]</cell><cell>0.68*** [0.59, 0.78]</cell></row><row><cell>Age group (years)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>55-64 (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>65+</cell><cell>0.68*** [0.66, 0.71]</cell><cell>0.71*** [0.62, 0.82]</cell><cell>0.70*** [0.61, 0.80]</cell></row><row><cell>Education</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Less than high school (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>High school graduates</cell><cell>0.86*** [0.80, 0.92]</cell><cell>0.69*** [0.58, 0.82]</cell><cell>1.04 [0.88, 1.23]</cell></row><row><cell>Attended college</cell><cell>0.94 [0.88, 1.01]</cell><cell>0.70*** [0.57, 0.85]</cell><cell>1.24* [1.03, 1.50]</cell></row><row><cell>College graduates</cell><cell>0.96 [0.89, 1.02]</cell><cell>0.54***[0.44, 0.68]</cell><cell>0.92 [0.76, 1.12]</cell></row><row><cell>Serious psychological distress</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>4.05*** [3.74, 4.39]</cell><cell>3.71*** [2.98, 4.63]</cell><cell>4.94*** [4.09, 5.96]</cell></row><row><cell>Frequent mental distress (FMD)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>5.54*** [5.28, 5.80]</cell><cell>4.50*** [3.82, 5.31]</cell><cell>5.09*** [4.36, 5.94]</cell></row><row><cell>N</cell><cell>136,885</cell><cell>9,658</cell><cell>9,876</cell></row><row><cell>Log likelihood</cell><cell>-47,379.67</cell><cell>-2,882.16</cell><cell>-3,266.71</cell></row><row><cell>LR chi-square (df)</cell><cell>11,116.56*** (8)</cell><cell>749.8*** (8)</cell><cell>1,238.4*** (8)</cell></row></table><note>a</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 .</head><label>6</label><figDesc>The Effects of Perceived Public Stigma on the Use of Mental Health Service: Multivariate Binary Logistic Regression (LR).Mental health service refers to taking medicine or receiving treatment from a doctor or other health professional for any type of mental health condition or emotional problem. *p &lt; .05. **p &lt; .01. ***p &lt; .001.</figDesc><table><row><cell>Used mental health service a</cell><cell>Non-Hispanic White</cell><cell>Non-Hispanic Black</cell><cell>Hispanic</cell></row><row><cell>(1 = Yes)</cell><cell>Odds ratio [95% CI]</cell><cell>Odds ratio [95% CI]</cell><cell>Odds ratio [95% CI]</cell></row><row><cell cols="2">People are generally caring and sympathetic to people with mental illness</cell><cell></cell><cell></cell></row><row><cell>Agree (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Disagree</cell><cell>1.32*** [1.28, 1.37]</cell><cell>1.22** [1.03, 1.40]</cell><cell>1.29*** [1.13, 1.47]</cell></row><row><cell>Gender</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Male (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Female</cell><cell>0.57*** [0.55, 0.60]</cell><cell>1.09 [0.94, 1.26]</cell><cell>0.68*** [0.59, 0.78]</cell></row><row><cell>Age group (years)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>55-64 (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>65+</cell><cell>0.68*** [0.66, 0.71]</cell><cell>0.70*** [0.61, 0.81]</cell><cell>0.68*** [0.60, 0.78]</cell></row><row><cell>Education</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Less than high school (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>High school graduates</cell><cell>0.86*** [0.80, 0.92]</cell><cell>0.67*** [0.53, 0.81]</cell><cell>1.03 [0.87, 1.21]</cell></row><row><cell>Attended college</cell><cell>0.93* [0.86, 0.99]</cell><cell>0.65*** [0.54, 0.79]</cell><cell>1.22* [1.02, 1.47]</cell></row><row><cell>College graduates</cell><cell>0.95 [0.81, 1.01]</cell><cell>0.52***[0.42, 0.65]</cell><cell>0.87 [0.71, 1.06]</cell></row><row><cell>Serious psychological distress</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>3.79*** [3.50, 4.10]</cell><cell>3.62*** [2.90, 4.51]</cell><cell>4.93*** [4.08, 5.95]</cell></row><row><cell>Frequent mental distress (FMD)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>No (ref.)</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Yes</cell><cell>5.45*** [5.20, 5.71]</cell><cell>4.49*** [3.81, 5.31]</cell><cell>4.99*** [4.27, 5.83]</cell></row><row><cell>N</cell><cell>136,457</cell><cell>9,631</cell><cell>9,833</cell></row><row><cell>Log likelihood</cell><cell>-468,653.52</cell><cell>-2,852.56</cell><cell>-3,202.37</cell></row><row><cell>LR chi-square (df)</cell><cell>11,333.1*** (8)</cell><cell>764.5*** (8)</cell><cell>1,264.8*** (8)</cell></row></table><note>a</note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head><p>Jong Won Min https://orcid.org/0000-0002-9837-0151</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biography</head><p>Jong Won Min is professor in the School of Social Work at San Diego State University. His scholarly and research of interest includes change in cognitive functions, health disparities, behavioral health among vulnerable at-risk older adults, and workforce development in the area of gerontology and geriatrics focusing on dementia care.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Disparity in depression treatment among racial and ethnic minority populations in the United States</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Alegría</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Chatterji</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Wells</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">N</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Takeuchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychiatric Services</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="1264" to="1272" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Racial differences in stigmatizing attitudes toward people with mental illness</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">M</forename><surname>Anglin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">G</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Phelan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychiatric Services</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="857" to="862" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A continuity theory of normal aging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Atchley</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geront/29.2.183</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Gerontologist</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="183" to="190" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Psychological perspectives on successful aging: The model of selective optimization with compensation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">B</forename><surname>Baltes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Baltes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Successful aging: Perspectives from the behavioral sciences</title>
+		<editor>P. B. Baltes &amp; M. M. Baltes</editor>
+		<imprint>
+			<date type="published" when="1990" />
+			<biblScope unit="page" from="1" to="34" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Substance abuse and mental health among older Americans: The state of the knowledge and future directions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Bartels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">C</forename><surname>Blow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">M</forename><surname>Brockmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">D</forename><surname>Van Citters</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<pubPlace>Rockville, MD</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Older American Substance Abuse and Mental Health Technical Assistance Center</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Methodologic changes in the Behavioral Risk Factor Surveillance System in 2011 and potential effects on prevalence estimates</title>
+		<idno>OVERVIEW: BRFSS 2012</idno>
+		<ptr target="https://www.cdc.gov/brfss/annual_data/2012/pdf/Overview_2012.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Centers for Disease Control and Prevention</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="410" to="413" />
+			<date type="published" when="2012" />
+			<publisher>Centers for Disease Control and Prevention</publisher>
+		</imprint>
+	</monogr>
+	<note>Behavioral Risk Factor Surveillance System</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Behavioral Risk Factor Surveillance System: Annual survey data</title>
+		<ptr target="http://www.cdc.gov/brfss/annual_data/annual_data.htm" />
+	</analytic>
+	<monogr>
+		<title level="j">US Department of Health and Human Services</title>
+		<imprint>
+			<date type="published" when="2015" />
+			<publisher>Centers for Disease Control and Prevention</publisher>
+		</imprint>
+	</monogr>
+	<note>Centers for Disease Control and Prevention</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The vital link between chronic disease and depressive disorders</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">P</forename><surname>Chapman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">S</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">W</forename><surname>Strine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Preventing Chronic Disease</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">What is the impact of mental health-related stigma on helpseeking? A systematic review of quantitative and qualitative studies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Clement</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Schauman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Maggioni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Evans-Lacko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Bezborodovs</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Thornicroft</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename></persName>
+		</author>
+		<idno>doi:10.1017/ S0033291714000129</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Medicine</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="11" to="27" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Mental health treatment seeking among older adults with depression: The impact of stigma and race</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">O</forename><surname>Conner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">C</forename><surname>Copeland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">K</forename><surname>Grote</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Koeske</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">F</forename><surname>Reynolds</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Brown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Journal of Geriatric Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="531" to="543" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Mental illness stigma and care seeking</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">E</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">W</forename><surname>Corrigan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Watson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Nervous and Mental Disease</title>
+		<imprint>
+			<biblScope unit="volume">191</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="339" to="341" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Mental health stigma as social attribution: Implications for research methods and attitude change</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">W</forename><surname>Corrigan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Psychology: Science and Practice</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="48" to="67" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">How stigma interferes with mental health care</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">W</forename><surname>Corrigan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="614" to="625" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Understanding the impact of stigma on people with mental illness</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">W</forename><surname>Corrigan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Watson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="16" to="20" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Growing old: The process of disengagement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Cumming</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">E</forename><surname>Henry</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1961" />
+			<publisher>Basic Books</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Racial/ethnic differences in attitudes toward seeking professional mental health services</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Diala</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Muntaner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Walrath</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Laveist</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Leaf</surname></persName>
+		</author>
+		<idno type="DOI">10.2105/AJPH.91.5.805</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Public Health</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="805" to="807" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Stigma and help seeking for mental health among college students</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Eisenberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Downs</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Golberstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Zivin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Medical Care Research and Review</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="522" to="541" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Association between public views of mental illness and self-stigma among individuals with mental illness in 14 European countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Evans-Lacko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Brohan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Mojtabai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Thornicroft</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Medicine</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1741" to="1752" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Stigma: Barrier to mental health care among ethnic minorities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">A</forename><surname>Gary</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Issues in Mental Health Nursing</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="979" to="999" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Identification of and beliefs about depressive symptoms and preferred treatment approaches among community-living older African Americans</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">N</forename><surname>Gitlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">L</forename><surname>Chernett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Dennis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">W</forename><surname>Hauck</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/JGP.0b013e31825463ce</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The American Journal of Geriatric Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="973" to="984" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Stigma: Notes on the management of spoiled identity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Goffman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1963" />
+			<publisher>Prentice Hall</publisher>
+			<pubPlace>Englewood Cliffs, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Perceived stigma and mental health care seeking</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Golberstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Eisenberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Gollust</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychiatric Services</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="392" to="399" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Health-related quality of life in older adults at risk for disability</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Groessl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">J</forename><surname>Rejeski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Katula</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Frierson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Pahor</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Preventive Medicine</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="214" to="218" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Gulliver</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Griffiths</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Christensen</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/1471-244X-10-113</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Psychiatry</title>
+		<imprint>
+			<biblScope unit="page">113</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Exploring the relationship between social class, mental illness stigma and mental health literacy using British national survey data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Holman</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1363459314554316</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Health</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="413" to="429" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Living well with chronic illness: A call for public health action</title>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>The National Academies Press</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Institute of Medicine (IOM</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Attitudes toward mental health services in Hispanic older adults: The role of misconceptions and personal beliefs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Jang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Chiriboga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Herrera</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">M</forename><surname>Tyson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Schonfeld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Community Mental Health Journal</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="164" to="170" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Disparities in mental health service use of racial and ethnic minority elderly adults</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Jimenez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Bartels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Alegría</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Geriatrics Society</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="18" to="25" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The emergence of a positive gerontology: From disengagement to social involvement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Mutchler</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geront/gnt099</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Gerontologist</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="100" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Aging and mental health in the decade ahead: What psychologists need to know</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Karel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gatz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Smyer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page" from="184" to="198" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Impact of screening old people with physical illness for depression? The Lancet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Katona</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Livingston</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="volume">356</biblScope>
+			<biblScope unit="page" from="91" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Screening for serious mental illness in the general population</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Kessler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Barker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">J</forename><surname>Colpe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">F</forename><surname>Epstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Gfroerer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Hiripi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Zaslavsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Archives of General Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="184" to="189" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Lifetime prevalence and age-of-onset distributions of DSM-IV disorders in the National Comorbidity Survey Replication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Kessler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Berglund</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Demler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Merikangas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">E</forename><surname>Walters</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Archives of General Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="593" to="602" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">An exploration of the activity theory of aging: Activity types and life satisfaction among in-movers to a retirement community</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">W</forename><surname>Lemon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">L</forename><surname>Bengtson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Peterson</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geronj/27.4.511</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Gerontology</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="511" to="523" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Conceptualizing stigma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">G</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Phelan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Sociology</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="363" to="385" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Older adults&apos; help-seeking attitudes and treatment beliefs concerning mental health problems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">S</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mather</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sareen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Journal of Geriatric Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="1010" to="1019" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Stigma of mental illness and help-seeking intention in university students</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lally</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Conghaile</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Quigley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Bainbridge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Mcdonald</surname></persName>
+		</author>
+		<idno type="DOI">10.1192/pb.bp.112.041483</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Psychiatrist</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="253" to="260" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The stigma of mental illness</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Overton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Medina</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Counseling &amp; Development</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="143" to="151" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Mental disorders-Who and what might help? Social Psychiatry and Psychiatric Epidemiology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">G</forename><surname>Riedel-Heller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Matschinger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">C</forename><surname>Angermeyer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="167" to="174" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Successful aging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Rowe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">L</forename><surname>Kahn</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geront/37.4.433</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Gerontologist</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="433" to="440" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Successful aging 2.0: Conceptual expansions for the 21st century</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Rowe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">L</forename><surname>Kahn</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geronb/gbv025</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journals of Gerontology, Series B: Psychological Sciences and Social Sciences</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="593" to="596" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Mentally healthy aging: A report on overcoming stigma for older</title>
+	</analytic>
+	<monogr>
+		<title level="j">Substance Abuse and Mental Health Services Administration</title>
+		<imprint>
+			<biblScope unit="page" from="5" to="3988" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+	<note>Americans DHHS Pub. No.</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Are attitudes towards mental health helpseeking associated with service use? Results from the European study of epidemiology of mental disorders</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>De Graaf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ormel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Vilagut</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Kovess</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Alonso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Center for Mental Health Services. ten Have</title>
+		<meeting><address><addrLine>Rockville, MD</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="153" to="163" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Theoretical and practical considerations for combating mental illness stigma in health care</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Ungar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Knaak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Szeto</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10597-015-9910-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Community Mental Health Journal</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="262" to="271" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Perceived public stigma and the willingness to seek counseling: The mediating roles of self-stigma and attitudes toward counseling</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">L</forename><surname>Vogel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">G</forename><surname>Wade</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">H</forename><surname>Hackler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Counseling Psychology</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="40" to="50" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Culture and stigma: Adding moral experience to stigma theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kleinman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">G</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Phelan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Good</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Science &amp; Medicine</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="1524" to="1535" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Self-reported frequent mental distress among adults-United States</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">S</forename><surname>Zahran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kobau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G</forename><surname>Moriarty</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Zack</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Holt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Donehoo</surname></persName>
+		</author>
+		<ptr target="http://www.cdc.gov/mmwr/PDF/wk/mm5341.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Morbidity and Mortality Weekly Report</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="963" to="966" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

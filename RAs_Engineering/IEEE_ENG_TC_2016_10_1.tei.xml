@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Fast Online Diagnosis and Recovery of Reconfigurable Logic Fabrics Using Design Disjunction</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Member, IEEE</roleName><forename type="first">Ahmad</forename><surname>Alzahrani</surname></persName>
+							<email>azahrani@uqu.edu.sa</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Senior Member, IEEE</roleName><forename type="first">Ronald</forename><forename type="middle">F</forename><surname>Demara</surname></persName>
+							<email>ronald.demara@ucf.edu</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Engineering</orgName>
+								<orgName type="institution">Umm Al-Qura University</orgName>
+								<address>
+									<postCode>21955</postCode>
+									<settlement>Makkah</settlement>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Electrical and Computer Engineering</orgName>
+								<orgName type="institution">University of Central Florida</orgName>
+								<address>
+									<postCode>32816</postCode>
+									<settlement>Orlando</settlement>
+									<region>FL</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Fast Online Diagnosis and Recovery of Reconfigurable Logic Fabrics Using Design Disjunction</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TC.2015.2513762</idno>
+					<note type="submission">received 2 Mar. 2015; revised 20 Nov. 2015; accepted 24 Nov. 2015. Date of publication 31 Dec. 2015; date of current version 14 Sept. 2016.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Reconfigurable logic devices</term>
+					<term>field programmable gate arrays</term>
+					<term>autonomous fault handling</term>
+					<term>fault-tolerant systems</term>
+					<term>run-time fault diagnosis and recovery</term>
+					<term>online test</term>
+					<term>design space exploration</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Design disjunction is developed to offer a broad coverage, high resolution, and low overhead approach to online diagnosis and recovery of reconfigurable fabrics. Design disjunction leverages the condensed diagnosability of T logic resources to achieve selfrecovery using partial reconfiguration in O(log T) steps. Reconfiguration is guided by the constructive property of f-disjunctness which forms O(log T) resource groups at design-time. Resolution of f simultaneous resource faults is shown to be guaranteed when the resource groups are mutually f-disjunct. This extends run-time fault resilience to a large resource space with certainty for up to f faults using a decision-free resolution process that also provides a high likelihood of identifying the fault&apos;s location to a fine granularity. Finally, design disjunction is parameterized to accommodate the low coverage issue of functional testing for which inarticulate tests can otherwise impair fault isolation. Experimental results for MCNC and ISCAS benchmarks on a Xilinx 7-series field programmable gate array (FPGA) demonstrate f-diagnosability at the individual slice level with a minimum average isolation accuracy of 96:4 percent (94:4 percent) for f ¼ 1 (f ¼ 2). Results have also demonstrated millisecond order recovery with a minimum increase of 83:6 percent in fault coverage compared to N-modular redundancy (NMR) schemes. Recovery is achieved while incurring an average critical path delay impact of only 1:49 percent and energy cost roughly comparable to conventional two-MR approaches.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ç</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>C ONTINUED scaling of transistor feature size has exacerbated reliability concerns such as process variation, aging degradations, latent faults, and temporary failures in integrated circuits (ICs). Consequently, the need for IC fault tolerance has received increasing interest over the last decade. Moreover, the pervasive use of embedded computing systems realized by field-programmable gate arrays (FPGAs) has elevated the importance of FPGA availability requirements corresponding to the proportion of time that their operation can be sustained. A common requirement is to provide high availability (HA) operation defined by 99:999 percent ("five nines") that correlates to five minutes of downtime per year, or greater availability such as 99:999999 percent ("eight nines") that correlates to 316 milliseconds of downtime per year <ref type="bibr" target="#b0">[1]</ref>. High availability operation is crucial whenever unavailability could result in potential harm or inconvenience, violation of a service-level agreement, or a loss of revenue, mission, and/or safety.</p><p>Traditionally, availability requirements can be achieved through spatial resource redundancy to mask or replace faulty elements. Availability depends on rapid fault recovery to incur minimal downtime via autonomous fault resolution. As opposed to FPGAs, application-specific integrated circuits (ASICs) use fixed redundancy configurations which preclude fine-grained resource remapping. Whereas FPGAs can enable dynamic fine-grained resiliency, a novel online technique is developed using rapid self-organization to attain HA objectives.</p><p>Reconfigurable hardware's capacity to self-organize can fulfill anticipated roles in designing future dependable hardware systems <ref type="bibr" target="#b1">[2]</ref>. At present, the most widely adopted reconfigurable architectures are SRAM-based FPGAs whose capacity can exceed a million logic cells which can be leveraged to enable resilience. SRAM-based FPGAs are ubiquitous in application-specific embedded systems, high performance computing centers as well as safety-impacting, mission-critical, and commerce-enabling systems. The FPGA devices within these systems can significantly impact the overall system reliability <ref type="bibr" target="#b2">[3]</ref>. Fortunately, run-time partial reconfiguration capabilities of contemporary FPGAs can be utilized to maintain degraded-mode operation while enabling rapid recovery from a variety of faults.</p><p>Over the last two decades, a significant body of research has focused on realizing FPGA-based systems that are robust to permanent and transient failures. Permanent failures constitute any irreversible damage to the physical resources, whereas transient failures are short-duration events induced by external sources such as charged particles <ref type="bibr" target="#b3">[4]</ref>. Particle-induced transient faults, or soft errors, cause single event upsets (SEUs) which can alter SRAM configuration bits and lead to a functional failure. Conventional resilience techniques for soft-errors and single permanent faults are based on fault-masking via majority voting <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b5">[6]</ref>. Voting methods such as N-modular redundancy (NMR) incur N-fold power and area overheads to tolerate temporary and permanent faults in up to ðN À 1Þ=2 b c modules. Techniques such as re-execution and reconfiguration scrubbing <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref> can provide low overhead recovery for temporary failures.</p><p>Alternatively, dynamic remapping of a single design implementation at the module or logic-tile level can be employed to deallocate the use of damaged resources <ref type="bibr" target="#b8">[9]</ref>. However, the existing techniques for remapping of FPGA resources at runtime can significantly increase the time complexity of recovery, and thus the downtime. The recovery overhead includes run-time remapping entailing on-board execution of FPGA design processes, such as place and route (PAR), which are time consuming. A single implementation of an FPGA-based design can require minutes to hours using a high-end multicore processor <ref type="bibr" target="#b9">[10]</ref>. Although execution time for remapping can be substantially decreased using incremental PAR if locations of faulty elements are known, it is still a difficult computational workload for embedded processing cores <ref type="bibr" target="#b10">[11]</ref>. Thus, conventional dynamic remapping techniques typically require faulty systems to be taken offline for an undesirable interval of time.</p><p>In this paper, a new deterministic design space exploration (DSE) <ref type="bibr" target="#b11">[12]</ref>, <ref type="bibr" target="#b12">[13]</ref> method is used to realize FPGA fault tolerance that achieves the availability and reliability objectives shown in <ref type="figure" target="#fig_0">Fig. 1</ref>. The design space, and thus the fault-resolution space, need only be explored at designtime by creating a small library of alternative design configurations (DCs) with f-disjunct resource usage. DCs are created using the mosaic convergence algorithm developed such that at least one DC in the library evades any occurrence up to d resource faults, where d is lower-bounded by f. The f-disjunction of resources among alternative DCs enables run-time fault localization by a non-adaptive group testing (NGT) technique. This realizes a novel low overhead fault localization/fault isolation capability along with rapid fault recovery from temporary and permanent faults in reconfigurable fabrics while incurring minimal area, power, and perturbation to normal system throughput. We show that the combinatorial properties of f-disjunctness, along with FPGA dynamic partial reconfiguration, enable fault resilience against extensive fault scenarios by reusing a subset of the DCs to ensure continual execution with minimal recovery time.</p><p>Overall, the contributions of this work include:</p><p>the first approach to utilize design disjunction for condensed diagnostic analysis of reconfigurable hardware, an explicit fine-grained approach to determine the optimal number of DCs at design-time using the property of f-disjunctness for recovery from multiple logic and interconnect failures during the system lifetime, an extension of NGT to overcome the low coverage of online functional testing, and improvement in crucial metrics including availability, provability of recovery, fault coverage, fault isolation accuracy, and area efficiency. The remainder of this paper begins with a review of the related work in Section 2. Section 3 provides an introduction to group testing and the property of f-disjunctness along with illustrations. Section 4 discusses design for resource disjunction using the developed mosaic convergence algorithm. Section 5 explains fault isolation and recovery schemes for reconfigurable fabrics using design disjunction. Evaluation results for several case studies are provided and discussed in Section 6. A comparison between the proposed work and modular redundancy schemes is presented in Section 7. Finally, Section 8 presents a brief conclusion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">RELATED WORK</head><p>For contemporary reconfigurable devices, low-level hardware support for testing can incur a significant area overhead due to uncertainty in the logic and interconnect usage of the target applications. In some cases, the goals of testing have been limited to verifying the collective health of reconfigurable fabrics, whereas in the case of diagnostic testing, locations of faulty elements are also identified. Reconfigurability has been leveraged in various ways to enable online testing strategies which examine correctness throughout the system lifetime. <ref type="table" target="#tab_0">Table 1</ref> summarizes features of related approaches along with the proposed scheme. Previous online diagnostic test schemes for reconfigurable fabrics <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b19">[20]</ref> provide fine resolution, although they require that the system be halted or become unprotected for extended periods before individual faulty elements can be identified. The ability to rapidly obtain information about faulty resources is a critical factor in realizing efficient self-repair. It facilitates fault evasion whereby faulty resources are avoided, or partially damaged resources are reassigned to other useful functionalities. Online fault localization techniques often consider the structural heterogeneity of contemporary reconfigurable hardware. Testing and fault isolation schemes for structures such as programmable logic, interconnect, and RAM have been developed through the years, based on the nature of each structure. For example, RAM-based testing has been extensively studied and the well-known MARCH algorithms <ref type="bibr" target="#b20">[21]</ref> have been proven effective for diagnosis of RAM cells by applying a sequence of tests to each element in succession. Previous online fault isolation and recovery approaches for FPGA logic using dynamic reconfiguration have relied on built-in self-test (BIST) <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b21">[22]</ref>. However, dedicated BIST structures including test pattern generators (TPGs) and output response analyzers (ORAs) are typically not available for FPGA platforms <ref type="bibr" target="#b21">[22]</ref>. Modern FPGA architectures are also not entirely scan-ready. Thus, scan chains, TGPs, and ORAs are frequently implemented directly in the fabric using look-up tables (LUTs) and shift registers. As a consequence, BIST-inspired methods can increase FPGA resource requirements by up to 50 percent <ref type="bibr" target="#b22">[23]</ref>.</p><p>The BIST-based roving STARs test scheme in <ref type="bibr" target="#b13">[14]</ref> partitions the reconfigurable fabric into tiles, and continuous online testing is carried out by roving a BISTer from one tile to another while the resources not used by the BISTer structure are dynamically reconfigured to maintain availability. Although failures are resolved at a fine resolution, data throughput must be suspended to copy state values prior to each tile movement. Resource recycling is also facilitated; however, fault isolation and recovery depend on the latency of BISTers to rove the device before encountering faulty elements. Another recent BIST-based fault-tolerant FPGA approach is illustrated by the reliable reconfigurable realtime operating system (R3TOS) <ref type="bibr" target="#b14">[15]</ref> wherein a hardware microkernel (HWuK) provides a task scheduler, an allocator to manage FPGA resources for tile placement, and a configuration manager which converts commands issued by the scheduler and allocator into FPGA reconfiguration operations. To minimize single-point of failure exposures, HWuK components are realized by an 8-bit PicoBlaze processor occupying six block RAMs (BRAMs) and 500 configurable logic blocks (CLBs) protected with selective triple modular redundancy (TMR) and error-correcting code (ECC) bits whose resources also undergo periodic testing. The impact of BIST latency is masked by the use of hardware replication and voting.</p><p>To reduce the high complexity and cost of BIST, application-dependent BIST testing <ref type="bibr" target="#b19">[20]</ref> focuses on the subset of resources used to maintain design functionality. Thus, exhaustive test vectors generated by a TPG and response analysis carried out by an ORA can be relaxed without continually engaging a dedicated reconfiguration controller to carry out the test. The work in <ref type="bibr" target="#b19">[20]</ref> also demonstrates an effective application-dependent diagnosis for FPGA interconnects. Distinct test configurations are applied to modulate application LUT functionalities and study output patterns to discern which nets are faulty. These application-dependent approaches assume the resources undergoing diagnosis procedures are unavailable during diagnosis. Thus, methods which eliminate these limitations on availability are sought.</p><p>Alternative approaches that eliminate BIST area and power overheads, referred to as operational testing techniques, conduct functional tests via input data that are simultaneously used for normal throughput <ref type="bibr" target="#b18">[19]</ref>. These techniques attain availability by relying on run-time inputs, computational redundancy, and output comparison to assess the subset of resources currently used by an application. Permanent and temporary fault monitoring for operational testing can be realized using concurrent error detection (CED) techniques based on duplication with comparison (DWC) or parity-based methods <ref type="bibr" target="#b23">[24]</ref>. DWC that compares the Hamming distance between the outputs of two spatially redundant modules is compatible with recent multi-objective DSE approaches <ref type="bibr" target="#b24">[25]</ref> which utilize a cost function that considers area requirements and resource utilization against overhead of reconfiguration time. In <ref type="bibr" target="#b17">[18]</ref>, another operational testing method based on adaptive group testing (AGT) for diagnosis of reconfigurable fabrics is described under a single-fault assumption. However, since the creation of test designs are adaptive based on outcomes of successive tests, the AGT method is unsuitable for high availability applications. Similar to iterative logic array (ILA) and array-based testing methods <ref type="bibr" target="#b25">[26]</ref>, most functional testing techniques are mainly used for testing a group of resources and provide no fault localization at a fine resolution. In this work, benefits of operational testing are explored with design disjunction to locate faulty resources while avoiding BIST overheads.</p><p>Other previous design-time approaches for run-time fault recovery have used genetic algorithms (GAs) <ref type="bibr" target="#b26">[27]</ref> to evolve a pool of best-fit designs that exhibit resilience to various failures. The evolved designs are used at run-time to maintain system functionality. Although GAs can succeed in finding resilient designs, the number of evolved designs requiring functional evaluation is large, and also being a probabilistic process does not explicitly guarantee convergence. The work in <ref type="bibr" target="#b16">[17]</ref> presents an algebraic method for devising an optimal remapping strategy for logic blocks at row and column levels to reduce recovery latency and minimize number of spare rows and columns required to tolerate a large combination of fault locations. Remapping by interchange of device columns and rows is still performed at runtime, which relies on an independent fault diagnosis process to locate faulty cells before identifying which resources to interchange. The consensus-based evaluation(CBE) method described in <ref type="bibr" target="#b18">[19]</ref> generates, at design-time, a diverse pool of FPGA designs with alternative device resources. These designs are evaluated against each other using a duplex arrangement. Statistical clustering is used to identify operationally correct designs without the assumption of a golden element. The module diversity approach described in <ref type="bibr" target="#b15">[16]</ref> provides yet another method for generating diverse designs at design-time for mitigating aging effects at run-time. The diverse designs can be deployed according to a scheduling policy that results in a steady stress distribution across resources to achieve an extended lifetime. The set of diverse designs also guarantees fault recovery under a single-fault assumption for all possible single CLB faults. Unfortunately, none of the existing approaches demonstrate provable coverage for multiple faults nor do they allow the use of diverse designs for diagnostic tests to locate faulty resources. In this work, we describe an explicit method for generating the optimal number of DCs that guarantee recovery from multiple faults at fine granularity while providing rapid fault isolation. Broader surveys of recent techniques for fault tolerance, autonomous recovery, and self-healing of FPGA-based systems are presented in <ref type="bibr" target="#b27">[28]</ref>, <ref type="bibr" target="#b28">[29]</ref>, and <ref type="bibr" target="#b29">[30]</ref>, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">GROUP TESTING FOR DIAGNOSIS OF RECONFIGURABLE ARCHITECTURES</head><p>If a test is used to identify f defectives among T elements, where f is unknown, then a straightforward, albeit suboptimal, procedure is to evaluate each element individually. Assuming all tests are reliable, then the testing time complexity becomes OðT Þ. This cost can be considerably reduced by dividing the T elements into g subsets, or groups. The collective results after testing each group can be interpreted to identify the f defectives. The challenge is to sample the minimum number of groups sufficient to find the defectives. This is the basic idea behind group testing first introduced by Dorfman <ref type="bibr" target="#b30">[31]</ref> for screening a large number of blood samples by pooling them together to reduce testing cost. Group testing has been adapted to diverse applications such as testing for manufacturing defects, DNA library screening, coding theory, software testing, and BIST-based diagnosis in digital systems <ref type="bibr" target="#b31">[32]</ref>. Based upon how test groups are sampled, most group testing techniques can be classified into adaptive or non-adaptive categories.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Adaptive Group Testing</head><p>When using adaptive group testing, complete knowledge of how groups are sampled before testing begins is not specified. The groups are constructed iteratively based on each successive test outcome during the testing procedure. As testing progresses, the iterative sampling of groups narrows down the suspect set of faulty resources until defectives are identified. The binary search (BS) method described in <ref type="bibr" target="#b33">[33]</ref> presents one of the simplest AGT algorithms. At the initial stage of BS, the set of scan cells to be tested, X, are considered suspect. The set X is partitioned into two groups, each of which is collectively tested using two scan chains. The BS technique is applied recursively to any erroneous group until faulty cells are singled out. A modified implementation of this algorithm was first proposed for functional testing of FPGAs in <ref type="bibr" target="#b17">[18]</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Non-Adaptive Group Testing</head><p>In the case of non-adaptive group testing, the sampling procedure for all groups is known apriori to the execution of tests. An intuitive way to model and describe the problem of fault isolation in FPGAs using this class of group testing techniques is through matrix algebra. The following notations are used throughout the paper: </p><formula xml:id="formula_0">Design matrix D D</formula><formula xml:id="formula_1">o o gÂ1 ¼ D D gÂT Á h h T Â1 :<label>(1)</label></formula><p>The objective is to recover the health vector h h given that both the design matrix and the outcome vector are known. The health vector can be efficiently recovered if the design matrix obeys the f-disjunctness property and no more than f resources are defective <ref type="bibr" target="#b34">[34]</ref>. The f-disjunctness property constrains how alternative groups are overlapped such that f-diagnosability still holds. It provides an efficient strategy to distribute each possible subset of resources of size up to f among a unique subset of DCs. Therefore, defective resources can be identified by finding the common resources among faulty DCs. The matrix D D gÂT is considered f-disjunct if and only if for any possible combination of columns, S, of size f, every column not in S has at least d row elements whose entries are one and all entries of the columns S are zero <ref type="bibr" target="#b35">[35]</ref>. This can be expressed as:</p><formula xml:id="formula_2">8S 2 G T f ; X g i¼1 D i;j ¼ 1^[ k2S D i;k ¼ 0 ! 5d;<label>(2)</label></formula><p>where 14j4T and j 6 2 S. The parameter d represents the number of rows that satisfy the left side of inequality in Eq. <ref type="bibr" target="#b1">(2)</ref>. We refer to this parameter as the disjunction factor. The minimum value of d necessary to ensure f-disjunctness is 1 in which all possible combinations of up to f faulty resources can be identified provided that all tests are reliable, i.e. each faulty DC will generate a detectable erroneous outcome. <ref type="figure" target="#fig_2">Fig. 2a</ref> shows a two-disjunct matrix and a one subset of columns, S, of size 2 that meets the condition given by Eq. (2) for d ¼ 1.</p><p>The decoding procedure to infer the sparse health vector assuming reliable testing is illustrated through a binary comparison between each column vector, c c, of the D D matrix and the outcome vector o o. If the subset of elements of c c k having value equal to one is fully contained within the subset of elements of the outcome vector o o having value equal to one, then the resource k must be faulty. Thus, the health vector can be obtained as follows: <ref type="figure" target="#fig_2">Fig. 2b</ref> illustrates how the same two-disjunct matrix is used to single out the two defective resources, four and nine, using the described decoding method. In this example, the sparse health vector is given as:</p><formula xml:id="formula_3">h h ¼ fh k j h k ¼ 1 if cðc c k Þ cðo oÞ 0 otherwise &amp; ; 1 k T g:<label>(3)</label></formula><formula xml:id="formula_4">h h ¼ ð 0 0 0 1 0 0 0 0 1 0 Þ T :<label>(4)</label></formula><p>Although the binary decoder is efficient, there are two main challenges to properly exploit this technique for fault isolation of reconfigurable hardware. The first challenge is the well-known limitation of low coverage from functional testing which can introduce a sampling noise to the binary decoding method leading to misdiagnosis. Hence, a suspiciousness ranking metric that classifies resources according to their existence rate in failed DCs is developed instead of binary decoding methods. Additionally, f-disjunctness for d &gt; 1 along with the proposed ranking metric are shown to be effective for surmounting the low coverage issue of functional testing as explained in Section 5.2. Since all DCs implement the same application functionality while utilizing a disjunct set of T resources, each DC requires the same resource count. The second challenge is to construct a constrained f-disjunct design matrix for any given T and with rows of equal weight dictated by the application size, R. Available techniques used to construct f-disjunct matrices stipulate a set of conditions on matrix size and the row weights which preclude the flexibility needed to meet design and resource count constraints of operational testing of reconfigurable fabrics. In this work, a new combinatorial search algorithm is described to achieve f-disjunctness for any given design parameters T , R, and d. In Sections 4 and 5, solutions to these two challenges are discussed with results demonstrating feasibility and advantages of the proposed approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">DESIGN FOR DISJUNCTION ON RECONFIGURABLE ARCHITECTURES</head><p>Design disjunction realizes a set of f-disjunct DCs, each of which implements the same application functionality, and then employs them to locate and evade defective resources during system lifetime while maintaining optimal availability. These DCs are produced prior to the test procedure; therefore, only partial reconfiguration overhead of existing DCs is incurred during fault diagnosis and recovery.  considered the most primitive programmable logic blocks. As such, design disjunction is examined at the slice level. Thus, the columns of the design matrix D D correspond to slices while rows represent DCs. We also focus on logic fault localization. However, the proposed work can be combined with other application-dependent interconnect testing such as <ref type="bibr" target="#b19">[20]</ref> for fault isolation at the level of interconnect points.</p><p>Assuming an application is synthesized to a minimum of R slices, then the weight, i.e. the number of non-zero elements, of every row of the design matrix must equal R. The problem of constructing f-disjunct matrices has been increasingly studied within coding theory literature <ref type="bibr" target="#b34">[34]</ref>. For the interest of this work, we empirically evaluate the lower bound on DC count required to reach f-disjunction using the developed mosaic convergence algorithm. Let the notation (T ,R,f)-disjunct matrix denote an f-disjunct design matrix whose rows have exactly R non-zero entries out of T . Algorithm 1 shows the pseudocode for the proposed mosaic convergence approach for constructing such a matrix. Starting with an initial row that has R non-zero entries (lines 4-7), each added row represents the best-found row vector that maximizes the accumulative disjunction ratio (lines 36-49). The disjunction ratio is defined as follows: The binary coverage matrix (line 9) tracks whether each combination S 2 G G T f has satisfied the condition in Eq. <ref type="formula" target="#formula_2">2</ref>. Every added row is initially a T -dimensional row vector v v of weight equals T (line 12). The combinatorial search for optimal v, requires two nested sequential loops (lines 17-31) which examine each non-zero element in v and pick the element which, if flipped to zero, yields the largest increment to the disjunction ratio DR. This latter step is repeated until the weight of the vector v v is reduced to R. Once an optimal row vector is found, the coverage matrix is updated to include the incremental coverage of each row (lines 36-49). The row-by-row construction of design matrix D D terminates once the DR value reaches its maximum value of 1 (line 11).</p><p>The complexity of the binary search for each new row is largely determined by T and the cardinality of set &lt; G G T f that have not yet satisfied the condition expressed in Eq. (2). The cardinality of &lt; decreases exponentially as number of rows in the D matrix increase. For search of the first few rows, the search space for optimal v is still large, which rapidly decreases as more rows are added to the D matrix. To decrease the execution time of the algorithm, one option is to limit the combinatorial search to a randomly selected subset of &lt;. This will increase the speed of the construction algorithm at the expense of obtaining a suboptimal v in each row iteration. The effect of this suboptimality appears in the final solution as an increase in g, or number of required DCs to achieve f-disjunctness. In this work, we utilized exhaustive combinatorial search to capture the lower bound on number of DCs needed to achieve the discussed FT objectives, although search can be relaxed in practice. The constructed design matrix is then used to define the set of placement constraints supplied to the design tools to implement disjunct DCs.  The mosaic convergence algorithm was implemented on an Intel quad-core processor based PC design station. The number of DCs g required to reach f-disjunctness with respect to T and f is obtained for d ¼ 1. <ref type="figure" target="#fig_5">Fig. 3</ref> shows collected g values for f ¼ 1; 2; and 3. The logarithmic trend lines indicate that g grows linearly as resource count increases exponentially. The advantageous logarithmic dependence of g on resource count T obtained by the mosaic convergence procedure is consistent with results from other probabilistic methods for constructing unconstrained disjunct matrices <ref type="bibr" target="#b36">[36]</ref>, <ref type="bibr" target="#b37">[37]</ref>. <ref type="figure" target="#fig_5">Fig. 3</ref> also shows the non-linear increase in g for increasing f. The small number of disjunct DCs signifies the advantage of design disjunction to lower testing cost and recovery overhead.</p><formula xml:id="formula_5">v v 11 while (DR 6 ¼ 1) do 12 v v :¼ ½1 1ÂT // start with a row vector v v s:t: lengthðv vÞ ¼ vðv vÞ ¼ T 13 S max :¼ C C z max 14 for each k 2 S max do 15 v k :¼ 0 16 while (vðv vÞ 6 ¼ R) do 17 max :¼ 0 18 for i :¼ 1 to T for do 19 if (v i 6 ¼ 0) then 20 t t :¼ v v 21 y y :¼ z max 22 t i :¼ 0 23 count :¼ 0 24 for each S 2 C C s:t: i 2 S do 25 for j :¼ 1 to T do 26 if (t j ¼ 1^y j 6 ¼ 0) then 27 y j :¼ y j À 1 28 count :¼ count þ 1 29 if (count &gt; max) then 30 top entry index :¼ i 31 max :¼ count 32 v top entry index :¼ 0 33 D D g :¼ v v 34 g :¼ g þ 1</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">DESIGN DISJUNCTION FOR FAULT TOLERANCE</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Fault Diagnosis Using Design Disjunction</head><p>The binary decoder described in Section 3.2 provides only binary diagnostic data which can lead to incorrect fault diagnosis in the presence of inarticulate tests. Instead, a ranking scheme that assesses resources according to their existence rate in failed DCs can reveal a more accurate estimate of the failure state of the resources. For each resource, the proportion of failed DCs that utilize the resource is computed and compared with other resources. This ratio is referred to as fault sensing ratio (FSR) and can be expressed as follows:</p><formula xml:id="formula_6">FSR i ¼ S g k¼1 D k;i j D k;i ¼ 1^o k ¼ 1 vðc c i Þ ; 1 i T ; (5)</formula><p>where c c i is the ith column vector of the design matrix D.</p><p>A resource with a large FSR has a high likelihood of being faulty. To illustrate how FSR is obtained, the health vector h h given by the example described in Section 3.2 can be rewritten using FSR for each cell, as follows, in which faulty resources get the highest FSR values.</p><p>h h ¼ ð 0: 3 0: 6 0: 3 1 0: 6 0: 6 0: 6 0: 6 1 0 Þ T Similarly, the cumulative sum of FSR, denoted as CFSR, for all resources used by each DC yields a failure ranking metric for DCs. The CFSR is used to determine the best operational DC if fault isolation at the design configuration level is sought.</p><p>We first focus on the case of ideal test coverage in which all fault-affected DCs manifest at least one erroneous functional output. <ref type="figure" target="#fig_6">Fig. 4</ref> illustrates an example of a single fault isolation case on a reconfigurable partition of size 20 Â 15 ¼ 300 slices for an application mapped to 195 slices. Using the mosaic convergence procedure in Algorithm 1, 16 DCs (indexed 1-16) are found sufficient to achieve one-disjunctness for d ¼ 1 in this example. The resource grouping defined by a (300; 195; 1)-disjunct design matrix is shown by the dark blue cells for each DC. Based on fault detection outcomes after evaluating all the 16 DCs, the FSR value for each slice is computed. The highest observed FSR reveals the location of faulty slice as depicted by the FSR heat map.</p><p>To examine the quality of fault isolation using the proposed ranking method, the terms isolation accuracy and fault coverage are defined as follows:</p><p>Definition 5.1. Isolation accuracy is the number of non-faulty resources that have lower FSR values than all defectives, divided by the total number of resources.</p><p>For instance, given a pool of 1;000 resources having two defects, an isolation accuracy of 95 percent indicates that b998 Â 95%c ¼ 948 of non-faulty resources score lower FSR values than the two defects.</p><p>Definition 5.2. Fault coverage is the proportion of all combinations of faulty resources of size up to f that attain a specified isolation accuracy.   . This tradeoff between isolation accuracy and number of required tests can be conducted based on system reliability goals, e.g., the extent sufficient to achieve fast self-repair. It is important to note again that these simulation results are collected under the conditions of reliable tests. It is expected that g is increased to tolerate inarticulate tests while maintaining equivalent isolation accuracy as demonstrated in Section 5.2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Inarticulate Operational Testing</head><p>In the preceding analysis, we have assumed that a test outcome generated by a fault detection scheme embedded within each DC is reflective of the actual health state of used resources. However, this assumption for functional testing of digital designs cannot be guaranteed for various reasons. These include low test coverage due to node's controllability and observability constraints, common mode failures, or stuck-at 0 fault conditions in the fault detection logic. Error-resilient NGT was previously investigated through probabilistic and theoretical analysis with direct numerical simulations <ref type="bibr" target="#b37">[37]</ref>, <ref type="bibr" target="#b38">[38]</ref>. In Section 3.2, a discussion was provided for the classical requirement to obtain f-disjunction which states that d must be greater than or equal 1. In this work, we study how such an extension affects fault diagnosis using the proposed ranking scheme. The described combinatorial construction method given by the mosaic convergence procedure in Algorithm 1 is also used to realize design disjunction for d &gt; 1. <ref type="figure">Fig. 6</ref> shows the number of DCs for one-disjunctness and selected d values. It is evident that design disjunction for d &gt; 1 is achieved at modest linear increase in DC count g. For instance, the case of 7;000 resources indicates that d can be increased by an order of magnitude from d ¼ 1 to d ¼ 10 while only roughly tripling the number of DCs required. In Section 6, we evaluate the effect of increasing d on fault diagnosis for various case studies in which we compare the isolation accuracy under the low coverage of operational testing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Fault Recovery Using Design Disjunction</head><p>The combinatorial characteristics of f-disjunct design matrices add another advantage for design disjunction. The definition expressed in Eq. <ref type="bibr" target="#b1">(2)</ref> implies that any f-disjunct set of DCs should guarantee that for any possible accumulation of f faulty resources there exists at least one DC whose resource set does not include a defective. This implication should not be considered as the upper bound on the number of recoverable defectives. Since hardware utilization ratio R=T can increase or decrease the sparsity of design matrix, it is possible to guarantee fault evasion for larger than f defectives. The normal probability p dc nf ðdÞ that up to d defective resources are not used by a DC is given as:</p><formula xml:id="formula_7">p dc nf ðdÞ ¼ Y d k¼1 1 À R T À k À 1 ; d 5 1:<label>(6)</label></formula><p>Thus, recovery coverage (RC), defined by the probability of recovery for g DCs, can be computed for any accumulated fault count d as: In order to examine the recovery behavior of the proposed method, three sets of f-disjunct designs for f ¼ 1; 2; and 3 were tested against all possible set of fault locations G G T d for varying accumulated fault count d. <ref type="figure" target="#fig_9">Fig. 7</ref> compares simulation results against our model given by Eq. <ref type="formula" target="#formula_8">7</ref>. Recovery coverage on the left vertical axis also indicates the proportion of G G T d combinations of defective(s) that were successfully evaded by at least one DC. All three disjunct sets exhibit high fault resilience for fault count d larger than f.</p><formula xml:id="formula_8">RCðdÞ ¼ 1 À 1 À p dc nf ðdÞ Â Ã g ; d 5 1:<label>(7)</label></formula><p>A target recovery rate can be met by choosing the appropriate hardware utilization as indicated in Eq. (6). For practical considerations, the optimal number of DCs for recovery during the system lifetime can be generated at design-time and stored in an off-chip flash memory.The data in the external flash memory can be protected using hardware redundancy or error correction schemes in addition to functional verification by CED which is resident on the FPGA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4">Incidental Disjunction for Interconnect Fault Tolerance</head><p>Contemporary reconfigurable devices utilize hundreds of thousands of routing points. For instance, Xilinx 7-series FPGAs fabricated in a 28 nm process allow over 3;500 programmable interconnect points (PIPs) to be defined in each switch tile of the device. This presents a significant challenge for run-time interconnect testing and diagnosis. Specialized functional testing for interconnects based on output pattern analysis as in <ref type="bibr" target="#b19">[20]</ref> and <ref type="bibr" target="#b39">[39]</ref> has been shown to be effective for diagnosis at the net level of a target design. However, a net in a design can utilize a considerable number of PIPs spanning multiple switch tiles that can prolong the self-repair process. Since allocation of interconnect resources is precipitated by mapping and placement of logic resources <ref type="bibr" target="#b40">[40]</ref>, a design disjunction in the logic fabric has been demonstrated to also confer significant incidental disjunction in interconnect resources. This property effectively extends fault recovery to routing fabrics as demonstrated in Section 6.2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">EVALUATION 6.1 Evaluation Setup</head><p>The proposed work is initially evaluated on a set of MCNC and ISCAS benchmarks through hardware simulations to show its applicability to a variety of applications. A modularized AES128 encryption core is selected as a realistic target application for the hardware prototype. The design flow for the evaluation framework is depicted in <ref type="figure" target="#fig_10">Fig. 8</ref>. The flow starts from a conventional design in a hardware description language using Xilinx's ISE synthesis tool. The synthesized netlists for target application are imported to Xilinx's PlanAhead to generate the physical implementation of all disjunct DCs. To enable partial reconfiguration support in the PlanAhead tool, a reconfigurable partition (RP) must be floorplanned such that it contains T resources necessary to realize the disjunct DCs. The RP is interfaced with the static region (SR) outside the RP through proxy LUTs. All disjunct DCs must use the same proxy logic for the target application's input and output ports which is possible by locking all port sets with the LOC constraint. Each DC is defined as a distinct reconfigurable module  (RM) inside the RP. Resource allocation for each RM is dictated by the design matrix constructed for the target application according to the design parameters discussed in Section 4. Resource allocation for each DC is added to the design flow by defining the placement AREA_GROUP and CONFIG_PROHIBIT constraints in the user constraints file (UCF) for each RM. The PlanAhead tool then generates Xilinx's native circuit description (NCD) netlist for each RM.</p><p>The stuck-at fault (SAF) model is adopted for fault injection in this evaluation. Fault injection is incorporated into the flow using Xilinx's FPGA Editor which can inject SAF into NCD netlists at any randomly chosen location. Resource information for generating appropriate fault injection commands for the FPGA Editor tool are extracted from Xilinx design language (XDL) netlists. For hardware simulation of each benchmark, a post PAR simulation model is generated from each NCD netlist before Xilinx's ISim simulator is invoked to verify functionality of each DC. To drive each simulation case, a subset of random inputs generated from a uniform distribution are used to mimic run-time operational inputs. It is worth noting that operational testing using concurrent error detection schemes employs a functional fault model (FFM) which encompasses SAF and a wide range of failure modes that can alter application functionality.</p><p>The considered AES encryption core for the hardware prototype is comprised of non-linear substitution boxes, a key expansion and addition units, and other logic blocks for shifting and mixing columns of the state matrix where input words are arranged. The AES core is decomposed into eight modules each of which has its own embedded error detection domain. <ref type="figure" target="#fig_11">Fig. 9</ref> shows a block diagram for the hardware demonstration system on the KC705 FPGA board. Error detection schemes for the AES modules are derived mostly from <ref type="bibr" target="#b41">[41]</ref>. An embedded MicroBlaze processor orchestrates execution flow of fault recovery and diagnosis, and constitutes a golden element in this prototype. Partial reconfiguration (PR) using the internal configuration access port (ICAP) is utilized for partial reconfiguration to minimize reconfiguration overhead. Xilinx provides the AXI_HWICAP IP core and a set of basic library functions supplied with the Xilinx's software development kit (SDK) that are used to control partial reconfiguration via the ICAP at the system level. The advanced extensible interface (AXI) bus system is used to interface the processor with the ICAP, memory interfaces, RPs, and other IPs used in the prototype.</p><p>Design disjunction is evaluated on the hardware platform using high-resolution image data which reside in the external DDR3 during the recovery process. A hardware timer is attached to the developed system bus to accurately capture system throughput and processing time of fault diagnosis flow. Xilinx's IPs which form the processing system (PS) including the MicroBlaze core, memory and communication interfaces, and ICAP reconfiguration logic, reside in the SR of the device. Partial reconfiguration is integrated in this prototype by defining a distinct RP for each AES module. Disjunct RMs are then defined and added for each RP. The design flow of the hardware prototype is extended from the implementation steps of experimental simulation. The static bitfile for the SR and partial bitfiles for each RP are obtained from the NCD netlists using the Xilinx's BitGen tool. The software module running on the embedded processor developed for the prototype using the Xilinx's SDK is combined with the static bitfile using Xilinx's Data2MEM tool before programming the FPGA board through its JTAG interface. Partial bitfiles for all RPs are stored in the off-FPGA flash memory chip before the evaluation begins. When partial reconfiguration is required, the embedded MicroBlaze processor moves each partial bitstream in the flash memory to the DDR3 memory before being written by the ICAP.</p><p>The evaluation process including resource allocation for design disjunction, fault injection, and simulation, is carried out by a Python-based software module that automates design and simulation tasks by invoking all required Xilinx tools through external system commands. The Python module also parses post PAR design files to extract delays and build a slice-level netlist using a net connectivity graph with associated functionality and routing resource information. This netlist is used to examine the recovery rate in relation to logic resources and PIPs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">Design Parameters and Results</head><p>For each MCNC and ISCAS benchmark, two f-disjunct sets of DCs are generated for f ¼ 1 and f ¼ 2. <ref type="table" target="#tab_6">Table 2</ref> lists the isolation accuracy results averaged over 1;000 experimental runs on all benchmarks for f ¼ 1 and f ¼ 2. Results include the 95 percent confidence interval (CI) and the area requirements indicated by parameters R and T . In this evaluation, T values are selected such that the area overhead T =R % 2 and T =R % 3 for f ¼ 1 and f ¼ 2, respectively, to demonstrate adaptation to various design parameters. The execution time of the mosaic convergence algorithm, denoted by t mc , to generate the (T ,R,f)-disjunct design matrix for each benchmark is also included. For this evaluation, design disjunction for each benchmark is realized using d ¼ 1 to observe the effect of inarticulate operational testing on fault isolation. As discussed in Section 4, the execution time of the mosaic convergence algorithm depends largely on T and size of G G T f . The average execution time of the algorithm for the application set examined in this evaluation is 89:8 ms (61:1 s) for f ¼ 1 (f ¼ 2). <ref type="table" target="#tab_6">Table 2</ref> also shows that the average isolation accuracy over all benchmarks for f ¼ 1 (f ¼ 2) is 96:4 percent (94:4 percent). Although the obtained isolation accuracy results are still promising, it is evident that design disjunction for d &gt; 1 is needed to overcome the impact of low test coverage. Test coverage also depends on the quality of input test patterns, a higher isolation accuracy can be achieved if specialized high-coverage test patterns generated by conventional ATPG tools at design-time are used at run-time.</p><p>Design disjunction for d &gt; 1 is also evaluated to demonstrate feasibility to reach optimal fault isolation under inarticulate testing. <ref type="table">Table 3</ref> shows how design disjunction for a moderate increase in disjunction factor d results in a greater than 99 percent isolation accuracy for all selected benchmarks. The three selected benchmarks include the misex3 benchmark which gives the worst combined isolation accuracy for f ¼ 1 and f ¼ 2 using d ¼ 1. Nevertheless, isolation accuracy exceeding &gt; 99 percent given by the upper 95 percent CI is reached using d ¼ 5. A diminishing return in improving isolation accuracy is also observed as d increases. Thus, the range 14d411 can be chosen for an optimal tradeoff between isolation accuracy and g. A linear dependency of g on d is also observed that is consistent with the analysis provided in Section 5. <ref type="figure" target="#fig_0">Fig. 10</ref> reports fault recovery results for the exhaustive fault coverage evaluation on logic and PIPs for f ¼ 1 and d ¼ 1. The design parameters for these benchmarks are similar to those listed in <ref type="table" target="#tab_6">Table 2</ref>. It is evident that design disjunction allows the ratio of shared PIPs among DCs to be much lower than that of logic resources. This is attributed to the PAR mechanism in the FPGA tool and its reaction to the diverse logic realizations. Also, it translates into an increase in the likelihood of finding at least one DC that avoids all faulty resources as confirmed here for logic slices and PIPs.</p><p>To observe the impact of design disjunction on application performance, the timing slacks along critical paths of all DCs are compared to the total slack of baseline design for each benchmark. The baseline design is the conventional physical implementation of an application inside its dedicated RP without resource constraints. For typical implementation, PAR algorithms search for the best placement and routing to meet timing constraints. Total slack s is given by post PAR timing reports as follows:</p><formula xml:id="formula_9">s ¼ t target À t total ¼ t target À ½t cp À t cps þ t cu ;<label>(8)</label></formula><p>where t target is target clock period, t total is total delay, t cp is critical path delay, t cps is clock path skew, and t cu is clock uncertainty. t target is set such that the total slack of baseline design is 2 ns. <ref type="figure" target="#fig_0">Figure 11</ref> shows s and t cp data for each benchmark. The average increase in t cp compared to the baseline design is 1:49 percent and the average decrease in the ratio of the total slack to the total delay is only 1:78 percent. It is also observed that the top-performing DC can be slightly faster than the baseline design due to the stochastic nature of placement and routing algorithms which does not guarantee convergence to the optimal solution, or due to random variation of the timing of logic resources <ref type="bibr" target="#b42">[42]</ref>. <ref type="table" target="#tab_7">Table 4</ref> lists design parameters, execution time to realize the design matrix, error detection method, and size of partial bitstream for each distinct AES module shown in <ref type="figure" target="#fig_11">Fig. 9</ref>. A failure in any module triggers the embedded processor to execute diagnosis and recovery service routines. Initially, transient and permanent failures are undistinguished. Thus, articulating inputs are re-issued to ascertain if reconfiguration scrubbing can resolve possible SEUs. If discrepancies persist, then DCs of the respective RP are configured to the FPGA through the ICAP. Reconfiguration occurs while using application throughput to stimulate test sequences and maintain availability. The evaluation window for this prototype is set to 1;000 blocks which can be adapted to maintain a desired throughput rate. If the fault detection signal is asserted at any time within the evaluation window, the fault isolation flow will continue by loading a subsequent DC. The feedback from the fault detection logic is captured by the processor where diagnostic data are decoded to identify faulty resources and the optimal resilient DC based on the ranking scheme described in section 5.1. <ref type="figure" target="#fig_0">Figs. 12a and 12b</ref> show the outlier behavior for FSR and CFSR ranking metrics, respectively, for 15 test cases. For the sake of comparison, FSR and CFSR values for each test case are normalized from 1 to 10. Each test case is conducted by first selecting an AES module at random and then injecting a SAF at a randomly chosen LUT input. <ref type="figure" target="#fig_0">Fig. 12a</ref> depicts the top 50 resources in ascending order of FSR for each of the 15 test cases. The defective resources indicated by the red dots rank the highest in FSR with a considerable difference to their next lower ranking resources. The normalized CFSR values for DCs for the 15 test cases depicted in <ref type="figure" target="#fig_0">Fig. 12b</ref> show that faulty DCs accumulate higher CFSR values. Thus, the DC ranking the lowest CFSR for each test case is selected as the optimal fault-resilient candidate DC for recovery. <ref type="figure" target="#fig_0">Fig. 12c</ref> shows the encryption time of the AES core during fault-handling routine for a selected test case. The test procedure is triggered after injecting a SAF at a randomly chosen LUT input in one of the 32-bit s-boxes. At the beginning, DC 14 is deployed during fault occurrence. The fault recovery procedure reconfigures the device with the partial bitfile of DC 14 to rule out SEUs. Since discrepancies persist, diagnosis flow continues by testing the remaining 23 DCs. Execution time is given per 100 plaintext blocks. The encryption core throughput is mainly impacted by the partial reconfiguration overhead t pr ¼ 4:58 ms and the latency of post-testing decoding phase t d ¼ 6:14 ms. The entire diagnosis flow completes in a millisecond-order time. Fault recovery is achieved after the second test using DC 2 which can be kept in service to maintain availability during timecritical events. The fault diagnosis flow can continue as shown until all DCs are evaluated so that the locations of damaged resources and DC for recovery are determined. Since design disjunction is realized using d ¼ 3 for the hardware prototype, the inarticulate tests of DC 12 and DC 19 have no impact on the trends given by FSR and CFSR. The obtained optimal resilient DC in this test case is DC 6 which is deployed to guarantee sustained recovery.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">COMPARISON OF DESIGN DISJUNCTION AND MODULAR REDUNDANCY</head><p>Modular redundancy using an NMR method is the most common form of hardware redundancy to tolerate failures. NMR methods can be realized using commercially-available and academic design tools such as Xilinx TMR (XTMR) and BYU-LANL TMR (BL-TMR), respectively. NMR employs N replicas and majority voting which masks failed modules by selecting a majority output. The area and power overheads of this scheme are approximately ðN À 1Þ-fold including overheads incurred by voting logic. A single failure in a module can render that module unusable which compromises failure recoverability besides pre-determining resource use. Failure recoverability, denoted by FR, is defined as the cumulative sum of recovery coverage for all possible combinations of fault locations. This definition can be expressed for a given fault count d as:</p><formula xml:id="formula_10">FR ¼ X T d¼1</formula><p>RCðdÞ:</p><p>Let A m be the minimum resource count required to implement a single module and m f be the number of failed modules, then recovery coverage for NMR scheme denoted by RC NMR is computed as follows:</p><formula xml:id="formula_12">RC NMR ðdÞ ¼ jfx 2 G T d s:t: m f 4 b NÀ1 2 cgj jG T d j :<label>(10)</label></formula><p>For NMR systems where N ¼ 3 and N ¼ 5, RC NMR can be given as 3 Á jG A m d j=jG T d j and ½10 Á jG 2A m d j À 15 Á jG A m d j=jG T d j, respectively. <ref type="figure" target="#fig_0">Fig. 13a</ref> compares the FR of the proposed work with that of NMR. The area overhead of design disjunction in this comparison includes the overhead of CED based on DWC. Both redundancy methods achieve a linear increase in failure recoverability as more redundant resources are added; however, design disjunction offers a higher linear increase. Designing for a higher disjunction factor d increases g which proportionately results in a higher RC as given by Eq. <ref type="formula" target="#formula_8">7</ref>and thus improves FR.</p><p>As depicted in <ref type="figure" target="#fig_0">Fig. 13a</ref>, due to the provision of finegrained resource allocation and relocation by design disjunction, a higher FR compared to NMR schemes can be obtained for the same area overhead. For instance, with a similar area overhead to TMR, design disjunction achieves 83:6 percent (143:3 percent) increase in FR over TMR for d ¼ <ref type="figure" target="#fig_0">1 (d ¼ 7)</ref>. Similarly, design disjunction can provide a comparable FR to that of TMR using a considerably lower area overhead. <ref type="figure" target="#fig_0">Fig. 13b</ref> reflects the area efficiency of the proposed work compared to modular redundancy. Area efficiency is quantified by the ratio of FR to the total resource count T . Similar to modular redundancy methods, a diminishing return on FR occurs as more hardware resources are considered. The resultant area advantage from using design disjunction is more prominent for larger area overhead. For the lowest design setting, i.e., f ¼ 1 and d ¼ 1, design disjunction still enables a higher FR per area than any NMR setup included in this analysis. It is also worth noting that the area advantage of design disjunction can be further enhanced by using parity-based error detection instead of DWC.</p><p>The proposed approach can be applied at the reconfigurable logic block level with a broadened range of design parameters to meet area and power constraints while maintaining both adequate fault isolation and recovery. The area overhead imposed by design disjunction is roughly limited to T =R, where R includes the resources required to deploy a CED scheme. Other components such as the embedded processor and memory controller are often present in embedded reconfigurable systems, and thus do not incur an additional area cost. The reliability of these components falls within the scope of embedded system reliability and can be protected by appropriate techniques <ref type="bibr" target="#b43">[43]</ref>. The reconfiguration structure is not limited to ICAP. For instance, Xilinx has recently introduced processor configuration access port (PCAP) interface <ref type="bibr" target="#b44">[44]</ref> for ARM-based systems to write configuration bits. Design disjunction is realized without loss of generality by the regularity and reconfigurability features of the FPGA device used. Since these features are ubiquitous in contemporary reconfigurable devices, the proposed approach can be highly compatible with many FPGA families from different vendors and other classes of reconfigurable ICs, such as complex programmable logic devices (CPLDs).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">CONCLUSION</head><p>Design disjunction offers a mathematically-rooted, parameterized, multi-fault isolation and recovery technique for reconfigurable hardware fabrics. Combinatorial construction methods for disjunction and failure ranking schemes for fault diagnosis are developed using operational testing techniques. Experimental results for a set of benchmarks on a Xilinx 7-series FPGA have demonstrated f-diagnosability at the individual slice level with a minimum average isolation accuracy of 96:4 percent (94:4 percent) for f ¼ 1 (f ¼ 2). An algebraic-based extension was also developed to tolerate inarticulate tests and increase isolation accuracy to any level deemed adequate for successful recovery and repair. Based on these favorable properties and low costs, design disjunction is worthy of consideration for autonomous resiliency in reconfigurable systems demanding high availability.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Objectives of proposed design disjunction approach.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Fault tolerance is achieved by run-time reconfiguration to load one of the bitfiles from the subset of DCs which does not utilize defective resources. The constructive property of f-disjunctness is shown to be effective for extracting highly fault-resilient DCs against logic and interconnect failures. In this work, FPGA-based fault scenarios are considered for evaluation of design disjunction since FPGAs are the prominent form of contemporary reconfigurable hardware. Modern FPGAs have multiple levels of logic cell granularity. For instance, basic logic elements such as LUTs and flip-flops of Xilinx FPGAs are organized into logic slices which are</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 .</head><label>2</label><figDesc>(a) Example of two-disjunct design matrix. (b) Conventional diagnosis decoder.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Definition 4 . 1 .</head><label>41</label><figDesc>Disjunction ratio (DR) is the proportion of G G T f elements that satisfy the condition stated in Eq. (2).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Algorithm 1 .</head><label>1</label><figDesc>Mosaic Convergence Algorithm for Constructing (T ,R,f)-Disjunct Design Matrix Procedure construct (T ,R,f)-disjunct matrix Input: T : Total Number of Resources R: Required Resources to Implement Application f: Number of Defects d: Disjunction Factor Output: Design Matrix, D D gÂT . 1 f :¼ ð T f Þ ¼ T ! f!ðT ÀfÞ! 2 " :¼ f Â ðT À fÞ // binary check count 3 DR :¼ 0 4 Generate a random row vector v v; s.t.: lengthðv vÞ ¼ T and vðv vÞ ¼ R 5 g :¼ 1 // point to the first row of D 6 D D g :¼ v v // insert v v as the first row of the design matrix 7 g :¼ g þ 1 8 C C :¼ G G T f // set of all f-combinations out of T 9 fÂT :¼ ½d fÂT //initialize binary coverage matrix entries to d 10 DR funcðv vÞ // call function DR func to update DR after inserting the row vector</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 3 .</head><label>3</label><figDesc>Required number of DCs versus resource count for typical values of f (d ¼ 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 4 .</head><label>4</label><figDesc>Fault diagnosis using the FSR metric.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 5</head><label>5</label><figDesc>shows the required number of DCs, g, to reach various isolation accuracies and their fault coverage values. The results also demonstrate how Algorithm 1 progresses towards the termination criteria, i.e. DR ¼ 100 percent, as g increases. The resource count T chosen for this analysis equals 1;000 and disjunction parameters are f ¼ 2 and d ¼ 1.In this case, 55 DCs are sufficient to identify all 1with 100 percent isolation accuracy. The value of g can be considerably reduced while maintaining a high isolation accuracy. A reduction of 36:4 percent (61:8 percent) in g results in a slight decrease in isolation accuracy of 1 percent (5 percent)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 5 .</head><label>5</label><figDesc>Isolation accuracy versus g (T ¼ 1;000, f ¼ 2, d ¼ 1).Fig. 6. DC count for increasing d (f ¼ 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 7 .</head><label>7</label><figDesc>Recovery coverage of disjunct DCs (T ¼ 100, R ¼ 30, d ¼ 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Fig. 8 .</head><label>8</label><figDesc>Framework of demonstration system.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig. 9 .</head><label>9</label><figDesc>Block diagram of hardware demonstration system.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Fig. 10 .</head><label>10</label><figDesc>Fault recovery coverage (f ¼ 1, d ¼ 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Fig. 11 .</head><label>11</label><figDesc>Effect of design disjunction on system performance.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Fig. 12 .Fig. 13 .</head><label>1213</label><figDesc>Execution of isolation phase on an AES module. Area efficiency of design disjunction.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1</head><label>1</label><figDesc>Comparison of Design Disjunction with Related Approaches</figDesc><table><row><cell>Approach</cell><cell>Run-time Fault Isolation</cell><cell>Resource Coverage: Resolution</cell><cell>Provable Multiple-fault Coverage</cell><cell>Error-tolerant Fault Isolation</cell><cell>Recovery Latency</cell><cell>Intrinsic Wear Leveling</cell><cell>PAR at Run-time</cell><cell>Advantage</cell></row><row><cell>STARs [14]</cell><cell>Yes</cell><cell>Logic: LUT</cell><cell>Yes</cell><cell>No</cell><cell>Exhaustive BIST</cell><cell>No</cell><cell>Required</cell><cell>Resource</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Overhead</cell><cell></cell><cell></cell><cell>Recycling</cell></row><row><cell cols="2">R3TOS [15] Yes</cell><cell>Logic: slice</cell><cell>No</cell><cell>No</cell><cell>PAR Overhead</cell><cell>No</cell><cell>Required</cell><cell>Outlier</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Identification</cell></row><row><cell>Design Disjunction</cell><cell>Yes</cell><cell>Logic: slice &amp;</cell><cell>Yes</cell><cell>Yes</cell><cell>ms! ms</cell><cell>Yes</cell><cell>Unnecessary</cell><cell>Condensed</cell></row><row><cell>(approach herein)</cell><cell></cell><cell>Interconnect: PIPs</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Diagnosis</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>TABLE 2</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="4">Isolation Accuracy Results (d ¼ 1)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>f ¼ 1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>f ¼ 2</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="3">Isolation Accuracy (%)</cell><cell></cell><cell></cell><cell></cell><cell cols="3">Isolation Accuracy (%)</cell></row><row><cell>Benchmark</cell><cell>R</cell><cell>T</cell><cell>g</cell><cell>t mc</cell><cell>m</cell><cell cols="2">95% CI</cell><cell>T</cell><cell>g</cell><cell>t mc</cell><cell>m</cell><cell cols="2">95% CI</cell></row><row><cell>Circuit</cell><cell></cell><cell></cell><cell></cell><cell>(ms)</cell><cell></cell><cell>lower</cell><cell>upper</cell><cell></cell><cell></cell><cell>(s)</cell><cell></cell><cell>lower</cell><cell>upper</cell></row><row><cell>alu4</cell><cell>73</cell><cell>144</cell><cell>15</cell><cell>41</cell><cell>96.86</cell><cell>96.07</cell><cell>97.65</cell><cell>198</cell><cell>41</cell><cell>12.74</cell><cell>95.78</cell><cell>93.89</cell><cell>97.67</cell></row><row><cell>c880</cell><cell>16</cell><cell>30</cell><cell>10</cell><cell>7</cell><cell>95.80</cell><cell>93.85</cell><cell>97.75</cell><cell>45</cell><cell>25</cell><cell>0.057</cell><cell>95.56</cell><cell>93.54</cell><cell>97.57</cell></row><row><cell>misex3</cell><cell>103</cell><cell>198</cell><cell>15</cell><cell>98</cell><cell>91.73</cell><cell>89.28</cell><cell>94.18</cell><cell>286</cell><cell>44</cell><cell>51.7</cell><cell>88.16</cell><cell>84.34</cell><cell>91.99</cell></row><row><cell>exp5</cell><cell>22</cell><cell>40</cell><cell>11</cell><cell>9</cell><cell>97.17</cell><cell>96.28</cell><cell>98.07</cell><cell>66</cell><cell>29</cell><cell>0.161</cell><cell>93.42</cell><cell>90.19</cell><cell>96.64</cell></row><row><cell>vda</cell><cell>43</cell><cell>84</cell><cell>14</cell><cell>13</cell><cell>98.32</cell><cell>97.15</cell><cell>99.50</cell><cell>119</cell><cell>35</cell><cell>1.97</cell><cell>97.13</cell><cell>95.12</cell><cell>99.15</cell></row><row><cell>c6288</cell><cell>139</cell><cell>256</cell><cell>15</cell><cell>211</cell><cell>99.14</cell><cell>98.53</cell><cell>99.75</cell><cell>390</cell><cell>48</cell><cell>174.7</cell><cell>97.01</cell><cell>94.69</cell><cell>99.33</cell></row><row><cell>seq</cell><cell>132</cell><cell>252</cell><cell>15</cell><cell>205</cell><cell>91.71</cell><cell>89.69</cell><cell>93.74</cell><cell>385</cell><cell>47</cell><cell>170.3</cell><cell>89.90</cell><cell>86.49</cell><cell>93.32</cell></row><row><cell>apex4</cell><cell>70</cell><cell>136</cell><cell>14</cell><cell>31</cell><cell>98.56</cell><cell>97.75</cell><cell>99.37</cell><cell>204</cell><cell>41</cell><cell>14.7</cell><cell>97.40</cell><cell>95.87</cell><cell>98.94</cell></row><row><cell>des</cell><cell>146</cell><cell>275</cell><cell>16</cell><cell>262</cell><cell>97.31</cell><cell>96.26</cell><cell>98.35</cell><cell>391</cell><cell>48</cell><cell>179.8</cell><cell>92.67</cell><cell>89.55</cell><cell>95.79</cell></row><row><cell>c3540</cell><cell>58</cell><cell>112</cell><cell>14</cell><cell>21</cell><cell>97.66</cell><cell>96.31</cell><cell>99.01</cell><cell>162</cell><cell>38</cell><cell>5.97</cell><cell>96.67</cell><cell>95.16</cell><cell>98.19</cell></row><row><cell>average</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>89.8</cell><cell>96.43</cell><cell>95.11</cell><cell>97.74</cell><cell>-</cell><cell>-</cell><cell>61.12</cell><cell>94.37</cell><cell>91.88</cell><cell>96.86</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>TABLE 4 Design</head><label>4</label><figDesc></figDesc><table><row><cell>Parameters for AES Modules</cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>This research was funded by the Ministry of Education of Saudi Arabia under scholarship grant no. 64923.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Blueprints for High Availability</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Marcus</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Stern</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Wiley</publisher>
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Design and architectures for dependable embedded systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Henkel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Bringmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Brinkschulte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Chakraborty</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Engel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ernst</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Hartig</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Hedrich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 9th Int. Conf. Hardware/Softw. Codes. Syst. Synthesis, Taipei</title>
+		<meeting>IEEE 9th Int. Conf. Hardware/Softw. Codes. Syst. Synthesis, Taipei<address><addrLine>Taiwan</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011-10" />
+			<biblScope unit="page" from="69" to="78" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">SRAM FPGA reliability analysis for harsh radiation environments</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Ostler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Caffrey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">S</forename><surname>Gibelyou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">S</forename><surname>Morgan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">H</forename><surname>Pratt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">M</forename><surname>Quinn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Wirthlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Nucl. Sci</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3519" to="3526" />
+			<date type="published" when="2009-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Trends and challenges in VLSI circuit reliability</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Constantinescu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Micro</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="14" to="19" />
+			<date type="published" when="2003-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A novel design methodology for implementing reliability-aware systems on SRAM-based FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bolchini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Miele</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Sandionigi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1744" to="1758" />
+			<date type="published" when="2011-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Triple module redundancy design techniques for virtex FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Carmichael</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Xilinx</title>
+		<imprint>
+			<date type="published" when="2001-07" />
+		</imprint>
+	</monogr>
+	<note>Application Note XAPP197(v1.0.1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Correcting single-event upsets in Virtex-4 FPGA configuration memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Carmichael</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">W</forename><surname>Tseng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Xilinx</title>
+		<imprint>
+			<date type="published" when="2009-10" />
+		</imprint>
+	</monogr>
+	<note>Application Note XAPP1088(v1.0</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">FPGA partial reconfiguration via configuration scrubbing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Heiner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Sellers</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wirthlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kalb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Conf. Field Programmable Logic Appl</title>
+		<meeting>IEEE Int. Conf. Field Programmable Logic Appl<address><addrLine>Prague, Czech Republic</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009-09" />
+			<biblScope unit="page" from="99" to="104" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Reconfigurable architecture for autonomous self-repair</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mitra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W.-J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">R</forename><surname>Saxena</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S.-Y.</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Mccluskey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Des. Test. Comput</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="228" to="240" />
+			<date type="published" when="2004-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Vivado design suite</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Xilinx</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012-06" />
+		</imprint>
+	</monogr>
+	<note>White Paper WP416 (v1.1)</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Facilitating FPGA reconfiguration through low-level manipulation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Zha</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014-02" />
+			<pubPlace>Blacksburg, VA, USA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Virginia Polytechnic Inst. State Univ.</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Ph.D. dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Design space exploration for the design of reliable SRAM-based FPGA systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bolchini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Miele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Symp. Defect Fault Tolerance VLSI Syst</title>
+		<meeting>IEEE Int. Symp. Defect Fault Tolerance VLSI Syst<address><addrLine>Boston, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008-10" />
+			<biblScope unit="page" from="332" to="340" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Design space exploration for high availability drFPGA based embedded systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Chakraverty</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Sikri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 1st Int. Conf. Adv</title>
+		<meeting>1st Int. Conf. Adv<address><addrLine>Cairo, Egypt</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012-12" />
+			<biblScope unit="page" from="234" to="243" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Using roving STARs for on-line testing and diagnosis of FPGAs in fault-tolerant applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Abramovici</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Strond</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Wijesuriya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Verma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Test Conf</title>
+		<meeting>IEEE Int. Test Conf<address><addrLine>Atlantic City, NJ, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1999-09" />
+			<biblScope unit="page" from="973" to="982" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Iturbe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Benkrid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ebrahim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Torrego</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Martinez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Arslan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Perez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">R3TOS: A novel reliable reconfigurable real-time operating system for highly adaptive, efficient, and dependable computing on FPGAs</title>
+		<imprint>
+			<date type="published" when="2013-08" />
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="1542" to="1556" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Module diversification: Fault tolerance and aging mitigation for runtime reconfigurable architectures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Kochte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Imhof</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H.-J</forename><surname>Wunderlich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Henkel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Test Conf</title>
+		<meeting>IEEE Int. Test Conf<address><addrLine>Anaheim, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-09" />
+			<biblScope unit="page" from="1" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Algebralogical repair method for FPGA logic blocks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Hahanov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Galagan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Olchovoy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Priymak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE East-West Des. Test Symp</title>
+		<meeting>IEEE East-West Des. Test Symp<address><addrLine>St. Petersburg, Russia</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010-09" />
+			<biblScope unit="page" from="482" to="487" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Selfhealing reconfigurable logic using autonomous group testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">A</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Sarvi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Alzahrani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Demara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Microprocess. Microsyst</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="174" to="184" />
+			<date type="published" when="2013-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Consensus-based evaluation for fault isolation and on-line evolutionary regeneration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Demara</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">A</forename><surname>Sharma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 6th Int. Conf. Evolvable Syst.: From Biol. Hardware</title>
+		<meeting>6th Int. Conf. Evolvable Syst.: From Biol. Hardware</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="12" to="24" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">High resolution application specific fault diagnosis of FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">B</forename><surname>Tahoori</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Very Large Scale Integr. (VLSI) Syst</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1775" to="1786" />
+			<date type="published" when="2011-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Using march tests to test SRAMs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">J</forename><surname>Van De Goor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Des. Test. Comput</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="8" to="14" />
+			<date type="published" when="1993-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Test strategies for reliable runtime reconfigurable architectures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Imhof</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kochte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Henkel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H.-J</forename><surname>Wunderlich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1494" to="1507" />
+			<date type="published" when="2013-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">IS-FPGA: A new symmetric FPGA architecture with implicit scan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Renovell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Faure</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Portal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Figueras</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zorian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Test Conf</title>
+		<meeting>IEEE Int. Test Conf<address><addrLine>Baltimore, MD, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2001-11" />
+			<biblScope unit="page" from="924" to="931" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Which concurrent error detection scheme to choose?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mitra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Mccluskey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Test Conf</title>
+		<meeting>IEEE Int. Test Conf<address><addrLine>Atlantic City, NJ, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2000-10" />
+			<biblScope unit="page" from="985" to="994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Autonomous fault-tolerant systems onto SRAM-based FPGA platforms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bolchini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Miele</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Sandionigi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electron. Test</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="779" to="793" />
+			<date type="published" when="2013-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Detecting, diagnosing, and tolerating faults in SRAM-based field programmable gate arrays: A survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Doumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Ito</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Very Large Scale Integr. Syst</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="386" to="405" />
+			<date type="published" when="2003-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Fault-tolerant evolvable hardware using field-programmable transistor arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Keymeulen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zebulum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Stoica</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Rel</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="305" to="316" />
+			<date type="published" when="2000-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Fault tolerance and reliability in field-programmable gate arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Stott</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">P</forename><surname>Sedcole</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">Y K</forename><surname>Cheung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IET Comput. Digital Techn</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="196" to="210" />
+			<date type="published" when="2010-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Progress in autonomous fault recovery of field-programmable gate arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Parris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">A</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Demara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Comput. Surveys</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">31</biblScope>
+			<date type="published" when="2011-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Cellular-array implementations of bio-inspired self-healing systems: State of the art and future perspectives,&quot; in Design Methodologies for Secure Embedded Systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Seffrin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Biedermann</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Springer</publisher>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="151" to="170" />
+			<pubPlace>Berlin, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The detection of defective members of large populations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Dorfman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ann. Math. Statist</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="436" to="440" />
+			<date type="published" when="1943-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">New and improved BIST diagnosis methods from combinatorial group testing theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Kahng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Reda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Comput.-Aided Des. Integr. Circuits Syst</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="533" to="543" />
+			<date type="published" when="2006-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A rapid and scalable diagnosis scheme for BIST environments with a large number of scan chains</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ghosh-Dastidar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">A</forename><surname>Touba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 18th VLSI Test Symp</title>
+		<meeting>IEEE 18th VLSI Test Symp<address><addrLine>Montreal, PQ, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2000-05" />
+			<biblScope unit="page" from="79" to="85" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Coding-theoretic methods for sparse recovery</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cheraghchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 49th Annu. Allerton Conf. Commun., Control Comput</title>
+		<meeting>IEEE 49th Annu. Allerton Conf. Commun., Control Comput<address><addrLine>Monticello, IL, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011-09" />
+			<biblScope unit="page" from="909" to="916" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">A simple construction of d-disjunct matrices with certain constant weights</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">J</forename><surname>Macula</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Discr. Math</title>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="311" to="312" />
+			<date type="published" when="1996-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Non-adaptive group testing: Explicit bounds and novel algorithms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">L</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Jaggi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Saligrama</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Agnihotri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Symp. Inform. Theory</title>
+		<meeting>IEEE Int. Symp. Inform. Theory</meeting>
+		<imprint>
+			<date type="published" when="2012-07" />
+			<biblScope unit="page" from="1837" to="1841" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Group testing with probabilistic tests: Theory, design and application</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cheraghchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hormati</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Karbasi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Vetterli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Theory</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="7057" to="7067" />
+			<date type="published" when="2011-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Non-adaptive group testing in the presence of errors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Knill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">J</forename><surname>Bruno</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">C</forename><surname>Torney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Discr. Appl. Math</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="261" to="290" />
+			<date type="published" when="1998-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A novel heuristic method for application-dependent testing of a SRAM-based FPGA interconnect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lombardi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="163" to="172" />
+			<date type="published" when="2013-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Hypergraph-cover diversity for maximally-resilient reconfigurable systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Alzahrani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Demara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 12th Int. Conf. Embedded Softw. Syst</title>
+		<meeting>IEEE 12th Int. Conf. Embedded Softw. Syst<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-08" />
+			<biblScope unit="page" from="1086" to="1092" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Concurrent structure-independent fault detection schemes for the advanced encryption standard</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Mozaffari-Kermani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Reyhani-Masoleh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="608" to="622" />
+			<date type="published" when="2010-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Process variation immunity of alternative 16nm HK/MG-based FPGA logic blocks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Alzahrani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Demara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 58th Int. Midwest Symp. Circuits Syst</title>
+		<meeting>IEEE 58th Int. Midwest Symp. Circuits Syst<address><addrLine>Fort Collins, CO, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-08" />
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Kopetz</surname></persName>
+		</author>
+		<title level="m">Real-Time Systems: Design Principles for Distributed Embedded Applications</title>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2011-04" />
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Partial reconfiguration of a hardware accelerator on Zynq-7000 all programmable SoC devices</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Kohn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Xilinx</title>
+		<imprint>
+			<date type="published" when="2013-01" />
+		</imprint>
+	</monogr>
+	<note>Application Note XAPP1088(v1.0</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

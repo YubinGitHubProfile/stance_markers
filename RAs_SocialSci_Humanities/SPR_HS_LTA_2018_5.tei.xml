@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">IELTS economic washback: a case study on English major students at King Faisal University in Al-Hasa, Saudi Arabia</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ahmad</forename><surname>Alsagoafi</surname></persName>
+							<email>aalsagoafi@kfu.edu.sa</email>
+							<affiliation key="aff0">
+								<orgName type="institution">King Faisal University</orgName>
+								<address>
+									<addrLine>Al Hofouf 55217</addrLine>
+									<country key="SA">Saudi Arabia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">IELTS economic washback: a case study on English major students at King Faisal University in Al-Hasa, Saudi Arabia</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-018-0058-3</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Saudi Arabia</term>
+					<term>IELTS</term>
+					<term>Washback</term>
+					<term>Financial burdens</term>
+					<term>Semi-structured interviews</term>
+					<term>High-stakes tests</term>
+					<term>Language proficiency</term>
+					<term>Stakeholders</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Introduction: The International English Language Testing System (IELTS) is a standardized high-stakes test, which is used for the purpose of measuring the language proficiency of candidates who wish to study or work in an environment where English is the language of communication (IELTS introduction. Retrieved from https://www.ielts.org/what-is-ielts/ielts-introduction. Last accessed 2 Nov 2017.). This study aims to explore the economic washback of the test, since it is an underresearched area in the literature. Case description: A qualitative approach was adopted to conduct this study, and, therefore, data were collected from 94 participants through the means of semistructured questionnaires, and semi-structured interviews were conducted for six participants. Data were analyzed inductively by employing a computer program called Nvivo. Discussion and Evaluation: The findings have shown that the participants were financially affected by the test. In the questionnaires, the participants reported that the test was expensive, and its cost kept rising from time to time. Students who were most affected financially by the price of the test were those who had to repeat the test because they could not achieve the minimum requirements. Interview results revealed that all the students in the focus group repeated the test at least four times. In addition, most students explained that they were dependent on their family to pay for the cost of the test. Furthermore, some students had to travel to a different region or country, since the academic module was not offered in their test center. Finally, the interview results indicated that the preparation courses were an additional financial burden on these participants, especially because the participants were not sure when they would be ready to take the test and whether the training that they have received would be enough to help them achieve the required test score. Conclusions: Apparently, the IELTS Test created a negative economic washback on these students. To lessen this financial effect, the participants of this study recommended that the test price should be reconsidered, the test should be modular and the best result in each module in any two or more IELTS Tests taken in the last two years should be accepted.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>Tests do not operate in a vacuum. They are highly "embedded in educational, social, political and economic contexts" <ref type="bibr">(Shohamy, 2001, p. xvi)</ref>. Undoubtedly, context plays an important role in understanding tests. <ref type="bibr" target="#b20">Macqueen, Pill, and Knoch (2016)</ref> explained that "the role of test impact research is to challenge the taken-for-grantedness of the standard by interrogating its rationale and examining its effects" (p. 273). Hence, this paper focuses on the economic washback of the IELTS test. It aims to explore the negative economic consequences that the examinees face. It should be noted that this paper does not intend to discuss the economic gains or the opportunities that will be achieved by the examinees, such as jobs, acceptance into a university, and ease of immigration, but rather, the study focuses on the financial burdens that the test imposes on the examinees. O'Sullivan (2011) notes that "Now testing is an industry…about a $2 Billion a year industry". More specifically, the number of candidates appearing for the IELTS exam is increasing rapidly every year due to the industrialization of the test, being trusted and recognized around the world, and, most importantly, the high validity and reliability that the test pertains. O'Sullivan (2011) explained that "twenty years ago, the population of IELTS was less than 10,000 now it's 1.5 million." Not surprisingly, over 2.9 million people applied for the test in 2016 across over 140 countries <ref type="bibr" target="#b17">(IELTS, 2017b)</ref>. Apparently, the IELTS has gained precedence over other major tests in the industry, such as the TOEFL.</p><p>The examinees are considered to be a key contributor to the success of the test, especially in terms of its economic side. <ref type="bibr">Shohamy (2001, p. 123)</ref> pointed out that "The high economic value placed in tests also explains why test takers are willing to spend big sums of money for test preparation courses and support a growing industry that just make the rich even richer." This situation is applicable to the IELTS test, as students who wish, for instance, to gain acceptance into prestigious universities (where IELTS is one of the admission criteria) will be very keen to uncover the techniques required to succeed in the exam and optimize their test potential in order to achieve the required score. Such preparation is said to significantly increase the chances of those students in achieving the score that they want. However, the quality as well as the duration of the preparation for the test differs from one candidate to another. It depends mainly on the score that the candidate has achieved on the test initially or any other tests designed for the same purpose and the target score that the candidate aims to achieve. Sometimes, it takes several weeks, months, or even a couple of years in the worst scenarios for examinees to succeed in the test. Consequently, the longer the students prepare for the course and the more number of times they fail in the test, the higher the financial costs they will incur. This journey of preparation often leads to desirable outcomes, and sometimes, that is not so. In this case, candidates will be affected differently by the test. <ref type="bibr">Green (2007, p. 17)</ref> stated that "Participants set the test stakes according to their awareness (or lack of awareness) of the uses to be made of test results." IELTS is a high-stakes test, and most students are aware of the consequences of failure in the test. Therefore, the examinees study hard for it. It follows then that the higher the stakes, the more effort that is exerted, and, sometimes, more money is spent on the test and the courses required for the preparation. <ref type="bibr" target="#b18">Ingulsrud (1994)</ref> described the financial impact on students and their families while discussing the entrance examinations for the Japanese university as follows:</p><p>For students who are serious about entering a highly ranked university, a considerable amount of coaching is normal in preparing for the entrance examination...Supplemental education of this kind costs a good deal of money, and yet students and their families are willing to make such sacrifices. <ref type="bibr">(p. 79-80)</ref> The above discussion clearly shows that tests (especially high-stakes ones, such as the IELTS) are inevitably embedded in economic contexts. Hence, candidates need to comply with the economic demands (i.e., enrollment in costly preparation courses, unlimited and unwise repetition of the test, or buying specimen materials pertaining to the test) even if they know that they are being exploited. As a matter of fact, Spolsky <ref type="bibr">(1995, p. 1-2)</ref> found that in the early history of the TOEFL test, there was a "tendency for economic and commercial and political ends to play such crucial roles that the assertion of authority and power becomes ultimately more important than issues of testing theory or technology."</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Defining washback</head><p>The term "washback," in Applied Linguistics (see, e.g., <ref type="bibr" target="#b0">Alderson and Wall, 1993;</ref><ref type="bibr" target="#b2">Bachman, 1990;</ref><ref type="bibr" target="#b9">Cheng, Watanabe, and Curtis, 2004;</ref><ref type="bibr" target="#b10">Davies, Brown, Edler, Hill, Lumley, and McNamara, 1999;</ref><ref type="bibr">Green, 2007, among others)</ref>, and the term "backwash," in education, (see, e.g., <ref type="bibr" target="#b6">Broadfoot, 1996;</ref><ref type="bibr" target="#b12">Gipps, 1994;</ref><ref type="bibr">Hughes, 2003, among others)</ref> are used interchangeably to mean one thing, which is the influence of tests on instruction <ref type="bibr" target="#b10">(Davies et al., 1999)</ref>, or teaching <ref type="bibr" target="#b0">(Alderson and Wall, 1993)</ref>, and on learning <ref type="bibr" target="#b15">(Hughes, 2003)</ref>. For the purposes of this study, the term "washback" will be used. Though washback can be both positive and negative, this paper focuses on the negative washback (in terms of finances) of the IELTS test.</p><p>Previous studies pertaining to washback on the IELTS test focused on the impact of the test on professional associations <ref type="bibr" target="#b21">(Merrifield, 2008</ref><ref type="bibr" target="#b22">(Merrifield, , 2011</ref><ref type="bibr" target="#b23">(Merrifield, , 2016</ref>, on education and society <ref type="bibr" target="#b27">(Moore, Stroupe, and Mahony, 2012)</ref>, on IELTS preparation courses (see, e.g., <ref type="bibr" target="#b1">Allen, 2017;</ref><ref type="bibr" target="#b7">Brown, 1998;</ref><ref type="bibr" target="#b8">Chappell, Bodis, and Jackson, 2015;</ref><ref type="bibr" target="#b14">Green, 2007;</ref><ref type="bibr" target="#b33">McPherson, Chand, &amp; Khan, 2003;</ref><ref type="bibr" target="#b25">Mickan and Motteram, 2008;</ref><ref type="bibr" target="#b26">Mickan and Motteram, 2009;</ref><ref type="bibr">Rao, Read &amp; Hayes, 2003)</ref>, on score gain <ref type="bibr" target="#b1">(Allen, 2017;</ref><ref type="bibr">Craven, 2012;</ref><ref type="bibr" target="#b11">Elder and O'Loughlin, 2003;</ref><ref type="bibr" target="#b14">Green, 2007;</ref><ref type="bibr" target="#b16">Humphreys, Haugh, Fenton-Smith, Lobo, Michael, and Walkinshaw, 2012;</ref><ref type="bibr" target="#b29">O'Loughlin and Arkoudis, 2009)</ref>, on teaching materials <ref type="bibr" target="#b36">(Saville and Hawkey, 2004)</ref>, on computer-based versus traditional hand-written form of IELTS <ref type="bibr" target="#b38">(Weir, O'Sullivan, Yan, and Bax, 2007)</ref>, on the affective and academic impact <ref type="bibr" target="#b35">(Rea-Dickins, Kiely, and Yu, 2007)</ref>, on candidate's language <ref type="bibr" target="#b31">(O'Sullivan and Lu, 2006)</ref>, on test-taking purposes, i.e., immigration and secondary education <ref type="bibr" target="#b24">(Merrylees, 2003)</ref>, and on gender <ref type="bibr" target="#b28">(O'Loughlin, 2000)</ref>. However, none of these IELTS impact studies have talked exclusively about the economic washback of the test on the candidates. Instead, there was very little discussion regarding the financial burden of the test (see, e.g., <ref type="bibr" target="#b8">Chappell et al., 2015;</ref><ref type="bibr" target="#b21">Merrifield, 2008;</ref><ref type="bibr" target="#b27">Moore et al., 2012)</ref>. This study focuses mainly on the economic washback of the IELTS tests, and this is where it fills such gap in the literature. Based on the literatures previously discussed, one main research question and two sub-questions were addressed in this paper, which are given as follows:</p><p>The main question is:</p><p>How do Saudi students at King Faisal University view the economic washback of the IELTS test?</p><p>The sub-questions are: Case description</p><formula xml:id="formula_0">1.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head><p>One hundred twenty students majoring in English (60 males and 60 females) from the Department of English Language at King Faisal University in Saudi Arabia were recruited for the study. Due to the nature of study, participants were selected purposively so as to allow the researcher to select the ones who were affected negatively by the test. <ref type="bibr">Lincoln and Guba (1985, p. 40)</ref> emphasized that purposive sampling "increases the scope or range of data exposed as well as the likelihood that the full array of multiple realities will be uncovered." All the students who participated in the study had taken the IELTS test at least once in the last 2 years or so. Some of them (22 students) were in their third year, and the rest (72 students) were in their fourth year of academic study. The consent of the participants was taken prior to the study. Semi-structured questionnaires as well as semistructured interviews were conducted for the purpose of data collection. The researcher took an initial approval from 120 students to take part in the study. Of these, 94 (53 females and 41 males) participants filled out the questionnaires (with a completion rate of 78%). After that, the researcher conducted semi-structured interviews with six students (three females and three males). These students sat for the IELTS test many times and had enrolled in preparation courses as well. The intention was to choose the ones who were mostly influenced by the test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and procedure employed</head><p>The study had been conducted at the Department of English Language at King Faisal University in Saudi Arabia at such times that were convenient to the students. The process of data collection lasted for 2 months. The semi-structured questionnaire was constructed in order to explore the views of the students regarding the negative washback of the test. Similarly, the interview had been conducted in order to obtain a detailed description of the students' perspectives (those that are pertaining to negative washback) about the test and to verify those views that had been stated in the questionnaires. The questions that had been asked in the questionnaire as well as the interviews were carefully formulated and identified so as to include items that are closely related to the central aim of the study. Thus, the researcher was keen to include topics that were related only to the IELTS economic washback. This was done through the lengthy process of expert reviews and trials with a small sample of students. The questionnaire was filled online, while the interviews were conducted face-to-face with the students. The researcher interviewed the male students, while the female students were interviewed by a female (research assistant), who was trained beforehand and given the agenda prior to the interviews.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis</head><p>In this qualitative study, the data were analyzed inductively by following the method of content analysis employing themes as the unit of analysis. That is to say, the main ideas were categorized into themes for the ease of understanding. The themes in this study, which originated mainly from the questionnaires and the interviews conducted, were coded and analyzed through a computer program called Nvivo. Interviews were then transcribed by the researcher, and the interview scripts were given back to the interviewees for the purpose of validation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion and Evaluation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Questionnaire data</head><p>Time in which the test had been taken All the students reported that they had taken the test within the last 2 years. So, they were within the "safe period" in which the test claims that their language proficiency would not suffer from attrition (Penn State University, 2017). Accordingly, when the test is repeated within this period of time, their language proficiency was highly unlikely to witness a significant improvement in terms of their scores.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reason for choosing IELTS</head><p>Most of the students took the IELTS test for the sake of studying abroad or to get admission into a master's program in Saudi Arabia. So, there was a genuine motivation behind taking the test other than simply determining their level of proficiency, which was indicated by very few students. The current situation in Saudi Arabia for those who wish to study abroad through the King Abdullah Scholarship Program necessitates them to provide evidence of their language proficiency to show that they can meet the language requirements of the intended program of study. In the past, students were sent to language centers (with the language component being the condition for entry into a program), and, in most cases, they needed to go through a year's preparation program for English for academic purposes. Such measures were taken due to the prevalent global financial and economic crisis and, most importantly, due to students who spent sometimes more than 1 year in language centers. Therefore, asking the students to provide evidence of language proficiency and getting unconditional offers afterward has proved to be cost-effective and time-efficient for the government. That was the key role that the proficiency tests played in Saudi Arabia.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The students' scores</head><p>The overall scores of the students in the IELTS test ranged from 5.5 to 7.5. The overall scores that were required for the postgraduate programs which most of the students wanted to join ranged from 6 to 7. The real challenge for the students was not acquiring the required overall score but getting the minimum requirements for band scores in each module (it ranged from 5 to 6 depending on the program of study).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The number of times the test had been taken</head><p>The majority of the students sat for the test more than once. Some of them took the test three to five times. Most of the students reported that the key reason why they kept repeating the test again and again was because they could not achieve the balance between the overall scores and the band scores. One of the students commented as follows:</p><p>It's like hit and miss, if you get the overall score you are happy and feel satisfied but how about if you cannot get the band score, you will repeat the test and sometimes you fail in another module or you get the band score but you fail in the overall one. So, it's a matter of luck.</p><p>It is for this reason that some of the students suggested that the IELTS test should be made modular, which would entail that students would only take the module in which they failed. This point will be further discussed in the interview.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The cost of the test</head><p>At the time when the data for this study was collected, which was in early 2017, the cost of the IELTS exam was 1000 Saudi Arabia Riyal (SAR) (approximately USD 266). As of 1 August 2017, the price of the test had changed to SAR 1050 (approximately USD 280) (British Council, 2017a). Most of the students indicated that the cost of the test, which kept rising frequently, had affected them financially. Some students said that they were keen on taking the next test as soon as possible in order to avoid any increase in the price. Other students said that they booked two or more tests at a time in order to take advantage of the old price. In fact, there is no available evidence, to the best knowledge of the researcher, that tracks the increase in the price over time which is available to the public. However, O'Sullivan (2011) explained that the price of the test is somehow unreasonable as he noted as follows:</p><p>The pricing it said, it should cost 10 pounds plus local costs. Now if you take our currency converters that you get them in banks, you can take 10 pounds in 1980 money and turn it into whatever it should be in this nowadays money, it's 32 so 32 plus local costs. Maybe another 10 quid, so 42. So that's where we think or I think the price should be around somewhere. Instead it's 142, you take 142 that's an exaggeration it varies from about 110 pounds to 140 pounds in various markets.</p><p>In addition, some students said that other services have also been affected by this change in prices, which include changing the date of the test, sending the results by post (locally and internationally), and getting an additional copy of the test report to be sent internationally. Not surprisingly, some students stated that they compared the test prices and found them to be cheaper in, for example, Bahrain, which is very close to the Eastern Province in Saudi Arabia. Currently, the price of the test is BHD 95 (approximately USD 250), while it is SAR 1050 (approximately USD 280) in Saudi Arabia (British Council, 2017a). These students reported having saved some money through this cheaper option, especially if they were booking two tests or more. Actually, what these students are saying, though it may not be generalized into other contexts, may perhaps contradict what the British Council website claims about the price of the test, which says that "IELTS has a set fee for its test" (British Council, 2017b).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The cost of IELTS preparation courses</head><p>Similarly, the preparation courses for the IELTS test and its materials were also considered to be an additional financial burden to the students. Almost all the students said that they had to enroll themselves in a preparation course in order to familiarize themselves with the test and acquaint themselves with the techniques for success in the test. Some said that they benefited from the free online preparation courses that the British Council offered in its website. Yet, they emphasized that the information in those courses was general, superficial, and less comprehensive than the costly ones that are available in the market. The price range for the preparation courses, according to the students, having an 8-week duration ranged from USD 300 to USD 400. Sometimes, students needed to stay longer in the course since they did not manage to attain the target score. Thus, they had to pay more. Alternatively, one student said that she wasted her time when she attended the preparation course, then she decided to prepare for the test by herself using preparation books and materials related to IELTS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Interview data</head><p>Right after the students had filled out the questionnaires, six students (three females and three males) were selected out of the whole group of 94 students (53 females and 41 males) in order to take part in a semi-structured interview. These students were selected from the main group because they had appeared for the IELTS test numerous times and had enrolled in preparation courses. All students who were interviewed said that they had taken the IELTS test solely because they wished to join a university course abroad. The intention of the study was to choose those who were mostly influenced by the test. The interviews will further investigate the financial burdens that the test imposed on these students.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The cost of the test and the students' scores</head><p>As mentioned earlier in the analysis of the questionnaire data, students reported that they were affected financially due to the increase in price of the test. However, students in this focus group suffered more due to such an increase since all of them repeated the test a number of times (at least four times) and in different test centers. The average cost of the test for these students ranged from SAR 4000 (approximately USD 1064) to SAR 6000 (approximately USD 1596). The reasons for repeating the test were almost identical among these students. They stated that the main reason for repeating the test was either because they did not achieve the band score requirement, especially in writing, or the overall score of the test. Of the same importance, one of them mentioned that the institution that she applied to raised the overall score after she successfully managed to get the required old overall score in her second trial. She said as follows:</p><p>My university raised the overall score from 6.5 into 7…you know that half band score is so difficult to reach in IELTS and I remember I got 6.5 but when I applied they said no you can't …your offer has expired and you need to apply again because our conditions have changed...the IELTS overall score is 7.</p><p>That student could not achieve the half band score even after having repeated the test twice. Eventually, she decided to give up and opt for another university which accepted "reasonable scores…it accepts 6.5." She indicated that she was forced to take such a decision because of many reasons. Chief among them was the financial burden of the test, which according to her and other students, was preventing them from taking the risk again and lowering their expectations (i.e., to be content with what they have got). This seems to be actually consistent with the findings of <ref type="bibr" target="#b8">Chappell et al. (2015)</ref>, as they found that some participants "felt there was an underlying financial purpose, or incentive, for the owners of IELTS, especially since the requirement for retaking the test has been eased, which is seen by P3 as replacing genuine care for testtakers with financial gain" (p. 12). Moreover, her situation, where she was refused entry into university, because of low proficiency, is consistent with what <ref type="bibr" target="#b37">Shohamy (2001)</ref> argued about with respect to the cut-off scores. She said that "Cutting scores are often used by those in authority as 'gate-keeping' tools-barriers to those who are not wanted" <ref type="bibr">(p. 38)</ref>.</p><p>This participant also said that she had found herself to be in a hard place since the test date for the second test was almost due for 2 years, and her university (with the 6.5 option) would not accept expired results. Above all, she and other students explained that they were dependent on their family to pay for the cost of the test, and, thus, they were pushed to study harder each time. In fact, some of the students came from low-income families, yet their families kept paying money as they were keen that their children get accepted into prestigious universities. Likewise, <ref type="bibr" target="#b27">Moore et al. (2012)</ref> noted as follows:</p><p>Parents and guardians of IELTS test-takers would seem to be a significant stakeholder group since, without their financial support and encouragement, their children would likely not be able to sit the Test, or to achieve a band score that could enable access to overseas scholarship opportunities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>(p. 53)</head><p>Other students reported similar situations regarding the test. Some students said that the reason for them retaking the test was because of the fluctuations in their scores. That is to say, their scores tended to change each time they sat for the exam. For instance, if they successfully achieved the overall score, they would underperform in one band score, as they could not achieve the required minimum score in that module. Therefore, they would repeat the test in order to meet the requirements of both the scores. This was the biggest challenge that all the students faced in this study. Meeting the requirements of the test in terms of both scores caused a double jeopardy for the students. In fact, they were more concerned with the band score, since the overall band score could be compensated very easily by performing well in other modules. One student described this by saying as follows:</p><p>Sometimes you have a low score on writing and you want to take the test for a second time but you know what…The problem is that you will fail in another thing…I don't believe the test is testing my skill as before because the content is different the expressions that I used could be different the marker of the test is different…so…so how do you want to keep the same score because there are other things which come into play when you repeat the test…anyway I lost my money.</p><p>This student seemed to be blaming the reliability of the test for losing his money, since he claimed that he was confident that his performance was good. This is consistent with the findings of <ref type="bibr" target="#b25">Mickan and Motteram (2008)</ref>, as they reported that "repeated test-taking and candidates' experience of variations in scores" have "affected test-takers' confidence in the Test" as "they expressed frustration with rating procedures" (p. 19). When the researcher of this study asked this participant about the reason why he did not complain to the test center about this problem, he and other students said that it would cost extra money to have their test papers remarked. The cost for remarking the test is currently SAR 600 (approximately USD 160). They would rather repeat the test and pay SAR 1000 (approximately USD 266), as they said that they had "little chances if no chances at all to get higher scores" than the ones that they got. The economic impact of the test on this student is somehow consistent with what <ref type="bibr" target="#b27">Moore et al. (2012)</ref> found in their study. They said that "for those test-takers who do not succeed in achieving the required IELTS scores, the reality they face is one of uncertainty and financial stress (e.g., if they decide to continue studying and re-sit the Test)" (p. 47).</p><p>Accordingly, almost all students who were interviewed suggested that the IELTS exam should be made modular, i.e., students should be allowed to repeat only the module in which they failed. In fact, the IELTS test is not a modular test, as students cannot take the modules of the test separately, except for the speaking module. That is because "Performance in the four skill areas is combined to provide a maximally reliable composite assessment of a candidate's overall language proficiency at a given point in time" (Penn State University, 2017). To overcome this problem, some students suggested that universities should allow students to provide them with two test reports, so that they can compare and judge their proficiency only on the module in which they failed in. That is to say, if a student failed in the writing module, and he or she had succeeded on the required overall score in test A, while he or she failed in the overall score of test B while succeeding in the writing module, the student should be accepted into university because his or her performance indicated that the minimum requirements were met in one test. This is apparently consistent with the findings of <ref type="bibr">Merrifield's study (2008)</ref>, who found that.</p><p>Several associations in all three countries have resolved this issue by developing a policy that the best result in each macroskill in any two or more IELTS Tests taken in the last two years would be accepted. This does not affect the cost to the candidate of taking successive tests, but gives greater flexibility in the outcomes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>(p. 25)</head><p>Similarly, in an attempt to lessen the washback effect of tests, <ref type="bibr" target="#b3">Barkaoui (2017)</ref> pointed out that "Test users want to know when a candidate submits multiple test scores whether to use only one of them (e.g., the most recent one) or they can use information from multiple tests" (p. 429).</p><p>Additionally, some students mentioned that the test imposed some financial difficulties on them because they had to travel to another region or, sometimes, another country to meet with the nearest test date. They had to do this because they said the following:</p><p>The academic module is not available every week and there is a deadline for registration so, if you miss the deadline which is usually 3 or 4 days before the actual test date you have to wait until the next test date or find another test center and you know we have to give to the university as soon as we can.</p><p>Currently, the test is offered in ten regions in Saudi Arabia, namely, Riyadh, Jeddah, Khobar, Abha, Al-Hasa, Makkah, Madinah, Buraidah, Al Jubail, and Tabuk. The academic module is available every 2 weeks in Al-Hasa, while it is available weekly in Dammam, which is 150 km from Al-Hasa. Actually, this explains why students had to travel to other regions in order to meet with the nearest test date.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The cost of IELTS preparation courses</head><p>All the students who were interviewed indicated that they had to take some sort of preparation for the test. The majority of the students enrolled in preparation courses prior to sitting for the test. They did so since they were keen to pass the test in their first attempt so that they could save money. It seems that the motivation to attend these preparation courses were twofold. First, students wanted to pass the test having no intention to learn other things, especially the things in English for Academic Purposes (EAP) courses that were not related to the test. This is consistent with <ref type="bibr">Green's study (2007)</ref>, who found that students tended to achieve faster gains when they were enrolled in dedicated IELTS preparation courses. More importantly, he found that IELTS preparation courses were different in focus from EAP courses, as they "directed learners away from their academic subjects and toward the topics and text types featured in the test" <ref type="bibr">(Green, 2006, p. 364)</ref>. Second, the students wanted to be ready for the test through such preparation courses in order to avoid paying more money should they fail the test. One of the students said that she enrolled in preparation courses because of the following reason:</p><p>It is shortcut...if you need to succeed on the test you need to be prepared...it is good for you to have at least a general idea about the test. You will lose money if you say I want to risk it and take the first test to familiarize myself and then repeat the test again... and this time you are more serious...I think you will repeat the test many times in this way and if you put this money in the preparation course you will benefit from it. Some students indicated that there was not only a shortage of test centers but also places for test preparation. The nearest British Council or International Development Program (IDP) center was in Dammam, which was 150 km from Al-Hasa. In fact, the students had faith in the materials and the courses offered by these centers more than anything else offered in the market, and it is for this reason that they preferred to go there despite the availability of some commercial centers in Al-Hasa, who offered IELTS preparation courses. Yet, the students did not find the online materials offered by the British Council to be adequate. One student said that "they don't give you enough training in the test because they want you to take the preparation courses they offer…I know why…they want to make money but not everybody can pay this much." This actually echoes the findings of Ingulsrud's study, who noted that "it goes without saying that the test preparation industry reflects economic inequalities in education: high-quality coaching is available only to those who can afford it <ref type="bibr">(1994, p. 72)</ref>."</p><p>Most importantly, there was a major problem that the students faced prior to their registration for the test. In order to save money and perhaps to save face, they had to book a test date while preparing for the test to secure a place for them either in Al-Hasa, which is their home town, or the nearest place that had a test center. This is due to the high demands of the test. However, students indicated that they were not sure when they would be ready for the test and whether the training that they have received would be enough in helping them to achieve the required test score. This situation created a pressure on the part of the students, and they were compelled to study as hard as they could within the given time.</p><p>Also, some students reported that they found some fraudulent websites, claiming to be the British Council when they wanted to register for the test. So, they were very cautious to look for the correct spelling and materials, since they did not want to risk their money and future. One student indicated that she found an account in social media that sold IELTS test reports. She said that she read some posts on that account about people who have bought the test results from abroad and saved a lot of effort and money as well. She said as follows.</p><p>My whole future will be distorted if I do this...I am not that person who cheat and I think if I have had a false test report the university will accept me but my performance or level of proficiency is not going to help me to write a homework or a dissertation.</p><p>Luckily, this student had an awareness about the consequences of having forged test results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>The research reported in this study has shown that the IELTS exam created a negative economic washback on the participants, as they were financially affected by the test. The questionnaire as well as the interview results has shown that the test is expensive. Also, the cost of the test keeps rising from time to time. Those who had to repeat the test because they failed to achieve the minimum requirements, either in the overall score or the sub-scores (especially in the writing module), were the ones who were most affected financially by the price of the test. In fact, all students in the focus group repeated the test at least four times. This created a financial burden on their families, as most of them were dependent on their parents to pay for the cost of the test, and, thus, they were pushed to study harder each time. Likewise, travel expenses have influenced the participants negatively, as some of them had to travel into another region or country because the academic module was not offered in their test center every week. By the same token, preparation courses proved to be an additional financial burden on these participants, especially because they were not sure when they would be ready for the test and whether the training that they had received would be enough in helping them to achieve the required test score.</p><p>The results of the study, however, need to be interpreted with caution because the sample of this study was small. In addition, this had been conducted on one setting at one Saudi university. Therefore, the findings could not be generalized into other contexts. Furthermore, this study was limited to one research approach, namely, the qualitative approach. Accordingly, data collection tools were utilized based on this approach and, thus, were semi-structured. For a more comprehensive and accurate picture of the economic washback on IELTS candidates, future washback studies need to have a bigger representative sample of participants. Similarly, future research should consider other stakeholders so that multiple sources of evidence are included for the sake of generalization. In addition, future studies should make use of mixed methods approach (qualitative and quantitative) and include multiple data collection tools in order to triangulate the data for the purpose of validation.</p><p>The findings of this study have implications for IELTS stakeholders. In order to bring this financial washback to minimum, especially for test repeaters, the participants of this study recommended that the test price should be reconsidered, the test should be made modular, and the best result in each module in any two or more IELTS tests taken in the last 2 years should be accepted.</p></div>		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The author is so grateful to the editor-in-chief and the anonymous reviewers for their constructive feedback on prior versions of this article. Special thanks are due to the participants of this study.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Availability of data and materials Data will not be shared because they will be used in other publications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The author declares that he has no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's Note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p><p>Received: 6 January 2018 Accepted: 13 March 2018</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wall</surname></persName>
+		</author>
+		<title level="m">Does washback exist? Applied Linguistics</title>
+		<imprint>
+			<date type="published" when="1993" />
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="115" to="129" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Investigating Japanese undergraduates&apos; English language proficiency with IELTS: predicting factors and washback</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Allen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IELTS Partnership Research Papers, 2. IELTS Partners: British Council</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+		<respStmt>
+			<orgName>Cambridge English Language Assessment and IDP: IELTS Australia</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Fundamental considerations in language testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">F</forename><surname>Bachman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Examining repeaters&apos; performance on second language proficiency tests: a review and a call for research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Barkaoui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Assessment Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="420" to="431" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Test dates, fees and locations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">British</forename><surname>Council</surname></persName>
+		</author>
+		<ptr target="https://www.britishcouncil.sa/exam/ielts/dates-fees-locations" />
+		<imprint>
+			<date type="published" when="2017-11-22" />
+		</imprint>
+	</monogr>
+	<note>Retrieved</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Frequently asked questions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">British</forename><surname>Council</surname></persName>
+		</author>
+		<ptr target="https://ielts.britishcouncil.org/FAQ.aspx#question&apos;26" />
+		<imprint>
+			<date type="published" when="2017-11-27" />
+		</imprint>
+	</monogr>
+	<note>Retrieved</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Education, assessment and society</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Broadfoot</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>Open University Press</publisher>
+			<pubPlace>Buckingham</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">An investigation into approaches to IELTS preparation, with particular focus on the academic writing component of the test</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jdh</forename><surname>Brown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IELTS research reports</title>
+		<editor>S Wood</editor>
+		<imprint>
+			<biblScope unit="page" from="20" to="37" />
+			<date type="published" when="1998" />
+			<publisher>ELICOS/IELTS</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The impact of teacher cognition and classroom practices on IELTS test preparation courses in the Australian ELICOS sector</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Chappell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bodis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Jackson</surname></persName>
+		</author>
+		<ptr target="https://www.ielts.org/-/media/research-reports/ielts_online_rr_2015-6.ashx" />
+	</analytic>
+	<monogr>
+		<title level="j">IELTS Research Report Series</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1" to="61" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The quest for IELTS band 7.0: investigating English language proficiency development of international students at an Australian university</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Watanabe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Curtis</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Melbourne: IDP: IELTS Australia and British Council</title>
+		<editor>J Osborne</editor>
+		<meeting><address><addrLine>Mahwah, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence Erlbaum Association, Inc. Craven</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="volume">13</biblScope>
+		</imprint>
+	</monogr>
+	<note>IELTS research report series</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Dictionary of language testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Davies</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Edler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Lumley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">(</forename><surname>Mcnamara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Studies in language testing 7</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Investigating the relationship between intensive English language study and band score gain on IELTS</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Elder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">&amp;</forename><surname>O'loughlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Canberra: IELTS Australia Pty Limited</title>
+		<editor>R Tulloh</editor>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="207" to="254" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Beyond testing: towards a theory of educational assessment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Gipps</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994" />
+			<publisher>Falmer Press</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Watching for washback: observing the influence of the international English language testing system academic writing test in the classroom</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Green</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Assessment Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="333" to="368" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">IELTS washback in context: preparation for academic writing in higher education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Green</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Testing for language teachers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hughes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Tracking international students&apos; English proficiency over the first semester of undergraduate study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Humphreys</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Haugh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fenton-Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Lobo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Walkinshaw</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Melbourne: IDP: IELTS Australia and British Council</title>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Why accept IELTS scores?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Ielts</surname></persName>
+		</author>
+		<ptr target="https://www.ielts.org/ielts-for-organisations/why-accept-ielts-scores" />
+		<imprint>
+			<date type="published" when="2017-11-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">An entrance test to Japanese universities: social and historical contexts</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Ingulsrud</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">From testing to assessment: English as an international language</title>
+		<editor>C Hill, K Parry</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Longman</publisher>
+			<date type="published" when="1994" />
+			<biblScope unit="page" from="61" to="81" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Naturalistic inquiry</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">S</forename><surname>Lincoln</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Guba</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Eg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1985" />
+			<publisher>Sage Publications</publisher>
+			<pubPlace>Beverly Hills, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Language test as boundary object: perspectives from test users in the healthcare domain</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Macqueen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Pill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Knoch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="271" to="288" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">An impact study into the use of IELTS as an entry criterion for professional associations-Australia, New Zealand and the USA</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Merrifield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IELTS research reports</title>
+		<editor>J Osborne</editor>
+		<meeting><address><addrLine>Canberra</addrLine></address></meeting>
+		<imprint>
+			<publisher>IELTS Australia</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">8</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">An impact study into the use of IELTS by professional associations and registration entities: Canada, the UK and Ireland</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Merrifield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Melbourne: IDP: IELTS Australia and British Council</title>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">11</biblScope>
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">An impact study into the use of IELTS by professional associations in the United Kingdom</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Merrifield</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Australia</forename><surname>Canada</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">New</forename><surname>Zealand</surname></persName>
+		</author>
+		<ptr target="https://www.ielts.org/-/media/research-reports/ielts_online_rr_2016-7.ashx" />
+	</analytic>
+	<monogr>
+		<title level="j">IELTS research reports online. Retrieved</title>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">An impact study of two IELTS user-groups: candidates who sit the test for immigration purposes and candidates who sit the test for secondary education purposes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Merrylees</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Canberra: IDP: IELTS Australia</title>
+		<editor>R Tulloh</editor>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="volume">4</biblScope>
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">An ethnographic study of classroom instruction in an IELTS preparation program</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Mickan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Motteram</surname></persName>
+		</author>
+		<ptr target="https://www.ielts.org/-/media/research-reports/ielts_rr_volume08_report1.ashx" />
+	</analytic>
+	<monogr>
+		<title level="m">IELTS research reports</title>
+		<editor>J. Osborne</editor>
+		<imprint>
+			<date type="published" when="2008-10-14" />
+			<biblScope unit="volume">8</biblScope>
+		</imprint>
+	</monogr>
+	<note>Retrieved</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The preparation practices of IELTS candidates: case studies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Mickan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Motteram</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Canberra: IDP: IELTS Australia and British Council</title>
+		<editor>J Osborne</editor>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="223" to="262" />
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Perceptions of IELTS in Cambodia: a case study of test impact in a small developing country</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Stroupe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">(</forename><surname>Mahony</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Melbourne: IDP: IELTS Australia and British Council</title>
+		<editor>J Osborne</editor>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">13</biblScope>
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The impact of gender in the IELTS oral interview</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>O'loughlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IELTS research reports</title>
+		<editor>R Tulloch</editor>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="1" to="28" />
+			<date type="published" when="2000" />
+			<publisher>IELTS Australia</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Investigating IELTS exit score gains in higher education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>O'loughlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Arkoudis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IELTS research reports</title>
+		<editor>J Osborne</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Canberra and British Council</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="95" to="180" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Language testing: looking back and looking forward. A seminar Retrieved</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>O'sullivan</surname></persName>
+		</author>
+		<ptr target="http://englishagenda.britishcouncil.org/continuing-professional-development/teacher-educator-framework/knowing-subject/language-testing-looking-back-and-looking-forward" />
+		<imprint>
+			<date type="published" when="2011-09-25" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The impact on candidate language of examiner deviation from a set interlocutor frame in the IELTS speaking test</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>O'sullivan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">London: IELTS Australia, Canberra and British Council</title>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="91" to="118" />
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">IELTS-frequently asked questions from researchers</title>
+		<ptr target="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.177.2074&amp;rep=rep1&amp;type=pdf" />
+		<imprint>
+			<date type="published" when="2017-09-20" />
+		</imprint>
+		<respStmt>
+			<orgName>Penn State University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Assessing the impact of IELTS preparation programs on candidates&apos; performance on the general training reading and writing test modules</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mcpherson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Chand</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">(</forename><surname>Khan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Canberra: IDP:IELTS Australia</title>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="237" to="262" />
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The impact of IELTS on preparation for academic study in New Zealand</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Read</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Hayes</surname></persName>
+		</author>
+		<ptr target="https://www.ielts.org/-/media/research-reports/ielts_rr_volume04_report5.ashx" />
+	</analytic>
+	<monogr>
+		<title level="m">IELTS research reports</title>
+		<imprint>
+			<date type="published" when="2003-09-13" />
+			<biblScope unit="volume">4</biblScope>
+		</imprint>
+	</monogr>
+	<note>Retrieved</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Student identity, learning and progression: the affective and academic impact of IELTS on &apos;successful&apos; candidates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Rea-Dickins</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Pr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kiely</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yu</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">(</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Manchester: British Council and Canberra: IDP Education Australia</title>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">7</biblScope>
+		</imprint>
+	</monogr>
+	<note>IELTS research reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The IELTS impact study: investigating washback on teaching materials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Saville</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Hawkey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Washback in language testing: research contexts and methods</title>
+		<editor>L Cheng, Y Watanabe, A Curtis</editor>
+		<meeting><address><addrLine>Mahwah, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence Erlbaum Associates</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="73" to="96" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The power of tests: a critical perspective of the uses of language tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Shohamy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Measured words</title>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Does the computer make a difference? The reaction of candidates to a computer-based versus a traditional hand-written form of the IELTS writing component: effects and impact</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Weir</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Sullivan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">(</forename><surname>Bax</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Canberra: British Council &amp; IELTS Australia</title>
+		<editor>P McGovern, S Walsh</editor>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="311" to="347" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

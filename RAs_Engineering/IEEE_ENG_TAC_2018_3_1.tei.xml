@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Emotion Analysis for Personality Inference from EEG Signals</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Guozhen</forename><surname>Zhao</surname></persName>
+							<email>zhaogz@psych.ac.cn</email>
+							<idno type="ORCID">0000-0003-4438-5320</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yan</forename><surname>Ge</surname></persName>
+							<idno type="ORCID">0000-0002-4701-6144</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Biying</forename><surname>Shen</surname></persName>
+							<email>shenby@psych.ac.cn</email>
+							<idno type="ORCID">0000-0002-5486-2381</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Xingjie</forename><surname>Wei</surname></persName>
+							<email>x.wei@bath.ac.uk</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hao</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="middle">X</forename><surname>Wei</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="middle">H</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Institute of Psychology</orgName>
+								<orgName type="laboratory">CAS Key Laboratory of Behavioral Science</orgName>
+								<address>
+									<postCode>100101</postCode>
+									<settlement>Beijing</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Department of Psychology</orgName>
+								<orgName type="department" key="dep2">Acad-emy of Sciences</orgName>
+								<orgName type="institution">University of Chinese</orgName>
+								<address>
+									<postCode>100049</postCode>
+									<settlement>Beijing</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">School of Management</orgName>
+								<orgName type="institution">University of Bath</orgName>
+								<address>
+									<postCode>BA2 7AY</postCode>
+									<settlement>Bath</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">Institute of Software, Chinese Academy of Sciences</orgName>
+								<orgName type="laboratory">State Key Laboratory of Computer Science</orgName>
+								<address>
+									<postCode>100190</postCode>
+									<settlement>Beijing</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Emotion Analysis for Personality Inference from EEG Signals</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TAFFC.2017.2786207</idno>
+					<note type="submission">received 1 Mar. 2017; revised 3 Dec. 2017; accepted 12 Dec. 2017. Date of publication 28 Dec. 2017; date of current version 12 Sept. 2018.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Emotion analysis</term>
+					<term>emotion regulation</term>
+					<term>personality inference</term>
+					<term>EEG</term>
+					<term>big-five personality</term>
+					<term>affective computing</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>The stable relationship between personality and EEG ensures the feasibility of personality inference from brain activities. In this paper, we recognize an individual&apos;s personality traits by analyzing brain waves when he or she watches emotional materials. Thirty-seven participants took part in this study and watched 7 standardized film clips that characterize real-life emotional experiences and target seven discrete emotions. Features extracted from EEG signals and subjective ratings enter the SVM classifier as inputs to predict five dimensions of personality traits. Our model achieves better classification performance for Extraversion (81.08 percent), Agreeableness (86.11 percent), and Conscientiousness (80.56 percent) when positive emotions are elicited than negative ones, higher classification accuracies for Neuroticism (78.38-81.08 percent) when negative emotions, except disgust, are evoked than positive emotions, and the highest classification accuracy for Openness (83.78 percent) when a disgusting film clip is presented. Additionally, the introduction of features from subjective ratings increases not only classification accuracy in all five personality traits (ranging from 0.43 percent for Conscientiousness to 6.3 percent for Neuroticism) but also the discriminative power of the classification accuracies between five personality traits in each category of emotion. These results demonstrate the advantage of personality inference from EEG signals over state-of-the-art explicit behavioral indicators in terms of classification accuracy.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>P ERSONALITY has been conceptualized from a variety of theoretical perspectives, but the core of the personality is a set of individual differences in behavior and experience that are affected by the development of an individual, such as personal specific emotion, social relationships, and personal memories <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b1">[2]</ref>. Personality reflects a person's particular behavior pattern in everyday life. There are many theories and measurements of personality, but the Big Five personality traits have gained the most widespread recognition and play an irreplaceable role in the scientific community <ref type="bibr" target="#b2">[3]</ref>.</p><p>The Big Five personality traits <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>, also known as the five factor model (FFM), describe personality in five dimensions: Extraversion, Agreeableness, Conscientiousness, Neuroticism, and Openness to experience <ref type="bibr" target="#b5">[6]</ref>. Each dimension has six facets, which cover almost all personality characters <ref type="bibr" target="#b6">[7]</ref>. The FFM plays an important role in an individual's everyday life. Many studies have explored its influence on a variety of situations, such as academic achievement <ref type="bibr" target="#b7">[8]</ref>, job performance <ref type="bibr" target="#b8">[9]</ref>, romantic relationships <ref type="bibr" target="#b9">[10]</ref>, and career success <ref type="bibr" target="#b10">[11]</ref>. For example, Dahlen and White <ref type="bibr" target="#b11">[12]</ref> found predictive utility of emotional stability, agreeableness, and openness to experience in predicting aggressive driving behaviors. Given the important role of FFM in everyday life and research, measuring it is a focus of researchers.</p><p>There are several measures of the Big Five personality traits; the questionnaire is a common one, such as the International Personality Item Pool (IPIP) constructed by Goldberg <ref type="bibr" target="#b12">[13]</ref> and the Big Five Inventory (BFI) <ref type="bibr" target="#b13">[14]</ref>. The BFI is one of the most widely used tools and freely available <ref type="bibr" target="#b14">[15]</ref>. The BFI consists of forty-four characteristics that describe five dimensions of personality traits. Participants are asked to indicate to what extent he/she agrees or disagrees with the description using a five-point Likert scale. Its highly repeatable reliability and content validity have been proved in different regions and different age groups <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b15">[16]</ref>. Because this method was based on participants' self-assessment, it could be influenced by social desirability to a greater or lesser extent.</p><p>Researches also developed other approaches to measure personality. Because personality is an implicit psychological construct that cannot be observed directly, recent studies mainly relied on explicit behavioral indicators (e.g., the digital footprints on social networks) for the prediction of personality traits <ref type="bibr" target="#b16">[17]</ref>. For example, researchers have become interested in predicting personality traits using data from online social media, such as Twitter and Facebook <ref type="bibr" target="#b17">[18]</ref>, <ref type="bibr" target="#b18">[19]</ref>. This approach collects users' network behaviors and the contents generated by users, such as status updates, posted images, places they have visited, and managed relationships that provide rich information about their habits, preferences, skills, personal attitudes and values. Personality inference from digital footprints on social networks assumes that a user's online and real-life behaviors do not differ greatly in the same context. Rentfrow and Gosling <ref type="bibr" target="#b19">[20]</ref> have studied the connections between music preferences and personality. They found that the reflective and complex dimensions were positively related to openness to experience. The social media profile picture is also a good indicator of personality. Previous studies suggested that agreeable and conscientious users showed more positive emotions in their profile pictures, while users score high on Openness to Experience preferred more aesthetic photos <ref type="bibr" target="#b17">[18]</ref>. Youyou et al. <ref type="bibr" target="#b18">[19]</ref> indicated that computer-based personality judgments were more accurate than those made by humans when the amount of Facebook likes (i.e., users click "Like" below a post on Facebook) was large enough. Obviously, these findings give researchers confidence and future research directions in which they can leverage the generated content to reveal a user's personality.</p><p>Compared to explicit behavioral indicators, interior emotional changes measured by physiological and biological indices are preferable to avoid social desirability bias and deception <ref type="bibr" target="#b20">[21]</ref>. It is difficult to disguise an individual's real feelings by the recognition of emotions from physiological signals. Among of them (e.g., electrocardiograph, skin temperature, and galvanic skin response), emotion recognition from electroencephalogram (EEG) signals achieves a higher classification accuracy. Recently, there has been a growing amount of effort to recognize a person's emotional states from EEG signals using realistic music videos or movie clips with high ecological validity <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b22">[23]</ref>. These EEG-based emotion recognition systems identify not only the valence and arousal dimensions but also similar discrete emotions that are close in the valence-arousal coordinate space <ref type="bibr" target="#b23">[24]</ref>.</p><p>Personality represents the coherent integration of feeling, action, appraisal, and desires over time and space. Two dimensions of the Big Five personality traits, Extraversion and Neuroticism (sometimes referred to by the other end of the dimension as Emotional Stability) have been associated with individual differences in affective level and environmental responsivity <ref type="bibr" target="#b24">[25]</ref>, <ref type="bibr" target="#b25">[26]</ref>. According to trait congruency effect, people with different personality traits show cognitive biases when processing emotional information and advantages of noticing, identifying, memorizing and judging emotional materials which are consistent with their personality traits <ref type="bibr" target="#b26">[27]</ref>. Canli <ref type="bibr" target="#b27">[28]</ref> found that Extraversion and Neuroticism were associated with differential activation to positive slides (Extraversion) and to threat cues (Neuroticism) using functional magnetic resonance imaging (fMRI). Extraversion was correlated with activation in a wide range of brain regions (e.g., amygdala, caudate, medio-frontal gyrus, right fusiform gyrus) in response to positively valenced slides but unrelated to activation in response to negatively valenced slides. Neuroticism, on the other hand, was correlated with activation in response to negatively valenced slides but unrelated to activation in response to positively valenced slides.</p><p>In addition, the stable relationship between personality and EEG data ensures the feasibility of predicting personality through the analysis of brain activity. For example, many researchers concluded that Extraversion, an indicator of proneness to positive affectivity, was related to right frontal EEG asymmetry <ref type="bibr" target="#b28">[29]</ref>, <ref type="bibr" target="#b29">[30]</ref>, while Neuroticism, an indicator of proneness to negative affectivity, reflected greater activation in the left hemisphere <ref type="bibr" target="#b30">[31]</ref>, <ref type="bibr" target="#b31">[32]</ref>. Results from Event-related potentials (ERPs) also provide support for predicting personality. For example, Mardaga and Hansenne <ref type="bibr" target="#b32">[33]</ref> found that low-harm avoidance participants showed smaller N200 amplitudes and larger P300 amplitudes when pleasant pictures were presented compared to neutral pictures, but this was not the case for high-harm avoidance individuals. Researchers also found a significant association between ERP indices, such as N1/P2 amplitude and slope, and Reinforcement Sensitivity Theory (RST) Personalities <ref type="bibr" target="#b33">[34]</ref>. Due to a substantial overlap between RST-based and Big-five personality traits, these studies provide evidence of the possibility of recognizing personality based on brain activities. To the best of our knowledge, however, no existing research has analyzed implicit emotional fluctuation on the basis of EEG signals to predict personality.</p><p>In addition, emotion regulation (ER) played an important role in the response to emotional events <ref type="bibr" target="#b34">[35]</ref>. Gross <ref type="bibr" target="#b35">[36]</ref> described ER as the capacity to decrease stress for better psychological health and increase physiological activation for avoiding worse physical health automatically or intentionally. ER has two major strategies: cognitive reappraisal (CR) and expressive suppression (ES). CR involves reinterpreting the meaning of the emotional stimulus in order to change the trajectory of an emotional response <ref type="bibr" target="#b36">[37]</ref>, <ref type="bibr" target="#b37">[38]</ref>, <ref type="bibr" target="#b38">[39]</ref>. ES represents a response-focused strategy, which means the act of masking facial giveaways for hiding a current emotional state <ref type="bibr" target="#b39">[40]</ref>. Both strategies have proven to be correlated with the Big Five personality traits, particularly Extraversion and Neuroticism <ref type="bibr" target="#b40">[41]</ref>, <ref type="bibr" target="#b41">[42]</ref>. Several researches have indicated that extrovert users are more likely to use CR strategy <ref type="bibr" target="#b39">[40]</ref>, <ref type="bibr" target="#b40">[41]</ref>, while individuals with a higher level of Neuroticism and lower level of Extraversion are more likely to apply the ES strategy <ref type="bibr" target="#b39">[40]</ref>, <ref type="bibr" target="#b42">[43]</ref>, <ref type="bibr" target="#b43">[44]</ref>. Additionally, previous studies have suggested that extroverted users have a higher capability of emotion regulation with adaptive emotion-regulation strategies than neurotic users <ref type="bibr" target="#b41">[42]</ref>, <ref type="bibr" target="#b44">[45]</ref>, <ref type="bibr" target="#b45">[46]</ref>. Thus, the possible role of ER in improving the performance of the classification models is considered in this study.</p><p>The main purpose of this paper was using EEG data to recognize Big-five personality traits. We attempt to build five independent models to recognize an individual's personality traits based on subtle changes in brain activity when he or she watches a series of emotional film clips. ER is also included in our model. The results showed our model achieves better classification performance for Extraversion (81.08 percent), Agreeableness (86.11 percent), and Conscientiousness (80.56 percent) when positive emotional videos are presented than negative ones, higher classification accuracies for Neuroticism (78.38-81.08 percent) when negative emotions, except disgust, are elicited compared to positive emotions, and the highest classification accuracy for Openness (83.78 percent) when a disgusting film clip is presented. Moreover, the introduction of features from subjective ratings of cognitive reappraisal and expressive suppression increases not only the classification accuracies in all of the five personality traits (ranging from 0.43 percent for Conscientiousness to 6.3 percent for Neuroticism) but also the discriminative power of classification accuracies between five personality traits in each category of emotion. Based on extensive application of the BFI, the 44-item multidimensional personality inventory has proven to be a valid measuring tool of personal structure. In this study, we used the Chinese version of the BFI <ref type="bibr" target="#b46">[47]</ref>, a 5-point Likert scale that measures an individual on the Big Five dimensions of personality (Extraversion, Agreeableness, Conscientiousness, Neuroticism, and Openness to experience) from "disagree strongly" to "agree strongly". The internal consistencies of each dimension are as follows: Extraversion has 8 items ða ¼ 0:778Þ; Agreeableness has 9 items ða ¼ 0:735Þ; Conscientiousness has 9 items ða ¼ 0:732Þ; Neuroticism has 8 items ða ¼ 0:720Þ; Openness has 10 items ða ¼ 0:785Þ.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2">The Emotion Regulation Questionnaire (ERQ)</head><p>The 10-item ERQ is built to measure two emotion regulation strategies <ref type="bibr" target="#b40">[41]</ref>, which are Cognitive Reappraisal (CR) and Expressive Suppression (ES). The Chinese version of the ERQ <ref type="bibr" target="#b47">[48]</ref> was used in this experiment and the internal consistencies of two dimensions are 0.85 for CR and 0.77 for ES. This scale aimed to measure emotion regulation ability, and all participants were asked to make a judgement about the extent of agreement based on a 7-point Likert scale from 1 (strongly disagree) to 7 (strongly agree).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.3">Emotion Elicitation Materials</head><p>In this work, we used seven emotional Chinese film clips to elicit three positive emotions (amusement, joy, tenderness) and four negative emotions (anger, disgust, fear, sadness). All of these film clips were chosen from the existing standardized database of Chinese movies, and the effects of these emotion-induced materials were provided in <ref type="bibr" target="#b23">[24]</ref>. As shown in <ref type="table" target="#tab_1">Table 1</ref>, these film excerpts lasted 67 to 144 seconds and contained independent and integrated content to elicit a single target emotion. Each film clip was adjusted to the same resolution (720 Â 576), and the volume was manipulated at a comfortable level using two speakers.</p><p>We collected the participants' responses after watching each film clip. Because we selected film clips from the standardized database to elicit different discrete emotions, we compared every participant's self-assessments with the standardized database and ignored cases where the participant's ratings on each target emotion were inconsistent with the ground truth of the database.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Experimental Procedure</head><p>Upon arrival, the experimenter introduced the experiment, and all participants signed an inform consent voluntarily. Then, the participants filled two questionnaires (BFI &amp; ERQ) when the experimenter set up the EEG recording system. Emotional film clips were presented on a 15-inch LCD screen. The distance between participants' eyes and the screen centre was maintained at about 0.6 meters.</p><p>To keep all of the participants in a neutral state, a distraction task was designed at the beginning of each trial <ref type="bibr" target="#b23">[24]</ref>. Then, a 40-s rest with eyes open and another 40-s rest with eyes closed were arranged before watching each film clip. The experimental task was to watch a film clip and then complete a revised version of the self-assessment manikin (SAM) developed by <ref type="bibr" target="#b48">[49]</ref>, which directly measured arousal, valence, liking, familiarity and dominance in addition to seven differential emotions, including amusement, joy, tenderness, anger, disgust, fear, and sadness, based on a 9-point Likert scale (1 ¼ "not at all", 5 ¼ "moderately", 9 ¼ "extremely"). They were encouraged to answer all questions based on their true emotional feelings when watching each film excerpt, instead of their expected feelings or general mood.</p><p>In the practice session, the participants watched two neutral film clips to familiarize themselves with the experimental procedure, e.g., distraction task, baseline rest, and questionnaire. We put the Quik-Cap on the participant's head for a while to prevent undesired emotions that can arise from unfamiliar or uncomfortable feelings. Then, we described the process of EEG recording and advised the participant to stay as static as possible to prevent artefacts from movements of the body. All participants were seated in a soundproofed room and kept their chins on the chin strap during the formal experiment. They were required to turn off all wireless and Bluetooth devices to isolate possible interference with the EEG signals. During the formal session, the order of play of seven film clips was set to pseudorandom to guarantee that the same valence of movie would not be played consecutively <ref type="bibr" target="#b49">[50]</ref>. The whole experiment lasted about 1.5 hours, and the participants received ¥100 as reimbursement. The detailed procedure of our experiment is illustrated in <ref type="figure" target="#fig_0">Fig. 1</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">EEG Data Acquisition and Preprocessing</head><p>We used a 32-electrode Neuroscan Quik-Cap to collect participants' brain activities when they watched film clips. The Quik-Cap is manufactured of highly elastic breathable material with soft neoprene electrode gel reservoirs for enhanced user comfort. All electrodes were placed according to the International 10-20 electrode placement standard. The reference electrodes were placed on the left and right mastoids and the ground electrode was placed mid-forehead. Two horizontal and two vertical electrooculograms (EOGs) were recorded with electrodes placed 10 mm away from the outer canthi of both eyes and below and above the left eye <ref type="bibr" target="#b50">[51]</ref>. In addition to two reference electrodes, the remaining 30 channels consists of Fp1, Fp2, F3, F4, F7, F8, Ft7, Ft8, Fc3, Fc4, T3, T4, C3, C4, Tp7, Tp8, Cp3, Cp4, T5, T6, P3, P4, O1, O2, Fz, FCz, Cz, CPz, Pz, and Oz. The sampling rate is 1,024 Hz. EEG signals were preprocessed in EEGLAB, which is an open source Matlab toolbox for physiological signal processing <ref type="bibr" target="#b51">[52]</ref>. First, the EEG signals were digitally filtered with a 1-45 Hz bandpass to remove linear trends and minimize the introduction of artefacts. Second, we performed independent component analysis (ICA) to decompose the EEG signals into independent components characterized by their topographies and PSDs. The experimenter visually inspected these features and marked each independent component as either an EOG artefact or EEG signal component. The artefacts components were discarded from the subsequent process, resulting in a mean rejection rate of 9.8 percent (range ¼ 3.1-22.3 percent), while the signal components were back projected to reconstruct artefact-free EEG signals <ref type="bibr" target="#b23">[24]</ref>. Third, because we only used one reference electrode during the EEG recording, we re-referenced the data to the average of the two electrodes. Finally, we went through the whole dataset for each participant and blocked off all sections of data that were contaminated (e.g., abnormal trends based on channel statistical distributions).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Feature Extraction and Normalization</head><p>We used the short-time Fourier transform (STFT) with a sliding time-window approach for feature extraction and normalization based on time-frequency analysis. STFT is a classic technique to analyse a signal jointly in time and frequency <ref type="bibr" target="#b52">[53]</ref>. Compared to other signal descriptors <ref type="bibr" target="#b53">[54]</ref>, STFT can well represent the EEG signals in a two-dimensional spectral domain and provides insights into both the frequency and temporal evolution of the time-frequency features associated with brain activities. The time-frequency features are estimated based on the concept of event-related desynchronization and synchronization that represents changes of the power in specific frequency bands <ref type="bibr" target="#b54">[55]</ref>, <ref type="bibr" target="#b55">[56]</ref>. As illustrated in <ref type="figure" target="#fig_1">Fig. 2</ref>, the STFT extracts several segments of the EEG signals by using a window that moves with time. If the time window is sufficiently narrow, then each segment that is extracted can be viewed as stationary, which enables the Fourier transform to be used <ref type="bibr" target="#b23">[24]</ref>. By moving the window along the time axis, the relation between the variance of the frequency and time can be identified.</p><p>In this work, EEG signals were segmented into a number of 2-s time windows with a 50 percent overlap between two successive time windows. The power spectral features of the EEG signals on 30 channels were extracted in 5 frequency bands: delta ðd : 1-4 HzÞ, theta ðu : 4-8 HzÞ, alpha ða : 8-12 HzÞ, beta ðb : 13-30 HzÞ, and gamma ðg : 31-45 HzÞ. In addition to the power spectral features, the difference between the spectral power of all of the 12 symmetrical pairs of electrodes on the right and the left hemispheres was extracted to measure asymmetric brain activity in 5 frequency bands. These 12 pairs of electrodes were: Fp1-Fp2, F3-F4, F7-F8, Ft7-Ft8, Fc3-Fc4, T3-T4, C3-C4, Tp7-Tp8, Cp3-Cp4, T5-T6, P3-P4, and O1-O2. As a result, a total number of 210 (150 PSDs and 60 ASMs) EEG features were used.</p><p>We normalized the segmented EEG data when watching each film clip with a corresponding resting period with eyes open to reduce individual variability and the lasting effects of the previous elicited emotions on the current target emotion. Similarly, the power spectral features recorded during a resting period were averaged over the same frequency band and time. Then, we subtracted the baseline power of each resting period from all of the corresponding segments of the extracted features in such a way that the change in the power was based only on the current film clip and was not affected by the previous clips <ref type="bibr" target="#b23">[24]</ref>, <ref type="bibr" target="#b56">[57]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">EMOTION ANALYSIS FOR PERSONALITY INFERENCE 3.1 Personality Classification</head><p>In addition to 210 PSD and ASM features, which were extracted from EEG signals, 8 subjective scores were selected as features, including two emotion regulation strategies (cognitive reappraisal and expressive suppression), five dimensions of the SAM (arousal, valence, liking,  familiarity and dominance), and the score of target emotion (e.g., the score for joy when watching a joyful film clip). We chose Linear Discriminant Analysis (LDA) for supervised feature reduction, which projected high-dimensional data with labels into a low-dimensional space with good class-separability by maximizing Fisher separation criterion. The personality trait score is used as ground truth. However, because the number of features was large relative to the number of observations, the within-class covariance matrix of the features becomes singular. To solve this problem, we applied Sparse LDA <ref type="bibr" target="#b57">[58]</ref>, which performs feature selection to automatically choose a subset of features. The SLDA performs the LDA to find a subset of features that have the largest Fisher separation value with a sparseness criterion imposed such that class separation and dimension reduction are performed simultaneously. The SLDA is based upon the optimal scoring interpretation of LDA and extended to perform sparse discrimination via mixtures of Gaussians if boundaries between classes are non-linear or if subgroups are present within each class. Note that we followed the original paper of SLDA <ref type="bibr" target="#b57">[58]</ref> and used the terminology 'feature selection' in this work. The reason was that in the implementation of SLDA, the algorithm will perform the elastic net regression with early stopping at a particular value (i.e., the value of the parameter STOP) of the L1 regularization parameter <ref type="bibr" target="#b58">[59]</ref>. Therefore, STOP is an integer that determines the desired number of non-zero variables. The number of features after the SLDA process is not equal to the number of class minus 1, but the value of STOP.</p><p>The features obtained after SLDA were entered as inputs to a Support Vector Machine (SVM) for personality classification. Specifically, we built five SVMs, and each SVM corresponded to one dimension of personality traits. We collected an individual's self-reports on the Big Five dimensions of personality and computed the mean of each dimension. Then, we used the medians (Extraversion-3.63, Agreeableness-3.89, Conscientiousness-3.56, Neuroticism-2.25, and Openness to experience-3.5) to divide all participants into two classes for each dimension of personality traits. In our implementation using Matlab, we applied the SpaSM toolbox for SLDA <ref type="bibr" target="#b59">[60]</ref> and the LIBSVM toolbox for SVM <ref type="bibr" target="#b60">[61]</ref>. Because original feature dimension was 210 or 218 when adding 8 features of subjective ratings, we searched the range of [À210, À1] or [À218, À1] in each testing to optimize the parameter STOP in the SpaSM toolbox each time. In LIBSVM toolbox, we chose the RBF kernel function and optimized the cost parameter c and gamma parameter g in the range [À8, 8] using SVMcgForClass. The leave-one-subject-out cross validation was used in this study. At each time, 36 participants were selected for training the classifier and the remaining one participant was used for testing. The average classification accuracy was used to indicate the model performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Experimental Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Personality Analysis</head><p>The participants' assessments for personality traits were shown as follows: Extraversion ðM ¼ 3:46; SD ¼ 0:64Þ, Agreeableness ðM ¼ 3:88; SD ¼ 0:54Þ, Conscientiousness ðM ¼ 3:5; SD ¼ 0:57Þ, Neuroticism ðM ¼ 2:44; SD ¼ 0:72Þ, and Openness ðM ¼ 3:52; SD ¼ 0:61Þ. Bivariate correlation (Pearson correlation) analyses showed that there was a significant negative correlation between Neuroticism and Agreeableness ðr ¼ À:533; p &lt; 0:001Þ and between Neuroticism and Conscientiousness ðr ¼ À:536; p &lt; 0:001Þ. These results indicated that the five dimensions of personality traits were independent from each other except Neuroticism. Participants with low scores on the dimension of Neuroticism tended to report more agreeableness and conscientiousness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Emotions Elicitation</head><p>The participants' self-reported scores on Cognitive Reappraisal ðM ¼ 5:78; SD ¼ 0:83Þ and Expressive Suppression ðM ¼ 3:51; SD ¼ 1:36Þ were analyzed. The descriptive statistical results of the self-assessment scale and the mean intensity rating of the target emotion for seven film clips are shown in <ref type="table" target="#tab_2">Table 2</ref>. All seven categories of emotional film clips elicited moderate to high arousal levels on a 9-point Likert scale (mean ¼ 5.43-7.46). On average, the arousal level of Amusement (mean ¼ 6.14) was a little higher than the levels of Tenderness (mean ¼ 6) and Joy (mean ¼ 5.7). The arousal levels of Anger (mean ¼ 7.46) and Fear (mean ¼ 7.3) were significantly higher than Sadness (mean ¼ 5.92) and Disgust (mean ¼ 5.43). The levels of self-reported valence and liking were consistent with our expectations. The positive film clips generated significantly higher valence levels (mean ¼ 5.89-6.92) than negative film excerpts (mean ¼ 1.08-1.68). The participants preferred the positive movies (mean ¼ 5.08-6.89) to the negative ones (mean ¼ 1.49-3.86). The participants were unfamiliar with selected videos except a disgusting film clip from Farewell My Concubine and a sad film clip from Changjiang qi hao. The levels of self-reported dominance ranged from 3.68-4.03, a helpless and weak feeling (i.e., without control) when watching a fearful or angry film clip, to 6.7, an empowered feeling (i.e., in control of everything) when watching a joyful video.</p><p>There were 3 out of 259 (7 emotional categories Â 37 participants) cases where the participant did not rate the target emotion (the last column in <ref type="table" target="#tab_2">Table 2</ref>) at least one point higher than the other non-target emotions. These 3 cases were excluded from further analysis because the participants' responses after watching each film clip were inconsistent with the ground truth of the standardized database of movieinduced emotions. On average, the mean intensity ratings of Amusement (mean ¼ 6.81) and Tenderness (mean ¼ 7.17) were higher than that of Joy (mean ¼ 6.03). On the other hand, the mean intensity rating of Anger (mean ¼ 7.7) was larger than that of the level of Fear (mean ¼ 6.54), both of which were greater than the intensity ratings of Sadness (mean ¼ 5.64) and Disgust (mean ¼ 5.54).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.3">Personality Inference from EEG Singlas</head><p>We compared the classification accuracy of two models: one SVM classifier with 210 EEG features (150 PSDs and 60 ASMs) and the other SVM classifier with 210 EEG features and 8 subjective ratings (CR, ES, arousal, valence, liking, familiarity, dominance, and target emotion). A pairedsample t-test showed that the introduction of features from subjective ratings significantly increased the average classification accuracy of personality traits (mean ¼ 2.92 percent, tð34Þ ¼ 3:077; p &lt; 0:01).</p><p>As shown in <ref type="table" target="#tab_3">Table 3</ref>, the average classification accuracies of the model with only EEG features were 73.8 percent for Conscientiousness and 71.49 percent for Agreeableness, which were higher than the classification accuracies for Extraversion, Neuroticism, and Openness (64.06-64.76 percent). Moreover, when positive emotions were elicited, the classification accuracies were higher for Extraversion (72.97 percent when a joyful film clip was presented), Agreeableness (77.78 percent when an amusing movie was played), and Conscientiousness (78.38 percent when a joyful video was presented). In contrast, when negative emotions were elicited, the classification accuracies were higher for Neuroticism (72.97-81.08 percent except disgust) and Openness (72.97-78.38 percent except sadness). When participants watched a disgusting film clip, the classification accuracy was higher for Conscientiousness (83.78 percent).</p><p>When features from subjective ratings were entered as model inputs, the SVM classifier achieved better classification accuracies in all of the five personality traits. The improvement of classification accuracy ranged from 0.43 percent for Conscientiousness to 6.3 percent for Neuroticism. In addition, although the differences of classification accuracies between positive and negative emotional materials were the same between two SVM classifiers, the introduction of features from subjective ratings increased the discriminative power of classification accuracies between five personality traits. Specifically, when positive emotional materials were played, classification accuracies were improved: 1) from 72.97 percent to 81.08 percent for Extraversion (with a joyful film clip); 2) from 77.78 percent to 86.11 percent for Agreeableness (with an amusing movie); and 3) from 63.89 percent to 80.56 percent for Conscientiousness (with a joyful video). In contrast, when negative emotional materials were presented, the classification accuracies increased to 78.38-81.08 percent for Neuroticism. Similarly, the highest prediction accuracy of Neuroticism occurred when the participants watched a film clip that made them feel angry. When a disgusting video was played, the classification accuracy of Conscientiousness (83.78 percent) did not enhance, but the accuracy of Openness improved from 78.38 percent to 83.78 percent due to the introduction of more features from subjective ratings.</p><p>Also, we performed three classifications using both EEG signals and subjective rating features from: (1) all 7 film clips, (2) 3 positive emotions, and (3) 4 negative emotions, respectively. Compared to the model with features from each film clip, the model with features from all film clips achieved worse classification performance for all five personality traits (from 55.41 percent to 67.82 percent). In contrast, the model with features from 3 positive film clips achieved better classification performance for Extraversion (71.17 percent) and Agreeableness (78.72 percent) traits, while the model with features from 4 negative film clips achieved better classification performance for Neuroticism (71.94 percent) and Openness (72.7 percent) traits.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.4">Personality Inference from Facebook Likes</head><p>In this section, we compared the accuracy of Big Five personality inference from EEG signals and from the generic digital footprint on social network (e.g., Facebook Likes). Facebook Likes are used by Facebook users to express positive association with online and offline products, activities, sports, musicians, books, restaurants, or websites <ref type="bibr" target="#b25">[26]</ref>.</p><p>We obtained the sample data from the myPersonality project which was a popular Facebook application that offered to its users psychometric tests and feedback on their scores (including the Big-five inventory). In the process of data screening, all participants must have: 1. Chinese nationality; 2. At least 20 Facebook Likes <ref type="bibr" target="#b25">[26]</ref>; 3. Complete Big-five inventory scores. These screening conditions resulted in a sample of 88 participants whose demographic characteristics were similar to our sample <ref type="table" target="#tab_4">(Table 4</ref>). To infer personality from Facebook Likes, we first represented an individual's Likes as a matrix, where entries were set to 1 if there existed a relationship between an individual and a Like and 0 otherwise. The categories of Likes were excluded if there was no entries, resulting in a total of 99 categories of Likes. These 99 feature vectors were entered as inputs to five SVMs for classification of five personality traits. Similarly, we used the medians (Extraversion-3.645, Agreeableness-3.5, Conscientiousness-3.25, Neuroticism-2.7, and Openness to experience-4) to divide all participants into two classes for each dimension of personality traits. In our implementation using Matlab, we applied the SpaSM toolbox for SLDA and the LIBSVM toolbox for SVM. A 11-fold cross validation was applied to avoid overfitting.</p><p>As shown in <ref type="table" target="#tab_4">Table 4</ref>, personality inference from EEG signals achieved better classification performance than that from Facebook Likes for all five dimensions. The recognition accuracies of personality from Facebook Likes were lower than the random chance except the dimension of Openness, indicating that personality judgments based on explicit behaviors require a large amount of digital footprint on social networks to achieve an acceptable accuracy (e.g., a sample of 86,220 volunteers in <ref type="bibr" target="#b25">[26]</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.5">Selected Features</head><p>In this work, we applied the SLDA that performs feature selection to intelligently choose a subset of features. Due to page limitations, we only analyzed the top 5 features for each dimension of personality traits in the category of emotion with the highest classification accuracy (e.g., Extraversion in the emotional category of joy, Agreeableness in the emotional category of amusement, Conscientiousness in the emotional category of tenderness, Neuroticism in the emotional category of anger, Openness in the emotional category of disgust).</p><p>Compared to features from subjective ratings, more PSD and ASM features extracted from EEG signals were selected as the top 5 features with greater weights in the prediction of personality traits <ref type="table" target="#tab_5">(Table 5)</ref>. Specifically, the delta frequency band in the frontal cortex and gamma frequency band in the temporal cortex were sensitive to recognize an individual's Extraversion trait. The theta frequency band in the parietal cortex, the beta frequency band in the frontal cortex, and the frontal theta and alpha asymmetry features (Fp1-Fp2) played important roles in predicting the Agreeableness trait. The gamma frequency band in the frontal cortex and the theta middle line (Cz and Oz) contributed more to the classification of the Conscientiousness trait. Theta and beta frequency bands in the frontal and parietal cortex were sensitive to predicting the Neuroticism trait. The alpha frequency band in the temporal cortex, the beta frequency band in the frontal cortex, the frontal theta asymmetry feature (Fp1-Fp2) and the frontal beta asymmetry feature (F3-F4) all played important roles in recognizing the Openness traits.</p><p>On the other hand, we found that CR and ES worked together to predict Extraversion for all of the seven categories of emotions, while CR played an important role in recognizing Agreeableness only when a joyful or disgusting film clip was presented. Dominance was another salient factor for personality inference. It contributed a lot to the prediction of Extraversion for all positive emotions and disgust as well as the prediction of Openness for tenderness and fear only. In the five dimensions of SAM, familiarity contributed to the classification of the Agreeableness and Conscientiousness traits, and Liking was sensitive to recognize an individual's Openness trait.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">DISCUSSION</head><p>In this experiment, the classification accuracies of our model with only EEG features were, on average, higher for Conscientiousness and Agreeableness traits (71.49-73.8 percent) than those for Extraversion, Neuroticism, and Openness traits (64.06-64.76 percent). When positive emotional materials were presented, the classification accuracies were higher for Extraversion, Agreeableness, and Conscientiousness traits. In contrast, when negative emotional content was presented, the  classification accuracies were higher for Neuroticism (except disgust) and Openness (except sadness) traits. According to our analyses of the SLDA-based feature weights, PSD and ASM features extracted from EEG signals contributed more to the prediction of personality traits compared to those features from subjective ratings. These EEG features consisted of frontal alpha asymmetry features, frontal theta asymmetry features, frontal beta asymmetry features, and the theta middle line features, as well as delta, theta, beta and gamma frequency bands in the frontal, temporal and parietal cortex. The frontal spectral power asymmetries have been proven sensitive to emotional fluctuation, reflecting the affective and motivational processing of emotional states asymmetrically <ref type="bibr" target="#b61">[62]</ref>. Particularly, the frontal alpha asymmetry (FAA) features played an important role in recognizing different emotional states. The previous study indicated that the FAA feature F3-F4 distinguished between positive and negative emotions, while AF3-AF4 differentiated a positive emotion from similar emotions in both valence and arousal dimensions <ref type="bibr" target="#b23">[24]</ref>. FAA refers to the patterns of asymmetrical anterior EEG activities in the alpha band, which was a typical indicator of asymmetric brain activity in the frontal cortex <ref type="bibr" target="#b62">[63]</ref>. The theory of approach/withdrawal motivation states that positive emotions are correlated with approach motivation, while negative emotions are correlated with withdrawal motivation <ref type="bibr" target="#b63">[64]</ref>. The valence model of FAA suggests that the greater brain activities in the left hemisphere are associated with positive emotions, while the greater right hemisphere activities are associated with negative emotions <ref type="bibr" target="#b64">[65]</ref>. Both trait positive (or negative) emotions and state positive (or negative) emotions are associated with more activities in the left than right frontal cortex, which are manifested in the greater spectral power of the alpha band in the right than left frontal cortex <ref type="bibr" target="#b65">[66]</ref>. The theta frequency band in the frontal middle line <ref type="bibr" target="#b66">[67]</ref> and parieto-temporal region <ref type="bibr" target="#b67">[68]</ref> was another source of dominant features used to classify positive and negative emotions.</p><p>We also found that the introduction of features from subjective ratings increased the classification accuracies in all of the five personality traits (ranging from 0.43 percent for Conscientiousness to 6.3 percent for Neuroticism). These subjective indices also improved the discriminative power of classification accuracies between five personality traits in each category of emotion. According to the SLDA-based feature weights, emotion regulation played important roles in the prediction of personality. Specifically, CR and ES worked together to predict Extraversion for all of the seven categories of emotions, while CR played an important role in recognizing Agreeableness only when a joyful or disgusting film clip was presented. These results suggested that, no matter which category of emotion was elicited, extroverted individuals tended to reinterpret the meanings of emotional film clips to change the trajectory of their emotional responses (CR strategy), while introverted individuals were more likely to represent a response-focused strategy to hide their current emotional states (ES strategy). These findings were consistent with the literature <ref type="bibr" target="#b39">[40]</ref>, <ref type="bibr" target="#b40">[41]</ref>, <ref type="bibr" target="#b42">[43]</ref>, <ref type="bibr" target="#b43">[44]</ref>. On the other hand, the Agreeableness trait was only associated with effective strategies for emotion regulation. These results implied that agreeable people were more likely to choose positive emotional situations and might have greater aptitude for emotion regulation than disagreeable ones.</p><p>Previous studies have explored the differences of agreeable people and disagreeable people in the situation selection stage of the emotion regulation sequence <ref type="bibr" target="#b68">[69]</ref>. The authors found that participants with a higher level of agreeableness preferred positive pictures and media than those with a lower level of agreeableness.</p><p>To the best of our knowledge, this work was the first attempt to recognize an individual's personality traits by analyzing brain activity when he or she watches a series of emotional film clips. Our methodology can, in fact, assess personalized emotional fluctuations to infer personality traits with satisfactory accuracy. Using only brain wave dynamics, we effectively distinguished between two classes of each dimension of personality traits. Future studies may benefit from the recordings of a user's brain activities in response to emotional stimuli as well as his/her digital footprints on social networks to infer personality.</p><p>Our system is developed for personalized emotion recognition and personality inference. These achievements could have a highly relevant impact in personality disorder psychopathology diagnosis and treatment because a personality disorder produces an altered emotional response. Currently, the emotional state is determined in a clinical setting using questionnaires that have limited accuracy and quantitative power. Hence, monitoring rapid emotional responses in terms of stimulation time could make an objective evaluation of disordered progression possible.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">CONCLUSIONS</head><p>In this paper, we confirmed the feasibility to recognize an individual's Big-five personality traits through the analyses of brain activities when he or she watched emotional film clips. We compared the classification accuracy of two models: one SVM classifier with EEG features and another SVM classifier with features from both EEG and subjective ratings. Our model achieved better classification performance for Extraversion, Agreeableness, and Conscientiousness when positive emotional videos were presented than negative ones. Neuroticism and Openness were better classified when negative emotions were elicited. Moreover, the introduction of subjective evaluations improved not only the classification accuracies in all of the five personality traits but also the discriminative power of classification accuracies between five personality traits in each category of emotion.</p><p>The contribution of our framework was to develop a working system with high performance, which did not exist for personality inference through the analyses of an individual's brain waves in response to emotional film clips. The performance of our system can be regarded as a benchmark, such that more advanced techniques for feature extraction, feature selection, and classification deserve further study in their own right and will be reported in future work.</p><p>(2016YFB1001200, 2017YFB0802800) and the National Natural Science Foundation of China (31771226, 61672501).</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Experimental procedure and flowchart.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Schematic representation of our sliding time-window approach for time-frequency feature extraction. The power spectral features of the EEG signals are computed in a time window w n and in the frequency band f b of interest. The power spectral features that are recorded during the process of watching a film clip are averaged over both time and frequency. The original figure was presented in<ref type="bibr" target="#b23">[24]</ref>.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 1 Brief</head><label>1</label><figDesc>Description of Seven Standardized Emotional Film Clips Used in This Work</figDesc><table><row><cell>Emotion</cell><cell>Film Name</cell><cell>Length (sec)</cell><cell>Clip Content</cell></row><row><cell>Amusement</cell><cell>Just Another</cell><cell>67</cell><cell>Humorous battle scenes</cell></row><row><cell></cell><cell>Pandora's Box</cell><cell></cell><cell></cell></row><row><cell>Joy</cell><cell>Better And Better</cell><cell>85</cell><cell>The Spring Festival party</cell></row><row><cell></cell><cell></cell><cell></cell><cell>of a village</cell></row><row><cell>Tenderness</cell><cell>A Simple Life</cell><cell>99</cell><cell>Recall the master's</cell></row><row><cell></cell><cell></cell><cell></cell><cell>happy childhood</cell></row><row><cell></cell><cell></cell><cell></cell><cell>together</cell></row><row><cell>Anger</cell><cell>City of Life and</cell><cell>73</cell><cell>Nanjing massacre</cell></row><row><cell></cell><cell>Death</cell><cell></cell><cell></cell></row><row><cell>Disgust</cell><cell>Farewell My</cell><cell>144</cell><cell>The hero suffers sexual</cell></row><row><cell></cell><cell>Concubine</cell><cell></cell><cell>assault by an old eunuch</cell></row><row><cell>Fear</cell><cell>The Chrysalis</cell><cell>68</cell><cell>The heroine encounters a</cell></row><row><cell></cell><cell></cell><cell></cell><cell>ghost in the toilet</cell></row><row><cell>Sadness</cell><cell>Changjiang qi hao</cell><cell>139</cell><cell>A little boy is sad</cell></row><row><cell></cell><cell></cell><cell></cell><cell>because of his father's</cell></row><row><cell></cell><cell></cell><cell></cell><cell>death</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 2 Mean</head><label>2</label><figDesc>Ratings of Self-Assessment Scale and Mean Intensity Rating of Target Emotion for Selected Film Clips</figDesc><table><row><cell>Emotion</cell><cell>Arousal</cell><cell>Valence</cell><cell>Liking</cell><cell>Familiarity</cell><cell>Dominance</cell><cell>Target Emotion</cell></row><row><cell>Amusement</cell><cell>6.14</cell><cell>6.08</cell><cell>5.08</cell><cell>2.28</cell><cell>5.81</cell><cell>6.81</cell></row><row><cell>Joy</cell><cell>5.70</cell><cell>5.89</cell><cell>5.32</cell><cell>2.54</cell><cell>6.70</cell><cell>6.03</cell></row><row><cell>Tenderness</cell><cell>6.00</cell><cell>6.92</cell><cell>6.89</cell><cell>2.28</cell><cell>6.19</cell><cell>7.17</cell></row><row><cell>Anger</cell><cell>7.46</cell><cell>1.08</cell><cell>1.49</cell><cell>2.95</cell><cell>4.03</cell><cell>7.70</cell></row><row><cell>Disgust</cell><cell>5.43</cell><cell>1.68</cell><cell>2.30</cell><cell>4.16</cell><cell>5.51</cell><cell>5.54</cell></row><row><cell>Fear</cell><cell>7.30</cell><cell>1.68</cell><cell>2.11</cell><cell>1.24</cell><cell>3.68</cell><cell>6.54</cell></row><row><cell>Sadness</cell><cell>5.92</cell><cell>1.67</cell><cell>3.86</cell><cell>4.47</cell><cell>5.47</cell><cell>5.64</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 3</head><label>3</label><figDesc>Comparison of Classification Accuracy Between Classification with PSD &amp; ASM Features from EEG Signals and Classification with Features from Both EEG Signals and Subjective Ratings (the Highest Classification Accuracies of Personality Traits Were Highlighted for Each Emotional Category) Emotion PSD &amp; ASM features from EEG signals Features from EEG signals and subjective ratings Extraversion Agreeableness Conscientiousness Neuroticism Openness Extraversion Agreeableness Conscientiousness Neuroticism Openness</figDesc><table><row><cell>Amusementþ</cell><cell>0.6111</cell><cell>0.7778</cell><cell>0.7778</cell><cell>0.5000</cell><cell>0.6667</cell><cell>0.6389</cell><cell>0.8611</cell><cell>0.7778</cell><cell>0.6944</cell><cell>0.7222</cell></row><row><cell>Joyþ</cell><cell>0.7297</cell><cell>0.7297</cell><cell>0.7838</cell><cell>0.4324</cell><cell>0.5405</cell><cell>0.8108</cell><cell>0.7297</cell><cell>0.7838</cell><cell>0.5135</cell><cell>0.5405</cell></row><row><cell>Tendernessþ</cell><cell>0.6389</cell><cell>0.6389</cell><cell>0.6389</cell><cell>0.6389</cell><cell>0.5000</cell><cell>0.6389</cell><cell>0.7500</cell><cell>0.8056</cell><cell>0.7222</cell><cell>0.5278</cell></row><row><cell>Anger Ã</cell><cell>0.7297</cell><cell>0.7297</cell><cell>0.7568</cell><cell>0.8108</cell><cell>0.7568</cell><cell>0.7297</cell><cell>0.7297</cell><cell>0.7568</cell><cell>0.8108</cell><cell>0.7568</cell></row><row><cell>Disgust Ã</cell><cell>0.5676</cell><cell>0.7297</cell><cell>0.8378</cell><cell>0.5946</cell><cell>0.7838</cell><cell>0.5676</cell><cell>0.7297</cell><cell>0.8378</cell><cell>0.5946</cell><cell>0.8378</cell></row><row><cell>Fear Ã</cell><cell>0.5405</cell><cell>0.6486</cell><cell>0.6486</cell><cell>0.7297</cell><cell>0.7297</cell><cell>0.5405</cell><cell>0.6486</cell><cell>0.6216</cell><cell>0.7838</cell><cell>0.7027</cell></row><row><cell>Sadness Ã</cell><cell>0.6944</cell><cell>0.7500</cell><cell>0.7222</cell><cell>0.7778</cell><cell>0.5556</cell><cell>0.7222</cell><cell>0.6944</cell><cell>0.6667</cell><cell>0.8056</cell><cell>0.6667</cell></row><row><cell>Average</cell><cell>0.6446</cell><cell>0.7149</cell><cell>0.7380</cell><cell>0.6406</cell><cell>0.6476</cell><cell>0.6641</cell><cell>0.7348</cell><cell>0.7423</cell><cell>0.7036</cell><cell>0.6792</cell></row><row><cell>All (n ¼ 7)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.6474</cell><cell>0.6782</cell><cell>0.6416</cell><cell>0.5541</cell><cell>0.5972</cell></row><row><cell>Positive (n ¼ 3)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.7117</cell><cell>0.7872</cell><cell>0.7377</cell><cell>0.6126</cell><cell>0.5360</cell></row><row><cell>Negative (n ¼ 4)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.6284</cell><cell>0.6869</cell><cell>0.6396</cell><cell>0.7194</cell><cell>0.7270</cell></row></table><note>þ: indicates positive emotions;Ã : indicates negative emotions; n is the number of emotions.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 4</head><label>4</label><figDesc>Comparison of the Big Five Personality Inference from EEG Signals and from Facebook Likes</figDesc><table><row><cell></cell><cell>EEG Signals</cell><cell>Facebook Likes</cell></row><row><cell>Sample Characteristics</cell><cell></cell><cell></cell></row><row><cell>Sample size</cell><cell>37</cell><cell>88</cell></row><row><cell>Age mean (SD)</cell><cell>23.95 (1.56)</cell><cell>20.74 (2.17)</cell></row><row><cell>Gender (% male)</cell><cell>45.95</cell><cell>46.59</cell></row><row><cell>Nationality</cell><cell>China</cell><cell>China</cell></row><row><cell>Classification Accuracy</cell><cell></cell><cell></cell></row><row><cell>Extraversion</cell><cell>0.6641</cell><cell>0.4966</cell></row><row><cell>Agreeableness</cell><cell>0.7348</cell><cell>0.4717</cell></row><row><cell>Conscientiousness</cell><cell>0.7423</cell><cell>0.4174</cell></row><row><cell>Neuroticism</cell><cell>0.7036</cell><cell>0.4825</cell></row><row><cell>Openness</cell><cell>0.6792</cell><cell>0.5346</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>TABLE 5 SLDA</head><label>5</label><figDesc>-Based Top Five Features Extracted from EEG Signals (PSD and ASM) and Subjective Ratings (ER and SAM)</figDesc><table><row><cell></cell><cell>PSD</cell><cell>ASM</cell><cell>ER</cell><cell>SAM</cell></row><row><cell>Extraversion</cell><cell>d-Fc3g-T3</cell><cell></cell><cell>CR</cell><cell>dominance</cell></row><row><cell></cell><cell></cell><cell></cell><cell>ES</cell></row><row><cell>Agreeableness</cell><cell>u-P3</cell><cell>u-ðFp1-Fp2Þ</cell><cell></cell><cell>familiarity</cell></row><row><cell></cell><cell>b-Fc3</cell><cell>a-ðFp1-Fp2Þ</cell><cell></cell></row><row><cell>Conscientiousness</cell><cell>u-Cz; u-Oz</cell><cell></cell><cell></cell><cell>familiarity</cell></row><row><cell></cell><cell>g-Fp2; g-F8</cell><cell></cell><cell></cell></row><row><cell>Neuroticism</cell><cell>u-Pz; u-F3</cell><cell></cell><cell></cell></row><row><cell></cell><cell>b-F4; b-Cp3;</cell><cell></cell><cell></cell></row><row><cell></cell><cell>b-P4</cell><cell></cell><cell></cell></row><row><cell>Openness</cell><cell>a-T3</cell><cell>u-ðFp1-Fp2Þ</cell><cell></cell><cell>Liking</cell></row><row><cell></cell><cell>b-Fp2</cell><cell>b-ðF3-F4Þ</cell><cell></cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>The authors thank the editor and reviewers for their valuable comments, which help improve the quality of this paper. The authors acknowledge David Stillwell, Michal Kosinski, and the my Personality project for providing the my Personality data for the comparison. This work was supported in part by the National Key Research and Development Plan</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Guozhen Zhao received the BS degree in industrial engineering from Tianjin University, China, in 2007, and the MS and PhD degrees in industrial and systems engineering from the State University of New York, Buffalo, in 2009 and 2011, respectively. He is an associate professor in the Institute of Psychology, Chinese Academy of Sciences. His current research interests include mathematical modeling of human cognition and performance, human computer interaction, emotion recognition, and augmented cognition. " For more information on this or any other computing topic, please visit our Digital Library at www.computer.org/publications/dlib.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Personality development: Continuity and change over the life course</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">P</forename><surname>Mcadams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">D</forename><surname>Olson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ann. Rev. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="517" to="542" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The basic level in personality-trait hierarchies: Studies of trait use and accessibility in different contexts</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">P</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Hampson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">R</forename><surname>Goldberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="348" to="361" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Five-factor model of personality and organizational commitment: The mediating role of positive and negative affective states</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Panaccio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Vandenberghe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="647" to="658" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Five robust trait dimensions: Development, stability, and utility</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Digman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="195" to="214" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Validation of the five-factor model of personality across instruments and observers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Mccrae</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">T</forename><surname>Costa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The structure of phenotypic personality traits</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">R</forename><surname>Goldberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="26" to="34" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">The big five trait taxonomy: History, measurement, and theoretical perspectives</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">P</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Srivastava</surname></persName>
+		</author>
+		<editor>Research, L. A. Pervin and O. P. John</editor>
+		<imprint>
+			<date type="published" when="1999" />
+			<publisher>Guilford Press</publisher>
+			<biblScope unit="page" from="102" to="138" />
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Handbook of Personality: Theory and</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The big five personality traits, learning styles, and academic achievement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Komarraju</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Karau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Schmeck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Avdic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="472" to="477" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The big five personality dimensions and job performance: A meta-analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">R</forename><surname>Barrick</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Mount</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personnel Psychol</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="26" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Attachment dimensions and the big five personality traits: Associations and comparative ability to predict relationship quality</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">E</forename><surname>Noftle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Shaver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Res. Personality</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="179" to="208" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The big five personality traits, general mental ability, and career success across the life span</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">A</forename><surname>Judge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">A</forename><surname>Higgins</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">J</forename><surname>Thoresen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">R</forename><surname>Barrick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personnel Psychol</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="621" to="652" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The big five factors, sensation seeking, and driving anger in the prediction of unsafe driving</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">R</forename><surname>Dahlen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>White</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="903" to="915" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">R</forename><surname>Goldberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Psychol. Eur</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="28" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">The Big Five trait taxonomy: History, measurement, and theoretical perspectives</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">P</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Srivastava</surname></persName>
+		</author>
+		<editor>L. A. Pervin and O. P. John</editor>
+		<imprint>
+			<date type="published" when="1999" />
+			<publisher>Guilford Press</publisher>
+			<biblScope unit="page" from="102" to="138" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Handbook of Personality: Theory and research</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Development and validation of a Dutch translation of the big five inventory (BFI)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Denissen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Geenen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Van Aken</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">D</forename><surname>Gosling</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Potter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Assessment</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="152" to="157" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Reliability and concurrent validation of the IPIP big-five factor markers in China: Consistencies in factor structure between internet-obtained heterosexual and homosexual samples</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">R</forename><surname>Goldberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="649" to="654" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Using linguistic cues for the automatic recognition of personality in conversation and text</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Mairesse</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">R</forename><surname>Mehl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">K</forename><surname>Moore</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Artif. Intell. Res</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="457" to="500" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Analyzing personality through social media profile picture choice</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Preotiuc-Pietro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">R</forename><surname>Samani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Moghaddam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">H</forename><surname>Ungar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 10th Int. AAAI Conf. Web Social Media (ICWSM)</title>
+		<meeting>10th Int. AAAI Conf. Web Social Media (ICWSM)<address><addrLine>Cologne, Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="211" to="220" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Computer-based personality judgments are more accurate than those made by humans</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Youyou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kosinski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Stillwell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Nat. Academy Sci. United States America</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1036" to="1040" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The do re mi&apos;s of everyday life: The structure and personality correlates of music preferences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Rentfrow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">D</forename><surname>Gosling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1236" to="1256" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Measurement and control of response bias</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">L</forename><surname>Paulhus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Measures of Personality and Social Psychological Attitudes</title>
+		<editor>J. Robinson, P. R. Shaver and L. S. Wrightsman</editor>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1991" />
+			<biblScope unit="page" from="17" to="59" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">EEG correlates of ten positive emotions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fnhum.2017.00026</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers Human Neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Deap: A database for emotion analysis; Using physiological signals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Koelstra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affect. Comput</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="18" to="31" />
+			<date type="published" when="2012-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Real-time movie-induced discrete emotion recognition from EEG signals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y.-J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TAFFC.2017.2660485</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affect. Comput</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Personality and susceptibility to positive and negative emotional states</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Larsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Ketelaar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="132" to="140" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Factors influencing the relation between extraversion and pleasant affect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Lucas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Fujita</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page" from="1039" to="1056" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">The Neuropsychology of Anxiety: An Enquiry Into the Function of the Septo-Hippocampal System</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Mcnaughton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Oxford Univ. Press</publisher>
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Functional brain mapping of extraversion and neuroticism: Learning from individual differences in emotion processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Canli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1105" to="1132" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Extraversion-introversion and 8-13 Hz waves in frontal cortical regions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Craig</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Mcisaac</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="215" />
+			<date type="published" when="2001-01-19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The Role of resting frontal EEG asymmetry in psychopathology: Afferent or efferent filter?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">M</forename><surname>Gatzke-Kopp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Jetha</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Segalowitz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Develop. Psychobiology</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="85" />
+			<date type="published" when="2014-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Personality and emotional performance: Extraversion, neuroticism, and self-monitoring</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Bono</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Vey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Occupational Health Psychol</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="177" to="192" />
+			<date type="published" when="2007-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Extraversion-introversion, neuroticism-stability, and EEG indicators of positive and negative empathic mood</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Gale</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Forrester</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="449" to="461" />
+			<date type="published" when="2001-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Personality modulation of P300 wave recorded within an emotional oddball protocol</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mardaga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hansenne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clinique/Clinical Neurophysiol</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="41" to="48" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Neurophysiol</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">The behavioral approach system and augmenting/reducing in auditory eventrelated potentials during emotional visual stimulation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>De Pascalis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Fracasso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Corr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biological Psychol</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="310" to="323" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Toward the self-regulation of mood: Theory and research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">N</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">P</forename><surname>Reilly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Motivation Emotion</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="215" to="249" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Antecedent-and response-focused emotion regulation: Divergent consequences for experience, expression, and physiology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Gross</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="224" to="237" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Rethinking feelings: An FMRI study of the cognitive regulation of emotion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">N</forename><surname>Ochsner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Bunge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Gabrieli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Cognitive Neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1215" to="1229" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Cognitive reappraisal of negative affect: Converging evidence from EMG and self-report</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mcrae</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">N</forename><surname>Ochsner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Gross</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="587" to="592" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">All in the mind&apos;s eye? Anger rumination and reappraisal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">H</forename><surname>Wilhelm</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Gross</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="133" to="145" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Emotion regulation strategy use in children and adolescents: The explanatory roles of personality and attachment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Gresham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Gullone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="616" to="621" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">P</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="348" to="362" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Savoring versus dampening: Self-esteem differences in regulating positive affect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">V</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Heimpel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">L</forename><surname>Michela</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Emotion regulation during the encoding of emotional stimuli: Effects on subsequent memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Leventon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Bauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Experimental Child Psychol</title>
+		<imprint>
+			<biblScope unit="volume">142</biblScope>
+			<biblScope unit="page" from="312" to="333" />
+			<date type="published" when="2016-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Emotion regulation mediates the relationship between personality and sleep quality</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Vantieghem</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Marcoen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Mairesse</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Vandekerckhove</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol. Health</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1064" to="1079" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Personality differences in emotions: Does emotion regulation play a role?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Diener</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="100" to="106" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Emotional attention, clarity, and repair: Exploring emotional intelligence using the Trait meta-mood scale,&quot; in Emotion, Disclosure, and Health</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Salovey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Goldman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Turvey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">P</forename><surname>Palfai</surname></persName>
+		</author>
+		<editor>J. W. Pennebaker</editor>
+		<imprint>
+			<date type="published" when="1995" />
+			<publisher>American Psychological Association</publisher>
+			<biblScope unit="page" from="125" to="154" />
+			<pubPlace>Washington, DC, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Psychometric evaluation of Chinese-language 44-item and 10-item big five personality inventories, including correlations with chronotype, mindfulness and mind wandering</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Carciofo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PloS One</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note>Art. no. e0149963</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Reliability and validity of emotion regulation questionnaire Chinese revised version</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Du</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China J. Health Psychol</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="503" to="505" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Behavioral treatment and bio-behavioral assessment: Computer applications,&quot; in Technology in Mental Health Care Delivery Systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Lang</surname></persName>
+		</author>
+		<editor>J. B. Sidowski, J. H. Johnson and T. A. Williams</editor>
+		<imprint>
+			<date type="published" when="1980" />
+			<publisher>Ablex</publisher>
+			<biblScope unit="page" from="119" to="137" />
+			<pubPlace>N J, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Emotion elicitation using films</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Levenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cognition Emotion</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="87" to="108" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">P300 amplitude reflects individual differences of navigation performance in a driving task</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Industrial Ergonom</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="8" to="16" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">EEGLAB: An open source toolbox for analysis of single-trial EEG dynamics including independent component analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Delorme</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Makeig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neuroscience Methods</title>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="9" to="21" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Short term spectral analysis, synthesis, and modification by discrete Fourier transform</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Allen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Acoust. Speech Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="235" to="238" />
+			<date type="published" when="1977-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Methods of EEG signal features extraction using linear analysis in frequency and time-frequency domains</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S</forename><surname>Al-Fahoum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Al-Fraihat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ISRN Neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">2014</biblScope>
+			<biblScope unit="issue">730218</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Event-related synchronization (ERS): An electrophysiological correlate of cortical areas at rest</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Pfurtscheller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electroencephalogr. Clinical Neurophysiol</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="62" to="69" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Event-related EEG/MEG synchronization and desynchronization: Basic principles</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Pfurtscheller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">L</forename><surname>Da</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Silva</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Neurophysiol</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1842" to="1857" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">EEG-based emotion recognition using deep learning network with principal component based covariate shift adaptation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Jirayucharoensak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Pan-Ngum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Israsena</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Sci. World J</title>
+		<imprint>
+			<biblScope unit="volume">2014</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note>Art. no. 627892</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Sparse discriminant analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Clemmensen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Witten</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Ersbøll</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technometrics</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="406" to="413" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Sparse linear discriminant analysis by thresholding for high dimensional data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Annals Statist</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1241" to="1265" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Spasm: A Matlab toolbox for sparse statistical modeling</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Sj€ Ostrand</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">H</forename><surname>Clemmensen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Larsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Ersbøll</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Statis. Softw</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>Accepted for publication</note>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">LIBSVM: A library for support vector machines</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C.-C</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C.-J</forename><surname>Lin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Intell. Syst. Technol</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Separating emotion and motivational direction in fear and anger: Effects on frontal asymmetry</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wacker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Heldmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Stemmler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="167" to="193" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Approach the good, withdraw from the bad-a review on frontal alpha asymmetry measures in applied psychological research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">B</forename><surname>Briesemeister</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Tamm</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Heine</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Jacobs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">State anger and prefrontal brain activity: Evidence that insult-related relative left-prefrontal activation is associated with experienced anger and aggression</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Harmon-Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sigelman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychol</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="797" to="803" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Affective motivational direction drives asymmetric frontal hemisphere activation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">D</forename><surname>Poole</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">A</forename><surname>Gable</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Exp. Brain Res</title>
+		<imprint>
+			<biblScope unit="volume">232</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2121" to="2130" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Clarifying the emotive functions of asymmetrical frontal cortical activity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Harmon-Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychophysiology</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="838" to="848" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Music and emotion: Electrophysiological correlates of the processing of pleasant and unpleasant music</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sammler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Grigutsch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Koelsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychophysiology</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="293" to="304" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Affective picture processing: Event-related synchronization within individually defined human theta band is modulated by valence dimension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Aftanas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Varlamov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Pavlov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Makhnev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Reva</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroscience Lett</title>
+		<imprint>
+			<biblScope unit="volume">303</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="115" to="118" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">You are what you see and choose: Agreeableness and situation selection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bresin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Robinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="452" to="463" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

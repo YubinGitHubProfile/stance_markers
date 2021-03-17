@@ -1,0 +1,1859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Online Environmental Activism: The Case of Ig neada Floodplain Forest</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Süleyman</forename><forename type="middle">Ahmet</forename><surname>Menteş</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Tekirdag Namik Kemal Universitesi</orgName>
+								<address>
+									<settlement>Tekirdag</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Tekirdag Namik Kemal Universitesi</orgName>
+								<address>
+									<postCode>59000</postCode>
+									<settlement>Degirmenalti/Tekirdag</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Online Environmental Activism: The Case of Ig neada Floodplain Forest</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019877877</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>public sphere</term>
+					<term>online activism</term>
+					<term>social movements</term>
+					<term>participation</term>
+					<term>slacktivism</term>
+					<term>Igneada</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>The Internet has changed the ways and conditions of activism. Especially over the last three decades, online activism has been prevalently used for sharing information, connecting people, and mobilizing crowds to express their discontent. The Internet is often referred to as a new form of public sphere, which demonstrates many distinctive and advantageous features compared with traditional types of public spheres. By following public sphere theory, this study examines online activism in the context of environmental activism and aims to understand the potential of the Internet within online activism practices. The studied website &quot;Save the Floodplain Forest&quot; (www.longozukoru.org) is an environmentalist activist platform dedicated to saving the Igneada floodplain forest. The study employed the five-dimensional content analysis scale developed by Kavada to evaluate and analyze the campaign website. The results exhibit inadequacies and point out the potential rooms for improvement for the campaign website.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The emergence of the Internet has dramatically changed the way humans interact with their social environment and has increased the pluralism of voices within the public sphere by providing a space for protesters and nonmainstream organizations to articulate their opinions and to mobilize <ref type="bibr" target="#b59">(Kavada, 2005;</ref><ref type="bibr" target="#b68">Moore-Gilbert, 2018)</ref>. The Internet has become a tool that is used for a broad number of reasons such as searching for information, entertainment, socializing, and expressing opinions <ref type="bibr" target="#b23">(Castellacci &amp; Tveito, 2018)</ref>. <ref type="bibr" target="#b72">Moyo (2009)</ref> describes the Internet as an autonomous and independent public sphere which allows members to create and engage in democratic discussions. Similarly, <ref type="bibr" target="#b34">Dey (2019)</ref> argues that social media platforms are the most prominent emerging public sphere sites for today's society. Especially over the last three decades, social activism relying on the Internet, which <ref type="bibr" target="#b67">McCaughey and Ayers (2003)</ref> call "online activism," has become an increasingly popular and effective way of sharing information and organizing people to express resistance. Specifically, online activism can help organize people, initiate and mobilize crowds, and provide the possibility to organize events <ref type="bibr" target="#b6">(Bennett &amp; Segerberg, 2011;</ref><ref type="bibr" target="#b22">Carty, 2010;</ref><ref type="bibr" target="#b43">Ghobadi &amp; Clegg, 2015;</ref><ref type="bibr" target="#b58">Kaun &amp; Uldam, 2018;</ref><ref type="bibr" target="#b76">Ottaway &amp; Hamzawy, 2011;</ref>. Some scholars underline the need for online activism to be transferred to offline spaces so that it can fulfill its mission as a social movement <ref type="bibr" target="#b5">(Belk, 2016;</ref><ref type="bibr" target="#b66">Matich, Ashman, &amp; Parsons, 2018;</ref><ref type="bibr" target="#b21">Cammaerts &amp; Van Audenhove, 2005;</ref><ref type="bibr" target="#b79">Papacharissi, 2009)</ref>, and in this regard some critiques have labeled online activism as "slacktivism" <ref type="bibr" target="#b28">(Christensen, 2011;</ref><ref type="bibr" target="#b61">Kristofferson, White, &amp; Peloza, 2013;</ref><ref type="bibr" target="#b71">Morozov, 2009c)</ref> or "clicktivism" <ref type="bibr" target="#b49">(Halupka, 2018)</ref> because it fails to initiate social movement.</p><p>The environment is one of the main subjects of online activism. Environmental damage brought about or accelerated by globalization such as the loss of biodiversity, climate change, plundering of natural resources, deforestation, and extinction of a vast array of species is evident <ref type="bibr" target="#b38">(Ehrenfeld, 2005)</ref>. Today, many environmentalist movements have emerged in many parts of the world to stop the further deterioration of the environment, and Turkey is no exception. Vivid environmental activism has developed among the Turkish people, many of whom have become alarmed by the country's serious environmental conditions stemming from hydroelectric and other types of power plants. The Internet gives unprecedented opportunities for activists to communicate, express their opinions, discuss, help organize people, and initiate and mobilize crowds <ref type="bibr" target="#b34">(Dey, 2019;</ref><ref type="bibr" target="#b56">Juris, 2005;</ref><ref type="bibr" target="#b85">Şen &amp; Şen, 2016;</ref><ref type="bibr" target="#b91">Van Laer &amp; Van Aelst, 2009)</ref>.</p><p>Turkey is one of the few countries with sustained economic growth in the last 15 years. This growth is supported by an increasing population, industrialization, and urbanization <ref type="bibr">(World Bank, 2017)</ref>. There is no doubt that this economic growth requires energy. Turkey's energy demand is expected to double during the next decade <ref type="bibr" target="#b33">(Deloitte, 2016)</ref>. To meet the increase in energy demand, the Turkish government considers thermal and nuclear power to be a vital part of the country's future energy strategy and has plans to build either a thermal power plant or the third nuclear power plant in Iğneada <ref type="bibr">(World Nuclear Association, 2017)</ref>.</p><p>Floodplain forests, also called flooded forests or longos forests, are one of the most fragile and rare ecosystems in the world. All over the world, these areas are limited in number and are very significant at local, national, regional, and global levels. In the Bern Convention on the Conservation of European Wildlife and Natural Habitats, floodplain forests are defined as a habitat under threat. The Iğneada floodplain forest is one of the largest floodplain forests in the world <ref type="bibr" target="#b15">(Bozkaya, 2013)</ref>. According to sources, of the three remaining floodplain forests, the Iğneada floodplain forest covers an area of 3,515 ha and is seconded by the Amazon <ref type="bibr" target="#b29">(CNNTurk, 2015)</ref>. Iğneada, the location of the planned nuclear or thermal power plant, is a small town in northwestern Turkey located on the Black Sea coast, only 12 km to the Bulgarian border.</p><p>This study examines online activism in the context of environmental activism and aims to understand the potential of the Internet in online activism practices by following the public sphere theory. In this context, the creative potential of the Internet as a public sphere for activist movements is discussed.</p><p>The studied website "Save the Floodplain Forest" (www. longozukoru.org) is the environmentalist activist platform dedicated to saving the Iğneada floodplain forest. The study concentrates specifically on how the campaign website presents itself to the public and mobilizes citizens and activists. It also investigates to what extent the activists use this website as a means for mobilization and tries to understand how online social networking sites serve to create an alternative public sphere among the online community.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Internet as a Form of new Public Sphere and Online Activism</head><p>Throughout history, new and different versions of public spheres have evolved in parallel to the development of democracy <ref type="bibr" target="#b40">(Garnham, 2000)</ref>. <ref type="bibr" target="#b48">Habermas (1996)</ref> defines the public sphere as a "network for communicating information and points of view . . . filtered and synthesized in such a way that they coalesce into bundles of topically specified public opinions" (p. 360). According to <ref type="bibr" target="#b30">Dahlgren (2005)</ref>, public sphere is "a constellation of communicative spaces in society that permit the circulation of information, ideas, debatesideally in an unfettered manner-and also the formation of political will (i.e., public opinion)" (p. 148). <ref type="bibr" target="#b24">Castells (2008)</ref> describes public sphere as the place (physical or virtual) where people gather and exchange views on public affairs. This exchange of views through discussion and deliberations on current affairs leads to the formation of public opinion. Recent studies argue that by fundamentally redefining interpersonal communications, the Internet has evolved into the perfect platform to act as the public sphere in which the social media platforms are the emerging public sphere sites of our era <ref type="bibr" target="#b20">(Butsch, 2007;</ref><ref type="bibr" target="#b34">Dey, 2019;</ref><ref type="bibr">Dhillon, 2016, p. 4;</ref><ref type="bibr" target="#b47">Goode, 2005)</ref>.</p><p>As <ref type="bibr" target="#b78">Papacharissi (2002)</ref> notes, the Internet and the related technologies have created a new public space for politically oriented conversations, but whether this public space transcends to a public sphere is not up to technology itself. Similarly, <ref type="bibr" target="#b12">Boyd (2005</ref><ref type="bibr" target="#b14">Boyd ( , 2008</ref> underlines that it is an illusion to see technological structure determines practice, technology is not the initiator of any social movements, and it is the people who use technology to voice their opinion. <ref type="bibr" target="#b16">Breslow (1997)</ref> notes that the Internet promotes a sense of sociality, but whether this translates into solidarity is a question mark, and the absence of solid commitment negates the true potential of the Internet as a public sphere <ref type="bibr" target="#b25">(Castells, 2012)</ref>.</p><p>At this point, the difference between the terms "public sphere" and "public space" needs to be clarified. <ref type="bibr" target="#b78">Papacharissi (2002</ref><ref type="bibr" target="#b80">Papacharissi ( , 2010</ref> underlines that public sphere and public space are not synonymous and must not be confused. She defines the relationship between public sphere and public space by stating, "While public space provides the expanse that allows the public sphere to convene, it does not guarantee a healthy public sphere." <ref type="bibr" target="#b78">Papacharissi (2002)</ref> notes that as public space, the Internet only provides another stage for political deliberation. On the contrary, as public sphere, the Internet has the potential to facilitate discussion that promotes a democratic exchange of ideas and opinions.</p><p>Political participation and activism are believed to be the cornerstones of a well-functioning democracy <ref type="bibr" target="#b50">(Han, 2014;</ref><ref type="bibr" target="#b92">Verba, Schlozman, &amp; Brady, 1995)</ref>. The Internet provides a variety of tools and new opportunities for political participation with distinct features that were not previously available <ref type="bibr" target="#b87">(Suwana, 2019;</ref><ref type="bibr" target="#b97">Yang, 2011)</ref>. Due to increasing proliferation of the Internet and social networking sites, the discourses of political participation have been witnessing a great deal of change <ref type="bibr" target="#b55">(Javaid, 2017)</ref>. Similarly, <ref type="bibr" target="#b39">Fu, Wong, Law, and Yip (2016)</ref> underline Internet as the new arena for political participation and political action, often lowering the political threshold with new and different forms for engaging people in deliberations about the structure and organization of society. The rise of digital communication and Internet that was accompanied by decreasing faith in politicians and increasing distrust in the legitimacy of parliamentary politics has provided a new and different form of political participation <ref type="bibr" target="#b31">(Dahlgren, 2018)</ref>. This caused the nature of political participation to rapidly evolve, replacing traditional political participation repertoires by new forms of participation such as online activism <ref type="bibr" target="#b32">(Dalton, 2006;</ref><ref type="bibr" target="#b54">Inglehart &amp; Welzel, 2005;</ref><ref type="bibr" target="#b57">Jurriens &amp; Tapsell, 2017;</ref><ref type="bibr" target="#b84">Schlozman, Verba, &amp; Brady, 2010;</ref><ref type="bibr" target="#b86">Stolle &amp; Micheletti, 2013)</ref>.</p><p>There is no doubt that the Internet has changed the ways and conditions of activism. Especially over the last three decades, online activism has become increasingly prevalent for political participation via sharing information, connecting people, and mobilizing crowds to express their discontent <ref type="bibr" target="#b37">(Dordevic &amp; Zezelj, 2016)</ref>. On the contrary, online activism is important not only for one's sense of identity and belonging but also for the ability to have one's voice heard. This empowers participants by signifying that their statements are considered important enough to be broadcasted <ref type="bibr" target="#b2">(Bailey, Cammaerts, &amp; Carpentier, 2008)</ref>. <ref type="bibr" target="#b88">Svensson (2011)</ref> argues that online activism has increasingly become part of an individual self-realization project. Literature also suggests that people's participation in online activism is motivated by their self-efficacy <ref type="bibr" target="#b3">(Barak, Watted, &amp; Haick, 2016;</ref><ref type="bibr" target="#b9">Bode &amp; Dalrymple, 2016;</ref><ref type="bibr" target="#b27">Cheng, Liang, &amp; Leung, 2015;</ref><ref type="bibr" target="#b55">Javaid, 2017)</ref>.</p><p>Online activism has numerous advantages: Researchers point out that online activism can diminish geographic boundaries, enable reach of a greater global audience, and contribute to the creation of networked diasporas <ref type="bibr" target="#b13">(Boyd, 2007;</ref><ref type="bibr" target="#b53">Hintz, 2012;</ref><ref type="bibr" target="#b87">Suwana, 2019)</ref>. Besides, online activism can help establishing a collective identity, solidarity, and feelings of unity among activists <ref type="bibr" target="#b98">Yuen, 2018)</ref>. Specifically, online activism may be a factor in reducing attention to differences that exist within the group members, reinforcing a collective identity <ref type="bibr" target="#b43">(Ghobadi &amp; Clegg, 2015)</ref>. Effectiveness of online activism lies in its low production and administration costs, particularly for reaching large audiences, who extend far beyond national boundaries <ref type="bibr" target="#b8">(Benoit &amp; Benoit, 2000;</ref><ref type="bibr" target="#b87">Suwana, 2019)</ref>. Online activism also uses the advantage of Web for presenting information in much livelier and attractive ways online. The Internet allows organizations to communicate directly with their audiences, bypassing the mechanisms and commercial bias of the mainstream media <ref type="bibr" target="#b52">(Hill &amp; Hughes, 1998;</ref><ref type="bibr" target="#b73">Nduhura &amp; Prieler, 2017)</ref>.</p><p>The literature on online activism is rather divided <ref type="bibr" target="#b75">(Noland, 2019)</ref>. A group of researchers argue that online activism is nothing more than lazy self-motivated digital image management <ref type="bibr" target="#b19">(Budish, 2012;</ref><ref type="bibr" target="#b61">Kristofferson et al., 2013;</ref><ref type="bibr" target="#b65">Lim, 2013;</ref><ref type="bibr" target="#b69">Morozov, 2009a)</ref>.</p><p>Halupka (2018) uses the term "clicktivism" to label activism made by using only Internet technologies. This is because online activism requires almost no time to participate; support to a campaign can be demonstrated with click-through petitions and online donations rather than physical participation at demonstrations or rallies <ref type="bibr" target="#b61">(Kristofferson et al., 2013)</ref>. The fact that online activism does not require activists to physically participate and attend any protests or demonstrations has made researchers question the dedication of participants to a social movement. If not translated to offline spaces, the role and the effectiveness of online activism as a method of social movement will be diminished <ref type="bibr" target="#b65">(Lim, 2013;</ref><ref type="bibr" target="#b70">Morozov, 2009b)</ref>. Van de <ref type="bibr" target="#b90">Donk, Loader, Nixon, and Rucht (2004)</ref> claim that the Internet can only complement, not substitute, existing social movement tactics, and online activism can undercut a social movement's value by leading to half-hearted, meaningless activism, which Morozov (2009a) labels as "slacktivism." The relation between virtual interaction and trust among participants of social movements is questioned by researchers. Results exhibit that trust plays a critical role in supporting a social movement. Without trust, members are not deeply dedicated. Therefore, initial support to a social movement might grow quickly, but then the support is likely to fade away <ref type="bibr" target="#b36">(Diani, 2000;</ref><ref type="bibr" target="#b91">Van Laer &amp; Van Aelst, 2009)</ref>. Some researchers doubt that virtual ties and interactions alone, without "real" face-to-face interaction, are sufficient to successfully mobilize or sustain a social movement <ref type="bibr" target="#b51">(Harlow, 2011)</ref>. Similarly, <ref type="bibr" target="#b45">Gladwell (2010)</ref> argues that online activism will not succeed in generating committed collective action, because ties established over the Internet are weak and inadequate to bring about systemic change. <ref type="bibr" target="#b14">Boyd (2008)</ref> points out that social network sites do not guarantee the engagement and participation of people in social movements.</p><p>On the contrary, the opposing camp argues that online activism serves as an important predictor of more effortful engagement <ref type="bibr" target="#b17">(Brigham &amp; Noland, 2014)</ref>. <ref type="bibr" target="#b83">Rao and Wasserman (2017)</ref> point out that the social media has created the opportunity of harnessing the Internet as a tool to further the discourse and mobilize the masses. <ref type="bibr" target="#b74">Nip (2004)</ref> discusses the potential for the Internet to help construct a common identity and build online trust, which then could pave the way to offline mobilization. Similarly, <ref type="bibr" target="#b93">Wojcieszak's (2009)</ref> study of online radical environmentalist groups exhibits that collective identity is established and strengthened through these online groups. Recent studies also indicate that social media is an effective tool for network building, mobilizing the masses, creating counternarratives, and affecting the political discourse through collective action <ref type="bibr" target="#b10">(Bosch, 2017;</ref><ref type="bibr" target="#b11">Bosch &amp; Mutsvairo, 2017;</ref><ref type="bibr" target="#b34">Dey, 2019;</ref><ref type="bibr" target="#b41">Garcia, Chauveau, Ledezma, &amp; Pinto, 2013;</ref><ref type="bibr" target="#b96">Yan, Pegoraro, &amp; Watanabe, 2018)</ref>. Social media offers a variety of tools, formats, and content that can be used for civic engagement and political participation to support democracies and political communication <ref type="bibr" target="#b87">(Suwana, 2019)</ref>. Although online activism alone cannot make physical changes, it can help create awareness and keep the conversation alive about the issues <ref type="bibr" target="#b34">(Dey, 2019)</ref>. As Valenzuela (2013) points out, online activism via social media can help create a parallel movement alongside the physical process and thereby amplify the protests. Social media also provides information channels to organize and mobilize protests <ref type="bibr" target="#b4">(Barn, 2013)</ref>. Social media also facilitates communication among people during such social movements and allows people to express political opinions <ref type="bibr" target="#b46">(Gleason, 2013;</ref><ref type="bibr" target="#b89">Valenzuela, 2013)</ref>.</p><p>A number of studies have claimed that digital media has played important roles in coordinating, mobilizing, and organizing social and political movements such as the Arab Spring <ref type="bibr" target="#b26">(Castells, 2015;</ref><ref type="bibr" target="#b82">Ramli, 2012)</ref>, the Indignados Movement in Spain <ref type="bibr" target="#b7">(Bennett &amp; Segerberg, 2012;</ref><ref type="bibr" target="#b42">Gerbaudo, 2012)</ref>, the Occupy Movement in North America <ref type="bibr" target="#b7">(Bennett &amp; Segerberg, 2012)</ref>, the Umbrella Movement in Hong Kong <ref type="bibr" target="#b62">(Lee &amp; Ting, 2015;</ref><ref type="bibr" target="#b63">Lee &amp; Chan, 2016)</ref>, and the Tunisian Revolution <ref type="bibr" target="#b26">(Castells, 2015</ref>). Valenzuela's (2013) study on the 2011 Chilean student movement uncovers a strong correlation between the frequency of social media usage and protest behavior. Results of the research also confirm social media as a tool of political action and that it can channel online activism into offline physical movements. Lee, Chen, and Chan's (2017) study on the 2014 Umbrella Movement in Hong Kong, focusing on social media use and offline participation, exhibits that social media acts as a significant mediator of social psychological factors such as grievances, anger, and other emotions, which in turn affects offline participation. The results exhibit that online participation is the strongest predictor of offline political action. In other words, as participation in social media platforms increases, so does the involvement in offline political activities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Rise of Environmental Activism and Ig neada</head><p>As environmental degradation intensified in Turkey, ecological issues became an important part of the "political agenda from the late 1990s onwards, which led the number of environmentalist organizations to increase" <ref type="bibr" target="#b0">(Adem, 2005)</ref>. This increase in environmental activism in Turkey is to a large extent related to investments in the energy sector. Energy consumption in Turkey is expected to double from 2010 to 2020. To facilitate this high increase in energy production, the government has made several critical decisions, including changes in laws, privatization of state-owned firms, and invitation of foreign energy firms to invest in Turkey. These policies have facilitated a massive increase in the construction of electricity production facilities and in energy infrastructure during the last decade <ref type="bibr" target="#b60">(Knudsen, 2016)</ref>. The government has accelerated actions to address its growing dependence on imports and increasing demand of energy by diversifying energy supplies. Turkey is progressing with its plans to deploy three nuclear power plants in the next decade. One of these plants is planned to be built in Iğneada (International Energy Agency, 2016).</p><p>There is also an alternative plan to build a thermal power plant in Iğneada. This plan is in line with the government's aim to increase the use of domestic resources such as lignite to reduce import dependence as a core policy objective of its 2017 Electricity Market and Security of Supply Strategy. The proposed power plant is planned to be the biggest in Turkey. To clear the way for investment projects in natural protection zones, legal protection statuses of these areas have been downgraded to natural parks by new legislations. Iğneada floodplain forest is one of these natural protection zones that was downgraded to a national park status <ref type="bibr" target="#b1">(Atmış, 2018)</ref>.</p><p>The Iğneada floodplain forest is one of the most important protected areas, not only of Turkey <ref type="bibr" target="#b77">(Özhatay, Byfield, &amp; Atay, 2003)</ref> but of Europe as well. This unique ecosystem hosts flooded forest and associated aquatic and coastal ecosystems, which include freshwater and saline lakes, coastal dunes, marshes, and mixed forests of deciduous tall trees. Conservation International named Iğneada floodplain forest as one of the world's top 25 biodiversity hotspots <ref type="bibr" target="#b15">(Bozkaya, 2013)</ref>. Also, the World Wildlife Fund listed the region in Global 200 Ecoregion list (World Wildlife Fund, 2012).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Case Study of Ig neada Floodplain Forest</head><p>This study on the website "Save the Floodplain Forest" examines online activism in the context of environmental activism and aims to understand the potential of the Internet in online activism practices by following the public sphere theory. In this context, the creative potential of the Internet as a public sphere for activist movements and its ability to mobilize participants are discussed.</p><p>The research used the qualitative method for an in-depth examination of the case. Content analysis of the organization's website analyzed the functions of the website and evaluated how well they performed. The content analysis is based on five dimensions developed by <ref type="bibr" target="#b59">Kavada (2005)</ref> and updated by <ref type="bibr">Şen and Şen (2016)</ref>: Information Provision, Networking, Participation, Campaigning, and Delivery. Of these five dimensions, "Information Provision" has 17, "Networking" has seven, "Participation" has four, "Campaigning" has four, and "Delivery" has six content features. The campaign website was examined, and the presence and absence of content features were recorded. The results were analyzed to exhibit inadequacies and point out the potential rooms for improvement of the campaign website.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Information Provision</head><p>The content analysis revealed that "Save the Floodplain Forest" campaign website provide detailed information about the goal and the policies of the campaign. Information and documents provided to the public via the campaign website are very detailed. Besides the main goal of protecting the Iğneada floodplain forest, the website describes the current state of the protected area, as well as the uniqueness and the importance of the floodplain forest via photographs and expert reports <ref type="table" target="#tab_0">(Table 1)</ref>.</p><p>The campaign website presents a detailed archive of the developments and events related to protection efforts for the Iğneada floodplain forest. The website also provides updates automatically via email to supporters, who wish to be posted about the latest news, developments, and campaign events.</p><p>The website has a media coverage tab, which contains a detailed collection of media coverage regarding issues such as press conferences of the Ministry of Energy bureaucrats, broadcasted interviews made with academics, and other local and national news coverage.</p><p>Although the campaign website provides in-depth information about the Iğneada floodplain forest, information regarding the campaign's organizational history and structure does not exist.</p><p>Similarly, the website does not provide any evidence of the campaign releasing annual reports. Although this campaign was started by the sole efforts and initiative of the exmayor of Iğneada (Mr. Tahir Işık) as a quest to save this unique ecosystem, the missing information about the campaign's organizational history and organizational structure and the absence of annual reports signal that the campaign has not completed its institutionalization process.</p><p>The campaign website also does not have a Frequently Asked Questions tab and Event Calendar tab, but the website enables users to reach Mr. Tahir Işık via messaging or email. His telephone number is also available at the campaign website for all types of inquiries and feedback. There is also no evidence that the campaign has employees or provides any work opportunities. This, combined with the observation that Mr. Tahir Işık is the only person the campaign website provides information about, gives the impression that the campaign is a one-man show. All this evidence signals that the campaign has not completed its institutionalization process and gives the impression that the campaign website is run in an amateurish manner.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>networking</head><p>The campaign website provides five reference links. Reference links are links to environmental or news/educational sites.</p><p>These links provide more detailed information about the Iğneada floodplain forest ecology, biodiversity, history, and other geographical features of the area. The website does not have internal links or members-only area <ref type="table" target="#tab_1">(Table 2)</ref>.</p><p>Links to other parties or organizations that are supportive of the goals, which are labeled as partisan links <ref type="bibr" target="#b44">(Gibson &amp; Ward, 1998)</ref>, are useful in terms of disseminating information and gaining popularity among activists sharing similar goals. Partisan links also provide opportunity to get consultation and technical support for campaigns about going online <ref type="bibr" target="#b59">(Kavada, 2005)</ref>. Partisan links help to connect like-minded organizations and create benchmarking opportunities to improve their effectiveness and campaigning abilities. The studied campaign website does not have any partisan links. The absence of partisan links is thought to be an important shortcoming of the studied campaign website and may potentially be one of the possible facilitators of other deficiencies observed.</p><p>The campaign website does not provide a direct link to the opponent, but publicly shares the title and the address of the firm that declared interest to build the power plant in the area. The campaign website also displays the names of the partners and ownership structure of the firm.</p><p>The campaign website has links to campaign's social media accounts: Twitter (@LongozuKoru), Facebook (www. facebook.com/LongozuKoru), Pinterest (https://tr.pinterest. com/longozukoru/), and YouTube (www.youtube.com/user/ LongozuKoru). These accounts are popular among supporters of the campaign and give the followers the opportunity to meet, interact, exchange ideas, and organize. The campaign's Facebook account has more than 10,448 followers, and the campaign's Twitter account is followed by 2,039 people as of May 2019.</p><p>YouTube and Pinterest accounts of the campaign have fewer followers and serve as a video-and photographsharing platform rather than a networking medium. The YouTube account (www.youtube.com/user/LongozuKoru) of the campaign shares previously broadcasted TV programs about efforts to protect the Iğneada floodplain forest and videos of protest rallies and demonstrations against prospective power plants in the area. As of May 2019, there are 18 videos uploaded to the YouTube account of the campaign. Of these 18 videos, 16 are the national TV coverage of the rallies and demonstrations against power plant construction. In one of these uploaded videos, demonstrators protest a representative of the power plant firm, who desperately tries to persuade the locals about the potential benefits of the planned power plant. Two of the uploaded videos are short documentaries about the Iğneada floodplain forest. Similarly, the Pinterest account (https://tr.pinterest.com/longozukoru/) shares photographs that demonstrate the natural uniqueness of the habitat and photographs from the locally organized rallies that protest the plans to construct power plants in the area. The Pinterest account of the campaign has five pins related to the protests and rallies. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participation</head><p>The campaign website is open to the public; members can get into contact and interact with each other via social media tools such as Facebook, Twitter, YouTube, and Pinterest. Although the campaign website does not have an opinion polls function, opinion polls can be held very easily over Twitter, but the study did not observe any polls held in any of the social media accounts of the campaign <ref type="table">(Table 3)</ref>. The campaign website lets the public give feedback via email or telephone. The telephone number of Mr. Tahir Işık is available at the campaign website. Also, all social media accounts of the campaign are also other valid and easy-to-use mediums of feedback about the campaign and other related issues.</p><p>The Facebook account of the campaign is the primary platform that participants use to interact with each other. Interactions are mostly about declarations of support to the campaign, sharing ideas about the protection of the area such as starting new signature campaigns and personal visits to the area.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Campaigning</head><p>The most basic and traditional way of campaigning is to offer leaflets. The campaign website offers campaigning material to be downloaded, but the downloadable materials are banners to be used for online campaigning rather than leaflets, which are used for offline (traditional) campaigns. The campaign website also provides supporters an online downloadable "Save the Floodplain Forest" banner, which they can post and share with their contacts on their personal media profiles <ref type="table">(Table 4)</ref>.</p><p>The campaign website does not perform or promote any negative campaigns. Joining an email list is a service offered by the campaign website. This helps supporters to keep updated about the latest developments regarding campaignrelated issues and other activities of the organization.</p><p>The campaign website invites all visitors to sign an online petition. As of May 2019, there were more than 3,500 online petitions, labeled by <ref type="bibr" target="#b69">Morozov (2009a)</ref> and <ref type="bibr" target="#b49">Halupka (2018)</ref> as "slacktivism" and "clicktivism," respectively. For online petition, the website invites the petitioner to key in his or her name, which just takes seconds.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Website Delivery</head><p>The design of the website is important for communicating ideas with existing supporters and for gaining new ones. Furthermore, it can help attract the attention of online audiences. In this sense, the design of the campaign website is carefully organized and designed <ref type="table">(Table 5)</ref>.</p><p>Although the campaign website has tabs for two foreign languages (English and Bulgarian), the tabs are not functional and do not display the designated foreign languages. This is definitely a major shortcoming for the campaign website, because without the foreign language version of the website reaching out to international stakeholders, getting their support and petitions will be very challenging. Especially, considering the Bulgarian version of the campaign website can contribute to the popularity and the supporter base of the campaign, as Iğneada is very close to the Bulgarian border of Turkey and it is obvious that Bulgarians have a vested interest because they will face the possible externalities caused by any type of power plant built in the area.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>The rise of digital communications and the Internet, accompanied by decreasing faith in the legitimacy of parliamentary politics, has provided new and different understandings of political participation which caused the nature of political participation to rapidly evolve, replacing traditional political participation repertoires by new forms of participation such as online activism. From the perspective of the participant, online activism has increasingly become part of an individual self-realization project, which is important not only for one's sense of identity and belonging but also for the ability to have one's voice heard. Online activism also empowers participants by signifying that their statements are considered important enough to be broadcasted. Compared with traditional ways of activism, online activism has numerous advantages such as allowing activist organizations to communicate directly with their audiences; bypassing the mechanisms and commercial bias of the mainstream media; presenting information in much livelier and attractive ways by using the advantage of web; enabling reach to a greater global audience via diminishing geographic boundaries; helping establish a collective identity, solidarity and feelings of unity among activists; reducing attention to differences that exist within group members, reinforcing a collective identity; and reaching large audiences, which extend far beyond national boundaries with comparatively very low production and administration costs. On the contrary, online activism does not require activists to physically participate in any protests or demonstrations, but online activism, which is not transferred to offline spaces, limits the role and diminishes the effectiveness of online activism as a method of social movement.</p><p>In the recent decade, social media has emerged as an effective tool for network building, mobilizing the masses, creating counter-narratives, and influencing the political discourse through collective action. Social media offers a variety of tools, formats, and content that can be used for civic engagement and political participation. Social media also provides information channels to organize and mobilize protests. It also facilitates communication among people during such social movements and allows people to express political opinions. The "Save the Floodplain Forest" campaign website provides links to campaign's social media accounts at Twitter, Facebook, Pinterest, and YouTube. These social media accounts are popular among supporters of the campaign and give the followers the opportunity to meet, interact, exchange ideas, and organize.</p><p>As an online activist movement, "Save the Floodplain Forest" functions as a public sphere which fulfills its role by facilitating the exchange of views through online discussions and deliberations that lead to the formation of public opinion about the protection of Iğneada floodplain forest. The studied online activist movement is also successful not only in creating a common identity among its participants but also in translating the solidarity and dedication of its participants to offline spaces in the form of demonstrations and rallies. It is obvious that increasing awareness about protecting the environment and the rise of Internet activism as an alternative form of political participation have an important role for activists to participate in this public sphere. At the same time, however, perceiving online activism as an individual self-realization project by participants, which is important for one's sense of identity and belonging, should not be dismissed.</p><p>There is no doubt that the "Save the Floodplain Forest" campaign benefits from of all the discussed advantages of being an online activist movement. However, the results of the content analysis of "Save the Floodplain Forest" website based on the scale developed by <ref type="bibr" target="#b59">Kavada (2005)</ref> and updated by <ref type="bibr">Şen and Şen (2016)</ref> exhibit that the campaign website suffers from some deficiencies, which have to be fixed for the campaign to reach its goals more effectively. <ref type="table" target="#tab_2">Table 6</ref> displays an integrated presentation of the unmet content features of the campaign website. Results exhibit that the total number of unmet content features by the campaign website is 15. Of these 15 unmet content features, seven are related to "Information Provision" dimension, "Networking" dimension has four, "Participation" and "Campaigning" dimensions have one each, and "Website Delivery" dimension has two unmet content features.</p><p>Uncompleted institutionalization process and the amateurish management of the campaign website are thought to be one of the main causes of unmet content features of the "Save the Floodplain Forest" campaign website.</p><p>As suggested by <ref type="bibr" target="#b59">Kavada (2005)</ref>, establishing connections with like-minded organizations is an effective way to get consultation and technical support and to improve online campaigning abilities. Kavada's suggestion is also reflected in the "Networking" dimension as the content feature "Partisan links" which is one of the unmet content features of the Save the Floodplain Forest" campaign website. It is no doubt that having "Partisan links" will provide the chance to "Save the Floodplain Forest" campaign to take advantage of potential consulting and benchmarking opportunities to upgrade the campaign website. This will also be helpful and provide guidance in fixing the unmet content features listed in <ref type="table" target="#tab_2">Table 6</ref>.</p><p>The "Save the Floodplain Forest" campaign does not receive any financial support from any institution. The campaign also does not generate any financial resources of its own. Lack of financial resources may hinder and limit the projected functions. For example, tabs for two foreign languages (English and Bulgarian) are not functional and do not display the designated foreign languages. Without the foreign language version of the campaign website reaching out to international stakeholders, getting their support and petitions will be very challenging. The Bulgarian version of the campaign website is critical because Iğneada is adjacent to Bulgarian border of Turkey, and it is obvious that Bulgarians will face the possible externalities caused by any type of power plant built in the area.</p><p>The findings of the study are expected to be useful not only to "Save the Floodplain Forest" campaign but also to other online activist movements in managing their campaigns and administering their websites and social media accounts. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Information Provision.</figDesc><table><row><cell>Organizational history</cell><cell></cell></row><row><cell>Structure</cell><cell></cell></row><row><cell>Values/ideology</cell><cell></cell></row><row><cell>Policies</cell><cell></cell></row><row><cell>Documents</cell><cell></cell></row><row><cell>Newsletters</cell><cell></cell></row><row><cell>Media releases</cell><cell></cell></row><row><cell>People/who's who</cell><cell></cell></row><row><cell>Event calendar</cell><cell></cell></row><row><cell>Frequently asked questions</cell><cell></cell></row><row><cell>Privacy policy</cell><cell></cell></row><row><cell>Article archive or library</cell><cell></cell></row><row><cell>News</cell><cell></cell></row><row><cell>Work opportunities</cell><cell></cell></row><row><cell>Annual report</cell><cell></cell></row><row><cell>Campaign information</cell><cell></cell></row><row><cell>Information about successes</cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Networking.</figDesc><table><row><cell></cell><cell></cell><cell>Table 5. Website Delivery.</cell><cell></cell></row><row><cell>Internal links</cell><cell></cell><cell>Homepage design</cell><cell></cell></row><row><cell>Members-only area</cell><cell></cell><cell>Graphics images/photos</cell><cell></cell></row><row><cell>Partisan links</cell><cell></cell><cell>Frames moving text/images</cell><cell></cell></row><row><cell>Reference links</cell><cell>5</cell><cell>Multimedia index</cell><cell></cell></row><row><cell>Commercial links</cell><cell></cell><cell>Sound video live streaming</cell><cell></cell></row><row><cell>Opponent links</cell><cell></cell><cell>Foreign language translation</cell><cell></cell></row><row><cell>Social media links</cell><cell>4</cell><cell></cell><cell></cell></row><row><cell>Table 3. Participation.</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Openness</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Feedback</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Opinion polls</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Interaction</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Table 4. Campaigning.</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Election site/sites for specific campaigns</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Negative campaigning</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Join an email update list</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Become an online campaigner/send an</cell><cell></cell><cell></cell><cell></cell></row><row><cell>email/sign an online petition</cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 6 .</head><label>6</label><figDesc>Unmet Content Features of the Campaign Website.</figDesc><table><row><cell>Information Provision</cell><cell>Organizational History</cell></row><row><cell></cell><cell>Structure</cell></row><row><cell></cell><cell>Event calendar</cell></row><row><cell></cell><cell>Frequently asked questions</cell></row><row><cell></cell><cell>Privacy policy</cell></row><row><cell></cell><cell>Work opportunities</cell></row><row><cell></cell><cell>Annual report</cell></row><row><cell>Networking</cell><cell>Internal links</cell></row><row><cell></cell><cell>Members-only area</cell></row><row><cell></cell><cell>Partisan links</cell></row><row><cell></cell><cell>Commercial links</cell></row><row><cell>Participation</cell><cell>Opinion polls</cell></row><row><cell>Campaigning</cell><cell>Negative campaigning</cell></row><row><cell>Website Delivery</cell><cell>Multimedia index</cell></row><row><cell></cell><cell>Foreign language translation</cell></row></table><note></note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head><p>Süleyman Ahmet Menteş https://orcid.org/0000-0001-7787-6287 </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biography</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Non-state actors and environmentalism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Adem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Environmentalism in Turkey: Between democracy and development</title>
+		<editor>F. Adaman &amp; M. Arsel</editor>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Ashgate</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="71" to="86" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">A critical review of the (potentially) negative impacts of current protected area policies on the nature conservation of forests in Turkey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Atmış</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Land Use Policy</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="675" to="684" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Understanding alternative media</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Bailey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Cammaerts</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Carpentier</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>Open University Press</publisher>
+			<pubPlace>Berkshire, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Motivation to learn in massive open online courses: Examining aspects of language and social engagement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Barak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Watted</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Haick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers &amp; Education</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="49" to="60" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Social media and protest-The Indian spring?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Barn</surname></persName>
+		</author>
+		<ptr target="http://www.huffingtonpost.co.uk/professor-ravinder-barn/indiasocial-media-and-protest_b_2430194.html?utm_hp_ref=uk" />
+	</analytic>
+	<monogr>
+		<title level="j">HuffPost Tech UK</title>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Extended self and the digital world</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Belk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Current Opinion in Psychology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="50" to="54" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Digital media and the personalization of collective action</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">W</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Segerberg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Information, Communication &amp; Society</publisher>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="770" to="799" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">The logic of connective action: Digital media and the personalization of contentious politics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">L</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Segerberg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Information, Communication &amp; Society</publisher>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="739" to="768" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The virtual campaign: Presidential primary websites in campaign</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">L</forename><surname>Benoit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Benoit</surname></persName>
+		</author>
+		<ptr target="http://ac-journal.org/journal/vol3/Iss3/rogue4/benoit.html" />
+	</analytic>
+	<monogr>
+		<title level="j">American Communication Journal</title>
+		<imprint>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Politics in 140 characters or less: Campaign communication, network interaction, and political participation on Twitter</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Bode</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">E</forename><surname>Dalrymple</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Marketing</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="311" to="332" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Twitter activism and youth in South Africa: The case of #RhodesMustFall</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Bosch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<publisher>Information, Communication &amp; Society</publisher>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="221" to="232" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Pictures, protests and politics: Mapping Twitter images during South Africa&apos;s fees must fall campaign</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Bosch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Mutsvairo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">African Journalism Studies</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="71" to="89" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Sociable technology and democracy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Extreme democracy</title>
+		<editor>J. Lebkowsky &amp; M. Ratcliffe</editor>
+		<meeting><address><addrLine>San Francisco, CA; Lulu</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="198" to="209" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Can social network sites enable political action?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Media and Cultural Politics</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="243" to="265" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Facebook&apos;s privacy trainwreck: Exposure, invasion, and social convergence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Convergence: The International Journal of Research into New Media Technologies</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="13" to="20" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Temporal assessment of Igneada conservation area with remote sensing and geographic information systems and modeling the future (Master&apos;s thesis)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Bozkaya</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<pubPlace>Istanbul, Turkey</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Istanbul Technical University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Civil society, political economy, and the internet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Breslow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Virtual culture: Identity and communication in cybersociety</title>
+		<editor>S. Jones</editor>
+		<meeting><address><addrLine>Thousand Oaks, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>SAGE</publisher>
+			<date type="published" when="1997" />
+			<biblScope unit="page" from="236" to="257" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Making humanitarian advocacy less &quot;abstract and remote&quot;: Kony 2012&apos;s representation of an agent-centered approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Brigham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">K</forename><surname>Noland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Florida Communication Journal</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="51" to="67" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Collective action in the age of the internet mass communication and online mobilization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Brunsting</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Postmes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Science Computer Review</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="290" to="301" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Click to change: Optimism despite online activism&apos;s unmet expectations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">H</forename><surname>Budish</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emory International Law Review</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="745" to="772" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Media and public spheres</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Butsch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Palgrave Macmillan</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Online political debate, unbounded citizenship, and the problematic nature of a transnational public sphere</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Cammaerts</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Van Audenhove</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Political Communication</publisher>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="179" to="196" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">New information communication technologies and grassroots mobilization. Information</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Carty</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Communication &amp; Society</publisher>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="155" to="173" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Internet use and well-being: A survey and a theoretical framework</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Castellacci</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Tveito</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research Policy</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="308" to="325" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The new public sphere: Global civil society communication networks and global governance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Castells</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Annals of the American Academy of Political and Social Science</title>
+		<imprint>
+			<biblScope unit="volume">616</biblScope>
+			<biblScope unit="page" from="78" to="94" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Networks of outrage and hope: Social movements in the Internet age</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Castells</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Polity Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Castells</surname></persName>
+		</author>
+		<title level="m">Networks of outrage and hope: Social movements in the internet age</title>
+		<meeting><address><addrLine>Cambridge, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>John Wiley</publisher>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Social network service use on mobile devices: An examination of gratifications, civic attitudes and civic engagement in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Leung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1096" to="1116" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Political activities on the Internet: Slacktivism or political participation by other means? First Monday</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">S</forename><surname>Christensen</surname></persName>
+		</author>
+		<ptr target="https://firstmonday.org/article/view/3336/2767" />
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">16</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">The third floodplain forest of the world: Iğneada</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Cnnturk</surname></persName>
+		</author>
+		<ptr target="https://www.cnnturk.com/turkiye/dunyanin-ucuncu-longozu-igneada" />
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">The internet, public spheres, and political communication: Dispersion and deliberation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Dahlgren</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Political Communication</publisher>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="147" to="162" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Media, knowledge and trust: The deepening epistemic crisis of democracy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Dahlgren</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<publisher>Javnost-The Public</publisher>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="20" to="27" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Citizen politics: Public opinion and political parties in advanced industrial democracies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Dalton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>CQ Press</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Turkish energy market outlook achievements, overview and opportunities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Deloitte</surname></persName>
+		</author>
+		<ptr target="https://www.dunyaenerji.org.tr/wp-content/uploads/2017/10/turkish-energy-market-outlook.pdf" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Let there be clamor: Exploring the emergence of a new public sphere in India and use of social media as an instrument of activism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Dey</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0196859919827319</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Communication Inquiry</title>
+		<imprint>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="issue">0</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">How social media is empowering India&apos;s dalits</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dhillon</surname></persName>
+		</author>
+		<ptr target="https://www.theglobeandmail.com/opinion/how-social-media-is-empowering-indias-dalits/article31091710/" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Social movement networks virtual and real</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Diani</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>Information, Communication &amp; Society</publisher>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="386" to="401" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Civic activism online: Making young people dormant or more active in real life?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Dordevic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Zezelj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Human Behavior</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="113" to="118" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The environmental limits to globalization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Ehrenfeld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Conservation Biology</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="318" to="326" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Building a typology of young people&apos;s conventional and online political participation: A randomized mobile phone survey in Hong Kong</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Yip</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China. Journal of Information Technology &amp; Politics</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="126" to="141" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">The role of the public sphere in the information society</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Garnham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Regulating the global information society</title>
+		<editor>C. T. Marsden</editor>
+		<meeting><address><addrLine>London, England</addrLine></address></meeting>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="43" to="56" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">What can social media teach us about protests? Analyzing the Chilean 2011-12 student movement&apos;s network evolution through Twitter data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Chauveau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ledezma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pinto</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1308.2451" />
+		<imprint>
+			<date type="published" when="2013-08" />
+			<pubPlace>Santiago, Chile</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Paper presented at the COINs13 Conference</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Tweets and the streets: Social media and contemporary activism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Gerbaudo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Pluto Press</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">These days will never be forgotten</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ghobadi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Clegg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">A critical mass approach to online activism. Information and Organization</title>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="52" to="71" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">U.K. political parties and the Internet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Gibson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ward</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Politics as usual&quot; in the new media</title>
+		<imprint>
+			<date type="published" when="1998" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="14" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Small change: Why the revolution will not be tweeted. The New Yorker</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gladwell</surname></persName>
+		</author>
+		<ptr target="https://www.newyorker.com/magazine/2010/10/04/small-change-malcolm-gladwell" />
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">#Occupy wall street: Exploring informal learning about a social movement on Twitter</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Gleason</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Behavioral Scientist</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="966" to="982" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Jurgen Habermas: Democracy and the public sphere</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Goode</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Pluto Press</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Between fact and norms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>The MIT Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">The legitimisation of clicktivism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Halupka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Australian Journal of Political Science</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="130" to="141" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">How organizations develop activists: Civic associations and leadership in the 21st century</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Han</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Social media and social movements: Facebook and an online Guatemalan justice movement that moved offline</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Harlow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="225" to="243" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Cyberpolitics: Citizen activism in the age of the Internet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">A</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Hughes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Rowman &amp; Littlefield</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Challenges to freedom of expression in the digital world: Lessons from WikiLeaks and the Arab spring</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hintz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal for Communication Studies</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="83" to="105" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Modernization, cultural change and democracy: The human development sequence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Inglehart</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Welzel</surname></persName>
+		</author>
+		<ptr target="https://www.iea.org/publications/freepublications/publication/EnergyPoliciesofIEACountriesTurkey.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Review. International Energy Agency</title>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+	<note>International Energy Agency.</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Predictors of online political participation among youth in Pakistan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Javaid</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Anthropologist</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="41" to="51" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">The new digital media and activist networking within anti-corporate globalization movements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Juris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of the American Academy of Political and Social Science</title>
+		<imprint>
+			<biblScope unit="volume">597</biblScope>
+			<biblScope unit="page" from="189" to="208" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Challenges and opportunities of the digital &quot;revolution&quot; in Indonesia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Jurriens</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Tapsell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Indonesia: Connectivity and divergence</title>
+		<editor>E. Jurriens &amp; R. Tapsell</editor>
+		<meeting><address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1" to="20" />
+		</imprint>
+		<respStmt>
+			<orgName>ISEAS Yusof Ishak Institute</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kaun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Uldam</surname></persName>
+		</author>
+		<title level="m">Digital activism: After the hype. New Media &amp; Society</title>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="2099" to="2106" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Civil society organisations and the Internet: The case of amnesty international, Oxfam and the world development movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kavada</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Global activism, global media</title>
+		<editor>W. de Jong, M. Shaw &amp; N. Stammers</editor>
+		<meeting><address><addrLine>London, England</addrLine></address></meeting>
+		<imprint>
+			<publisher>Pluto Press</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="208" to="222" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Protests against energy projects in Turkey: Environmental activism above politics?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Knudsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">British Journal of Middle Eastern Studies</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="302" to="323" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">The nature of slacktivism: How the social observability of an initial act of token support affects subsequent prosocial action</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Kristofferson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peloza</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Research</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="1149" to="1166" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Media and information praxis of young activists in the Umbrella movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">Y L</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">W</forename><surname>Ting</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chinese Journal of Communication</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="376" to="392" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Digital media activities and mode of participation in a protest campaign: A study of the Umbrella movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">L</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information. Communication &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="4" to="22" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Social media use and university students&apos; participation in a large-scale protest campaign: The case of Hong Kong&apos;s umbrella movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">L</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Telematics and Informatics</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="457" to="469" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Many clicks but little sticks: Social media activism in Indonesia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Contemporary Asia</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="636" to="657" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">#freethenipple-Digital activism and embodiment in the contemporary feminist movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Matich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ashman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Parsons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Consumption Markets &amp; Culture</title>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="337" to="362" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">Cyberactivism: Online activism in theory and practice</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Mccaughey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Ayers</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Routledge</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Mediated mobilisation after the Arab Spring: How online activism is shaping Bahrain&apos;s opposition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Moore-Gilbert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Australian Journal of Political Science</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="78" to="88" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">The brave new world of slacktivism. Foreign Policy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Morozov</surname></persName>
+		</author>
+		<ptr target="https://foreignpolicy.com/2009/05/19/the-brave-new-world-of-slacktivism/" />
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Iran: Downside to the &quot;Twitter revolution</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Morozov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Dissent</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="10" to="14" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">Texting toward utopia: Does the Internet spread democracy? Boston Review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Morozov</surname></persName>
+		</author>
+		<ptr target="http://bostonreview.net/evgeny-morozov-texting-toward-utopia-internet-democracy" />
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Digital democracy: Enhancing the public sphere</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Moyo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Digital cultures: Understanding new media</title>
+		<editor>G. Creeber &amp; R. Martin</editor>
+		<meeting><address><addrLine>Berkshire, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Open University Press</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="139" to="150" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Citizen journalism and democratisation of mainstream media in Rwanda</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Nduhura</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Prieler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">African Journalism Studies</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="178" to="197" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">The relationship between online and offline communities: The case of Queer sisters. Media</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">M</forename><surname>Nip</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Culture &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="409" to="428" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Like, share, retweet: Testing competing models of the theory of planned behavior to predict slacktivism engagement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Noland</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/10495142.2019.1589626</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Nonprofit &amp; Public Sector Marketing. Advance online publication</title>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">Protest movements and political change in the Arab world</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ottaway</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hamzawy</surname></persName>
+		</author>
+		<ptr target="http://carnegieeurope.eu/publications/?fa=42394" />
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<title level="m" type="main">Important plant areas in Turkey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Özhatay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Byfield</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Atay</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>WWF Turkey Press</publisher>
+			<pubPlace>Istanbul</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">The virtual sphere: The Internet as a public sphere</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">A</forename><surname>Papacharissi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="9" to="27" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">The virtual sphere 2.0: The internet, the public sphere, and beyond</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">A</forename><surname>Papacharissi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Routledge handbook of Internet politics</title>
+		<editor>A. Chadwick</editor>
+		<meeting><address><addrLine>Abingdon, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="230" to="245" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<monogr>
+		<title level="m" type="main">A private sphere: Democracy in a digital age</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">A</forename><surname>Papacharissi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Polity Press</publisher>
+			<pubPlace>Cambridge, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Collective action in the age of the Internet</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Postmes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Brunsting</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Science Computer Review</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="290" to="301" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">Youth political participation in Asia: Outlooks in Malaysia and Indonesia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ramli</surname></persName>
+		</author>
+		<editor>Konrad Adenauer Stiftung</editor>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Konrad-Adenauer</publisher>
+			<biblScope unit="page" from="11" to="18" />
+			<pubPlace>Singapore</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Youth: Future agents of change or guardians of the establishment?</note>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Global student protests in the news</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Wasserman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">African Journalism Studies</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="4" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">L</forename><surname>Schlozman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Verba</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">E</forename><surname>Brady</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Weapon of the strong? Participatory inequality and the internet</title>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="487" to="509" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Online environmental activism in Turkey: The case study of &quot;the right to water</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">F</forename><surname>Şen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">F</forename><surname>Şen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Global Bioethics</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<monogr>
+		<title level="m" type="main">Political consumerism: Global responsibility in action</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Stolle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Micheletti</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<monogr>
+		<title level="m" type="main">What motivates digital activism? The case of the Save KPK movement in Indonesia. Information</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Suwana</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/1369118X.2018.1563205</idno>
+		<imprint>
+			<date type="published" when="2019" />
+			<publisher>Communication &amp; Society</publisher>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Theorizing citizenship in late modern ICT societies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Svensson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Triple C</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="277" to="288" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Unpacking the use of social media for protest behavior: The roles of information, opinion expression, and activism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Valenzuela</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Behavioral Scientist</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="920" to="942" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<monogr>
+		<title level="m" type="main">Cyberprotest: New media, citizens and social movements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Van De Donk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">D</forename><surname>Loader</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">G</forename><surname>Nixon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Rucht</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Routledge</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Cyber-protest and civil society: The Internet and action repertoires in social movements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Van Laer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Van Aelst</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of internet crime</title>
+		<editor>J. Yovanne &amp; M. Yar</editor>
+		<meeting><address><addrLine>Hoboken, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Taylor &amp; Francis</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="230" to="254" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<monogr>
+		<title level="m" type="main">Voice and equality: Civic voluntarism in American politics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Verba</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">L</forename><surname>Schlozman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">E</forename><surname>Brady</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995" />
+			<publisher>Harvard University Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Carrying online participation offlinemobilization by radical online groups and politically dissimilar offline ties</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wojcieszak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Communication</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="564" to="586" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">The World Bank in Turkey country snapshot</title>
+		<ptr target="http://www.world-nuclear.org/information-library/country-profiles/countries-t-z/turkey.aspx" />
+	</analytic>
+	<monogr>
+		<title level="m">Turkey-Snapshot-Fall2017.pdf World Nuclear Association</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note>Nuclear power in Turkey</note>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<monogr>
+		<title level="m" type="main">Global 200</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>World Wildlife Fund</surname></persName>
+		</author>
+		<ptr target="https://www.worldwildlife.org/publications/global-200" />
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Student-athletes&apos; organization of activism at the University of Missouri: Resource mobilization on Twitter</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Pegoraro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Watanabe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Sport Management</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="24" to="37" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<monogr>
+		<title level="m" type="main">The Power of the internet in China. Citizen activism online</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Yang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Columbia University Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Contesting middle-class civility: Place-based collective identity in Hong Kong&apos;s Occupy Mongkok</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Yuen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Movement Studies</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="393" to="407" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

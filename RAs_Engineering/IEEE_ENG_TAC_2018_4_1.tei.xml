@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Leveraging the Bayesian Filtering Paradigm for Vision-Based Facial Affective State Estimation</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Meshia</forename><forename type="middle">C</forename><surname>Edric Oveneke</surname></persName>
+							<idno type="ORCID">0000-0003-4076-4614</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Isabel</forename><surname>Gonzalez</surname></persName>
+							<email>igonzale@etrovub.be</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Valentin</forename><surname>Enescu</surname></persName>
+							<email>venescu@etrovub.be</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Dongmei</forename><surname>Jiang</surname></persName>
+							<email>jiangdm@nwpu.edu.cn</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hichem</forename><surname>Sahli</surname></persName>
+							<email>hsahli@etrovub.be</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="middle">D</forename><surname>Jiang</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="middle">H</forename><surname>Sahli</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electronics Informatics (ETRO)</orgName>
+								<orgName type="laboratory">VUB-NPU joint AVSP Research Laboratory</orgName>
+								<orgName type="institution">Vrije Universiteit Brussel (VUB)</orgName>
+								<address>
+									<addrLine>Pleinlaan 2</addrLine>
+									<postCode>1050</postCode>
+									<settlement>Brussels</settlement>
+									<country key="BE">Belgium</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="laboratory">Northwestern Polytechnical University (NPU), Shaanxi Key Lab on Speech and Image Information Processing, VUB-NPU joint AVSP Research Laboratory</orgName>
+								<address>
+									<addrLine>Youyo Xilu 127, Xi&apos;an</addrLine>
+									<postCode>710072</postCode>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department" key="dep1">Vrije Universiteit Brussel (VUB)</orgName>
+								<orgName type="department" key="dep2">Department of Electronics &amp; Informatics (ETRO)</orgName>
+								<orgName type="laboratory">VUB-NPU joint AVSP Research Laboratory</orgName>
+								<address>
+									<addrLine>Pleinlaan 2</addrLine>
+									<postCode>1050</postCode>
+									<settlement>Brussels</settlement>
+									<country key="BE">Belgium</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">Interuniversity Microelectronics Centre (IMEC)</orgName>
+								<address>
+									<addrLine>Kapeldreef 75</addrLine>
+									<postCode>3001</postCode>
+									<settlement>Heverlee</settlement>
+									<country key="BE">Belgium</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Leveraging the Bayesian Filtering Paradigm for Vision-Based Facial Affective State Estimation</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TAFFC.2016.2643661</idno>
+					<note type="submission">received 13 Feb. 2016; revised 30 Sept. 2016; accepted 21 Oct. 2016. Date of publication 24 Jan. 2017; date of current version 5 Dec. 2018.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Facial expressions</term>
+					<term>affective state estimation</term>
+					<term>probabilistic reasoning</term>
+					<term>multiple instance regression</term>
+					<term>Hausdorff distance</term>
+					<term>sparse Gaussian processes</term>
+					<term>variational inference</term>
+					<term>regularized least-squares</term>
+					<term>Kalman filtering</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Estimating a person&apos;s affective state from facial information is an essential capability for social interaction. Automatizing such a capability has therefore increasingly driven multidisciplinary research for the past decades. At the heart of this issue are very challenging signal processing and artificial intelligence problems driven by the inherent complexity of human affect. We therefore propose a principled framework for designing automated systems capable of continuously estimating the human affective state from an incoming stream of images. First, we model human affect as a dynamical system and define the affective state in terms of valence, arousal and their higher-order derivatives. We then pose the affective state estimation problem as a Bayesian filtering problem and provide a solution based on Kalman filtering (KF) for probabilistic reasoning over time, combined with multiple instance sparse Gaussian processes (MI-SGP) for inferring affect-related measurements from image sequences. We quantitatively and qualitatively evaluate our proposed framework on the AVEC 2012 and AVEC 2014 benchmark datasets and obtain state-of-the-art results using the baseline features as input to our MI-SGP-KF model. We therefore believe that leveraging the Bayesian filtering paradigm can pave the way for further enhancing the design of automated systems for affective state estimation.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>H UMAN affect display represents a powerful nonverbal social communication cue, being conveyed by the continuous interplay of multi-modal information such as facial, vocal and bodily gestures. Automated analysis of human affective behavior has therefore attracted increased attention from researchers in neuro-science, psychology, cognitive science, computer science and related fields such as affective computing. Among the different types of affective behaviors, particular attention has been paid to facial expressions and its automated analysis from images <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b1">[2]</ref>.</p><p>Understanding facial expressions from images is one of the most challenging problems in the field of affective computing <ref type="bibr" target="#b2">[3]</ref>. At its foundation are a set of fundamental computer vision and machine learning problems that have largely driven the great progress that those fields have made during the past few decades. From a computer vision perspective, facial expression analysis from image sequences is a very challenging task due to the complex deformation of the face, the loss of 3D information during the image formation process <ref type="bibr" target="#b3">[4]</ref> and the presence of nuisance factors such as person-specific morphology, view-point variations and unknown lighting conditions <ref type="bibr" target="#b4">[5]</ref>. From a machine learning perspective, one of the most challenging problems is the ground truth problem <ref type="bibr" target="#b5">[6]</ref>. Most of the machine learning methods used in affective computing assume that the collected annotation is the ground truth, while in reality it is trivial to understand that the collected data is only the perception (belief) of the annotators and not necessarily the "ground truth". Furthermore, the annotation data is contaminated with spatial noise and is often not aligned with the input data. This loss of correspondence between the input data and the labels further complexifies the machine learning problem. As a consequence, it is necessary to design machine learning techniques that are able to cope with problems such as annotation noise and misalignment.</p><p>Despite the recent huge progress in computer vision and machine learning research, current affective computing systems still lack of performance due to the aforementioned issues and some additional issues coming from the nature of affective computing. One of them being the lack of agreement on terms such as emotion, feeling, mood and any other concept related to affect. This lack of agreement has unfortunately spilled over into other research areas such as computer vision and machine learning. We therefore argue that there is a growing need for a principled framework for designing affective computing systems capable of coping with the various issues mentioned above, which is our main motivation.</p><p>The aim of this work is to propose a framework for designing automated systems capable of continuously estimating the human affective state given an incoming stream of image sequences containing facial displays thereof. Based on the recent developments in psychology, neuro-physiology and cognitive science we propose to look at affect as a continuous state corresponding to a general feeling of pleasuredispleasure with some degree of arousal <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>. We further assume that the affective state and its change in time is governed by "laws". This rather physical and system-theoretical point of view inspires us to represent affect as a dynamical system. In that sense, estimating the human affective state given an incoming stream of image sequences can be posed as a Bayesian filtering problem <ref type="bibr" target="#b8">[9]</ref>, i.e., estimating the latent state of a dynamical system based on a sequence of noisy measurements related to the state of the system. This way of posing the human affective state estimation problem opens new horizons in terms of computation techniques used for designing automated systems.</p><p>Leveraging the Bayesian filtering paradigm requires at least the two following models: a process model for describing how the latent state evolves in time and an observation model for describing how the noisy measurements are related to the latent state. In classical engineering problems, the noisy measurements are directly obtained from a real sensor, while in our case we only have access to raw images. We therefore add a third model, sensor model, which describes the relation between the raw images and the noisy measurements related to the latent state. In this work, we restrict ourselves to linear process and observation models with Gaussian additive noise. In this particular case, the Bayesian filtering problem can optimally be solved using the Kalman filter (KF) <ref type="bibr" target="#b8">[9]</ref>. We propose to implement the sensor model using a multiple instance (MI) sparse Gaussian process (SGP) for regression, trained in a supervised manner using available annotations. The choice of SGP is motivated by its non-parametric nature and its capability to cope with large datasets and annotation noise in a principled way <ref type="bibr" target="#b9">[10]</ref>. We further augment the SGP regressor to cope with annotation misalignment by considering the multiple instance learning paradigm <ref type="bibr" target="#b10">[11]</ref>. MI learning is embedded in the SGP framework by designing a new covariance function, with the Hausdorff distance as metric <ref type="bibr" target="#b11">[12]</ref>, yielding the Hausdorff squared exponential (HSE) kernel. The full MI-SGP sensor model is learned incrementally using stochastic variational inference <ref type="bibr" target="#b12">[13]</ref>. The trained MI-SGP is then further embedded in a Kalman filter, yielding a MI-SGP-KF as final model for affective state estimation from images.</p><p>We advance the state-of-the-art in the following ways:</p><p>(1) We propose to model affect as a dynamical system by adopting a system-theoretical point of view and defining the affective state in terms of valence, arousal and their higher-order derivatives; (2) We pose the affective state estimation problem as a multiple instance Bayesian filtering problem and provide a solution based on Kalman filtering with data-driven parameter learning and propose to model a vision-based sensor model using a multiple instance sparse Gaussian process (MI-SGP) for regression;</p><p>(3) We augment the sparse Gaussian process (GP) with a multiple instance Hausdorff squared exponential covariance function to simultaneously cope with annotation noise and unknown misalignment. (4) We quantitatively and qualitatively evaluate our proposed framework on the Audio-Visual Emotion Challenge (AVEC) 2012 and AVEC 2014 benchmark datasets and obtain state-of-the-art results using the baseline features as input to our MI-SGP-KF model. The outline of the paper is as follows. Section 2 gives a description of the background related to facial expressions and affect, and provides an overview of related work. In Section 3, we give a formal definition of affective state and pose the problem of vision-based affective state estimation. Section 4 gives a detailed description of our proposed solution to the problem and introduces the novel MI-SGP-KF model. Section 5 illustrates the performance of our proposed model in terms of experimental results on two benchmark datasets. Section 6 discusses our main findings, proposes further research directions and concludes our work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">BACKGROUND AND RELATED WORK</head><p>With the aim of building an automated system capable of estimating the affective state from facial expressions, we introduce the background related to facial expressions and affect. We then give an overview of related work about vision-based affective state estimation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Facial Affective State</head><p>The scientific study of facial expressions has been pursued now for about two centuries. Although it is widely accepted that facial expressions are vital for communicating social signals, it is still unclear what affective information they convey. During the past decades, researchers such as Paul Ekman <ref type="bibr" target="#b13">[14]</ref> have studied the assumption that facial expression "expresses" emotion empirically and have concluded that facial expressions are accurate indicators of emotions. Many took that work to imply that facial expressions provided the key to people's feelings. But in recent years the psychology literature has been sprinkled by detractors who claim that there is no one-to-one correspondence between facial expressions and emotions <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b15">[16]</ref>, <ref type="bibr" target="#b16">[17]</ref>, <ref type="bibr" target="#b17">[18]</ref>. In fact, some have been arguing there is no evidence to support a link between what appears on someone's face and how they feel inside <ref type="bibr" target="#b18">[19]</ref>, <ref type="bibr" target="#b19">[20]</ref>. We therefore give an overview of recent research developments in psychology, neurophysiology and cognitive science in order to come up with a coherent picture about concepts such as facial expressions and affective state.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.1">Facial Expressions</head><p>From an information-processing perspective, facial expressions consist of a physical component and an affective component <ref type="bibr" target="#b16">[17]</ref>. On one hand, the physical component of facial expressions is well understood and is known to consist of observable morphological changes caused by facial muscle movements. On the other hand, the affective component is not well understood but has for a long time been assumed to reflect a person's internal feelings and basic emotions such as "happiness", "anger", "sadness", "fear", "disgust" or "surprise", which are assumed to be culturally universal and rooted in biological adaptive functions <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b20">[21]</ref>. In contrast, several researchers started to question the traditional "knowledge" about basic emotions and their assumed relationship with facial expressions, manifested by consistent and specific patterns in facial muscle movements <ref type="bibr" target="#b18">[19]</ref>. To this date, it is still unclear what affective information facial expressions exactly encode. Part of the confusion comes from the lack of agreement in the field of psychology around what affective concepts such as basic emotions and feelings exactly are. This confusion has unfortunately spilled over into other research areas such as computer vision, machine learning and more generally, affective computing. We therefore attempt to shed light on this issue and give an informal definition of affect, more specifically affective state, based on recent work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.2">An Informal Definition of Affective State</head><p>Researchers in psychology have been debating over the definition of emotion ever since William James <ref type="bibr" target="#b21">[22]</ref>. Common sense tells us that emotions are expressed on the face and easily decoded by a perceiver without the use of language. This would imply that certain combinations of facial muscle movements encode emotions in a predictable manner. As a consequence, emotion perception would merely require that a perceiver decodes the information that is encoded in facial muscle movements. Meanwhile, increasing research results have demonstrated that people do not consistently produce the specific configurations of facial muscle movements predicted by basic emotions <ref type="bibr" target="#b18">[19]</ref>. In other words, basic emotions are not evidenced as consistent and specific patterns in facial muscle movements. Moreover, there is no convincing evidence of a unique pattern for each emotion in the autonomic nervous system <ref type="bibr" target="#b22">[23]</ref>. In contrast, studies find evidence that facial muscle movements consistently correspond to a general feeling of pleasure-displeasure with some degree of arousal <ref type="bibr" target="#b17">[18]</ref>.</p><p>The general feeling of pleasure-displeasure with some degree of arousal is called "core" affect or simply affect, which is not to be considered as a substitute term for emotion but as the heart of emotions and any emotional feeling. In <ref type="bibr" target="#b6">[7]</ref>, the authors have defined affect as: "A neuro-physiological state that is consciously accessible as a simple, non-reflective feeling that is an integral blend of hedonic (pleasure-displeasure) and arousal (sleepy-activated) values.". In that sense, we can loosely associate the neuro-physiological component to an unconscious experience and the psychological component to a conscious experience. <ref type="figure">Fig. 1</ref> gives a conceptual overview of the duality between affect and feelings.</p><p>From a neuro-physiological point of view, affect is an unconscious mechanism that supports homeostasis, i.e., the stability of a person's internal state is maintained in response to changes in external conditions. In that sense, one is always in an affective state, even if that affective state is relatively neutral <ref type="bibr" target="#b22">[23]</ref>. From a psychological point of view, affect is the conscious feeling of a person's internal state represented by two dimensions, valence (displeasurepleasure) and arousal (deactivation-activation). Moreover, affect is always potentially accessible: whenever asked, people can tell how they feel <ref type="bibr" target="#b23">[24]</ref>. Affect, when changing rapidly and directed at an object and accompanied by certain cognitions, physiological and behavioral changes, is what we know as "basic" emotions. In that sense, the core affect model suggests that "basic" emotions are not biologically hard-wired, but instead, are phenomena that emerge in consciousness "in the moment". An analogy is the sensation of a specific color where the dimensions of hue, saturation, and brightness combine in an integral fashion to form an emerging sensation of any particular color <ref type="bibr" target="#b22">[23]</ref>. As stated in <ref type="bibr" target="#b6">[7]</ref>, a "basic" emotion is typically about external stimuli <ref type="figure">Fig. 1</ref>. Conceptual scheme of facial affective state: Affect is considered as an internally unobservable state, partially causing externally observable facial expressions. In this conceptual scheme, "core" affect and feeling are viewed as dual (unconscious-conscious) concepts. Affect is informally defined as a neuro-physiological state, described by a level of valence and arousal, consciously accessible as a feeling (psychological). In that sense, a "basic" emotion can be interpreted as a sustained conscious feeling caused by external stimuli.</p><p>while "core" affect is primitive and can exist without being attributed to any external stimuli.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.3">Facial Affective State</head><p>Despite the evidence that facial muscle movements consistently correspond to a general feeling of affect, the exact nature of the correspondence is still unknown. What is known is that: (1) facial expression has an affective component; (2) affect is at the heart of emotions, feelings and any emotional experience; (3) one is always in an affective state. The most prudent statement we can make is that facial expressions are at least partially related to (caused by?) an internally unobservable affective state, hence feeling. We illustrate this in <ref type="figure">Fig. 1</ref> by placing a gray arrow between affective state (unobservable) and facial expressions (observable). In that sense, estimating the affective state from a face can be reduced to latent state estimation from (possibly) noisy observations.</p><p>With the aim of designing a system capable of automatically analyzing facial expressions from visual observations, we summarize the aforementioned background knowledge into the following key concepts:</p><p>(1) Facial expression: Externally observable facial movements consisting of a physical and affective component; (2) Affective state: A person's internal (neuro-physiological) state that one can consciously access and experience as a feeling represented as a level of valence (pleasure-displeasure) and a level of arousal (activation-deactivation); (3) Facial affective state: The part of facial expression that "encodes" information related to a person's internal affective state. Given these three key concepts, we proceed with a literature overview of vision-based facial affective state estimation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Related Work</head><p>Recently, automated facial expression analysis has attracted increasing interest within the computer vision and machine learning communities <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b4">[5]</ref>. As facial expressions can be decomposed in a physical and affective component, its automatic analysis can also be separated on either of the two components. The physical component of facial expressions and its automatic analysis has been studied for a long time. Thanks to the introduction of the facial action coding system (FACS) by Paul Ekman <ref type="bibr" target="#b13">[14]</ref>, this has resulted in specific computer vision tasks, e.g., facial action unit recognition and facial action unit intensity recognition. As we are only interested in the affective component, we give an overview of existing computing systems addressing the problem of automatically estimating the affective state (or any related affective measurement) from image sequences containing facial expressions.</p><p>Within the past decades, significant research effort has been made to develop methods for facial affect analysis. Most of the work has been focusing on predicting valencearousal values from images or videos. A huge majority of the methods are based on static regression techniques such as support vector regression (SVR), neural networks (NNs) and their variants. One major problem with such methods is that they do not take into account the dynamics of affect. Some researchers have therefore addressed this issue based on various techniques.</p><p>In <ref type="bibr" target="#b24">[25]</ref>, long short-term memory recurrent neural networks (LSTM-RNN) <ref type="bibr" target="#b25">[26]</ref> are used for continuous affect regression from audio features to a 3D space spanned by activation, valence and time. Baltrusaitis et al. <ref type="bibr" target="#b26">[27]</ref> proposed the use of a continuous conditional random field (CCRF) in combination with support vector machine for regression (SVR) for modeling continuous affect in dimensional space. Although CCRFs can capture the relationship between neighboring frames, they are not flexible models for probabilistic reasoning over time. Bayesian filters, on the contrary, allow the input of physical aspects of the system under investigation. Gunes et al. <ref type="bibr" target="#b27">[28]</ref> focus on dimensional prediction of affect from spontaneous conversational head gestures. A time window-based feature set of various motion based parameters and hidden Markov models (HMMs) (nod, shake, other) log-likelihoods is mapped onto fivedimensional continuous affect space via SVR. In <ref type="bibr" target="#b28">[29]</ref>, the authors proposed an approach that fuses facial expression, shoulder gesture and audio cues for continuous prediction of affect in valence and arousal space. Also it compares the performance of two state-of-the-art machine learning techniques, namely the bi-directional long short-term memory recurrent neural networks (BLSTM-RNN) and SVR. This work showed that, on average, BLSTM-RNNs outperform SVR due to their ability to learn past and future context. Although BLSTM-RNNs are known to perform well on general sequence learning, they rely on past and future information. They can therefore be considered as a "smoothing" technique, while the goal of our work is to perform filtering (tracking), i.e., only taking into account past and present information. <ref type="bibr" target="#b29">[30]</ref> uses an output-associative relevance vector machine (OA-RVM) for dimensional and continuous prediction of affect based on automatically tracked facial feature points. Their proposed regression framework exploits the inter-correlation between the valence and arousal dimensions by including in their model the initial output estimation together with their input features. In addition, OA-RVM regression attempts to capture the temporal dynamics of output by employing a window that covers a set of past and future outputs. This has the same "smoothing" behavior as the BLSTM-RNN method mentioned above.</p><p>Furthermore, very few methods explicitly take the dynamics of affect into account. The work presented in <ref type="bibr" target="#b30">[31]</ref> and <ref type="bibr" target="#b31">[32]</ref> used Kalman filtering for emotion classification. However, they do not address the problem of continuous and dimensional affect estimation. To the best of our knowledge, only a few works such as <ref type="bibr" target="#b32">[33]</ref> using particle filtering for affective state estimation, have taken the dynamics of affect into account. We therefore argue that there is a growing need for explicitly modeling the dynamics of affect for designing systems capable of inferring the affective state in a principled and adaptive manner. In the next sections we will give technical details of how we pose the affective state estimation problem (Section 3) and how we implement a solution to the problem (Section 4), followed by a quantitative and qualitative evaluation on two benchmark datasets (Section 5).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">PROBLEM STATEMENT</head><p>Assuming that the affective state and its change in time is governed by "laws", we adopt a system-theoretical approach and pose the problem of affective state estimation as a Bayesian filtering problem, i.e., estimating the latent state of a dynamical system based on a sequence of noisy observations related to the state of the system. First, we formally define a state-space representation of affect and then we formulate the estimation problem from image sequences as a multiple instance Bayesian filtering problem.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">A Formal Definition of Affective State</head><p>A person always has "core" affect: picture a single point moving in the valence-arousal space (see <ref type="figure">Fig. 1</ref>), possibly responding to internal or external events. Affect can be neutral (the central point), moderate, or extreme (the periphery). Changes in affect can be short lived or long lasting, e.g., in a clinical depression. Intense affect can be the focus of consciousness, but milder affect is typically a part of the background of the persons conscious world. In other words, changes in affect, in proportion to its rapidity and extent, fills consciousness: when the feeling weakens or stabilizes, it recedes into the background and when neutral and stable, affect disappears altogether from consciousness <ref type="bibr" target="#b6">[7]</ref>.</p><p>The affective state can be informally defined as a person's internal (latent) state that one can experience as a feeling represented by a level of valence and arousal (see Section 2.1.2). We therefore propose to formally define the affective state as a continuous time-dependent state vector aðtÞ, with an associated affective state-space</p><formula xml:id="formula_0">A &amp; R 2ðnþ1Þ aðtÞ , v a dv dt da dt . . . d n v dt n d n a dt n À Á T ;<label>(1)</label></formula><p>consisting of a level of valence, arousal and their higherorder derivatives. Incorporating such higher-order derivatives allows us to better capture the dynamics of the affective state. In this work, we consider the highest order to be n ¼ 2, yielding to a state vector composed of the valence, arousal and their first and second order derivatives. As in many real world situations, we obviously do not have access to the true affective state, but only to (possibly related) noisy observations, and must therefore infer the likely states upon that sensory data. Many problems in science require the estimation of the state of a system that changes over time using a sequence of noisy observations made on the system <ref type="bibr" target="#b33">[34]</ref>. Assuming the noisy observations are only available at discrete time steps t k , we denote the affective state vector using a discrete-time notation aðt k Þ or shortly a k in stead of the continuous-time notation aðtÞ defined above. We also define the set Y k , fy 1 ; . . . ; y k g, denoting the collection of noisy observations acquired from the initial time step t 1 up to and including the current time step t k , which we will discuss in next section. In that sense, the affective state estimation problem can be posed as the estimation of the state a k at each discrete time step t k given noisy observations Y k .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Vision-Based Facial Affective State Estimation</head><p>As mentioned above, affective state estimation consists of inferring, at each time step t k , the affective state a k given the set of all available observations Y k . Realizing such kind of inference requires at least two models: a process model pða k ja kÀ1 Þ describing the dynamics of the affective state and an observation model pðy k ja k Þ describing the likelihood of an observation given the affective state. This probabilistic perspective is ideally suited for a Bayesian treatment, which provides a rigorous and general framework for probabilistic reasoning over time <ref type="bibr" target="#b34">[35]</ref>. In that sense, we formulate the general affective state estimation problem as computing (at each time step t k ) a belief (posterior distribution) of the affective state a k given all available observations up to and including time step t k pða k jY k Þ ¼ pða k jY kÀ1 ; y k Þ / pðy k ja k ;</p><formula xml:id="formula_1">Y kÀ1 Þpða k jY kÀ1 Þ ¼ pðy k ja k Þ |fflfflfflffl{zfflfflfflffl} update pða k jY kÀ1 Þ |fflfflfflfflfflffl ffl{zfflfflfflfflfflffl ffl} prediction ;<label>(2)</label></formula><p>Computing such belief is also known as Bayesian filtering or, more generally, stochastic filtering <ref type="bibr" target="#b8">[9]</ref>. The posterior belief is recursively computed in two stages. The first stage, named prediction, involves the process model and the state belief at time step t kÀ1 by rewriting the prediction factor pða k jY kÀ1 Þ using the Chapman-Kolmogorov integral</p><formula xml:id="formula_2">pða k jY kÀ1 Þ ¼ Z A pða k ja kÀ1 Þpða kÀ1 jY kÀ1 Þda kÀ1 ;<label>(3)</label></formula><p>which is known to be computationally intractable in most cases. However, in the particular case of linear and Gaussian process and observation models, the integral becomes tractable and the filtering problem then has a closed form solution, the much celebrated Kalman filter <ref type="bibr" target="#b35">[36]</ref>. The second stage, named update, involves the observation model, which is relatively easy to compute.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Kalman Filtering</head><p>The Kalman filter represents the exact solution of the Bayesian filtering problem (2) when the process and observation models are linear and Gaussian. We therefore formulate the process and observation models as follows:</p><formula xml:id="formula_3">pða k ja kÀ1 Þ ¼ N ðFa kÀ1 ; QÞ pðy k ja k Þ ¼ N ðHa k ; RÞ;<label>(4)</label></formula><p>where the matrices F, H, Q and R are the process matrix, observation matrix, process noise covariance and observation noise covariance respectively. The linearity of the process dynamics and of the observation model with Gaussian noise, guaranties that an initial Gaussian density of the state vector pða 0 Þ at time t 0 remains Gaussian for all times t k . The linear Gaussian problem is completely characterized by its mean vector and covariance matrix. In that sense, the Bayesian filtering problem (2) reduces to the propagation and updating of these two statistical parameters.</p><p>In challenging problems such as vision-based affective state estimation we do not have the knowledge about the process and observation model parameters F, H, Q and R.</p><p>We therefore have to estimate these parameters from available data. In Section 4.2, we discuss how these parameters are estimated using linear least-squares optimization with Tikhonov regularization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Sensor Modeling</head><p>The general affective state estimation problem as formulated in (2) assumes we have direct access to the noisy observations Y k through one or eventually multiple sensors. Unfortunately, in real-world scenarios such as vision-based affective state estimation we do not obtain y k directly, but we only have access to an incoming stream of images (or feature vectors) x k presumably containing information about facial expressions. Furthermore, because we don't know the exact nature of the causal relationship between facial expressions and a person's internal affective state, there is no guarantee that each feature vector x k even contains information about the affective state a k . Hence, to ensure we capture informative feature vectors for inferring observation y k at time step t k , we propose to consider a short set (bag) of feature vectors B k ¼ fx kÀT ; . . . ; x k g acquired using a sliding window from time step t kÀT up to and including t k , with T a given parameter. As a consequence, solving problem (2) requires a sensor model y k $ pðy k jB k Þ;</p><p>describing the inference of observation y k given a bag B k . We propose to model such a sensor using multiple instance learning <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b36">[37]</ref>. More precisely, we assume we have a training dataset containing observations and their corresponding bags such that we can learn the sensor model in a supervised manner. From a machine learning perspective, MI learning also helps dealing with labeling misalignment. In summary, the general algorithmic framework we propose for solving the vision-based affective state estimation problem consists of Bayesian filtering combined with multiple instance regression. In this work we chose to implement this general framework using a multiple instance sparse Gaussian process as sensor model and Kalman filter as state estimator, hence MI-SGP-KF. <ref type="figure" target="#fig_0">Fig. 2 depicts a graphical</ref> representation of the proposed MI-SGP-KF framework. In practice, once we have the process model pða k ja kÀ1 Þ, observation model pðy k ja k Þ, sensor model pðy k jB k Þ, initial affective state prior pða 0 Þ and sliding window length T , we can recursively compute the posterior distribution (belief) of the affective states pða k jY k Þ at each time step t k for a potentially infinite amount of incoming feature vectors x k .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">MULTIPLE INSTANCE BAYESIAN FILTERING</head><p>In this section we give a detailed description of how we model the multiple instance sensor model (Section 4.1) and how we embed it in a Kalman filter (Section 4.2) after learning the process and observation models in a supervised manner.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Multiple Instance Sparse Gaussian Process</head><p>Due to the lack of knowledge about how human beings encode affect related measurements from visual sensory inputs, we propose to use supervised machine learning techniques for establishing a mapping between the input image sequences and the noisy measurements, related to the affective state.</p><p>In this work, we consider the situation in which supervised learning exploits labeled bags of feature vectors B 2 PðXÞ, where PðXÞ is the power-set (the set of nonempty subsets) of the feature space X . Such a learning problem is also known as multiple instance learning <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b36">[37]</ref>. In the context of facial affective state estimation, the bags correspond to image sequences. We also define the output space Y as a continuous, dimensional space of noisy observations. Note that in general, the observations y can be multi-dimensional, while in this section we only consider 1-dimensional outputs. In practice, we learn a MI regressor for each dimension of the observation space. More precisely, we cast the MI regression problem as learning a model pðyjBÞ or, from a deterministic point of view, learning a mapping g : PðXÞ ! Y given a training dataset D ¼ fB i ; y i g N i¼1 of N observations. Two general approaches exist to tackle this problem. The first approach (the parametric approach) is to restrict the class of functions that we consider, for example by only considering linear functions or specific non-linear functions such as neural networks. The second approach (the non-parametric approach) is to give a prior probability to every possible function, where higher probabilities are given to functions that we consider to be more likely, for example because they are smoother than other functions <ref type="bibr" target="#b37">[38]</ref>. In this work we choose to adopt a non-parametric approach. However, as non-parametric approaches have the drawback that there is an uncountable infinite set of possible functions, which makes the problem untreatable in finite time, we propose using the Gaussian process framework and extend it for multiple instance regression.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.1">Gaussian Processes for Regression</head><p>A Gaussian process is a generalization of the Gaussian probability to functions. Whereas a probability distribution describes random variables which are scalars or vectors (for multivariate distributions), a GP governs the properties of functions (infinite-dimensional distribution). A GP is completely specified by its mean function mðBÞ and covariance function kðB; B 0 Þ gðBÞ $ GPðmðBÞ; kðB; B 0 ÞÞ: <ref type="bibr" target="#b5">(6)</ref> In practice, the mean function is often taken to be zero, which is a reasonable assumption and does not degrade the representative power of the GP. For realistic modeling situations such as facial affective state estimation, we assume noisy observations (labels) y i ¼ gðB i Þ þ with Gaussian noise $ N ð0; bÞ. The GP model is defined as</p><formula xml:id="formula_5">pðyjgÞ ¼ N ðyjg; bI N Þ; pðgÞ ¼ N ðgj0; K NN Þ;<label>(7)</label></formula><p>with y ¼ ½y 1 ; . . . ; y N T and g ¼ ½gðB 1 Þ; . . . ; gðB N Þ T denoting the concatenation of the observed labels and bags respectively. The inferred predictive mean and covariance for a test bag B Ã are estimated as</p><formula xml:id="formula_6">gðB Ã ÞjB Ã ; D; b $ N ðy Ã ; s 2 Ã Þ;</formula><p>where</p><formula xml:id="formula_7">y Ã ¼ k T NÃ ½K NN þ bI N À1 y s 2 Ã ¼ k ÃÃ À k T NÃ ½K NN þ bI N À1 k NÃ ;<label>(8)</label></formula><p>with matrices k ÃÃ , k NÃ and K NN denoting the covariance functions evaluated between testing samples, trainingtesting samples and training samples respectively <ref type="bibr" target="#b37">[38]</ref>. Equation <ref type="bibr" target="#b7">(8)</ref> shows that GPs, being principled probabilistic models, not only allow us to compute point-predictions but also its uncertainty. This is an advantage over other regression methods and can be of great value for practical applications. The full GP model (7) is specified by the choice of the covariance function (kernel). In other words, the covariance function shapes the final mapping g, learned from the training data D. In the context of our work, we must specify a covariance function that can handle multiple instances in order to implicitly "recover" the lost correspondence between the noisy observations (labels) and input feature vectors, i.e., labeling misalignment. To this end, we introduce a multiple instance covariance function.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.2">The Hausdorff Squared Exponential Covariance</head><p>The covariance function is a crucial ingredient in a Gaussian process, as it encodes our assumptions about the function we wish to learn. It defines nearness or similarity. From a slightly different viewpoint it is clear that in supervised learning the notion of similarity between data points is crucial, i.e., it is a basic assumption that data points with inputs which are close are likely to have similar target values, and thus training points that are near to a test point should be informative about the prediction at that test point. Any arbitrary function of inputs will not, in general, be a valid covariance function. To be a valid covariance function, it must be symmetric and positive definite. One of the most widely-used kernel is the squared exponential (SE) covariance function kðx; x 0 Þ ¼ expðÀ</p><formula xml:id="formula_8">kxÀx 0 k 2 2 2g</formula><p>Þ with parameter g defining the characteristic length-scale. This covariance function is infinitely differentiable, delivering a very smooth GP. However, such a covariance function is not suitable for multiple instance learning because it is based on similarity measures for single instances and not multiple instances (bags). To cope with multiple instances, we introduce the Hausdorff squared exponential covariance function, an extension of the SE covariance function to compute the covariance between multiple instances. Given two bags B and B 0 , we define the HSE covariance function as</p><formula xml:id="formula_9">kðB; B 0 Þ ¼ exp À d 2 H ðB; B 0 Þ 2g ;<label>(9)</label></formula><p>where</p><formula xml:id="formula_10">d H ðB; B 0 Þ , max max x2B min x 0 2B 0 kx À x 0 k 2 ; max x 0 2B 0 min x2B kx 0 À xk 2 ;</formula><p>is the Hausdorff distance <ref type="bibr" target="#b11">[12]</ref>. It measures to which extent the bags B and B 0 are close to each other. One advantage of using the Hausdorff distance is its invariance to the number of instances inside the bag. We can therefore compute the HSE covariance for variable length image sequences, which makes our method applicable to different scenarios. Furthermore, for bags containing only one sample (singletons) the Hausdorff distance reduces to the euclidean distance d H ðx; x 0 Þ ¼ kx À x 0 k 2 . We can therefore consider the HSE covariance function as a generalization of the SE covariance function.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.3">Sparse GPs for Large Datasets</head><p>One major drawback of the standard GP model (7) is it's computational burden, which becomes a limiting factor when large amounts of training data are envisaged. More precisely, computing the matrix inverse in Equation <ref type="formula" target="#formula_7">8</ref>becomes intractable (at training and testing stage) for large datasets because of its computational complexity that scales as OðN 3 Þ in time and OðN 2 Þ in space, where N is the number of training samples. We therefore need to consider approximate or sparse methods in order to deal with large datasets. To overcome this limitation, many approximate or sparse methods have been proposed <ref type="bibr" target="#b38">[39]</ref>, <ref type="bibr" target="#b39">[40]</ref>. Most of them construct an approximation based on a small set of inducing points that allow the reduction of the time complexity. In <ref type="bibr" target="#b38">[39]</ref>, the authors introduced a new GP regression model whose covariance is parametrized by the location of M pseudo-input points, which can be learned. When taking M much smaller than N (the number of training samples), we obtain a regression method which has a much lower training and prediction cost. where K MM is the covariance function evaluated between all the inducing points, K MN is the covariance function between all inducing points and training samples, and </p><formula xml:id="formula_11">K ¼ K NN À K T MN K À1 MM K MN .</formula><formula xml:id="formula_12">y Ã ¼ k T MÃ ½K MM þ bI M À1 u;<label>(11)</label></formula><p>which reduces the computational complexity of the standard GP from OðN 3 Þ to OðNM 2 Þ in time and from OðN 2 Þ to OðNMÞ in space. We choose the inducing points D to be single instances lying in the original input space X instead of it's power-set PðXÞ. Following the definition of the HSE covariance function (9), the entries of the matrix k MÃ are computed using the distance</p><formula xml:id="formula_13">d H ðB Ã ; d j Þ ¼ max x Ã 2B Ã kx Ã À d j k 2 .</formula><p>With the MI-SGP, as defined (10), we obtain a scalable non-parametric probabilistic model for multiple instance regression suitable for computing point-predictions from image sequences (bags) as well as computing the prediction uncertainty. The sparse pseudo-inputs can be learned off-line in an unsupervised way using methods such as k-means or dictionary learning <ref type="bibr" target="#b40">[41]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.4">Stochastic Variational Inference</head><p>Training SGPs is known to be very difficult because of the complex interactions between the observed random variables and latent random variables. Central to working with latent variable models is the problem of computing the posterior distribution of the latent structure pðujDÞ given the training data. For many interesting models, computing this posterior exactly is intractable and one must therefore resort to approximate methods such as variational inference. Variational inference tries to find the member qðuÞ of a family of simple probability distributions that is closest to the true posterior distribution pðujDÞ.</p><p>In the context of the MI-SGP, the goal of variational inference is to optimize the distribution qðuÞ through its canonical parameters u u. Following the definition of the MI-SGP model <ref type="bibr" target="#b9">(10)</ref>, the variational distribution is parametrized as a multivariate Gaussian distribution qðuju uÞ ¼ N ðujm; SÞ, with canonical parameters u u ¼ ðu u ð1Þ ; u u ð2Þ Þ defined as u u ð1Þ , S À1 m and u u ð2Þ , À 1 2 S À1 . Finding the optimal u u is done by minimizing the Kullback-Leibler (KL) divergence between the variational distribution qðuju uÞ and the posterior pðujDÞ, which is equivalent to maximizing the evidence lower-bound (ELBO) on the marginal log-probability of the observations y ¼ ½y 1 ; . . . ; y N T log pðyÞ !</p><formula xml:id="formula_14">X N i¼1 h log N ðy i jk T Mi K À1 MM m; bÞ Àk i;i 2b À 1 2 TrðSL i Þ i À KL qðuÞjjpðuÞ ¼ X N i¼1 L i À KL qðuÞjjpðuÞ , L;<label>(12)</label></formula><p>with k Mi denoting the ith column of K MN ,k i;i denoting element ði; iÞ ofK and</p><formula xml:id="formula_15">L i ¼ b À1 K À1 MM k Mi k T Mi K À1</formula><p>MM <ref type="bibr" target="#b41">[42]</ref>. By optimizing the ELBO, the inference problem is turned into an optimization problem. The main advantage of the ELBO <ref type="bibr" target="#b11">(12)</ref> is that it is written as a sum of N terms L i , each corresponding to an input-output pair ðB i ; y i Þ. We can therefore use a stochastic gradient approach as optimization strategy and update the canonical parameters while acquiring new observations individually or in mini-batches <ref type="bibr" target="#b12">[13]</ref>. Updating the canonical parameters then results in the following stochastic gradient ascent approach</p><formula xml:id="formula_16">u u ð1Þ iþ1 ¼ u u ð1Þ i þ r iþ1 b À1 K À1 MM K Mi y i À S À1 i m i u u ð2Þ iþ1 ¼ u u ð2Þ i þ r iþ1 À 1 2 L i À 1 2 S À1 i ;<label>(13)</label></formula><p>with the sequence of step sizes r i satisfying P i r i ¼ 1 and P i r 2 i &lt; 1. Under these conditions, the stochastic gradient approach converges to a local optimal of L. To optimize the covariance and noise hyper-parameters g and b respectively, we can take the derivative of the ELBO and perform the stochastic gradient ascent in parallel to the variational parameters <ref type="bibr" target="#b41">[42]</ref> or find the best parameters experimentally using cross-validation. As such, we obtain a sensor model pðy k jB k Þ, describing the posterior of a noisy observation y k given a bag of feature vectors B k . In the next section we describe how we embed the MI-SGP sensor model into a Kalman filter.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Kalman Filter Parameter Estimation</head><p>In order to learn the parameters of the process and observation models, we assume we have access to a dataset consisting of a collection of frame-by-frame image features fx i g N i¼1 and associated frame-by-frame valence-arousal annotation fv i ; a i g N i¼1 , where N is the number of training frames. The goal is to transform this original dataset into a dataset suited for training the Kalman filter parameters. To this end, we create a new training dataset D ¼ fa i ;ŷ i g N i¼1 consisting of affective states a i , i.e., valence, arousal and higher-order derivatives, and noisy observationsŷ i computed using our proposed MI-SGP regressor. Since our MI-SGP model is defined for scalar observationsŷ i 2 R, we run multiple MI-SGP regressors in order to obtain vectorial observationŝ y i 2 R d , where the dimension d is arbitrary chosen by the user. In most cases we choose d to be the same as the dimension of the state vectors a i <ref type="bibr" target="#b0">(1)</ref>. Given the dataset D, the problem of estimating the process and observation model parameters can be posed as a linear least-squares problem followed by an error covariance estimation step.</p><p>For estimating the process parameters F and Q, we construct the matrices A ¼ ½a 1 ; . . . ; a NÀ1 T 2 R ðNÀ1ÞÂd and B ¼ ½a 2 ; . . . ; a N T 2 R ðNÀ1ÞÂd and formulate the parameter estimation problem asF ¼ min F kAF À Bk 2 F þ kFk 2 F , which is a linear least-squares problem with Tikhonov regularization and is known to have a closed-form solution</p><formula xml:id="formula_17">F ¼ ðA T A þ I d Þ À1 A T B:<label>(14)</label></formula><p>The regularization parameter can be determined experimentally using methods such as cross-validation. We then estimate the error covariance matrix by computing the sample covariance of the residualŝ</p><formula xml:id="formula_18">Q ¼ 1 N À 1 X N i¼2 ða i ÀFa iÀ1 Þða i ÀFa iÀ1 Þ T ;<label>(15)</label></formula><p>which is known to be an unbiased estimate of the true covariance of multivariate distributions. Similar to the parameter estimation of the process model, we estimate the parameters of the observation model H and R by constructing the matrices A ¼ ½a 1 ; . . . ; a N T 2 R NÂd and B ¼ ½ŷ 1 ; . . . ;ŷ N T 2 R NÂd and computing the estimateŝ H andR usingĤ</p><formula xml:id="formula_19">¼ ðA T A þ I d Þ À1 A T B R ¼ 1 N X N i¼1 ðŷ i ÀĤa i Þðŷ i ÀĤa i Þ T :<label>(16)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Affective State Estimation</head><p>The MI-SGP-KF algorithm for affective state estimation is summarized in Algorithm 1. Due to space limitation and the fact that Kalman filtering equations are well known, we do not explain the equations and directly provide them inside the pseudo-code. Interested readers could refer to <ref type="bibr" target="#b35">[36]</ref> for the details of these equations. The only input parameters MI-SGP-KF requires for the KF are the estimated parametersF,Ĥ,Q,R and an estimate of the initial distribution of the state, characterized by a meanâ 0 and covariancê S 0 . The parameters needed for the MI-SGP sensor are the M inducing points D, their associated global latent variable u, the covariance matrix K MM evaluated between all the inducing points and the hyper-parameters b and g. Since the MI-SGP only handles 1-dimensional outputs, we train multiple MI-SGP models independently and combine their single measurement into one multi-dimensional measurement vector for Kalman filtering. For new input video sequences, given a user-specified window length T , the MI-SGP-KF continuously collects bags B k at each time step t k and recursively infers the affective statesâ k and covariancesŜ k . The affective states and covariances fully characterize the posterior distribution (belief) of the affective state given a "growing" collection of observations Y k inferred using our proposed MI-SGP sensor model. The practical implication is that this algorithm can monitor the affective state and its uncertainty while acquiring images and keeping the memory resources fixed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 1. MI-SGP-KF</head><p>input: Process model fF;Qg; Observation model fĤ;Rg; Dimension d of measurement vector; d sensor models fD; K MM ; u j ; b j ; g j g with j ¼ 1; . . . ; d; Initial affective state prior fâ 0 ;Ŝ 0 g; and window length T output: The estimated affective statesâ k and covariancesŜ k for each time step t k for each time step t k do B k ¼ fx kÀT ; . . . ; x k g //bag of instances</p><formula xml:id="formula_20">y kj ¼ k T Mk ½K MM þ b j I M À1 u j //observation ĵ a kjkÀ1 ¼Fâ kÀ1 //predicted statê S kjkÀ1 ¼FŜ kÀ1F T þQ //predicted covariance G ¼Ŝ kjkÀ1Ĥ T ½ĤŜ kjkÀ1Ĥ T þR À1 //gain a k ¼â kjkÀ1 þ G½y k ÀĤâ kjkÀ1 //updated statê S k ¼Ŝ kjkÀ1 À GĤŜ kjkÀ1 //updated covariance end</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">EXPERIMENTAL RESULTS</head><p>To evaluate our proposed framework, we test the MI-SGP-KF on on two datasets of the Audio-Visual Emotion Challenge, namely AVEC 2012 <ref type="bibr" target="#b42">[43]</ref> and AVEC 2014 <ref type="bibr" target="#b43">[44]</ref>. We start by giving a brief description of the datasets and then provide the implementation details of the MI-SGP-KF, followed by a quantitative evaluation and compare it to state-of-the-art methods. We also analyze the window size T on the overall performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">The AVEC Datasets</head><p>The Audio-Visual Emotion Challenge 2012 dataset <ref type="bibr" target="#b42">[43]</ref> contains video sequences of people interacting with virtual agents, while naturally expressing their emotions. We use the Fully Continuous Sub-Challenge (FCSC) challenge and estimate the affective state (valence and arousal) at each frame of the recording. The AVEC 2012 data set consists of 63 baseline videos, 31 for training and 32 for development. Each baseline video is recorded at 49.979 frames per second at a spatial resolution of 780 Â 580 pixels. However, in our experimental setup, we down-sample the videos to the commonly used 25 frames per second. As input feature vectors to the MI-SGP-KF model, we use the provided baseline features, being a set of local binary patterns (LBP) <ref type="bibr" target="#b44">[45]</ref>. In addition to the aggregated LBP descriptor, the 2D coordinates of the left eye and right eye of the face and the 2D coordinates of the left top and right bottom of the face region are added as extra features. This results in a 5,908-dimensional feature vector x 2 R 5;908 which we collect into a bag B k ¼ fx kÀT ; . . . ; x k g of T instances at each frame k. Similar to feature vectors, we use the valence and arousal labels down-sampled at 25 frames per second.</p><p>For the AVEC 2014 dataset <ref type="bibr" target="#b43">[44]</ref>, we use the Affect Recognition Sub-Challenge (ASC). The dataset contains two tasks: Northwind, where the participants read aloud an excerpt of a fable spoken in German language and the Freeform, where the participants respond to one of a number of questions, again in the German language. For our evaluation, we mix both tasks, resulting in a total of 300 videos equally split in a training, development and test set. Similar to the AVEC 2012 dataset, we use the available baseline video features, namely the local Gabor binary patterns from three orthogonal planes (LGBP-TOP) <ref type="bibr" target="#b45">[46]</ref>. The resulting features are collected into a bag B k ¼ fx kÀT ; . . . ; x k g of T instances at each frame k.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Empirical Evaluation</head><p>Using the AVEC datasets, we first give an overview of how we trained the MI-SGP sensor model, the KF process and observation models and then give a quantitative and qualitative assessment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.1">Training the MI-SGP Models</head><p>For training MI-SGP sensor models, we define a measurement vector y k ¼ ðy k1 ; . . . ; y k6 Þ T 2 R 6 with as entries: valence y k1 , arousal y k2 , valence first order derivative y k3 , arousal first order derivative y k4 , valence second order derivative y k5 and arousal second order derivative y k6 . We estimate the first and second order derivatives using the central finite differences of the valence-arousal labels provided by the AVEC datasets. We train six different MI-SGP models for each measurement entry. All the MI-SGPs (j ¼ 1; . . . ; 6) were trained with noise parameter b j and scale parameter g j determined experimentally by selecting the best performing model in the parameter ranges f0:01; 0:02; . . . ; 0:99; 1g with step-size 0.01 for both b j and g j .</p><p>For obtaining sparse models, we computed one set of M ¼ 500 inducing points D ¼ ½d 1 ; . . . ; d M for all the models using the on-line dictionary learning algorithm described in <ref type="bibr" target="#b40">[41]</ref>. M was set manually as a good trade-off between computational complexity and performance. The kernel matrix K MM was computed once off-line and used during the entire training process. Considering the full training dataset D ¼ fx i ; y i g N i¼1 , we collected training bags B i using a sliding window of size T ¼ 25 (1 second) for each training frame i. We then use each bag B i to compute the kernel matrices K Mi between the inducing points D and the bag, using the specialized HSE kernel introduced in Section 4.1.2. For each of the MI-SGP models, we then train the global parameter u j 2 R M using the stochastic variational inference algorithm explained in Section 4.1.4. We chose an initial learning rate r 0 ¼ 0:2 and let it decay with ratio 0.99 at each iteration. After the training process we obtained six MI-SGP models, each described by a set of parameters fD; K MM ; u j ; b j ; g j g for j ¼ 1; . . . ; 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2">Training the KF Models</head><p>Having trained the sensor models for inferring noisy measurements, the only remaining models needed for performing affective state estimation are the KF process and observation models.</p><p>Learning the KF process and observation models can be done by solving a linear least-squares optimization problem with Tikhonov regularization followed by a sample covariance estimation (see Section 4.2). For estimating the process model parameters F; Q and observation model parameters H, R, we construct a training dataset D ¼ fa i ;ŷ i g N i¼1 consisting of affective states a i obtained using the valence and arousal labels and their first and second derivatives, and noisy measurementsŷ i obtained using the trained MI-SGP models (see Equation <ref type="bibr" target="#b12">(13)</ref>). Using this training dataset, we estimate the parameters using Equations <ref type="bibr" target="#b13">(14)</ref>, <ref type="bibr" target="#b14">(15)</ref>, and <ref type="bibr" target="#b15">(16)</ref> with the Tikhonov regularization parameter set to ¼ 0:01, yielding a process model fF;Qg and observation model fĤ;Rg. In the following, we provide the learned process and observation model parametersF andĤ for the AVEC 2012 dataset F ¼ 1:00 0:00 0:02 0:00 0:00 0:00 0:00 1:00 0:00 0:02 0:00 0:00 0:00 0:00 0:76 0:02 0:02 0:00 0:00 0:00 0:02 0:76 0:00 0:02 À0:03 0:03 À9:96 0:73 À0:30 0:00 0:03 À0:10 0:76 À9:59 0:00 À0:38</p><formula xml:id="formula_21">0 B B B B B B @ 1 C C C C C C A (17)</formula><p>H ¼ 0:61 0:04 0:15 0:13 0:00 0:00 0:01 0:67 0:06 0:16 0:00 0:00 0:00 0:00 0:05 0:02 0:00 0:00 0:00 0:00 0:02 0:05 0:00 0:00 0:00 0:00 0:04 0:00 0:00 0:00 0:00 0:00 0:00 0:03 0:00 À0:00</p><formula xml:id="formula_22">0 B B B B B B @ 1 C C C C C C A : (18)</formula><p>From the learned process model parameterF, we can see that the level of valence and arousal do not influence each other directly. However, from the elementsF 43 andF 34 , we see that the first order derivative of valence (arousal) has a non-negligible influence on the first order derivative of arousal (valence). The influence of the second order derivative is more difficult to interpret because of potential modeling errors involved due to the lack of dynamic features. The observation model parameterĤ indicates that MI-SGP predictions for valence and arousal levels are correlated with the their corresponding states. However, due to lack of dynamic features, the first and second order measurements are less correlated to their corresponding states.</p><p>In addition to these models, we estimate the initial affective state vectorâ 0 and covariance matrixŜ 0 . They are obtained using the average and sample covariance estimated from the training videos, assuming the development videos have similar initial states. For the AVEC 2012 dataset, we obtained the following initial affective statê a 0 ¼ À0:0052 À0:4048 À0:0031 0:0001 À0:0054 À0:4178 ð Þ T : <ref type="bibr" target="#b18">(19)</ref> This initial state indicates that the valence value at the beginning of each video is À0:0052 and that the starting arousal value is around À0:4048. Both initial first and second oder derivatives of valence are almost 0, while the initial second order derivative of arousal is À0:4178, which is a bit difficult to interpret and is also prone to larger errors due to the finite difference method used for estimating the higher-order derivatives. We estimated the initial covarianceŜ 0 using the sample covariance estimated from fa ð1Þ 0 ; . . . ; a ð31Þ 0 g. For the AVEC 2014 dataset, we obtained the following process and observation parametersF andĤ </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.3">Testing the MI-SGP-KF Algorithm</head><p>The trained MI-SGP sensor models in combination with the KF process and observation models are used for testing the MI-SGP-KF algorithm on the AVEC 2012 and 2014 development videos. Each of the videos consists of features extracted as explained in Section 5.1. The full testing phase was implemented as explained in Algorithm 1. Similar to the training phase of the MI-SGP models, we collect bags B k using a sliding window of size T ¼ 25 (1 second) for each testing frame k.</p><p>The MI-SGP-KF's performance is measured by the Pearson's correlation coefficient (CC) between the estimated valence-arousal values (first 2 entries of the estimated stateŝ a k ) and the valence-arousal labels as provided by the AVEC datasets. According to the protocol of the AVEC challenges, we compute the CC measure for each video and then take the average. <ref type="table" target="#tab_1">Table 1</ref> summarizes the obtained results on AVEC 2012, compared to other state-of-the-art methods. As it can be seen, our proposed method yields very competitive results. It outperforms the baseline results <ref type="bibr" target="#b42">[43]</ref> by 34 percent on average and most of the state-of-the-art results <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b32">[33]</ref>, <ref type="bibr" target="#b46">[47]</ref>, <ref type="bibr" target="#b47">[48]</ref> by more than 10 percent on average. The method presented in <ref type="bibr" target="#b32">[33]</ref> uses particle filtering, but obtains a much lower score than our solution based on Kalman filtering. Only the recent 3D model-based method introduced in <ref type="bibr" target="#b48">[49]</ref> outperforms our method by 3 percent on the valence dimension but does 6 percent worse on the arousal dimension and 1 percent worse on average (valence-arousal). A similar procedure has been followed for the evaluation on the AVEC 2014 dataset. <ref type="table" target="#tab_2">Table 2</ref> summarizes the obtained results using our MI-SGP-KF model, compared to the baseline results. For both datasets, we can observe that the significant performance gains are more attributed to the dynamic inference approach (KF) than the multiple instance regression (MI-SGP). We conjecture that the similar performances obtained using the 0th order, 1st order and 2nd order dynamic models <ref type="table" target="#tab_1">(Tables 1 and 2</ref>) are due to the fact that in our current experiments, we did not make use of any dynamic features. Moreover, the simple central finite difference method used to estimate the high order derivatives, of the valence/arousal time series (labels), do not consider the noise in such time series. This leads to unreliable training data for the MI-SGP and the KF models.</p><p>For qualitative evaluation, we also considered the Concordance Correlation Coefficient (CCC), which has been recently used in the new AV þ EC 2015 challenge <ref type="bibr" target="#b49">[50]</ref> CCCðx; yÞ ¼ 2rðx;</p><formula xml:id="formula_23">yÞs x s y s 2 x þ s 2 y þ ðm x À m y Þ 2 ;<label>(22)</label></formula><p>where rðx; yÞ is the Pearson's CC between prediction and ground truth, s x and s y their respective variances and m x and m y their respective means. The CCC measure has been preferred to CC because of its capability of better capturing the agreement between the estimated values and provided labels. We therefore rank all the results on the AVEC datasets according to the CCC measure in descending order and show that it better illustrates the qualitative performance of our proposed system. Due to space limitation, we only display the top-3 performances for the valence-arousal dimensions. The graphs for AVEC 2012 are depicted in <ref type="figure" target="#fig_4">Fig. 4A</ref>. The first row corresponds to the results for valence estimations and second row corresponds to the results for arousal estimation. We can clearly see, e.g., video 12 against video 22 for valence, that a better CC measure does not necessarily reflect the qualitative superiority of the estimation. On the contrary, we can clearly see, e.g., video 24 for valence, that a high CCC score reflects a good (qualitative) estimation result. The same can be observed for the arousal dimension, e.g., video 7 against video 24. A similar observation can be made for the AVEC 2014 results as illustrated in <ref type="figure" target="#fig_4">Fig. 4B</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.4">Analyzing the Effect of the Bag Size</head><p>To evaluate how our model adapts to the annotation reaction lags reported for AVEC 2012 <ref type="bibr" target="#b46">[47]</ref>, <ref type="bibr" target="#b50">[51]</ref>, we trained  several MI-SGP-KF models with bag sizes T varying from 0.5 to 5.25 seconds with increments of 0.25 seconds. <ref type="figure" target="#fig_5">Fig. 5</ref> depicts the obtained results for this experiment. We observe a maximum Pearson's correlation coefficient for valence and arousal when the bag size approaches 1.5 and 5.25 seconds respectively, which is consistent with the results reported in <ref type="bibr" target="#b46">[47]</ref>. Meanwhile, <ref type="figure" target="#fig_5">Fig. 5</ref> also shows that the gain in CC is of only 2 percent. We therefore argue that, with computational efficiency in mind, a bag size of 1 second is a good trade-off.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">DISCUSSION AND CONCLUSIONS</head><p>We proposed a principled framework for affective state estimation based on Bayesian filtering, a general method for probabilistic reasoning over time. We argue that such a reasoning capability is essential for capturing the affective information "encoded" in facial expressions. Experimental results demonstrated the potential of such a capability. We implemented our framework using a Kalman filter as estimator and a multiple instance sparse Gaussian process as sensor model. Using a KF makes our method easy to implement and run in real-time while keeping track of both the affective state estimate and uncertainty. On an Intel Core i7-2600 CPU @ 3.40 GHz machine, one iteration of Algorithm 1 takes 1.2 milliseconds for inferring the affective state from bags of 1 second. The MI-SGP sensor model allows us to infer noisy measurements while taking multiple video frames (features) into account. At training stage, this gives the possibility of dealing with labeling noise and misalignment, where the noise is handled by the SGP and the misalignment is handled by MI. As main technical contribution, we introduced a specialized Hausdorff squared exponential kernel for incorporating the MI capability inside a SGP. This HSE kernel is formulated in a way such that multiple instance of variable length can be used during training and testing stage. Although such a MI strategy already yields promising results, we argue that one can further enhance the sensor model by using regression models capable of taking multiple frames into account. The current HSE based MI-SGP implicitly "selects" the most informative frame of the collected bags and therefore ignores the remaining ones. A more principled model should be capable of taking all the past frames into account. For future work, we will therefore consider models such as recurrent neural networks <ref type="bibr" target="#b25">[26]</ref>, <ref type="bibr" target="#b51">[52]</ref> or recurrent Gaussian processes <ref type="bibr" target="#b52">[53]</ref> as alternative methods for modeling the sensor. Such recurrent models have a "unlimited" capacity of memorizing information from the past, while classical multiple instance models only select one bit of information but don't memorize information <ref type="bibr" target="#b36">[37]</ref>.</p><p>In addition to the aforementioned contributions, our method does not use complex features or multiple modalities/cues as in other works <ref type="bibr" target="#b32">[33]</ref>, <ref type="bibr" target="#b48">[49]</ref>. We quantitatively and qualitatively evaluated our proposed framework on the AVEC 2012 and AVEC 2014 benchmark datasets and obtained state-of-the-art results using the baseline features. This clearly indicates the added value of posing the problem of affective state estimation as a Bayesian filtering problem. However, as future work we will augment the current framework with dynamic features capable of capturing higher-order changes in valence and arousal.</p><p>Another main advantage of our proposed framework is its flexibility in terms of modeling the affective estimator. In this work we chose to implement our framework using a Kalman filter as estimator. While KF is known to be optimal in linear and Gaussian cases it is known to have poor performance when the dynamic system under investigation is not linear and Gaussian. We therefore argue that more advanced techniques could be used for further enhancing affective state estimation <ref type="bibr" target="#b8">[9]</ref>.</p><p>We conclude that our proposal of leveraging the Bayesian filtering paradigm provides a rigorous and general framework for dynamic affective state estimation problems. We believe that this can pave the way for further enhancing the design of automated systems. Valentin Enescu received the MSc degree in electronics engineering from Politehnica University of Bucharest, Romania, in 1994 and the PhD degree in applied sciences from Vrije Universiteit Brussel (VUB), Belgium, in 2004. Until 2014, he was a postdoctoral researcher in the Department of Electronics and Informatics, VUB, where, he has achieved considerable expertise in wireless positioning, map-aided tracking, probabilistic modeling, motion analysis in videos, and machine learning techniques for facial tracking and emotion recognition. Currently, he is employed by Bisnode Belgium dealing with customer churn prediction and smart web crawling.</p><p>Dongmei Jiang received the BEng and master's degrees in automatic control, and the PhD degree in computer science and technology from Northwestern Polytechnical University (NPU), Xi'an, China, in 1994, 1997, and 2000, respectively. Since then, she was affiliated with NPU, where she was appointed as professor of computer Science and Technology in 2010. She was a visiting scholar in the Department of Electronics and Informatics (ETRO), Vrije Universiteit Brussel (VUB), Belgium, from 2001 to 2002, and from 2006 to 2007, respectively. Since 2005, she has been the NPU's team coordinator of the Joint NPU-VUB Audio Visual Signal Processing (AVSP) Lab. Her research has focused on multi-modal affective computing, including emotion recognition from speech, facial expression and body gesture, as well as expressional facial animation synthesis. She is the corresponding author of the winner paper of the Audio Visual þ Emotion Challenge in 2015.</p><p>Hichem Sahli is a professor in computer vision and machine learning in the Department of Electronics and Informatics (ETRO), Vrije Univeristeit Brussel (VUB), and group-coordinator with Interuniversitair Micro-Elektronica Centrum vzw (IMEC). He coordinates the Joint VUB-NPU Audio-Visual Signal Processing (AVSP) laboratory. AVSP deals with applied and theoretical problems related to computer vision, machine learning, signal, audio and image processing, for applications linked to affective computing and multi-modal interaction. His research has focused on computer vision and machine learning, especially in the areas of object detection and tracking, recognition, shape reconstruction, and image segmentation. His work deals with the development of algorithms, analysis, and novel principles for learning.</p><p>" For more information on this or any other computing topic, please visit our Digital Library at www.computer.org/publications/dlib.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2 .</head><label>2</label><figDesc>Graphical model of MI-SGP-KF inference: Kalman filter (KF) with an embedded multiple instance sparse Gaussian process (MI-SGP) sensor model. The aim of MI-SGP-KF is to infer the current affective state a k given the previous estimate a kÀ1 and current noisy measurement y k inferred from a bag of instances B k ¼ fx kÀT ; . . . ; x k g. Big gray discs depict observed random variables, big white discs depict latent random variables and small black discs depict observed deterministic variables.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3</head><label>3</label><figDesc>depicts the graphical model of a sparse GP (SGP) model for multiple instance regression, hence MI-SGP. To construct a MI-SGP model, we define M inducing points D ¼ ½d 1 ; . . . ; d M associated, through the sought function g, to a global latent variable u ¼ ½gðd 1 Þ; . . . ; gðd M Þ which we have to optimize. These inducing points can be a subset of the training inputs or pseudo-inputs learned from the training data. More formally, the MI-SGP model is defined as pðyjgÞ ¼ N ðyjg; bI N Þ; pðgjuÞ ¼ N ðgjK T MN K À1 MM u;KÞ; pðuÞ ¼ N ðuj0; K MM Þ; (10)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>Graphical model of MI-SGP learning: The aim is to learn the distribution of the global latent variable u given incoming bag of instances B i , noisy labels y i , inducing points D and hyper-parameters b and g. Big gray discs depict observed random variables, big white discs depict latent random variables and small black discs depict observed deterministic variables.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 4 .</head><label>4</label><figDesc>Qualitative evaluation of MI-SGP-KF on AVEC datasets: Pearson's correlation coefficient (CC) and concordance correlation coefficient (CCC) on development data set for the FCSC and ASC challenges. First row: Top-3 valence estimation, sorted in descending CCC order. Second row: Top-3 arousal estimation, sorted in descending CCC order. Dark/red curves are the estimated valence-arousal values and light/green curves are the ground truth valence-arousal values.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5 .</head><label>5</label><figDesc>Pearson's correlation coefficient (CC) in function of bag size T (in seconds) on AVEC 2012 dataset.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 1 Quantitative</head><label>1</label><figDesc>Evaluation of MI-SGP-KF on AVEC 2012: Pearson's Correlation Coefficient (CC) on Development Data Set for the FCSC ChallengeSecond and third column denote the average CC scores on arousal and valence respectively. Last column denotes the average CC score over arousal and valence.</figDesc><table><row><cell>Method</cell><cell>Arousal</cell><cell>Valence</cell><cell>Mean</cell></row><row><cell>Baseline SVR [43]</cell><cell>0.15</cell><cell>0.21</cell><cell>0.18</cell></row><row><cell>Multiscale Dynamic Cues [47]</cell><cell>0.51</cell><cell>0.31</cell><cell>0.41</cell></row><row><cell>CFER [48]</cell><cell>0.30</cell><cell>0.41</cell><cell>0.36</cell></row><row><cell>CCRF [27]</cell><cell>0.34</cell><cell>0.34</cell><cell>0.34</cell></row><row><cell>Video PF [33]</cell><cell>0.31</cell><cell>0.37</cell><cell>0.34</cell></row><row><cell>3D Model-Based [49]</cell><cell>0.56</cell><cell>0.45</cell><cell>0.51</cell></row><row><cell>MI-SGP</cell><cell>0.28</cell><cell>0.31</cell><cell>0.30</cell></row><row><cell>MI-SGP-KF (0-th order)</cell><cell>0.55</cell><cell>0.48</cell><cell>0.52</cell></row><row><cell>MI-SGP-KF (1-st order)</cell><cell>0.53</cell><cell>0.47</cell><cell>0.50</cell></row><row><cell>MI-SGP-KF (2-nd order)</cell><cell>0.53</cell><cell>0.51</cell><cell>0.52</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 2 Quantitative</head><label>2</label><figDesc>Evaluation of MI-SGP-KF on AVEC 2014: Pearson's Correlation Coefficient (CC) on Development Data Set for the ASC ChallengeSecond and third column denote the average CC scores on arousal and valence respectively. Last column denotes the average CC score over arousal and valence.</figDesc><table><row><cell>Method</cell><cell>Arousal</cell><cell>Valence</cell><cell>Mean</cell></row><row><cell>Baseline [44]</cell><cell>0.41</cell><cell>0.36</cell><cell>0.39</cell></row><row><cell>MI-SGP</cell><cell>0.34</cell><cell>0.27</cell><cell>0.31</cell></row><row><cell>MI-SGP-KF (0-th order)</cell><cell>0.56</cell><cell>0.51</cell><cell>0.54</cell></row><row><cell>MI-SGP-KF (1-st order)</cell><cell>0.54</cell><cell>0.51</cell><cell>0.53</cell></row><row><cell>MI-SGP-KF (2-nd order)</cell><cell>0.56</cell><cell>0.49</cell><cell>0.53</cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>This work is supported by the Agency for Innovation by Science and Technology in Flanders (IWT)-PhD grant nr. 131814, the VUB Interdisciplinary Research Program through the EMO-App project and the National Natural Science Foundation of China (grant 61273265).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>F ¼</head><p>1:00 0:00 0:01 0:00 0:00 0:00 0:00 1:00 0:00 0:01 0:00 0:00 0:01 0:01 0:52 0:02 0:01 0:00 0:01 0:01 0:03 0:50 0:00 0:01 0:42 0:31 À18:65 0:79 À0:55 0:00 0:27 À0:27 0:97 À19:15 0:00 À0:59</p><p>H ¼ 0:81 0:06 0:08 0:02 0:00 0:00 0:07 0:83 0:02 0:07 0:00 0:00 0:01 0:00 0:05 0:01 0:00 0:00 0:00 0:01 0:01 0:04 0:00 0:00 0:01 À0:01 0:09 0:01 0:00 0:00 0:01 À0:02 À0:03 0:09 0:00 0:00 </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Facial expression analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y.-L</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Kanade</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">F</forename><surname>Cohn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Face Recognition</title>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="247" to="275" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Recognition of facial expressions: Past, present, and future challenges,&quot; in Understanding Facial Expressions in Communication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-M</forename><surname>Fern Andez-Dols</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Crivelli</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="19" to="40" />
+			<pubPlace>Berlin, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Automatic analysis of facial affect: A survey of registration, representation, and recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Sariyanidi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Cavallaro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Pattern Anal. Mach. Intell</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1113" to="1133" />
+			<date type="published" when="2015-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Monocular 3D facial information retrieval for automated facial expression analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Oveneke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Sahli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 6th Int. Conf. Affective Comput. Intell. Interaction</title>
+		<meeting>IEEE 6th Int. Conf. Affective Comput. Intell. Interaction</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="623" to="629" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Machine learning methods for social signal processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Rudovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="469" to="484" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Annotation and processing of continuous emotional attributes: Challenges and opportunities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Metallinou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Narayanan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 10th IEEE Int. Conf. Workshops Autom. Face Gesture Recognit</title>
+		<meeting>10th IEEE Int. Conf. Workshops Autom. Face Gesture Recognit</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Core affect and the psychological construction of emotion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Russell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Rev</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The circumplex model of affect: An integrative approach to affective neuroscience, cognitive development, and psychopathology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Posner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">S</forename><surname>Peterson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Develop. Psychopathology</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="715" to="734" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Bayesian filtering: From Kalman filters to particle filters, and beyond</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Statistics</title>
+		<imprint>
+			<biblScope unit="volume">182</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="69" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Sparse Gaussian processes using pseudo-inputs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Snelson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 18th Int. Conf. Advances Neural Inf. Process. Syst</title>
+		<meeting>18th Int. Conf. Advances Neural Inf. ess. Syst</meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="1257" to="1264" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Learning from ambiguity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Maron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Dept. Elect. Eng. Comput. Sci., Massachusetts Inst. Technol</title>
+		<imprint>
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Ph.D. dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Completeness and total boundedness of the Hausdorff metric</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Henrikson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIT Undergraduate J. Math</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="69" to="80" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Stochastic variational inference</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Hoffman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">M</forename><surname>Blei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Paisley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1303" to="1347" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Unmasking the Face: A Guide to Recognizing Emotions from Facial Clues</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">V</forename><surname>Friesen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>ISHK</publisher>
+			<pubPlace>San Jose, CA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Fern andez-Dols, The Psychology of Facial Expression</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997" />
+			<publisher>Cambridge Univ. Press</publisher>
+			<pubPlace>Cambridge, U.K.</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Are facial expressions of emotion produced by categorical affect programs or dynamically driven by appraisal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Ellgring</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Perceptual and affective mechanisms in facial expression recognition: An integrative review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Calvo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Nummenmaa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cogn. Emotion</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="1" to="26" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Whats in a word? language constructs emotion perception</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">A</forename><surname>Lindquist</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gendron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion Rev</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="66" to="71" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Are spontaneous expressions and emotions linked? an experimental test of coherence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-M</forename><surname>Fern Andez-Dols</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sanchez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Carrera</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M.-A</forename><surname>Ruiz-Belda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Nonverbal Behavior</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="163" to="177" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">What do facial expressions express?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">J</forename><surname>Fridlund</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BEC Speaker Series</title>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Coherence between expressive and experiential systems in emotion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">L</forename><surname>Rosenberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cogn. Emotion</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="201" to="229" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">What is an emotion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>James</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mind</title>
+		<imprint>
+			<date type="published" when="1884" />
+			<biblScope unit="page" from="188" to="205" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Emotion, core affect, and psychological construction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Russell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cogn. Emotion</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1259" to="1283" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A 12-point circumplex structure of core affect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Yik</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">H</forename><surname>Steiger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Multimodal continuous affect recognition based on LSTM and multiple kernel learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Sahli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Fu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Annu. Sumit Conf. Asia-Pacific Signal Inf</title>
+		<meeting>Annu. Sumit Conf. Asia-Pacific Signal Inf</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Long short-term memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1735" to="1780" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Dimensional affect recognition using continuous conditional random fields</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Baltrusaitis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Banda</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Robinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 10th IEEE Int. Conf. Workshops Automat. Face Gesture Recognit</title>
+		<meeting>10th IEEE Int. Conf. Workshops Automat. Face Gesture Recognit</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Dimensional emotion prediction from spontaneous head gestures for interaction with sensitive artificial listeners</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pantic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Intelligent Virtual Agents</title>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="371" to="377" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Continuous prediction of spontaneous affect from multiple cues and modalities in valence-arousal space</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Nicolaou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pantic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="92" to="105" />
+			<date type="published" when="2011-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Output-associative RVM regression for dimensional and continuous emotion prediction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Nicolaou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pantic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Image Vis. Comput</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="186" to="196" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Kalman filter-based facial emotional expression recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Enescu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Sahli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Jiang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Affective Computing and Intelligent Interaction</title>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="497" to="506" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Kalman filter based classifier fusion for affective state recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Glodek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Reuter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Schels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Dietmayer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Schwenker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Multiple Classifier Systems</title>
+		<meeting><address><addrLine>Berlin, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="85" to="94" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Combining video, audio and lexical indicators of affect in spontaneous conversation via particle filtering</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Savran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Nenkova</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Verma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 14th ACM Int. Conf. Multimodal Interaction</title>
+		<meeting>14th ACM Int. Conf. Multimodal Interaction</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="485" to="492" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Arulampalam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Maskell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Clapp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="174" to="188" />
+			<date type="published" when="2002-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Norvig</surname></persName>
+		</author>
+		<title level="m">Artificial Intelligence: A Modern Approach</title>
+		<meeting><address><addrLine>NJ, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Prentice Hall</publisher>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>3rd ed. Englewood Cliffs</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">A new approach to linear filtering and prediction problems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Kalman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Fluids Eng</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="45" />
+			<date type="published" when="1960" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">A review of multi-instance learning assumptions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Foulds</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Frank</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Knowl. Eng. Rev</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="25" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">E</forename><surname>Rasmussen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">K</forename><surname>Williams</surname></persName>
+		</author>
+		<title level="m">Gaussian Processes for Machine Learning (Adaptive Computation and Machine Learning)</title>
+		<meeting><address><addrLine>Cambridge, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Sparse Gaussian processes using pseudo-inputs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Snelson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 18th Int. Conf. Advances Neural Inf. Process. Syst</title>
+		<meeting>18th Int. Conf. Advances Neural Inf. ess. Syst</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="1257" to="1264" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Variational learning of inducing variables in sparse Gaussian processes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Titsias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf</title>
+		<meeting>Int. Conf</meeting>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="567" to="574" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Online learning for matrix factorization and sparse coding</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ponce</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Sapiro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="19" to="60" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Gaussian processes for big data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hensman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Fusi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Conf. Uncertainty Artif. Intell</title>
+		<meeting>Conf. Uncertainty Artif. Intell</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="282" to="290" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">AVEC 2012: The continuous audio/visual emotion challenge</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Schuller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Valstar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Eyben</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Cowie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pantic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 14th ACM Int. Conf. Multimodal Interaction</title>
+		<meeting>14th ACM Int. Conf. Multimodal Interaction</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="449" to="456" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">AVEC 2014: 3D dimensional affect and depression recognition challenge</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Valstar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 4th Int. Workshop Audio/Visual Emotion Challenge</title>
+		<meeting>4th Int. Workshop Audio/Visual Emotion Challenge</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="3" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Multiresolution grayscale and rotation invariant texture classification with local binary patterns</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Ojala</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pietik€ Ainen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>M€</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Pattern Anal. Mach. Intell</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="971" to="987" />
+			<date type="published" when="2002-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Local Gabor binary patterns from three orthogonal planes for automatic facial expression recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">R</forename><surname>Almaev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Valstar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Humaine Assoc. Conf. Affective Comput. Intell. Interaction</title>
+		<meeting>Humaine Assoc. Conf. Affective Comput. Intell. Interaction</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="356" to="361" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Robust continuous prediction of human emotions using multiscale dynamic cues</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nicolle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Rapp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bailly</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Prevost</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chetouani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 14th ACM Int. Conf. Multimodal Interaction</title>
+		<meeting>14th ACM Int. Conf. Multimodal Interaction</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="501" to="508" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">A multimodal fuzzy inference system using a continuous facial expression representation for emotion detection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Soladi E</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Salam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Pelachaud</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Stoiber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Eguier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 14th ACM Int. Conf. Multimodal Interaction</title>
+		<meeting>14th ACM Int. Conf. Multimodal Interaction</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="493" to="500" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">3D model-based continuous emotion recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Conf. Comput. Vis. Pattern Recognit</title>
+		<meeting>IEEE Conf. Comput. Vis. Pattern Recognit</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1836" to="1845" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">The AV+EC 2015 multimodal affect recognition challenge: Bridging across audio, video, and physiological data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Ringeval</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 5th Int. Workshop Audio/Visual Emotion Challenge</title>
+		<meeting>5th Int. Workshop Audio/Visual Emotion Challenge</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="3" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Correcting time-continuous emotional labels by modeling the reaction lag of evaluators</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mariooryad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Busso</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Affective Comput</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="97" to="108" />
+			<date type="published" when="2015-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Iterative temporal learning and prediction with the sparse online echo state Gaussian process</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Soh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Demiris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Joint Conf. Neural Netw</title>
+		<meeting>Int. Joint Conf. Neural Netw</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">L C</forename><surname>Mattos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Damianou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Forth</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Barreto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.06644</idno>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>Recurrent Gaussian processes</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

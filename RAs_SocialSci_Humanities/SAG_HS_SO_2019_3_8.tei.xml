@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Impact of Economic Policy Uncertainty on Exchange Market Pressure</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ifedolapo</forename><forename type="middle">Olabisi</forename><surname>Olanipekun</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Eastern Mediterranean University</orgName>
+								<address>
+									<settlement>Famagusta</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Godwin</forename><surname>Olasehinde-Williams</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Eastern Mediterranean University</orgName>
+								<address>
+									<settlement>Famagusta</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hasan</forename><surname>Güngör</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Eastern Mediterranean University</orgName>
+								<address>
+									<settlement>Famagusta</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Economics</orgName>
+								<orgName type="institution">Eastern Mediterranean University</orgName>
+								<address>
+									<addrLine>North Cyprus via Mersin 10</addrLine>
+									<postCode>99628</postCode>
+									<settlement>Famagusta</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Impact of Economic Policy Uncertainty on Exchange Market Pressure</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019876275</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>exchange market pressure</term>
+					<term>economic policy uncertainty</term>
+					<term>long-run relationships</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Capturing changes in foreign reserves and exchange rates through the exchange market pressure, this article investigates whether economic policy uncertainty plays any role in exchange market pressure movements while controlling for the effects of domestic and external factors. A panel of 20 countries was examined from 2003Q1 to 2017Q4 using panel techniques that are consistent in the presence of heterogeneity and cross-sectional dependence. The study finds that a long-run relationship exists between exchange market pressure and economic policy uncertainty. Our estimation results reveal that a rise in economic policy uncertainty, consumer price index, trade openness, and financial openness increases the severity of the exchange market pressure in the long run. However, gross domestic product (GDP) growth, domestic credit, and foreign direct investment inflows can cushion the effect of the pressure. Therefore, irrespective of whether a country operates fixed, flexible, or intermediate exchange rate regime, its foreign exchange market is still significantly affected by economic policy uncertainty.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The end of the 20th century and start of the 21st century have been characterized by financial turbulence, with several financial crises witnessed across countries (such as the Argentine crisis of <ref type="bibr">2001-2002, the</ref> Greek crisis of 2011, and the Russian crisis of 2014), regions (such as the European Exchange Rate Mechanism [ERM] crisis of 1992-1993 and the Asian crisis of 1997), and even the entire world (the global financial crisis of <ref type="bibr">[2007]</ref><ref type="bibr">[2008]</ref><ref type="bibr">[2009]</ref>. The often resulting currency collapses have been attributed to the overwhelming pressure in the foreign exchange markets <ref type="bibr" target="#b22">(García &amp; Malet, 2007)</ref>.</p><p>The same time period has also been characterized by increased global economic policy uncertainty (EPU). The degree of uncertainty in economic policies has been on the increase due to the rising complexity of economic and market-related processes <ref type="bibr" target="#b34">(Krol, 2014)</ref>. Some researchers have thus suggested a link between EPU and the financial markets. For example, it has been suggested that uncertainties about the fiscal, monetary, and regulatory policies of Europe and the United States played a major role in the global financial crisis of 2007-2009 and slow recoveries experienced afterward <ref type="bibr" target="#b6">(Baker, Bloom, &amp; Davis, 2016;</ref><ref type="bibr">Federal Open Market Committee [FOMC], 2009;</ref><ref type="bibr">International Monetary Fund [IMF], 2012</ref>. It is therefore reasonable to investigate whether the foreign exchange market, as the biggest and most liquid financial market, is vulnerable to EPU.</p><p>There are numerous studies providing insight into the relationship between EPU and the foreign exchange market. Examples include ter Ellen, Verschoor, and Zwinkels (2013); <ref type="bibr" target="#b30">Karnizova and Li (2014)</ref>; <ref type="bibr" target="#b34">Krol (2014)</ref>; <ref type="bibr" target="#b35">Leippold and Matthys (2015)</ref>; <ref type="bibr" target="#b12">Bernal, Gnabo, and Guilmin (2016)</ref>; <ref type="bibr" target="#b32">Kido (2016)</ref>; <ref type="bibr" target="#b47">Vedolin, Tahbaz-Salehi, and Mueller (2016)</ref>; <ref type="bibr" target="#b5">Arbatli, Davis, Ito, Miake, and Saito (2017)</ref>; <ref type="bibr">Czudaj (2017a, 2017b)</ref>; Ojeda-Joya and Sarmiento (2018); and <ref type="bibr" target="#b52">Yin, Zhang, Yu, and Xin (2017)</ref>, all of whom have established that policy uncertainty has a crucial effect on exchange rates.</p><p>Despite this recognition of EPU and its effects on the foreign exchange markets, extant literature is still limited. Most of the studies that have investigated the interaction between EPU and the foreign exchange market have focused mainly on exchange rates; however, the exchange rate market does not provide a complete picture of happenings in the foreign exchange market as the foreign reserves component is excluded. The relationship between EPU and foreign exchange market pressure (EMP) is yet to be studied in detail.</p><p>The implication of this is that in considering the relationship between EPU and foreign exchange markets, countries that operate fixed exchange rate regimes are largely ignored because they do not experience fluctuations in their exchange rates. Although such countries are able to keep exchange rates from fluctuating, they do suffer depletion in their external reserves as a consequence. This is because some degree of foreign reserve intervention is required to keep exchange rates constant. Thus, while the impact of EPU on the foreign exchange market may be directly seen in the form of exchange rate fluctuations in countries with flexible exchange rates, it is indirect in countries with fixed exchange rates and viewed mainly through foreign reserve changes.</p><p>In the case of a country operating a free-floating exchange rate regime, all the pressure in the foreign exchange market is revealed through exchange rate fluctuations, and for a country operating a fixed exchange rate regime, all the pressure in the foreign exchange market is reflected through changes in the reserves. However, for countries operating intermediate regimes, the pressure in the foreign exchange market is revealed partly through exchange rate fluctuations and partly through changes in reserves. Thus, the EMP is the most suitable means of measuring total pressure in the foreign exchange market as it simultaneously captures both exchange rate and foreign reserve changes.</p><p>A clearer image of the occurrences in the foreign exchange market can be obtained from the more encompassing EMP. This also becomes necessary considering how a large percentage of the world's currencies is managed through de facto exchange rate regime, which is in most cases different from their countries' de jure <ref type="bibr">(IMF, 2009)</ref>. The implication of this is that the rules of the free-floating exchange rate are not strictly adhered to, while what the authority claims to do with respect to the exchange rate structure is different from what it actually does. Therefore, for a comprehensive view of the changes in the exchange market, we focus on the EMP rather than the exchange rate changes because the EMP covers all the ranges of exchange rate regimes, from extreme floating to extreme fixed.</p><p>The decision to focus on EMP rather than changes in the exchange rate is of practical relevance. First, it has more information which provides a clearer perspective of the relationship between EPU and the foreign exchange market. The EMP is able to integrate and project all the movements with respect to the foreign exchange-whether fixed, managed, or flexible exchange rate. Second, as the EMP observes the changes in exchange rate combined with loss in external reserves, it is a better indicator of the tensions in the exchange market. Third, through EMP, we are able to avoid the possible distortions that could arise as a result of the differences between de facto and de jure exchange rate regimes.</p><p>The contribution of our study to literature is three-fold. First, we analyze the relationship between EMP and uncertainty resulting from changes in economic policies across different countries-which is not investigated in prior studies-while controlling for domestic and external factors.</p><p>Second, we control for the effects of both domestic and external macroeconomic determinants, so as to provide a clearer view of other determinants of the speculative movements in the exchange market and reserves. By this, welltimed policymakers' response to phenomena provides some ease from such tensions.</p><p>Third, we apply panel estimation techniques that are consistent in the presence of heterogeneity and cross-sectional dependence (CD). This allows us to avoid the pitfall of the estimation techniques widely used by prior studies that simply assume that countries are homogeneous and that there is no CD among them. Such studies are susceptible to forecasting errors.</p><p>Fourth, our findings suggest that EPU reinforces EMP. This indicates that irrespective of whether a country operates fixed, flexible, or intermediate exchange rate regime, its foreign exchange market is still significantly affected by EPU.</p><p>The rest of this study is organized as follows: the "Theoretical Background" section gives the theoretical background of the study, the "Literature Review" section provides a review of relevant literature, the "Data and Models" section presents the econometric models and data used in our analysis, the "Method" section gives a description of the methodology applied, the "Results" section provides the results obtained and their interpretation, and in the "Conclusion" section, key conclusions are presented.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical Background</head><p>Beckmann and Czudaj (2017) established three theoretical connections between EPU and exchange rates. The first is based on the framework of <ref type="bibr" target="#b18">Engel and West (2005)</ref> which states that exchange rate is a discounted value of expectations on future fundamentals such that</p><formula xml:id="formula_0">X E f u E f u t j j t t j t j j j t t j t j = − ( ) + ( ) + + ( ) = ∞ + + = ∞ + + ∑ ∑ 1 0 1 1 0 2 2 α α α α , ,<label>, , , , (1)</label></formula><p>where X t stands for the logarithmic form of exchange rate (U.S. dollar per unit of foreign currency) with systematic and unsystematic components. f t j 1, + and f t j 2, + represent the systematic components and are made up of realized fundamentals like interest rates and money supply. u t j 1, + and u t j 2, + are the unsystematic components made up of unobservable fundamentals. <ref type="bibr" target="#b9">Beckmann and Czudaj (2017)</ref> propose EPU as a good approximation of the unsystematic component due to its ability to impact volatility and risk premia.</p><p>The second is the news approach <ref type="bibr" target="#b25">(Hakkio &amp; Pearce, 1985)</ref>. This approach claimed that in efficient foreign exchange markets, differences between spot and forward exchange rates are caused by the introduction of new information. Thus, exchange rate fluctuation is a function of unexpected news. This can be specified as follows:</p><formula xml:id="formula_1">X f t tt h t t − = + + + , , β β ε 0 1 UN (2)</formula><p>where</p><formula xml:id="formula_2">f t t h , +</formula><p>represents the forward exchange rate and UN represents unexpected news. Policy uncertainty has been proposed as an alternative measure of unexpected news.</p><p>The third is the political business cycles and policy announcements approach. <ref type="bibr" target="#b4">Alesina, Roubini, and Cohen (1997)</ref> proposed a theoretical framework in which policy uncertainty impacts expectations and results in expectation errors. The theory argues that market stakeholders lack perfect information on the preferences (for instance, exchange rate preferences) of current policymakers. Thus, their expectations about the macro-economy are systematically incorrect until policymakers make their true preferences known.</p><p>These theoretical connections hold true for the relationship between EPU and the entire foreign exchange market as exchange rates and foreign exchange reserves are strongly interlinked. In countries that operate partially fixed or fully fixed exchange rates, the foreign reserves are used to maintain the exchange rate at its official rate. Potential exchange rate movements are thus reflected in the foreign exchange reserves.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head><p>Research and policy interests in the causes and effects of EMP unsurprisingly created the need for a reliable measure for it. Consequently, <ref type="bibr" target="#b23">Girton and Roper (1977)</ref> pioneered an EMP index by constructing a model that explains both exchange rate movements and official reserves interventions. The authors obtained the index by simply adding the percentage changes in exchange rates and reserves. <ref type="bibr" target="#b49">Weymark (1995</ref><ref type="bibr" target="#b50">Weymark ( , 1997</ref> alternatively constructed model-dependent indices of EMP and intervention activity by adding the observed changes in exchange rate and change in exchange rate that was avoided by the Central Bank through intervention. <ref type="bibr" target="#b17">Eichengreen, Rose, and Wyplosz (1996)</ref> also introduced a measure of EMP in which they normalized and weighted the components of the index with their volatilities. <ref type="bibr" target="#b39">Pentecost, Van Hooydonk, and Van Poeck (2001)</ref>, instead of adding exchange rate and reserve changes or employing weighting schemes like the earlier indices, formulated an alternative EMP index that is based on principal component analysis. <ref type="bibr" target="#b33">Klaassen and Jager (2011)</ref> showed that interest rate should be added into the basic EMP measurement and should not be taken in the first-difference form as it had been so far, but in the level form and relative to the interest rate chosen if the country has no exchange rate objective. They proposed a model of using nominal interest rate differentials between a home country and a foreign country. More importantly, the interest rate differential term enters into the EMP with a negative sign, as an effect of a flexible price monetary model. <ref type="bibr" target="#b2">Aizenman, Lee, and Sushko (2012)</ref> formulated three different indices for EMP, the first of which is an unweighted sum of percentage nominal exchange rate depreciation and percentage loss of reserves. The second is an unweighted sum of percentage exchange rate depreciation and loss of reserves deflated by monetary base. The final measure is a weighted sum of demeaned percentage nominal exchange rate depreciation and loss of reserves in which the inverses of the standard deviations of the component series serve as the weights. <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref> further improved on these indices by introducing nominal interest rate differentials into the EMP constructs.</p><p>With the availability of different EMP measures, many researchers have further attempted to effectively identify its determinants and analyze its relationship with various economic variables. For example, variables such as output growth, domestic credit, and price stability have been identified as some of the major domestic macroeconomic factors that exert varying degrees of influence on EMP <ref type="bibr" target="#b0">(Aizenman &amp; Binici, 2016;</ref><ref type="bibr" target="#b20">Feldkircher, Horvath, &amp; Rusnak, 2014;</ref><ref type="bibr" target="#b24">Gochoco-Bautista, &amp; Bautista, 2005;</ref><ref type="bibr" target="#b26">Hegerty, 2009;</ref><ref type="bibr" target="#b38">Panday, 2015;</ref><ref type="bibr" target="#b46">Van Poeck, Vanneste, &amp; Veiner, 2007)</ref>. <ref type="bibr" target="#b20">Feldkircher et al. (2014)</ref> established the pivotal role of price stability in determining pressures in the exchange market. They showed that higher inflation experienced prior to a crisis tends to aggravate the pressure in times of financial stress. They further showed that increased domestic saving is able to reduce the severity of EMP, provided inflation is kept low before financial crisis. Hegerty (2012) stated that output growth has a reducing effect on market pressures. However, the determinants of output growth include various macroeconomic fundamentals which themselves have direct influence on EMP. <ref type="bibr" target="#b21">Feridun (2009)</ref> and <ref type="bibr" target="#b31">Katircioglu and Feridun (2011)</ref> showed that macroeconomic fundamentals, such as banking sector fragility, domestic credit, budget balance, current account balance, real exchange rate overvaluation, and excess real money balances have both level and long-run relationship with EMP in Turkey. <ref type="bibr" target="#b39">Pentecost et al. (2001)</ref> also identified real depreciation, budget deficit, current account variations, differential money growth, and changes in the long-term interest rate differential as the determinants of EMP.</p><p>Foreign direct investment (FDI) flows with trade and financial openness have also been identified as key external factors with influence on EMP. Empirical findings have shown that the EMP of the most open economies are often the most vulnerable, and higher external liabilities are responsible for larger EMP <ref type="bibr" target="#b0">(Aizenman &amp; Binici, 2016;</ref><ref type="bibr" target="#b1">Aizenman &amp; Hutchison, 2012;</ref><ref type="bibr" target="#b3">Akram &amp; Byrne, 2015;</ref><ref type="bibr" target="#b20">Feldkircher et al., 2014;</ref><ref type="bibr" target="#b26">Hegerty, 2009</ref><ref type="bibr" target="#b27">Hegerty, , 2012</ref>. <ref type="bibr" target="#b1">Aizenman and Hutchison (2012)</ref> and <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref> found evidence that external factors significantly drive EMP, especially in emerging market economies. <ref type="bibr" target="#b1">Aizenman and Hutchison (2012)</ref> noticed greater vulnerability to financial crisis in emerging markets with high foreign liabilities such as debts, equities, FDI, and derivative products. They also observed greater resilience to global shocks in countries with large balance sheet exposure. According to the authors, this is due to the ability of these countries to absorb shocks by allowing greater exchange rate depreciation and limited reserve loss  also gave a clear evidence that the impact of gross short-term external debt on EMP increased by about 5 times during the crisis, while capital outflows and portfolio debts also increased the pressure effects, but higher FDI inflows calm EMP. <ref type="bibr" target="#b26">Hegerty (2009)</ref> established that both FDI inflow and non-FDI inflow in particular would reduce EMP. <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref> established that the effect of short-term gross portfolio inflows and outflows, and long-term FDI flows are important causes of EMP. However, capital controls could reduce EMP depending on the size of the economy.</p><p>Akram and Byrne (2015) emphasized how EMP could be related to policy variables. The role of policymakers in influencing EMP was also documented by Gochoco-Bautista and Bautista <ref type="formula">2005</ref>, who found that policy targeted at contracting domestic credit growth and increasing the interest rate differential will reduce EMP. Panday (2015) also established the soothing role of contractionary monetary policy on foreign exchange pressure.</p><p>Empirical studies have shown how uncertainty surrounding macroeconomic policy influences exchange rates. <ref type="bibr" target="#b34">Krol (2014)</ref> and <ref type="bibr" target="#b52">Yin et al. (2017)</ref> showed that uncertainty has a significant and positive effect on exchange rate volatility which directly increases during high EPU. Ojeda-Joya and Sarmiento (2018) found that real exchange rates were overdepreciated following the uncertainty surrounding the great financial crisis. <ref type="bibr" target="#b11">Beckmann and Czudaj (2017b)</ref> found that exchange rate expectations are also influenced by policy uncertainty. <ref type="bibr" target="#b35">Leippold and Matthys (2015)</ref> evaluated the correlations between EPU and real exchange rates and found them to be time-invariant. However, the direction of relationship may change. For instance, a negative relationship has been found between EPU and returns on domestic and foreign currencies <ref type="bibr" target="#b32">(Kido, 2016)</ref>. The role of uncertainty in predicting exchange rate returns was found to be significant in <ref type="bibr" target="#b8">Balcilar, Gupta, Kyei, and Wohar (2016)</ref>, while <ref type="bibr" target="#b32">Kido (2016)</ref> also documented that high-yielding currencies tend to lose value during high uncertainty. Despite this recognition of the effects of uncertainty on real exchange rates, the literature is limited. Recently, Olanipekun, Güngör, and Olasehinde-Williams (2019) showed that there is some form of feedback causal relationship between EMP and EPU in BRIC countries, but none has existed on the degree and direct impact of EPU on EMP. This necessitates the need to investigate EMP response to uncertainty resulting from economic policy. The aim of this study is thus to examine the impact of EPU on EMP in terms of degree and direction of movements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data and Models</head><p>The following econometric models are specified to examine the responsiveness of EMP to EPU:</p><formula xml:id="formula_3">M EMP EPU 1 1 0 1 2 3 : , , , , , , , i t i t i t i t i t X Y = + + + + β β β β ε (3) M EMP EPU 2 2 0 1 2 3 : , , , , , , , i t i t i t i t i t X Y = + + + + β β β β ε (4) M3 EMP E PU : , ,<label>, , , , , 3 0 1</label></formula><formula xml:id="formula_4">2 3 i t i t i t i t i t X Y = + + + + β β β β ε (5) M4 EMP E PU : , ,<label>, , , , , 4 0 1</label></formula><formula xml:id="formula_5">2 3 i t i t i t i t i t X Y = + + + + β β β β ε (6)</formula><p>where M1:M4 represents Models 1 to 4, i = 1, 2, . . ., N index the cross-section units and t = 1, 2, . . ., T index time series units. We adopt the four alternative measures of EMP constructed in the earlier introduced literature by Aizenman et al. <ref type="formula">2012</ref>and <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref>. EMP 1 is the standard EMP. It is computed as the difference between the percentage changes in exchange rate and in foreign exchange reserve, and specified as </p><p>where e t is exchange rates measured as local currency per U.S. dollar and ir t is the foreign reserve minus gold. In EMP 2 , nominal interest rate differentials between home and reference countries (United States) is introduced into the EMP measure, in line with <ref type="bibr" target="#b33">Klaassen and Jager (2011)</ref>:</p><formula xml:id="formula_7">EMP 2 1 1 1 1 , * , t t t t t t t t t</formula><p>e e e i i ir ir</p><formula xml:id="formula_8">ir = − − − ( ) − − − − − −<label>(8)</label></formula><p>where i t and i t * represent the money market rates for home country and reference country (United States).</p><p>One important feature of this measure is that the interest rate differential carries a negative sign in the computation. According to <ref type="bibr" target="#b33">Klaassen and Jager (2011)</ref>, although this seems to be counterintuitive, it is however a result of using a flexible price monetary model. Higher interest rates lower domestic money demand and cause the increasing price level to clear the money market, and goods arbitrage depreciates the domestic currency. Therefore, in the long run, higher interest rates lower EMP.</p><p>EMP 3 is the monetary model-based EMP. It is computed as the difference between percentage change in exchange rate, interest rate differential, and differenced foreign exchange reserves deflated by base money (see <ref type="bibr" target="#b0">Aizenman &amp; Binici, 2016)</ref>, and specified as </p><p>where mb t −1 is the monetary base in U.S. dollars. EMP 4 is a weighted measure of EMP. This measure is weighted because the variables used in the computation of EMP are characterized by different degrees of variability. There is therefore the need to aggregate them in such a way that the most volatile among them does not dominate the entire index. The index is constructed from the standardized difference between changes in exchange rate, interest rate differential, and foreign exchange reserves. It is given as </p><formula xml:id="formula_10">= − − ∇ − − − ∆ ∆ µ σ µ σ µ σ<label>(10)</label></formula><p>where ∆e t and ∆ir t refer to percentage changes in exchange rates and foreign exchange reserves, ∇i t is the interest rate differential while µ and σ represent mean and standard deviation, respectively. Data on the variables used in the construction of EMP , EMP EMP , and EMP , 1 2 3 4</p><p>(foreign exchange rate, international reserves minus gold, money market rates, and base money) are sourced from the IMF and International Financial Statistics (IFS) database.</p><p>The EPU index used in our study is based on the Baker et al. (2016) historical measure of uncertainty. The index is created from monthly newspaper searches for economic and policy uncertainty-related issues. Data on EPU were obtained from http://www.policyuncertainty.com/. Three-month mean values were calculated to convert the EPU monthly index to quarterly values.</p><formula xml:id="formula_11">X i t ,</formula><p>is a vector of domestic macroeconomic factors regarded by literature as determinants of EMP. It includes real gross domestic product (GDP) growth (measure of economic status), consumer price index (CPI; measure of monetary discipline), and domestic credit/GDP (measure of financial depth). Y i t , , however, is a vector of factors that determine the level of world economic integration. It is made up of trade openness (measure of economic openness), financial openness (measure of capital mobility), and FDI inflow (measure of inward direct investments in an economy). ε i,t is the error term including all other factors unobserved. In the four models, β 1 is the coefficient which measures the impact of EPU on EMP, while β 2 is the matrix of coefficients which measure the impact of domestic macroeconomic factors on EMP; β 3 is the matrix of coefficients which measure the level of world economic integration on EMP.</p><p>Data on GDP growth and trade openness were obtained from the Federal Reserve Economic Data (FRED) from the Federal Reserve Bank of St. Louis; CPI, FDI inflow, and domestic credit were also sourced from the IMF and IFS database, while data on financial openness were retrieved from The Chinn-Ito Index via http://web.pdx.edu/~ito/Chinn-Ito_ website.htm. Quarterly data extending from 2003Q1 to 2016Q4 are used in this study. The choice of study sample is based on data availability, all the countries for which EPU index has been computed are included in our study. They include Australia, Brazil, Canada, Chile, China, France Germany, India, Ireland, Italy, Japan, Korea, Mexico, Netherlands, Russia, Singapore, Spain, Sweden, United Kingdom, and United States.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CD Test</head><p>The estimation of our model proceeds from a test for CD to assess the presence of common shocks and correlation which could exist among the sample countries. The presence of CD causes distortions in the size of panel unit root tests; it is therefore important to check for its presence before estimating panel data models. We thus start by carrying out the CD test developed by <ref type="bibr" target="#b40">Pesaran (2004)</ref> in the following form:</p><formula xml:id="formula_12">CD TN = − ( )       N 1 2 1 2 / , ρ<label>(11)</label></formula><p>where</p><formula xml:id="formula_13">ρ ρ = − ( )         = − = + ∑ ∑ 2 1 1 1 1 N N i N j i N ij  ,<label>(12)</label></formula><p>where N indicates the panel size, while T indicates sample size. ρ  ij is the residuals' pair-wise cross-sectional correlation coefficients from the augmented Dickey-Fuller (ADF) regression.</p><p>The null hypothesis for the <ref type="bibr" target="#b40">Pesaran (2004)</ref> CD test is that the standard panel regression residuals are not correlated. The null and alternate hypotheses are specified as follows: </p><p>The <ref type="bibr" target="#b40">Pesaran (2004)</ref> CD test, considered as a general test, is suitable for small sample sizes and for stationary and nonstationary panels.</p><p>We further check for the presence of heterogeneity in our data. In cases where slope coefficients are not homogeneous, conventional unit root test results are unreliable. We thus apply the <ref type="bibr" target="#b43">Pesaran and Yamagata (2008)</ref> standardized version of the <ref type="bibr" target="#b44">Swamy (1970)</ref> homogeneity test referred to as delta tests. A modified version of the <ref type="bibr" target="#b44">Swamy (1970)</ref> test is first computed as</p><formula xml:id="formula_15">S X M X i N i I i i i = − ( ) ′ ′ − ( ) = ∑ 1 2 β β β β τ WFE W FE σ ,<label>(15)</label></formula><p>where β  i = pooled ordinary least squares (OLS) estimator, β  WFE = weighted fixed effect pooled estimator and  σ i 2 is the estimator. The standard dispersion statistics is computed as</p><formula xml:id="formula_16">  ∆ = −       − N N S k k 1 2 .<label>(16)</label></formula><p>Alternatively, the bias adjusted version of the standard dispersion statistics may be computed:</p><formula xml:id="formula_17">    ∆ Adj it it N N S E z z = − ( )         −1 var ( ) .<label>(17)</label></formula><p>Both statistics are tested under the null of slope homogeneity, and the appropriate unit root tests are conducted on the basis of the results obtained from both cross-sectional dependency and homogeneity tests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Panel Unit Root Test</head><p>To determine the appropriate method of estimation, the crosssectionally augmented IPS (CIPS) unit root test by <ref type="bibr" target="#b28">Im, Pesaran, and Shin (2003)</ref> is conducted to check the stationarity of the variables and their order of integration. The test provides reliable and consistent estimates in the presence of CD and/or slope heterogeneity. The <ref type="bibr" target="#b42">Pesaran (2007)</ref> CIPS test averages the cross-sectionally ADF (CADF) test statistics for the entire panel. CIPS tests for a null of unit root against a heterogeneous alternative. The test statistic takes the following form: </p><formula xml:id="formula_18">CIPS CADF N T N t N T N i N i i N i , ,<label>, ( )=</label></formula><p>where t N T i ( ) , = ith cross-section CADF statistic.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Panel Cointegration Test</head><p>Estimation outcomes can only be nonspurious if non-I(0) variables are cointegrated. We therefore apply the errorcorrection-based tests of <ref type="bibr" target="#b48">Westerlund (2007)</ref> to check the existence of long-run relationship (cointegration) in the specified models.</p><p>The <ref type="bibr" target="#b48">Westerlund (2007)</ref> cointegration tests are superior to the more widely used residual-based cointegration tests because they are robust to slope heterogeneity and CD. By using structural dynamics instead of error dynamics, <ref type="bibr" target="#b48">Westerlund (2007)</ref> developed four panel cointegration tests that do not require common factor restrictions. The <ref type="bibr" target="#b48">Westerlund (2007)</ref> test statistics are designed to test the null of no cointegration by determining whether the error-correction term in a conditional error correction model equals 0.</p><p>The cointegration tests take the following form:</p><formula xml:id="formula_20">∆ ∆ EMP E MP EMP i t i t i i t i i t j p ij i t j q d V i , , , , = ′ + ∝ + ′ + ∝ + − − = − =− ∑ δ λ 1 1 1 1 p p ij i t i t i V e ∑ − + γ ∆ , ,<label>, 1 (19)</label></formula><p>where i = 1, 2, . . ., N index cross-section units and t = 1, 2, . . ., T index time series units. A vector of independent variables V includes EPU, the domestic macroeconomic factors, and economic integration variables, while d t includes the deterministic trends. α i is the parameter of error correction such that α i &lt; 0 reflects the presence of error correction and cointegration. If α i = 0, it reflects the absence of error correction and cointegration. The first two tests (group mean statistics) have their alternatives specified as </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Long-Run Estimation Technique</head><p>The presence of CD, slope heterogeneity, and unit root in the data series require that the econometric models be estimated with specific estimation techniques that are suitable to address these problems. The common correlated effects mean group (CCEMG; <ref type="bibr" target="#b41">Pesaran, 2006)</ref> and the augmented mean group (AMG; <ref type="bibr" target="#b16">Eberhardt &amp; Teal, 2010)</ref> are considered efficient for drawing reliable inferences. The CCEMG estimator applies OLS to each unit. The OLS involves additional regressors from the addition of cross-section averages of all dependent and independent variables. This procedure allows for CD and captures unobserved common factors which are represented by the crosssectional averages across the individuals in the panel <ref type="bibr" target="#b41">(Pesaran, 2006)</ref>. The CCEMG estimator is efficient for small sample sizes, the properties of its short-run dynamics make it robust for capturing structural breaks, it is also reliable for nonstationary series and can account for serial correlation and noncointegrated common factors <ref type="bibr" target="#b29">(Kapetanios, Pesaran, &amp; Yamagata, 2011)</ref>. The estimator of CCE for the ith individual's slope coefficient takes the following form:</p><formula xml:id="formula_21">β  CCE i i i i i E ME EMY , , = ′ ( ) ′ −1<label>(22)</label></formula><p>where</p><formula xml:id="formula_22">M I H H H H T = − ′ − ( ) 1 , H Z = ( , ) τ , τ = … ′ ( , ,<label>) 1 1</label></formula><p>and Z indicates a T × 2 matrix of the observations in Z t T t , , , . = … 1 The average of the individual CCE estimators generates the CCEMG estimator in the following form:</p><formula xml:id="formula_23">β β   MG CCE = = ∑ 1 1 N i N i , .<label>(23)</label></formula><p>Similar to the CCEMG estimator, the AMG also accounts for cross-section dependence, it includes a "common dynamic effect" in the individual country regression. The AMG estimator obtains year dummies' coefficient from the first-order difference OLS which estimates the pooled model augmented with year dummies. Apart from the intercept, the new variable generated from the coefficients on the year dummies is included as part of the regressors for each group-specific regression model. This captures the timeinvariant fixed effects. Its properties are efficient in estimating nonstationary variables, multifactor error terms, and the CD among the panel <ref type="bibr" target="#b13">(Bond &amp; Eberhardt, 2013;</ref><ref type="bibr" target="#b15">Eberhardt &amp; Bond, 2009)</ref>. The AMG follows a two-stage procedure.</p><p>The first stage involves first-difference estimation of a standard FD-OLS regression with T − 1 year dummies (Dt), while it obtains the coefficients ( ) ν  t of the year dummy. These represent the estimated cross-country averages of unobserved common factors obtained over time. The first stage estimation takes the following form:</p><formula xml:id="formula_24">∆ ∆ ∆ y X c D e c it i i t t T t t it t t = + + → ≡ = ∑ β ν 2   .<label>(24)</label></formula><p>In the second stage, a linear trend term captures the omitted idiosyncratic processes evolving over time in each of the N standard country regressions, the coefficients ν  t is then included along with the linear trend term. The average estimates across individual countries are then obtained in the following form:</p><formula xml:id="formula_25">y X d e N it i i it i t it i = + + + = − ∑ δ β β β v    , . AMG 1<label>(25)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>The test results for CD are contained in <ref type="table" target="#tab_0">Table 1</ref>. The outcome suggests that we can reject the null hypothesis of no crosssectional dependency for three out of four different constructs of EMP, and all the explanatory variables at p &lt; .01 significance level. Only EMP 1 turns out insignificant. The result of the slope homogeneity tests reported in <ref type="table" target="#tab_1">Table 2</ref> also shows a rejection of the null of homogeneity in favor of heterogeneous slopes at p &lt; .01 significance level for all the variables except domestic credit.</p><p>Due to the presence of CD and slope heterogeneity in our data, we use the CIPS panel unit root tests that are robust to these problems to test the stationarity of each variable. The unit root tests are carried out first at levels for each variable and then at first difference. The unit root test results are presented in <ref type="table" target="#tab_2">Table 3</ref>. The outcome shows that the null hypothesis that "panels contain individual unit root" cannot be rejected at level but at first difference. It is evident that all our variables are I(1) according to our test results.</p><p>As all the variables are integrated of same order, we further test for the presence of a long-run relationship among them in each of our four models through the <ref type="bibr" target="#b48">Westerlund (2007)</ref> panel cointegration test. The <ref type="bibr" target="#b48">Westerlund (2007)</ref> errorcorrection-based panel cointegration tests were carried out with three different deterministic specifications: first, with no constant and trend; second, with constant only; and third, with constant and trend.</p><p>The test results of the Westerlund panel cointegration are shown in <ref type="table" target="#tab_3">Table 4</ref>. Regarding M1, when the deterministic specification has no constant and no trend, all the four Westerlund test statistics are significant at p &lt; .01. When the specification has constant only, again all the four Westerlund test statistics are significant at p &lt; .01. With both constant and trend, all four test statistics are also significant at p &lt; .01. As the null of no cointegration is rejected in all cases, we therefore conclude that a long-run relationship exists between EMP 1 and the dependent variables. Note. EMP = exchange market pressure; EPU = economic policy uncertainty; GDP = gross domestic product; CPI = consumer price index; FDI = foreign direct investment. ***Mean statistic relationship significant at 1%.</p><p>In the case of M2, results from the cointegration tests show that for all the three possible deterministic specifications, all the four test statistics are statistically significant at p &lt; .01. We also conclude that a long-run relationship is present between the variables.</p><p>As for M3, the four test statistics turn out as statistically significant at p &lt; .01 regardless of the choice of deterministic specification. Again, evidence is provided in support of the presence of a long-run relationship between the variables.</p><p>The cointegration test results of the last model, M4, also show that a long-run relationship exists between the variables. The significance level of the four test statistics is p &lt; .01 for each deterministic specification. Therefore, we conclude that in general, long-run relationships exist between EMP, its determinants, and EPU.</p><p>We further estimate the models using the CCEMG and AMG estimation techniques, as the panel cointegration gives evidence of long-run relationships. <ref type="table" target="#tab_4">Table 5</ref> contains the estimation results of these long-run relationships between the alternative constructs of EMP, EPU, domestic macroeconomic determinants, and external determinants specified in Equations 3 to 6 as Models 1 to 4 (M1:M4).</p><p>The CCEMG and AMG estimation results from the regression of the four alternative constructs of EMP on the explanatory variables are relatively similar. Both the CCEMG and AMG results generally show that EPU has a positive effect on EMP. EMP in M1 is the least elastic to EPU, the reported elasticities in the alternative models range between 0.032 and about 1.45.</p><p>Also, CCEMG and AMG estimation results from all the regression models indicate that both the domestic and external factors included in our estimations have important explanatory powers. The results indicate that higher GDP growth, higher domestic credit as share of GDP, and higher FDI inflows are significantly associated with lower EMP. However, the results show that inflation, financial openness, as well as trade openness aggravate the severity of the pressure.</p><p>Irrespective of how we have measured EMP, the results have consistently shown that it responds positively to EPU, CPI, trade openness and financial openness. Most importantly, the negative effect of uncertainty is once again confirmed. This implies that the foreign exchange market is put under immense pressure during periods of high uncertainty and remains relatively calm when uncertainty is low.    <ref type="bibr" target="#b37">Olanipekun et al. (2019)</ref> also established that both domestic and global EPU can predict changes in EMP of BRIC countries. This negative effect of uncertainty on exchange rates also aligns with <ref type="bibr" target="#b34">Krol (2014)</ref> and <ref type="bibr" target="#b32">Kido (2016)</ref>, both showed that high uncertainty leads to high exchange rate volatility. As increased uncertainty tends to reflect in trade activities as a huge cost for external businesses and debts owed in foreign currency, the government will be forced to react as domestic currency is pressured to depreciate. This will further increase the burden on the capital accounts. Sometimes a reactive monetary policy in response to rising uncertainty may further aggravate the situation in the exchange market. Our findings show that EMP responds positively to financial and trade openness. It is worthy of note that financial openness has the most explanatory power of all the explanatory variables in the models. This finding shows that high capital mobility and free portfolio flows induce pressure in the foreign exchange market. This finding contradicts the assertion made by <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref> that capital controls have a dampening effect on EMP. Our finding is more in line with the claims of  and <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref> that increased portfolio outflow increases EMP. The positive impact of trade openness lends credence to the theoretical argument of <ref type="bibr" target="#b7">Balassa (1975)</ref> that when trade openness is encouraged through import tariff reduction, it creates a current account imbalance and leads to increased imports. This, in turn, triggers a depreciation in the real exchange rate and increases the level of pressure in the foreign exchange market. As bilateral trade relations become unequal, a country might be forced to peg its exchange rate to make their tradables remain competitive.</p><p>EMP also reacts positively to CPI. As an indicator of monetary discipline, CPI in our results shows the importance of price stability in managing the exchange market against  the argument that stable inflation does not necessarily imply financial market stability (see <ref type="bibr" target="#b51">White, 2006)</ref>. For given domestic prices, increase in CPI will put pressure on currencies to depreciate because it discourages savings which could have absorbed the depreciation pressures on the local currency. This will spur a contractionary monetary policy which raises the interest rate so that savings can be attractive, and also makes the home currency attractive for investment. Our results show that EMP responds negatively to GDP growth, domestic credit and FDI inflow are also in line with  and <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref> but in contrast to <ref type="bibr" target="#b31">Katircioglu and Feridun (2011)</ref>, who showed that domestic credit tends to increase EMP in Turkey. The soothing effect of economic growth implies increase in real balances and strong currency. This important role is manifested indirectly by reducing inflation, increasing external competitiveness, and enhancing sound macroeconomic fundamentals that prevent speculative attacks on currencies. The existence of sound macroeconomic fundamentals will further attract higher volume of inward direct investment which will significantly increase productivity. FDI inflow eases the pressure in the exchange market, this suggests that a huge and sudden reduction in such flows will definitely induce devaluation pressures. Also, loose monetary policy reflected through higher domestic credit GDP ratio aggravates EMP. This suggests that EMP can be lowered through efficient monetary policy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Having explored the data for the 20 countries over the period 2003-2017 and addressed the problems of heterogeneity, cross-sectional dependency, and nonstationarity, this study finds that a long-run relationship exists between each of the four types of EMP measures and EPU, GDP growth, CPI, domestic credit, trade openness, financial openness, and FDI inflow.</p><p>This issue was analyzed by using the four different measures of EMP formulated by  and <ref type="bibr" target="#b0">Aizenman and Binici (2016)</ref>. To address the problems of panel cross-section correlation and heterogeneity, we used unit root and cointegration tests that are robust to cross-sectional correlation and panel heterogeneity to establish the long-run relationships. CCEMG and AMG are the estimation techniques used for their robustness against serial correlation and CD. The results show evidence of a long-run relationship among the variables. Our main finding is that EPU, CPI, trade openness, and financial openness do reinforce EMP in the long run, while GDP growth, domestic credit, and FDI inflow ease the pressure. The effect of EPU on EMP is higher on the monetary model based EMP. Furthermore, EMP is most powerfully influenced by increased capital mobility resulting from higher financial openness.</p><p>Based on our findings, we draw the following conclusions. First, as EPU reinforces EMP, irrespective of whether a country operates fixed, flexible, or intermediate exchange rate regime, its foreign exchange market will still be affected by EPU. Second, if policymakers provide a relatively certain and stable policy environment, EMP is more likely to ease and macroeconomic performance more likely to improve, as EPU weakens economic activities. Third, better policy environment will aid more FDI inflow and increase GDP growth which will ease the EMP. Finally, governments need to critically address the channels through which policy uncertainty manifests. Examples include uncertainties concerning who will be making policy decisions, uncertainties concerning the choice of policy decisions to be made, and uncertainties concerning how policy decisions will affect the economy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Cross-Sectional Dependence Test Results.</figDesc><table><row><cell>Variable</cell><cell>Statistic</cell><cell>p value</cell></row><row><cell>EMP 1 EMP 2 EMP 3 EMP 4 EPU</cell><cell>1.15 151.49*** 188.15*** 154.26*** 65.24***</cell><cell>.248 .000 .000 .000 .000</cell></row><row><cell>GDP growth</cell><cell>188.09***</cell><cell>.000</cell></row><row><cell>CPI</cell><cell>74.46***</cell><cell>.000</cell></row><row><cell>Domestic credit</cell><cell>126.90***</cell><cell>.000</cell></row><row><cell>Trade openness</cell><cell>183.53***</cell><cell>.000</cell></row><row><cell>Financial openness</cell><cell>153.70***</cell><cell>.000</cell></row><row><cell>FDI inflow</cell><cell>129.91***</cell><cell>.000</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Slope Homogeneity Test Results.Note. EPU = economic policy uncertainty; GDP = gross domestic product; CPI = consumer price index; FDI = foreign direct investment.</figDesc><table><row><cell>Variable</cell></row></table><note>***Mean statistic relationship significant at 1%.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>CIPS Unit Root Test Results With Intercept and Trend.Note. CIPS = cross-sectionally augmented IPS; EMP = exchange market pressure; EPU = economic policy uncertainty; GDP = gross domestic product; CPI = consumer price index; FDI = foreign direct investment.</figDesc><table><row><cell>Variable</cell></row></table><note>*Mean statistic relationship significant at 10%. ***Mean statistic relationship significant at 1%.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Westerlund Error Correction Model Panel Cointegration Test Results.</figDesc><table><row><cell>Test statistic</cell><cell>Bootstrap p value</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>Long-Run Relationships.Note. CCEMG = common correlated effects mean group; AMG = augmented mean group; EPU = economic policy uncertainty; GDP = gross domestic product; CPI = consumer price index; FDI = foreign direct investment. *Mean statistic relationship significant at 10%. **Mean statistic relationship significant at 5%. ***Mean statistic relationship significant at 1%.</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">Test statistic</cell><cell></cell><cell cols="2">Bootstrap p value</cell></row><row><cell cols="3">Deterministic specification: Constant only</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>g_tau</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-4.043***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell>g_alpha</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-17.449***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell>p_tau</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-33.662***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell>p_alpha</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-19.267***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell cols="4">Deterministic specification: Constant and trend</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>g_tau</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-3.856***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell>g_alpha</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-17.188***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell>p_tau</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-31.535***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell>p_alpha</cell><cell></cell><cell></cell><cell></cell><cell cols="2">-18.413***</cell><cell></cell><cell>.000</cell><cell></cell></row><row><cell cols="3">Note. EMP = exchange market pressure.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">***Mean statistic relationship significant at 1%.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">CCEMG</cell><cell></cell><cell></cell><cell>AMG</cell><cell></cell><cell></cell></row><row><cell>Regressors</cell><cell>M1</cell><cell>M2</cell><cell>M3</cell><cell>M4</cell><cell>M1</cell><cell>M2</cell><cell>M3</cell><cell>M4</cell></row><row><cell>EPU</cell><cell>0.032***</cell><cell>1.095***</cell><cell>1.107***</cell><cell>0.288***</cell><cell>0.048***</cell><cell>1.424***</cell><cell>1.458***</cell><cell>0.377***</cell></row><row><cell></cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.003)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.000)</cell></row><row><cell>GDP growth</cell><cell>-0.009***</cell><cell>-0.052***</cell><cell>-0.050***</cell><cell>-0.015***</cell><cell>-0.167**</cell><cell>-1.474**</cell><cell>-1.334**</cell><cell>-0.377**</cell></row><row><cell></cell><cell>(0.002)</cell><cell>(0.000)</cell><cell>(0.001)</cell><cell>(0.000)</cell><cell>(0.012)</cell><cell>(0.017)</cell><cell>(0.023)</cell><cell>(0.021)</cell></row><row><cell>CPI</cell><cell>0.005**</cell><cell>0.235***</cell><cell>-0.231***</cell><cell>-0.063***</cell><cell>-0.007**</cell><cell>0.054*</cell><cell>0.063*</cell><cell>0.014*</cell></row><row><cell></cell><cell>(0.023)</cell><cell>(0.002)</cell><cell>(0.002)</cell><cell>(0.002)</cell><cell>(0.027)</cell><cell>(0.074)</cell><cell>(0.071)</cell><cell>(0.075)</cell></row><row><cell>Domestic credit</cell><cell>-0.014**</cell><cell>-1.227***</cell><cell>-1.222***</cell><cell>-0.320***</cell><cell>-0.866**</cell><cell>-1.878**</cell><cell>-1.925**</cell><cell>-2.669**</cell></row><row><cell></cell><cell>(0.016)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.033)</cell><cell>(0.011)</cell><cell>(0.012)</cell><cell>(0.011)</cell></row><row><cell>Trade openness</cell><cell>0.007**</cell><cell>1.951***</cell><cell>1.980***</cell><cell>0.534***</cell><cell>0.028*</cell><cell>2.551**</cell><cell>5.941</cell><cell>1.537**</cell></row><row><cell></cell><cell>(0.042)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.083)</cell><cell>(0.017)</cell><cell>(0.144)</cell><cell>(0.015)</cell></row><row><cell>Financial openness</cell><cell>0.011***</cell><cell>2.302***</cell><cell>2.284***</cell><cell>0.618***</cell><cell>0.256*</cell><cell>-0.496*</cell><cell>-0.297*</cell><cell>-0.092*</cell></row><row><cell></cell><cell>(0.010)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.000)</cell><cell>(0.062)</cell><cell>(0.081)</cell><cell>(0.089)</cell><cell>(0.088)</cell></row><row><cell>FDI inflow</cell><cell>-0.002*</cell><cell>-0.091**</cell><cell>-0.101**</cell><cell>-0.026</cell><cell>-0.006*</cell><cell>-1.362**</cell><cell>-1.388**</cell><cell>-0.366**</cell></row><row><cell></cell><cell>(0.063)</cell><cell>(0.023)</cell><cell>(0.019)</cell><cell>(0.216)</cell><cell>(0.079)</cell><cell>(0.021)</cell><cell>(0.021)</cell><cell>(0.021)</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 4 .</head><label>4</label><figDesc>(continued)   </figDesc><table /><note></note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head><p>Ifedolapo Olabisi Olanipekun https://orcid.org/0000-0002-9292-8740</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biographies</head><p>Ifedolapo Olabisi Olanipekun is a lecturer at the Department of Economics, Adeyemi College of Education, Ondo, Nigeria. Her research interests include panel data econometrics, international finance, growth and energy economics.</p><p>Godwin Olasehinde-Williams is a senior lecturer at the Department of Economics, Eastern Mediterranean University, and also a researcher at Cambridge Resources International. His areas of interest include financial and growth economics, public policy and panel data econometrics.</p><p>Hasan Güngör is a professor at the department of economics, Eastern Mediterranean University, North Cyprus. He received his PhD from Marmara University, Turkey. He is a professor of banking and finance and currently working on various fields of macroeconomics and finance.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Exchange market pressure in OECD and emerging economies: Domestic vs. external factors and capital flows in the old and new normal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Aizenman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Binici</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="65" to="87" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Exchange market pressure and absorption by international reserves: Emerging markets and fear of reserve loss during the 2008-2009 crisis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Aizenman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Hutchison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="1076" to="1091" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">From the great moderation to the global crisis: Exchange market pressure in the</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Aizenman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Sushko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Open Economies Review</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="597" to="621" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Foreign exchange market pressure and capital controls</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M</forename><surname>Akram</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">P</forename><surname>Byrne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Financial Markets</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="42" to="53" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note>Institutions and Money</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Political cycles and the macroeconomy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Alesina</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Roubini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">D</forename><surname>Cohen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997" />
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">C</forename><surname>Arbatli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ito</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Miake</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Saito</surname></persName>
+		</author>
+		<title level="m">Policy uncertainty in Japan (No. w23411)</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+		<respStmt>
+			<orgName>National Bureau of Economic Research</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Measuring economic policy uncertainty</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">R</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Bloom</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Davis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page" from="1593" to="1636" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Reforming the system of incentives in developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Balassa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Development</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="365" to="382" />
+			<date type="published" when="1975" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Does economic policy uncertainty predict exchange rate returns and volatility? Evidence from a nonparametric causality-inquantiles test</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Balcilar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Kyei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Wohar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Open Economies Review</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="229" to="250" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Exchange rate expectations and economic policy uncertainty</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Beckmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Czudaj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="148" to="162" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Effective exchange rates, current accounts and global imbalances</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Beckmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Czudaj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of International Economics</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="500" to="533" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Exchange rate expectations and economic policy uncertainty</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Beckmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Czudaj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="148" to="162" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Economic policy uncertainty and risk spillovers in the Eurozone</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Bernal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">Y</forename><surname>Gnabo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Guilmin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="24" to="45" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Accounting for unobserved heterogeneity in panel time series models</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Eberhardt</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>Unpublished mimeo</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Uk: Nuffield</forename><surname>Oxford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>College</surname></persName>
+		</author>
+		<imprint/>
+		<respStmt>
+			<orgName>University of Oxford</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Cross-section dependence in nonstationary panel models: A novel estimator</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Eberhardt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bond</surname></persName>
+		</author>
+		<ptr target="https://mpra.ub.uni-muenchen.de/17692/" />
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Productivity analysis in global manufacturing production</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Eberhardt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Teal</surname></persName>
+		</author>
+		<idno>ea831625-9014-40ec-abc5-516ecfbd2118</idno>
+		<ptr target="https://ora.ox.ac.uk/objects/uuid" />
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Contagious currency crises (No. w5681)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Eichengreen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">K</forename><surname>Rose</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wyplosz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>National Bureau of Economic Research</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Exchange rates and fundamentals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Engel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">D</forename><surname>West</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="page" from="485" to="517" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Federal Open Market Committee</title>
+		<ptr target="http://www.federalreserve.gov/monetarypolicy/fomcminutes20091216.htm" />
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Minutes of the December</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Exchange market pressures during the financial crisis: A Bayesian model averaging evidence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Feldkircher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Horvath</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Rusnak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="21" to="41" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Determinants of exchange market pressure in Turkey: An econometric investigation. Emerging Markets Finance and Trade</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Feridun</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="65" to="81" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Exchange market pressure, monetary policy, and economic growth: Argentina</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Malet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Developing Economies</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="253" to="282" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A monetary model of exchange market pressure applied to the postwar Canadian experience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Girton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Roper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page" from="537" to="548" />
+			<date type="published" when="1977" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Monetary policy and exchange market pressure: The case of the Philippines</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Gochoco-Bautista</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Bautista</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Macroeconomics</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="153" to="168" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The reaction of exchange rates to economic news</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">S</forename><surname>Hakkio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">K</forename><surname>Pearce</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economic Inquiry</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="621" to="636" />
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Capital inflows, exchange market pressure, and credit growth in four transition economies with fixed exchange rates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Hegerty</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economic Systems</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="155" to="167" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Money market pressure in emerging economies: International contagion versus domestic determinants</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Hegerty</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economic Systems</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="506" to="521" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">De facto classification of exchange rate regimes and monetary policy frameworks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">S</forename><surname>Im</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Shin</surname></persName>
+		</author>
+		<ptr target="http://www.imf.org/external/pubs/ft/weo/2013/01/" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="53" to="74" />
+			<date type="published" when="2003" />
+			<publisher>IMF Press</publisher>
+		</imprint>
+	</monogr>
+	<note>World Economic Outlook: Hopes, realities risks</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Panels with non-stationary multifactor error structures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Kapetanios</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Yamagata</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="page" from="326" to="348" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Economic policy uncertainty, financial markets and probability of US recessions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Karnizova</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economics Letters</title>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="page" from="261" to="265" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Do macroeconomic fundamentals affect exchange market pressure? Evidence from bounds testing approach for Turkey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">T</forename><surname>Katircioglu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Feridun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics Letters</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="295" to="300" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">On the link between the US economic policy uncertainty and exchange rates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Kido</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economics Letters</title>
+		<imprint>
+			<biblScope unit="volume">144</biblScope>
+			<biblScope unit="page" from="49" to="52" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Definition-consistent measurement of exchange market pressure</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Klaassen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Jager</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="74" to="95" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Economic policy uncertainty and exchange rate volatility</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Krol</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Finance</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="241" to="256" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Economic policy uncertainty and the yield curve</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Leippold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Matthys</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2669500" />
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Sovereign risk and the real exchange rate: A non-linear approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Ojeda-Joya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Sarmiento</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Economics</title>
+		<imprint>
+			<biblScope unit="volume">156</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Unraveling the causal relationship between economic policy uncertainty and exchange market pressure in BRIC Countries: Evidence from Bootstrap Panel Granger Causality</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">O</forename><surname>Olanipekun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Güngör</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Olasehinde-Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SAGE Open</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">2158244019853903</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Impact of monetary policy on exchange market pressure: The case of Nepal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Panday</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Asian Economics</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="59" to="71" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Measuring and estimating exchange market pressure in the EU</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Pentecost</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Van Hooydonk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Van Poeck</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="401" to="418" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">General diagnostic tests for cross section dependence in panels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cesifo Working Paper Series No</title>
+		<imprint>
+			<date type="published" when="1229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Estimation and inference in large heterogeneous panels with a multifactor error structure</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="967" to="1012" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">A simple panel unit root test in the presence of cross-section dependence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="265" to="312" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Testing slope homogeneity in large panels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Pesaran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Yamagata</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">142</biblScope>
+			<biblScope unit="page" from="50" to="93" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Efficient inference in a random coefficient regression model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">A</forename><surname>Swamy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica: Journal of the Econometric Society</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="311" to="323" />
+			<date type="published" when="1970" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Dynamic expectation formation in the foreign exchange market</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ter Ellen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">F</forename><surname>Verschoor</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Zwinkels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="75" to="97" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Exchange rate regimes and exchange market pressure in the new EU member states</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Van Poeck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Vanneste</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Veiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JCMS: Journal of Common Market Studies</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="459" to="485" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Exchange rates and monetary policy uncertainty (Society for Economic Dynamics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Vedolin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Tahbaz-Salehi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Mueller</surname></persName>
+		</author>
+		<ptr target="https://ideas.repec.org/p/red/sed016/138.html" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Testing for error correction in panel data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Westerlund</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oxford Bulletin of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="709" to="748" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Estimating exchange market pressure and the degree of exchange market intervention for Canada</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">N</forename><surname>Weymark</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Economics</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="273" to="295" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Measuring the degree of exchange market intervention in a small open economy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">N</forename><surname>Weymark</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="55" to="79" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Is price stability enough? Bank for international settlements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">R</forename><surname>White</surname></persName>
+		</author>
+		<ptr target="https://www.bis.org/publ/work205.htm" />
+	</analytic>
+	<monogr>
+		<title level="j">BIS Working Papers</title>
+		<imprint>
+			<biblScope unit="volume">205</biblScope>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Causality between economic policy uncertainty and exchange rate in China with considering quantile differences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A I</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">Z</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">I</forename><surname>Xin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Theoretical &amp; Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="29" to="38" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

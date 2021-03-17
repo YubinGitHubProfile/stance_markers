@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">BRIEF-P: Validation Study in Children in Early Childhood With Neurodevelopmental Disorders</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Esperanza</forename><surname>Bausela Herreras</surname></persName>
+							<email>esperanza.bausela@unavarra.es</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Universidad Pública de Navarra</orgName>
+								<address>
+									<settlement>Pamplona</settlement>
+									<country key="ES">España</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Esperanza Bausela Herreras</orgName>
+								<orgName type="department" key="dep2">Departamento de Ciencias de la Salud</orgName>
+								<orgName type="institution">Universidad Pública de Navarra</orgName>
+								<address>
+									<addrLine>Área de Psicología Evolutiva y de la Educación, Campus de Arrosadía, Edificio de los Magnolios C.P</addrLine>
+									<postCode>31006</postCode>
+									<settlement>Pamplona</settlement>
+									<country key="ES">España</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">BRIEF-P: Validation Study in Children in Early Childhood With Neurodevelopmental Disorders</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019879166</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>BRIEF-P</term>
+					<term>executive functions</term>
+					<term>neurodevelopmental disorders</term>
+					<term>reliability</term>
+					<term>validity</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Highlights • • Parents and teachers are reliable sources for assessing the development of executive functions of children in early childhood education who have neurodevelopmental disorders. • • It is confirmed that Behaviour Rating Inventory of Executive Function-Preschool Version (BRIEF-P) is a valid and reliable instrument with which to evaluate executive functions in children having neurodevelopmental disorders. • • Differences are obtained depending on whether children have neurodevelopmental disorders or typical development when evaluated by parents and teachers.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The application of Behaviour Rating Inventory of Executive Function-Preschool Version (BRIEF-P) has been chosen because it has been recently validated and adapted to English in the Spanish population. This is justified in its novelty, in comparison with other studies in other contexts where the originally version has been applied <ref type="bibr" target="#b7">(Liogier d'Ardhuy et al., 2015;</ref><ref type="bibr" target="#b13">Sherman &amp; Brooks, 2010;</ref><ref type="bibr" target="#b19">Yarnell et al., 2015)</ref>.</p><p>BRIEF-P is an instrument to evaluate executive functions in children between the ages of 2 years to 5 years 11 months, and it is applied by parents, teachers, or other habitual child caregivers (informants).</p><p>It is used to evaluate executive functions in children with different neurodevelopmental disorders: (a) underweight <ref type="bibr" target="#b0">(Anderson, McNamara, Andridge, &amp; Keim, 2015)</ref>, (b) Neurofibromatosis Type 1 <ref type="bibr" target="#b8">(Lorenzo, Barton, Arnold, &amp; North, 2013)</ref>, (c) specific language disorder <ref type="bibr" target="#b18">(Vugs, Hendriks, Cuperus, &amp; Verhoeven, 2014)</ref>, (d) Attention Deficit Hyperactivity Disorder (ADHD; <ref type="bibr" target="#b6">Holt, Beer, Kronenberger, Pisoni, &amp; Lalonde, 2012;</ref><ref type="bibr" target="#b14">Skogan et al., 2015;</ref><ref type="bibr" target="#b16">Veleiro, Peralbo, &amp; Artigas, 2012)</ref>, (e) Down Syndrome <ref type="bibr" target="#b7">(Liogier d'Ardhuy et al., 2015)</ref>, (f) hearing impairment <ref type="bibr" target="#b6">(Holt et al., 2012)</ref>, and (g) glutinic acid type <ref type="bibr" target="#b1">(Beauchamp, Bonch, &amp; Anderson, 2009)</ref>.</p><p>The application requires 10 to 15 min. It is answered using a Likert-type frequency scale with three response options: never, sometimes, and frequently. It is composed of 63 items under five clinical scales (Inhibition, Emotional Control, Flexibility, Working Memory, and Plan/Organize), three clinical indexes (Inhibitory Self-Control, Flexibility, and Emergent Metacognition), Global Executive Composite, and two validity scales (Negativity and Inconsistency).</p><p>There are scales according to informant (parents and teachers) with respect to the development contexts (family or school), by sex and age groups (T-scores). T-scores greater than or equal to 65 reflect higher levels of problems or difficulties.</p><p>It is a standardized questionnaire that has recently been translated, adapted, and arranged in our particular context by Bausela and Luque were adapters the BRIEF-P in 2016 <ref type="bibr" target="#b4">(Gioia, Espy, &amp; Isquith, 2016)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Present Study</head><p>This study is aimed at analyzing the psychometric properties (reliability and validity) of BRIEF-P in a sample of children with neurodevelopmental disorders who have been evaluated by parents and teachers. Also, this study compares the development of executive functions in children in early childhood-those who present neurodevelopmental disorders that are evaluated by their parents and teachers-with a normative and clinical population.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Design</head><p>Non-experimental methodology, ex post facto, descriptive, cross-sectional development study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head><p>Participants were 107 parents and 98 teachers, evaluating 205 children, including those with various neurodevelopmental disorders, who participated in the adaptation and validation process for the BRIEF-P test in Spanish population <ref type="bibr" target="#b4">(Gioia et al., 2016)</ref>: ADHD, prematurity, language disorders, autism, language, epilepsy, Attention deficit disorder (ADD), mixed clinical group (maturational delay, neurofibromatosis, specific learning disorders, hypoxia, etc.). Neurodevelopmental disorders have been selected which, according to the body of literature, are accompanied by deficits in executive functions <ref type="bibr">(Tirapu, García, Ríos, &amp; Ardila, 2011)</ref>. <ref type="table" target="#tab_0">Table 1</ref> presents the distribution of children, according to their age, as evaluated by the informants: (a) 66.3% (n = 65) of the children evaluated by the teachers are 4 to 5 years of age and (b) 66.4% (n = 71) of the children evaluated by the parents are 4 to 5 years of age.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Procedure</head><p>BRIEF-P was completed by parents, guardians, and teachers of children from 2 years to 5 years 11 months, who had knowledge of the child for a minimum period of 6 months. The study was conducted between 2013 and 2016.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Data</head><p>For the analysis of reliability, internal consistency has been studied, based on Cronbach's alpha. For the analysis of construct validity, the internal structure has been analyzed using confirmatory factorial analysis. To compare the development of executive functions between different samples (normative and clinical), the Student's t test was applied for independent samples pertaining to the parent and teacher versions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Descriptive</head><p>There are differences depending on the informants, so when the respondents are (a) teachers, the highest scores correspond to Working Memory (M = 32.45, DT = 8.92) and Emergent Metacognition Index (M = 50.34, DT = 13.92); (b) parents, the highest scores correspond to Working Memory (M = 31.51, SD = 7.70) and Emergent Metacognition Index (M = 49.48, SD = 11.51). <ref type="table" target="#tab_1">Table 2</ref> presents descriptions of BRIEF-P clinical scales and indexes according to the informants: parents and teachers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Psychometric Properties: Reliability and Validity</head><p>For the reliability analysis, the internal consistency has been studied, based on Cronbach's alpha. For the analysis of construct validity, the internal structure was analyzed using confirmatory factorial analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reliability of the Scales: Internal Consistency</head><p>Reliability is a psychometric property that refers to the absence of measurement errors, in other words, to the degree of consistency and stability of the scores obtained along successive measurement processes using the same instrument. Reliability has been analyzed when considering internal consistency. Reliability is a quality of test scores that indicates that they are useful because they are sufficiently consistent and free of measurement errors. Internal consistency has been calculated using Cronbach's alpha at the different scales in the different subsamples. All alpha coefficient values are greater than .8: (a) Teachers (α = .89) and (b) Parents (α = .89). The alpha coefficient can be rated as very good (&gt;.90) in Flexibility of teachers and parents and Global Executive Composite for parents. The values proposed by <ref type="bibr" target="#b3">George and Mallery (2003)</ref> suggest that an alpha coefficient value &gt;.08 is good and &gt;.09 is very good. The reliability coefficients of Cronbach's alpha are shown in <ref type="table" target="#tab_2">Table 3</ref>. All alpha coefficient values are greater than .8. The alpha coefficient can be rated as very good (&gt;.90) in Flexibility of teachers and parents and Global Executive Composite for parents. The values proposed by <ref type="bibr" target="#b3">George and Mallery (2003)</ref> suggest that an alpha coefficient value &gt;.08 is good and &gt;.09 is very good.</p><p>Typical Measurement Errors for clinical scales and indexes of BRIEF-P as a function of the respondent in T-scores were calculated by applying the generic formula that is available in the Spanish version of BRIEF-P <ref type="bibr" target="#b4">(Gioia et al., 2016)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Validation: Factor Analysis</head><p>The highest correlation coefficients are obtained from between (a) Emotional Control With Inhibition (r = .57, p = .000) and (b) Plan/Organize (r = .81, p = .000) with Working Memory. The lowest coefficient corresponds to the association between Flexibility and Inhibition (r = .27, p = .005).</p><p>The highest correlation coefficients are obtained from between (a) Inhibitory and Emotional Control (r = .65, p = .000) and (b) Plan/Organize (r = .86, p = .000) with Working Memory. The lowest coefficient corresponds to the association between Flexibility and Plan/Organize (r = .29, p = .005). <ref type="table" target="#tab_3">Table 4</ref> presents the intercorrelations matrix of the five clinical scales for the teacher and parent version of the test.</p><p>To check if the correlation matrix is an identity matrix, that is, the intercorrelations between the variables are zero, we use Bartlett's sphericity test, which consists of an estimate of the chi-square transformation of the determinant of the correlation matrix. If the variables are not intercorrelated, then Bartlett's sphericity test must have a value (significance) higher than the limit of.05. The data matrix is valid for continuing with the factor analysis process, as in our case this analysis had a significance that was much lower than the limit of .05, it was .000.</p><p>The Kaiser-Meyer-Olkin (KMO) and Bartlett's Test measure of sampling adequacy of teachers was used to examine the appropriateness of factor analysis. The approximate of chi-square is 279.00 with 10 degrees of freedom, which is significant at .000 level of significance. The KMO statistic of 0.61 is also large (greater than 0.50). Hence factor analysis is considered as an appropriate technique for further analysis of the data.</p><p>The KMO and Bartlett's Test measure of sampling adequacy of parents was used to examine the appropriateness of factor analysis. The approximate of chi-square is 247.14 with 10 degrees of freedom, which is significant at .000 level of significance. The KMO statistic of 0.70 is also large (greater than 0.50). Hence factor analysis is considered as an appropriate technique for further analysis of the data.</p><p>In the factor analysis, it was considered that a scale belongs to a component above a value of 0.40. When there are two or more values above this limit, the scale considered in the component is the higher value. As shown in <ref type="table" target="#tab_4">Table 5</ref>, the model obtained for teachers (n = 98) is made up of three factors that explain 92.95% of the variance. Subsequently, we discuss the scales that make up the three factors: (a) Component 1 explains 37.56% of the variance and includes Plan/Organize and Working Memory; (b) Component 2 explains 28.32% of the variance and includes Inhibition and Emotional Control; and (c) Component 3 explains 27.06% of the variance and includes Flexibility. The model obtained for the parents (n = 107) is configured by three factors that explain 90.83% of the variance. Furthermore, we discuss the scales that make up the three factors: (a) Component 1 explains 40.77% of the variance and includes Plan/Organize, Working Memory, and Inhibition; (b) Component 2 explains 26.37% of the variance and includes Emotional Control; and (c) Component 3 explains 20.77% of the variance and includes Flexibility.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Difference Between Groups: Parents (Clinical) Versus Teachers (Clinical)</head><p>We compared the scores of parents and teachers in the scales and clinical indexes of BRIEF-P. The results of the Student's t test for independent samples indicate that there are no statistically significant differences, depending on the respondents (see <ref type="table" target="#tab_5">Table 6</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Difference Between Groups: Parents (Normative vs. Clinical) and Teachers (Normative vs. Clinical)</head><p>The teachers in the clinical sample scored higher with respect to the behaviors manifested by children at all scales clinical and indices of the test compared with the normative sample. <ref type="table" target="#tab_6">Table 7</ref> shows that there are statistically significant differences between teachers (normative vs. clinical) in all scales and clinical indexes of BRIEF-P.</p><p>The parents of the clinical sample scored higher with respect to the behaviors manifested by children at all scales clinical and indices of the test compared with the normative sample. <ref type="table" target="#tab_7">Table 8</ref> shows that there are statistically significant differences between parents (normative vs. clinical) at all scales clinical and indexes of BRIEF-P.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The first objective of this study relates to the analysis of the psychometric properties of BRIEF-P in a sample of children with neurodevelopmental disorders who are evaluated by parents and teachers in an unprepared manner. In relation to this objective, we highlight two aspects:</p><p>i. Reliability: In the assessment of the internal consistency of the test, the results of the reliability of clinical scales and indexes in BRIEF-P are between .874 (Autocontrol Inhibitory scale in the teacher version) and .90 (Clinical Flexibility Scale in the parent version). We can conclude from the results that there is an adequate value for reliability.</p><p>ii. Validity: The results of the factorial analysis coincide with the results found in an American test <ref type="bibr" target="#b16">(Veleiro et al., 2012)</ref>, with three factors. Confirmatory factor analysis (CFA) repeats the same structure in both the parent questionnaire and the teacher questionnaire. The proposed factor structure, therefore, suggests that the scales of the test capture three types of difficulties.</p><p>The second objective of this study was to compare the development of executive functions in children with neurodevelopmental disorders from the perspective of parents and teachers (with clinical and normative samples). In relation to this objective, we can affirm that parents and teachers are reliable sources for assessing the development of executive functions of children in early childhood education who have neurodevelopmental disorders. In that, there are no differences in their perception, which disagrees with the results obtained by other authors and studies in a normative population <ref type="bibr" target="#b11">(Montiel &amp; Peña, 2001;</ref><ref type="bibr" target="#b12">Ortiz &amp; Acle, 2006)</ref>. Differences   are obtained depending on whether children have neurodevelopmental disorders or typical development when evaluated by parents and teachers. These results allow us to conclude that BRIEF-P is sensitive to discriminate deficits in the executive functions between a normative population and a clinical population. We conclude by affirming that BRIEF-P is an instrument that is sensitive to the development of executive functions and the informant who interacts with the child having a neurodevelopmental disorder, and guarantees a pluralistic and diverse view depending on the development contexts (home vs. school) and the ecological validity of the scores. These results are in accordance with those obtained by other researchers <ref type="bibr" target="#b12">(Ortiz &amp; Acle, 2006)</ref>.</p><p>One of the strengths that we estimate is that the sample which has been drawn from all of the national territory  guarantees the representativeness and generalization of the results obtained in the present study. In terms of future perspectives, we propose to analyze the concurrent validity of BRIEF-P using the initial Luria <ref type="bibr" target="#b2">(Garon, Smith, &amp; Bryson, 2014;</ref><ref type="bibr" target="#b9">Manga y Ramos, 2000)</ref> Battery with respect to the executive dimension.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Limitations</head><p>The multiple sizes (power of the effect) prevent us from generalizing the results in the rest of the population. It is necessary to be prudent when interpreting, for example, the factorial structure of BRIEF-P with this sample size. We also consider in the future to include the analysis of the concurrent validity of BRIEF-P with other instruments that evaluate the executive functions in the child population and consider a larger sample size.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Description of the Evaluated Children in Terms of Age (Frequency and Percentage).</figDesc><table><row><cell></cell><cell cols="2">Teachers (n = 98)</cell><cell cols="2">Parents (n = 107)</cell></row><row><cell>Age</cell><cell>Frequency</cell><cell>Percentage</cell><cell>Frequency</cell><cell>Percentage</cell></row><row><cell>2-3 years</cell><cell>33</cell><cell>33.7</cell><cell>36</cell><cell>33.6</cell></row><row><cell>4-5 years</cell><cell>65</cell><cell>66.3</cell><cell>71</cell><cell>66.4</cell></row><row><cell>Total</cell><cell>98</cell><cell>100.0</cell><cell>107</cell><cell>100.0</cell></row><row><cell>Source. BRIEF-P (Spanish adaptation).</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">Note. BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version.</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Descriptive Statistics (Scales and Clinical Indexes of BRIEF-P; Parents and Teachers).</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Typical</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Clinical scales/Indices</cell><cell cols="3">Range Minimum Maximum</cell><cell>Sum</cell><cell>Median</cell><cell cols="4">Deviation Variance Asymmetry Kurtosis</cell></row><row><cell>Teachers (n = 98)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Clinical scales</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell>30</cell><cell>16</cell><cell>46</cell><cell>2.98</cell><cell>30.48</cell><cell>8.21</cell><cell>67.40</cell><cell>-.18</cell><cell>-1.09</cell></row><row><cell>Flexibility</cell><cell>19</cell><cell>10</cell><cell>29</cell><cell>1.53</cell><cell>15.66</cell><cell>5.24</cell><cell>27.44</cell><cell>.97</cell><cell>0.08</cell></row><row><cell>Emotional Control</cell><cell>18</cell><cell>10</cell><cell>28</cell><cell>1.60</cell><cell>16.33</cell><cell>5.31</cell><cell>28.20</cell><cell>.53</cell><cell>-0.80</cell></row><row><cell>Working Memory</cell><cell>32</cell><cell>17</cell><cell>49</cell><cell>3.18</cell><cell>32.45</cell><cell>8.92</cell><cell>79.57</cell><cell>-.02</cell><cell>-0.89</cell></row><row><cell>Planning and Organization</cell><cell>19</cell><cell>10</cell><cell>29</cell><cell>1.75</cell><cell>17.89</cell><cell>5.47</cell><cell>29.96</cell><cell>.32</cell><cell>-0.90</cell></row><row><cell>Indices</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibitory Autocontrol</cell><cell>47</cell><cell>26</cell><cell>73</cell><cell>4.58</cell><cell>46.81</cell><cell>12.35</cell><cell>152.59</cell><cell>.04</cell><cell>-1.02</cell></row><row><cell>Flexibility</cell><cell>36</cell><cell>20</cell><cell>56</cell><cell>3.13</cell><cell>31.99</cell><cell>9.55</cell><cell>91.18</cell><cell>.73</cell><cell>-0.38</cell></row><row><cell>Emergent Metacognition</cell><cell>51</cell><cell>27</cell><cell>78</cell><cell>4.93</cell><cell>50.34</cell><cell>13.91</cell><cell>193.67</cell><cell>.10</cell><cell>-0.88</cell></row><row><cell>Global Executive Function</cell><cell>105</cell><cell>66</cell><cell>171</cell><cell>11.05</cell><cell>112.81</cell><cell>25.88</cell><cell>669.72</cell><cell>.08</cell><cell>-0.68</cell></row><row><cell>Parents (n = 107)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Clinical scales</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell>29</cell><cell>17</cell><cell>46</cell><cell>3.28</cell><cell>30.74</cell><cell>7.25</cell><cell>52.55</cell><cell>.05</cell><cell>-0.57</cell></row><row><cell>Flexibility</cell><cell>18</cell><cell>10</cell><cell>28</cell><cell>1.62</cell><cell>15.15</cell><cell>4.07</cell><cell>16.62</cell><cell>.76</cell><cell>0.00</cell></row><row><cell>Emotional Control</cell><cell>18</cell><cell>10</cell><cell>28</cell><cell>1.84</cell><cell>17.23</cell><cell>4.21</cell><cell>17.74</cell><cell>.32</cell><cell>-0.30</cell></row><row><cell>Working Memory</cell><cell>34</cell><cell>17</cell><cell>51</cell><cell>3.37</cell><cell>31.51</cell><cell>7.70</cell><cell>59.33</cell><cell>.16</cell><cell>-0.51</cell></row><row><cell>Planning and Organization</cell><cell>19</cell><cell>10</cell><cell>29</cell><cell>1.92</cell><cell>17.96</cell><cell>4.36</cell><cell>18.98</cell><cell>.26</cell><cell>-0.38</cell></row><row><cell>Indices</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibitory Autocontrol</cell><cell>44</cell><cell>27</cell><cell>71</cell><cell>5.13</cell><cell>47.97</cell><cell>10.26</cell><cell>105.27</cell><cell>.03</cell><cell>-0.42</cell></row><row><cell>Flexibility</cell><cell>34</cell><cell>20</cell><cell>54</cell><cell>3.46</cell><cell>32.38</cell><cell>6.95</cell><cell>48.37</cell><cell>.36</cell><cell>-0.21</cell></row><row><cell>Emergent Metacognition</cell><cell>51</cell><cell>27</cell><cell>78</cell><cell>5.29</cell><cell>49.48</cell><cell>11.51</cell><cell>132.45</cell><cell>.18</cell><cell>-0.50</cell></row><row><cell>Global Executive Function</cell><cell>111</cell><cell>66</cell><cell>177</cell><cell>12.05</cell><cell>112.60</cell><cell>21.60</cell><cell>466.90</cell><cell>.05</cell><cell>-0.22</cell></row></table><note>Source. BRIEF-P (Spanish adaptation). Note. BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Total Element Statistics (Parents and Teachers).</figDesc><table><row><cell></cell><cell>Cronbach's α if</cell><cell>Typical</cell></row><row><cell></cell><cell>the element has</cell><cell>measurement</cell></row><row><cell></cell><cell>been deleted</cell><cell>error</cell></row><row><cell>Teachers (n = 98)</cell><cell></cell><cell></cell></row><row><cell>Clinical scales</cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell>.88</cell><cell>3.39</cell></row><row><cell>Flexibility</cell><cell>.90</cell><cell>3.16</cell></row><row><cell>Emotional Control</cell><cell>.89</cell><cell>3.26</cell></row><row><cell>Working Memory</cell><cell>.88</cell><cell>3.42</cell></row><row><cell>Planning and Organization</cell><cell>.89</cell><cell>3.26</cell></row><row><cell>Indices</cell><cell></cell><cell></cell></row><row><cell>Inhibitory Autocontrol</cell><cell>.87</cell><cell>3.55</cell></row><row><cell>Flexibility</cell><cell>.89</cell><cell>3.38</cell></row><row><cell>Emergent Metacognition</cell><cell>.88</cell><cell>3.49</cell></row><row><cell>Global Executive Function</cell><cell>.89</cell><cell>3.19</cell></row><row><cell>Parents (n = 107)</cell><cell></cell><cell></cell></row><row><cell>Clinical scales</cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell>.88</cell><cell>3.45</cell></row><row><cell>Flexibility</cell><cell>.90</cell><cell>3.11</cell></row><row><cell>Emotional Control</cell><cell>.89</cell><cell>3.19</cell></row><row><cell>Working Memory</cell><cell>.88</cell><cell>3.46</cell></row><row><cell>Planning and Organization</cell><cell>.89</cell><cell>3.26</cell></row><row><cell>Indices</cell><cell></cell><cell></cell></row><row><cell>Inhibitory Autocontrol</cell><cell>.87</cell><cell>3.56</cell></row><row><cell>Flexibility</cell><cell>.89</cell><cell>3.32</cell></row><row><cell>Emergent Metacognition</cell><cell>.87</cell><cell>3.56</cell></row><row><cell>Global Executive Function</cell><cell>.90</cell><cell>3.16</cell></row><row><cell>Source. BRIEF-P (Spanish adaptation).</cell><cell></cell><cell></cell></row><row><cell cols="3">Note. BRIEF-P = Behaviour Rating Inventory of Executive Function-</cell></row><row><cell>Preschool Version.</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Matrix of Intercorrelations (Parent and Teacher).</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>3. Emotional</cell><cell>4. Working</cell><cell>5. Planning and</cell></row><row><cell cols="2">BRIEF-P (Clinical scales) Pearson's correlation/Sig.</cell><cell>1. Inhibition</cell><cell>2. Flexibility</cell><cell>Control</cell><cell>Memory</cell><cell>Organziation</cell></row><row><cell>1. Inhibition</cell><cell>Pearson's correlation</cell><cell>1</cell><cell>.33**</cell><cell>.65**</cell><cell>.59**</cell><cell>.47**</cell></row><row><cell></cell><cell>Sig. (bilateral)</cell><cell>-</cell><cell>.001</cell><cell>.000</cell><cell>.000</cell><cell>.000</cell></row><row><cell>2. Flexibility</cell><cell>Pearson's correlation</cell><cell>.27**</cell><cell>1</cell><cell>.64**</cell><cell>.32**</cell><cell>.29**</cell></row><row><cell></cell><cell>Sig. (bilateral)</cell><cell>.005</cell><cell>-</cell><cell>.000</cell><cell>.001</cell><cell>.004</cell></row><row><cell>3. Emotional Control</cell><cell>Pearson's correlation</cell><cell>.57**</cell><cell>.41**</cell><cell>1</cell><cell>.39**</cell><cell>.37**</cell></row><row><cell></cell><cell>Sig. (bilateral)</cell><cell>.000</cell><cell>.000</cell><cell>-</cell><cell>.000</cell><cell>.000</cell></row><row><cell>4. Working Memory</cell><cell>Pearson's correlation</cell><cell>.68**</cell><cell>.35**</cell><cell>.35**</cell><cell>1</cell><cell>.86**</cell></row><row><cell></cell><cell>Sig. (bilateral)</cell><cell>.000</cell><cell>.000</cell><cell>.000</cell><cell>-</cell><cell>.000</cell></row><row><cell>5. Planning and</cell><cell>Pearson's correlation</cell><cell>.63**</cell><cell>.26**</cell><cell>.34**</cell><cell>.81**</cell><cell>1</cell></row><row><cell>Organization</cell><cell>Sig. (bilateral)</cell><cell>.000</cell><cell>.007</cell><cell>.000</cell><cell>.000</cell><cell>-</cell></row><row><cell cols="2">Source. BRIEF-P (Spanish adaptation).</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">Note. Teachers (n = 98), (a) Determinant = .052. Top part table teachers. Parents (n = 107), (a) Determinant = .092. Bottom part table parents.</cell></row><row><cell cols="3">BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note>*p &lt; .05. **p &lt; .01. ***p &lt; .001.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>Matrix of Rotated Component (Parents and Teachers).</figDesc><table><row><cell></cell><cell></cell><cell cols="2">Teachers (n = 98)</cell><cell></cell><cell></cell><cell cols="2">Parents (n = 107)</cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">Components</cell><cell></cell><cell></cell><cell cols="2">Components</cell><cell></cell></row><row><cell>BRIEF-P (Clinical scales)</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>Total</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>Total</cell></row><row><cell>Planning and Organization</cell><cell>.94</cell><cell></cell><cell></cell><cell></cell><cell>.92</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Working Memory</cell><cell>.92</cell><cell></cell><cell></cell><cell></cell><cell>.91</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell></cell><cell>.90</cell><cell></cell><cell></cell><cell>.68</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Emotional Control</cell><cell></cell><cell>.69</cell><cell></cell><cell></cell><cell></cell><cell>.93</cell><cell></cell><cell></cell></row><row><cell>Flexibility</cell><cell></cell><cell></cell><cell>.95</cell><cell></cell><cell></cell><cell>.19</cell><cell>.96</cell><cell></cell></row><row><cell>% of variance explained</cell><cell>37.56</cell><cell>28.32</cell><cell>27.06</cell><cell>92.95</cell><cell>40.77</cell><cell>26.37</cell><cell>20.77</cell><cell>90.83</cell></row></table><note>Source. BRIEF-P (Spanish adaptation). Note. Extraction method: main component analysis. Rotation method: Varimax with Kaiser normalization. The rotation has converged in five iterations. BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 .</head><label>6</label><figDesc>Independent-Samples t Test: Parents (Clinical) Versus Teachers (Clinical).</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>η 2</cell><cell></cell><cell>.000</cell><cell></cell><cell>.003</cell><cell></cell><cell>.009</cell><cell></cell><cell>.003</cell><cell></cell><cell>.000</cell><cell></cell><cell></cell><cell>.003</cell><cell></cell><cell>.001</cell><cell></cell><cell>.001</cell><cell>.000</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>95% difference</cell><cell cols="2">confidence interval</cell><cell>Lower Upper</cell><cell></cell><cell>-1.87 2.39</cell><cell></cell><cell>-1.80 0.77</cell><cell></cell><cell>-0.41 2.22</cell><cell></cell><cell>-3.22 1.35</cell><cell></cell><cell>-1.28 1.43</cell><cell></cell><cell></cell><cell>-1.95 4.28</cell><cell></cell><cell>-1.9 2.68</cell><cell></cell><cell>-4.36 2.65</cell><cell></cell><cell>-6.75 6.34</cell><cell></cell><cell></cell></row><row><cell></cell><cell>t test for the equality of means</cell><cell cols="2">Standard</cell><cell>Sig. Difference error</cell><cell>(bilateral) of means difference</cell><cell></cell><cell>.81 .26 1.08</cell><cell></cell><cell>.43 -.51 0.65</cell><cell></cell><cell>.17 .91 0.67</cell><cell></cell><cell>.42 -.93 1.16</cell><cell></cell><cell>.91 .07 0.69</cell><cell></cell><cell></cell><cell>.46 1.17 1.58</cell><cell></cell><cell>.73 .39 1.160</cell><cell></cell><cell>.63 -.86 1.77</cell><cell></cell><cell>.95 -.21 3.32</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">Degrees</cell><cell>of</cell><cell>freedom</cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell>203</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell>0.24</cell><cell></cell><cell>-0.78</cell><cell></cell><cell>1.36</cell><cell></cell><cell>-0.80</cell><cell></cell><cell>0.11</cell><cell></cell><cell></cell><cell>0.74</cell><cell></cell><cell>0.34</cell><cell></cell><cell>-0.49</cell><cell></cell><cell>-0.06</cell><cell></cell><cell></cell></row><row><cell>Levene test of</cell><cell>equality of variances</cell><cell></cell><cell></cell><cell>Type of Typical</cell><cell>BRIEF-P informant n M Deviation p F</cell><cell>Clinical scales</cell><cell>.047 Inhibition Parents 107 30.74 7.25 4.00</cell><cell>Teachers 98 30.48 8.21</cell><cell>.017 Flexibility Parents 107 15.15 4.08 5.83</cell><cell>Teachers 98 15.66 5.24</cell><cell>.005 Emotional Control Parents 107 17.23 4.21 8.23</cell><cell>Teachers 98 16.33 5.31</cell><cell>.129 Working Memory Parents 107 31.51 7.70 2.32</cell><cell>Teachers 98 32.45 8.92</cell><cell>.005 Planning and Organization Parents 107 17.96 4.36 7.90</cell><cell>Teachers 98 17.89 5.47</cell><cell>Indices</cell><cell>.007 Inhibitory Autocontrol Parents 107 47.97 10.26 7.39</cell><cell>Teachers 98 46.81 12.35</cell><cell>.001 Flexibility Parents 107 32.38 6.95 10.47</cell><cell>Teachers 98 31.99 9.55</cell><cell>.034 Emergent Metacognition Parents 107 49.48 11.51 4.57</cell><cell>Teachers 98 50.34 13.92</cell><cell>.040 Global Executive Function Parents 107 112.60 21.61 4.29</cell><cell>Teachers 98 112.81 25.9</cell><cell>Source. BRIEF-P (Spanish adaptation).</cell><cell>Note. BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version.</cell><cell>*p &lt; .05. **p &lt; .01. ***p &lt; .001.</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 7 .</head><label>7</label><figDesc>Independent-Samples t Test (Teachers: Clinical vs. Normative).</figDesc><table><row><cell cols="3">Levene test of equality</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">of variances</cell><cell></cell><cell></cell><cell cols="3">t test for equality of means</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">95% difference</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Degrees</cell><cell></cell><cell></cell><cell>Standard</cell><cell cols="2">confidence Interval</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>of</cell><cell>Sig.</cell><cell>Difference</cell><cell>error</cell><cell></cell><cell></cell></row><row><cell>BRIEF-P</cell><cell>F</cell><cell>Sig.</cell><cell>t</cell><cell>freedom</cell><cell>(bilateral)</cell><cell>of means</cell><cell>difference</cell><cell>Lower</cell><cell>Upper</cell></row><row><cell>Clinical scales</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell>26.05</cell><cell>.000</cell><cell>12.47</cell><cell>998</cell><cell>.000***</cell><cell>8.57</cell><cell>0.69</cell><cell>7.22</cell><cell>9.92</cell></row><row><cell>Flexibility</cell><cell>63.64</cell><cell>.000</cell><cell>8.15</cell><cell>998</cell><cell>.000***</cell><cell>2.97</cell><cell>0.36</cell><cell>2.25</cell><cell>3.68</cell></row><row><cell>Emotional Control</cell><cell>37.30</cell><cell>.000</cell><cell>7.67</cell><cell>998</cell><cell>.000***</cell><cell>3.19</cell><cell>0.42</cell><cell>2.37</cell><cell>4.01</cell></row><row><cell>Working Memory</cell><cell>29.54</cell><cell>.000</cell><cell>14.13</cell><cell>998</cell><cell>.000***</cell><cell>9.98</cell><cell>0.71</cell><cell>8.59</cell><cell>11.36</cell></row><row><cell>Planning and Organization</cell><cell>56.56</cell><cell>.000</cell><cell>11.85</cell><cell>998</cell><cell>.000***</cell><cell>4.74</cell><cell>0.40</cell><cell>3.96</cell><cell>5.53</cell></row><row><cell>Indices</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibitory Autocontrol</cell><cell>29.94</cell><cell>.000</cell><cell>11.6</cell><cell>998</cell><cell>.000***</cell><cell>11.76</cell><cell>1.01</cell><cell>9.77</cell><cell>13.75</cell></row><row><cell>Flexibility</cell><cell>59.38</cell><cell>.000</cell><cell>9.09</cell><cell>998</cell><cell>.000***</cell><cell>6.16</cell><cell>0.68</cell><cell>4.83</cell><cell>7.49</cell></row><row><cell>Emergent Metacognition</cell><cell>37.95</cell><cell>.000</cell><cell>13.71</cell><cell>998</cell><cell>.000***</cell><cell>14.72</cell><cell>1.07</cell><cell>12.61</cell><cell>16.83</cell></row><row><cell>Global Executive Function</cell><cell>30.59</cell><cell>.000</cell><cell>14.40</cell><cell>998</cell><cell>.000***</cell><cell>29.45</cell><cell>2.04</cell><cell>25.44</cell><cell>33.46</cell></row><row><cell>Source. BRIEF-P (Spanish adaptation).</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">Note. BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note>*p &lt; .05. **p &lt; .01. ***p &lt; .001.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8 .</head><label>8</label><figDesc>Independent-Samples t Test (Parents: Normative vs. Clinical).Source. BRIEF-P (Spanish adaptation). Note. BRIEF-P = Behaviour Rating Inventory of Executive Function-Preschool Version. *p &lt; .05. **p &lt; .01. ***p &lt; .001.</figDesc><table><row><cell></cell><cell cols="2">Levene test of</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">equality of variances</cell><cell></cell><cell></cell><cell cols="3">t test for equality of means</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Degrees of</cell><cell>Sig.</cell><cell>Difference</cell><cell>Standard error</cell><cell cols="2">95% difference confidence interval</cell></row><row><cell>BRIEF-P</cell><cell>F</cell><cell>Sig.</cell><cell>t</cell><cell>freedom</cell><cell>(bilateral)</cell><cell>of means</cell><cell>difference</cell><cell>Lower</cell><cell>Upper</cell></row><row><cell>Clinical scales</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibition</cell><cell>11.84</cell><cell>.001</cell><cell>11.46</cell><cell>1.182</cell><cell>.000***</cell><cell>6.81</cell><cell>0.59</cell><cell>5.65</cell><cell>7.98</cell></row><row><cell>Flexibility</cell><cell>16.13</cell><cell>.000</cell><cell>5.02</cell><cell>1.182</cell><cell>.000***</cell><cell>1.67</cell><cell>0.33</cell><cell>1.02</cell><cell>2.32</cell></row><row><cell>Emotional Control</cell><cell>4.58</cell><cell>.033</cell><cell>7.39</cell><cell>1.182</cell><cell>.000***</cell><cell>2.75</cell><cell>0.37</cell><cell>2.02</cell><cell>3.48</cell></row><row><cell>Working Memory</cell><cell>28.56</cell><cell>.000</cell><cell>13.99</cell><cell>1.182</cell><cell>.000***</cell><cell>8.16</cell><cell>0.58</cell><cell>7.02</cell><cell>9.31</cell></row><row><cell>Planning and Organization</cell><cell>15.67</cell><cell>.000</cell><cell>10.3</cell><cell>1.182</cell><cell>.000***</cell><cell>3.58</cell><cell>0.35</cell><cell>2.89</cell><cell>4.26</cell></row><row><cell>Indices</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inhibitory Autocontrol</cell><cell>5.31</cell><cell>.021</cell><cell>10.80</cell><cell>1.182</cell><cell>.000***</cell><cell>9.57</cell><cell>0.89</cell><cell>7.83</cell><cell>11.31</cell></row><row><cell>Flexibility</cell><cell>9.58</cell><cell>.002</cell><cell>7.43</cell><cell>1.182</cell><cell>.000***</cell><cell>4.43</cell><cell>0.6</cell><cell>3.26</cell><cell>5.59</cell></row><row><cell>Emergent Metacognition</cell><cell>25.09</cell><cell>.000</cell><cell>13.27</cell><cell>1.182</cell><cell>.000***</cell><cell>11.74</cell><cell>0.89</cell><cell>10.01</cell><cell>13.48</cell></row><row><cell>Global Executive Function</cell><cell>11.96</cell><cell>.001</cell><cell>12.96</cell><cell>1.182</cell><cell>.000***</cell><cell>22.99</cell><cell>1.77</cell><cell>19.51</cell><cell>26.47</cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The author would like to thank all the people who participated anonymously and disinterestedly and Tamara Luque Cuenca, coauthor of the Spanish adaptation of the BRIEF-P test.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared the following potential conflicts of interest with respect to the research, authorship, and/or publication of this article: The signing author of this text is co-author of the adaptation of BRIEF-P in Spanish along with Tamara Luque Cuenca, receiving the first co-author of BRIEF-P as compensation for royalties.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biography</head><p>Esperanza Bausela Herreras, contracted professor doctor accredited to University Headline by National Agency for Quality Assessment and Accreditation (ANECA) and with a positive evaluation of the research activity by the National Commission for the Evaluation of Research Activity (CNEAI).</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Executive function and mealtime behavior among preschool-aged children born very preterm</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mcnamara</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Andridge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Keim</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.eatbeh.2015.07.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Eating Behaviors</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="110" to="114" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Cognitive, behavioural and adaptive profiles of children with glutaric aciduria type I detected through newborn screening</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Beauchamp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bonch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Anderson</surname></persName>
+		</author>
+		<idno>doi:10.1007/ s10545-009-1167-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Inherited Metabolic Disease</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="207" to="213" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A novel executive function battery for preschoolers: Sensitive to age differences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Garon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">M</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Bryson</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/09297049.2013.857650</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Child Neuropsychology</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="713" to="736" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>George</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Mallery</surname></persName>
+		</author>
+		<title level="m">SPSS for windows step by step: A simple guide and reference, 11.0 update</title>
+		<meeting><address><addrLine>Boston, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Allyn &amp; Bacon</publisher>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+	<note>4th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">BRIEF-P. Evaluación Conductual de la Función Ejecutiva-Versión Infantil [Behavior Rating Inventory of Executive Function-Preschool version</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Gioia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">A</forename><surname>Espy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">K E</forename><surname>Isquith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Bausela</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Luque</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note>Adaptadoras)</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Spain: Tea</forename><surname>Madrid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Ediciones</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Contribution of family environment to pediatric cochlear implant users&apos; speech and language outcomes: Some preliminary findings</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Holt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Beer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">G</forename><surname>Kronenberger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">B</forename><surname>Pisoni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Lalonde</surname></persName>
+		</author>
+		<idno type="DOI">10.1044/1092-4388</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Speech, Language, and Hearing Research</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="11" to="0143" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Assessment of cognitive scales to examine memory, executive function and language in individuals with down syndrome: Implications of a 6-month observational study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Liogier D'ardhuy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">O</forename><surname>Edgin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bouis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>De Sola</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Goeldner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Kishnani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Khwaja</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename></persName>
+		</author>
+		<idno type="DOI">10.3389/fnbeh.2015.00300</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Behavioral Neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">300</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Cognitive features that distinguish preschool-age children with neurofibromatosis type 1 from their peers: A matched case-control study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lorenzo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Barton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Arnold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">N</forename><surname>North</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpeds.2013.06.038</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Pediatrics</title>
+		<imprint>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="page" from="1479" to="1483" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Batería neuropsicológica Luria Inicial</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Manga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Ramos</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+	<note>Neuropsychological battery Luria initial</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Spain: Tea</forename><surname>Madrid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Ediciones</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Discrepancia entre padres u profesores en la evaluación de problemas de conducta y académicos en niños y adolescentes [Discrepancy between parents and teachers in the evaluation of behavior and educational problems in children and adolescents</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Montiel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Peña</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Revue Neurologique</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="506" to="511" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Diferencias entre padres y maestros en la identificación de síntomas del trastorno por déficit de atención con hiperactividad en niños mexicanos [Differences in the way parents and teachers identify the symptoms of attention deficit hyperactivity disorder in Mexican children</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Ortiz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Acle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Revue Neurologique</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="17" to="21" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Behavior Rating Inventory of Executive Function-Preschool Version (BRIEF-P): Test review and clinical guidelines for use</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">M S</forename><surname>Sherman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">L</forename><surname>Brooks</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/09297041003679344</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Child Neuropsychology</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="503" to="519" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Parent ratings of executive function in young preschool children with symptoms of attention-deficit/ hyperactivity disorder</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">H</forename><surname>Skogan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Zeiner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Egeland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Urnes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Reichborn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Aase</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12993-015-0060-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Behavioral and Brain Functions</title>
+		<imprint>
+			<biblScope unit="page">16</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Neuropsicología del córtex prefrontal y de las funciones ejecutivas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Tirapu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ríos</surname></persName>
+		</author>
+		<editor>&amp; Ardila, A.</editor>
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note>Neuropsychology of the prefrontal cortex and executive functions</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Valor predictivo del BRIEF-P sobre el desarrollo de síntomas y el impacto escolar asociado al TDAH en el ámbito escolar</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Veleiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Peralbo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Artigas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>Predictive value of the BRIEF-P on the development of symptoms and the school impact associated with ADHD in the school setting</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>En</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Mata</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peixoto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Morgado</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Castro</surname></persName>
+		</author>
+		<title level="m">12º Colóquio Psicologia E Educação-Educação, Aprendizagem E Desenvolvimento: Olhares Contemporâneos Através Da Investigação E Da Prática-Actas</title>
+		<editor>&amp; V. Monteiro</editor>
+		<meeting><address><addrLine>Lisboa, Portugal</addrLine></address></meeting>
+		<imprint>
+			<biblScope unit="page" from="91" to="104" />
+		</imprint>
+		<respStmt>
+			<orgName>Instituto Universitário de Ciências Psicológicas</orgName>
+		</respStmt>
+	</monogr>
+	<note>Sociais e da Vida</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Working memory performance and executive function behaviors in young children with SLI</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Vugs</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hendriks</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cuperus</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Verhoeven</surname></persName>
+		</author>
+		<idno>doi:10.1016/j. ridd.2013.10.022</idno>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="62" to="74" />
+		</imprint>
+	</monogr>
+	<note>Research in Developmental Disabilities</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Executive function and adaptive behavior in Muenke syndrome</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M P</forename><surname>Yarnell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">A</forename><surname>Addissie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">W</forename><surname>Hadley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Guillen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">B</forename><surname>Agochukwu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Hart</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Muenke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+		<idno>doi:10.1016/j. jpeds.2015.04.080</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Pediatrics</title>
+		<imprint>
+			<biblScope unit="volume">167</biblScope>
+			<biblScope unit="page" from="428" to="434" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

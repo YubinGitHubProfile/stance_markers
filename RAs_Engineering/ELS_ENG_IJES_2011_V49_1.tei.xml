@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Scaling of turbulent separating flows</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B R</forename><surname>Loureiro</surname></persName>
+							<email>jbrloureiro@gmail.com</email>
+							<affiliation key="aff0">
+								<orgName type="department">Scientific Division</orgName>
+								<orgName type="institution">Brazilian National Institute of Standards (INMETRO)</orgName>
+								<address>
+									<settlement>Rio de Janeiro</settlement>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P Silva</forename><surname>Freire</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Mechanical Engineering Program (PEM/COPPE/UFRJ)</orgName>
+								<address>
+									<postBox>C.P. 68503</postBox>
+									<postCode>21945-970</postCode>
+									<settlement>Rio de Janeiro</settlement>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Scaling of turbulent separating flows</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2010.12.001</idno>
+					<note type="submission">Received 21 May 2010 Accepted 13 December 2010</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Law of the wall Adverse pressure gradient Separation Turbulent boundary layer Asymptotic theory</keywords>
+			</textClass>
+			<abstract>
+				<p>The present work investigates the scaling of the turbulent boundary layer in regions of adverse pressure gradient flow. For the first time, direct numerical simulation and experimental data are applied to the theory presented in Cruz and Silva Freire [Cruz, D. O. A., &amp; Silva Freire, A. P. (1998). On single limits and the asymptotic behaviour of separating turbulent boundary layers. International Journal of Heat and Mass Transfer, 41, 2097-2111] to explain how the classical two-layered asymptotic structure reduces to a new structure consistent with the local solutions of Goldstein and of Stratford at a point of zero wall shear stress. The work discusses in detail the behaviour of an adaptable characteristic velocity (u R) that can be used in regions of attached as well as separated flows. In particular, u R is compared to velocity scales based on the local wall shear stress and on the pressure gradient at the wall. This is also made here for the first time. A generalized law of the wall is compared with the numerical and experimental data, showing good agreement. This law is shown to reduce to the classical logarithmic solution and to the solution of Stratford under the relevant limiting conditions.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The early attempts at constructing theories for attached turbulent boundary layer flows in the asymptotic limit of large Reynolds number take as a central postulate the notion that the flow structure can be subdivided into two layers: (i) a wall viscous layer, in which the turbulent and laminar stresses are of comparable magnitude and (ii) a defect layer, in which the velocity profile may be expressed in terms of a small perturbation to the external flow solution. Both original notions were advanced by <ref type="bibr" target="#b22">Prandtl (1925)</ref> and von <ref type="bibr" target="#b29">Kármán (1930)</ref> through dimensional analysis. They naturally lead to a universal solution that has been shown by <ref type="bibr" target="#b19">Millikan (1939)</ref> to have a logarithmic character and be dependent on velocity and length scales based on the friction velocity.</p><p>However, the action of a large adverse pressure gradient (APG) completely changes this picture, setting in a square-root velocity profile across the fully turbulent region that makes the previous scaling and asymptotic structures not suitable anymore <ref type="bibr" target="#b26">(Stratford, 1959)</ref>. In particular, at a point of flow separation the wall shear stress is zero so that none of the canonical theories <ref type="bibr" target="#b1">(Bush &amp; Fendell, 1972;</ref><ref type="bibr" target="#b16">Mellor, 1972;</ref><ref type="bibr">Yajnik, 1970)</ref> is valid.</p><p>Extensions of the Yajnik-Mellor <ref type="bibr" target="#b16">(Mellor, 1972;</ref><ref type="bibr">Yajnik, 1970)</ref> theory to turbulent separation have been presented in literature, notably by <ref type="bibr" target="#b17">Melnik (1989)</ref>, who proposes a formulation based on a two parameter expansion. One parameter of fundamental importance to his developments, however, depends on a particular type of turbulent closure. This parameter is further used to regulate the order of magnitude of the pressure gradient term. <ref type="bibr" target="#b27">Sychev and Sychev (1987)</ref> use the same theoretical framework of <ref type="bibr">Yajnik (1970)</ref>, <ref type="bibr" target="#b16">Mellor (1972)</ref> and <ref type="bibr" target="#b1">Bush and Fendell (1972)</ref> but consider an extra layer where the internal friction forces, the pressure gradient and inertia forces balance each other. In their approach, no turbulence closure is required.</p><p>Many other different theories have been proposed in literature to explain the flow behaviour near to a separation point. However, no study satisfactorily elucidates the question of the scaling of mean velocity profiles in the entire domain of APG flows. As mentioned above, the appropriate near wall velocity scales for both attached and separated flows have long been proposed by <ref type="bibr" target="#b22">Prandtl (1925)</ref> and von <ref type="bibr" target="#b29">Kármán (1930)</ref>, and <ref type="bibr" target="#b26">Stratford (1959)</ref>, respectively. Regrettably, the conditions under which one must switch to the other and their impact on the local flow solution and asymptotic structure have not been adequately discussed in literature.</p><p>The present work uses a Kaplun-limit analysis <ref type="bibr" target="#b2">(Cruz &amp; Silva Freire, 1998)</ref> to correlate directly the asymptotic structure of a separating flow with velocity and length scales ( = u R /u e , u R = reference velocity, u e = external flow velocity) based on a cubic algebraic equation that expresses the balance between pressure and internal friction forces in the inner regions of the flow and explains in physical terms the correct limiting behaviour of the local scales. For the first time, velocity and length scales based on the local wall shear stress, the local wall pressure gradient and on a combination of both are comprehensively compared with numerical and experimental data in regions of attached, separated and reversed flow.</p><p>The work explains in a systematic way how the characteristic lengths of the wall viscous regionðordðÞ ¼ ordð1=RÞ, R = Reynolds number = u e l/m, l ¼ ðqu 2</p><p>e =ðo x pÞ w Þ; w ¼ wall conditionsÞ and of the fully turbulent regionðordðÞ ¼ ordð 2 ÞÞ define an asymptotic structure that is valid throughout the flow region. Of special interest is an explanation about the relative change in order of magnitude of the characteristic lengths at a separation point. The work also shows that in the reverse flow region a y 2 -solution prevails over most of the near wall region. This finding is opposed to the results reported in <ref type="bibr" target="#b23">Simpson (1983)</ref>, who proposes a log-solution.</p><p>The validity domain of a local solution previously developed to describe the velocity profile in the fully turbulent region of the flow <ref type="bibr" target="#b14">(Loureiro, Soares, Fontoura Rodrigues, Pinho, &amp; Silva Freire, 2007;</ref><ref type="bibr" target="#b10">Loureiro, Monteiro, Pinho, &amp; Silva Freire, 2008</ref>) is compared with the characteristic flow regions defined by the presently identified asymptotic structure. This is also made here for the first time. The local solution satisfies the limiting behaviour for attached (log-solution) as well as separated (y 1/2 -solution) flows.</p><p>The current results are validated against three data sets: the flat-plate flows of <ref type="bibr" target="#b21">Na and Moin (1998)</ref> and of <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref> and the flow over a steep hill of . These data were chosen for the very distinct geometry of flows they cover in addition to the possibility of analyzing the separation point region. The data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref> and of <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref> were obtained through a direct numerical simulation of the Navier-Stokes equations. Therefore, they are very detailed but for a low Reynolds number range. The data of  were obtained through LDA measurements; they cover a higher Reynolds number range and furnish wall shear stress, mean velocity and turbulence profiles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Relevant scales for separating flows</head><p>The above remarks concerning the changes in scaling laws will now be given a brief analytical explanation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Characteristic scales for attached flows</head><p>The two-layered model established by <ref type="bibr" target="#b22">Prandtl (1925</ref><ref type="bibr" target="#b29">), von Kármán (1930</ref><ref type="bibr" target="#b19">, 1939</ref> for attached flows considers that across the wall layer the total shear stress deviates just slightly from the wall shear stress. Hence, in the viscous layer a linear solution u + = y + follows immediately with u + = u/u ⁄ , y + = y/(m/u ⁄ ) and u Ã ¼ ffiffiffiffiffiffiffiffiffiffiffi s w =q p . For the turbulence dominated flow region we may write:</p><formula xml:id="formula_0">o y s t ¼ o y ðÀqu 0 v 0 Þ ¼ 0:<label>ð1Þ</label></formula><p>A simple integration of the above equation implies that ord(u 0 ) = ord(v 0 ) = ord(u ⁄ ), where we have clearly considered the velocity fluctuations to be of the same order.</p><p>The analysis may proceed by taking as a closure assumption the mixing-length theory. A further equation integration yields the classical law of the wall for a smooth surface:</p><formula xml:id="formula_1">u þ ¼ , À1 ln y þ þ A;<label>ð2Þ</label></formula><p>where u + = u/u ⁄ , y + = y/(m/u ⁄ ), , = 0.4, A = 5.0.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Characteristic scales for separated flows</head><p>The essential description of the physics of flow at a separation point has been given by <ref type="bibr" target="#b4">Goldstein (1930</ref><ref type="bibr" target="#b5">Goldstein ( , 1948</ref> and by <ref type="bibr" target="#b26">Stratford (1959)</ref>. The action of an arbitrary pressure rise in the inner layer distorts the velocity profile implying that the gradient of shear stress must now be balanced by the pressure gradient.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.1.">Viscous sublayer</head><p>In an attempt to elucidate the mathematical nature of some previously unknown laminar boundary layer solutions, <ref type="bibr" target="#b4">Goldstein (1930</ref><ref type="bibr" target="#b5">Goldstein ( , 1948</ref> showed that if the fluid velocity at a separation point is approximated by a power-series in x and y, then when some conditions are broken, the solution has an algebraic singularity. According to Goldstein's analysis, the similarity coordinate varies with x À1/4 and the solution expansion proceeds in powers of x 1/4 . The papers of Goldstein consider p and o x p independent of y so that the canonical boundary layer equations can be used and the external pressure gradient can be taken as a representative parameter. This is, of course, a false assumption, which has been rectified with the introduction of the triple-deck theory (see, e.g., <ref type="bibr" target="#b25">Stewartson, 1974)</ref>.</p><p>Goldstein, however, showed that at a point of zero skin-friction the velocity profile must follow a y 2 -profile at the wall. For turbulent flow, the fact that the local leading order equations must be dominated by viscous and pressure gradient effects implies immediately that this result remains valid.</p><p>In fact, in the viscous region the local governing equation can be written as:</p><formula xml:id="formula_2">mo yy u ¼ q À1 o x p:<label>ð3Þ</label></formula><p>Two successive integrations of Eq. (3) and the fact that s w = 0, give:</p><formula xml:id="formula_3">u þ ¼ ð1=2Þy þ 2 ;<label>ð4Þ</label></formula><p>with u + = u/u pm , y + = y/(m/u pm ), u pm = ((m/q)o x p) 1/3 . Note that in Eq. (4) the term o x p must be evaluated at y = 0. Hence, wall similarity solutions cannot be expressed in terms of the external pressure gradient. In the following we refer to Eq. (4) as Goldstein's solution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2.">Turbulent sublayer</head><p>For the turbulence dominated region, <ref type="bibr" target="#b26">Stratford (1959)</ref> wrote:</p><formula xml:id="formula_4">o y s t ¼ o x p:<label>ð5Þ</label></formula><p>Two successive integrations of Eq. (5) together with the mixing length hypothesis and, again, the fact that at a separation point s w = 0, give:</p><formula xml:id="formula_5">u þ ¼ ð2, À1 Þy þ 1=2 ;<label>ð6Þ</label></formula><p>with u + and y + defined as in Eq. (4). To find his solution Stratford used the condition y = 0, u = 0. Strictly speaking, this condition should not have been used since Goldstein's y 2 -expression is the solution that is valid at the wall. Stratford also incorporated an empirical factorb (= 0.66) -to Eq. (6) to correct pressure rise effects on ,.</p><p>Thus, we may conclude that, at a separation point, ord(u 0 ) = ord(v 0 ) = ord(u pm ).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Characteristic scales for attached and separated flows</head><p>The relevant velocities and length scales in the wall region for flows away and close to a separation point are then (u ⁄ , m/ u ⁄ ) and (u pm , m/u pm ), respectively. The noticeable result is that both relevant velocity scales -u ⁄ and u pm -are contained in</p><formula xml:id="formula_6">Àu 0 v 0 À q À1 s w À Á À q À1 o x p À Á y ¼ 0:<label>ð7Þ</label></formula><p>This equation is obtained through a first integration of the x-momentum equation. It represents the momentum balance in the near the wall region where the viscous and turbulent stresses are balanced by the local pressure gradient.</p><p>In the limiting cases s w ) (y/q)(o x p) and s w ( (y/q)(o x p), the scaling velocity tends to u ⁄ and ((m/q)o x p) 1/3 , respectively, where o x p is to be considered at the wall.</p><p>To propose a characteristic velocity that is valid for the whole domain, <ref type="bibr">Silva Freire (1998, 2002)</ref> suggested to reduce Eq. (7) to an algebraic equation by considering ord(u 0 ) = ord(v 0 ) = ord(u R ) and ord(y) = ord(m/u R ). Thus, the reference velocity, u R , is to be determined from:</p><formula xml:id="formula_7">u 3 R À q À1 s w À Á u R À q À1 m À Á o x p ¼ 0:<label>ð8Þ</label></formula><p>Eq. (8) always presents, at least, one real root. When three real roots are obtained, the highest root must be considered.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">The method of kaplun, limits of equations, principal limits</head><p>In this section, part of the analysis of <ref type="bibr" target="#b2">Cruz and Silva Freire (1998)</ref> is briefly repeated to establish a minimum condition for discussion. The following developments also introduce the correct flow scalings -ambiguously defined in <ref type="bibr">Silva Freire (1998, 2002)</ref> -and a discussion on the flow asymptotic structure. </p><formula xml:id="formula_8">o i u i ¼ 0; ð9Þ u j o j u i ¼ Àq À1 o i p À 2 o j u 0 j u 0 i þ R À1 o 2 u i ;<label>ð10Þ</label></formula><p>where the notation is classical. Thus, in a two-dimensional flow, (x 1 , x 2 ) = (x, y) stands for a Cartesian coordinate system, (u 1 , u 2 ) = (u, v) for the velocities, p for pressure and R (= u e l/m) for the Reynolds number. The dashes are used to indicate a fluctuating quantity. In the fluctuation term, an overbar is used to indicate a time-average. All mean variables are referred to the free-stream mean velocity, u e , and to the characteristic length l ¼ ðqu 2</p><p>e =ðo x pÞ w Þ; ðw ¼ wall conditionsÞ. The velocity fluctuations, on the other hand, are referred to the characteristic velocity u R defined by Eq. (8) so that = u R /u e .</p><p>The purpose of perturbation methods is to find approximate solutions to Eqs. (9) and (10) that are valid when one or more of the variables or parameters in the problem are small or large. Provided the small parameters are taken to be and R À1 , one can clearly see that in the limits ? 0 or R ? 1 terms containing high derivatives in the equation are lost. The reduction in the order of the equation means that some of the boundary conditions will be lost as well, so that the approximations fail in places where they were to be imposed. One must then seek local approximations in terms of local scaled variables that complement each other and can be matched in some common domain of validity. The essentials behind ''inner-outer'' or ''matched asymptotic'' approximations involve the concepts of limit process, domain of validity, overlap and matching. The present account on perturbation methods is based on the results of <ref type="bibr" target="#b7">Kaplun (1967)</ref>, <ref type="bibr" target="#b9">Lagerstrom and Casten (1972)</ref> and <ref type="bibr" target="#b8">Lagerstrom (1988)</ref>. For further details, the reader is referred to the original sources. In the following, we use the topology on the collection of order classes as introduced by <ref type="bibr" target="#b18">Meyer (1967)</ref>. For positive, continuous functions of a single variable defined on ð0; 1, let ord g denote the class of equivalence introduced in Meyer.</p><p>Definition. <ref type="bibr" target="#b8">(Lagerstrom, 1988)</ref>. We say that f(x, ) is an approximation to g(x, ) uniformly valid to order</p><formula xml:id="formula_9">d() in a convex set D(f is a d-approximation to g), if: lim f ðx; yÞ À gðx; yÞ ð Þ =dðÞ ¼ 0; ! 0; uniformly for x in D:<label>ð11Þ</label></formula><p>The function d() is sometimes called a gauge function.</p><p>The essential idea of the single limit process g-limit is to study the limit as ? 0 not for fixed x near a singularity point x d , but for x tending to x d in a definite relationship to specified by a function g (). Taking without any loss of generality x d = 0, we define:</p><formula xml:id="formula_10">x g ¼ x=gðÞ; G x g ; À Á ¼ Fðx; Þ;<label>ð12Þ</label></formula><p>with g() defined in N(= space of all positive continuous functions on ð0; 1).</p><p>Definition of Kaplun limit. <ref type="bibr" target="#b18">[Meyer, 1967]</ref> If the function G(x g ; +0) = lim G(x g ; ), ? 0, exists uniformly on {x g /jx g j &gt; 0};</p><p>then we define lim g F(x;) = G(x g ; +0).</p><p>Thus, if g ? 0 as ? 0, then, in the limit process, x ? 0 also with the same rate of g, so that x/g tends to a non-zero limit value.</p><p>To investigate the asymptotic structure of the turbulent boundary layer we consider:</p><p>uðx; yÞ ¼ u 1 ðx; yÞ þ u 2 ðx; yÞ; vðx; yÞ ¼ gv 1 ðx; yÞ; pðx; yÞ ¼ p 1 ðx; yÞ; ð13Þ and the following transformation:</p><formula xml:id="formula_11">y ¼ y g ¼ y=gðÞ;û i ðx; y g Þ ¼ u i ðx; yÞ:<label>ð14Þ</label></formula><p>Upon substitution of Eqs. <ref type="formula">13</ref>and <ref type="formula" target="#formula_11">14</ref>into Eqs. (9) and (10) and depending on the order class of g we then find the following formal limits: continuity equation:</p><formula xml:id="formula_12">ordv i x; y g ¼ ord gû i x; y g :<label>ð15Þ</label></formula><p>x-momentum equation:</p><formula xml:id="formula_13">ord g ¼ ord 1 :û 1 o xû1 þv 1 o y gû 1 þ o xp1 ¼ 0; ð16Þ ord 2 &lt; ord g &lt; ord 1 :û 1 o xû1 þv 1 o y gû 1 þ o xp1 ¼ 0; ð17Þ ord 2 ¼ ord g :û 1 o xû1 þv 1 o y gû 1 þ o xp1 ¼ Ào y g u 0 1 v 0 1 ;<label>ð18Þ</label></formula><formula xml:id="formula_14">ord 1= 2 R À Á &lt; ord g &lt; ord 2 : o y g u 0 1 v 0 1 ¼ 0;<label>ð19Þ</label></formula><formula xml:id="formula_15">ord 1= 2 R À Á ¼ ord g : Ào y g u 0 1 v 0 1 þ o 2 y gû 1 ¼ 0;<label>ð20Þ</label></formula><formula xml:id="formula_16">ord g &lt; ord 1= 2 R À Á : o 2 y gû 1 ¼ 0:<label>ð21Þ</label></formula><p>y-momentum equation:</p><formula xml:id="formula_17">ord g ¼ ord 1 :û 1 o xv 1 þv 1 o y gv 1 þ o y gp 1 ¼ 0; ð22Þ ord g &lt; ord 1 : o y gp 1 ¼ 0:<label>ð23Þ</label></formula><p>The set of Eqs. (15)-(23) is referred to by Kaplun as the ''splitting'' of the differential equations. The splitting is a formal property of the equations, obtained onto passage of the g-limit process. Thus, to every order of g a correspondence is induced, lim g ? associated equation, on that subset of N for which the associated equation exists.</p><p>Definition. The formal local domain of an associated equation E is the set of orders g such that the g-limit process applied to the original equation yields E.</p><p>One should note that passage of the g-limit establishes a hierarchy within the associate equations. Some equations are more ''complete'' or ''rich'' than others in the sense that application of the g-limit process to them will result in other associated equations, but neither of them can be obtained from any of the other associated equations. Eqs. <ref type="formula" target="#formula_13">18</ref>and <ref type="formula" target="#formula_15">20</ref>are such ''rich'' equations. Limit-processes which yield ''rich'' equations were called by Kaplun principal limit-processes. These ideas can be given a more strict interpretation by introducing Kaplun's concept of equivalent in the limit for a given set of equations for a given point (g, d) of the (N, N) product space.</p><p>Given any two associated equations E 1 and E 2 , Kaplun defines:</p><formula xml:id="formula_18">R x g ; À Á ¼ E 1 x g ; À Á À E 2 x g ; À Á ;<label>ð24Þ</label></formula><p>where denotes a small parameter.</p><p>According to <ref type="bibr" target="#b7">Kaplun (1967)</ref>, R should be interpreted as an operator giving the ''apparent force'' that must be added to E 2 to yield E 1 .</p><p>Definition of equivalence in the limit. <ref type="bibr" target="#b7">[Kaplun, 1967]</ref> Two equations E 1 and E 2 are said to be equivalent in the limit for a given limit-process, lim g , and to a given order, d (), if:</p><formula xml:id="formula_19">R x g ; À Á</formula><p>=dðÞ ! 0; as ! 0; x g fixed:</p><p>The following definitions are now possible. An equation which is not principal is said to be intermediate. <ref type="bibr">The intermediate equation,</ref><ref type="bibr">Eq. (21)</ref>, together with the boundary conditionû 1 ðx; 0Þ ¼ 0, imply that the near wall solution isû 1 ðx; y g Þ ¼ y g . This solution has to be contained by the principal solution furnished by Eq. (20). The outer flow equations, on the other hand, imply thatû 1 ðx; y g Þ ¼ u e ðx; yÞ. Thus, we appear to be faced by a dilemma for the inner solution is unbounded in the limit y g ! 1 and hence no matching can be achieved with the bounded outer solution. In fact, the matching process that involves the inner and outer solutions is to be performed in a region dominated by Eq. (19). As it turns out, Eq. <ref type="formula" target="#formula_14">19</ref>yields a solution with a limiting logarithmic behaviour that bridges a inner solution of order to the outer solution of order unity through the relationship = ord (ln À1 R). This problem has been investigated by many authors (see, e.g., <ref type="bibr" target="#b0">Afzal, 1976;</ref><ref type="bibr" target="#b6">Izakson, 1937;</ref><ref type="bibr" target="#b19">Millikan, 1939;</ref><ref type="bibr" target="#b28">Tennekes, 1973;</ref><ref type="bibr">Yajnik, 1970)</ref> and is sometimes called a 'generation gap' <ref type="bibr" target="#b16">(Mellor, 1972)</ref>. An important additional implication is the deduction of an algebraic relationship that can be used for the prediction of the local skin-friction.</p><p>Nothing in the formal procedure that led to Eqs. (16)-(21) indicated that a inner solution with leading order was needed. Only an inspection of the local solutions and of the matching conditions can reveal its existence. Terms that are found from inspection of formally higher order terms are referred to in literature as switchback terms; they are quite common in singular perturbation problems.</p><p>Since the leading order solution in the inner regions of the flow is ord (), it follows that (1/ 2 R) has to be replaced by (1/ R) in Eqs. (19)-(21) so that the inner region principal equation is given by ord ð1=RÞ ¼ ord g : Ào y g u 0</p><formula xml:id="formula_21">1 v 0 1 þ o 2 y gû 1 ¼ 0:<label>ð26Þ</label></formula><p>Therefore, the principal equations to the turbulent boundary layer problem are Eqs. <ref type="formula" target="#formula_13">18</ref>, <ref type="formula" target="#formula_21">26</ref>and <ref type="formula">22</ref>. The relevant scales 2 and 1/ R coincide with the scales proposed by <ref type="bibr" target="#b27">Sychev and Sychev (1987)</ref> for the description of their two internal layers. These authors also consider a third layer. However, in the interpretation of Kaplun limits, this is not necessary for only redundant information is conveyed. An important point to be raised here is the nature of the principal equation in y-direction. To solve the boundary layer equations one needs to consider Eq. <ref type="formula">22</ref>, instead of the Prandtl formulation o y p = 0. By doing this, the boundary layer approximation becomes a self-contained theory in the sense that any type of viscous-inviscid interactive process becomes unnecessary.</p><p>To relate the formal properties of equations described above to the actual problem of determining the uniform domain of validity of solutions, <ref type="bibr" target="#b7">Kaplun (1967)</ref> advanced two assertions, the Axiom of Existence and the Ansatz about domains of validity. These assertions constitute primitive and unverifiable assumptions of perturbation theory.</p><p>Axiom of existence. <ref type="bibr" target="#b7">[Kaplun, 1967]</ref> If equations E and E 0 are equivalent in the limit to the order d for a certain region, then given a solution S of E which lies in the region of equivalence of E and E 0 , there exists a solution S 0 of E 0 such that as ? 0, jS À S 0 j/d ? 0, in the region of equivalence of E and E 0 .</p><p>In simple terms, the axiom states that there exists a solution S 0 of E 0 such that the ''distance'' between S and S 0 is of the same order of magnitude of that between E and E 0 . In perturbation methods, a common approach is to consider the existence of certain limits of the exact solution or expansions of a certain form. This is normally a sufficient condition to find the associated equations and to consider that the axiom is satisfied <ref type="bibr" target="#b7">(Kaplun, 1967)</ref>.</p><p>To the axiom of existence there corresponds an Ansatz; namely that there exists a solution S of E which lies in the region of equivalence of E and E 0 . More explicitly, we write.</p><p>Ansatz about domains of validity. <ref type="bibr" target="#b7">[Kaplun, 1967]</ref> An equation with a given formal domain of validity D has a solution whose actual domain of validity corresponds to D.</p><p>The word ''corresponds to'' in the Ansatz was assumed by Kaplun to actually mean ''is equal to''; this establishes the link we needed between the ''formal'' properties of the equation and the actual properties of the solution. According to Kaplun, the Ansatz can always be subjected to a canonical test which consists in exhibiting a solution S 0 of E 0 which lies in the region of equivalence of E and E 0 and is determined by the boundary conditions that correspond to S. Because the heuristic nature of the Axiom and of the Ansatz, comparison to experiments will always be important for validation purposes. The theory, however, as implemented through the above procedure, is always helpful in understanding the matching process and in constructing the appropriate asymptotic expansions.</p><p>The overlap domain of Eqs. (18) and (26) can now be determined through Rðx g ; Þ by taking d() = a . Then upon substituting E 1 by Eq. <ref type="figure" target="#fig_0">(18)</ref>, E 2 by Eq. (26) and passing the limit as tends to zero, one finds:</p><formula xml:id="formula_22">D overlap ¼ g=ord ð 1þa RÞ À1 &lt; ord g &lt; ord ð 2þa Þ n o :<label>ð27Þ</label></formula><p>The two principal equations then provide approximate solutions that are accurate to order ( amax ) where:</p><formula xml:id="formula_23">a max ¼ Àð1=2Þ ðln R= ln Þ þ 3 ð Þ :<label>ð28Þ</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Asymptotic structure of a separating turbulent boundary layer</head><p>As the flow approaches a separation point, however, we have already seen that the structure depicted by Eqs. (15)-(26) breaks down. To account for the flow behaviour, we must consider Kaplun limits in x-direction.</p><p>Let us define:</p><formula xml:id="formula_24">x ¼ x D ¼ x=DðÞ; y ¼ y g ¼ y=gðÞ; u i ðx D ; y g Þ ¼ u i ðx; yÞ:<label>ð29Þ</label></formula><p>with D() and g() defined on N.</p><p>The idea is to approach the separation point by taking simultaneously the gand D-limits at a fixed rate f = D/g = ord (1).</p><p>Note that in regions where ord (D) = ord (), ord (u ⁄ ) = ord (u pm ); under this condition, ord ( 2 ) = ord (1/R). The resulting flow structure is given by continuity equation:</p><formula xml:id="formula_25">ordv i x; y g ¼ ordû i x; y g :<label>ð30Þ</label></formula><p>x-momentum equation:</p><formula xml:id="formula_26">ord D ¼ ord 1 :û 1 o x Dû 1 þv 1 o y gû 1 þ o x Dp 1 ¼ 0;<label>ð31Þ</label></formula><formula xml:id="formula_27">ord 2 &lt; ord D &lt; ord 1 :û 1 o x Dû 1 þv 1 o y gû 1 þ o x Dp 1 ¼ 0;<label>ð32Þ</label></formula><formula xml:id="formula_28">ord 2 ¼ ord D :û 1 o x Dû 1 þv 1 o y gû 1 þ o x Dp 1 ¼ Ào x D u 0 1 2 À o y g u 0 1 v 0 1 þ o 2 x Dû 1 þ o 2 y gû 1 ;<label>ð33Þ</label></formula><formula xml:id="formula_29">ord D &lt; ord 2 : o 2 x Dû 1 þ o 2 y gû 1 ¼ 0:<label>ð34Þ</label></formula><p>y-momentum equation:</p><formula xml:id="formula_30">ord D ¼ ord 1 :û 1 o x Dv 1 þv 1 o y gv 1 þ o y gp 1 ¼ 0;<label>ð35Þ</label></formula><formula xml:id="formula_31">ord 2 &lt; ord D &lt; ord 1 :û 1 o x Dv 1 þv 1 o y gv 1 þ o y gp 1 ¼ 0;<label>ð36Þ</label></formula><formula xml:id="formula_32">ord 2 ¼ ord D :û 1 o x Dv 1 þv 1 o y gv 1 þ o y gp 1 ¼ Ào x D u 0 1 v 0 1 À o y g m 0 1 2 þ o 2 x Dv 1 þ o 2 y gv 1 ;<label>ð37Þ</label></formula><formula xml:id="formula_33">ord D &lt; ord 2 : o 2 x Dv 1 þ o 2 y gv 1 ¼ 0:<label>ð38Þ</label></formula><p>The principal equations are Eqs. (33) and (37). They show that near to a separation point the two principal equations, Eqs.</p><p>(18) and (26), merge giving rise to a new structure dominated basically by two regions: a wake region (ord (g), ord (D) &gt; 2 ) and a viscous region (ord (g), ord (D) &lt; 2 ). These are regions governed, of course, by intermediate equations. Thus, matching between them cannot be achieved directly. The disappearance of the region dominated solely by the turbulence effects is noted. The principal equations recover the full Reynolds averaged Navier-Stokes equations.</p><p>The system of Eqs. (31)-(38), indicates that the pressure gradient effects become leading order effects for orders higher than ord ( 2 ) = ord (D). Thus, at about ord (x/l) = ord (D) = ord () we should have ord (u ⁄ ) = ord (u pm ), so that these terms furnish first order corrections to the mean velocity profile.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Near wall solution</head><p>To find the relevant near wall solution of the flow, we consider the approximate equation in the domain bounded by ord ( 2 ) and ord (1/R), the fully turbulent region. This equation is given by ð,yÞo y u ¼ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi</p><formula xml:id="formula_34">q À1 s w ð Þþð q À1 o x pÞy q ;<label>ð39Þ</label></formula><p>where the mixing length hypothesis has been considered. A double integration of Eq. (39) furnishes:</p><formula xml:id="formula_35">u ¼ 2, À1 D 1=2 w þ , À1 u Ã ln D 1=2 w À u Ã À Á D 1=2 w þ u Ã À Á À Á þ C;<label>ð40Þ</label></formula><formula xml:id="formula_36">with D w = q À1 s w + (q À1 o x p)y.</formula><p>Eq. (40) can be seen as a generalization of the classical law of the wall for separating flows. In the limiting case Eq. (40) can be used indistinctly in all flow regions -including regions of reversed flow -provided its domain of validity is respected and appropriate integration constants are determined. Many other different treatments of the lower boundary condition can be appreciated in literature. , for example, have investigated the numerical prediction of flows over two-dimensional, smooth, steep hills according to the above formulation and the formulations of <ref type="bibr" target="#b15">Mellor (1966)</ref> and of <ref type="bibr" target="#b20">Nakayama and Koyama (1984)</ref>. The standard jmodel was then used to close the averaged Navier-Stokes equations. The results are shown to vary greatly.</p><p>An extension of Eq. (40) to flows over rough walls has been introduced by <ref type="bibr" target="#b10">Loureiro et al. (2008)</ref>, <ref type="bibr" target="#b11">Loureiro, Monteiro, Pinho, and Silva Freire (2009)</ref> and .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Results: experimental and numerical validation</head><p>The structure of a separating turbulent boundary layer, as described above, will be tested against the DNS data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref> and <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref> and the experimental data of . These are accounts of the problem of a separating flow which furnish detailed near wall data. In particular, reliable wall shear stress data are highly coveted here for they permit all hypotheses concerning the relevant scales of a separating flow to be tested. The experiments of  are important for they furnish wall shear stress data even in the region of reverse flow. These three sets of data also have the interesting feature of representing different types of flow. Details of the experimental conditions can be obtained from the original works. The general flow conditions, however, are presented in <ref type="table">Table 1.</ref> The asymptotic structure of a separating turbulent boundary has been described in terms of the characteristic scales 2 ( = u R /u e ) and 1=ðRÞ ðR ¼ ðqu 3</p><p>e Þ=ðmðo x pÞ w ÞÞ. Therefore, understanding the behaviour of the scaling velocities u ⁄ , u pm and u R is of crucial importance to the future developments. Of particular notice must be the identification of the flow regions to which every scale becomes relevant. <ref type="figure" target="#fig_0">Figs. 1 and 2</ref> show the variation of u ⁄ , u pm and u R according to the data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref> and . A negative value of u ⁄ indicates a region of reverse flow whereas a negative u pm indicates this parameter has been evaluated in a region of favorable pressure gradient.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">General behaviour of the relevant velocity scales</head><p>Regarding the data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref>, u ⁄ and u R coincide almost exactly up to the point x = 0.2 m. From this point on, the pressure gradient starts to have a dominating effect on u R forcing the two curves to depart from each other. The declining u ⁄ -curve intercepts the ascending u pm -curve at x = 0.28 m; at about x = 0.30 the separation point is reached so that u ⁄ is identical to zero and u R = u pm . The position upstream of the separation point where u ⁄ = u pm can hence be estimated from D = (0.30 À 0.28)/(l) = 0.0155; (l = 1.29 m). This value can be compared with (= u R /u e ) = 0.0148, the first order correction to the inviscid solution. In the region of reverse flow, u R always remains positive as assured by Eq. (8). Downstream of the point of reattachment, x = 0.488 m, u ⁄ soon takes on the same value of u R at x = 0.491 m, playing a dominant role from x = 0.495 m on.</p><p>The information conveyed by the data of  on the behaviour of u ⁄ , u pm and u R is remarkably close to that of <ref type="bibr" target="#b21">Na and Moin (1998)</ref>. The distance from the point where u ⁄ = u pm to the point where u ⁄ = 0 is D = (0.025 À 0.018)/ (l) = 0.019; (l = 0.3625 m). This value is of the same order of = 0.047. We also notice that u R is always positive and that the qualitative details of the reattachment region are very close to those previously described.</p><p>The flow relevant characteristic lengths can be evaluated immediately from m/u ⁄ , m/u pm and m/u R . In applying these expressions, some caution must be taken with any possible negative signs of u ⁄ and u pm ; u R is always a positive parameter. <ref type="table">Table 1</ref> Flow conditions: Rd 2 and u ⁄ /u e are typical of the upstream attached flow; u pm /u e is considered at the separation point.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Work</head><p>Rd 2 u ⁄ /u e u pm /u e Na and Moin (1998) 300 0.0536 0.0148 <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref> 400 0.0415 0.0160  470 0.0581 0.0179</p><formula xml:id="formula_37">0 0.2 0.4 0.6 x (m) -0.1 0 0.1 0.2 0.3 u * , u pν , u R (m/s) u * u pν u R 0.44 0.48 0.52 -0.1 0 0.1 0.24 0.28 0.32 -0.1 0 0.1 0.2 (a)<label>(b)</label></formula><p>(c) <ref type="figure" target="#fig_0">Fig. 1</ref>. Characteristic behaviour of u ⁄ , u pm and u R for the flow of <ref type="bibr" target="#b21">Na and Moin (1998)</ref>. (a) Global behaviour, (b) behaviour near to the separation point, (c) behaviour near to the reattachment point.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">General behaviour of the relevant length scales</head><p>The asymptotic structure of the flow is illustrated through <ref type="figure" target="#fig_5">Figs. 3 and 4</ref>, where the thickness scalings (R) À1 and 2 are shown in semi-log form for the data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref> and , respectively. Far upstream of the separation point a classical two layered structure is found with thickness (= (R) À1 ) representing a leading order balance    , .</p><p>between the laminar and turbulent stresses (Eq. (26)). Thickness (= 2 ) represents the balance between the turbulent stress and inertial effects (Eq. (18)). As the separation point is approached, and exhibit opposed variations. The steady increase of together with the steady decrease of provoke a continuous narrowing of the turbulence dominated region up to the point where it becomes completely extinguished. This happens exactly at the position of flow separation. The implication is that at this position the near wall flow solution is viscous dominated so that a Goldstein solution prevails up to y %. On the other hand, the region ord (g) = ord (y/l) = ord ( 2 ), defines the flow position where Stratford's solution is supposed to hold. Above this point, an inertia dominated solution is to be found.</p><p>In the region of reverse flow, the dominant roles of and are inverted. The negative wall shear stress combined with the low pressure gradient at the wall make ). The asymptotic implication is that in the region of reverse flow, sometimes referred to in literature as a ''dead-air'' area, the solution is largely viscous dominated. Thus, a Goldstein velocity profile is expected to be a good approximation up to large distances from the wall. A discussion on the ability of Goldstein's solution to represent the motion in regions of reverse flow is made next (see, for example, <ref type="figure" target="#fig_8">Fig. 7)</ref>.</p><p>The roles of and is again inverted downstream of the point of flow reattachment, when the order ) is restored. The flow then settles back to the canonical asymptotic structure of the turbulent boundary layer with a reestablishment of the logarithmic region.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Evaluation of the solutions of Goldstein and of Stratford</head><p>An inspection of the flow behaviour near to a point of separation is of particular interest. The data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref> are shown in <ref type="figure" target="#fig_7">Fig. 5(a)</ref> and (b) in wall coordinates u + and y + (= u/u R and y u R /m). The solutions of Goldstein and of Stratford are given respectively by u + = 0.484 (y + ) 2 and u + = 4.125 (y + ) 1/2 À 4.332 in the ranges 0.028 ( y + ( 1.33 and 1.54 (y + ( 14.82. This is consistent with the present asymptotic modeling of the problem whereby the two solutions are to be matched in a flow region of ord (1/R) = ord ( 2 ), that is ord (y + ) = 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.">Local mean velocity distributions</head><p>The near wall solution furnished by Eq. (40) will now be tested against the data of <ref type="bibr" target="#b21">Na and Moin (1998)</ref>,  and <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref>. For later reference we notice that Eq. (4) at a point where s w -0 is given by  <ref type="formula" target="#formula_38">41</ref>are also shown. Because the data of Na and Moin are obtained for a very low Reynolds number and under a non-zero pressure gradient condition, the profiles in the logarithmic regions of the flow never really approach the standard law of the wall profile with A = 5 (Eq. (2)). The solution of Goldstein (Eq. (41)) exhibits a very good agreement to the DNS solution up to y + = 4.5. The log solution is also a very good match to the DNS data provided C is taken as 16.4 ðx=d Ã i ¼ 50Þ and 9:7ðx=d Ã i ¼ 100Þ. This constant corresponds to the patching point y + % 8. The asymptotic limits 1/R and 2 are noted to define an overlap region that continuously shrinks as the separation point is approached. At the separation point ( <ref type="figure" target="#fig_9">Fig. 6(c)</ref>), Goldstein's solution is a good approximation up to about y + = 1.5 (see also <ref type="figure" target="#fig_7">Fig. 5(a)</ref>); the log solution appears to be a reasonable approximation up to y + = 45. This value should be compared with the upper bound for a Stratford approximation, y + % 15 ( <ref type="figure" target="#fig_7">Fig. 5(b)</ref>). The overlap domain is reduced to ord (1/R) = ord ( 2 ).   The velocity profiles in the reverse flow region are shown in <ref type="figure" target="#fig_9">Fig. 6(d)</ref> and (e). The dominant role of the viscous effects had already been illustrated in <ref type="figure" target="#fig_5">Figs. 3 and 4</ref>. Here, we see that Eq. (41) is a very good solution approximation up to about y + = 1.4 (for flow details see <ref type="figure" target="#fig_8">Fig. 7(a)</ref> and (b)). As a first approximation, the point y + = 1 can actually be used in <ref type="figure" target="#fig_9">Fig. 6(d)</ref> and <ref type="figure" target="#fig_9">Fig. 6</ref>(e) to patch Eqs. (41) and (40). Eq. (40) is not a good solution in the interval 0.22 &lt; y + &lt; 1, so that patching Eq. (41) directly to Eq. (40) offers a good simplifying procedure. In fact, <ref type="bibr" target="#b23">Simpson (1983)</ref> remarked that for y/N &lt; 0.02 (N = distance from the wall to the maximum backflow velocity) a Goldstein solution should be appropriate. Farther from the wall, he argued turbulent effects are supposed to play a role so that a log profile would be in order. He then suggests a solution of the form:</p><formula xml:id="formula_38">u þ ¼ ð1=2Þu þ pm 3 y þ 2 þ u þ Ã 2 y þ ;<label>ð41Þ</label></formula><formula xml:id="formula_39">with u þ ¼ u=u R ; u þ pm ¼ u pm =u R ; u þ Ã ¼ u Ã =u</formula><formula xml:id="formula_40">U= U N j j ¼ A y=N À lnðjy=NjÞ À 1 ð Þ À 1; A ¼ 0:3:<label>ð42Þ</label></formula><p>Unfortunately, constant A in this expression has been assigned many values according to different authors. <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref> show that Eq. (42) furnishes a very poor agreement with their data. The same trend can be observed in <ref type="figure" target="#fig_8">Fig. 7(b)</ref>. The conclusion is that a Goldstein solution gives the best reverse flow representation in the interval y + &lt; 0.37.</p><p>Just downstream of the reattachment point <ref type="figure" target="#fig_9">(Fig. 6(f)</ref>), the velocity profile behaves much in the same way as near or at the separation point. Goldstein and Stratford solutions apply and the log region starts to become dominant again.</p><p>The data of  are shown in <ref type="figure">Fig. 8(a)</ref> and (b) where both measuring stations have been considered in regions of reverse flow. Station x/H = 0.5(H = hill height) is located just past the point of separation; in fact, up to y + = 1.65, the flow is reverse. Eq. (41) is noted to be a good representation of the flow up to y + = 2. Eq. (40) also gives a good representation of the flow in this region provided C = À0.76. At station x/H = 3.75, the solution of Goldstein yields values slightly higher than the measured profile. For the outer flow region, Eq. (40) gives good predictions on the condition that C = À27.</p><p>A further characterization of reverse and attached flows in given in <ref type="figure">Fig. 9(a)</ref> and (b) according to the DNS data of <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref>. Again, in reverse flow <ref type="figure">(Fig. 9(a)</ref>), Eq. (41) is observed to furnish very good results for y + &lt; 1. On the other hand, the agreement of Eq. (40) with the outer region DNS data is very poor. <ref type="figure">Fig. 9(b)</ref> shows the mean velocity profile downstream of the separation bubble; one can easily note that the flow has recovered a log region, which can be well described by Eq. (40) in 1.7 &lt; y + &lt; 55 (C = À29).</p><p>The values of the integration constant in Eq. (40) are shown in <ref type="table" target="#tab_0">Table 2</ref> for the flow conditions considered in this work. <ref type="figure">Fig. 8</ref>. Mean velocity profiles in wall coordinates according to the data of . (a) x/H = 0.5, (b) 3.75, H = hill height. <ref type="figure">Fig. 9</ref>. Mean velocity profiles in wall coordinates according to the data of <ref type="bibr" target="#b24">Skote and Hennigson (2002)</ref>. (a) x/d ⁄ = 300, (b) 500.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Final remarks</head><p>In the first part of the work, a direct application of Kaplun limits to the equations of motion has shown how the canonical two-layered asymptotic structure of the turbulent boundary layer reduces to a one-layered structure at a point of zero wall shear stress. This change in structure is provoked by a change in the scaling parameters that must account for the shear stress and pressure gradient effects at the wall. In fact, the procedure of Kaplun has been supplemented by a scaling algebraic equation that has been derived from the first principles. This is an important feature of the present analysis: the equation that is used to furnish the local velocity and length scales has been derived directly from the equations of motions.</p><p>Some authors have suggested in the past that the external pressure gradient should be used to define the reference velocity and length scales of a separating flow, in which case one should have u pm = ((m/q)(o x p) e ) 1/3 , l ¼ ðqu 2</p><p>e =ðo x pÞ e Þ, (e = external conditions). For the wall region, the present results have proved otherwise. The solutions of Goldstein and Stratford shown in <ref type="figure" target="#fig_7">Fig. 5</ref> imply that in the definition of the wall layer scaling the wall pressure gradient must be used. Here, a correct scaling procedure based on the inner wall conditions has been exhaustedly demonstrated by the global asymptotic structure of the flow as well as by the local mean velocity solutions.</p><p>The numerical computation of turbulent flows always requires the specification of very fine meshes in the near wall region. To overcome this problem, procedures that resort to local approximate analytical solutions have commonly been developed in literature. These procedures can be applied to numerical simulations based on Reynolds Averaged Navier-Stokes equations (RANS) or Large Eddy simulation (LES) methods and use expressions with the form of Eq. (40) to bridge a less refined outer solution directly to the wall.</p><p>The great problem with these procedures is the appearance of numerical instabilities, resulting from the explicit methods that are used to evaluate the wall functions. In algorithms that adopt temporal integration to minimize the uncertainties in the specification of the initial conditions, the instabilities associated with the use wall-functions are amplified, demanding the use of special methods to achieve numerical stabilization. The present results identify the correct scales to be used in such methods, showing that near to a separation point u ⁄ must be switched to u pm . In addition, the present results show that u R can be used throughout the flow domain. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>3. 1 .</head><label>1</label><figDesc>Asymptotic structure of an equilibrium turbulent boundary layer Let us consider the problem of an incompressible turbulent flow over a smooth surface in a prescribed pressure distribution. The time-averaged equations of motion -the continuity equation and the Reynolds equation -can be cast as:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Definition of formal domain of validity. The formal domain of validity to order d of an equation E of formal local domain D is the set D e = D [ D 0 i s, where D 0 i s are the formal local domains of all equations E 0 i such that E and E 0 i are equivalent in D 0 i to order d. Definition of principal equation. An equation E of formal local domain D, is said to be principal to order d if: (i) One can find another equation E 0 , of formal local domain D 0 , such that E and E 0 are equivalent in D 0 to order d. (ii) E is not equivalent to order d to any other equation in D.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>(</head><label></label><figDesc>o x p)y ( s w , Eq. (39) reduces to the logarithmic law. Near a point of separation Stratford's solution is recovered.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 2 .Fig. 3 .</head><label>23</label><figDesc>Characteristic behaviour of u ⁄ , u pm and u R for the flow of. (a) Global behaviour, (b) behaviour near to the separation point, (c) behaviour near to the reattachment point. Diagram of the asymptotic structure of the turbulent boundary layer for separating and reattaching flows; data of<ref type="bibr" target="#b21">Na and Moin (1998)</ref>.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 4 .</head><label>4</label><figDesc>Diagram of the asymptotic structure of the turbulent boundary layer for separating and reattaching flows; data of</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head></head><label></label><figDesc>R and y + = yu R /m. The streamwise development of the Na and Moin mean velocity profiles is shown in Fig. 6 in wall coordinates. Six stations have been considered, at positions x=d Ã i ¼ 50; 100; 158 (position of flow separation), 200, 250 and 257 (position of flow reattachment); d Ã i = inlet displacement thickness. The results at the exact positions of flow separation and reattachment were interpolated directly from the original data source. Fig. 6(a) and (b) show the profiles upstream of the flow separation. The local solutions given by Eqs. (40) and</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 5 .</head><label>5</label><figDesc>Velocity profiles at the point of zero wall shear stress for the flow of<ref type="bibr" target="#b21">Na and Moin (1998)</ref>. (a) Solution of Goldstein (u + = 0.484 (y + ) 2 ), (b) solution of Stratford (u + = 4.125 (y + ) 1/2 À 4.332).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 7 .</head><label>7</label><figDesc>Detail of mean velocity profiles in the region of reverse flow<ref type="bibr" target="#b21">(Na &amp; Moin, 1998)</ref>. (a) x=d Ã i ¼ 200, (b) 250, d Ã i = inlet displacement thickness.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 6 .</head><label>6</label><figDesc>Mean velocity profiles in wall coordinates according to the data of<ref type="bibr" target="#b21">Na and Moin (1998)</ref>. (a) x=d Ã i ¼ 50, (b) 100, (c) 158 (position of flow separation), (d) 200, (e) 250, (f) 257 (position of flow reattachment), d Ã i = inlet displacement thickness.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 2</head><label>2</label><figDesc>Parameter C for the various flow conditions.</figDesc><table><row><cell>Work</cell><cell>Station</cell><cell>C</cell></row><row><cell>Na and Moin (1998)</cell><cell>50</cell><cell>16.4</cell></row><row><cell></cell><cell>100</cell><cell>9.7</cell></row><row><cell></cell><cell>158</cell><cell>À5.4</cell></row><row><cell></cell><cell>200</cell><cell>À16</cell></row><row><cell></cell><cell>250</cell><cell>À6.6</cell></row><row><cell></cell><cell>257</cell><cell>À4</cell></row><row><cell>Loureiro et al. (2007)</cell><cell>0.5</cell><cell>À0.76</cell></row><row><cell></cell><cell>3.75</cell><cell>À27</cell></row><row><cell>Skote and Hennigson (2002)</cell><cell>300</cell><cell>À29</cell></row><row><cell></cell><cell>500</cell><cell>5.9</cell></row></table><note></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">J.B.R. Loureiro, A.P. Silva Freire / International Journal of Engineering Science 49 (2011) 397-410</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>APSF is grateful to the Brazilian National Research Council (CNPq) for the award of a Research Fellowship (Grant No 303982/2009-8). The work was financially supported by CNPq through Grants No 473588/2009-9 and by the Rio de Janeiro Research Foundation (FAPERJ) through Grant E-26/170.005/2008. JBRL is thankful to the Brazilian National Research Council (CNPq) for the financial support to this research through Grant 475759/2009-5.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Millikan&apos;s arguments at moderately large Reynolds number</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Afzal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physics of Fluids</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="600" to="602" />
+			<date type="published" when="1976" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Asymptotic analysis of turbulent channel flow and boundary-layer flow</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">B</forename><surname>Bush</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">E</forename><surname>Fendell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Fluid Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page">657</biblScope>
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">On single limits and the asymptotic behaviour of separating turbulent boundary layers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">O A</forename><surname>Cruz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Heat and Mass Transfer</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="2097" to="2111" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Note on a thermal law of the wall for separating and recirculating flows</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">O A</forename><surname>Cruz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Heat and Mass Transfer</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="1459" to="1465" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Concerning some solutions of the boundary layer equations in hydrodynamics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Goldstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Cambridge Philosophical Society</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="1930" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">On laminar boundary-layer flow near a position of separation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Goldstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Mechanics and Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="43" to="69" />
+			<date type="published" when="1948" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">On the formula for the velocity distribution near walls</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Izakson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technical Physics USSR IV</title>
+		<imprint>
+			<biblScope unit="page" from="155" to="162" />
+			<date type="published" when="1937" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Fluid mechanics and singular perturbations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kaplun</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1967" />
+			<publisher>Academic Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Matched asymptotic expansions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">A</forename><surname>Lagerstrom</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988" />
+			<publisher>Springer-Verlag</publisher>
+			<pubPlace>Heidelberg</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Basic concepts underlying singular perturbation techniques</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">A</forename><surname>Lagerstrom</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">G</forename><surname>Casten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM Review</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="63" to="120" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Water tank studies of separating flow over rough hills</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B R</forename><surname>Loureiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S</forename><surname>Monteiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">T</forename><surname>Pinho</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Boundary-Layer Meteorology</title>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="page" from="289" to="308" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The effect of roughness on separating flow over two-dimensional hills</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B R</forename><surname>Loureiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S</forename><surname>Monteiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">T</forename><surname>Pinho</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Experiments in Fluids</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="577" to="596" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Near wall characterization of the flow over a two-dimensional steep smooth hill</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B R</forename><surname>Loureiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">T</forename><surname>Pinho</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Experiments in Fluids</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="441" to="457" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Note on a parametric relation for separating flow over a rough hill</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B R</forename><surname>Loureiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Boundary-Layer Meteorology</title>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page" from="309" to="318" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Water tank and numerical model studies of flow over steep smooth two-dimensional hills</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B R</forename><surname>Loureiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">V</forename><surname>Soares</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">L A</forename><surname>Fontoura Rodrigues</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">T</forename><surname>Pinho</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">P</forename><surname>Silva Freire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Boundary-Layer Meteorology</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="page" from="343" to="365" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The effects of pressure gradients on turbulent flow near a smooth wall</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">L</forename><surname>Mellor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Fluid Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="255" to="274" />
+			<date type="published" when="1966" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The large Reynolds number, asymptotic theory of turbulent boundary layers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">L</forename><surname>Mellor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="851" to="873" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">An asymptotic theory of turbulent separation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Melnik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers and Fluids</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="165" to="184" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">On the approximation of double limits by single limits and the Kaplun extension theorem</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Meyer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Institute of Mathematics and its Applications</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="245" to="249" />
+			<date type="published" when="1967" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A critical discussion of turbulent flow in channels and tubes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">B</forename><surname>Millikan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 5th international congress on applied mechanics</title>
+		<meeting>the 5th international congress on applied mechanics<address><addrLine>NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>John Wiley</publisher>
+			<date type="published" when="1939" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">A wall law for turbulent boundary layers in adverse pressure gradients</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Nakayama</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Koyama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AIAA Journal</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1386" to="1389" />
+			<date type="published" when="1984" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Direct numerical simulation of a separated turbulent boundary layer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Na</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Moin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Fluid Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">374</biblScope>
+			<biblScope unit="page" from="379" to="405" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Über die ausgebildete turbulenz</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Prandtl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ZAMM</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="136" to="139" />
+			<date type="published" when="1925" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A model for the backflow mean velocity profile</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">L</forename><surname>Simpson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AIAA Journal</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="142" to="143" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Direct numerical simulation of a separated turbulent boundary layer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Skote</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">S</forename><surname>Hennigson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Fluid Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">471</biblScope>
+			<biblScope unit="page" from="107" to="136" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Multistructured boundary layers on flat plates and related bodies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Stewartson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="145" to="239" />
+			<date type="published" when="1974" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The prediction of separation of the turbulent boundary layer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">S</forename><surname>Stratford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Fluid Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="1959" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">On turbulent boundary layer structure</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">V</forename><surname>Sychev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">V</forename><surname>Sychev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Prikladnaia Matematika i Mekhanika-USSR</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="462" to="467" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The logarithmic wind profile</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Tennekes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Atmospheric Sciences</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="234" to="238" />
+			<date type="published" when="1973" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Asymptotic theory of turbulent shear flow</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Von Kármán</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Th</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 3rd international congress for applied mechanics</title>
+		<editor>705. Yajnik, K. S.</editor>
+		<meeting>the 3rd international congress for applied mechanics</meeting>
+		<imprint>
+			<date type="published" when="1930" />
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="411" to="427" />
+		</imprint>
+	</monogr>
+	<note>Journal of Fluid Mechanics</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Beyond Dependency: Economic Development, Capacity Building, and Generational Sustainability for Indigenous People in Canada</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Rodney</forename><surname>Nelson</surname></persName>
+							<email>rodney.nelson@carleton.ca</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Carleton University</orgName>
+								<address>
+									<settlement>Ottawa</settlement>
+									<region>Ontario</region>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Sprott School of Business</orgName>
+								<orgName type="institution">Carleton University</orgName>
+								<address>
+									<postCode>K1S, 5B6</postCode>
+									<settlement>Ottawa</settlement>
+									<region>Ontario</region>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Beyond Dependency: Economic Development, Capacity Building, and Generational Sustainability for Indigenous People in Canada</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019879137</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>economic development</term>
+					<term>economic science</term>
+					<term>social sciences</term>
+					<term>political economy</term>
+					<term>politics and social sciences</term>
+					<term>political science</term>
+					<term>cultural anthropology</term>
+					<term>anthropology</term>
+					<term>business administration and business economics</term>
+					<term>development management</term>
+					<term>management</term>
+					<term>Indigenous relations</term>
+					<term>diversity and multiculturalism</term>
+					<term>education</term>
+					<term>ethnicity and politics</term>
+					<term>intersectional politics</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>This article discusses the ongoing development challenges within Indigenous communities in Canada and suggests a way forward within a framework that is mutually beneficial and respectful of Indigenous and non-indigenous peoples. First, to move forward with economic development within Indigenous communities, both government and communities have to work together to increase capacity through education and foster an environment of entrepreneurial growth and business opportunities. Second, governments and businesses engaged with communities, as well as local entrepreneurs, must embrace the concept of generational sustainability for community well-being. This concept is one that looks at the future of the community for generations to come, such as the &quot;Seven Generations Philosophy.&quot; All these concepts will be discussed along with a brief look at the historical context of the divide of trust between government, industry, and communities which must be mended through strengthening relationships and understanding. Canada&apos;s historical and ongoing colonization has led Indigenous peoples to distrust and thus resist governmental policies and practices. Consequently, many Indigenous communities and nations have fought for self-government and self-determination to foster cultural preservation, as well as greater control over their own lands and future. However, this model of community control, which arose in the 1970s (Assembly of First Nations, 2012, The Harvard Project on American Indian Economic Development, Cornell &amp; Kalt, 2010), does not preclude economic development. In fact, the purpose of this article is to explain how economic development is an integral component of this model. The question of whether economic development will help or hinder a community rests on how it is conducted. Although there is progress being made by many Indigenous communities worldwide toward economic development, there are still many who are struggling with this issue. Within the Canadian context, there are success stories such as Osoyoos Development Corporation and Osoyoos Nk&apos;Mip Cellars winery, Inuit-owned First Air Makivik Corporation, or the Mi&apos;kmaq-owned Ulnooweg Development Corporation which now owns a registered charity to help children and youth across Canada. Each of these examples continues to showcase successful community-owned businesses and inspire other communities. Although success stories continue to grow, there are still many communities struggling with economic development and how to maintain cultural traditions while engaging in business. Although the narrative of this article focuses mainly 879137S GOXXX10.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>on Canada, challenges surrounding economic development and maintaining cultural traditions are common for Indigenous communities throughout the world.</p><p>I want to share a story with you. This is after all an article on Indigenous people and Indigenous ways. Story-telling is important to understand and pass on knowledge by showing us different ways of thinking or seeing an issue. Often stories are given to us and we may not understand their full meaning until the time or circumstances are right. Some stories are intended to direct our lives, help us make decisions, or pass on knowledge, whereas other stories reaffirm cultural identity and practices. Many of the stories we hear from elders are based on traditions passed down from generation to generation. It is up to us to listen to these teachings and act accordingly. Anishinaabe author and poet Thomas <ref type="bibr" target="#b15">King (2003)</ref> notes that storytelling is a conveyer of messages with a responsibility of social meanings and morality built into them. He often says, "Don't say in the years to come that you would have lived your life differently if only you had heard this story. You've heard it now" (p. 29). The following story impacted how I see economic development and its effects on community.</p><p>I was sitting with Chief Yellowhead of Nibinamik First Nation, also known as Summer Beaver, an Oji-Cree community. He was facing an immense challenge for his community-economic development. Chief Yellowhead is a quiet, strong man with a good heart and kind eyes that demand one's attention. He listens intently to those around him, and then when he speaks, he is clear and careful in what he says. He was worried for his community as it continues to face ongoing infringements on their inherent rights to govern their traditional territory. His community is within Canada's Ring of Fire, an area rich in minerals. In 2010, the Government of Ontario passed the Far North Act (Government of Ontario, Service Ontario, 2010) which provided a legislative framework for development, land use, and protection within the northlands. This essentially legalized plans to develop this area, including a multibillion-dollar chromite mining and refining project that is forecast to generate over 100 billion dollars in the next 20 years. Canada's largest corporations are looking to extract various resources within this Oji-Cree traditional territory. The Chief is worried about the impact on his community. He explained that an existing mine nearby had already begun to pollute one of the rivers. This river is a major source of fish for the community. The community is also reporting increased cases of cancer. Now many large companies are pressuring the community to sign agreements and be a part of "modern development." Chief Yellowhead told me a story of when he was a child and how that story had a profound influence on his life and his leadership and how he is approaching this situation: I was just a boy, no higher than this (he raised his hand waist high). I was playing in our summer camp when several Elders walked into the camp and sat by the fire. Eight of them eventually sat by the fire. One Elder began relating a story about the future and how people would come, the rivers would run red and be poisoned, the trees would die, and the fish and animals would suffer and turn on us. The Elder said that the community had to start preparing for this by educating themselves, understanding the problems, and relying on traditional knowledge to do things in a good way. We cannot ignore this warning.</p><p>The future of his people is yet unknown. They are determined to be a modern, self-governed community that works with others to do things in a good way. The term "good way" ties into the concept that both the Anishinaabe and Cree share called bimaadiziwin <ref type="bibr" target="#b14">(Johnston, 1990;</ref><ref type="bibr">Newhouse, 2017)</ref>. The direct translation means "the good life"; however, there are teachings within his word that refer to living a good life, in a good way, with a good heart. This includes active and full participation in the economy and opportunities of economic development. Yet, bimaadiziwin is a concept that can also be applied to companies and different levels of government to ensure good relationships and equal partnerships with the communities in a good way. There is all too often an unequal balance of power in the relationship between corporations, governments, and communities. Lack of revenue sharing, policies of dependency, and unresolved land claims continue to hinder economic growth. Working toward bimaadiziwin is a concept that anyone can internalize. It promotes an understanding of true sustainability for generations that help to preserve culture and allow communities to thrive. Perhaps, it is time to listen to Chief Yellowhead's thoughts on the impacts of development and apply them. Only time will tell.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Development Debate</head><p>Economic development is a sustained community effort to improve both the local economy and the quality of life by building the area's capacity to adapt to economic change <ref type="bibr" target="#b17">(Loveridge, Smith, &amp; Morse, 1991)</ref>. Other theorists <ref type="bibr" target="#b10">(Fontan, 1993;</ref><ref type="bibr">Shipley &amp; Snyder, 2013;</ref><ref type="bibr" target="#b27">Shragge, 1997)</ref> have added the concept of community economic development (CED) which requires the community participation in its social welfare, economic activities, and the development of its locality. According to this definition, it would seem all communities would welcome development and be involved in its determination. Yet, for Indigenous populations, the term "development" evokes mixed feelings, expectations, and mistrust. In one regard, development can represent freedom and opportunity. Most community leaders want the best for their people such as local employment, wealth creation, self-governance, and associated opportunities, all of which economic development can bring. The Harvard Project on American Indian Economic Development indicates that self-government is the key to economic self-sufficiency <ref type="bibr" target="#b8">(Cornell &amp; Kalt, 2010)</ref>. However, it also concludes that poverty and poor social conditions are political problems as much as economic ones.</p><p>Native leaders are increasingly turning to self-government to promote economic development, entrepreneurial growth, and business partnerships to increase wealth and generate local economies in their communities <ref type="bibr" target="#b18">(Loxley, 2010;</ref><ref type="bibr" target="#b26">Newhouse, 2004)</ref>. Economic development offers many communities a way to break free from the cycle of poverty and provides many Indigenous youth with hope for a better future. This could include meaningful work, proper housing, clean water, and education while maintaining their language, culture, and identity. Yet, this has not happened for many communities. <ref type="bibr" target="#b26">Newhouse (2004)</ref> notes that ongoing development efforts often yield little results as the problems of low income, poor housing, and low participation in the workforce continue to exist. The Harvard Project <ref type="bibr" target="#b8">(Cornell &amp; Kalt, 2010)</ref> showed that economic development success was more prevalent if the bands had self-governance and control over their development in a culturally appropriate way. The study showed that these communities had an increase in wealth and better infrastructure while maintaining their traditional ways. Economic development success is then tied to self-determination and self-governance. <ref type="bibr" target="#b3">Anderson (1999)</ref> writes that Indigenous people in Canada want to develop an economic system that will improve their socioeconomic situation. However, he further explains that this also goes hand-in-hand with self-governance and selfdetermination <ref type="bibr" target="#b3">(Anderson, 1999)</ref>. In other words, Indigenous people have to have meaningful control of their own lives, lands, and development. This was the bases of the findings of the Aboriginal Affairs and Northern Development Canada <ref type="bibr">(1996)</ref> and later reaffirmed in the Harvard Project <ref type="bibr" target="#b8">(Cornell &amp; Kalt, 2010)</ref> and echoed in the United Nations Declaration on the Rights of Indigenous Peoples (2007). However, selfdetermination and self-governance has not happened for most Indigenous populations; and the gap between the wealthy and the poor has grown (World Bank Report, 2016), with Indigenous populations faring the worst. Development on a worldwide scale has not reduced poverty and in some countries has stopped altogether (United Nations Development Project, 2011). In Canada, Indigenous populations are still struggling to have clean water and adequate housing, let alone economic development, and wealth generation.</p><p>To understand this failure, one must first understand why there is ongoing mistrust and misunderstandings surrounding economic development. At the end of the Second World War, the Western imperative of modernizing the world through development prevailed <ref type="bibr" target="#b7">(Coates, Nelson, &amp; Fitzpatrick, 2018;</ref><ref type="bibr" target="#b19">Maddison, 2013)</ref>. This dominant ideology held that capitalism would allow markets to develop worldwide and increase wealth and prosperity for all. On the contrary, this resulted in a widening of the income gap between the wealthy and the poor, which was especially pronounced among Indigenous populations <ref type="bibr" target="#b7">(Coates et al., 2018;</ref><ref type="bibr" target="#b12">Gibson-Graham, 2002)</ref>. As Former UN Special Rapporteur Rodolfo Stavenhagen <ref type="formula">2014</ref>states "not all poor people are Indigenous, but most Indigenous people are poor." This development gap became increasingly apparent during the 1960s and 1970s when the concept of unequal exchange became evident. Many developing countries in Africa and Asia could not match the markets, capital, or the technological advantages of the western world <ref type="bibr" target="#b19">(Maddison, 2013)</ref>. Within the Canadian context, Indigenous people continued to be dispossessed of their lands and endured colonial assimilation through policies and practices such as residential schools, Sixties Scoop, and legislation limiting rights to lands and resources.</p><p>Increasing globalization provided large corporations with the means to purchase abundant cheap labor in third world countries, leading to dramatically lower costs of manufacturing <ref type="bibr" target="#b19">(Maddison, 2013)</ref>. This resulted in many nations being forced into a state of economic dependency on foreign aid, imports, resources, and multinational corporations. Although entire countries struggled to feed their populations, encourage economic growth, and create employment for their citizens, foreign countries reaped the financial benefits on an unequal scale. Development also increased the need for resources and control of labor. Borrowing from Smith's (1776) concept of primitive accumulation, corporations' control of labor and goods resulted in a corporate primitive accumulation. International organizations gained control of resources, labor, and markets despite national agendas. Consequently, governments and corporations pressured Indigenous populations to sell, relinquish, or leave their lands. This continues today as Indigenous populations are being dispossessed of their traditional territories worldwide. As a result, Indigenous peoples everywhere are facing various political, economic, and policy challenges such as forced education, relocation, subsidization, and even genocide.</p><p>While many people may equate these policies to brutal dictatorships or non-democratic nations, some of the worse perpetrators of cultural assimilation and genocide are in fact the nation-states of the western world. Canada has a long and often violent history with Indigenous people. In Canada, forced relocations onto "reserves" segregated the Indigenous population and left them increasingly dependent on government support <ref type="bibr" target="#b13">(Helin, 2008)</ref>. This form of relocation "for the good of the people" and "for the good of the nation" failed miserably and only created a much larger issue of dependency for both communities and the state. Being segregated into reserves also removed opportunities for Indigenous people to engage in economic activities and for many, economic isolation. Reserves became highly depressed areas filled with poverty and little hope of employment or education. Today, the highest suicide rates in Canada are on First Nations reserves. In some Inuit communities, youth suicide has reached a staggering 6% to 11% <ref type="bibr" target="#b9">(Cutcliffe, 2005;</ref><ref type="bibr" target="#b16">Kirmayer et al., 2007)</ref>.</p><p>Another important issue that has implications for economic development was the implementation of church-run residential schools which began in the 1800s, with the last school closing in 1996 <ref type="bibr" target="#b20">(Milloy, 2017)</ref>. For Indigenous people in Canada, this was a harrowing experience and embedded a further mistrust in the government and educational institutions. Research into residential schools is well documented (Aboriginal Healing Foundation, The Truth and Reconciliation Commission, Indian and Northern Affairs Canada) and shows an ongoing attempt by the Canadian government to assimilate children by removing them from their parents and forcing them to become "civilized" through education. The Anishinabek Nation's Residential Commemoration project estimates that over 150,000 First Nations, Inuit, and Métis children aged 4 to 16 years old attended Indian residential schools in Canada <ref type="bibr">(Anishinabek Nation, 2013)</ref>. Many children did not survive these schools, and those who did, continue to be traumatized by the abuses they endured <ref type="bibr" target="#b20">(Milloy, 2017)</ref>. In 2008, Canada issued an official apology read by Prime Minister Stephen Harper. Despite this, the legacy of mistrust in the government, and more specifically the educational system, continued. Often stories were passed down from generation to generation, perpetuating this mistrust. Other policies included the Sixties Scoop <ref type="bibr" target="#b28">(Sinclair, 2007)</ref>, which allowed the state to take Indigenous children from their families and adopt them into non-indigenous families to assimilate them. The government even sanctioned experimentation on malnutrition within the Indigenous population <ref type="bibr" target="#b21">(Mosby, 2013)</ref>. The stories of abuse and assimilation continue to be told by many, and researchers are uncovering more truths about Canada's uncomfortable colonial history.</p><p>Given this brief and limited history presented, it is understandable that the question of economic development becomes clouded with a long mistrust of government, church, corporations, and even the general Canadian population. Yet, we still see the resilience and resistance of communities and nations seeking to maintain their own identity, language, and self-determination. Anishinaabe scholar Gerald Vizenor (2008) calls this survivance. Survivance is both resistance and survival together and moving away from the colonial dialogue of victimization and dominance to one of self-preservation and mutual understanding. This understanding includes economic activity, self-determination, and issues of development. <ref type="bibr" target="#b26">Newhouse (2004)</ref> describes Indigenous peoples' desire to engage in the capitalistic economy of Canada, yet they want to maintain some sense of traditional values. In other words, communities want to engage in economic development on their own terms and maintain their traditional ways. <ref type="bibr" target="#b39">Wuttunee (2004)</ref> discusses certain commonalities between Indigenous economic development and western approaches to economic development. Indigenous economic development still seeks to maintain traditional values and ideologies while engaging in economic activities. This retraditionalization <ref type="bibr" target="#b24">(Newhouse, 1992)</ref> or the return to Indigenous cosmologies and worldviews along with a reinforcement of cultural identities is increasingly asserted within concepts of business development. Indigenous economic development may be a blend of traditional and capitalist values <ref type="bibr" target="#b39">(Wuttunee, 2004)</ref>.</p><p>Today, there is an abundance of economic development opportunities for Indigenous communities across Canada. Unfortunately, there are ongoing pressures to engage in resource extraction as a means of development like the Ring of Fire, the Gateway Pipeline project, Kitimat Container Port, and other large-scale projects. Economic development does not only have to mean resource extraction, but it also includes a host of opportunities, investments, and community-based businesses. However, Indigenous communities remain on guard to ensure that they are not simply shifting from an era of government dependency to one of corporate dependency. Indigenous people are concerned for the protection of their traditional territory, land, and their ways of living with the land. They are also concerned with the general well-being of their communities and preservation of their culture.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Resistance and Renewal: Toward Economic Development</head><p>Policies still exist today to assimilate Indigenous people into the greater Canadian population. Land dispossession is still an issue within the Canadian context. Canadian's highest courts are backlogged with Indigenous land claims to determine which land is considered Crown land and which is considered traditional Indigenous territory. Although there have been some advancements through the courts <ref type="bibr">(Calder et al. v. B.C. attorney general, 1973;</ref><ref type="bibr">R. v. Sparrow, 1990;</ref><ref type="bibr">Delgamuukw v. British Columbia, 1997;</ref><ref type="bibr">R. v. Marshall, 1999;</ref><ref type="bibr">McIvor v. Canada, 2009</ref>), Canada's approach to First Nations continues to legislate cultural identity through the Indian Act. This Act governs and regulates who is considered Indigenous, who has "status," and to what community they belong through the Indian Register (Aboriginal Affairs and Northern Development Canada, 2014). This colonial act has also created conflict and division among Indigenous communities regarding who is legitimately Indigenous. The Government of Canada and the Indian Act ties a limited financial dollar value to the social well-being of those who are registered members of a community. In essence, this creates a conflict of interest for the community's leadership to prevent new memberships, due to limited financial support. Yet, community leaders generally want their communities to grow and prosper while maintaining traditional ways. This is an increasingly problematic issue with generations living off the reserve and in urban settings with little or unknown ties to reserve-based communities. In terms of economic development, the question of who benefits remains an issue as the divide between reserve and urban populations grows.</p><p>To support a community control model of economic development, it first and foremost requires community consent. Obtaining consent and negotiating the terms of the development (should consent be granted) require full community participation realized through meaningful consultation and engagement <ref type="bibr" target="#b29">(Sisco, 2014)</ref>. Importantly, communities must be given a reasonable amount of time and support to understand, discuss, and consider the potential impacts and benefits of the proposed project with their extended networks <ref type="bibr" target="#b29">(Sisco, 2014)</ref>. Economic development outcomes within this model include equal revenue sharing, partnerships, and community control. It may also include limited economic encroachment and community-controlled economic development, allowing communities to adjust to change and provide them with a more substantial control on land use and environmental impacts <ref type="bibr" target="#b6">(Campbell, 1999)</ref>. Unfortunately, this has often not been adopted and many communities are left out of revenue sharing while traditional lands are being exploited.</p><p>Indigenous resistance and pressures from human rights groups are slowly changing this assimilationist attitude of exploitation. New forms of self-governance and partnership agreements are being explored within Canada, including 22 signed self-agreements involving over 35 communities across Canada (Aboriginal Affairs and Northern Development Canada, 2014). In 2014, a landmark decision by the Supreme Court of Canada reaffirmed that the Tsilhqot'in Nation has inherent rights to traditional territory (Assembly of First Nations, 2014). Finally, the plausibility of a sovereign nation within a nation is being seriously discussed. "Selfgovernment agreements give Aboriginal groups greater control and law-making authority over a comprehensive range of jurisdictions, including governance, social and economic development, education, health, lands and more" (Assembly of First Nations, 2014).</p><p>The Government of Canada is also starting to move toward a more inclusive position recognizing inherent rights and titles over land. It also recognizes the duty to consult with communities as entrenched in Canada's constitution. In November 2004, the Standing Senate Committee on Aboriginal Peoples in Canada undertook a study of economic development within First Nations. The report stated that many First Nations peoples do not have adequate housing, clean water, or health care leaving them "far from realizing" meaningful economic development (Standing Senate Committee on Aboriginal Peoples, 2007). Specifically, the report stated that one of the major barriers to economic development was insufficient education and training, which has led to capacity challenges (Standing Senate Committee on Aboriginal <ref type="bibr">Peoples, 2007)</ref>. This was later echoed in the United Nations Human Rights Council's report on the rights of Indigenous peoples in Canada <ref type="bibr" target="#b2">(Anaya, 2014)</ref>. Government-wide initiatives in education have been undertaken to increase the readiness of economic development within Indigenous communities. However, there is also a need to focus on economic readiness such as entrepreneurial growth, partnership development, and community-owned enterprises. A more holistic approach to community wellness and development is needed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Capacity Development and the Role of Education</head><p>The United Nations Development Programme <ref type="bibr">(UNDP, 2013)</ref> states that capacity development begins with education. The UNDP supports capacity development predominantly at the institutional level. This education process can take place at a school, organization, or through various engagement processes and projects (UNDP, 2014). Yet, there is still a large gap in education between Canada's general population and the Indigenous population . Although this gap is closing, there is a pressing need to continue to allow community input on education.</p><p>Economic development creates jobs, entrepreneurship opportunities, joint venture partnerships, and opportunities for revenue sharing. Unfortunately, for many communities, the capacity and knowledge base are limited. Education is needed to build capacity in overall governance, particularly in the areas of financial management. Tsimshian author Calvin <ref type="bibr" target="#b13">Helin (2008)</ref> states that Indigenous people have been doing business for thousands of years. Although this is true, colonization has limited Indigenous peoples' access to capital markets and their knowledge thereof . This is of course changing for some; however, for other communities, the need for capacity building is immediate.</p><p>Within the Canadian context, several organizations have been established to help increase educational capacity within First Nations. The Council for the Advancement of Native Development Officers (CANDO) offers courses and university-recognized certifications in economic development. Through their courses, an individual can attain the designations of Technician Aboriginal Economic Developer (TAED) or Professional Aboriginal Economic Developer (PAED) certification. This organization has also created a network of community Economic Development Officers (EDOs), along with others who support economic development, to provide support, advice, and guidance. Although the organization is continuing to build capacity, many communities simply do not have, or invest in, staff doing full-time economic development. Often there is only one young development officer working tirelessly for their community. Another organization committed to capacity development is AFOA Canada (formerly the Aboriginal Financial Officers Association). Similar to CANDO, it offers courses and university-recognized certifications in the areas of financial management, administration, and governance. AFOA's two designations are the Certified Aboriginal Financial Manager (CAFM) and the Certified Aboriginal Professional Administrator (CAPA). The AFOA also offers a network of chapters and memberships for support for those working in management, finance, and for many, economic development.</p><p>The Government of Canada also has reformed education policies to accommodate the desire of communities for more control over curriculum, which has led to the incorporation of traditional knowledge and language. Edward <ref type="bibr" target="#b5">Benton-Banai (2004)</ref> emphasizes that educational success depends on cultural relevance. This realization of educational control is becoming apparent in some communities, yet is far from being fully or widely implemented. Many Indigenous youth still must leave their communities and live away from their families to pursue an education (Assembly of First Nations and The Association of Universities and Colleges of Canada, 2014).</p><p>Today, many leaders and scholars are working toward increasing Indigenous access to business, public administration, and law. One common misconception about Indigenous peoples in Canada is that they are unilaterally anti-development, and/or that they are passive victims of development. In reality, many Indigenous communities are actively developing economic development plans and engaging in partnerships with external business and governments. Yet, the National Aboriginal Economic Development Board <ref type="formula">2015</ref>shows that while there has been a slight gain in wealth generation between 2006 and 2011, there remains a significant gap between Indigenous people and non-indigenous people in Canada. The economic potential of Indigenous people remains unrealized. Education rates are also increasing but still have significant gaps when compared with non-indigenous people (Indigenous and Northern Affairs Canada, Evaluation of the Impacts of Self-Government Agreements, 2016).</p><p>Colleges and universities in Canada are also beginning to take notice that the Indigenous population is the youngest and fastest growing population in Canada <ref type="bibr">(Statistics Canada, 2012)</ref>, and that Indigenous students are increasingly studying entrepreneurship, governance, public administration, and finance. This is beginning to increase the capacity for Indigenous economic development within communities. It is important to note that engagement in capitalism may be inevitable and for some even desirable. However, Indigenous people do not want to compromise their traditions, heritage, and values. Indigenous knowledge and practices can offer a strong foundation for socially responsible investments, entrepreneurship, and business partnerships <ref type="bibr" target="#b22">(Nelson, 2010)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion: The Future and Collaborative Understanding</head><p>It is important to understand that Indigenous populations have their own governance, economic, and cultural systems that are based on their traditional knowledge and their relationship with their traditional territory. To move forward with economic development within Indigenous communities, both government and communities have to work together to increase capacity through education and foster an environment of entrepreneurial growth and business opportunities. Reconciliation is Canada's new project that will require education, understanding, and be sustained for generations <ref type="bibr">(Newhouse, 2017</ref>). Yet, this also comes with the recognition that communities must be involved in their own self-determination and self-governance. There has to be an understanding of the needs of a community and their concerns regarding traditions and relationship to the land. Concepts such as environmental stewardship, generational investment, and cultural preservation have always been a commonality of Indigenous people. The concept of generational sustainability is one that takes time and serves the many generations to come. In terms of economic development, this concept of generational sustainability is at odds with both governmental electoral timeframes and immediate corporate desires for profitability. Imagine a corporation following the Seven Generations Philosophy. This is a philosophy that, in everything we do today, we must consider how it affects seven generations down the line. That is true sustainability for generations and not simply immediate profit.</p><p>Today, there is renewed hope in truth and reconciliation within Canada. Never before has there been willingness from the Government, communities, and general population to move toward a fair and equal relationship.</p><p>For corporations, simply engaging with a community in dialogue is not enough. Corporations must recognize the relationships communities have with their environment, culture, nation, leadership, ancestors, future generations, spirituality, and to each other. Many Indigenous people in Canada are leveraging their inherent rights to land use and land claims to further their self-determination and self-sufficiency goals, that is, to protect and have stewardship over the land and its resources. Unfortunately, when talks of economic development happen, many erroneously think it is based on resource extraction. Economic development based on resource extraction, from an Indigenous perspective, comes with a price that is too high. Although some communities choose to engage in the extraction business, others refuse to, based on their traditional obligations to the land. To allow development on traditional territories, there is a need to reaffirm inherent rights as a culture and a nation to maintain stewardship of the land. This does not necessarily mean that they seek independent sovereignty. For some communities, this means they want to be a part of Canada, including its economy and remain under Canadian citizenship and laws. However, they want agreements to allow them to determine their own future as a participating and equal partner-nation within Canada. Many leaders, including Chief Yellowhead, want to be actively involved in decision-making for their own communities. They see opportunities but not at the price of the next generations' future. Development therefore has to include the concept of generational sustainability to facilitate acceptance within Indigenous communities. This does not preclude profitability, but it may take a bit more time or closer relationships with governments to facilitate development. It will preclude for some, economic activity based on resource extraction to protect the values on environmentalism held so dearly by many communities. When the waters are poisoned, and the trees are dying, we must listen. We can only wonder what Chief Yellowhead's ancestors would say today. Perhaps, they would bring us to the river, suggest that we observe our environment, talk and listen to each other, and value each other's views to make this a better place for everyone living here. This would bring us all to engage in a good way and embrace bimaadiziwin.</p></div>		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rodney Nelson</head><p>https://orcid.org/0000-0001-6960-6201</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biography</head><p>Rodney Nelson is a professor at Carleton University in the Sprott School of Business and the current CEO for the Global Governance Group. His interests include; governance, ethics, economic development, business and traditional knowledge. He is a chartered director from the Degroote School of Business, Certified Aboriginal Professional Administrator (CAPA), and a Professional Aboriginal Economic Developer (PAED).</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Highlights from the report of the royal commission on aboriginal peoples</title>
+		<imprint>
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+	<note>Aboriginal Affairs and Northern Development Canada</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Aboriginal Affairs and Northern Development Canada</title>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note>The Indian register website</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Report of the special rapporteur on the rights of indigenous peoples. Human Rights Council, Twenty-Seventh Session</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Anaya</surname></persName>
+		</author>
+		<ptr target="https://www.ohchr.org/EN/HRBodies/HRC/RegularSessions/Session27/Pages/ListReports.aspx" />
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Economic development among the aboriginal peoples of Canada: The hope for the future</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Anderson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999" />
+			<publisher>Captus Press</publisher>
+			<pubPlace>Concord, Ontario, Canada</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Tshilqot&apos;in nation appeal to the supreme court of Canada, William case and indigenous land title express: Tsilhqot&apos;in Journey for Justice</title>
+		<ptr target="https://www.afn.ca/uploads/files/education2/2012_pse_summit.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">ist?list=PLaQ0wUvBUPeTkCYuPCOZVZoSjivNQFilW Assembly of First Nations</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>The virtual summit on indigenous postsecondary education report</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">The Mishomis book: The voice of the Ojibway</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Benton-Banai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>University of Minnesota Press</publisher>
+			<pubPlace>Minneapolis</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Community controlled economic development as a strategic vision for the sustainable agricultural movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Campbell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Alternative Agriculture</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="37" to="44" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Indigenous peoples and western development in a new perspective</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Coates</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Fitzpatrick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Canada and the challenges of international development and globalization</title>
+		<editor>M. Masaeli &amp; L. T. Munro</editor>
+		<meeting><address><addrLine>Ottawa, Ontario, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="200" to="234" />
+		</imprint>
+		<respStmt>
+			<orgName>University of Ottawa</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">American Indian self-determination: The political economy of a policy that works. The Harvard Project on American Indian Economic Development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cornell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kalt</surname></persName>
+		</author>
+		<ptr target="https://dash.harvard.edu/handle/1/4553307" />
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Toward an understanding of suicide in firstnation Canadians</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cutcliffe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Crisis Intervention and Suicide Prevention</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="141" to="145" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Critical review of Canadian, American and European community economic development literature</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fontan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Vancouver</surname></persName>
+		</author>
+		<imprint>
+			<pubPlace>British Columbia, Canada</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Centre for Community Enterprise</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Beyond global vs local: Economic politics outside the binary frame</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">K</forename><surname>Gibson-Graham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Geographies of power: Placing scale</title>
+		<editor>A. Herod &amp; M. Wright</editor>
+		<meeting><address><addrLine>Oxford, UK; Far North Act</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="25" to="60" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Dances with dependency: Out of poverty through self-reliance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Helin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<pubPlace>Warson Woods, MO</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Ravencrest</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Ojibway heritage</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Johnston</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>University of Nebraska Press</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">The truth about stories: A native narrative</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>King</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>University of Minnesota Press</publisher>
+			<pubPlace>Minneapolis</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Suicide among aboriginal people in Canada</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">J</forename><surname>Kirmayer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M</forename><surname>Brass</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Holton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Paul</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Tait</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Aboriginal Healing Foundation</publisher>
+			<pubPlace>Ottawa, Ontario, Canada</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">What does it take to run a local business retention and expansion program?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Loveridge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">R</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">W</forename><surname>Morse</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economic Development Review</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="12" to="15" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Aboriginal, Northern, and community economic development papers and retrospectives</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Loxley</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Arbeiter Ring Publishing</publisher>
+			<pubPlace>Winnipeg</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Economic progress and policy in developing countries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Maddison</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Routledge</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">A national crime: The Canadian government and the residential school system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Milloy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<publisher>University of Manitoba Press</publisher>
+			<pubPlace>Winnipeg, Canada</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Administering colonial science: Nutrition research and human biomedical experimentation in aboriginal communities and residential schools</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Mosby</surname></persName>
+		</author>
+		<ptr target="http://www.naedb-cndea.com/en/" />
+	</analytic>
+	<monogr>
+		<title level="j">National Indigenous Economic Development Board</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="145" to="172" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>Aboriginal economic development report</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Traditional knowledge in the boardroom: A quest for a new model of aboriginal corporate governance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Aboriginal Management</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="28" to="35" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">From vision to venture: An account of five successful aboriginal businesses. The Conference Board of Canada</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Sisco</surname></persName>
+		</author>
+		<ptr target="https://www.conferenceboard.ca/temp/0ce37bc0-daf1-4f57-8242-4b5fed3e73c2/08-130Vision-ToVentureRPT.pdf" />
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Royal commission on aboriginal peoples: Presentation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Newhouse</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992" />
+			<pubPlace>Saskatoon</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Saskatchewan</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Resistance is futile: Aboriginal peoples meet the Borg of capitalism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Newhouse</surname></persName>
+		</author>
+		<ptr target="http://iportal.usask.ca/docs/Journal%20of%20Aboriginal%20Economic%20Development/JAED_v2no1/JAED_v2no1_Article_pg75-82.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Aboriginal Economic Development</title>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The role of heritage conservation districts in achieving community economic development goals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">; R</forename><surname>Newhouse</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Snyder</surname></persName>
+		</author>
+		<ptr target="http://citeseerx.ist.psu.edu/viewdoc/download" />
+	</analytic>
+	<monogr>
+		<title level="m">?doi=10.1.1.472.1177&amp;rep=rep1&amp; type=pdf Shipley</title>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="304" to="321" />
+		</imprint>
+	</monogr>
+	<note>International Journal of Heritage Studies</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Community economic development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Shragge</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997" />
+			<publisher>Black Rose Books</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Identity lost and found: Lessons from the sixties scoop</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Sinclair</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">First Peoples Child &amp; Family Review</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="65" to="82" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Honouring the Kaswénta: A framework for consultation with indigenous (Doctoral Dissertation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Sisco</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<pubPlace>Wollongong, New South Wales, Australia</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Wollongong</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Closing the gap: Toward capturing the value of aboriginal cultural industries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Sisco</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Conference Board of Canada</title>
+		<meeting><address><addrLine>Ottawa, Ontario, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Classic Publication Series. The wealth of nations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Smith</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1776" />
+		</imprint>
+		<respStmt>
+			<orgName>University Park: Penn State University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Sharing Canada&apos;s prosperity-A hand up not a hand out, special study on the involvement of aboriginal communities and businesses in economic development activities in Canada</title>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Author</publisher>
+			<pubPlace>Ottawa, Ontario, Canada</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Standing Senate Committee on Aboriginal Peoples</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Population projections by aboriginal identity in Canada</title>
+		<ptr target="https://www150.statcan.gc.ca/n1/pub/91-552-x/91-552-x2011001-eng.htm" />
+	</analytic>
+	<monogr>
+		<title level="j">Statistics Canada</title>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Lecture Series. Anti-colonialism and the struggle for indigenous rights</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Stavenhagen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<pubPlace>Chicago, IL</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>The University of Chicago</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">United Nations Declaration on the Rights of Indigenous Peoples</title>
+		<ptr target="https://www.undp.org/content/undp/en/home/librarypage/corporate/annual-report-2014.html" />
+	</analytic>
+	<monogr>
+		<title level="m">The UNDP annual report</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note>United Nations Development Programme.</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">United Nations Development Project</title>
+		<ptr target="http://www.undp.org/content/undp/en/home/librarypage/results/fast_facts.html" />
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note>Fast facts on capacity development</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Survivance: Narratives of native presence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Vizenor</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>University of Nebraska Press</publisher>
+			<pubPlace>Lincoln</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Poverty and exclusion among indigenous peoples: The global evidence</title>
+		<ptr target="https://blogs.worldbank.org/voices/poverty-and-exclusion-among-indigenous-peoples-global-evidence" />
+	</analytic>
+	<monogr>
+		<title level="j">World Bank Report</title>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Living rhythms: Lessons in aboriginal economic resilience and vision</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Wuttunee</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>McGill-Queen&apos;s University Press</publisher>
+			<pubPlace>Montreal, Quebec, Canada</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

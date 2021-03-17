@@ -1,0 +1,1798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2015-12-10">10 December 2015</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Continuum Mechanics and Structural Analysis</orgName>
+								<orgName type="institution">Universidad Carlos III de Madrid</orgName>
+								<address>
+									<addrLine>Av. de la Universidad 30</addrLine>
+									<postCode>28911</postCode>
+									<settlement>Leganés, Madrid</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Continuum Mechanics and Structural Analysis</orgName>
+								<orgName type="institution">Universidad Carlos III de Madrid</orgName>
+								<address>
+									<addrLine>Av. de la Universidad 30</addrLine>
+									<postCode>28911</postCode>
+									<settlement>Leganés, Madrid</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Loya</surname></persName>
+							<email>jloya@ing.uc3m.es</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Continuum Mechanics and Structural Analysis</orgName>
+								<orgName type="institution">Universidad Carlos III de Madrid</orgName>
+								<address>
+									<addrLine>Av. de la Universidad 30</addrLine>
+									<postCode>28911</postCode>
+									<settlement>Leganés, Madrid</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+							<email>jnreddy@tamu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Mechanical Engineering</orgName>
+								<orgName type="institution">Texas A &amp; M University</orgName>
+								<address>
+									<postCode>77843-3123</postCode>
+									<settlement>College Station</settlement>
+									<region>TX</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2015-12-10">10 December 2015</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2015.10.013</idno>
+					<note type="submission">Received 9 September 2015 Accepted 26 October 2015</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Nonlocal Eringen integral model Bending Nanobeams Paradox</keywords>
+			</textClass>
+			<abstract>
+				<p>The Eringen nonlocal theory of elasticity formulated in differential form has been widely used to address problems in which size effect cannot be disregarded in micro-and nano-structured solids and nano-structures. However, this formulation shows some inconsistencies that are not completely understood. In this paper we formulate the problem of the static bending of Euler-Bernoulli beams using the Eringen integral constitutive equation. It is shown that, in general, the Eringen model in differential form is not equivalent to the Eringen model in integral form, and a general method to solve the problem rigorously in integral form is proposed. Beams with different boundary and load conditions are analyzed and the results are compared with those derived from the differential approach showing that they are different in general. With this integral formulation, the paradox that appears when solving the cantilever beam with the differential form of the Eringen model (increase in stiffness with the nonlocal parameter) is solved, which is one of the main contributions of the present work.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The formalism based on the classical continuum mechanics has been widely used to develop powerful and reliable simulation tools to solve fundamental problems in several engineering fields such as civil, mechanical, aerospace, biomedical as well as in other applications of physical sciences. A basic feature of the local theory of continuum mechanics is that the stress at each point is related to the strain at the same point only. Therefore, a defining characteristic of this framework is that it is scale-free.</p><p>However, the matter is discrete and heterogeneous in nature. Materials used nowadays, like composites, functionally graded materials, polycrystalline solids, granular materials, and so on, all have inherent microstructures at different scales. Additionally, at high-frequency excitations, microstructural and size effects are observed in wave propagation in solids when the wavelength of a traveling wave becomes comparable with the scale of material heterogeneities <ref type="bibr" target="#b19">(Gonella, Greene, &amp; Liu, 2011)</ref>. Moreover, modern technological applications involve the use of systems which can be devised as micro-or nano-structures, mainly in microor nano-electromechanical (MEMS or NEMS) devices <ref type="bibr" target="#b37">(Martin, 1996)</ref>, nano-machines <ref type="bibr" target="#b3">(Bourlon, Glattli, Miko, Forro, &amp; Bachtold, 2004;</ref><ref type="bibr" target="#b8">Drexler, 1992;</ref><ref type="bibr" target="#b15">Fennimore et al., 2003;</ref><ref type="bibr" target="#b22">Han, Globus, Jaffe, &amp; Deardorff, 1997)</ref>, as well as in biotechnology and biomedical fields <ref type="bibr" target="#b60">(Saji, Choe, &amp; Young, 2010)</ref>. A main characteristic of these nanostructures is that their dimensions become comparable to the microstructural characteristics distances, thus the size effects are significant regarding their mechanical behavior.</p><p>The above problems could be addressed using molecular dynamics (He, <ref type="bibr" target="#b65">Tsai &amp; Fang, 2007;</ref><ref type="bibr" target="#b73">Wei &amp; Srivastava, 2004)</ref>, but this approach requires a great computational effort, providing a motivation towards developing higher-order and nonlocal continuum mechanics theories able to capture the size effects by introducing intrinsic lengths in their formulations. Therefore, classical continuum mechanics, due to its inherent scale-free characteristic, cannot predict the size effect present in the above mentioned applications.</p><p>Apart from the first attempts to capture scale effects using the continuum theories through the works of Cauchy and Voigt in the 19th century, and the work of the Cosserat brothers in the first half of the 20th century, contributions by <ref type="bibr" target="#b41">Mindlin and Tiersten (1962)</ref>, <ref type="bibr" target="#b30">Kröner (1963</ref><ref type="bibr" target="#b31">Kröner ( , 1967</ref>, <ref type="bibr" target="#b63">Toupin (1963</ref><ref type="bibr" target="#b64">Toupin ( , 1964</ref>, <ref type="bibr" target="#b20">Green and Rivlin (1964)</ref>, <ref type="bibr" target="#b38">Mindlin (1964</ref><ref type="bibr" target="#b39">Mindlin ( , 1965</ref>, <ref type="bibr" target="#b32">Krumhansl (1968)</ref>, <ref type="bibr" target="#b40">Mindlin and Eshel (1968)</ref>, <ref type="bibr" target="#b33">Kunin (1968)</ref>, <ref type="bibr" target="#b9">Eringen (1972a</ref><ref type="bibr" target="#b10">Eringen ( , 1972b</ref>, <ref type="bibr" target="#b13">Eringen and Edelen (1972)</ref>, constitute a major revival of the nonlocal and higher-order theories. The concept of nonlocal theory of linear elasticity was initially introduced by <ref type="bibr" target="#b31">Kröner (1967)</ref>, <ref type="bibr" target="#b32">Krumhansl (1968)</ref>, and <ref type="bibr" target="#b33">Kunin (1968)</ref>, and further developed by <ref type="bibr" target="#b9">Eringen (1972a</ref><ref type="bibr" target="#b10">Eringen ( , 1972b</ref>, and <ref type="bibr" target="#b13">Eringen and Edelen (1972)</ref>. The basic feature of the nonlocal theories of elasticity is that the stress at each point is related to the strain at all points in the domain. This influence decreases as the distance between the point of interest and the neighboring points increases. The Eringen nonlocal integral constitutive equation describes the dependence of the stress at a point on the strain in the rest of the domain through a positive-decaying kernel function.</p><p>A differential constitutive theory, introduced by <ref type="bibr" target="#b11">Eringen (1983)</ref>, showed that for a specific class of kernel functions the nonlocal integral constitutive equation can be transformed into a differential form, much easier to manage than the integral model. From the pioneering work of <ref type="bibr" target="#b52">Peddieson, Buchanan, and McNitt (Peddieson, Buchanan, &amp; McNitt, 2003)</ref>, and due to its simplicity, this differential Eringen nonlocal model has been widely used to analyze the static, buckling, and dynamic behavior of nanostructures. The list of papers is extremely long to be reported here. Nevertheless we cite some representative works.</p><p>As stated before, the Eringen nonlocal theory of elasticity formulated in differential form has been used to address the behavior of linear beams <ref type="bibr" target="#b27">(Ke, Wang, &amp; Wang, 2012;</ref><ref type="bibr" target="#b35">Loya, Lopez-Puente, Zaera, &amp; Fernandez-Saez, 2009;</ref><ref type="bibr" target="#b36">Lu, 2007;</ref><ref type="bibr" target="#b57">Reddy, 2007;</ref><ref type="bibr" target="#b68">Wang, Zhang, &amp; He, 2007;</ref><ref type="bibr" target="#b69">Wang, Zhang, Ramesh, &amp; Kitipornchai, 2006;</ref><ref type="bibr" target="#b74">Xu, 2006)</ref>, beams with von Kármán nonlinearity <ref type="bibr" target="#b58">(Reddy, 2010;</ref>, functionally graded beams (H. <ref type="bibr" target="#b21">Salehipour, 2015;</ref><ref type="bibr" target="#b51">O. Rahmani, 2014;</ref><ref type="bibr" target="#b56">Reddy, El-Borgi, &amp; Romanoff, 2014)</ref>, beams under rotation (Aranda-Ruiz, <ref type="bibr" target="#b1">Loya, &amp; Fernández-Sáez, 2012;</ref><ref type="bibr" target="#b44">Murmu &amp; Adhikari, 2010b;</ref><ref type="bibr" target="#b50">Narendar &amp; Gopalakrishnan, 2011b;</ref><ref type="bibr" target="#b55">Pradhan &amp; Murmu, 2010)</ref>, rods <ref type="bibr" target="#b29">(Kiani, 2010;</ref><ref type="bibr" target="#b43">Murmu &amp; Adhikari, 2010a;</ref><ref type="bibr" target="#b45">Murmu &amp; Pradhan, 2009b;</ref><ref type="bibr" target="#b47">Narendar, 2011;</ref><ref type="bibr" target="#b48">Narendar &amp; Gopalakrishnan, 2010;</ref><ref type="bibr" target="#b62">Sun &amp; Zhang, 2003)</ref>, plates <ref type="bibr" target="#b24">(Hosseini-Hashemi, Zare, &amp; Nazemnezhad, 2013;</ref><ref type="bibr" target="#b26">Ke, Wang, &amp; Wang, 2008;</ref><ref type="bibr">Murmu &amp; Pradhan, 2009a)</ref>, plates with von Kármán nonlinearity <ref type="bibr" target="#b58">(Reddy, 2010)</ref>, cylindrical shells <ref type="bibr" target="#b25">(Hua, Liew, Wang, He, &amp; Yakobson, 2008;</ref><ref type="bibr" target="#b71">Wang &amp; Varadan, 2007;</ref>, conical shells <ref type="bibr" target="#b16">(Firouz-Abadi, Fotouhi, &amp; Haddadpour, 2011;</ref><ref type="bibr" target="#b34">Liew et al., 2007;</ref><ref type="bibr" target="#b65">Tsai &amp; Fang, 2007)</ref>, rings <ref type="bibr" target="#b42">(Moosavi, Mohammadi, Farajpour, &amp; Shahidi, 2011;</ref><ref type="bibr" target="#b67">Wang &amp; Duan, 2008)</ref>, spherical shells <ref type="bibr" target="#b18">(Ghavanloo &amp; Fazelzadeh, 2013a;</ref><ref type="bibr" target="#b65">Vila, Zaera, &amp; Fernandez-Saez, 2015;</ref><ref type="bibr" target="#b75">Zaera, Fernandez-Saez, &amp; Loya, 2013)</ref>, and particles <ref type="bibr" target="#b19">(Ghavanloo &amp; Fazelzadeh, 2013b)</ref>, as well as carbon nanotubes (CNTS) <ref type="bibr" target="#b0">(Ansari, Shahabodini, &amp; Rouhi, 2013;</ref><ref type="bibr" target="#b7">Chen, Lee, &amp; Eskandarian, 2004;</ref><ref type="bibr" target="#b17">Fleck &amp; Hutchinson, 1997;</ref><ref type="bibr" target="#b23">Heireche, Tounsi, Benzair, Maachou, &amp; Adda Berdia, 2008;</ref><ref type="bibr" target="#b46">Murmu &amp; Pradhan, 2009c;</ref><ref type="bibr" target="#b49">Narendar &amp; Gopalakrishnan, 2011a;</ref><ref type="bibr" target="#b61">Sudak, 2003;</ref><ref type="bibr" target="#b76">Zhou &amp; Li, 2001</ref>).</p><p>Nevertheless, several authors have pointed out the inconsistent results obtained from the Eringen differential model regarding a cantilever beam when compared to other boundary conditions <ref type="bibr" target="#b5">(Challamel &amp; Wang, 2008;</ref><ref type="bibr" target="#b6">Challamel et al., 2014;</ref><ref type="bibr" target="#b52">Peddieson et al., 2003;</ref><ref type="bibr" target="#b66">Wang, Kitipornchai, Lim, &amp; Eisenberger, 2008;</ref><ref type="bibr" target="#b70">Wang &amp; Liew, 2007)</ref>. For all boundary conditions except the cantilever, the model predicts softening effect (i.e. larger deflections and lower fundamental frequencies) as the nonlocal parameter is increased. Moreover, <ref type="bibr" target="#b36">Lu, Lee, Lu, and Zhang (2006)</ref> showed that, depending on the nonlocal parameter, it is only possible to calculate a few natural frequencies of flexural vibrations of a cantilever beam. This last finding may be a consequence of the non self-adjoint characteristic of the Eringen differential operator <ref type="bibr" target="#b6">(Challamel et al., 2014;</ref><ref type="bibr" target="#b57">Reddy, 2007)</ref>. <ref type="bibr" target="#b2">Benvenuti and Simone (2013)</ref> found also inconsistent results regarding the behavior of a bar in tension. They observed that nonlocal solutions based on differential form of the Eringen theory are not consistent with the constitutive equation formulated in integral form. The reason is that in the transformation process of the constitutive equations from integral to differential forms, certain boundary conditions are not properly fulfilled <ref type="bibr" target="#b54">(Polyanin &amp; Manzhirov, 2008)</ref> To overcome this paradoxical behavior, <ref type="bibr" target="#b5">Challamel and Wang (2008)</ref> proposed a local/nonlocal moment-curvature relationship. In the same way, Challamel, Rakotomanana, and Le Marrec (2009) adopted a mixed local/nonlocal model to address the 1D wave propagation. In order to fit the dispersion relations obtained from a Von-Kármán lattice, <ref type="bibr" target="#b4">Challamel et al. (2009)</ref> selected a negative value for the "mixture" parameter leading to thermodynamic inconsistencies <ref type="bibr" target="#b14">(Fafalis, Filopoulos, &amp; Tsamasphyros, 2012)</ref>. On the other hand, the two-phase constitutive model with both local and nonlocal phases was early proposed by <ref type="bibr" target="#b12">Eringen (1987)</ref>. This theory was further developed by Polizzotto (2001) who derived the variational principles governing the integral form. Using this two-phase constitutive model, <ref type="bibr" target="#b53">Pisano and Fuschi (2003)</ref> and <ref type="bibr" target="#b2">Benvenuti and Simone (2013)</ref> solved the problem of a bar in tension, and very recently <ref type="bibr" target="#b28">Khodabakhshia and Reddy (2015)</ref> have presented the analysis of the static bending of Euler-Bernoulli beams subjected to different boundary and load conditions.</p><p>In this paper we formulate the problem of the static bending of Euler-Bernoulli beams using the Eringen integral constitutive equation. It is showed that, in general, the Eringen model in differential form is not equivalent to the Eringen model in integral form. Although this has been shown for a particular case (bending of beams), it also applies to other problems. A general method to solve rigorously the problem in integral form is proposed. Different boundary and load conditions are analyzed and the results have been compared whose derived from the widely used differential approach showing that they are different in general. With this integral formulation, the paradox that appears when solving the cantilever beam with the differential form of the Eringen model (increase in stiffness with the nonlocal parameter) is solved, being this one of the main outcomes of the work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Governing equations</head><p>Here, an application of the Eringen integral model to the study of static bending of an Euler-Bernoulli beam is presented.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses</head><p>We consider a beam of length L, uniform cross section A and constant Young modulus E. The variables x and w represent, respectively, the axial coordinate and the transverse displacement. The strain ε x follows the kinematics of the Euler-Bernoulli</p><formula xml:id="formula_0">beam ε x( x) = −z d 2 w(x) dx 2<label>(1)</label></formula><p>The nonlocal constitutive equation σ x is given by the Eringen integral equation</p><formula xml:id="formula_1">σ x( x) = L 0 k(|x −x|, κ)Eε x(x) dx<label>(2)</label></formula><p>with the standard kernel</p><formula xml:id="formula_2">k(|x −x|, κ) = 1 2κ e − |x−x| κ<label>(3)</label></formula><p>κ being the non-local parameter, depending on an internal length scale a and on a constant e 0 appropriate to the material</p><formula xml:id="formula_3">κ = e 0 a<label>(4)</label></formula><p>From the previous hypotheses, the following expression for the bending moment can be derived</p><formula xml:id="formula_4">M(x) = A σ x( x)z dA = −EI L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx<label>(5)</label></formula><p>where I is the moment of inertia of the cross section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Derivation of the governing equation and BCs.</head><p>The governing equation and the boundary conditions are derived applying the Principle of Minimum Total Potential Energy, specializing the general formulation of Polizzotto (2001) for a 1D case.</p><p>Given the following expression for the strain energy</p><formula xml:id="formula_5">U(w) = L 0 A 1 2 σ x( x)ε x( x)dA dx = 1 2 EI L 0 L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx d 2 w(x) dx 2 dx<label>(6)</label></formula><p>and for the work due to external loads</p><formula xml:id="formula_6">q(x) V(w) = − L 0 q(x)w(x)dx<label>(7)</label></formula><p>the total potential energy is</p><formula xml:id="formula_7">(w) = U(w) + V(w)<label>(8)</label></formula><p>The Euler equation is determined by equating the first variation of (w) to zero, i.e. δ (w</p><formula xml:id="formula_8">) = 0 1 2 EI L 0 L 0 k(|x − x|, κ) d 2 δw(x) dx 2 dx d 2 w(x) dx 2 dx + 1 2 EI L 0 L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx d 2 δw(x) dx 2 dx − L 0 q(x)δw(x)dx = 0<label>(9)</label></formula><p>that can be written as</p><formula xml:id="formula_9">EI L 0 L 0 k(|x − x|, κ) d 2 w(x) dx 2 dx d 2 δw(x) dx 2 dx − L 0 q(x)δw(x)dx = 0<label>(10)</label></formula><p>Integrating the first term twice by parts, we get</p><formula xml:id="formula_10">EI L 0 k(|x − x|, κ) d 2 w(x) dx 2 dx δ dw(x) dx L 0 − d dx EI L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx δw(x) L 0 + L 0 d 2 dx 2 EI L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx − q(x) δw(x)dx = 0 (11)</formula><p>By virtue of the Fundamental Lemma of Variational Calculus, we get the Euler equation</p><formula xml:id="formula_11">d 2 dx 2 EI L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx − q(x) = 0 (12)</formula><p>or, in terms of the bending moment (Eq. (5))</p><formula xml:id="formula_12">d 2 M(x) dx 2 = −q(x)<label>(13)</label></formula><p>with the following pairs of essential and natural boundary conditions:</p><formula xml:id="formula_13">w = 0; or d dx EI L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx = 0<label>(14)</label></formula><p>and</p><formula xml:id="formula_14">dw dx = 0; or EI L 0 k(|x −x|, κ) d 2 w(x) dx 2 dx = 0<label>(15)</label></formula><p>The above equations can be written in nondimensional form using the following variables</p><formula xml:id="formula_15">ξ = x L ; h = κ L ;w = w w 0 ;M = M q 0 L 2 ;q = q q 0<label>(16)</label></formula><p>with w 0 = q 0 L 4 /(EI) and q 0 a characteristic value of the transverse load. The nondimensional bending moment becomes</p><formula xml:id="formula_16">M(ξ ) = − 1 0 1 2h e − |ξ −s| h d 2w (s) ds 2 ds<label>(17)</label></formula><p>Given the external loadq(ξ ), the bending moment can be obtained integrating the balance equation </p><formula xml:id="formula_17">M (ξ ) = −q(ξ )<label>(18)</label></formula><formula xml:id="formula_18">thusM (ξ ) = C 1 + C 2 ξ − ξ 0 (ξ − t)q(t)dt<label>(19)</label></formula><formula xml:id="formula_19">hw (s)ds = −2hM(ξ )<label>(20)</label></formula><p>is of the general form</p><formula xml:id="formula_20">b a e μ|ξ −s| y(s)ds = f (ξ ), −∞ &lt; a &lt; b &lt; ∞<label>(21)</label></formula><p>with a = 0, b = 1, μ = −1/h, y =w , f = −2hM. As described in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref>, the integral equation is satisfied by the solution</p><formula xml:id="formula_21">y(ξ ) = 1 2μ f (ξ ) − μ 2 f (ξ )<label>(22)</label></formula><p>Eq. (22) constitutes the well-known differential form of the nonlocal Eringen constitutive model, supposedly equivalent to its integral counterpart. However, as stated in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref>, for the solution in differential form to satisfy the integral equation, the following boundary conditions have to be fulfilled</p><formula xml:id="formula_22">f (a) + μ f (a) = 0, f (b) − μ f (b) = 0<label>(23)</label></formula><p>It is evident that, in a general loading case, the previous conditions may not necessarily be satisfied by f = −2hM, thus preventing to use the differential formulation of the Eringen model. This impediment has been highlighted in a bending problem, but it also applies to other Solid Mechanics problems when using the differential formulation of the Eringen model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Proposed solution for the integral form</head><p>Once the discordance between the integral and the differential formulations of the nonlocal Eringen model -for a general loading case -has been underscored, a method to rigorously solve the original integral form is proposed. In a general case, f(ξ ) does not satisfy the conditions given by Eq. (23). As stated in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref> a new function F(ξ ), based on f(ξ ) and written as</p><formula xml:id="formula_23">F (ξ ) = f (ξ ) + Aξ + B (24) where A = 1 bμ − aμ − 2 f (a) + f (b) + μ f (a) − μ f (b) (25) B = − 1 μ f (a) + μ f (a) + Aaμ + A<label>(26)</label></formula><p>can be defined, which now satisfies the conditions </p><formula xml:id="formula_24">F (a) + μF(a) = 0, F (b) − μF(b) = 0<label>(</label></formula><formula xml:id="formula_25">hw (s)ds = −2hM(ξ ) + Aξ + B − (Aξ + B)<label>(28)</label></formula><p>Thus the solution of the integral equation may be derived as</p><formula xml:id="formula_26">w (ξ ) =w 1 (ξ ) − Aw A (ξ ) − Bw B (ξ )<label>(29)</label></formula><p>w 1 (ξ ),w A (ξ ) andw B (ξ ) being the solutions of the following integral equations</p><formula xml:id="formula_27">• Forw 1 (ξ ): 1 0 e − |ξ −s| hw 1 (s)ds = −2hM(ξ ) + Aξ + B<label>(30)</label></formula><p>whose right-term follows the expression given by Eq. <ref type="formula">24</ref>and thus can be solved using Eq. (22).</p><p>• Forw A (ξ ):</p><formula xml:id="formula_28">1 0 e − |ξ −s| hw A (s)ds = ξ<label>(31)</label></formula><p>that can be solved numerically.</p><formula xml:id="formula_29">• Forw B (ξ ): 1 0 e − |ξ −s| hw B (s)ds = 1<label>(32)</label></formula><p>that can be solved numerically.</p><p>The solutionw 1 (ξ ) depends on the particular loading case. Nevertheless,w A (ξ ) andw B (ξ ) are canonical functions (for a given value of the nonlocal parameter h), thus valid for any loading case.</p><p>Later on, the displacementw(ξ ) is obtained as follows:</p><formula xml:id="formula_30">w(ξ ) =w(0) +w (0)ξ + ξ 0 (ξ − s) w 1 (s) − Aw A (s) − Bw B (s) ds<label>(33)</label></formula><p>Likewise, the bending moment is derived as follows</p><formula xml:id="formula_31">M(ξ ) = − 1 0 1 2h e − |ξ −s| h w 1 (s) − Aw A (s) − Bw B (s) ds (34)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Selected results</head><p>To illustrate the differences in the results obtained by means of the integral form with those obtained with the differential form of the Eringen model, some cases are analyzed. Different boundary condition combinations (cantilever, fixed-pinned and simply supported) and loading states (point or distributed load) will be considered, some of them satisfying the conditions stated in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref>. The presented results show the vertical displacement of selected sections of the beam versus the nonlocal parameter h. Note that the case h = 0 corresponds to the classical (local) elasticity theory, and the solution for this value of h has not been obtained from the nonlocal integral approach because it leads to a singularity in the kernel. Cantilever beam: The first three conditions analyzed correspond to cantilever beams (clamped at ξ = 0) subjected to different loading cases. In all these configurations, conditions stated in Eq. (23) are not satisfied, showing discrepancies in the results obtained by the integral and differential models.</p><p>• Cantilever beam with point load. In case of a point load located at the free end (ξ = 1) of a cantilever beam, the maximum displacement obtained at this section using the integral form increases with the nonlocal parameter h (see <ref type="figure">Fig. 1</ref>). These results predict that flexibility of the beam increases with the small-scale parameter. This trend contrasts with the results obtained by means of the differential form, being the maximum displacement for this loading case (point load at the free end), independent of h <ref type="bibr" target="#b70">(Wang &amp; Liew (2007)</ref>).</p><p>• Cantilever beam with distributed load. In case of considering an uniform or a linear distributed load,q(ξ ) = ξ , (see <ref type="figure">Figs. 2</ref> and 3, respectively), integral form shows that the stiffness of the beam decreases as well, whereas in the differential one the stiffness slightly increases.</p><p>The stiffening behaviour of cantilever beams with the nonlocal parameter when the differential formulation is used, opposite to that observed in other boundary conditions, has been defined as a paradox by other authors and could be a consequence of the improper transformation of the integral problem to the differential one. However, as we will see next, both approaches also provide different results for other boundary conditions if the requirements for f(ξ ) are not satisfied.</p><p>Simply-supported beam: Following, simply supported beam with two different loading states are analyzed.</p><p>• Simply-supported beam with uniform distributed load. For this case, displacement at ξ = 1/4 is shown in <ref type="figure">Fig. 4</ref>. As in previous cases, the particular conditions considered here lead to a wrong transformation of the integral problem into the differential one.</p><p>Notice that in the particular case of displacement at ξ = 1/2, results obtained through both formulations are fully coincident (see <ref type="figure">Fig. 5</ref>). • Simply-supported beam with harmonic load. Let us consider the following harmonic distributed loadq(ξ ) = 2π 2 cos (2πξ)</p><p>and calculate the displacement at the mid-span of the beam. This load distribution satisfies the conditions stated in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref> and therefore, the displacement obtained using both integral and differential nonlocal Eringen models are fully coincident <ref type="figure">(Fig. 6</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Clamped-pinned beam:</head><p>The following case corresponds to a statically undetermined case with asymmetric boundary conditions.</p><p>• Clamped-pinned beam with uniform distributed load. In this case, the displacement at the mid-span of a clamped-pinned beam with an uniform distributed load has been calculated ( <ref type="figure">Fig. 7)</ref>. Here, both formulations show that the flexibility of the beam increases with the nonlocal parameter h. As in the cases previously commented, the load now considered does not satisfy the conditions stated in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref> either.</p><p>As the analyzed cases shown, the comparison of results demonstrates that relevant discrepancies may appears when the conditions stated in <ref type="bibr" target="#b54">Polyanin and Manzhirov (2008)</ref> are not satisfied, leading to an improper transformation from the integral to the differential formulation. In particular, the differential form leads to an apparent stiffness increasing in cantilever beams subjected to a distributed load, meanwhile opposite tendencies are observed in other boundary conditions. This paradox does not appears using the integral form.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Summary and concluding remarks</head><p>The paper shows the differences between the original nonlocal integral Eringen model and its differential counterpart, commonly supposed fully equivalent. The contrasts are illustrated through the static bending analysis of the Euler-Bernoulli beam, although it can be readily extended to other boundary value problems. An original methodology to rigorously solve the integral formulation is proposed, permitting to clear up some abnormal trends predicted by the differential formulation, which disappear when using the original integral form.</p><p>The following conclusions can be established:</p><p>• For a general loading case, the solution of the integral model is obtained by adding those of an associated differential problem and of two integral equations. • For a given value of the non-local parameter, the solutions of the integral equations can be stated in terms of two canonical functions, valid for any loading case. • The solutions of integral and differential forms of the Eringen model are coincident for specific loading cases (those satisfying the conditions stated in <ref type="bibr" target="#b54">Polyanin &amp; Manzhirov (2008)</ref>), for which the integral problem can be rigorously transformed into a differential problem. • The paradox that appears when solving the cantilever beam with the differential form of the Eringen model (increase in stiffness with the nonlocal parameter) is resolved by using the integral form of the Eringen model.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>27) Taking advantage of this general solution, we may modify the governing Eq. (20) as follows 1 0 e − |ξ −s|</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1 .Fig. 2 .</head><label>12</label><figDesc>Displacement of the section at ξ = 1 for a cantilever beam submitted to a point load at ξ = 1, versus nonlocal parameter h. Displacement of the section at ξ = 1 for a cantilever beam submitted to a uniform distributed load, versus nonlocal parameter h.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .Fig. 4 .Fig. 5 .Fig. 6 .Fig. 7 .</head><label>34567</label><figDesc>Displacement of the section at ξ = 1 for a cantilever beam submitted to a triangular distributed loadq(ξ ) = ξ , versus nonlocal parameter h. Displacement of the section at ξ = 1/4 for a simply-supported beam submitted to a uniform distributed load, versus nonlocal parameter h. Displacement of the section at ξ = 1/2 for a simply-supported beam submitted to a uniform distributed load, versus nonlocal parameter h. Displacement of the section at ξ = 1/2 for a simply-supported beam submitted to an harmonic distributed loadq(ξ ) = 2π 2 cos (2πξ), Displacement of the section at ξ = 1/2 for a clamped-pinned beam submitted to a uniform distributed load, versus nonlocal parameter h.</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>This work was supported by the Ministerio de Economía y Competitividad de España (grants numbers DPI2011-23191 and DPI2014-57989-P).</p><p>Prof. J.N. Reddy acknowledges the support of Universidad Carlos III de Madrid with a Cátedra de Excelencia funded by Banco Santander during academic year 2014-2015.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A thickness-independent nonlocal shell model for describing the stability behavior of carbon nanotubes under compression</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ansari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Shahabodini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Rouhi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page" from="323" to="331" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Bending vibrations of rotating nonuniform nanocantilevers using the eringen nonlocal elasticity theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Aranda-Ruiz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Loya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernández-Sáez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="2990" to="3001" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">One-dimensional nonlocal and gradient elasticity: Closed-form solution and size effect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Benvenuti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Simone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanics Research Communications</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="46" to="51" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Carbon nanotube based bearing for rotational motions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Bourlon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">C</forename><surname>Glattli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Miko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Forro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bachtold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="709" to="712" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A dispersive wave equation using nonlocal elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Challamel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Rakotomanana</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Marrec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comptes Rendus -Mecanique</title>
+		<imprint>
+			<biblScope unit="volume">337</biblScope>
+			<biblScope unit="page" from="591" to="595" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The small length scale effect for a non-local cantilever beam: a paradox solved</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Challamel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nanotechnology</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">345703</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">On nonconservativeness of Eringen&apos;s nonlocal elasticity in beam mechanics: correction from a discrete-based approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Challamel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Michelitsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Archive of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="1275" to="1292" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Atomistic viewpoint of the applicability of microcontinuum theories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Eskandarian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2085" to="2097" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Nanosystems: Molecular machinery, manufacturing, and computation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">E</forename><surname>Drexler</surname></persName>
+		</author>
+		<editor>Wiley</editor>
+		<imprint>
+			<date type="published" when="1992" />
+			<pubPlace>Ed.) New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Linear theory of nonlocal elasticity and dispersion of plane-waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="233" to="248" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Nonlocal polar elastic continua</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">On differential-equations of nonlocal elasticity and solutions of screw dislocation and surface-waves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="4703" to="4710" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Theory of nonlocal elasticity and some applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res Mechanica</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="313" to="342" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Nonlocal elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Eringen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G B</forename><surname>Edelen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="233" to="248" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">On the capability of generalized continuum theories to capture dispersion characteristics at the atomic scale</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Fafalis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Filopoulos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Tsamasphyros</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Mechanics, A/Solids</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="35" to="37" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Rotational actuators based on carbon nanotubes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Fennimore</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">D</forename><surname>Yuzvinsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">Q</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Fuhrer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cumings</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Zettl</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="424" to="408" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Free vibration analysis of nanocones using a nonlocal continuum model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Firouz-Abadi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fotouhi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Haddadpour</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Letters A</title>
+		<imprint>
+			<biblScope unit="volume">375</biblScope>
+			<biblScope unit="page" from="3593" to="3598" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Strain gradient plasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">A</forename><surname>Fleck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Hutchinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="295" to="361" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Nonlocal elasticity theory for radial vibration of nanoscale spherical shells</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Ghavanloo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Fazelzadeh</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.euromechsol.2013.02.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Mechanics / A Solids</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="37" to="42" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Characterization of heterogeneous solids via wave methods in computational microelasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Ghavanloo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Fazelzadeh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gonella</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Greene</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="959" to="974" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note>Nanotechnology</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Multipolar continuum mechanics. Archive for rational mechanics and analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">E</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">S</forename><surname>Rivlin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964" />
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="113" to="147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Modified nonlocal elasticity theory for functionally graded materials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Salehipour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Shahidi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Nahvi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="44" to="57" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Molecular dynamics simulation of carbon nanotubebased gear</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Globus</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Jaffe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Deardorff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">Q</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Liew</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Physics Letters</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="91" to="261906" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+	<note>Nanotechnology</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Sound wave propagation in single-walled carbon nanotubes using nonlocal elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Heireche</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Tounsi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Benzair</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Maachou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Berdia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="2791" to="2799" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">An exact analytical approach for free vibration of mindlin rectangular nano-plates via nonlocal elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hosseini-Hashemi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Zare</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nazemnezhad</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compstruct.2012.11.035</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page" from="290" to="299" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Nonlocal shell model for elastic wave propagation in single-and double-walled carbon nanotubes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">G</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Liew</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">Q</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">I</forename><surname>Yakobson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="3475" to="3485" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Non-local elastic plate theories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L.-L</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y.-S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z.-D</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A</title>
+		<imprint>
+			<biblScope unit="volume">463</biblScope>
+			<biblScope unit="page" from="3225" to="3240" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Nonlinear vibration of the piezoelectric nanobeams based on the nonlocal theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">L</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">D</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compstruct.2012.01.023</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2038" to="2047" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A unified integro-differential nonlocal model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Khodabakhshia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="60" to="75" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Free longitudinal vibration of tapered nanowires in the context of nonlocal continuum theory via a perturbation technique</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Kiani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="387" to="397" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">On the physical reality of torque stresses in continuum mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Kröner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="261" to="278" />
+			<date type="published" when="1963" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Elasticity theory of materials with long range cohesive forces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Kröner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="731" to="742" />
+			<date type="published" when="1967" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Some considerations of the relation between solid state physics and generalized continuum mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Krumhansl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanics of generalized continua. IUTAM symposia</title>
+		<editor>E. Kröner</editor>
+		<meeting><address><addrLine>Berlin Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1968" />
+			<biblScope unit="page" from="298" to="311" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">The theory of elastic media with microstructure and the theory of dislocations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">A</forename><surname>Kunin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanics of generalized continua. IUTAM symposia</title>
+		<editor>E. Kröner</editor>
+		<meeting><address><addrLine>Berlin Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1968" />
+			<biblScope unit="page" from="321" to="329" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Carbon nanocones under compression: Buckling and post-buckling behaviors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Liew</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">X</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">Q</forename><surname>He</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review B-Condensed Matter and Materials Physics</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Free transverse vibrations of cracked nanobeams using a nonlocal elasticity model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Loya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lopez-Puente</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernandez-Saez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">44309</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Dynamic analysis of axially prestressed micro/nanobeam structures based on nonlocal beam theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">P</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">Q</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+	<note>Journal of Applied Physics</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Membrane-based synthesis of nanomaterials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">R</forename><surname>Martin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chemistry of Materials</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="1739" to="1746" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Micro-structure in linear elasticity. Archive for Rational Mechanics and Analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964" />
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="51" to="78" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Second gradient of strain and surface-tension in linear elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="417" to="438" />
+			<date type="published" when="1965" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">On first strain-gradient theories in linear elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Eshel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="109" to="124" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Effects of couple-stresses in linear elasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">D</forename><surname>Mindlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">F</forename><surname>Tiersten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Archive for Rational Mechanics and Analysis</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="415" to="448" />
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Vibration analysis of nanorings using nonlocal continuum mechanics and shear deformable ring theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Moosavi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Mohammadi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Farajpour</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">H</forename><surname>Shahidi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="135" to="140" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Non local effects in the longitudinal vibration of double-nanorod systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Murmu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="415" to="422" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Small-scale effect on the free in-plane vibration of nanoplates by nonlocal continuum model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Murmu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<editor>123507. Murmu, T., &amp; Pradhan, S. C.</editor>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1628" to="1633" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Physica E</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Small-scale effect on the vibration of nonuniform nanocantilever based on nonlocal elasticity theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Murmu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Pradhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1451" to="1456" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Thermo-mechanical vibration of a single-walled carbon nanotube embedded in an elastic medium based on nonlocal elasticity theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Murmu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Pradhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Materials Science</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="854" to="859" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Terahertz wave propagation in uniform nanorods: a nonlocal continuum mechanics formulation including the effect of lateral inertia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Narendar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1015" to="1020" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Ultrasonic wave characteristics of nanorods via nonlocal strain gradient models</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Narendar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gopalakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">84312</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Critical buckling temperature of single-walled carbon nanotubes embedded in a one-parameter elastic medium based on nonlocal continuum mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Narendar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gopalakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1185" to="1191" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Nonlocal wave propagation in rotating nanotube</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Narendar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gopalakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physics</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="17" to="25" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Analysis and modeling the size effect on vibration of functionally graded nanobeams based on nonlocal timoshenko beam theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Rahmani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">P</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page">5570</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Application of nonlocal continuum models to nanotechnology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peddieson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">R</forename><surname>Buchanan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>Mcnitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3-5</biblScope>
+			<biblScope unit="page" from="305" to="312" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Closed form solution for a nonlocal elastic bar in tension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Pisano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Fuschi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Nonlocal elasticity and related variational principles. Mechanics Research Communications</title>
+		<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="7359" to="7380" />
+		</imprint>
+	</monogr>
+	<note>Polizzotto, C.</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">Handbook of integral equations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Polyanin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Manzhirov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>CRC Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Application of nonlocal elasticity and DQM in the flapwise bending vibration of a rotating nanocantilever</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Pradhan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Murmu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica E</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1944" to="1949" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Non-linear analysis of functionally graded microbeams using Eringens non-local differential model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>El-Borgi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Romanoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Non-Linear Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page" from="308" to="318" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Nonlocal theories for bending, buckling and vibration of beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">2-8</biblScope>
+			<biblScope unit="page" from="288" to="307" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Nonlocal nonlinear formulations for bending of classical and shear deformation theories of beams and plates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1507" to="1518" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Eringen&apos;s nonlocal theories of beams accounting for moderate rotations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>El-Borgi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="159" to="177" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Nanotechnology in biomedical applications-a review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Saji</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Choe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Young</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Nano and Biomaterials</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="119" to="139" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Column buckling of multiwalled carbon nanotubes using nonlocal continuum mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">J</forename><surname>Sudak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="7281" to="7287" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Size-dependent elastic moduli of platelike nanomaterials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">T</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">T</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1212" to="1218" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">Elastic materials with couple-stresses. Archive for Rational Mechanics and Analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Toupin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1963" />
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="385" to="414" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Theories of elasticity with couple-stress. Archive for Rational Mechanics and</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Toupin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Analysis</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="85" to="112" />
+			<date type="published" when="1964" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">A molecular dynamics study of the nucleation, thermal stability and nanomechanics of carbon nanocones</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Vila</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernandez-Saez</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1077546314565808</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vibration and Control</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note>Nanotechnology</note>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Beam bending solutions based on nonlocal Timoshenko beam theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kitipornchai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Eisenberger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Engineering Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="475" to="481" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Vibration analysis of nanorings using nonlocal continuum mechanics and shear deformable ring theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">H</forename><surname>Duan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="page">14303</biblScope>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Vibration of nonlocal Timoshenko beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">Q</forename><surname>He</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nanotechnology</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">105401</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Buckling analysis of micro-and nano-rods/tubes based on nonlocal Timoshenko beam theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kitipornchai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physics D-Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="3904" to="3909" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Application of nonlocal continuum mechanics to static analysis of micro-and nano-structures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Liew</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Letters A</title>
+		<imprint>
+			<biblScope unit="volume">363</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="236" to="242" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Application of nonlocal elastic shell theory in wave propagation analysis of carbon nanotubes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Varadan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Smart Materials Structures</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="178" to="190" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">The constitutive relation and small scale parameter of nonlocal continuum mechanics for modelling carbon nanotubes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nanotechnology</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page">75702</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Nanomechanics of carbon nanofibers: structural and elastic properties</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Srivastava</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Physics Letters</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="2208" to="2210" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Free transverse vibrations of nano-to-micron scale beams</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A-Mathematical Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">462</biblScope>
+			<biblScope unit="page" from="2977" to="2995" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Axisymmetric free vibration of closed thin spherical nano-shell</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Zaera</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fernandez-Saez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Loya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composite Structures</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="page" from="154" to="161" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Length scales in the static and dynamic torsion of a circular cylindrical micro-bar</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">Q</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Shandong University of Technology</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="401" to="407" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

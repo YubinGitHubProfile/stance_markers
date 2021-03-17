@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Application of diffusion of innovation theory to educational accountability: the case of EFL education in Japan</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Miyuki</forename><surname>Sasaki</surname></persName>
+							<email>sasaki@hum.nagoya-cu.ac.jp</email>
+							<affiliation key="aff0">
+								<orgName type="department">Graduate School of Humanities and Social Sciences</orgName>
+								<orgName type="institution">Nagoya City University</orgName>
+								<address>
+									<addrLine>Yamanohata 1, Mizuho-cho, Mizuho-ku</addrLine>
+									<postCode>467-8501</postCode>
+									<settlement>Nagoya</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Application of diffusion of innovation theory to educational accountability: the case of EFL education in Japan</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-017-0052-1</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+				<p>Background: This study investigates how the criterion-referenced (CR) approach has impacted relationships between goals, classroom practices, and student achievement in English education in Japan from 1994 to the present, a period covering three government-mandated administrations of a national curriculum (Course of Study). No study has investigated such relationships longitudinally as evidence of accountability of these curriculum policies, and this is a first step. Methods: Study 1 compares their alignment from two periods (1994-2002 and 2003-2013) based on the legally-binding goals set by the Government, nationwide CR tests based on these goals, and English teachers&apos; answers to a questionnaire investigating their classroom practices. Study 2 explores how current goals relate to the results of a new set of CR tests and a new survey of classroom practices. The study contributes to the field in two significant ways. Results: Using Roger&apos;s (Rogers, 2003) Diffusion of Innovation Theory made it possible to analyze the implementing processes for new educational policies as multi-faceted and susceptible to influences from stakeholders&apos; societal value systems. Conclusions: Results of tests and surveys collected from large samples truly reflect the targeted populations and provide empirical evidence supporting the widelyrecognized narrative that high-stakes university entrance examinations strongly affect Japanese EFL education. Background This study investigates how relationships between goals, classroom practices, and student achievement in English as a foreign language (EFL) education have changed in Japan from 1994 to the present, covering three administrations of governmentmandated curriculum policies since the introduction of criterion-referenced (CR) assessment. 1 These three administrations represent the most recent attempts by the Japanese government to better adjust EFL education to accelerating globalization, with learning outcomes (both positive and negative) expected to provide useful information for improving similar educational systems, especially in Asian contexts. In this study, I focus on the three variables of goals, classroom practices, and student achievement because these are &quot;key aspects of curriculum policy&quot; (Cumming, 2001, p. 213), especially when the policy utilizes CR assessment as its tool for evaluating learning success. In</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>other words, the alignment of the three key aspects provides important evidence for the "accountability" <ref type="bibr">(Cumming, 2009, p. 90)</ref> of the educational policy in question.</p><p>Such alignment has been investigated in various contexts, including that of the implementation of the Common European Framework of Reference for Languages (CEFR; e.g., <ref type="bibr" target="#b1">Alderson, 2005)</ref>, which transcends second language education across European countries, as well as the implementation of the 2001 No Child Left Behind Act in the US (e.g., <ref type="bibr" target="#b9">Harper, Platt, Naranjo, &amp; Boynton, 2007)</ref>. Although the introduction of CR measurement in educational policies has a long history (e.g., <ref type="bibr" target="#b2">Bachman, 1990)</ref>, few studies have investigated how these policies have impacted classroom practices, especially on a longitudinal basis. Turning to recent EFL educational policies in Japan, although a number of studies have focused on specific aspects of these policies (e.g., communicative language teaching: <ref type="bibr" target="#b31">Tahira, 2012</ref>; EFL education in the elementary school: <ref type="bibr" target="#b3">Butler, 2015)</ref>, no study (to my knowledge) has addressed the issue of the nationwide impact of CR types of governmental goals for teaching and learning in EFL classrooms using data from rigorously selected samples, not to mention the longitudinal consequences of such policies. This study therefore covers new ground.</p><p>Methodologically, the study is unique in its use of <ref type="bibr">Roger's (2003)</ref> Diffusion of Innovation Theory. I selected this framework because the three targeted administrations of curriculum policies stood out through "the introduction of the government's new educational policies" <ref type="bibr">(Sasaki, 2008, p. 73)</ref> in the 160-year history of Japanese EFL education. Roger's theory is especially appropriate because it has proved successful in providing tools for revealing how, why, and how fast an innovation achieves (or fails to achieve) its intended goals, including in the fields of education (e.g., <ref type="bibr" target="#b16">Lee, Hsieh, &amp; Hsu, 2011)</ref> and educational policy (e.g., <ref type="bibr" target="#b8">Dingfelder &amp; Mandell, 2011)</ref>. Furthermore, the theory's underlying assumption that innovation is accepted through communication over time as a result of stakeholders' values and beliefs is also relevant when I examine the alignment of the three targeted variables, which inevitably involve different types of stakeholders. Yet, despite its potential, few studies have adopted this theory to explain longitudinal changes in one country's language policies. Finally, in terms of the targeted population, I focus on EFL education for Grade 12 (18 years old) because over 95% of Japanese students proceed to senior high school (Grades 10-12) after the compulsory Grades 1-9, and most receive English education from Grade 5 (since 2012) or Grade 7 (between 1945 and 2011). Furthermore, because only about 50% proceed to tertiary education, Grade 12 English proficiency is seen as the end-product of Japanese formal English education.</p><p>This study consists of two parts: Study 1 targets the two periods <ref type="bibr">(1994-1998 and 1999-2012)</ref> covered by two Courses of Studies (CoS), or sets of legally-binding curriculum guidelines, while Study 2 targets 2013 to the present. Comparing these three periods nationwide is valid because Japan has had a centrally controlled educational system since CoSs became legally binding in 1958 <ref type="bibr" target="#b12">(Imura, 2003)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Study 1</head><p>In Study 1, I asked the following questions for each targeted period:</p><p>(1) How well did goals, classroom practices (i.e., teachers' activities and students' understanding of the class content), and student achievement align for EFL education Grade 12 in Japan?</p><p>(2) If the three key aspects (goals, classroom practices, student achievement) aligned, what might be possible reasons for this match? (3) If the three key aspects did not align, what might be possible reasons for this mismatch? (4) Does <ref type="bibr">Roger's (2003)</ref> Diffusion of Innovation Theory help us better understand the reasons discussed in (2) and (3)? (5) How do answers to Research Questions 1-4 for 1994-2002 compare with those for 2003-2012?</p><p>Methods</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>To answer Questions 1-3, I chose the data described in A below as the most appropriate evidence for goals, those in B for student achievement, and those in C for classroom practices. Justification for their selection for this study is discussed in their respective sections.</p><p>A Goals: English I <ref type="bibr">-1994-2002 and 2003-2012</ref> Courses of Studies</p><p>As explained earlier, a CoS is a set of curriculum guidelines promulgated by the Japanese Government (through the Ministry of Education, Culture, Sports, Science, and Technology -MEXT). Although a CoS is created for each level from kindergarten (age 3-6), elementary school (Grades 1-6), junior high school (Grades 7-9), and senior high school (Grades 10-12), those promulgated in the same year (thus forming a set of CoSs even though some may become effective one or two years apart) were created under the same set of governmental goals and policies. Since first promulgated in 1947, CoSs have been revised seven times at approximately ten-year intervals to accommodate sociocultural changes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B 2002 and 2005 Senior High School Test of English Proficiency and Student Surveys</head><p>In November 2002 and 2005, the National Institute for Educational Policy Research (NIER) administered CR tests and surveys to Grade 12 students and their teachers to ascertain how far the basic goals set by the CoS for those periods <ref type="bibr">(1994-2002 for the 2002 test and 2003-2012</ref> for the 2005 test) had been achieved in seven subjects (e.g., Japanese, mathematics, physics) in 2002 and ten subjects (e.g., geometry, history, and civics in addition to the seven subjects tested in 2002) by Grade 12 students who had studied under each CoS for the full three years of senior high school. The 2002 and 2005 test items were written and verified to measure the main points aimed at in the CoS by committees of experts in each subject <ref type="bibr" target="#b24">(NIER, 2004</ref><ref type="bibr" target="#b25">(NIER, , 2007</ref>. 2 These tests therefore represented the first attempts to ascertain the accountability of Japan's EFL educational policy from a CR perspective. Furthermore, the results represent the proficiency of Grade 12 students in 2002 since 8% of them (105,000) and 13% (150,537) of 2005 Grade 12 test takers were randomly selected from all public and private senior high schools throughout Japan. For English, the selected subject was English I, which all test takers (n = 31,189 for 2002 and n = 29,880 for 2005) took by the time they reached Grade 12. No other test of a similar kind was conducted on such a scale.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C 2002 and 2005 Senior High School Teacher Surveys</head><p>When the two tests described above were administered, all teachers of participating students (English subtest: n = 891 for 2002; n = 887 for 2005) responded to questionnaire items, some of which asked to what extent they had conducted the activities specified for English I in the CoS for the period. No other survey was conducted on such a scale.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>Goals for English <ref type="bibr">I: 1994-2002 and 2003-2012</ref> The two targeted CoSs shared three general characteristics that differed from previous ones: redefinition of academic ability, introduction of CR measurement, and further advancement of a liberal, flexible, and comfortable school life (the yutori orientation). First, academic abilities to be achieved by Grade 12 were redefined as "motivation and attitude toward learning and the ability to solve problems as an autonomous individual responding to societal changes" <ref type="bibr">(Kariya, 2002, p. 56, author's translation)</ref>. This was a drastic change from the earlier CoSs, which tended to see academic abilities in terms of knowledge and skills <ref type="bibr" target="#b0">(Abiko, 1996)</ref>. For English, the term "communication" was introduced as part of "attitude" for the 1994-2002 CoS and added to the abilities to be developed under the 2003-2012 CoS. The second innovation of the two CoSs was related to the first. For the first time in its history, the 1994-2001 CoS required teachers to use CR measurement in classrooms to further promote the cultivation of the above-mentioned newly defined academic abilities <ref type="bibr" target="#b28">(Sasaki, 2008)</ref>. These changes reflected a response to nationwide criticism of the excessive emphasis on knowledge cramming, which was widely blamed for education-related problems such as dropping out <ref type="bibr" target="#b19">(Mizuhara, 2010)</ref>. This orientation dated back to the 1982-1993 CoS, under which class hours were cut, but the cuts that took place under the 2003-2012 CoS were even more drastic, reducing curriculum content throughout elementary and secondary education by 30%. This was intended to create more room in which to cultivate the "liberal, flexible, and comfortable school life" aimed for by the CoS by making the content to be learned easier. <ref type="table" target="#tab_0">Table 1</ref> indicates that English I, the only English subject required for high school graduation in the <ref type="bibr">1994-2002 and 2003-2012</ref> CoSs, shared similar objectives and suggested classroom activities. The only differences were that the 2003-2012 objectives and suggested activities were more specific and more oriented toward skills integration than in 1994-2002. Below I focus on the linguistic aspects of this objective because data related to students' attitude are unavailable for classroom activities or outcomes.</p><p>Teaching practices: English I <ref type="table" target="#tab_0">Table 1</ref> shows the percentage of English teachers who responded to the 2002 and 2005 surveys and reported having conducted the communicative activities suggested by the relevant CoS. Although the questions in the 2002 survey were less specific than those in the 2005 survey, they asked whether participating teachers conducted the four-skills activities listed in the 1994-2002 CoS. As <ref type="table" target="#tab_0">Table 1</ref> shows, percentages for all these activities are high (92.9-100%) compared to the corresponding ones for 2003-2012. The relatively low percentages (16.7 to 51.2%) of teachers who conducted the suggested activities for 2003-2012 may be due to the more specific wording of the four questions, which closely reflected the activities emphasizing the four-skills integration recommended by that CoS. Although many of the 2002 teachers had their students listen, read, speak, and write in their classrooms, they may not have conducted such integrative activities as often. Interestingly, the ranking based on the percentage of students who understood the content of these activities, which are only available for the 2002 survey, were similar to those for 2003-2012. <ref type="table" target="#tab_2">Table 2</ref> presents brief specifications, percentages of those who answered each item correctly, and expected accuracy rates (i.e., if the teacher spent the standard amount of time covering activities suggested by the current CoS for cultivating the skill and knowledge measured by the item; <ref type="bibr" target="#b24">NIER, 2004</ref><ref type="bibr" target="#b25">NIER, , 2007</ref> 3 for the 26 items for English I in the 2002 and 2004 senior high school tests. Both the 2002 and 2005 tests contained 10 items measuring listening skills, 9 measured reading skills, and 7 measured writing skills. The listening and reading items were in multiple choice format, and the writing items were descriptive (requiring test takers to write out answers). However, how the answers were rated is not revealed. There was no speaking item. Lastly, the difficulty level of the 2002 and 2005 tests can be compared because they shared 21 of the 52 items. The information revealed in NIER documentation <ref type="bibr">(2004; 2007)</ref> in addition to that presented in <ref type="table" target="#tab_2">Table 2</ref> can be summarized as follows:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Outcomes of classroom activities represented in test results</head><p>(1) In both tests, the reading section had the highest accuracy rate, the listening section the second highest, and the writing section the lowest. (2) In both tests, the reading section had the highest number of items whose accuracy rates were higher than expected rates (14/18 for 2002 and 12/18 for 2005), the listening section the second highest (8/20 for both tests), and the writing section the lowest (6/14 for 2002 and 4/14 for 2005). (3) Students were especially weak at responding to Item 20, which required them to write a coherent text consisting of more than three sentences. Only about 20% of test takers could write such a text (compared to the other writing items, whose mean scores were about 50%). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion of study 1</head><p>The results of Study 1, which investigated the alignment of goals, classroom practices, and student achievement in the two administrations of EFL education policy in Japan <ref type="bibr">(1994-2002 and 2003-2012)</ref> reveal the following:</p><p>A Although the CoSs valued the four skills equally, alignment between the three focal aspects was satisfactory only for reading abilities; B Alignment was better for reading and listening abilities than for writing and speaking abilities and improved significantly only for listening abilities; * Means were calculated based on data presented in <ref type="bibr" target="#b24">NIER (2004</ref><ref type="bibr" target="#b25">NIER ( , 2007</ref>, with number of students taken into consideration ** MC: Multiple choice C Alignment for writing and speaking abilities was well below expectations; D Overall student achievement did not deteriorate in 2003-2012 even though the content for English was cut by 30%.</p><p>To answer Research Questions 1 to 3, I now discuss these results based on the five perceived characteristics of innovations, which <ref type="bibr" target="#b27">Rogers (2003)</ref> argues are most likely to influence "different rates of adoptions" (p. 15) through innovation diffusion.</p><p>Relative advantage: Whether the innovation is perceived as better than its predecessor in terms of "economic terms, social prestige, convenience, and psychological satisfaction" <ref type="bibr">(Rogers, 2003, p. 15)</ref> We saw that the teachers in the two CoS administrations conducted writing and speaking activities much less often than reading and listening activities. Although students could study writing and speaking in English outside of the classroom <ref type="bibr" target="#b7">(Cumming, 2009)</ref>, they did not seem to have done so judging from the results of the 2004 Student Survey <ref type="table" target="#tab_0">(Table 1</ref>) and the 2004 and 2007 Tests <ref type="table" target="#tab_2">(Table 2)</ref>. As many studies (e.g., <ref type="bibr" target="#b3">Butler, 2015;</ref><ref type="bibr" target="#b11">Hu &amp; McKay, 2012)</ref> have pointed out, this can be explained by the lack of immediate need for the students to use English outside of the classroom in a country such as Japan, where English is not used for general communicative purposes. O'Ki (2015) reported that in his needs analysis of 580 Grades 10-12 Japanese students, the three most popular reasons for studying English were: (1) high school graduation (44.8%); (2) university entrance exams (43.3%); and (3) Japan's internationalization (35.7%). These results are especially important in analyzing those of this study because 56.6% of the 580 participants answered that they would not need English for university entrance exams. This suggests that many Japanese students study English mainly to obtain a high school diploma but not with university entrance exams in mind. This is in sharp contrast with East Asian countries such as China or South Korea, where many parents spent extravagant sums on cultivating their children's communicative (mainly oral) abilities outside of formal education <ref type="bibr" target="#b3">(Butler, 2015;</ref><ref type="bibr" target="#b11">Hu &amp; McKay, 2012)</ref>. Perhaps Japanese people believe that advanced learning of a foreign language may lead to a loss of identity as Japanese <ref type="bibr" target="#b4">(Butler &amp; Iino, 2005)</ref>, which is closely related to the next characteristic of innovation, namely compatibility with societal values.</p><p>Compatibility: Is the innovation perceived as being consistent with existing values, past experiences, and needs?</p><p>Two findings of this study can be explained by compatibility between the 1994-2002 and 2003-2012 CoSs. First, the finding that goals, teaching practices, and student achievement aligned best with reading abilities throughout the two administrations was consistent with the fact that grammar-translation, which is exclusively based on reading, has been long cherished in Japan <ref type="bibr" target="#b28">(Sasaki, 2008)</ref>. After English became a virtually compulsory subject for Grades 7-9 in 1947, the method remained widely used in English classrooms in Japan while the more current 2003-2012 CoS was being implemented <ref type="bibr" target="#b31">(Tahira, 2012)</ref>. Teachers probably used the method based on reading activities because they were familiar with it.</p><p>A second finding that can be explained by compatibility was that the students' achievement did not significantly deteriorate <ref type="table" target="#tab_0">(Table 1)</ref> even after content was cut by 30% in 2003-2012. This may be because this policy had been severely criticized by almost all stakeholders (i.e., teachers, parents, and students; <ref type="bibr" target="#b12">Imura, 2003)</ref>, and MEXT consequently revised the 2003-2012 CoS as early as 2003, steering it once again in a more meritocratic direction <ref type="bibr" target="#b4">(Butler &amp; Iino, 2005)</ref>. Because many of these changes were revivals of the 1994-2002 CoS, it may have been easier for teachers to readopt them. Yet the question remains as to why this substantial improvement was concentrated in listening abilities and not in other skills.</p><p>Complexity: Is the innovation difficult to understand or use?</p><p>As mentioned above, two of the most innovative aspects of the <ref type="bibr">1994-2002 and 2003-2012</ref> CoSs were their promotion of communicative language teaching and the introduction of CR tests. As regards the former, <ref type="bibr" target="#b31">Tahira (2012)</ref> reported that it was neither understood nor implemented in EFL classrooms over the previous 20 years mainly due to the nature of "communicative approaches," which allowed for "many interpretations" <ref type="bibr">(Brown, 2007, p. 45)</ref>. The additional requirement of the 2003-2012 CoS that the four skills be taught in an integrated manner seems to have further added to teachers' confusion judging from drastic falls in the percentage of self-reported teaching practices that satisfied the requirement in 1994-2002 relative to 2003-2012 <ref type="table" target="#tab_0">(Table 1</ref>). Yet the fact that the teachers were accustomed to devising reading activities (the compatibility factor) must have helped them implement their integrated reading and listening activities more than other skill activities (51.2% and 38.2%, respectively), as indicated in <ref type="table" target="#tab_0">Table 1</ref>. The other innovative aspect, namely the use of CR tests, is also known to have caused confusion and even shock when first introduced because the teachers were accustomed to traditional norm-referenced measurement <ref type="bibr" target="#b28">(Sasaki, 2008)</ref>.</p><p>Trialability: Can the innovation be tried on a limited basis (i.e., part by part)?</p><p>We saw that alignment between the three targeted aspects of EFL curriculum policy in Japan was fairly successful for reading abilities for both 1994-2002 and 2003-2012 and for listening abilities for 2003-2012. This partial success can be attributed to the fact that the activities suggested by both CoSs were set up according to each of the four skills (i.e., part by part).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Observability: Are the results of the innovation visible to others?</head><p>One of the most observable results in English education is student achievement. In a country such as Japan, which values meritocracy highly <ref type="bibr" target="#b3">(Butler, 2015;</ref><ref type="bibr" target="#b14">Kariya, 2002)</ref>, university entrance exam results are critical. This tendency accelerated after 1979, when the government created a common exam all applicants to public universities had to take 2.5 months before high school graduation. As the numbers of universities that used the results of this exam (now called the "Center Exam") for admission increased (i.e., all public university and 86% of private universities in 2016), its results are regarded as highly reliable for ranking participating universities (n = 777, 89% of all universities in 2016; MEXT, 2016), and become a recurrent topic in the mass media. Consequently, the number of graduates who went to more highly-ranked universities is considered key evidence of accountability and educational quality for all stakeholders involved in each high school. Although some universities require yet another test (mostly one or two months later than the Center Exam), many (e.g., <ref type="bibr" target="#b10">Hirai, Fujita, &amp; Oki, 2013;</ref><ref type="bibr" target="#b32">Taniguchi, Nishigaki, Murakoshi, &amp; Watanabe, 2014)</ref> argue that the Center Exam is the most influential university entrance exam in present-day Japan.</p><p>Given such highly valued social observability, we can confidently argue that the exclusive improvement in listening scores in the 2005 Senior High School Test was mainly due to the introduction of the listening section of the English subtest for the first time in its history. Before 2005, the Center English subtests measured applicants' knowledge in written form only. <ref type="bibr" target="#b29">Sasaki's (2016)</ref> detailed analysis of the 2006 Center Exam revealed that "18% of the 50 main English test items appear to measure speaking-related ability (but indirectly through written texts), while 32% measure grammatical knowledge, and the rest (50%) measure reading-related ability" (p. 102). In contrast, in the newly introduced listening test, the "items mainly measured the participants' ability to listen to English." If participants in the 2005 Senior High School test hoped to enter university after graduating in March 2006, most had to take the Center Exam's English test in January 2006. Although the listening section was optional, 99% of test takers (n = 492,555) did so.</p><p>Because the University Entrance Exam Center, Japan (2013) announced the introduction of a listening section in the 2006 Center Exam as early as March 2000, applicants for the 2006 exam had plenty of time to prepare for that subtest, which probably raised the 2005 Senior High School Test takers' listening abilities significantly relative to their other English skills. This speculation is supported by the fact that additional exams some of the students had to take for admission to their preferred university also rarely measured their ability to write or speak (e.g., <ref type="bibr" target="#b20">Nakano, 2009)</ref>. We can therefore claim with some confidence that the content of university entrance exams mirrors the results of the 2005 Survey and the 2005 High School Test <ref type="table" target="#tab_0">(Tables 1 and 2, respectively)</ref>. No other sociocultural or academically-related event surrounding these students during 2002-2005 explain the significant improvement in student scores in the 2005 High School Test <ref type="bibr" target="#b22">(Negishi, Matsuzawa, Sato, Toyota, &amp; Nakano, 2010)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Study 2</head><p>The most recent CoS for senior high schools became effective in 2013. However, nationwide tests such as the 2005 Senior High School Test, which ascertained how closely this CoS was being implemented, were not available at the time of writing (March, 2017). The purpose of Study 2 is therefore to present the most recentalbeit incompletestate of current EFL educational policy by investigating alignment between goals, classroom practices, and student proficiency using evidence available at the time of writing. Study 2 thus employed current goals as data along with classroom practices and their outcomes as reported in one large nationwide CR test (the 2014 Test; see below for details) and a Survey of the 2014 test takers' teachers (the 2014 Survey; see below) conducted from July to September 2014 "for the purpose of improving EFL education in Japan" (MEXT, 2015). However, unlike those reported in Study 1, the classroom practices and their outcomes examined in Study 2 should not align with the 2013 CoS because the 2014 Test and Survey were answered by Grade 12 students and their teachers in public schools only, all of whom were influenced by the previous 2003-2013 CoS since it became effective only for those who entered senior high school in 2013). Nonetheless, since the 2013 CoS was promulgated in 2009 and many other influential political steps related to EFL education were publicized and implemented by 2014 (see below), we may see the influence of such sociopolitical expectations on the outcomes of EFL classroom practices and their outcomes in 2014. I therefore present them as evidence of possible influence of the most recent goals set by the 2013 CoS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Goals: English I -2013 CoS</head><p>The 2013 CoS aims to achieve three overall goals: 1) To respond to public criticism that the reduction in curricular content in the past two CoSs led to a deterioration in the academic competence of Japanese students as exemplified by the results of global measures such as PISA <ref type="bibr" target="#b19">(Mizuhara, 2010)</ref>. In response, curricular content and class hours were restored to their 1973-1982 level. The second major goal is to further expand the academic ability redefined in the last two CoSs as "motivation and attitude toward learning and the ability to solve problems as an autonomous individual responding to societal changes," as first suggested by the OECD in 2003. The final major goal is related to the second in that it emphasizes the cultivation of communicative abilities, especially foreign languages (mostly English). To achieve this goal, a total of 70 class hours called "Foreign Language Activities" (which are not graded) were introduced in Grades 5 and 6 for the first time in EFL education history in public schools in Japan. Curiously, however, the suggested classroom activities designed to achieve that objective are similar to those suggested in the 2003-2012 CoS (see the next section).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Teaching practices for achieving the goals set for English communication I</head><p>Fortunately, the 2014 Survey of teachers (n = 2,493 from 477 public senior high schools randomly selected throughout Japan) asked questions about their classroom activities that were similar to those asked in the 2005 Survey because they generally share similarly integrated activities for the 1994-2002 and 2013-2013 CoSs presented in Study 1. <ref type="table" target="#tab_3">Table 3</ref> presents the percentage of teachers who conducted such activities.</p><p>Although the ranking of the four skills in responses to the 2014 Survey is exactly the same as in 2005 (with reading showing the highest percentage and speaking the lowest), <ref type="table" target="#tab_3">Table 3</ref> shows that the percentages of teachers who started conducting activities as suggested by the 2003-2012 CoS increased for all four skills. Most noticeable is the doubling in the percentages for speaking and writing activities. The changes indicated in <ref type="table" target="#tab_3">Table 3</ref> suggest that teaching practices can be gradually geared toward closer alignment with goals under certain conditions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Students' achievement as represented by test results</head><p>A total of 68,054 Grade 12 students took the reading and listening subtests, 69,052 took the writing subtests, and 16,583 also took the speaking subtest of the nationwide 2014 Test. The reading subtest consisted of 43 multiple-choice items (45 min), the listening part of 36 multiple-choice items (23 min), the writing part of two items, one of which required summarizing abilities and the other required the ability to write a convincing opinion composition (27 min), and the speaking part of three items, one of which required reading a text aloud, another the ability to answer questions, and the third the ability to logically explain one's opinions (10 min). Test takers are ranked as A1 (Beginner), A2 (Elementary), B1 (Intermediate), and B2 (Upper Intermediate) following CEFR (Common European Framework of Reference for Languages) levels.</p><p>Compared with the results of the 2014 Teacher Survey, the results of the 2014 test were disappointing as the students' reading and listening abilities clustered around upper A1 (Lower basic) to lower A2 (Upper basic), their speaking abilities at lower A1, and their writing abilities at the lowest A1 level (see also Council for Cultural <ref type="bibr">Cooperation Education Committee Modern Languages Division, 2001</ref>). Furthermore, 13.3% of test takers did not say anything for the speaking items, and 29.2% of them did not write anything for the writing items.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion of study 2</head><p>I discuss the results of Study 2 in terms of <ref type="bibr">Roger's (2003)</ref> five perceived characteristics of innovations. The 2014 test takers' relatively low scores for all four skills measured by the 2014 Test may be due to the fact that they were measured against CEFR specifications, which included the ability to think, judge, and express oneself in addition to purely linguistic proficiency (MEXT, 2015), which had not been required by the 2003-2012 CoS. Although the current CoS emphasizes such abilities, as we saw in Study 1, the diffusion of an innovative policy is slow when its content is complex. Because the current CoS is based on a further redefinition of academic abilities, it might have made it more difficult for the English teachers to understand its benefits (relative advantages) and how they could put it into practice (complexity) than the 2003-2012 version, which had already proved difficult to understand <ref type="bibr" target="#b31">(Tahira, 2012)</ref>.</p><p>That said, the results of the writing part of the 2014 Test still resonate with the results of the 2005 Senior High School Test, in which the writing score for Item 20 requiring Grade 12 test takers to write a coherent text longer than three sentences, was much lower than those for the other descriptive writing items, not to mention the listening and reading items. Furthermore, based on the 2014 Test results, we can easily imagine that Grade 12 students in 2015 and 2014 lacked the ability to speak a coherent text as well. Because the latest 2017 Center Exam still does not measure any performative types of writing or speaking abilities, as speculated in Study 1, this lack of alignment between governmental goals and student proficiency can again be attributed mainly to the ways in which the high-stakes university entrance exams are conducted (compatibility and observability).</p><p>The only solid evidence of alignment between goals and teaching practices in the current CoS is the finding that more teachers conducted communicative writing and speaking activities for participants in the 2014 Test than in 2005. Although such efforts to improve particular aspects of the students' English proficiency did not result in improvements in the short term, they may be reflected in their achievement if measured later. Nevertheless, these results are in stark contrast with the fact that the 2005 test takers' listening scores were significantly higher than their 2002 counterparts only three years later and despite the fact that the content of the English curriculum was cut by 30% during those three years. Compared to the slow improvement in writing and speaking in Japanese EFL education over the past ten years, this further emphasizes the power of high-stakes tests when a strong meritocratic social discourse embraces them <ref type="bibr" target="#b30">(Shohamy, 2001)</ref>.</p><p>In sum, the diffusion rates of the new EFL educational policies in Japan over the past 20 years seem to have been affected to some degree by all five perceived characteristics of innovations, as predicted by Innovation Diffusion Theory <ref type="bibr" target="#b27">(Rogers, 2003)</ref>. Among the five, however, Relative advantage and Observability related to what Butler (2015) called the two "societal factors" (p. 305) characterizing Japan and other east Asian EFL countries were far more powerful than the other three, namely: (1) English is not used for authentic communicative purposes outside classrooms (related to Relative Advantage); and (2) success in high-stakes exams is believed to lead to social success and even happiness (related to Overvability).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>This study revealed how well the goals, classroom practices, and student achievement aligned for EFL education in Japan over three administrative generations starting in 1994. <ref type="bibr" target="#b27">Rogers' (2003)</ref> Diffusion of Innovation theory was useful in analyzing the acceptance rate of each of the three administrations' new policy along with the five perceived characteristics of innovations (relative advantage, comparability, complexity, trialability, and observability) as its tools. In sum, all three targeted aspects of curriculum policies seem to have been affected to some degree by all five characteristics of the newly introduced curriculum guidelines even though relative advantages (English does not have high social advantages for Japanese students) and observability (university entrance exams best motivate the students to study English) were more powerful than the others.</p><p>Based on these findings, this section makes suggestions for EFL education in Japan as well as for future studies. Even though the suggestions for improving EFL policies are limited to the Japanese system, some may be useful in other contexts with similar backgrounds. First, alignment between curriculum guidelines and teaching practices could be greatly improved if new guidelines were to become more adaptable in terms of <ref type="bibr" target="#b27">Rogers' (2003)</ref> five perceived characteristics of innovations. For example, a new goal will be more easily accepted and implemented if its promoters provide the adopters with convincing reasons (i.e., a clear relative advantage) for its adoption accompanied by necessary training (involving less complexity). The fact that more teachers started conducting communicative activities for all skills (especially speaking and writing) in the 2014 Survey compared to 2005 <ref type="table" target="#tab_3">(Table 3</ref>) may be a slow but steady consequence of a series of ad hoc governmental policies such as the Action Plan to Cultivate Japanese with English Abilities that started in 2003. This plan included sending at least 300 English teachers abroad each year as well as providing one-month in-service training for at least 2000 English teachers in <ref type="bibr" target="#b14">2002</ref><ref type="bibr">(see Butler &amp; Iino, 2005</ref>. Given such public aid, faster adoption of curriculum guidelines is possible especially because the guidelines can be characterized as highly trialable; that is, writing and speaking abilities, which need much more improvement than the other skills, can be emphasized in classrooms.</p><p>Second, I turn to the most influential aspect of Japan's EFL educational policy, namely its observability, as realized through high-stakes university entrance exams. In fact, MEXT may well have concurred, because in December 2014, the Central Council of Education (CCE, 2014), a subdivision of MEXT, suddenly announced the introduction of new university entrance exams starting in 2020. As regards English admission tests for universities, MEXT also encourages universities to employ commercial tests (e.g., TOEFLiBT) that measure all four skills in their own entrance exams <ref type="bibr" target="#b17">(MEXT, 2013)</ref>. If implemented, this should positively influence the students' writing and speaking skills. Of course, we should be aware of potential downsides to such a revolutionary change. For example, commercial cram schools may respond most quickly and develop strategies designed to achieve high scores on such items, thus widening the gap between those who can afford to attend such schools and those who cannot. The government should therefore prepare for such an eventuality by financially supporting those who cannot afford to attend such schools.</p><p>Finally, this study is limited in various ways, which need to be complemented by future studies. I focus here on the targeted populations, theoretical framework, and methodology. One of the limitations of the study is its exclusive focus on one country's educational policies. Unless we replicate this study using changes in other countries' EFL educational policies, we cannot be certain that the implications of this study are applicable to other contexts. Although sociocultural and historical differences (e.g., the degree of centralization of educational policies) should be carefully considered, comparison such as that conducted by <ref type="bibr" target="#b3">Butler (2015)</ref>, who compared EFL education for young learners across four East Asian countries is a promising future direction. In addition, since the current CoS introduced "foreign language activities" in Grades 5 and 6, the impact of such earlier exposure to foreign languages (mainly English) should also be investigated and compared with the results of previous CoSs, such as those targeted in this study.</p><p>Another limitation of the study is its methodology since it only used as data the results of publicly reported results of tests and questionnaires conducted by the government. Although the data have their own merits, including generalizability (e.g., the data come from randomly selected schools from among all public and private high schools in Japan), such quantitative data should be supplemented by emic qualitative data. For example, a study can utilize data probing how Grade 12 students feel about their EFL educational histories and how their teachers perceive the newly introduced policies. Inclusion of the students' English learning experiences outside classrooms is also necessary if we are to understand their entire learning experiences and their consequences. Finally, the impacts of new policies should be investigated through ecologically valid theories. In this study, <ref type="bibr" target="#b27">Rogers's (2003)</ref> Diffusion of Innovation theory was helpful in analyzing the impacts of the three consecutive educational policies, and the theory should be adopted by more studies of different populations across different situations. Alternatively, other useful theories such as <ref type="bibr">Kaplan and Baldauf 's (2005)</ref> "model for language-ineducation policy planning" employed in <ref type="bibr">Butler (2015, p. 306)</ref>, or a more recent view of English as a lingua franca (e.g., <ref type="bibr" target="#b15">Kirkpatrick, 2012)</ref> should be employed to evaluate not only policy implementation but also the policies themselves as frameworks for future studies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endnotes</head><p>1 CR-type measurements gauge a person against standards or benchmarks, as opposed to norm-referenced measurement, which gauges a person against any others who happen to take the same test on that occasion <ref type="bibr" target="#b2">(Bachman, 1990</ref>).</p><p>2 NIER (2004) is a composite of five official reports containing explanations and the results of the 2002 Senior High School Test, and NIER (2007) combines six similar reports. Regrettably, the data revealed in these two composites documents are not sufficient (e.g., they did not include SD for the means) for the author to conduct any statistical procedures. <ref type="bibr">3</ref> The term "accurate" is defined as the answer being exactly as expected or judged to be correct when considering what the item is intended to measure in light of the goals and content of the <ref type="bibr">CoS (NIER, 2007</ref>.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Objectives, Suggested Communicative Activities, and Actual Classroom Practices for the1994-2002 and 2003-2012  Courses of Study*</figDesc><table><row><cell>Course</cell><cell>General objectives</cell><cell>Suggested</cell><cell>% of teachers who (often</cell><cell>% of students who</cell></row><row><cell>of</cell><cell></cell><cell>communicative activities</cell><cell>or sometimes) conducted</cell><cell>understood the</cell></row><row><cell>Study</cell><cell></cell><cell></cell><cell>the suggested activities</cell><cell>suggested</cell></row><row><cell></cell><cell></cell><cell></cell><cell>(2002 Survey: n = 836-</cell><cell>activities (2002</cell></row><row><cell></cell><cell></cell><cell></cell><cell>846;** 2005 Survey: n =</cell><cell>Survey: n = 25,355)</cell></row><row><cell></cell><cell></cell><cell></cell><cell>887)</cell><cell></cell></row><row><cell>1994-</cell><cell>To develop students'</cell><cell>A. Listening</cell><cell>A-1: 96.0 for helping</cell><cell>29.0</cell></row><row><cell>2002</cell><cell>basic abilities such as</cell><cell>1. Understanding what</cell><cell>students understand</cell><cell></cell></row><row><cell></cell><cell>understanding what they</cell><cell>they hear</cell><cell>what they hear</cell><cell></cell></row><row><cell></cell><cell>hear and read, expressing</cell><cell>2. Understanding the gist</cell><cell></cell><cell></cell></row><row><cell></cell><cell>their own ideas, and</cell><cell>of a coherent text</cell><cell></cell><cell></cell></row><row><cell></cell><cell>fostering a positive</cell><cell>3. Summarizing their</cell><cell></cell><cell></cell></row><row><cell></cell><cell>attitude toward</cell><cell>ideas based on what</cell><cell></cell><cell></cell></row><row><cell></cell><cell>communication through</cell><cell>they hear</cell><cell></cell><cell></cell></row><row><cell></cell><cell>English</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>B. Reading</cell><cell>B-1: 100.0 for helping</cell><cell>40.3</cell></row><row><cell></cell><cell></cell><cell>1. Reading silently or</cell><cell>students understand</cell><cell></cell></row><row><cell></cell><cell></cell><cell>aloud and understanding</cell><cell>what they read</cell><cell></cell></row><row><cell></cell><cell></cell><cell>the meaning of the text</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>2. Understanding the gist</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>of a coherent text</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>3. Reading a coherent</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>text as fast as possible</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>4. Reading aloud to</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>express the meaning of</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>the text more efficiently</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>C. Speaking</cell><cell>C in general: 92.9 for</cell><cell>20.4</cell></row><row><cell></cell><cell></cell><cell>1. Asking and answering</cell><cell>helping students say</cell><cell></cell></row><row><cell></cell><cell></cell><cell>appropriately based on</cell><cell>what they want to say</cell><cell></cell></row><row><cell></cell><cell></cell><cell>what they hear in the</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>given situation and for</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>the given purpose</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>2. Speaking their ideas</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>about what they read</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>3. Speaking the gist of</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>what they understand</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>D. Writing</cell><cell>D-4: 94.1 for helping</cell><cell>22.3</cell></row><row><cell></cell><cell></cell><cell>1. Writing what they hear</cell><cell>students write what they</cell><cell></cell></row><row><cell></cell><cell></cell><cell>2. Writing the gist of</cell><cell>want to express</cell><cell></cell></row><row><cell></cell><cell></cell><cell>what they hear</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>3. Writing the gist of</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>what they read</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>4. Writing the gist of</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>what they want to</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>express</cell><cell></cell><cell></cell></row><row><cell>2003-</cell><cell>To develop students'</cell><cell>A. Listening for</cell><cell>38.2</cell><cell>Not Surveyed (N/S)</cell></row><row><cell>2012</cell><cell>basic communicative</cell><cell>understanding the given</cell><cell></cell><cell></cell></row><row><cell></cell><cell>abilities such as</cell><cell>information and the</cell><cell></cell><cell></cell></row><row><cell></cell><cell>understanding what they</cell><cell>speaker's intention or</cell><cell></cell><cell></cell></row><row><cell></cell><cell>hear and read, speaking</cell><cell>grasping the main points</cell><cell></cell><cell></cell></row><row><cell></cell><cell>and writing the</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>information gained along</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>with their own ideas, and</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>fostering a positive</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>attitude toward</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>communication through</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>English</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>B. Reading for</cell><cell>51.2</cell><cell>N/S</cell></row><row><cell></cell><cell></cell><cell>understanding the given</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>information and the</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>speaker's intention or</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>grasping the main points</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1</head><label>1</label><figDesc>Objectives, Suggested Communicative Activities, and Actual Classroom Practices for the1994-2002 and 2003-2012  Courses of Study* (Continued) All statements cited in this paper were translated by the author ** Numbers vary depending on the number of teachers who responded to some or all of the items (4) Among the 21 overlapping items in the 2002 and 2005 tests, four, all of them listening items, showed significantly higher accuracy in 2005<ref type="bibr" target="#b25">(NIER, 2007)</ref>.</figDesc><table><row><cell>Course</cell><cell>General objectives</cell><cell>Suggested</cell><cell>% of teachers who (often</cell><cell>% of students who</cell></row><row><cell>of</cell><cell></cell><cell>communicative activities</cell><cell>or sometimes) conducted</cell><cell>understood the</cell></row><row><cell>Study</cell><cell></cell><cell></cell><cell>the suggested activities</cell><cell>suggested</cell></row><row><cell></cell><cell></cell><cell></cell><cell>(2002 Survey: n = 836-</cell><cell>activities (2002</cell></row><row><cell></cell><cell></cell><cell></cell><cell>846;** 2005 Survey: n =</cell><cell>Survey: n = 25,355)</cell></row><row><cell></cell><cell></cell><cell></cell><cell>887)</cell><cell></cell></row><row><cell></cell><cell></cell><cell>C. Discussing and</cell><cell>16.7</cell><cell>N/S</cell></row><row><cell></cell><cell></cell><cell>exchanging their ideas or</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>the information gained</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>through listening and</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>reading</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>D. Writing by sorting</cell><cell>18.8</cell><cell>N/S</cell></row><row><cell></cell><cell></cell><cell>their ideas or the</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>information gained</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>through listening and</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>reading</cell><cell></cell><cell></cell></row></table><note>*</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2</head><label>2</label><figDesc>Specifications, accuracy rates, and other information regarding the English items in the 2002 and 2005 senior high school tests*</figDesc><table><row><cell>2002 Test: 1994-2002 Course</cell><cell>2005 Test: 2003-2012 Course</cell></row><row><cell>of Study</cell><cell>of Study</cell></row><row><cell>(n = 31,189)</cell><cell>(n = 29,880)</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3</head><label>3</label><figDesc>Suggested Communicative Activities and Classroom Practices for the 2003-2012 and 2013-Present Courses of Study</figDesc><table><row><cell>Suggested Communicative Activities</cell><cell>% of teachers who (often or</cell><cell>% of teachers who (often or</cell></row><row><cell></cell><cell>sometimes) conducted the</cell><cell>sometimes) conducted the</cell></row><row><cell></cell><cell>suggested activities (n = 887):</cell><cell>suggested activities (n = 2,493):</cell></row><row><cell></cell><cell>2005 Survey</cell><cell>2014 Survey</cell></row><row><cell>A. Listening for understanding the</cell><cell>38.2</cell><cell>65.1</cell></row><row><cell>given information and the speaker's</cell><cell></cell><cell></cell></row><row><cell>intention or grasping the main points</cell><cell></cell><cell></cell></row><row><cell>B. Reading for understanding the</cell><cell>51.2</cell><cell>89.2</cell></row><row><cell>given information and the speaker's</cell><cell></cell><cell></cell></row><row><cell>intention or grasping the main points</cell><cell></cell><cell></cell></row><row><cell>C. Discussing and exchanging one's</cell><cell>16.7</cell><cell>33.0</cell></row><row><cell>ideas or the information gained</cell><cell></cell><cell></cell></row><row><cell>through listening and reading</cell><cell></cell><cell></cell></row><row><cell>D. Writing by sorting one's ideas or</cell><cell>18.8</cell><cell>39.7</cell></row><row><cell>the information gained through</cell><cell></cell><cell></cell></row><row><cell>listening and reading</cell><cell></cell><cell></cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>I would like to thank Paul Bruthiaux for his valuable comments and suggestions.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>Preparation of this article was aided by an Abe Fellowship 2016-2018 granted through the Social Science Research Council and the Japan Foundation Center for Global Partnership.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>There are no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's Note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p><p>Received: 22 September 2017 Accepted: 5 December 2017</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Shin gakuryokukan to kisogakuryoku: Nani ga towareteiruka [New perspectives on basic academic ability: What is being examined?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Abiko</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>Meijitosho</publisher>
+			<pubPlace>Tokyo</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Diagnosing foreign language proficiency</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>London: Continuum</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Teaching by principles: An interactive approach to language pedagogy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">F</forename><surname>Bachman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Pearson Education</publisher>
+			<pubPlace>Oxford; Brown, JD; New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Fundamental considerations in language testing. 3rd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">English language education among young learners in East Asia: A review of current research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">G</forename><surname>Butler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Teaching</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="303" to="342" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Current Japanese reforms in English language education: The 2003 action plans</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">G</forename><surname>Butler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Iino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Policy</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="25" to="45" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Atarashii jidaini fusawashii koudaisetuzokuno jitsugennimuketa koutougakkou, daigakukyouiku, daigakunyuugakusha no ittkaiteki kaikakunitsuite [a reform designed to unify education in senior high schools and universities and university admissions procedures and implement appropriate connections between senior high school and university education for a new era</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Cce</surname></persName>
+		</author>
+		<ptr target="http://www.mext.go.jp/b_menu/shingi/chukyo/chukyo0/toushin/__icsFiles/afieldfile/2015/01/14/1354191.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Common European framework of reference for languages: Learning, teaching, assessment</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+	<note>Council for Cultural Co-operation Educational Committee Modern Language Division</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The difficulty of standards, for example in L2 writing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Cumming</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">On second language writing</title>
+		<editor>T Silva, PK Matsuda</editor>
+		<meeting><address><addrLine>Mahwah, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence Erlbaum</publisher>
+			<date type="published" when="2001" />
+			<biblScope unit="page" from="209" to="229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Language assessment in education: Tests, curricula, and teaching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Cumming</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Applied Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="90" to="100" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Bridging the research-to-practice gap in autism intervention: An application of diffusion of innovation theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">E</forename><surname>Dingfelder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">S</forename><surname>Mandell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Autism and Developmental Disorders</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="597" to="609" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Marching in unison: Florida ESL teachers and no child left behind</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Harper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Platt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Naranjo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Boynton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TESOL Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="642" to="651" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Senter lisuning ga motarasu lisningu gakushuuiyokueno eikyou: Daigakushubetsu, nyuushikeitai, senkougotono bunsekini motozuku kousatsu [The influence of the center listening test on listening learning motivation: An analysis focusing on university type, admission type, and major</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hirai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fujita</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Oki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JACET Journal</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="59" to="81" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">English language education in East Asia: Some recent developments</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Mckay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Multilingual and Multicultural Development</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="345" to="362" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Nihon no eigokyouiku nihyakunen</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Imura</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Taishuukan</publisher>
+			<pubPlace>Tokyo</pubPlace>
+		</imprint>
+	</monogr>
+	<note>200 years of English language education in Japan</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Language-in-education policy and planning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">B</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Baldauf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Rb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of research in second language teaching and learning</title>
+		<editor>E Hinkel</editor>
+		<meeting><address><addrLine>Mahwah, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence Erlbaum</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="1013" to="1034" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Kyouiku kaikaku no gensou</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Kariya</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Chikumashobou</publisher>
+			<pubPlace>Tokyo</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Disillusion over educational reforms</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">English as an Asian lingua Franca: The &quot;lingua Franca approach&quot; and implications for language education policy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of English as a Lingua Franca</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="121" to="139" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Adding innovation diffusion theory to the technology acceptance model: Supporting employees&apos; intentions to use E-learning systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Hsieh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Hsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Educational Technology &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="124" to="137" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Program evaluation regarding workforce cultivation for a globalized world</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Mext</surname></persName>
+		</author>
+		<ptr target="http://www.mext.go.jp/a_menu/kokusai/gaikokugo/1358258.htmMEXT" />
+	</analytic>
+	<monogr>
+		<title level="m">Guroobaru jinzai ikusei ni fansuru seisaku hyouka</title>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>Heisei 28 nen gakkou kihon chousa. basic school survey in Japan</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Tokyo</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Gakushuushidouyouryou wa kokuminkeisei no sekkeisho [The courses of study are blueprints for forming desired citizens</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mizuhara</surname></persName>
+		</author>
+		<editor>Touhoku Daigaku Shuppankai</editor>
+		<imprint>
+			<date type="published" when="2010" />
+			<pubPlace>Sendai</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Bunryohen: Dokkai, eisakubun, lisuning [The issue of quantity: Reading, writing, and listening items</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Nakano</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m">Kyokasho dakede daigakunyuushi wa toppa dekiru</title>
+		<editor>In K Kanatani</editor>
+		<meeting><address><addrLine>Tokyo</addrLine></address></meeting>
+		<imprint>
+			<publisher>Taishuukan</publisher>
+			<biblScope unit="page" from="99" to="168" />
+		</imprint>
+	</monogr>
+	<note>Passing university entrance exams with English textbooks only</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Daigaku nyuushi ga kawareba eigokyouiku mo kawarunoka: Zadankai</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Negishi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Matsuzawa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Sato</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Toyota</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Nakano</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note>Will English instruction in Japan change if university entrance exams change: A discussion</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">The English Teachers&apos; Magazine</title>
+		<imprint>
+			<biblScope unit="page" from="10" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Heisei juuyonendo koutougakkou kyouiku katei jisshi joukyou chousa [Results of the 2002 survey of the implementation of the senior high school curriculum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Nier</surname></persName>
+		</author>
+		<ptr target="http://www.nier.go.jp/kaihatsu/katei_h14" />
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Heisei juunananendo koutougakkou kyouiku katei jisshi joukyou chousa [Results of the 2005 survey of the implementation of the senior high school curriculum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Nier</surname></persName>
+		</author>
+		<ptr target="http://www.nier.go.jp/kaihatsu/katei_h17_h" />
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Tekisuto mainingu o mochiiita koukousei eigogakushuushano niizu bunseki: Diagakujukenyoteisha tohiyoteisha no hikaku [Needs analysis of high school English learners using text mining: A comparison between university examinees</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>O'ki</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note>and non-examinees</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Diffusion of innovations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">M</forename><surname>Rogers</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>5th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The 150-year history of English language assessment in Japanese education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Sasaki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="63" to="83" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">English writing instruction in senior high schools: A historical ecological approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Sasaki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">L2 writing in the global context: Represented, underrepresented, and unrepresented voices</title>
+		<editor>T Silva, J Wang, J Paiz, C Zhang</editor>
+		<meeting><address><addrLine>Beijing</addrLine></address></meeting>
+		<imprint>
+			<publisher>Foreign Language Teaching and Research Press</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="84" to="109" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">The power of tests: A critical perspective on the uses of language tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Shohamy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+			<publisher>Pearson Education</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Behind MEXT&apos;s new course of study guidelines. The Language Teacher</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tahira</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="3" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Ankeeto kara mietekurumono: Shougakkou, chuugakkou, koukou, daigaku no tachibakara [What can be seen from the results of the questionnaire: From the perspectives of elementary schools, junior and senior high schools, and universities]. The English Teachers&apos; Magazine</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Taniguchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Nishigaki</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Murakoshi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Watanabe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">October Special Issue</title>
+		<imprint>
+			<biblScope unit="page" from="6" to="11" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

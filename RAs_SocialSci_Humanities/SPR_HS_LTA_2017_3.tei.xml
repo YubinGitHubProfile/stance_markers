@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Developing classroom language assessment benchmarks for Japanese teachers of English as a foreign language</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yuzo</forename><surname>Kimura</surname></persName>
+							<email>ykimura@las.u-toyama.ac.j</email>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Toyama</orgName>
+								<address>
+									<settlement>Toyama</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yoshiyuki</forename><surname>Nakata</surname></persName>
+							<idno type="ORCID">0000-0002-0343-4184</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Toyama</orgName>
+								<address>
+									<settlement>Toyama</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Osamu</forename><surname>Ikeno</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Toyama</orgName>
+								<address>
+									<settlement>Toyama</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Naoyuki</forename><surname>Naganuma</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Toyama</orgName>
+								<address>
+									<settlement>Toyama</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Stephen</forename><surname>Andrews</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Toyama</orgName>
+								<address>
+									<settlement>Toyama</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Developing classroom language assessment benchmarks for Japanese teachers of English as a foreign language</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-017-0035-2</idno>
+					<note type="submission">Received: 27 September 2016 Accepted: 1 February 2017</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Benchmark assessment</term>
+					<term>Classroom English use</term>
+					<term>Japanese teachers of EFL</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Introduction: Since the Japanese government has called for English to be taught through English (Ministry of Education, Culture, Sports, Science and Technology, 2003), there has been increasing interest in English language classrooms in upper secondary schools. The government has proposed English proficiency scores that Japanese teachers of English should attain, but has not yet specified clearly what English language use should be like in the classroom. Case description: This case study describes the theoretical aspect of the development of a benchmark assessment for use in English language classrooms with Japanese teachers of English as a foreign language (EFL). The study first defines teacher language proficiency, the use of the foreign language in the classroom, with particular attention to teacher language awareness (Andrews, 2007) as a bridging mechanism between pedagogical content knowledge and the foreign language proficiency of Japanese teachers of EFL. This definition of teacher language proficiency is further elaborated in terms of the legitimate use of benchmark assessments in English language classrooms in Japan with a thorough literature review of L2 benchmark assessments in other parts of the world. Discussion and Evaluation: The present case study examines the ideal assessor conditions after thorough review on assessor bias from the language testing/ assessment research, while the development of assessment benchmarks for use in Japan is discussed based on a high-stakes benchmark assessment for teachers of EFL in Hong Kong. The proposed benchmarks acknowledge the complexity of classroom English use, thus employing four different scale types to accommodate the multifaceted characteristics of teacher language proficiency. Conclusions: The current case study concludes with the exploration of tasks remaining for the future development of our benchmark assessments for use in ongoing professional development.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>Since the late 1900s, the Ministry of Education, Culture, Sports, Science, and Technology (MEXT henceforth) in Japan has attempted to promote the English communication skills of high school students. This policy was partly realized by a series of decennial revisions of the Course of <ref type="bibr">Study in 1989 and</ref>, where the former introduced new oral communication subjects <ref type="bibr">(Ministry of Education, Culture, Sports, Science and Technology MEXT 1989)</ref>, while the latter called for the development of "practical communication abilities" <ref type="bibr">(Ministry of Education, Culture, Sports, Science and Technology MEXT 1999, p.</ref> 3) as part of fundamental reforms. In order to make this communication-oriented policy vision more stable, however, MEXT further announced the 5-year Action Plan to Cultivate "Japanese with English Abilities" (Ministry of Education, Culture, Sports, <ref type="bibr">Science and Technology MEXT 2003, p.2)</ref>, through which a number of reforms have been proposed. This includes active collaborations with assistant language teachers (ALTs henceforth) from the JET Program(me) 1 to create more elaborate communicative classes based on the degree of learners' academic achievement, promotion of the 100 Super English High School Project, and supporting English activities at elementary school which eventually led to the introduction of a new compulsory curriculum for elementary schools called 'Foreign Language Activities' in 2011 (Ministry of Education, Culture, Sports, Science and Technology MEXT 2011).</p><p>Amid these reforms were two more crucial proposals in terms of English language teaching in Japanese high school; the definition of English proficiency for Japanese teachers of EFL for upper secondary schools using three different English proficiency test scales and the declaration that, "The majority of an English class will be conducted in English" <ref type="bibr">(Ministry of Education, Culture, Sports, Science and Technology MEXT 2003, p.2)</ref>. While the former was the first attempt in history to specify the English proficiency that Japanese teachers of EFL are expected to hold 2 , the latter became the backbone of MEXT's 2009 version of the Course of Study.</p><p>In the new 2009 Course of Study for upper secondary schools, a statement was incorporated about the medium of instruction in English classes, specifying that "classes, in principle, should be conducted in English in order to enhance the opportunities for students to be exposed to English, transforming classes into real communication scenes" (Ministry of Education, Culture, Sports, Science and Technology MEXT 2009, p. 7). Since this statement's release, conducting English lessons in English has been hotly debated <ref type="bibr">(Clark, 2009, February 5;</ref><ref type="bibr" target="#b13">Hato, 2005)</ref>. However, there have been no official guidelines so far setting out what classroom language is necessary for Japanese teachers of EFL and thus, it remains an urgent task to both clarify the nature of the English proficiency Japanese teachers of EFL should attain and to explore ways to support those teachers' ongoing language development. To address this issue, this study proposes a benchmark assessment of English teachers' classroom English use consisting of four independent but mutually related scales in the hope that teachers can use these scales for self-reflective professional development.</p><p>While an earlier, shorter manuscript describing the development of these scales has been published elsewhere <ref type="bibr" target="#b19">(Nakata, IKeno, Naganuma, Kimura, &amp; Andrews 2012)</ref>, this more theoretical paper is concerned with the detailed step-by-step process of the development of this benchmark assessment. This is done by first defining the teacher language proficiency required by Japanese teachers of EFL. Then, we review various foreign language assessment scales from different sociocultural contexts, along with some important issues related to rater performance in evaluating spoken language. Having described the background to the study, we explain and examine the development of our classroom language benchmark assessment, which is followed by a discussion of potential implications for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The definition of teacher language proficiency for Japanese teachers of EFL</head><p>Defining the language proficiency required for teachers of EFL is not an easy task. This is particularly the case since, as <ref type="bibr" target="#b25">Pasternak and Bailey (2004)</ref> rightly explain, "Whether or not a teacher is proficient depends on how we define this multifaceted construct" (p. 163).</p><p>The challenges in determining the language proficiency necessary for Japanese teachers of EFL can be associated with the broader challenge of unpacking the relationship between the knowledge required for teaching and their English language proficiency. <ref type="bibr" target="#b1">Bachman (1990)</ref> describes "communicative language ability" (p. 84) in terms of language competence, strategic competence and psychophysiological mechanisms. While this definition is fundamental to many language proficiency tests, including those cited in Ministry of Education, Culture, Sports, Science and Technology (MEXT) (2003), <ref type="bibr" target="#b29">Shulman's (1987)</ref> knowledge base is another way to establish a baseline of knowledge for teachers. <ref type="bibr" target="#b29">Shulman (1987)</ref> summarizes seven categories of knowledge necessary for teaching, of which pedagogical content knowledge is of special interest as it "represents the blending of content and pedagogy into an understanding of how particular topics, problems, or issues are organized, represented, and adapted to the diverse interests and abilities of learners, and presented for instruction" <ref type="bibr">(Shulman, 1987, p.8)</ref>. It seems fair to conclude then that for Japanese teachers of EFL, teacher language proficiency comprises the combination of both individual foreign language proficiency and pedagogical content knowledge. The remaining discussion turns to addressing how these two areas of language use are interconnected.</p><p>Andrews <ref type="bibr">(2007)</ref> has sought to investigate the nature of pedagogical content knowledge as it relates to teachers of foreign languages, using the term teacher language awareness (TLA henceforth) to refer to one subset of knowledge that is arguably unique to the teacher of a second or foreign language (L2 henceforth), which interacts with other subset components and blends with them in the act of expert L2 teaching. In this regard, TLA is seen as a bridge between pedagogical content knowledge and foreign language proficiency, since it involves reflections on both and the mediation of the former through the latter, as well as awareness of the learners and their developing L2.</p><p>For foreign language learners, classroom target language input originates from three main direct or 'unfiltered' output sources; language in materials (particularly when students engage in self-study), language produced by other learners (when they interact with each other in L2) and language produced by the teacher. All of these input sources also reach them as 'filtered' via the teacher's classroom language. The teacher, for example, can modify textbook language to make it more easily comprehensible. When the learners talk with each other, teacher feedback often becomes an additional source of input in the target language and the learners' original output may be 'filtered' for them by the teacher <ref type="bibr">(Andrews, 2007)</ref>. Therefore teachers, if they are language aware, are able to pay careful attention to their TLA 'filter' , which potentially results in substantial classroom learning benefits. Seen from another perspective, it may be reasonable to say that the classroom language use of teachers with their learners can be enhanced largely through raising their TLA. This view is an example of a concrete conceptualization of Krashen's 'input hypothesis' <ref type="bibr" target="#b14">(Krashen, 1985)</ref>, wherein comprehensive input can lead to learner L2 acquisition. If teachers want their classrooms to be rich in L2 acquisition, they need to pay careful attention to their classroom language use so that the L2 language environment stays within the range of comprehensible input, which can be accomplished through enhancing TLA. In addition, while most empirical studies investigating the positive influence of teaching skills on learners tend to examine skills such as form-focused instruction in grammar teaching <ref type="bibr" target="#b10">(Ellis, 2002)</ref> or tasks in the L2 classroom <ref type="bibr" target="#b11">(Ellis, 2003)</ref>, TLA itself as a mechanism for enhancing learning outcomes remains relatively unexplored. It is here that our interest in how to raise TLA lies, and as a result how to enhance teacher classroom language proficiency.</p><p>TLA can also play a significant role in light of other SLA disciplines. From a neo-Vygotskian sociocultural standpoint <ref type="bibr" target="#b15">(Lantolf &amp; Thorne, 2006)</ref>, for example, TLA has the potential to influence the decisions teachers make as to whether to provide scaffolding or not <ref type="bibr">(Andrews, 2007)</ref>. Teacher utterances are also crucial as a subject of "ventriloquation" <ref type="bibr">(Wertsch, 1991, p.59)</ref>; the more learners are cared for by a language aware teacher who can use his/her classroom language in an authentic way, or as people use it in the real world outside of school, the more chances learners have to populate and appropriate their teacher's voice, through which they can realize authentic language use in the classroom.</p><p>The issue that still remains then is how we can raise TLA in order to sustain both foreign language proficiency and pedagogical content knowledge hand in hand. It is here that the classroom language benchmark assessment comes into play as a tool for stimulating TLA, thereby enhancing and developing individual teacher language proficiency. This is accomplished through the benchmark assessment providing current information about where a given teacher's teacher language proficiency is and suggesting directions for potential future improvement. In the next section, we review benchmark assessments for second and foreign language teachers in order to locate our benchmark assessment relative to measures that precede it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Benchmark assessments for L2 teachers</head><p>When language proficiency is assessed, it is necessary to have a standard on which to base the assessment. Although standards may be described differently, such as through bandscales, benchmarks or curriculum frameworks, they should provide precise and comprehensive descriptions of the knowledge and abilities necessary at different levels of proficiency. While there are benchmark assessments for adult learners (e.g., the Canadian Language Benchmarks Assessment (Centre for Canadian Language Benchmarks, 2000); the Common European Framework of Reference for Language (CEFR henceforth) (Council of Europe, 2001), the need for benchmarking or minimum standards in the teaching profession started to be discussed in the 1970s and to emerge more explicitly in the 1980s. Below we review three such cases, two from Europe and one from the Far East.</p><p>In Europe, the Council of Europe's European Centre for Modern Languages (ECML) is responsible for the European Portfolio for Student Teachers of Language (EPOSTL). The rationale for the EPOSTL came partially from the CEFR, a guideline describing a common basis of foreign language teaching/learning guidelines across Europe, in that both try to describe competencies in the form of can-do descriptors <ref type="bibr" target="#b20">(Newby, 2007)</ref>. However, unlike the CEFR, the EPOSTL does not use any numerical scale since the ECML believed didactic knowledge to be unsuited to quantification <ref type="bibr">(Council of Europe, 2007)</ref>. Built from "a bottom-up view" <ref type="bibr">(Newby, 2007, p. 24)</ref> through feedback from student teachers and teacher educators, the EPOSTL consists of nine sections, three of which are working sections that require student teachers to perform tasks: the Personal Statement, the Self-Assessment, and the Dossier. The Self-Assessment section is the heart of the EPOSTL and has seven general categories, each of which is further divided into three to seven sub-topics, providing a total of 32 areas and 195 can-do descriptors. In terms of Teacher Language Proficiency, however, there is only one sub-category; Classroom Language in the Conducting a Lesson general category. There are only six semi open-ended descriptors (out of 195) in this section to describe classroom language use in open-ended description manner. We believe these descriptors are insufficient for the current purpose of assessment of teacher classroom language use because, first, the number of descriptors itself is too small to comprehensively assess language use in a lesson; second, self-descriptions of these six descriptors may be able to capture subjective impressions of pre-service trainees' classroom language use, but do not necessarily capture the multifaceted characteristics of classroom language use; and third, a lack of a numerical assessment scale may prevent independent evaluation by other assessors.</p><p>The second example of benchmarks for teachers is the Evaluation &amp; Accreditation of Quality Language Service (EAQUALS)'s The Profiling Grid for Language Teachers. Inspired by CEFR, this benchmark assessment grid consists of a) a set of reference levels as three Stages and b) a one-page open-ended inventory describing the professional skills required of language teachers. The three Stages are "Basic", "Independent" and "Proficient" and reflect the three levels of the CEFR, whereas the open-ended inventory includes four categories, "Language", "Qualifications", "Core Competencies", and "Complementary skills". The "Language" category has "Language Proficiency" and "Language Awareness", both of which are relevant to our interest in classroom language use for our assessment tool. The largest gap between their and our benchmark assessment is the fact that the grid originally meant to describe the profile of practicing language teachers at EAQUALS member schools as part of preparation for inspection by EAQUALS <ref type="bibr">(Rossner, 2009, February)</ref>. As such, the Grid provides a framework for stages of development of language teachers' pedagogy rather than for assessing teaching quality <ref type="bibr">(North, 2009, February)</ref>.</p><p>The third example is Hong Kong's benchmark assessment for EFL teachers: the Language Proficiency Assessment for Teachers (English language) (LPATE henceforth). In 1995, the Hong Kong Government passed two recommendations to address concerns over the perception of falling language standards. They were (a) the initiation of benchmark qualifications for all teachers of English, and (b) the specification of minimum language proficiency standards for teachers to attain professional qualification. With these recommendations, in 2001, the first live LPATE was administered in three assessment areas; (a) language ability, (b) subject content knowledge and (c) pedagogical content knowledge .</p><p>After several revisions, the current 2007 version of the LPATE has expanded to five different areas of assessment of EFL teachers' abilities; (a) a set of three formal 'pen-and-paper' assessments for reading, writing and listening, (b) an additional speaking assessment 3 and (c) a Classroom Language Assessment (CLA hereafter). All five of these assessments are mandatory for all teachers of English in Hong Kong, representing a 'high-stakes' assessment for them because it affects their careers. Also, unlike other benchmarking assessments for teaching professionals which focus mainly on assessing subject matter knowledge or the foreign language proficiency of applicants, the CLA component of the LPATE observes the English language use of EFL teachers in an actual classroom. In the CLA, English teachers are assessed twice by two different assessors in a live lesson on four different constructs; (a) grammar and lexical accuracy and range, (b) pronunciation, stress and intonation, (c) the language of classroom interaction and (d) the language of classroom instruction. These four constructs were originally devised by the Working Party for the CLA in Hong Kong through inductive categorization after watching 20 classroom videos over six meetings <ref type="bibr" target="#b4">(Coniam &amp; Falvey, 1999)</ref>. Each construct is scored on a five-level scale with the mid-point (level 3) being 'at the benchmark level, ' which is seen as the minimum standard that all EFL teachers in Hong Kong need to achieve. Attainment of the overall benchmark requires at least '2.5' or above on any one construct and '3' or above on all other constructs (Education Bureau Government of the Hong Kong Special Administrative Region 2007).</p><p>In his study, <ref type="bibr" target="#b18">(Nakata, 2010)</ref> verified the applicability of the LPATE's CLA benchmark as a tool for TLA development of Japanese teachers of EFL in Japan. Eight masters students in his graduate course, five were in-service whereas three were pre-service Japanese teachers of EFL, were participated in the assessment of their peers' classroom English use in microteaching sessions. A post-hoc 6-item questionnaire was carried out five months after the course, asking them such questions as to what extent they felt the CLA benchmark can improve teacher English proficiency, or to what extent the assessment of teacher classroom English can be meaningful. Nakata (2010) conducted a follow-up study with six of the same participants one year later; assessing classroom English use using a revised CLA sheet and a revised 7-item post-hoc questionnaire administered five months after the follow-up study course. The data from these two questionnaires were collected included both 5-point Likert scales and open-ended written feedback. The results clearly suggested that the classroom English observation program conducted with the CLA benchmark enhanced trainees' awareness of classroom English use and showed a strong potential to improve their TLA. There was also some important feedback from the participants regarding how to more finely tune future revisions of the CLA for secondary school contexts in Japan. These include requests for more detailed subscale descriptors of interaction and instruction. As such, direct application of this CLA benchmark based on the LPATE to the Japanese context was determined to be potentially inappropriate and likely insufficient. However, the research also suggests the LPATE's CLA can be an example that our benchmark assessment can be safely based on and developed from. With this suggestion in mind, the design and the development of our own version of a classroom language assessment benchmark is described in the following section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion and evaluation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Designing classroom language assessment benchmarks</head><p>As part of making our language assessment benchmark salient to English language teaching in Japan, there are several crucial differences between it and LPATE's CLA. First, the LPATE is a high-stakes assessment for all teachers of EFL in Hong Kong, whereas our assessment is low-stakes in nature. The rationale for our benchmark assessment to be lowstakes is three-fold. First, currently in Japan it is unrealistic and impractical to conduct this type of assessment in a top-down fashion, as there is no official policy regarding establishing classroom English use assessment for upper secondary schools at a national or regional scale. Secondly, we believe assessing classroom English use, although crucial for English teachers' professional development, can be and should be conducted on a voluntary rather than mandatory basis, as it requires a certain level of courage for teacher assesses to confront their own English proficiency, and often involves delicate and painful emotions. Finally, developing a multifaceted benchmark assessment for classroom language use requires a long-term cyclical process of careful item selection, implementation of field-testing and follow-up revisions. We believe low-stakes bottom-up assessment allows for such careful and steady development.</p><p>The difference between high and low stakes assessment has a crucial impact on all aspects of benchmark development, including objectives, targets and the number of scales. The main aim of administering the LPATE as a high-stakes benchmark in Hong Kong is to discriminate between the classroom language use of EFL teachers and to maintain their English teaching quality at or above an established minimum level. To accomplish this, the benchmarks are focused on certain limited scales, a single set of four constructs in this case, for practicality of administration. Our benchmark assessment, on the other hand, is intended to be used for professional development on a voluntary basis at a smaller scale, to encourage English teachers to be more aware of their classroom English use, for example in post-lesson observation conferences in schools and graduate programs or inservice teacher seminars at pre-service or in-service training sessions. In such situations only a single set of four construct scales would be inadequate to describe a given EFL teacher's multifaceted teacher language proficiency. Second, while the five-level rating method with Level 3 being 'acceptable' is used in LPATE's CLA, our benchmark assessment employs a four-level rating method with Level 2 as the 'acceptable' benchmark. This choice was made because in conducting teacher-friendly benchmark assessment within a certain limited time frame with teacher development in mind, it is believed that the number of rating levels should be as manageable as possible, while, at the same time, the 'acceptable' benchmark level should not be set too high. The description of Level 1 in our benchmarks is also labeled as 'not yet acceptable' , rather than being worded more negatively, in the hope that those who are assessed will be encouraged to persevere in their efforts to attain a higher level of competence. Third, since the main objective of the LPATE is to assess the English proficiency of EFL teachers, it pays less attention to the function of TLA, while our benchmark assessment is intended to facilitate EFL teachers' TLA and encourage them to pay more attention to their English use in the classroom, thereby providing better learning environments for their students. Keeping these contrasts between the current benchmark assessment and LPATE's CLA in mind, we turn to describing the development of each of the four scales in our benchmark assessment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Developing the four scales for the classroom language assessment benchmark</head><p>Because of the multifaceted nature of teacher language proficiency, we believe classroom English use similarly needs to be conceptualized in a multifaceted way so that Japanese teachers of EFL, pre-service and in-service, can concentrate on different aspects of their development needs at different times. In this regard, developing four complimentary benchmark scales offers teachers multiple options for focusing on assessing and improving different aspects of their teaching and makes administration easier, as the four scales can be used independently or in combination, depending on available teacher development time and resources. Each scale has its own distinctive features which allow for shedding light on particular aspects of classroom English use, thus enabling Japanese teachers of EFL to be more aware of their classroom English at different developmental stages. This is not to claim that our scales are better than other measures by simply employing multiple dimensions of assessment, but rather to state that as the objective of our benchmark is professional development, it seems natural that teachers' developmental issues with their classroom language use will differ from person to person, and even from instance to instance with the same individual. Therefore our benchmark, which seeks to facilitate teacher awareness of their classroom English use, should likewise account for such potential variation.</p><p>The four separate but interrelated scales in our benchmark assessment are: (a) an Integrated Diagnostic Scale (see Additional file 1: Appendix 1): a rubric for external assessment of global use of English in the classroom, (b) Reflective Analytic Scales (see Additional file 1: Appendix 2): scales for self-reflective use to self-assess classroom English use, (c) Function-specific Scales (see Additional file 1: Appendix 3): self-reflective scales focusing on the functional aspects of EFL teacher English use in the classroom and (d) Task-specific Scales (see Additional file 1: Appendix 4), which consist of rubrics developed to assess classroom English use in relation to various tasks frequently employed in the context of high school EFL classrooms in Japan. These four scales are all intended to raise the TLA of EFL teachers and thus to encourage them to pay further attention to enhancing their teacher language proficiency. Providing multiple scales in the way we have here allows for accommodating individual needs with greater ease than through one larger, more general universal measure.</p><p>The issue of how EFL teachers' classroom English use is scored should also be addressed in developing these four scales, including consideration of assessor bias. In language testing/assessment studies, the issue of scoring as a subjective assessment of spoken language <ref type="bibr" target="#b8">(Davis, 2016;</ref><ref type="bibr" target="#b27">Sato, 2011)</ref> has been raised, and there seem to be two important factors that may influence the performance of our assessors; their scoring training and the so-called halo effect <ref type="bibr" target="#b30">(Throndike 1920)</ref>. The former concerns to what extent the training of raters contributes to the consistency of their scoring. The latter refers to raters' assessment of one dimension of performance influencing their assessments of other dimensions of performance <ref type="bibr" target="#b30">(Throndike 1920)</ref>.</p><p>In the field of language testing research it is generally believed that rater training is necessary to maintain the reliability and validity of language performance tests <ref type="bibr" target="#b12">(Fulcher, 2003)</ref>. Some empirical studies do support this view, suggesting higher inter-rater reliability and agreement after training <ref type="bibr" target="#b28">(Shohamy et al. 1992;</ref><ref type="bibr" target="#b31">Weigle, 1994</ref><ref type="bibr" target="#b32">Weigle, , 1998</ref>. Others find training results in considerable variation in rater severity and scoring criteria <ref type="bibr" target="#b16">(Lumley &amp; McNamara, 1995;</ref><ref type="bibr" target="#b23">Orr, 2002;</ref><ref type="bibr" target="#b24">Papajohn, 2002)</ref>. With such inconsistent research evidence, regarding the scoring of the TOEFL iBT Speaking Test by 20 native teachers of English, <ref type="bibr" target="#b8">Davis (2016)</ref> confirmed rater training led to modest improvements in inter-rater reliability and agreement whereas it had little impact on rater consistency or severity.</p><p>The second element of concern is the "halo" <ref type="bibr">(Throndike 1920, p.28)</ref> effect; when a rater's judgment of a single element of evaluation influences other elements in the assessment. For example, <ref type="bibr" target="#b34">Yorozuya and Oller (1980)</ref> found it between two different rating procedures. In a five-time listening scoring experiment they conducted with 15 native speakers of English raters, interviews with 10 foreign students were evaluated in two ways; rating only one out of four scaling constructs of English speech (i.e., grammar, vocabulary, pronunciation and fluency) individually on four independent consecutive hearings versus rating all four scaling constructs on the remaining one listening. The halo effect was revealed on the single hearing occasion, and it tended to reduce the reliability of the raters' scores. <ref type="bibr" target="#b34">Yorozuya and Oller (1980)</ref> speculate that the raters may have been biased by their previous scoring. <ref type="bibr" target="#b2">Bechger et al. (2010)</ref> suggest a practical way to avoid halo effects by assigning "raters at random to combinations of examinees and assignments" <ref type="bibr">(Bechger et al. 2010, pp. 616-617)</ref>. The reliability of CLA in the current 2007 version of the LPATE has been maintained by either double marking or assessment on two separate occasions by assessors from the Hong Kong Government's Education Bureau <ref type="bibr" target="#b6">(Coniam &amp; Falvey, 2013)</ref>.</p><p>To put these findings into the context of raters for our benchmark assessments discussed here, it would be fair to conclude that (a) the number of assessors should be at least two, up to as many as practical for the assessment occasion, perhaps with three to five assessors as the most reasonable number; (b) the assessors should include at least one who is unfamiliar with the assessee; and finally, (c) all assessors should complete a training/practice process before the actual assessment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The integrated diagnostic scale</head><p>The Integrated Diagnostic Scale was developed based on the LPATE's CLA with the intention of assessing overall levels of teacher language proficiency in a complete lesson. LPATE's CLA has a single set of four constructs, (a) grammar and lexical accuracy and range, (b) pronunciation, stress and intonation, (c) the language of interaction and (d) the language of instruction. These four constructs can be further summarized into two categories: formal elements which define an English language teachers' English ability; and functional realizations of a teacher's formal English ability <ref type="bibr" target="#b4">(Coniam &amp; Falvey, 1999)</ref>. Therefore in LPATE's CLA, two theoretically different construct aspects are incorporated into one assessment scale. In contrast, the Integrated Diagnostic Scale in our benchmark assessment has five constructs; (a) grammar (accuracy &amp; variety: to what extent those who are assessed can use a wide range of English grammar accurately), (b) vocabulary (appropriateness &amp; variety: to what extent English vocabulary selections of those who are assessed are appropriate and rich in variety), (c) pronunciation (accuracy &amp; naturalness: to what extent those who are assessed can pronounce English accurately and naturally), (d) instruction &amp; explanation (efficiency &amp; clarity; to what extent instructions of those who are assessed are efficient and clear) and finally, (e) interaction with students (smoothness: to what extent those who are assessed smoothly interact with students), with no linguistically hierarchical difference. In the Integrated Diagnostic Scale, grammar and vocabulary are independently scaled. This is because we expect our benchmark assessment to be as informative as possible and if grammar and vocabulary are assessed together, it could lose the ability to differentiate between the two and thus may decrease its potential to improve their TLA.</p><p>With this scale, the attainment of an overall level of '4' requires '4' in at least four of the five constructs and '3' in only one construct (See Case A in <ref type="table" target="#tab_0">Table 1</ref>). Likewise, a candidate is judged at level 3 either when there is more than one construct at '3' while the rest are '4' (Case B in <ref type="table" target="#tab_0">Table 1</ref>), or there is one '2' while the rest are all more than '2' (Cases C and D in <ref type="table" target="#tab_0">Table 1</ref>). Finally, a candidate is judged at level 2 when there are two or more constructs at '2' regardless of any upper levels for the other constructs. If the candidate has a single '1' in any construct, they are not considered to be at the benchmark level.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reflective analytic scales</head><p>Using the same scale constructs as the Integrated Diagnostic Scale described above, the Reflective Analytic Scales are designed to guide EFL teachers' self-reflections. Unlike the Integrated Diagnostic Scale which is for use by assessors who have observed a complete lesson, the Reflective Analytic Scales are a tool for self-assessment through answering 'can-do' descriptors immediately after a class. We believe this unique introspection/retrospection feature of the Reflective Analytic Scales will enable those who are assessed to express more qualitative impressions regarding their classes, thereby complementing data obtained from the Integrated Diagnostic Scale. This is particularly beneficial for use with high school Japanese teachers of EFL as they tend to prefer to keep their English proficiency levels private, and yet they are fully aware of the need for professional development.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Function-specific scales</head><p>The functional aspect of classroom language use is assessed separately from the Integrated Diagnostic Scale through Function-Specific Scales covering six different functions: (a) elicitation, (b) facilitation, (c) clarification request, (d) recasts, (e) comments and (f ) assessment. These functions are all interactional in nature and were devised through deductive analysis of descriptors from the CLA, looking for interactional language useful for the language classroom. First, two superordinate functions were identified (elicitation and feedback). Next, further consideration revealed that under the elicitation function, three more subordinate functions were necessary (elicitation, facilitation and clarification requests), while under the feedback function, another three subordinate functions were included (recast, comment and assessment). These 'can-do' descriptive scales are intended to be used by EFL teachers self-reflectively to check the degree to which they can perform the target functions effectively. Task-specific scales</p><p>The Task-Specific Scales were developed to assess English teachers' classroom language use when dealing with tasks which they are likely to be familiar with in the Japanese EFL classroom context. The candidate teachers choose tasks which they think are relevant to their own lessons because the target tasks are determined by the pedagogical approach each teacher adopts. These tasks are evaluated by assessors through lesson observation (either live or videotaped). Therefore, the Task-Specific Scales can be understood as primarily embodying instructional aspects of teacher language proficiency, specific to Japanese EFL classroom contexts, and far more independent and detailed than the equivalent constructs for 'The Language of Instruction' , one of a single set of four scales in the CLA in the LPATE which describes the way in which a teacher interacts with students. The Task-Specific Scales were developed in a primarily inductive manner. First, various tasks were selected and then their assessment constructs and level descriptors were drafted. Second, these first drafts were scrutinized by several high school EFL teacher collaborators. Third, some revisions were made before reaching the current version, which includes ten tasks. They are (a) oral reading practice, (b) oral introduction of the target passage content, (c) introduction of the target grammar, (d) provision of relevant background knowledge, (e) comprehension check, (f) interaction with ALTs in team teaching, (g) oral exchange with students as a whole class, (h) instruction of words and idioms, (i) presentation of a model speech, and finally, (j) presentation of an oral summary (see Additional file 1: Appendix 4 for a sample of an oral reading practice assessment).</p><p>The relationship between the four scales and implications for their use <ref type="table" target="#tab_1">Table 2</ref> summarizes the relationship between the four scales and <ref type="figure">Fig. 1</ref> graphically illustrates the four scales along with their distinctive features in two dimensions. It also shows how reflection is an essential component of all fours scales and how these scales can be used to assess a lesson. In terms of the horizontal dimension in <ref type="figure">Fig. 1</ref>, for example, the Integrated Diagnostic Scale and the Task-Specific Scales both use observation-based reflection with 'be-doing' descriptors determined by the assessors observing the class, whereas the Reflective Analytic Scales and the Function-Specific Scales use self-assessed, introspection-based reflection with 'can-do' descriptors. In terms of the vertical dimension, the Integrated Diagnostic Scale and the Reflective Analytic Scales can be applied to an entire lesson observation while the Function-Specific Scales and the Task-Specific Scales are for assessing only part of a lesson. Two related issues are discussed here. First, because of their observation-based reflective nature, both the Integrated Diagnostic Scale and the Task-Specific Scales can be used to interpret language proficiency of Japanese teachers of EFL based on observable classroom phenomena in a lesson. This reflects the importance of teacher language proficiency as it relates to interaction with students in conjunction with the extent to which students are involved in and interact with teacher instruction in English. Therefore, if teachers with considerable English proficiency talk to their students without eliciting any response, the rating of their performance for Interaction with students should reflect that lack of interaction with the students, however fluent the teacher's English may be.</p><p>Secondly, because of these independent but mutually-related scales, various applications can be proposed. At a school-based teacher training session for a young novice teacher, for example, experienced colleagues can use the Integrated Diagnostic Scale to evaluate an entire class or the Task-Specific Scales to make a focused evaluation of a particular task performance, while the teacher who is assessed can use the Reflective Analytic Scales to capture their own impression of their teaching immediately after a class, or the Function-Specific Scales to check and evaluate the effectiveness of target functions in the lesson by viewing a video of their teaching practice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>In this paper, we have described the development of classroom language benchmark assessments for Japanese teachers of EFL with an emphasis on the theoretical rationale for their design. The current pilot version of the assessment scales presented here represents an initial step toward a more complete and practical assessment of classroom English use by Japanese teachers of EFL. Care will therefore need to be taken in their implementation to evaluate their effectiveness and ensure their future development.</p><p>At this stage, there are three specific issues that must be addressed going forward. First, the constructs of teacher language proficiency and each scale descriptor must be further refined in terms of their theoretical rationale. Particular attention should be paid in identification and addition of key characteristics for each descriptor. Secondly, <ref type="figure">Fig. 1</ref> Relationship between the four scales regarding practicality of assessment, the adjustment of scale levels and checking of the validity of the scales remains incomplete. Unlike other benchmark assessments, our version has four different scales, and this may require more complex and time-consuming procedures for assessors and assessees. Smooth administration is crucial for the dissemination of our benchmark assessment to the relevant educational authorities. Last, but not least, further fieldtesting will be indispensable to making the current assessment more practical for future use.</p><p>The above refinements are crucial to our benchmark assessment being readily adopted by teachers and school authorities for utilization for its intended purposes, in pre-service and in-service training sessions or in post-observation discussions, as a basis for the professional development of Japanese EFL teachers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endnotes</head><p>1 Assistant Language Teachers (ALTs) refers to non-Japanese teachers hired to teamteach English along with Japanese teachers of English. They include teachers hired by the Japanese government through the Japan Exchange Teacher (JET) program(me). ALTs are also hired via local boards of education, both directly and indirectly through contracts with private outsourcing companies.</p><p>2 STEP pre-first level, TOEFL 550, TOEIC 730 or over. The Society for Testing English Proficiency (STEP) has from grade 1 (equivalent to CEFR C1) to grade 5 (CEFR A1). The Grade pre-first level is equivalent to CEFR B2. <ref type="bibr">3</ref> The speaking assessment in LPATE was revised in June 2010.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional file</head><p>Additional file 1: Appendix 1. Integrated Diagnostic Scale. Appendix 2. Reflective Analytic Scales. Appendix 3. Function-specific Scales. Appendix 4. Task-specific Scales: Oral Reading Practice. (DOCX 31 kb)</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Sample results of assessment of overall assessed level of one teacher's teacher language proficiency by five assessors</figDesc><table><row><cell>Assessors</cell><cell>A</cell><cell>B</cell><cell>C</cell><cell>D</cell><cell>E</cell></row><row><cell>Scale constructs</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Grammar</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell></row><row><cell>Vocabulary</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell></row><row><cell>Pronunciation</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>3</cell><cell>3</cell></row><row><cell>Instruction &amp; Explanation</cell><cell>4</cell><cell>3</cell><cell>3</cell><cell>3</cell><cell>2</cell></row><row><cell>Interaction with students</cell><cell>3</cell><cell>3</cell><cell>2</cell><cell>2</cell><cell>2</cell></row><row><cell>Overall Level of</cell><cell>4</cell><cell>3</cell><cell>3</cell><cell>3</cell><cell>2</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Relationship between the four scales</figDesc><table><row><cell></cell><cell>Integrated diagnostic</cell><cell>Reflective analytic</cell><cell>Function-specific</cell><cell>Task-specific scales</cell></row><row><cell></cell><cell>scale</cell><cell>scales</cell><cell>scales</cell><cell></cell></row><row><cell>Main objective</cell><cell>External evaluation</cell><cell>Reflection</cell><cell>Reflection</cell><cell>Lesson analysis</cell></row><row><cell></cell><cell>&amp; assessment</cell><cell></cell><cell></cell><cell></cell></row><row><cell>High Reliability</cell><cell>Required</cell><cell>Desirable</cell><cell>Desirable</cell><cell>Desirable</cell></row><row><cell>Users</cell><cell>Other assessors</cell><cell>The teacher who</cell><cell>The teacher who</cell><cell>Other assessors</cell></row><row><cell></cell><cell></cell><cell>conducted the lesson</cell><cell>conducted the lesson</cell><cell></cell></row><row><cell>Unit of evaluation/</cell><cell>Entire lesson</cell><cell>Entire lesson</cell><cell>Language function</cell><cell>Task (selected by</cell></row><row><cell>analysis</cell><cell></cell><cell></cell><cell></cell><cell>teacher)</cell></row><row><cell>Based on lesson</cell><cell>YES</cell><cell>NO</cell><cell>NO (Possible)</cell><cell>YES</cell></row><row><cell>observation?</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>This work was supported by JSPSKAKENHI, the Grant-in-Aid for Scientific Research (C) (Grant Numbers 22530969, 26381199) (Project Leader: Yoshiyuki Nakata).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Authors' contributions YK, YN, IO and NN discussed and developed the proposed benchmarks, while SA provided some advices based on his experiences of LPATE in Hong Kong. YK drafted the manuscript: the other authors provided insightful comments, YN as a research leader and SA as an expert of this field in particular. All authors read and approved the final manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare that they have no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author details 1</head><p>Faculty of Medicine, University of Toyama, Toyama, Japan. 2 Faculty of Global Communications, Doshisha University, Kyoto, Japan. 3 Faculty of Education, Ehime University, Tatsuyama, Japan. <ref type="bibr">4</ref> International Education Center, Tokai University, Hiratsuka, Japan. 5 Faculty of Education, the University of Hong Kong, Hong Kong, China.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Teacher language awareness</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Andrew</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Fundamental considerations in language testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">F</forename><surname>Bachman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Canadian language benchmarks 2000 English as a second language for adults</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">M</forename><surname>Bechger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Maris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">P</forename><surname>Hsiao</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0146621610367897</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Psychological Measurement</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="607" to="619" />
+			<date type="published" when="2000" />
+		</imprint>
+		<respStmt>
+			<orgName>Centre for Canadian Language Benchmarks</orgName>
+		</respStmt>
+	</monogr>
+	<note>Detecting halo effects in performance-based examinations</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">What&apos;s wrong with the way English is taught in Japan? Japan Times</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Clark</surname></persName>
+		</author>
+		<ptr target="http://www.japantimes.co.jp/opinion/2009/02/05/commentary/whats-wrong-with-the-way-english-is-taught-in-japan/#.Wjbb0fmLSUk.Accessed5" />
+		<imprint>
+			<date type="published" when="2009-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The English language benchmarking initiative: A validation study of the Classroom Language Assessment component</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Coniam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Falvey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Asia Pacific Journal of Language Education</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="35" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Awarding passes in the language proficiency assessment of English language teachers: Different methods -varying outcomes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Coniam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Falvey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Education Journal</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="23" to="35" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Ten years on: The Hong Kong language proficiency assessment for teachers of English (LPATE)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Coniam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Falvey</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0265532212459485</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Common European framework of reference for languages: Learning teaching, assessment</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="147" to="155" />
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe.</orgName>
+		</respStmt>
+	</monogr>
+	<note>Language Testing</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">European portfolio for student teachers of languages: A reflection tool for language teacher education</title>
+		<ptr target="http://www.ecml.at/epostl" />
+		<imprint>
+			<date type="published" when="2007-02" />
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe</orgName>
+		</respStmt>
+	</monogr>
+	<note>Adobe Digital Editions version</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">The influence of training and experience on rater performance in scoring spoken language. Language Testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Davis</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0265532215582282</idno>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="117" to="135" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Language proficiency assessment for teachers (English language). Hong Kong: Education Bureau Government of the Hong Kong Special Administrative Region</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note>Education Bureau Government of the Hong Kong Special Administrative Region</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The place of grammar instruction in the second/foreign language curriculum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ellis</surname></persName>
+		</author>
+		<editor>E. Hinkel &amp; S. Fotos</editor>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Lawrence Erlbaum</publisher>
+			<biblScope unit="page" from="17" to="34" />
+			<pubPlace>Mahwah, NJ</pubPlace>
+		</imprint>
+	</monogr>
+	<note>New perspectives on grammar teaching I second language classrooms</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Task-based language learning and teaching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ellis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Testing second language speaking</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Fulcher</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Longman</publisher>
+			<pubPlace>Harlow, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Problems in top-down goal setting in second language education: A case study of the &quot;Action Plan to Cultivate &apos;Japanese with English Abilities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Hato</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JALT Journal</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="52" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">The input hypothesis: Issues and implications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Krashen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1985" />
+			<publisher>Longman</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Sociocultural theory and the genesis of second language development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">P</forename><surname>Lantolf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Thorne</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Eigoga tsukaeru nihonjin&apos; no ikusei no tame no kodo keikakuno sakutei ni tsuite [Regarding the establishment of an action plan to cultivate &apos; Japanese with English abilities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Lumley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">F</forename><surname>Mcnamara</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/026553229501200104</idno>
+		<ptr target="http://warp.da.ndl.go.jp/info:ndljp/pid/242299/www.mext.go.jp/b_menu/houdou/15/03/030318a.htm.Accessed5" />
+	</analytic>
+	<monogr>
+		<title level="m">Rater characteristics and rater bias: Implications for training. Language Testing</title>
+		<imprint>
+			<publisher>MEXT</publisher>
+			<date type="published" when="1989" />
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="54" to="71" />
+		</imprint>
+	</monogr>
+	<note>The Course of Study for Upper Secondary Schools. Tokyo: MEXT. Ministry of Education. Retrieved from the MEXT website</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The Course of Study for Upper Secondary Schools</title>
+	</analytic>
+	<monogr>
+		<title level="j">Culture, Sports, Science and Technology (MEXT)</title>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>MEXT</publisher>
+		</imprint>
+	</monogr>
+	<note>The Course of Study for Elementary Schools</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Improving the clssroom language proficiency of non-native teachers of English: What and how? RELC</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Nakata</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0033688210362617</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="76" to="90" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Classroom ENglish language benchmarks for Japanese EFL teachers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Nakata</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Ikeno</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Naganuma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Kimura</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Andrews</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the JACET 51th international convension</title>
+		<meeting>the JACET 51th international convension</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="20" to="27" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">The European portfolio for student teacher of languages</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Newby</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note>Adobe Digital Editions version</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Babylonia</surname></persName>
+		</author>
+		<ptr target="http://babylonia.ch/fileadmin/user_upload/documents/2007-3/newby.pdf" />
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="23" to="26" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">A profiling grid for language teachers. Paper presented at the International Meeting on Training, Quality and Certification in Foreign Language Teaching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>North</surname></persName>
+		</author>
+		<ptr target="http://clients.squareeye.net/uploads/eaquals/North-%20TQAC.pdf" />
+		<imprint>
+			<date type="published" when="2009" />
+			<pubPlace>Siena, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The FCE speaking tests: using rater reports to help interpret test scores</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Orr</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0346-251X(02)00002-7</idno>
+		<ptr target="http://dx.doi.org/10.1016/S0346-251X(02" />
+	</analytic>
+	<monogr>
+		<title level="j">System</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="2" to="7" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Concept mapping for rater training</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Papajohn</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/3588333</idno>
+	</analytic>
+	<monogr>
+		<title level="j">TESOL Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="219" to="233" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Preparing nonnative and native English-speaking teachers: Issues of professionalism and proficiency</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pasternak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Bailey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Learning and teaching from experience: Perspectives on nonnative Englishspeaking professionals</title>
+		<editor>L. D. Kamhi-Stein</editor>
+		<meeting><address><addrLine>Ann Arbor</addrLine></address></meeting>
+		<imprint>
+			<publisher>The University of Michigan Press</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="155" to="175" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Methods of teacher assessment and the EAQUALS profiling grid for language teachers. Paper presented at the International Meeting on Training, Quality and Certification in Foreign Language Teaching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Rossner</surname></persName>
+		</author>
+		<ptr target="http://clients.squareeye.net/uploads/eaquals/Rossner%20-%20Assessment%20and%20the%20EAQUALS%20Profiling%20Grid%20TQAC%202009.pdf" />
+		<imprint>
+			<date type="published" when="2009" />
+			<pubPlace>Siena, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The contribution of test-takers&apos; speech content to scores on an English oral proficiency test</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Sato</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0265532211421162</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="223" to="241" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The effect of raters&apos; background and training on the reliability of direct writing tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Shohamy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kraemer</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1540-4781.1992.tb02574.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="27" to="33" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Knowledge and teaching: Foundations of the new reform</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">S</forename><surname>Shulman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Educational Review</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A constant error in psychological ratings</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">L</forename><surname>Throndike</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/h0071663</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="25" to="29" />
+			<date type="published" when="1920" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Effects of training on raters of ESL composition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Weigle</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/026553229401100206</idno>
+		<ptr target="https://doi.org/10.1177/026553229401100206" />
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="197" to="223" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Using FACETS to model rater training effects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Weigle</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/026553229801500205</idno>
+		<ptr target="https://doi.org/10.1177/026553229801500205" />
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="263" to="287" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Voices of the mind</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">V</forename><surname>Wertsch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991" />
+			<publisher>Harvard University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Oral proficiency scales: construct validity and the halo effect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Yorozuya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Oller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Learning</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="135" to="153" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

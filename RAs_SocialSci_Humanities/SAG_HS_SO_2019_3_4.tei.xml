@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Early Parental Death and Cognitive Impairment in Late Life: A Cohort Study</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Rong</forename><surname>Fu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Siena College</orgName>
+								<address>
+									<settlement>Loudonville</settlement>
+									<region>NY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Sociology</orgName>
+								<orgName type="institution">Siena College</orgName>
+								<address>
+									<addrLine>515 Loudon Rd</addrLine>
+									<postCode>12211</postCode>
+									<settlement>Loudonville</settlement>
+									<region>NY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Early Parental Death and Cognitive Impairment in Late Life: A Cohort Study</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1177/2158244019879135</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>cognitive functioning</term>
+					<term>adverse childhood experiences</term>
+					<term>gender differences</term>
+					<term>life-course perspective</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>The life-course approach provides a contextual understanding of the developmental processes and outcomes over the life course (see Elder &amp; Johnson, 2003; Elder, Johnson, &amp; Crosnoe, 2003). The principle of lifespan development emphasizes how individual development can be attributed to events that occurred early in life (Elder et al., 2003). In line with this principle, social science research has linked late-life cognitive functioning to societal risk factors in childhood and early adulthood, including socioeconomic status, health behavior, and traumatic experiences (e.g., Wei et al., 2014; Zhang et al., 2008). The linked lives principle of 879135S GOXXX10.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Population aging is becoming a major social issue in many developing countries including China <ref type="bibr" target="#b28">(Lloyd-Sherlock, 2000)</ref>. It is estimated that the trend of global aging will make the economic effect of dementia much greater than that of other chronic diseases such as heart disease and stroke <ref type="bibr">(Alzheimer's Disease International, 2010)</ref>. The burden of dementia could be even worse for individuals and families in China due to the implementation of the one-child policy and the large internal migration over the past few decades <ref type="bibr" target="#b44">(Sousa et al., 2009)</ref>, as Chinese older adults are mostly taken care of by their adult children. Due to the anticipated dramatic increase in dementia burden in China <ref type="bibr" target="#b4">(Chan et al., 2013)</ref>, more research is needed to understand the long-term contributors to cognitive functioning among Chinese older adults. Previous research has linked cognitive development to the social environment in both childhood and adult life (e.g., <ref type="bibr" target="#b17">Fu, 2016;</ref><ref type="bibr" target="#b40">Norton et al., 2011;</ref><ref type="bibr" target="#b52">Zhang, Gu, &amp; Hayward, 2008)</ref>. The current study attempted to elucidate further the relationship between childhood adversity and cognitive functioning in a cohort of older adults born around the early 1900s. As a substantial proportion of these older adults might have experienced the death of a parent in childhood or adolescence due to wars and natural disasters in the early 20th century, this study specifically aimed to investigate the impact of early parental death on cognitive functioning in late life.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Early Parental Death and Cognitive Functioning: A Life-Course Perspective</head><p>the life-course perspective emphasizes the interdependent relationships among family members <ref type="bibr" target="#b20">(Hagestad, 2003)</ref>. In terms of parent-child relationships, this principle implies that the individual characteristics and social resources associated with parents may influence the health and well-being of children (e.g., <ref type="bibr" target="#b18">Gimenez, Chou, Liu, &amp; Liu, 2013;</ref><ref type="bibr" target="#b26">Li, Fu, Xue, &amp; Wang, 2019)</ref>. In the context of the current study, the two principles suggest that the death of a parent in childhood and adolescence might remove important social and economic resources from the bereaved offspring and subsequently affect their cognitive development over the life course.</p><p>Not much research has been conducted to assess the association between early parental death and cognitive health in older adults. Among the limited studies available, <ref type="bibr" target="#b41">Person and Skoog (1996)</ref> observed an increased risk of dementia in a sample of Swedish older adults who experienced parental death before 16 years of age. Similarly, <ref type="bibr">Wei and colleagues (2014)</ref> reported an elevated dementia risk among Chinese older adults who experienced the death of a parent early in life. <ref type="bibr" target="#b42">Ravona-Springer, Beeri, and Goldbourt (2012)</ref> used a sample of Israeli males and found that experiencing crisis following early parental death was associated with increased dementia risk in late life. Another study conducted in a rural county in the U.S. state of Utah suggested that the impact of early parental death on the prevalence of Alzheimer's disease was moderated by the deceased parent's gender but not the bereaved child's gender <ref type="bibr" target="#b40">(Norton et al., 2011)</ref>. Despite their contributions, most of these studies were based on the social context where men and women were more equal with each other in terms of educational opportunities and other life choices. It will be valuable to further investigate whether the gender of the deceased parent and the gender of the bereaved offspring would modify the impact of early parental death on late-life cognitive impairment in a cohort of individuals born in a gender-hierarchical society.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Differences in Childhood Adversity, Education, and Cognitive Health</head><p>Drawing on the life-course approach, the cumulative disadvantage theory posits that early-life adversities may differentiate individuals' experiences over the life course, such that disadvantaged social groups (e.g., the poor and minorities) in a social hierarchy system typically have worse health status than their advantaged counterparts <ref type="bibr" target="#b3">(Braveman, 2006;</ref><ref type="bibr" target="#b13">Ferraro &amp; Kelley-Moore, 2003)</ref>. In a gender-hierarchical society that favors men, therefore, women might have more negative life experiences and worse health conditions than men over the life span. Chinese women have historically lived in a patriarchal society, where they were structurally denied formal education in early life and high-skilled occupations in adulthood. These educational and occupational opportunities provide important cognitive practices for the development and maintenance of cognitive abilities <ref type="bibr">(National Research Council, 2000)</ref>, rendering women more vulnerable to cognitive problems than men in traditional Chinese society.</p><p>Human capital theory posits an impact of education on health through pathways such as economic resources, a sense of personal control, and health-producing behaviors (e.g., <ref type="bibr" target="#b36">Mirowsky &amp; Ross, 2003</ref>. Empirical studies suggested that higher levels of education improved adult health, independent of early-life socioeconomic conditions <ref type="bibr" target="#b2">(Best, Hayward, &amp; Hidajat, 2005;</ref><ref type="bibr" target="#b21">Hayward &amp; Gorman, 2004)</ref>. In the cognition literature, having formal education has been indicated to significantly reduce the risk of cognitive impairment in older men and women (e.g., <ref type="bibr" target="#b52">Zhang et al., 2008)</ref>. Education has also been identified as a potential mediator or a powerful confounder that attenuated the impact of demographic characteristics and life styles on cognitive performance (e.g., <ref type="bibr" target="#b0">Akbaraly, Singh-Manoux, Marmot, &amp; Brunner, 2009;</ref><ref type="bibr" target="#b32">Masel, Raji, &amp; Peek, 2010</ref>). Yet, it is quite understudied whether education would potentially mediate the association between early-life trauma and cognitive functioning in late life. Given the evidence that losing a parent in childhood may affect the educational attainment of the bereaved children (e.g., <ref type="bibr" target="#b18">Gimenez et al., 2013)</ref>, it is plausible to assume that education would mediate the relationship between early parental death and cognitive functioning in the later stages of the life course.</p><p>In this study, the cohort of interest was those born between 1897 and 1922, which corresponds to the period between late Qing dynasty and early Republic of China. Many political reforms and social changes occurred during this time period. In particular, the transformation of traditional values and the reforms of the educational system led to the rise of women's education in China. Beginning in 1907, the Chinese government started to establish public schools for girls and women, challenging the traditional Chinese principle that female education should be confined to the home <ref type="bibr" target="#b6">(Cong, 2008)</ref>. However, it has been argued that the rise of women's modern education in the early 20th century was indeed a continuity of traditional female education, as men and women were educated separately and the coursework for women focused on poetic writing, household skills, and moral values <ref type="bibr" target="#b6">(Cong, 2008)</ref>. Therefore, men and women who went to school in the early 20th century tended to learn about different knowledge and skills from school, which may shape their cognitive development in different ways. It is then valuable to learn how the gendered educational experiences, together with other gendered early-life experiences, have shaped the cognitive functioning of men and women as they enter into advanced age.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Questions and Hypotheses</head><p>Using longitudinal data from a nationally representative sample of older adults in mainland China, this study seeks to add to the literature on early parental death and cognitive health in late life. Based on the theoretical frameworks and empirical findings discussed above, the following specific research questions and hypotheses are proposed:</p><p>Research Question 1: Does early parental death increase the risk of severe cognitive impairment among Chinese oldest-old?</p><p>This study hypothesizes that the death of a parent in early life increases the risk of severe cognitive impairment among older adults at baseline and over a 3-year follow-up period, independent of their socioeconomic and physical health characteristics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Question 2:</head><p>Is the association between early parental death and cognitive impairment moderated by the gender of the deceased parent and the gender of the bereaved child?</p><p>Given that the father is generally the main financial provider of the household in traditional Chinese society, the death of a father might remove important social and economic resources from the bereaved children. The death of a father can, therefore, be expected to be more stressful than the death of a mother for the bereaved offspring. Thus, experiencing the death of a father in early life is hypothesized to predict higher risk of cognitive impairment than experiencing the death of a mother. As discussed previously, women in this study were more disadvantaged than their male counterparts in many aspects of life. It is therefore hypothesized that women are more vulnerable to cognitive impairment following parental death than men. Yet, given the evidence that females are typically more resilient to stressful events than males (e.g., <ref type="bibr" target="#b7">De Bellis &amp; Keshavan, 2003)</ref>, it could be contradictorily hypothesized that men are more vulnerable to cognitive impairment than women in advanced age.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Question 3:</head><p>Is educational attainment a potential mechanism that links early parental death to cognitive impairment in late life?</p><p>Based on the potential mediating role of education on cognitive functioning across different age groups (e.g., <ref type="bibr" target="#b0">Akbaraly et al., 2009;</ref><ref type="bibr" target="#b18">Gimenez et al., 2013;</ref><ref type="bibr" target="#b32">Masel et al., 2010)</ref>, this study further hypothesizes that the impact of early parental death on cognitive impairment would be at least partially mediated by the educational attainment of the bereaved offspring.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Set and Study Sample</head><p>Using the 2002 and 2005 waves of the Chinese Longitudinal Healthy Longevity Survey (CLHLS), this study estimated the impact of early parental death on severe cognitive impairment among Chinese oldest-old (aged 80 years and older). The CLHLS is the first national longitudinal survey with the largest sample of the oldest-old ever conducted in China. The survey area covered 85% of the Chinese population. The final sample includes 10,953 respondents aged 80 to 105 years who were interviewed in 2002 (baseline). Among these individuals, 1,304 were lost to follow-up and 5,204 were deceased in 2005. Respondents who reported as being 106 years or older were excluded from the analysis because researchers were unable to validate their age <ref type="bibr" target="#b49">(Zeng &amp; Vaupel, 2002)</ref>. Information was obtained concerning respondents' demographic characteristics, family structure, living arrangements, physical health, cognitive function, and so on.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measures</head><p>Dependent variable. Given the evidence that cognitive diseases have remained underrecognized and underdiagnosed among senior citizens in different areas of China <ref type="bibr" target="#b4">(Chan et al., 2013;</ref><ref type="bibr" target="#b5">Cheng, Lam, &amp; Chow, 2012)</ref>, the current study evaluated cognitive functioning based on researcher-estimated cognitive functioning scores rather than self-reported cognitive diseases. The CLHLS measures cognitive functioning based on the Mini-Mental State Examination (MMSE), which assesses four aspects of cognitive function: orientation, calculation, recall, and language <ref type="bibr" target="#b14">(Folstein, Folstein, &amp; McHugh, 1975)</ref>. The Chinese version of the MMSE scale was culturally translated from the international standard of the MMSE questionnaire and was constructed from 24 items in the original survey. As the item "copying a figure" had a very high proportion of missing values, it was excluded from the MMSE scale used in the current study. The final version of the MMSE scale includes 23 items/questions, where respondents received one or more points for each question that they answered correctly. As recommended by previous literature (e.g., <ref type="bibr" target="#b51">Zhang, 2006)</ref>, proxy responses or "unable to answer" responses were counted as incorrect answers (0 point). The MMSE scores in 2002 and 2005 indicate respondents' cognitive function, with a range of 0 to 30 (Cronbach's α = .90 in the 2002 sample). Following the criteria set by previous literature <ref type="bibr" target="#b38">(Murphy et al., 1993)</ref>, respondents were considered as having "severe cognitive impairment" if their MMSE scores were below 10 points. Specifically, severe cognitive impairment is a binary variable, where the value 1 indicates "becoming severely cognitively impaired" (MMSE &lt;10 points) and the value 0 indicates "otherwise" (MMSE ≥10 points). Given that the majority of the study participants (especially women) were illiterate or had very limited education, it is appropriate to use a very low cutoff point to indicate severe cognitive impairment. This could help reduce MMSE measurement error in that those who scored less than 10 points were quite likely to be severely cognitively impaired, regardless of their educational levels <ref type="bibr" target="#b38">(Murphy et al., 1993)</ref>. Independent variable. Early parental death was determined by whether respondents experienced the death of a parent at or before 16 years of age. The following categories were used: (a) no early parental death, (b) early death of both parents, (c) early death of a mother, and (d) early death of a father. Given that Chinese people in the early 1900s generally married earlier <ref type="bibr" target="#b25">(Lee &amp; Wang, 1999)</ref> and entered into the workforce at a younger age, most of the study participants should have no longer relied on their parents financially by 16 years of age. Using the age of 16 years as the cutoff point is also consistent with the line of literature suggesting that losing a parent before 16 years of age has the potential to affect the children's quality of life and health (e.g., <ref type="bibr" target="#b23">Krause, 1998;</ref><ref type="bibr" target="#b41">Person &amp; Skoog, 1996)</ref>.</p><p>Covariates. Respondents' demographic characteristics include age calculated by birth year, gender (women = 1; men = 0), ethnicity (Han majority = 1; minority = 0), and marital status 1 (married = 1; otherwise = 0). Given the strong association between socioeconomic status (SES) and health documented in previous studies (e.g., <ref type="bibr" target="#b21">Hayward &amp; Gorman, 2004;</ref><ref type="bibr" target="#b22">Irving &amp; Ferraro, 2006)</ref>, this study adjusted for respondents' SES in childhood and adulthood. Respondents' education was dichotomized into a binary variable (no education = 1; some education = 0) based on two reasons: (a) more than 65% of respondents had no schooling throughout their life, and (b) for respondents who had some years of education, about 94% of them had no more than 12 years of formal education (high school or lower). Pension eligibility was included as a measure of occupational SES (no pension = 1; having pension = 0), which adjusts for the diversity and potential dynamics of respondents' occupations. Due to the rigid rural-urban division in China, respondents' category of residence (rural = 1; urban = 0) was additionally considered as an indicator of SES. In the Chinese context, having some education, having pension, and dwelling in an urban area all indicate higher SES. Childhood SES was measured by two items: (a) father had a nonmanual occupation before retirement (coded as 1; otherwise, 0), and (b) category of birthplace (rural = 1; urban = 0). Mothers' occupation was not included because no more than 1% of respondents' mother had a nonmanual job.</p><p>The current study additionally adjusted for respondents' physical health conditions, including suffering from serious diseases in the past 2 years (coded as 1; otherwise, 0) and activities of daily living (ADL). ADL was measured by whether the respondents had difficulty performing the following six tasks: eating, dressing, toileting, bathing, indoor transferring, and continence. Each task was coded as 1 if respondents reported needing help with this task (otherwise, 0). The number of ADL disabilities (range: 0-6) was calculated by adding the scores for the six tasks together. Participating in social activities in daily life (coded as 1; otherwise, 0) was also included as a covariate in that social engagement has been indicated as a potential mediator of cognitive functioning (e.g., <ref type="bibr" target="#b16">Fu, 2015)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical Analysis</head><p>To estimate the impact of early parental death on the risk of severe cognitive impairment, a series of logistic regression (logit) models were used. The odds ratios (OR) of severe cognitive impairment were predicted by three binary variables of early parental death status-early death of a mother, early death of a father, and early death of both parents (reference group: no early parental death). The effect of early parental death on cognitive impairment was tested for the full sample and the subsamples by gender. To estimate the potential mediating effect of respondents' education, this variable was excluded from the reduced models and included in the full models. Additional analyses were performed to estimate the effect of early parental death on cognitive function (MMSE scores) and to impute missing data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Descriptive Results and Univariate Analysis</head><p>The demographic, socioeconomic, and health conditions of the study sample are presented in <ref type="table" target="#tab_0">Table 1</ref>. Among all the study participants, about 60% of them were women and more than 80% were widowed. The average age of the study participants was 92.34 years in 2002, and their average cognitive function (MMSE) score was 19.86 points (out of 30 points). Of the total 10,953 participants, 3,318 (30.29%) had missing data on the status of early parental death; these respondents were relatively older (mean age = 94.42 years) and had significantly worse cognitive functioning (mean MMSE score = 16.72 points) than their counterparts without missing data on age at parental death. In the analytical sample without missing data (n = 7,635), 5,451 respondents (71.39%) reported not experiencing early parental death, 451 (5.91%) lost both parents by 16 years of age, 710 (9.3%) reported the early death of a mother, and 1,023 (13.4%) reported the early death of a father.</p><p>Univariate comparisons of the study variables suggest that a higher proportion of respondents experiencing early parental death were severely cognitively impaired in 2002 than those who did not experience early parental death. Respondents with missing data on parental death status presented the highest proportion (27.58%) of severe cognitive impairment. Additional univariate comparisons were performed between men and women (not shown). In the study sample, women were relatively older, less educated, and had worse cognitive functions than men. Whereas less than 40% of men did not receive formal education throughout life, as high as 86.48% of women were illiterate. The proportion of women who were severely cognitively impaired almost doubled that proportion in men. As women in this study were about 3 years older than men, <ref type="figure" target="#fig_0">Figure 1</ref> was developed to compare the gender differences in the age-adjusted cognitive functioning. According to <ref type="figure" target="#fig_0">Figure 1</ref>, a higher proportion of women were severely cognitively impaired than men at most of the age points.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Early Parental Death and Severe Cognitive Impairment Risk</head><p>The odds ratios of severe cognitive impairment in 2002 predicted by early parental death and other covariates are presented in <ref type="table" target="#tab_1">Table 2</ref>, both in the total sample and by gender. All the models adjusted for respondents' demographic, socioeconomic, and physical health conditions. The missing values were excluded from Table 2. For the total sample (N = 7,563), the association between early parental death and the risk of cognitive impairment was not significant, either in the reduced models (not shown) or in the full model (the second column). To estimate the potential mediating effect of education on early parental death and cognitive impairment, a reduced model with all covariates except education and a full model with all covariates are presented for men and women, respectively. These models suggest substantial gender differences.</p><p>According to the reduced model for oldest-old men (see column 3), those who experienced the early death of a mother were 52% (p &lt; .05) more likely to become severely cognitively impaired than those who did not experience early parental death. After introducing education into the full model for men (see column 4), the effect of early maternal death on the risk of severe cognitive impairment was almost undisturbed. Specifically, the full model suggests that oldestold men who experienced the death of a mother at or before 16 years of age were 52% (p &lt; .05) more likely to have severe cognitive impairment than their counterparts who did not experience early parental death, independent of demographic, socioeconomic, and physical health conditions. There is no evidence that men's education mediated the association between early parental death and severe cognitive impairment, as education was not significantly related to cognitive impairment risk in the full model for men. For oldest-old women (n = 4,275), the relationship between early parental death and severe cognitive impairment was not significant, before and after adjusting for their educational attainment (see column 5 and column 6). Yet, having no formal education substantially increased the risk of severe cognitive impairment in women (OR = 1.47, p &lt; .05).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Longitudinal Analysis</head><p>Among the 10,953 respondents who participated in the 2002 survey, eight of them had missing data on cognitive impairment status in 2005 and were excluded from <ref type="table" target="#tab_2">Table 3</ref>. Among the remaining 10,945 respondents from the 2002 survey, 1,304 (11.91%) were lost to follow-up and 5,204 (47.55%) were deceased by the 2005 survey. For the 4,437 participants with complete information in both the 2002 and 2005 surveys, the same analyses as presented in <ref type="table" target="#tab_1">Table  2</ref> were duplicated for the 2005 survey (not shown). No significant relationships were found in the 2005 follow-up survey regarding the impact of early parental death on cognitive impairment. It can be, therefore, concluded that the significant association between early death of a mother and elevated risk of cognitive impairment in oldest-old men at baseline did not persist over a 3-year follow-up period.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional Analyses</head><p>Additional analyses (not shown) were performed to estimate the effect of early parental death on cognitive function (MMSE score). For oldest-old men, experiencing the death of a mother reduced the cognitive function score by 2 points (out of 30 points) in 2002 (p &lt; .05), which is consistent with findings regarding severe cognitive impairment. For oldest-old women, experiencing the death of both parents in early life reduced the cognitive function score by 1.14 points at baseline (p &lt; .05). Both relationships were statistically significant. Yet, the effect sizes were quite small and might have little practical importance. Multiple imputation was additionally performed to minimize potential bias arising from missing data. The imputed data suggested the same trends as the fully observed data presented in this study. Finally, the tests of alternative cutoff points for "early parental death" and "severe cognitive impairment" suggested the observed relationships between the two variables were insensitive to varying the cutoff points up or down by one unit.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>China's oldest-old population is projected to reach 100 million in the next few decades <ref type="bibr" target="#b48">(Zeng, Liu, &amp; George, 2003)</ref>. The rapid growth of the oldest-old population foretells a potential burden on older adults, their families, and the society. Learning about the life experiences and health conditions of the current oldest-old generation has the potential to benefit the health and well-being of future generations of older adults and their caregivers. This study estimated whether early parental death affected the cognitive functioning of Chinese older adults born around the early 1900s. Results suggest that men who experienced the death of a mother at or before 16 years of age had a significantly elevated risk of severe cognitive impairment in late life, independent of their demographic, socioeconomic, and physical health conditions. Yet, this relationship did not persist over a 3-year follow-up period. This may be due to the loss of sample from the 2002 survey to the 2005 survey, leading to substantial changes in the distribution of cognitive functioning in the study sample. Findings on oldest-old men lend support to the linked lives principle, emphasizing the intergenerational spillover of human capital at the family level <ref type="bibr" target="#b20">(Hagestad, 2003)</ref>. These findings are also consistent with the life-span development principle  and provide further evidence that childhood trauma is associated with adverse adult health outcomes, in this case early maternal death and cognitive status in late life. The gender differences observed in this study imply that both the gender of the deceased parent and the gender of the bereaved offspring may moderate the association between early parental death and cognitive functioning. Similar to the findings of <ref type="bibr">Norton and colleagues (2011)</ref>, the current study also shows that the death of a mother rather than the death of a father in early life was detrimental to cognitive health. One possible explanation for this finding is that, in traditional Chinese society, mothers were more likely than fathers to be the primary care providers for children and subsequently had stronger affective, cognitive, and behavioral connections to their offspring <ref type="bibr" target="#b12">(Fan, 2003)</ref>. According to the brain reserve capacity theory, a lack of early cognitive training could lower brain reserve and subsequently allow for cognitive problems to appear earlier in one's life course <ref type="bibr" target="#b50">(Zhang et al., 1990)</ref>. It is therefore plausible to believe that among a population with limited opportunities for formal education, the absence of a mother in early life may disrupt the cognitive development of the offspring, which further leads to cognitive impairment in late life.</p><p>Different from findings of <ref type="bibr">Takeuchi and colleagues (2003)</ref> that losing the same-sex parent was associated with worse health, the current study found that the early death of a mother affected the cognitive impairment risk in men but not in women. Given that women in traditional Chinese society tended to experience more disadvantages than men in many different aspects of life (e.g., <ref type="bibr" target="#b12">Fan, 2003;</ref><ref type="bibr" target="#b27">Liu, Fu, Roberto, &amp; Savla, 2019)</ref>, it is possible that growing up with one or both parents did not necessarily protect women from other lifecourse disadvantages, including cognitive impairment in late life. The resilience literature might also shed some light on the nonsignificant findings for oldest-old women. It has been documented that females are generally more resilient to stressful events than males (e.g., <ref type="bibr" target="#b7">De Bellis &amp; Keshavan, 2003;</ref><ref type="bibr" target="#b35">McGloin &amp; Widom, 2001</ref>). In the context of this study, women could have been more resilient to traumatic events such as the death of a parent than men, rendering the longterm impact of parental death to be only significant for men. Additionally, <ref type="bibr">Samplin and colleagues (2013)</ref> found that the brains of healthy males were more vulnerable to childhood maltreatment than healthy females. This might further help explain why results were significant for men but not for women in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Plausible Mechanisms</head><p>Contrary to expectation, this study did not find evidence that respondents' educational attainment mediated the association between early parental death and cognitive status in late life. This may be attributed to the disruption of the educational system in the early 20th century in China due to wars and political persecution <ref type="bibr" target="#b6">(Cong, 2008)</ref>. It is also notable that about two thirds of older adults in this study were illiterate. Even for those who were educated, the majority of them received no more than 12 years' education. It is therefore difficult to observe the long-term effect of education on cognitive functioning for the current cohort of older adults.</p><p>Although this study did not identify a specific mechanism driving early parental death to harm cognitive functioning in late life, previous research has identified potential pathways through which early-life trauma might influence cognitive development over time. First, childhood adversities are believed to influence latelife health conditions through biological processes <ref type="bibr" target="#b24">(Kuh, Ben-Shlomo, 2004)</ref>. For instance, <ref type="bibr" target="#b9">Dye (2018)</ref> reported that early childhood trauma could cause neurobiological changes that might further lead to significant changes in brain function. <ref type="bibr" target="#b34">McEwen (2002)</ref> provided evidence that the lifelong cumulative effect of stress reactivity and recovery could lead to neuronal death. Taken together, experiencing the death of a parent in early life may lead to repeated physiological stress reactions over the life course, which further damages cognitive functioning through the death of neuronal cells. Second, the acquisition of unhealthy lifestyles and behaviors might also link early parental death to late-life cognitive problems. For instance, the death of a parent has been indicated as a risk factor of drug abuse <ref type="bibr" target="#b19">(Giordano, Ohlsson, Kendler, Sundquist, &amp; Sundquist, 2014)</ref>, which is further linked to higher risk of cognitive disorders (de Micheli, Andrade, da Silva, &amp; de Souza Formigoni, 2016). Moreover, the resilience literature has identified a number of pathways,  such as psychological adjustment and positive social relationships, that may help protect children and adolescents against risks following exposure to adversity (e.g., <ref type="bibr" target="#b33">Masten, Best, &amp; Garmezy, 1990;</ref><ref type="bibr" target="#b46">Thompson, Arnkoff, &amp; Glass, 2011)</ref>. There is also evidence that participating in leisure activities could mediate the detrimental effect of early parental loss on cognitive functioning <ref type="bibr" target="#b16">(Fu, 2015)</ref>.</p><formula xml:id="formula_0">Missing (n = 1,112) Total (N = 4,437) M (SD) M (SD) M (SD) M (SD) M (SD) F Statistic</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Strengths and Limitations</head><p>Findings of this study cannot be fully understood without giving attention to several limitations. First, the CLHLS data set did not include information regarding how historical events such as wars and political persecution had affected the life experiences of the study subjects. Without such information, the current study cannot estimate how these dramatic social changes might have shaped participants' cognitive health directly and indirectly over time. Second, there is a lack of information on the quality of relationships between the study subjects and their parents. It is possible, for instance, that the death of a parent was more stressful for children and adolescents who had a closer relationship with their parents than otherwise. Third, it is unknown whether the remaining parent of the bereaved children/adolescents had remarried after the death of the spouse, so that we cannot examine the effect of parental remarriage on the cognitive development of the bereaved offspring. However, given that remarriage was not common in traditional Chinese society and that widow remarriage was once banned in China <ref type="bibr" target="#b31">(Mann, 1987)</ref>, the lack of this information might not substantially affect the study estimates. Fourth, this study measured cognitive function based on a screening tool-MMSE, which may have ceiling and floor effects. Franco-Marina and colleagues (2010) argued that poorly educated persons might be more prevalent on the side of MMSE ceiling effects, which persisted even after adjusting for educational attainment. As the majority of respondents (especially women) in this study were illiterate, the MMSE ceiling effects could possibly affect the estimates of cognitive functioning. In addition, results of this study might reflect a healthy selection effect, such that those who were able to recall age at parental death were more likely to be in better cognitive shape. Finally, there is also evidence that memory recall of traumatic experiences (and therefore self-report information by victims of traumatic events) is not always reliable (e.g., <ref type="bibr" target="#b29">Loftus &amp; Kaufman, 1992)</ref>. Given that age at parental death in the CLHLS data set was based on retrospective information and results were only significant at baseline (in 2002), we cannot make any causal inference regarding the effect of early parental death on cognitive health. Despite these limitations, the current study contributes to the extant literature in several ways. First, by investigating the long-term impact of early parental death on cognitive health in the oldest-old population, this study enriches the literature on how health issues in advanced age may have origins rooted in very early life. Moreover, this research provides evidence for the gendered nature of the relationship between early parental death and cognitive development over the life course. Specifically, both the gender of the deceased parent and the gender of the bereaved offspring have been indicated to shape the impact of early parental death on cognitive functioning. In addition, this study gives attention to an understudied topic in the Chinese contextthe long-term health penalty of early parental death among men and women who were born and mostly lived in a patriarchal society. Findings of this study contribute new and important insights to our understanding of the cognitive consequences of childhood adversities and are informative for effective policy interventions aiming to promote the health and well-being of children and adolescents with traumatic experiences. The absence of a parent due to parental death or separation could pose a long-term risk to health in that nurturing by a caring parent early in life is central to successful physical and mental development of children <ref type="bibr" target="#b30">(Luecken &amp; Roubinov, 2012)</ref>. Policy makers should look into providing sufficient service and support to children who did not grow up with a parent (especially a mother). As individuals who experience traumatic events might have long-term traumatic memories and even develop post-traumatic stress disorder <ref type="bibr" target="#b53">(Zhao &amp; Fu, 2010)</ref>, policy makers should also pay attention to post-traumatic stress prevention for young children who had experienced the death or separation of a close family member, such as a parent.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Proportion of respondents with SCI by gender and age. Note. SCI: MMSE &lt;10. SCI = severe cognitive impairment; MMSE = Mini-Mental State Examination.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Descriptive Statistics and Univariate Comparisons of Study Variables by Early Parental Death Status, CLHLS 2002.</figDesc><table><row><cell></cell><cell></cell><cell cols="3">Early parental death status</cell><cell></cell><cell></cell></row><row><cell></cell><cell>No early</cell><cell>Death of both</cell><cell>Death of</cell><cell>Death of father</cell><cell></cell><cell></cell></row><row><cell></cell><cell>parental death</cell><cell>parents ≤16 years of age</cell><cell>mother ≤16 years of age</cell><cell>≤16 years of age</cell><cell>Missing</cell><cell>Total a</cell></row><row><cell></cell><cell>(n = 5,451)</cell><cell>(n = 451)</cell><cell>(n = 710)</cell><cell>(n = 1,023)</cell><cell>(n = 3,318)</cell><cell>(N = 10,953)</cell></row><row><cell>Continuous variable</cell><cell>M (SD)</cell><cell>M (SD)</cell><cell>M (SD)</cell><cell>M (SD)</cell><cell>M (SD)</cell><cell>F statistic</cell></row><row><cell>Age (years; range: 80-105)</cell><cell>91.61 (7.26)</cell><cell>92.07 (7.44)</cell><cell>90.66 (6.99)</cell><cell>90.73 (7.05)</cell><cell>94.42 (7.07)</cell><cell>106.73***</cell></row><row><cell cols="2">Cognitive function (MMSE; range: 0-30) 21.25 (8.91)</cell><cell>20.01 (9.12)</cell><cell>21.24 (8.78)</cell><cell cols="2">21.57 (8.67) 16.72 (10.03)</cell><cell>139.43***</cell></row><row><cell>Categorical variable</cell><cell>n (%)</cell><cell>n (%)</cell><cell>n (%)</cell><cell>n (%)</cell><cell>n (%)</cell><cell>χ 2</cell></row><row><cell>Women (vs. men)</cell><cell cols="2">3,078 (56.47) 285 (63.19)</cell><cell>382 (53.80)</cell><cell cols="2">575 (56.21) 2,286 (68.90)</cell><cell>157.17***</cell></row><row><cell>Han (vs. minority)</cell><cell cols="2">5,187 (95.21) 415 (92.02)</cell><cell>683 (96.20)</cell><cell cols="2">971 (94.92) 3,105 (93.58)</cell><cell>23.44**</cell></row><row><cell>Married (vs. otherwise)</cell><cell>1,012 (18.57)</cell><cell>66 (14.63)</cell><cell>137 (19.30)</cell><cell>212 (20.72)</cell><cell>373 (11.24)</cell><cell>102.17***</cell></row><row><cell>No education (vs. some education)</cell><cell cols="2">3,409 (62.58) 330 (73.33)</cell><cell>420 (59.24)</cell><cell cols="2">672 (66.01) 2,488 (76.91)</cell><cell>371.50***</cell></row><row><cell>Father had a nonmanual job (vs.</cell><cell>222 (4.08)</cell><cell>12 (2.67)</cell><cell>41 (5.77)</cell><cell>63 (6.16)</cell><cell>97 (3.04)</cell><cell>267.74***</cell></row><row><cell>otherwise)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No pension (vs. pension)</cell><cell cols="2">4,555 (83.59) 372 (82.48)</cell><cell>570 (80.51)</cell><cell cols="2">805 (78.69) 2,893 (87.30)</cell><cell>63.46***</cell></row><row><cell>Born in a rural area (vs. urban)</cell><cell cols="2">4,610 (84.57) 379 (84.04)</cell><cell>594 (83.66)</cell><cell cols="2">839 (82.09) 2,808 (86.13)</cell><cell>141.43***</cell></row><row><cell>Living in a rural area (vs. urban)</cell><cell cols="2">2,931 (53.77) 200 (44.35)</cell><cell>372 (52.39)</cell><cell cols="2">506 (49.46) 1,800 (54.25)</cell><cell>22.18***</cell></row><row><cell>ADL status</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ADL independence</cell><cell cols="2">3,400 (62.62) 270 (59.87)</cell><cell>462 (62.25)</cell><cell cols="2">657 (64.29) 1,702 (51.67)</cell><cell>206.27***</cell></row><row><cell>Dependence in 1 ADL</cell><cell>909 (16.74)</cell><cell>74 (16.41)</cell><cell>108 (15.25)</cell><cell>163 (15.95)</cell><cell>573 (17.40)</cell><cell></cell></row><row><cell>Dependence in 2 ADL</cell><cell>315 (5.80)</cell><cell>33 (7.32)</cell><cell>40 (5.65)</cell><cell>56 (5.48)</cell><cell>219 (6.65)</cell><cell></cell></row><row><cell>Dependence in 3 ADL</cell><cell>201 (3.70)</cell><cell>14 (3.10)</cell><cell>28 (3.95)</cell><cell>33 (3.23)</cell><cell>205 (6.22)</cell><cell></cell></row><row><cell>Dependence in 4 ADL</cell><cell>208 (3.83)</cell><cell>28 (6.21)</cell><cell>30 (4.24)</cell><cell>38 (3.72)</cell><cell>188 (5.71)</cell><cell></cell></row><row><cell>Dependence in 5 ADL</cell><cell>218 (4.01)</cell><cell>20 (4.43)</cell><cell>26 (3.67)</cell><cell>45 (4.40)</cell><cell>201 (6.10)</cell><cell></cell></row><row><cell>Dependence in 6 ADL</cell><cell>179 (3.30)</cell><cell>12 (2.66)</cell><cell>14 (1.98)</cell><cell>30 (2.94)</cell><cell>206 (6.25)</cell><cell></cell></row><row><cell cols="2">Suffering from serious diseases (vs. not) 959 (17.62)</cell><cell>90 (19.96)</cell><cell>140 (19.77)</cell><cell>229 (22.45)</cell><cell>699 (21.12)</cell><cell>26.77*</cell></row><row><cell cols="2">Participating in social activities (vs. not) 591 (10.84)</cell><cell>45 (9.98)</cell><cell>93 (13.10)</cell><cell>106 (10.36)</cell><cell>198 (5.97)</cell><cell>73.91***</cell></row><row><cell cols="2">Severely cognitively impaired (vs. not) 729 (13.18)</cell><cell>71 (15.74)</cell><cell>98 (13.80)</cell><cell>135 (13.20)</cell><cell>914 (27.58)</cell><cell>315.82***</cell></row></table><note>Note. Severe cognitive impairment: MMSE &lt;10. CLHLS = Chinese Longitudinal Healthy Longevity Survey; ADL = activities of daily living; MMSE = Mini- Mental State Examination.a Apart from "early parental death," missing values of all the other study variables did not exceed 2% and were excluded from this table.*p &lt; .05. **p &lt; .01. ***p &lt; .001.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Severe Cognitive Impairment Predicted by Early Parental Death Status, CLHLS 2002. Note. Severe Cognitive Impairment: MMSE &lt;10. CLHLS = Chinese Longitudinal Healthy Longevity Survey; ADL = activities of daily living; OR = odds ratio; CI = confidence interval..Missing values for all the study variables (30.95%) were excluded from this table. *p &lt; .05. **p &lt; .01. ***p &lt; .001.</figDesc><table><row><cell></cell><cell>Full a (N = 7,563)</cell><cell>Men (n = 3,288)</cell><cell>Men (n = 3,288)</cell><cell>Women (n = 4,275)</cell><cell>Women (n = 4,275)</cell></row><row><cell></cell><cell>OR (95% CI)</cell><cell>OR (95% CI)</cell><cell>OR (95% CI)</cell><cell>OR (95% CI)</cell><cell>OR (95% CI)</cell></row><row><cell>Variable</cell><cell>Full model</cell><cell>Reduced model</cell><cell>Full model</cell><cell>Reduced model</cell><cell>Full model</cell></row><row><cell>Early parental death status</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No early parental death</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>1</cell></row><row><cell>(reference)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Death of both parents</cell><cell>1.17 (0.87, 1.57)</cell><cell>0.96 (0.55, 1.70)</cell><cell>0.94 (0.53, 1.66)</cell><cell>1.25 (0.88, 1.77)</cell><cell>1.24 (0.88, 1.76)</cell></row><row><cell>≤16 years of age</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Death of mother ≤16</cell><cell>1.27 (0.99, 1.64)</cell><cell>1.52 (1.01, 2.28)*</cell><cell>1.52 (1.01, 2.27)*</cell><cell>1.14 (0.83, 1.57)</cell><cell>1.17 (0.85, 1.61)</cell></row><row><cell>years of age old</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Death of father ≤16</cell><cell>1.10 (0.88, 1.37)</cell><cell>1.13 (0.78, 1.65)</cell><cell>1.12 (0.76, 1.63)</cell><cell>1.08 (0.82, 1.41)</cell><cell>1.08 (0.82, 1.42)</cell></row><row><cell>years of age</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Age (years)</cell><cell cols="5">1.08 (1.07, 1.09)*** 1.08 (1.06, 1.11)*** 1.08 (1.06, 1.11)*** 1.08 (1.06, 1.10)*** 1.08 (1.06, 1.09)***</cell></row><row><cell>Women (vs. men)</cell><cell>0.88 (0.73, 1.06)</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Han (vs. minority)</cell><cell>0.87 (0.62, 1.21)</cell><cell>0.59 (0.34, 1.01)</cell><cell>0.59 (0.35, 1.02)</cell><cell>1.07 (0.70, 1.63)</cell><cell>1.08 (0.71, 1.65)</cell></row><row><cell>Married (vs. otherwise)</cell><cell>0.81 (0.63, 1.06)</cell><cell>0.82 (0.60, 1.11)</cell><cell>0.82 (0.60, 1.11)</cell><cell>0.77 (0.46, 1.31)</cell><cell>0.77 (0.46, 1.31)</cell></row><row><cell>No education (vs. some</cell><cell>1.28 (1.05, 1.56)*</cell><cell>-</cell><cell>1.17 (0.90, 1.52)</cell><cell>-</cell><cell>1.47 (1.08, 1.99)*</cell></row><row><cell>education)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Father had a nonmanual</cell><cell>1.12 (0.76, 1.64)</cell><cell>0.47 (0.21, 1.06)</cell><cell>0.49 (0.22, 1.09)</cell><cell>1.46 (0.93, 2.28)</cell><cell>1.63 (1.04, 2.57)*</cell></row><row><cell>job (vs. otherwise)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No pension (vs. pension)</cell><cell>1.43 (1.09, 1.89)*</cell><cell>1.50 (1.05, 2.15)*</cell><cell>1.45 (1.00, 2.09)*</cell><cell>1.41 (0.88, 2.25)</cell><cell>1.30 (0.81, 2.08)</cell></row><row><cell>Born in a rural area (vs.</cell><cell>1.15 (0.91, 1.45)</cell><cell>1.05 (0.70, 1.56)</cell><cell>1.03 (0.69, 1.53)</cell><cell>1.29 (0.97, 1.73)</cell><cell>1.23 (0.91, 1.65)</cell></row><row><cell>urban)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Living in a rural area (vs.</cell><cell>1.09 (0.93, 1.28)</cell><cell>1.10 (0.82, 1.47)</cell><cell>1.10 (0.82, 1.48)</cell><cell>1.09 (0.90, 1.33)</cell><cell>1.08 (0.89, 1.31)</cell></row><row><cell>urban)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ADL status</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ADL independence</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>1</cell></row><row><cell>(reference)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Dependence in 1 ADL</cell><cell>1.49 (1.21, 1.83)***</cell><cell>1.37 (0.94, 1.98)</cell><cell>1.36 (0.94, 1.97)</cell><cell>1.51 (1.17, 1.94)**</cell><cell>1.50 (1.16, 1.94)**</cell></row><row><cell>Dependence in 2 ADL</cell><cell cols="5">2.13 (1.63, 2.79)*** 2.51 (1.57, 4.03)*** 2.51 (1.57, 4.02)*** 1.94 (1.39, 2.69)*** 1.96 (1.41, 2.73)***</cell></row><row><cell>Dependence in 3 ADL</cell><cell cols="5">3.54 (2.63, 4.78)*** 4.98 (2.81, 8.84)*** 5.01 (2.82, 8.87)*** 3.09 (2.17, 4.39)*** 3.13 (2.20, 4.45)***</cell></row><row><cell>Dependence in 4 ADL</cell><cell cols="5">3.33 (2.49, 4.46)*** 5.29 (3.18, 8.79)*** 5.30 (3.18, 8.82)*** 2.73 (1.92, 3.89)*** 2.74 (1.92, 3.90)***</cell></row><row><cell>Dependence in 5 ADL</cell><cell cols="5">5.47 (4.16, 7.19)*** 6.72 (4.05, 11.15)*** 6.75 (4.07, 11.20)*** 5.03 (3.63, 6.97)*** 5.01 (3.62, 6.95)***</cell></row><row><cell>Dependence in 6 ADL</cell><cell>17.16 (12.44,</cell><cell>16.08 (8.78,</cell><cell>15.94 (8.70,</cell><cell>17.00 (11.59,</cell><cell>17.65 (12.00,</cell></row><row><cell></cell><cell>23.67)***</cell><cell>29.47)***</cell><cell>29.20)***</cell><cell>24.93)***</cell><cell>25.95)***</cell></row><row><cell>Suffering from serious</cell><cell>1.21 (1.01, 1.46)*</cell><cell>1.03 (0.75, 1.42)</cell><cell>1.03 (0.75, 1.42)</cell><cell>1.29 (1.03, 1.62)*</cell><cell>1.31 (1.04, 1.64)*</cell></row><row><cell>diseases (vs. not)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Participating in social</cell><cell cols="4">0.31 (0.20, 0.49)*** 0.27 (0.14, 0.51)*** 0.27 (0.14, 0.51)*** 0.37 (0.20, 0.68)**</cell><cell>0.38 (0.20, 0.70)**</cell></row><row><cell>activities (vs. not)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>-2 log likelihood</cell><cell>4,898.19</cell><cell>1,727.77</cell><cell>1,726.06</cell><cell>3,160.13</cell><cell>3,149.72</cell></row></table><note>a</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Univariate Comparisons of Cognitive Functioning by Early Parental Death Status, CLHLS 2005.</figDesc><table><row><cell></cell><cell></cell><cell cols="2">Early parental death status</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>No early</cell><cell>Death of both parents</cell><cell>Death of mother</cell><cell>Death of father</cell><cell></cell><cell></cell></row><row><cell></cell><cell>parental death</cell><cell>≤16 years of age</cell><cell>≤16 years of age</cell><cell>≤16 years of age</cell><cell>Missing</cell><cell>Total</cell></row><row><cell></cell><cell>(n = 5,449)</cell><cell>(n = 451)</cell><cell>(n = 710)</cell><cell>(n = 1,021)</cell><cell>(n = 3,314)</cell><cell>(N = 10,945)</cell></row><row><cell>Cognitive impairment</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>status a</cell><cell>n (%)</cell><cell>n (%)</cell><cell>n (%)</cell><cell>n (%)</cell><cell>n (%)</cell><cell>χ 2</cell></row><row><cell>Lost to follow-up</cell><cell>629 (11.54)</cell><cell>50 (11.09)</cell><cell>108 (15.21)</cell><cell>128 (12.54)</cell><cell>389 (11.74)</cell><cell>186.50***</cell></row><row><cell>(n = 1,304)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Deceased by 2005</cell><cell>2,450 (44.96)</cell><cell>220 (48.78)</cell><cell>304 (42.82)</cell><cell>417 (40.84)</cell><cell>1,813 (54.71)</cell><cell></cell></row><row><cell>(n = 5,204)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Severely cognitively</cell><cell>1,933 (35.47)</cell><cell>140 (31.04)</cell><cell>237 (33.38)</cell><cell>398 (38.98)</cell><cell>780 (23.54)</cell><cell></cell></row><row><cell>impaired (n = 3,488)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Not severely cognitively</cell><cell>437 (8.02)</cell><cell>41 (9.09)</cell><cell>61 (8.59)</cell><cell>78 (7.64)</cell><cell>332 (10.02)</cell><cell></cell></row><row><cell>impaired (n = 949)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>No early</cell><cell>Death of both parents</cell><cell>Death of mother</cell><cell>Death of father</cell><cell></cell><cell></cell></row><row><cell></cell><cell>parental death</cell><cell>≤16 years of age</cell><cell>≤16 years of age</cell><cell>≤16 years of age</cell><cell></cell><cell></cell></row><row><cell></cell><cell>(n = 2,370)</cell><cell>(n = 181)</cell><cell>(n = 298)</cell><cell>(n = 476)</cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>Respondents who were deceased or lost to follow-up in 2005 were excluded from this section of the table. *p &lt; .05. **p &lt; .01. ***p &lt; .001.</figDesc><table><row><cell>Cognitive function b (MMSE;</cell><cell>20.27 (10.03)</cell><cell>19.63 (10.65)</cell><cell>19.71 (10.29)</cell><cell>20.57 (9.57)</cell><cell>16.76 (10.95)</cell><cell>24.26***</cell></row><row><cell>range: 0-30)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note>Note. Severe cognitive impairment: MMSE &lt;10. MMSE = Mini-Mental State Examination; ADL = activities of daily living.a Eight cases had missing data on cognitive impairment status in 2005 and were excluded from this table.b</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="16">.43% were married and lived with spouse, 1.17% were never married, 1.38% were separated, and 0.5% were divorced. Marital status was dichotomized into a binary variable, where "married" was coded as 1 (16.43%) and "otherwise" coded as (83.57%).</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The author is grateful for the comments of Dr. David J. Waters, Dr. Sharon L. Christ, Dr. J. Jill Suitor, Dr. Elisa M. Martin, Cate LaPlante, and the anonymous reviewers.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author's Note</head><p>A poster based on an earlier version of this paper was presented at the 67th Annual Meeting of the Gerontological Society of America.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of Conflicting Interests</head><p>The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Funding</head><p>The author(s) received no financial support for the research, authorship, and/or publication of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID iD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rong Fu</head><p>https://orcid.org/0000-0001-8788-2939 Note 1. In the raw data set, 80.52% of respondents were widowed,</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Biography</head><p>Rong Fu is an assistant professor in the Department of Sociology at Siena College. She holds a dual-title PhD in sociology and gerontology from Purdue University. Her recent research focuses on the health consequences of early-life disadvantages.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Education attenuates the association between dietary patterns and cognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">N</forename><surname>Akbaraly</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Singh-Manoux</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Marmot</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Brunner</surname></persName>
+		</author>
+		<idno type="DOI">10.1159/000199235</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Dementia and Geriatric Cognitive Disorders</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="147" to="154" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Alzheimer&apos;s Disease International</title>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Author</publisher>
+			<pubPlace>London, England</pubPlace>
+		</imprint>
+	</monogr>
+	<note>World Alzheimer report</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Life course pathways to adult onset diabetes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">E</forename><surname>Best</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Hayward</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Hidajat</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/19485565.2005.9989104</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Social Biology</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="94" to="106" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Health disparities and health equity: Concepts and measurement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Braveman</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.publhealth.27.021405.102103</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Public Health</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="167" to="194" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Epidemiology of Alzheimer&apos;s disease and other forms of dementia in China, 1990-2010: A systematic review and analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">Y</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Theodoratou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Car</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0140-6736</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Global Health Epidemiology Reference Group (GHERG)</title>
+		<imprint>
+			<biblScope unit="volume">381</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="60221" to="60225" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>Lancet</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Underrecognition of dementia in long-term care homes in Hong Kong</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">T</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">C W</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">K</forename><surname>Chow</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13607863.2011.630377</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Aging &amp; Mental Health</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="516" to="520" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">From &quot;Cainü&quot; to &quot;Nü Jiaoxi&quot;: Female normal schools and the transformation of women&apos;s education in the late Qing period</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Cong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Different worlds of discourse: Transformations of gender and genre in late Qing and early Republican China</title>
+		<editor>N. Qian, G. S. Fong, &amp; R. J. Smith</editor>
+		<meeting><address><addrLine>Leiden, Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>Brill</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="115" to="144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Sex differences in brain maturation in maltreatment-related pediatric posttraumatic stress disorder</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">De</forename><surname>Bellis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Keshavan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename></persName>
+		</author>
+		<idno type="DOI">10.1016/S0149-7634(03)00013-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroscience &amp; Biobehavioral Reviews</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="103" to="117" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Drug abuse in adolescence: Neurobiological, cognitive, and psychological issues</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>De Micheli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Andrade</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Da Silva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>De Souza</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">O</forename><surname>Formigoni</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<publisher>Springer</publisher>
+			<pubPlace>Cham, Switzerland</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The impact and long-term effects of childhood trauma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Dye</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/10911359.2018.1435328</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Human Behavior in the Social Environment</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="381" to="392" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The life course and aging: Challenges, lessons, and new directions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">H</forename><surname>Elder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Johnson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Invitation to the life course: Toward new understandings of later life</title>
+		<editor>R. A. Settersten</editor>
+		<meeting><address><addrLine>Amityville, NY; Baywood</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="49" to="81" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The emergence and development of life course theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">H</forename><surname>Elder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Crosnoe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of the life course</title>
+		<editor>J. T. Mortimer &amp; M. J. Shanahan</editor>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="3" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Rural-urban migration and gender division of labor in transitional china</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Fan</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/1468-2427.00429</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Urban and Regional Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="24" to="47" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Cumulative disadvantage and health: Long-term consequences of obesity?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">F</forename><surname>Ferraro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Kelley-Moore</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1519759</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Sociological Review</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="707" to="729" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A practical method for grading the cognitive state of patients for the clinician</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Folstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Folstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Mchugh</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0022-3956(75</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Psychiatric Research</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="90026" to="90032" />
+			<date type="published" when="1975" />
+		</imprint>
+	</monogr>
+	<note>Minimental state</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The Mini-Mental State Examination revisited: Ceiling and floor effects after score adjustment for educational level in an aging Mexican population</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Franco-Marina</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>García-González</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Wagner-Echeagaray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gallo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Ugalde</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sanchez-Garcia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>García-Peña</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S1041610209990822</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Psychogeriatrics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="72" to="81" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Early parental loss and cognitive impairment in old age: Is participating in leisure activities a pathway?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fu</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geront/gnv184.19</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Gerontologist</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">S2</biblScope>
+			<biblScope unit="page">418</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Social support and cognitive impairment in the oldest old: Structure, function, and mutual effect</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fu</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/geront/gnw162.1706</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Gerontologist</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">S3</biblScope>
+			<biblScope unit="page">428</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Parental loss and children&apos;s well-being</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Gimenez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S.-Y</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-T</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-L</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.3368/jhr.48.4.1035</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Human Resources</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="1035" to="1071" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Unexpected adverse childhood experiences and subsequent drug use disorder: A Swedish population study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">N</forename><surname>Giordano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Ohlsson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">S</forename><surname>Kendler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Sundquist</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sundquist</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/add.12537</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Addiction</title>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="page" from="1119" to="1127" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Interdependent lives and relationships in changing times: A life-course view of families and aging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">O</forename><surname>Hagestad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Invitation to the life course: Toward new understandings of later life</title>
+		<editor>R. A. Settersten</editor>
+		<meeting><address><addrLine>Amityville, NY; Baywood</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="135" to="159" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The long arm of childhood: The influence of early-life social conditions on men&apos;s mortality</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Hayward</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">K</forename><surname>Gorman</surname></persName>
+		</author>
+		<idno type="DOI">10.1353/dem.2004.0005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Demography</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="87" to="107" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Reports of abusive experiences during childhood and adult health ratings: Personal control as a pathway?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Irving</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">F</forename><surname>Ferraro</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0898264305280994</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Aging and Health</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="458" to="485" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Early parental loss, recent life events, and changes in health among older adults</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Krause</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/089826439801000401</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Aging and Health</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="395" to="421" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">A life course approach to chronic disease epidemiology: Tracing the origins of ill-health from early to adult life</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kuh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Ben-Shlomo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Malthusian models and Chinese realities: China&apos;s demographic system 1700-2000</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1728-4457.1999.00033.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Population and Development Review</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="33" to="66" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Intergenerational association of maternal obesity and child peer victimization in the United States</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0022146518824566</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Health and Social Behavior</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="69" to="83" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Depressive symptoms among adult children caregivers in China: Moderating effects of working status and gender</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">A</forename><surname>Roberto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Savla</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13607863.2018.1488943</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Aging &amp; Mental Health</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1391" to="1399" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Population ageing in developed and developing regions: Implications for health policy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Lloyd-Sherlock</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0277-9536(00</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Social Science &amp; Medicine</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page">68</biblScope>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Why do traumatic experiences sometimes produce good memory (flashbulbs) and sometimes no memory (repression</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">F</forename><surname>Loftus</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Kaufman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Affect and accuracy in recall: Studies of &quot;flashbulb&quot; memories</title>
+		<editor>E. Winograd &amp; U. Neisser</editor>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="1992" />
+			<biblScope unit="page" from="212" to="223" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Pathways to lifespan health following childhood parental death. Social and Personality Psychology Compass</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">J</forename><surname>Luecken</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">S</forename><surname>Roubinov</surname></persName>
+		</author>
+		<idno>doi:10.1111/ j.1751-9004.2011.00422.x</idno>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="243" to="257" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Widows in the kinship, class and community structures of Qing dynasty China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mann</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2056665</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Asian Studies</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="37" to="56" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Education and physical activity mediate the relationship between ethnicity and cognitive function in late middle-aged adults</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">C</forename><surname>Masel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Raji</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Peek</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13557851003681273</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ethnicity and Health</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="283" to="302" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Resilience and development: Contributions from the study of children who overcame adversity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Masten</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Best</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Garmezy</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S0954579400005812</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Development and Psychopathology</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="425" to="444" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Sex, stress and the hippocampus: Allostasis, allostatic load and the aging process</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">S</forename><surname>Mcewen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0197-4580(02)00027-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurobiology of Aging</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="921" to="939" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Resilience among abused and neglected children grown up</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Mcgloin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">S</forename><surname>Widom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Development and Psychopathology</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1021" to="1038" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Education, social status, and health</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Mirowsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">E</forename><surname>Ross</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<publisher>Aldine de Gruyter</publisher>
+			<pubPlace>New Brunswick, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Education, learned effectiveness, and health</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Mirowsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">E</forename><surname>Ross</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/14748460500372366</idno>
+	</analytic>
+	<monogr>
+		<title level="j">London Review of Education</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="205" to="220" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Volumetric magnetic resonance imaging in men with dementia of the Alzheimer type: Correlations with disease severity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">D</forename><surname>Decarli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Daly</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Gillette</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">R</forename><surname>Mcintosh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">V</forename><surname>Haxby</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Horwitz</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0006-3223(93)90153-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biological Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="612" to="621" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">The aging mind: Opportunities in cognitive research</title>
+		<idno type="DOI">10.17226/9783</idno>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>The National Academies Press</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>National Research Council</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Early parental death and remarriage of widowed parents as risk factors for Alzheimer disease: The cache county study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">C</forename><surname>Norton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Østbye</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">T</forename><surname>Tschanz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Corcoran</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/JGP.0b013e3182011b38</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Association for Geriatric Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="814" to="824" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note>Cache County Investigators</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">A prospective population study of psychosocial risk factors for late onset dementia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Person</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Skoog</surname></persName>
+		</author>
+		<idno>doi:10.1002/ (SICI)1099-1166(199601)11:1&lt;15::AID-GPS262&gt;3.0.CO;2-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Geriatric Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="15" to="22" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Younger age at crisis following parental death in male children and adolescents is associated with higher risk for dementia at old age</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ravona-Springer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Beeri</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Goldbourt</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/WAD.0b013e3182191f86</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Alzheimer Disease &amp; Associated Disorders</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="68" to="73" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Sex differences in resilience to childhood maltreatment: Effects of trauma history on hippocampal volume, general cognition and subclinical psychosis in healthy adults</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Samplin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Ikuta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">K</forename><surname>Malhotra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Szeszko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Derosse</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpsychires.2013.05.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Psychiatric Research</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="1174" to="1179" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Contribution of chronic diseases to disability in elderly people in countries with low and middle incomes: A 10/66 Dementia Research Group population-based survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Sousa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">P</forename><surname>Ferri</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Acosta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Albanese</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Guerra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Prince</surname></persName>
+		</author>
+		<idno>doi:10.1016/ S0140-6736(09</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">374</biblScope>
+			<biblScope unit="page" from="61829" to="61837" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Childhood parental separation experiences and depressive symptomatology in acute major depression</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Takeuchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Hiroe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Kanai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Morinobu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Kitamura</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Takahashi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">A</forename><surname>Furukawa</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1440-1819.2003.01103.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Psychiatry and Clinical Neurosciences</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="215" to="219" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Conceptualizing mindfulness and acceptance as components of psychological resilience to trauma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">B</forename><surname>Arnkoff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">R</forename><surname>Glass</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1524838011416375</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trauma, Violence &amp; Abuse</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="220" to="235" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Risk factors for dementia in highly educated elderly people in Tianjin, China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">J</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clineuro.2014.04.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Neurology and Neurosurgery</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="page" from="4" to="8" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Gender differentials of the oldest old in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">K</forename><surname>George</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0164027502</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Research on Aging</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="65" to="80" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Functional capacity and selfevaluation of health and life of oldest old in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Vaupel</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/1540-4560.00287</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Social Issues</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="733" to="748" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The prevalence of dementia and Alzheimer&apos;s disease in Shanghai, China: Impact of age, gender, and education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Katzman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Salmon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">.</forename><forename type="middle">.</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">T</forename></persName>
+		</author>
+		<idno>doi:10.1002/ ana.410270412</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Neurology</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="428" to="437" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Gender differentials in cognitive impairment and decline of the oldest old in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Gerontology Series B: Psychological Sciences and Social Sciences</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="107" to="115" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Early life influences on cognitive impairment among oldest old Chinese</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Hayward</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Gerontology Series B: Psychological Sciences and Social Sciences</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="25" to="33" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Risk of civilization: A case study of modern traffic risk in G</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Fu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">City. Journal of Nanjing Agricultural University (Social Sciences Edition)</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="107" to="112" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

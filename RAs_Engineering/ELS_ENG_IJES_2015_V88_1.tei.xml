@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Simple shear of a compressible quasilinear viscoelastic material</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2015-01-23">23 January 2015</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Riccardo</forename><surname>De Pascalis</surname></persName>
+							<email>riccardo.depascalis@gmail.com</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Mathematics</orgName>
+								<orgName type="institution">University of Manchester</orgName>
+								<address>
+									<addrLine>Oxford Road</addrLine>
+									<postCode>M13 9PL</postCode>
+									<settlement>Manchester</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">David</forename><surname>Abrahams</surname></persName>
+							<email>i.d.abrahams@manchester.ac.uk</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Mathematics</orgName>
+								<orgName type="institution">University of Manchester</orgName>
+								<address>
+									<addrLine>Oxford Road</addrLine>
+									<postCode>M13 9PL</postCode>
+									<settlement>Manchester</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">William</forename><forename type="middle">J</forename><surname>Parnell</surname></persName>
+							<email>william.parnell@manchester.ac.uk</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Mathematics</orgName>
+								<orgName type="institution">University of Manchester</orgName>
+								<address>
+									<addrLine>Oxford Road</addrLine>
+									<postCode>M13 9PL</postCode>
+									<settlement>Manchester</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Simple shear of a compressible quasilinear viscoelastic material</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2015-01-23">23 January 2015</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2014.11.011</idno>
+					<note type="submission">Received 14 May 2014 Received in revised form 26 September 2014 Accepted 29 November 2014</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Quasilinear viscoelasticity Hyperelasticity Simple shear Fung Compressibility</keywords>
+			</textClass>
+			<abstract>
+				<p>Fung&apos;s theory of quasilinear viscoelasticity (QLV) was recently reappraised by the authors [Proc. R. Soc. A 479 (2014), 20140058] in light of discussions in the literature of its apparent deficiencies. Due to the utility of the deformation of simple shear in a variety of applications, especially in experiment to deduce material properties, here QLV is employed to solve the problem of the simple shear of a nonlinear compressible quasilinear viscoelastic material. The effects of compressibility on the subsequent deformation and stress fields that result in this isochoric deformation are highlighted, and calculations of the dissipated energy associated with both a &apos;ramp&apos; simple shear profile and oscillatory shear are given.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>A number of materials that are capable of large deformations are also inherently viscoelastic, i.e. exhibit hysteresis under loading. Good examples are rubbers and other polymers <ref type="bibr" target="#b13">(Simo, 1987;</ref><ref type="bibr" target="#b0">Abu Al-Rub, Tehrani, &amp; Darabi, 2014)</ref> as well as soft biological tissues <ref type="bibr" target="#b3">(Drapaca, Tenti, Rohlf, &amp; Sivaloganathan, 2006;</ref><ref type="bibr" target="#b6">Johnson, Livesay, Woo, &amp; Rajagopal, 1996;</ref><ref type="bibr" target="#b9">Peña, Calvo, Martínez, &amp; Doblaré, 2007;</ref><ref type="bibr" target="#b11">Provenzano, Lakes, Corr, &amp; Vanderby, 2002;</ref><ref type="bibr" target="#b12">Rashid, Destrade, &amp; Gilchrist, 2012)</ref>. In some circumstances such media can be modelled reasonably well as hyperelastic materials, using the theory of nonlinear elasticity, and their constitutive behaviour is defined by an associated strain energy function W. However in reality, and certainly when deformation rates are important, such a theory is not appropriate and a nonlinear theory of viscoelasticity is required. In particular an appropriate constitutive law has to be proposed, of which there are many as can be seen in the comprehensive review paper of <ref type="bibr" target="#b15">Wineman (2009)</ref>.</p><p>A popular approach is to use Fung's Quasilinear Viscoelasticity (QLV) theory, which assumes that viscous relaxation rates are independent of the instantaneous local strain. This model, which is a simplification of the Pipkin-Rogers model <ref type="bibr" target="#b10">(Pipkin &amp; Rogers, 1968)</ref> has been the subject of some criticism in recent years. However, in the authors' paper <ref type="bibr" target="#b2">(De Pascalis et al., 2014)</ref> the law was recently reappraised and it was shown that such criticisms were unfounded, e.g. in a number of publications an incorrect QLV relation or stress measure was employed (the latter must be the second Piola-Kirchhoff stress to satisfy objectivity), or the incompressible limiting form was derived erroneously. QLV does of course have limitations; the fact that the relaxation functions are independent of strain is one of these. However the model appears to include enough detail to capture many of the essential elements of the physics whilst not being overly difficult to implement in the context of real-world applications.</p><p>Of great value in a number of applications is the deformation of simple shear. In particular, the importance of this deformation to the biomechanical community is associated with the study of brain tissue for which stress measurements have been taken recently <ref type="bibr" target="#b5">(Gilchrist, Rashid, Murphy, &amp; Saccomandi, 2013;</ref><ref type="bibr" target="#b12">Rashid et al., 2012)</ref>. For a general constitutive viscoelastic Pipkin-Rogers law, the stress-strain equations have been presented in <ref type="bibr" target="#b15">Wineman (2009)</ref>. This, and a number of other nonlinear viscoelastic models are, in practice, difficult to employ, and so Fung's QLV approach is attractive. However, all past applications of Fung's QLV model to simple shear are, to the authors' knowledge, deficient. It thus appears timely, from the viewpoint of both Fung's theory and applications in biomechanics and elsewhere, to study the classical problem of simple shear by employing the authors' new approach to QLV; this is therefore the aim of the present paper. We will carry out the full analysis of the simple shear problem for both incompressible and compressible viscoelastic materials of quasilinear type. Importantly, and unlike the case of simple shear of purely hyperelastic materials, even for isochoric deformations the effects of compressibility can have an influence on the deformation due to the memory effect of the relaxation term associated with hydrostatic compression.</p><p>The general form of the QLV constitutive equation can be written as</p><formula xml:id="formula_0">PðtÞ ¼ Z t À1</formula><p>Gðt À sÞ dP e ds ðsÞ ds;</p><p>where G is, in comparison with linear theory, the stress relaxation second-order tensor, P denotes the second Piola-Kirchhoff stress, and t refers to time. The quantity P e is a strain measure, which here can be considered as the instantaneous second Piola-Kirchhoff elastic stress response derived from a strain energy function W. As noted above, of fundamental importance in QLV is that the function G is independent of the local strain. The tensorial form (1) is a natural generalisation of the one-dimensional law proposed by <ref type="bibr" target="#b4">Fung, 1981</ref> and preserves objectivity.</p><p>It should be noted that many more complicated deformation states for compressible materials with QLV-type behaviour have been studied in the past, including those in <ref type="bibr" target="#b15">Wineman and</ref><ref type="bibr" target="#b16">Waldron, 1995, Waldron and</ref><ref type="bibr" target="#b14">Wineman, 1996</ref>. However it appears that these and other papers, e.g. <ref type="bibr" target="#b13">(Simo, 1987)</ref> incorporate only one relaxation function into the constitutive model for the material. For the general theory of isotropic compressible viscoelastic materials two independent relaxation functions are required in order for the constitutive behaviour to reduce to linear viscoelasticity upon taking the limit of small displacement gradients in the QLV constitutive law. A single relaxation function in the viscoelastic equation is only relevant to the case of incompressible materials as described in De Pascalis et al., 2014.</p><p>In Section 2 an overview of QLV in the context of compressible materials is given and the problem in hand here, i.e. simple shear, is stated. Note that timescales are assumed slow enough that the effects of inertia can be ignored. Explicit expressions are provided for the non-zero components of stress in terms of a general strain energy function. When the deformation is prescribed (i.e. for strain or displacement controlled experiments) this can simply be fed into these expressions to provide a prediction of the resulting stresses. On the other hand, in cases when the traction is prescribed these relations are nonlinear Volterra integral equations which must be solved for the resulting deformation (shear) field. Therefore, in Section 3 the procedure for solving the resulting integral equations is described, based upon the method introduced in De Pascalis et al., 2014. Since the above analysis applies to compressible materials, in Section 4 it is described how the various details are modified when the constraint of incompressibility, common in biomechanical and rubber-like material applications, is imposed. In Section 5 a number of results are given, associated with the simple-shear problem. It is shown that, even for this isochoric deformation, compressibility does have an effect on the resulting deformation and stress fields. The energy dissipated for a deformation that is piecewise linear in time is determined, as well as energy loss per unit cycle for oscillatory shear. We close in Section 6 with a brief summary and some directions for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Constitutive laws and basic equations for simple shear</head><p>In the constitutive law (1), the elastic second Piola-Kirchhoff stress P e under the integral is assumed hyperelastic, i.e. the instantaneous response can be derived from an energy potential W (the strain energy function). The deformation gradient tensor F is defined by</p><formula xml:id="formula_2">FðsÞ ¼ I; s 2 ðÀ1; 0Þ; @x @X ðsÞ; s 2 ½0; t; 8 &lt; :<label>ð2Þ</label></formula><p>with xðsÞ denoting the position of a generic particle P at time s 2 ½0; t, and X its position at the initial reference time. Note that the start time of the motion, and any imposed tractions, will be taken as t ¼ 0. The quantity J ¼ det F, expressing the local volume change, is a constant J ¼ 1 when the deformation is isochoric. Let us assume that the material is isotropic and therefore from the deformation gradient tensor F we obtain the right Cauchy-Green tensor C ¼ F T F, and its principal invariants</p><formula xml:id="formula_3">I 1 ¼ trC; I 2 ¼ 1 2 ðtrCÞ 2 À trC 2 h i ¼ det C ð ÞtrðC À1 Þ; I 3 ¼ det C ¼ J 2 :<label>ð3Þ</label></formula><p>Given isotropy, the viscoelastic Cauchy stress is (referring to De Pascalis et al., 2014)</p><formula xml:id="formula_4">TðtÞ ¼ J À1 FðtÞ P e D ðtÞ þ Z t 0 D 0 ðt À sÞP e D ðsÞ ds F T ðtÞ þ J À1 FðtÞ P e H ðtÞ þ Z t 0 H 0 ðt À sÞP e H ðsÞ ds F T ðtÞ;<label>ð4Þ</label></formula><p>where P e D and P e H are the stress components of P e associated with the deviatoric and hydrostatic parts of the underlying instantaneous elastic Cauchy stresses, i.e.</p><formula xml:id="formula_5">P e ¼ P e D þ P e H ¼ JF À1 T e D þ T e H À Á F ÀT ;<label>ð5Þ</label></formula><p>with T e D ¼ T e À 1 3 trðT e ÞI; T e H ¼ 1 3 trðT e ÞI: ð6Þ</p><p>In terms of the strain energy we find</p><formula xml:id="formula_6">P e D ¼ 2 1 3 ðI 2 W 2 À I 1 W 1 ÞC À1 þ W 1 I À I 3 W 2 C À2 ! ;<label>ð7Þ</label></formula><p>P e H ¼ 2</p><formula xml:id="formula_7">2 3 I 2 W 2 þ 1 3 I 1 W 1 þ I 3 W 3 C À1 ;<label>ð8Þ</label></formula><p>in which W j ¼ @W=@I j and D; H are two scalar (independent) reduced relaxation functions (with Dð0Þ ¼ Hð0Þ ¼ 1). The latter relate to the inherent viscous processes associated with shear (deviatoric) and compressional (volumetric) deformations, respectively. Let us consider the homogeneous deformation of simple shear (see (De Pascalis, 2010) for an overview of the static nonlinear elastic case and related references),</p><formula xml:id="formula_8">x 1 ðtÞ ¼ X 1 þ kðtÞX 2 ; x 2 ¼ X 2 ; x 3 ¼ X 3 ;<label>ð9Þ</label></formula><p>where kðtÞ is a time-dependent parameter representing the shear. The physical components of the deformation gradient tensor F and of its inverse</p><formula xml:id="formula_9">F À1 are 1 k 0 0 1 0 0 0 1 0 B @ 1 C A; 1 Àk 0 0 1 0 0 0 1 0 B @ 1 C A;<label>ð10Þ</label></formula><p>respectively, so that the first three principal invariants of C are</p><formula xml:id="formula_10">I 1 ¼ I 2 ¼ 3 þ k 2 ; I 3 ¼ 1.</formula><p>Let us assume that kðtÞ is such that inertial effects can be neglected; therefore this homogeneous deformation automatically satisfies the equations of motion (equilibrium). As stated earlier, this requires an assumption on the relationship between the shear and the relaxation timescales of the material. The resulting components of stress are, after some algebra, given by T 13 ðtÞ ¼ T 23 ðtÞ ¼ 0 and</p><formula xml:id="formula_11">T 11 ðtÞ ¼ 2ððk 2 ðtÞ þ 1ÞW 1 ðtÞ þ ðk 2 ðtÞ þ 2ÞW 2 ðtÞ þ W 3 ðtÞÞ À 2 3 Z t 0 D 0 ðt À sÞkðsÞ½W 1 ðsÞðkðsÞððkðsÞ À kðtÞÞ 2 þ 4Þ À 6kðtÞÞ þ W 2 ðsÞðkðsÞð2ðkðsÞ À kðtÞÞ 2 þ 5Þ À 6kðtÞÞ ds þ 2 3 Z t 0 H 0 ðt À sÞððkðsÞ À kðtÞÞ 2 þ 1Þ½ðk 2 ðsÞ þ 3ÞðW 1 ðsÞ þ 2W 2 ðsÞÞ þ 3W 3 ðsÞ ds; T 22 ðtÞ ¼ 2ðW 1 ðtÞ þ 2W 2 ðtÞ þ W 3 ðtÞÞ À 2 3 Z t 0 D 0 ðt À sÞk 2 ðsÞðW 1 ðsÞ þ 2W 2 ðsÞÞ ds þ 2 3 Z t 0 H 0 ðt À sÞ½ðk 2 ðsÞ þ 3ÞðW 1 ðsÞ þ 2W 2<label>ðsÞÞ</label></formula><p>þ 3W 3 ðsÞ ds; </p><formula xml:id="formula_12">T 33 ðtÞ ¼ 2ððk 2 ðtÞ þ 2ÞW 2 ðtÞ þ W 1 ðtÞ þ W 3 ðtÞÞ þ 2 3 Z t 0 D 0 ðt À sÞk 2 ðsÞðW 2 ðsÞ À W 1 ðsÞÞ ds þ 2 3 Z t 0 H 0 ðt À sÞ½ðk 2<label>ðsÞ</label></formula><p>As in the nonlinear elastic case both normal and shear stresses are present on surfaces parallel to the coordinate planes and in this viscoelastic case they are time dependent (De Pascalis, 2010). Moreover, in the case when D 0 H 0 0, it is easy to show that the universal relations for isotropic nonlinear elastic solids, </p><formula xml:id="formula_14">T</formula><p>hold. However, in analogy with the simple shear equations for a Pipkin-Rogers constitutive law <ref type="bibr" target="#b15">(Wineman, 2009)</ref>, here the integral terms do not allow (13) to be satisfied and Eq. (12) is odd in the shear, i.e. if k is replaced by Àk, then the stress T 12 is replaced by ÀT 12 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Solutions of the integral equations</head><p>In the simplest case, if we impose the deformation kðtÞ (assuming that appropriate relaxation functions have been chosen and given a specific strain energy function W associated with the instantaneous effective elastic stress) then the equations (11) immediately determine all the components of stress. Physically, however, it is more common to impose tractions and so, in this case, Eqs. (11) are of the nonlinear integral Volterra-type, to be solved for the unknown deformation kðtÞ. Analytical solutions are not possible in general for this viscoelastic deformation. As such it is convenient to implement the numerical procedure proposed in the appendix of De Pascalis et al., 2014. There attention was restricted to incompressible materials and so here the procedure is modified for the compressible case. It is convenient to write the Volterra integral equations in the following separable form </p><formula xml:id="formula_16">TðtÞ ¼ gðkðtÞÞ þ X 2 i¼1 X N j¼1 f ij ðkðtÞÞ Z t 0 G 0 i ðt À sÞh ij ðkðsÞÞ ds;<label>ð14Þ</label></formula><p>As details of the numerical procedure were given in De Pascalis et al., 2014 we do not dwell on numerical aspects here. This discussion aims only to illustrate and compare some aspects of the theory of quasi-linear viscoelasticity in the context of simple shear. In particular, we will carry out (numerical) cycling experiments in order to understand the influence of material properties and relaxation times on the internal rate of working, as is described in the next section.</p><p>To illustrate results, we need a choice of strain energy function; as such we shall employ the compressible Neo-Hookean model proposed by <ref type="bibr" target="#b7">Levinson and Burgess, 1971</ref> </p><formula xml:id="formula_18">W ¼ l 2 ðI 1 À 3Þ þ j þ l 3 ðI 3 À 1Þ À 2 j þ 4 3 l I 1=2 3 À 1 ;<label>ð16Þ</label></formula><p>where l is the infinitesimal shear modulus and j is the infinitesimal bulk modulus, and then</p><formula xml:id="formula_19">W 1 ¼ l 2 ; W 2 ¼ 0; W 3 ¼ Àl:</formula><p>We shall consider the stress relaxation properties later.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Incompressible materials</head><p>When the material in question is considered to be incompressible the problem is posed somewhat differently to the above. In particular, the constitutive law has to be written down with care as I 3 . For QLV it transpires that (4) reduces to De Pascalis et al., 2014</p><formula xml:id="formula_20">TðtÞ ¼ FðtÞ P e D ðtÞ þ Z t 0 D 0 ðt À sÞP e D ðsÞ ds F T ðtÞ À pI;<label>ð17Þ</label></formula><p>where pðtÞ is the Lagrange multiplier required to satisfy the constraint of incompressibility. Eq. <ref type="formula" target="#formula_6">7</ref>becomes P e D ðtÞ ¼ 2</p><formula xml:id="formula_21">I 2 3 W 2 À I 1 3 W 1 C À1 þ W 1 I À W 2 C À2 ! :<label>ð18Þ</label></formula><p>For a simple shear deformation, the components of stress are given by T 13 ðtÞ ¼ T 23 ðtÞ ¼ 0 and </p><formula xml:id="formula_22">T 11 ðtÞ ¼ 2 3 ð2W 1 ðtÞ þ W 2 ðtÞÞk 2 ðtÞ À pðtÞ À 2 3 Z t 0 D 0 ðt À sÞkðsÞ½W 1 ðsÞðkðsÞð4 þ ðkðsÞ À kðtÞÞ 2 Þ À 6kðtÞÞ þ W 2 ðsÞðkðsÞð5</formula><formula xml:id="formula_23">Z t 0 D 0 ðt À sÞkðsÞ½W 1 ðsÞð3 þ k 2 ðsÞ À kðsÞkðtÞÞ þ W 2 ðsÞð3 þ 2kðsÞðkðsÞ À kðtÞÞÞ ds:<label>ð19Þ</label></formula><p>As for the compressible case, if kðtÞ is specified then the time-dependent tractions can be determined directly from these equations. Alternatively, the usual physical situation is that the tractions are imposed. As such T 12 would be given and kðtÞ determined from the nonlinear Volterra integral equation, via the numerical scheme referred to above and given in the appendix of De Pascalis et al., 2014. The Eq. (19) for shear stress is written as</p><formula xml:id="formula_24">T 12 ðtÞ ¼ gðkðtÞÞ þ X N j¼1 f j ðkðtÞÞ Z t 0 D 0 ðt À sÞh j ðkðsÞÞ ds;<label>ð20Þ</label></formula><p>where T 12 ðtÞ; DðtÞ; gðXÞ; f j ðXÞ and h j ðXÞ are all known functions of their respective arguments and now here we have only one relaxation function (i ¼ 1 in the expression (14)) as opposed to two in the compressible case (14). In particular, equating <ref type="formula" target="#formula_24">20</ref>with <ref type="formula" target="#formula_23">19</ref> As regards the remaining stress components, given that kðtÞ is now determined, imposing one of the normal components of stress T 11 ; T 22 or T 33 yields the function pðtÞ and it is then possible to solve for the remaining fields. A plethora of strain energy functions could be chosen when evaluating the deformation. Two of the most common forms to be employed are the neo-Hookean model</p><formula xml:id="formula_25">W NH ¼ 1 2 lðI 1 À 3Þ;<label>ð21Þ</label></formula><p>and Mooney-Rivlin strain energy function</p><formula xml:id="formula_26">W MR ¼ 1 2 l½C 1 ðI 1 À 3Þ þ ð1 À C 1 ÞðI 2 À 3Þ:<label>ð22Þ</label></formula><p>Note that the neo-Hookean form is recovered from Mooney-Rivlin when the constant C 1 is set to the value unity. In Section 5 we choose, for simplicity, to employ the neo-Hookean form for an incompressible material.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Predicted deformation, stress and dissipated energy</head><p>Let us now consider the shear deformation, or stress, that results from the imposition of a specified shear profile. We begin in Section 5.1 by considering the influence of compressibility in the simple shear problem, where we increase and then decrease the deformation, or stress, linearly in time. In contrast to the perfectly elastic case, here we note that the memory effect of compressibility plays a role even for this isochoric deformation. In Section 5.2 we then determine the dissipation of energy associated with an imposed linear deformation, and with the more complicated field that results when oscillations are superposed on an initial linear shear. In the latter case we determine the energy dissipated over one cycle, after significant time, so that a steady state has been reached.</p><p>To specify matters, let us consider a material with moduli ratios (in the compressible case)</p><formula xml:id="formula_27">l 1 l ¼ M ¼ 0:4; j 1 j ¼ K ¼ 0:8; j l ¼ 100;<label>ð23Þ</label></formula><p>where clearly only the first needs to be specified in the incompressible case. We note that l and l 1 are respectively the infinitesimal shear modulus and the long-time (elastic) shear modulus. Similarly, j and j 1 are the infinitesimal bulk modulus and the long-time (elastic) bulk modulus, respectively. Let us choose the stress relaxation functions to be classical oneterm Prony series of the form</p><formula xml:id="formula_28">DðtÞ ¼ M þ ð1 À MÞe Àt=s d ; HðtÞ ¼ K þ ð1 À KÞe Àt=s h ;<label>ð24Þ</label></formula><p>where s d and s h are the associated deviatoric and compressive relaxation times. Note that we are always able to scale time on one of these relaxation times and we shall indeed do this shortly by plotting results as a function of t=s d . Hence, we need only specify the relaxation time ratio s ¼ s d =s h , noting that as s ! 1 the material becomes more elastic in its hydrostatic response (typical for rubber-like materials for example). As it will be seen shortly, in the isochoric deformation case considered here this limit loosely corresponds to the case of incompressibility. We illustrate the responses below in the case of three different materials. A perfectly incompressible neo-Hookean viscoelastic material with strain energy function as defined in (21) and a compressible Levinson-Burgess material with strain energy function as defined in (16). In the former (indicated by a solid line in the forthcoming figures) we are not required to specify s of course, whereas in the latter we consider the two cases s ¼ 1 and s ¼ 10 (indicated in the figures by dotted and dashed lines respectively).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Influence of compressibility on the isochoric shear deformation</head><p>As described above, since the simple shear deformation (9) is isochoric, in the perfectly elastic problem compressibility plays no role in the solution. In contrast, in the viscoelastic problem it does, by virtue of the memory effect of the compressive relaxation function HðtÞ. We can illustrate this by imposing the simple shear (9) with kðtÞ defined by kðtÞ ¼</p><formula xml:id="formula_29">A 0 t=s d ; t 2 ½0; t Ã =2; A 0 ðt Ã À tÞ=s d ; t 2 ½t Ã =2; t Ã ; 0; t &gt; t Ã : 8 &gt; &lt; &gt; :<label>ð25Þ</label></formula><p>for some positive A 0 . This is illustrated in <ref type="figure" target="#fig_2">Fig. 1 (a)</ref>  Note that the behaviour of the compressible material with s ¼ 10 (dashed line) is almost indistinguishable from the neo-Hookean incompressible (solid line) curve. In <ref type="figure" target="#fig_2">Fig. 1(c)</ref> the experiment is repeated for an imposed ramp shear stress T 12 ðtÞ=l given in the form (25) with t Ã =s d ¼ 8; A 0 ¼ 0:35. The resultant shear kðtÞ is illustrated in <ref type="figure">figure (d)</ref> for the same three materials as above, and is computed using expressions (14) and (20). As can be seen, the gross response of the compressible and incompressible materials is similar, for both prescribed shear and stress, especially as the relaxation ratio s becomes large. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Dissipation of energy</head><p>We now consider the influence of the imposed deformation (or traction) and material response on the dissipation of energy due to the viscous nature of the material. Define the velocity gradient tensor by</p><formula xml:id="formula_30">D ¼ 1 2 _ FF À1 þ ð _ FF À1 Þ T ;<label>ð26Þ</label></formula><p>where the superposed dot represents the material time derivative. Since the deformation (9) is isochoric then trD 0. The internal rate of working of the stress per unit current volume is TðtÞ : DðtÞ trðTðtÞDðtÞÞ ¼ T 12 _ k. The (time-averaged) dissipated energy over a period t Ã for the deformation imposed in (25) is therefore</p><formula xml:id="formula_31">E d ¼ 1 t Ã Z tÃ 0 T 12 ðtÞ _ kðtÞ dt:<label>ð27Þ</label></formula><p>We can obtain a slightly modified version of the dissipated energy, suitable for determining the energy dissipated in oscillatory deformations over a period t. Taking the start of the period as t 0 , the time averaged dissipated energy is</p><formula xml:id="formula_32">E d ¼ 1 t Z t 0 þ t t 0 T 12 ðtÞ _ kðtÞ dt:<label>ð28Þ</label></formula><p>Clearly, if t 0 is chosen sufficiently large such that the initial transients have died out, then the deformation will have reached a steady state and E d will be independent of t 0 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.1.">Single strain cycle</head><p>First, we consider the simple shear deformation as defined in (25). The important non-dimensional parameters are A 0 and t Ã =s d which are respectively the rate of deformation and total time-scale of deformation, relative to the deviatoric relaxation time-scale. Note that we must be careful as to the magnitude chosen for A 0 since we have assumed from the outset that the deformation can be described without inclusion of inertial terms in the equation of motion. <ref type="figure" target="#fig_3">Fig. 2</ref> offers the nondimensionalised energy dissipation as a function of A 0 , for three different values of t Ã =s d . Unsurprisingly, the larger the deformation, the larger the normalised dissipation. Note, as can be seen, the dissipation appears insensitive to the chosen material, except for large A 0 and t Ã =s d ¼ 5, when the curve of the compressible material with s ¼ 1 deviates from the other curves.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2.">Periodic cycling superposed on a large deformation</head><p>The second case is a linear shear deformation, growing in time, with a superposed oscillatory shear, i.e. kðtÞ ¼</p><formula xml:id="formula_33">A 0 t=s d ; t 2 ½0; t Ã A 0 t Ã =s d þ A sin½xs d ðt À t Ã Þ=s d ; t 2 ðt Ã ; 1Þ: &amp;<label>ð29Þ</label></formula><p>where A=A 0 controls the magnitude of the oscillation relative to the magnitude of the initial shear, and xs d is the (nondimensional) frequency of oscillation relative to the deviatoric relaxation time. We stress once again that inertial effects have been ignored. Therefore in this application we must not choose the magnitude of xs d (the non-dimensional frequency) too large; as this parameter increases, inertial effects will become more important. Imposing <ref type="formula" target="#formula_33">29</ref> ure only the compressible material with the relaxation-time ratio s ¼ 1 is plotted alongside the incompressible result. The long-time dissipated energy over a single cycle is shown in <ref type="figure">Fig. 4</ref> for a range of frequencies x. It can be clearly observed that the energy dissipated by the compressible material is greater than that for the neo-Hookean solid. The energy dissipation appears constant at moderate and higher oscillation frequencies, except for the case with s ¼ 1, which only becomes constant at very high frequencies. The frequency independence of the dissipated energy at higher frequencies appears to be consistent with other theory, e.g. <ref type="figure" target="#fig_2">Fig. 10</ref> of <ref type="bibr" target="#b8">Lion, 1997</ref> where, for time-harmonic oscillations superposed on an initial deformation, plots of the temperature against frequency are plotted. One set of curves in that figure does not level off for the frequency range considered but we expect that at higher frequencies, beyond the range plotted, constant values will be achieved.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusions</head><p>This paper has shown that the revised form of Fung's QLV model, proposed recently by the authors (De Pascalis et al., 2014), offers an effective and efficient way to model nonlinear viscoelastic materials undergoing simple-shear deformation. The model is able to incorporate a wide range of behaviours through the choice of instantaneous strain measure (modelled via an effective hyperelastic stress and underlying strain energy function) and relaxation functions. In this paper we examined two material models, one incorporating incompressibility proposed by <ref type="bibr" target="#b7">Levinson and Burgess, 1971</ref> and the other a neo-Hookean (incompressible) material, and chose to take a simple one-term Prony series to account for the fading memory of the deformation history. It was further assumed that rates of deformation are slow enough that inertial effects can be neglected; hence, as the deformations are spatially homogenous they automatically satisfy equilibrium.</p><p>The major simplifying assumption of QLV is that the relaxation functions are independent of the strain. This may lead to inaccuracies with some types of materials, but can be expected to offer a reasonable model for many practical purposes, such as when determining small perturbations about a large deformation, e.g. waves on a pre-stressed body. Separating the relaxation function from the strain measure in the Boltzmann superposition integral allows one to obtain an explicit relation between the viscoelastic stress T and the strain, or in the present case, the simple shear kðtÞ. For the models employed <ref type="figure">Fig. 3</ref>. Calculated shear stress response to the indicated shear kðtÞ, given by (29), with A ¼ 1; A0 ¼ 0:6; t Ã =s d ¼ 1, and xs d ¼ 16p. As previously, the solid curve is for a neo-Hookean incompressible material and the dotted line is the Levinson-Burgess compressible prediction with s ¼ 1. <ref type="figure">Fig. 4</ref>. Normalised long-time dissipated energy per unit cycle (28) for the shear profile, kðtÞ, given by (29) with A0 ¼ 1; A ¼ 0:6; tÃ=s d ¼ 1. The solid curve is for the incompressible material, dashed (dotted) for a compressible material with s ¼ 0:1ðs ¼ 1Þ.</p><p>herein, the relations are given explicitly in Eqs. (12) and (19), which are easily evaluated to find T 12 ðtÞ for a given kðtÞ. When the stress profile is specified then these equations offer nonlinear Volterra integral equations to solve for k(t), which are easily evaluated numerically as described in Sections 3 and 4.</p><p>The numerical results, discussed in the previous section, offer a number of points. First, whether the shear deformation (strain) or shear stress is imposed, the results obtained by our model appear physically 'reasonable' (see <ref type="figure" target="#fig_2">Figs. 1 and 3)</ref>. Second, even though simple shear is isochoric (instantaneously volume preserving), material compressibility has an effect through the memory of the past deformation. In general though, for the parameter values chosen in this article, the difference between compressible and incompressible materials is small except at large shear values (see <ref type="figure" target="#fig_3">Fig. 2)</ref>. Third, the effect of compressibility is found to diminish as the ratio of relaxation times sð¼ s d =s h Þ increases, although, as a fourth point, the energy dissipated over a forcing cycle is found to be greater for a compressible material than the incompressible material (see <ref type="figure">Fig. 4</ref>). Finally, the last figure reveals that the long-time dissipation over a single cycle increases monotonically at low frequencies but tends to a constant value at mid to high frequencies.</p><p>The strength of the present model is its relative simplicity, so that it can be applied to inhomogeneous deformations. The authors are currently applying the new method to the viscoelastic deformation around voids in rubber-like bodies subjected to time-varying hydrostatic loading, where equilibrium has to be enforced as an extra constraint. The same approach is also being utilised to study deformations of viscoelastic soft biological tissues, where insight can be gained as to the likely effect of large stretch, impact or other trauma.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>13 ðtÞ ¼ T 23 ðtÞ ¼ 0; kðtÞT 12 ðtÞ ¼ T 11 ðtÞ À T 22 ðtÞ;</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>with t Ã =s d ¼ 8; A 0 ¼ 0:35 and the resultant (scaled) shear stress T 12 ðtÞ=l is shown in 1(b). The response of the compressible Levinson-Burgess material with s ¼ 1 is shown as the distinct dotted line.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 1 .</head><label>1</label><figDesc>In (a) we illustrate the imposed 'ramp' shear deformation kðtÞ. The resulting scaled stress T12=l is given in (b) in the case of the neo-Hookean incompressible material (solid) and the compressible Levinson-Burgess material with s ¼ 1 (dotted line) and s ¼ 10 (dashed line). The numerical experiment is repeated in (c) for an imposed stress, with resultant shear indicated in (d).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 2 .</head><label>2</label><figDesc>with A ¼ 1; A 0 ¼ 0:6 and xs d ¼ 16p yields the displacement and subsequent shear stress fields as illustrated in Fig. 3. To avoid confusion, in this fig-Plot of the normalised dissipated energy against slope of the shear ramp profile for three different values of t Ã =s d . The solid curves are for the incompressible material, dashed (dotted) curves are the compressible calculations for s ¼ 10 ðs ¼ 1Þ.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>þ 3ÞðW 1 ðsÞ þ 2W 2 ðsÞÞ þ 3W 3 ðsÞ ds;ð11Þ 2W 2 ðsÞÞ þ 3W 3 ðsÞ ds þ 2kðtÞðW 1 ðtÞ þ W 2 ðtÞÞ:</figDesc><table><row><cell>and</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>T 12 ðtÞ ¼</cell><cell>2 3</cell><cell>Z t 0</cell><cell>D 0 ðt À sÞkðsÞ½W 1 ðsÞðk</cell><cell>2 ðsÞ þ 3 À kðsÞkðtÞÞ þ W 2 ðsÞð2kðsÞðkðsÞ À kðtÞÞ þ 3Þ ds À</cell><cell>2 3</cell><cell>0 Z t</cell><cell>H 0 ðt À sÞðkðsÞ</cell></row><row><cell></cell><cell cols="4">À kðtÞÞ½ðk 2 ðsÞ þ 3ÞðW 1 ðsÞ þ</cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>where TðtÞ; G i ðtÞ; gðXÞ; f ij ðXÞ and h ij ðXÞ are all known functions of their respective arguments. Of specific interest, due to its association</figDesc><table><row><cell cols="3">11 ðkðsÞÞ ¼ À</cell><cell>2 3</cell><cell>k 2 ðsÞðW 1 ðsÞ þ 2W 2 ðsÞÞ;</cell></row><row><cell>h 12 ðkðsÞÞ ¼</cell><cell>2 3</cell><cell cols="2">k</cell></row><row><cell>h 21 ðkðsÞÞ ¼</cell><cell>2 3</cell><cell cols="2">ðk</cell><cell>2 ðsÞ þ 3ÞðW 1 ðsÞ þ 2W 2 ðsÞÞ þ 2W 3 ðsÞ;</cell></row><row><cell cols="3">h 22 ðkðsÞÞ ¼ À</cell><cell>2 3</cell><cell>kðsÞðk</cell></row></table><note>with a common experiment, is when the shear stress component T 12 is imposed, i.e. TðtÞ ¼ T 12 ðtÞ in (14). With this, and referring to (12), set G 1 ¼ D; G 2 ¼ H; gðkðtÞÞ ¼ 2kðtÞðW 1 ðtÞ þ W 2 ðtÞÞ;together with f 11 ðkðtÞÞ ¼ kðtÞ; f 12 ðkðtÞÞ ¼ 1; f 21 ðkðtÞÞ ¼ kðtÞ; f 22 ðkðtÞÞ ¼ 1;and h3 ðsÞðW 1 ðsÞ þ 2W 2 ðsÞÞ þ 2kðsÞðW 1 ðsÞ þ W 2 ðsÞÞ;2 ðsÞ þ 3ÞðW 1 ðsÞ þ 2W 2 ðsÞÞ À 2kðsÞW 3 ðsÞ:</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">R. De Pascalis et al. / International Journal of Engineering Science 88 (2015) 64-72</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The authors are grateful to the Engineering and Physical Research Council (EPSRC) for the award (Grant No. EP/H050779/ 1) of a postdoctoral research assistantship for De Pascalis, and to the Royal Society for a Wolfson Research Merit Award (2013-2018) for Abrahams. The work was partially undertaken under the Thales UK SMART hub agreement.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Application of a large deformation nonlinear-viscoelastic viscoplastic viscodamage constitutive model to polymers and their composites</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Abu</forename><surname>Al-Rub</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Tehrani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Darabi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+		<idno type="DOI">10.1177/1056789514527020</idno>
+		<ptr target="http://dx.doi.org/10.1177/1056789514527020" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Damage Mechanics</title>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">The Semi-Inverse Method in solid mechanics: Theoretical underpinnings and novel applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>De Pascalis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+		<respStmt>
+			<orgName>Université Pierre et Marie Curie -Università del Salento</orgName>
+		</respStmt>
+	</monogr>
+	<note>Ph.D. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">On nonlinear viscoelastic deformations: A reappraisal of fung&apos;s quasi-linear viscoelastic model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>De Pascalis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">D</forename><surname>Abrahams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">J</forename><surname>Parnell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A</title>
+		<imprint>
+			<biblScope unit="volume">479</biblScope>
+			<biblScope unit="page">20140058</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A quasi-linear viscoelastic constitutive equation for the brain: Application to hydrocephalus</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Drapaca</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Tenti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rohlf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sivaloganathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Elasticity</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="65" to="83" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Biomechanics: Mechanical Properties of Living Tissues</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">C</forename><surname>Fung</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981" />
+			<publisher>Springer Verlag</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Quasi-static deformations of soft biological tissue</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gilchrist</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Rashid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Saccomandi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics and Mechanics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="622" to="633" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">A single integral finite strain viscoelastic model of ligaments and tendons</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Livesay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Woo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Rajagopal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biomechanical Engineering</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page" from="221" to="226" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A comparison of some simple constitutive relations for slightly compressible rubber-like materials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Levinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Burgess</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Mechanical Science</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="563" to="572" />
+			<date type="published" when="1971" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A physically based method to represent the thermo-mechanical behaviour of elastomers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Lion</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Mechanica</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="1" to="25" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">An anisotropic visco-hyperelastic model for ligaments at finite strains. formulation and computational aspects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Peña</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Calvo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Martínez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Doblaré</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="760" to="778" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A non-linear integral representation for viscoelastic behaviour</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Pipkin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Rogers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="59" to="72" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Application of nonlinear viscoelastic models to describe ligament behavior</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Provenzano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Lakes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Corr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Vanderby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biomechanics and Modeling in Mechanobiology</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="45" to="57" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Mechanical characterization of brain tissue in compression at dynamic strain rates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Rashid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Destrade</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gilchrist</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanical Behavior of Biomedical Materials</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="23" to="28" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">On a fully three-dimensional finite-strain viscoelastic damage model: Formulation and computational aspects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Simo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods in Applied Mechanics and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="153" to="173" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Shear and normal stress effects in finite circular shear of a compressible nonlinear viscoelastic solid</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Waldron</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Wineman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Non-linear Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="345" to="369" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Nonlinear viscoelastic solids-a review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Wineman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics and Mechanics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="300" to="366" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Yield-like response of a compressible nonlinear viscoelastic solid</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Wineman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Waldron</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Rheology</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="401" to="423" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

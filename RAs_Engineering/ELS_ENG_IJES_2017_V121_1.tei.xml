@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017-10-13">13 October 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Monika</forename><surname>Perkowska</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">EnginSoft S.p.A</orgName>
+								<address>
+									<addrLine>Via della Stazione 27, frazione Mattarello</addrLine>
+									<postCode>38123</postCode>
+									<settlement>Trento</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Andrea</forename><surname>Piccolroaz</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Dipartimento di Ingegneria Civile, Ambientale e Meccanica</orgName>
+								<orgName type="institution">Universita di Trento</orgName>
+								<address>
+									<addrLine>via Mesiano</addrLine>
+									<postCode>77 I-38123</postCode>
+									<settlement>Trento</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Michal</forename><surname>Wrobel</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Faculty of Energy and Fuels</orgName>
+								<orgName type="institution">AGH-University of Science and Technology</orgName>
+								<address>
+									<addrLine>30 Mickiewicza Avenue</addrLine>
+									<postCode>30-059</postCode>
+									<settlement>Krakow</settlement>
+									<country key="PL">Poland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Gennady</forename><surname>Mishuris</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Aberystwyth University</orgName>
+								<address>
+									<postCode>SY23 3BZ</postCode>
+									<settlement>Ceredigion, Wales</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2017-10-13">13 October 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2017.09.009</idno>
+					<note type="submission">Received 6 September 2017 Revised 22 September 2017 Accepted 25 September 2017</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Direction of the fracture propagation Hydraulic fracture Toughness dominated regime Viscosity dominated regime</keywords>
+			</textClass>
+			<abstract>
+				<p>As shown by Wrobel, Mishuris, and Piccolroaz (2017), the hydraulically induced tangential traction on fracture walls changes local displacement and stress fields. This resulted in the formulation of a new hydraulic fracture (HF) propagation condition based on the critical value of the energy release rate that accounts for the hydraulically-induced shear stress. Therefore it is clear that the crack direction criteria, which depend on the tip distributions of the stress and strain fields, need to be changed. We analyse the two commonly used criteria, one based on the maximum circumferential stress (MCS) and another-on the minimum strain energy density (MSED). We show that the impact of the hydraulically induced shear stress on the direction of the crack propagation is negligible in the case of large material resistance to fracture, while for small toughness the effect is significant. Moreover, values of the redirection angles, corresponding to the so-called viscosity dominated regime (K IC → 0), depend dramatically on the ratios of the stress intensity factors.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>In the standard approach of Linear Elastic Fracture Mechanics (LEFM), the onset of crack propagation is found by using the energy release rate (ERR) criterion which, in the case of an isotropic elastic material, assumes the form <ref type="bibr" target="#b29">( Rice, 1968 )</ref>:</p><formula xml:id="formula_0">E = 1 + ν E (1 − ν) K 2 I + K 2 II + K 2 I I I = E C ≡ 1 − ν 2 E K 2 IC ,<label>(1)</label></formula><p>where ν is the Poisson's ratio and E is the Young's modulus, while E C and K IC are the experimentally found critical values of ERR and material toughness, respectively. Here K I , K II and K III are the stress intensity factors pertaining to three basic modes of fracture load. For pure Mode I loading, Eq. (1) transforms into the well known Irwin criterion for crack propagation <ref type="bibr" target="#b18">( Irwin, 1957 )</ref>:</p><formula xml:id="formula_1">K I = K IC .<label>(2)</label></formula><p>The path of possible crack kinks has been extensively studied for many years (see <ref type="bibr" target="#b10">Cotterell &amp; Rice, 1980;</ref><ref type="bibr" target="#b20">Leblond, 1989 )</ref>. Most of the developed theories are based on the information from the Irwin-Williams expansion of the crack tip field <ref type="bibr" target="#b37">( Williams, 1957 )</ref>. Some more advanced criteria utilise additional material parameters related to the underlying physics or other arguments (size of the process zone, size of the possible kink, and so on).</p><p>The collection of criteria for kink initiation developed so far to determine the redirection angle in fracture mechanics is extensive. Beginning with the most popular examples: maximum circumferential stress (MCS) <ref type="bibr" target="#b11">( Erdogan &amp; Sih, 1963 )</ref> and minimum strain energy density (MSED) <ref type="bibr" target="#b23">( Liebowitz &amp; Sih, 1968;</ref><ref type="bibr" target="#b32">Sih, 1974 )</ref>, we can list the maximum strain energy release rate (MSERR) criterion <ref type="bibr" target="#b17">( Hussain, Pu, &amp; Underwood, 1974;</ref><ref type="bibr" target="#b24">Palaniswamy &amp; Knauss, 1972 )</ref>, the local symmetry criterion <ref type="bibr" target="#b14">( Goldstein &amp; Salganik, 1974 )</ref>, the maximum dilatational strain energy density (MDSED) criterion <ref type="bibr" target="#b35">( Theocaris &amp; Andrianopoulos, 1982;</ref><ref type="bibr" target="#b40">Yehia, 1991 )</ref>, the maximum determinant of the stress tensor criterion <ref type="bibr" target="#b26">( Papadopoulos, 1988 )</ref>, the J-criterion <ref type="bibr" target="#b15">( Hellen &amp; Blackburn, 1975 )</ref>, the vector crack tip displacement criterion <ref type="bibr" target="#b21">( Li, 1989 )</ref>, the maximum normal strain criterion <ref type="bibr" target="#b5">( Chang, 1981 )</ref>, the maximum potential energy release rate criterion <ref type="bibr" target="#b4">( Chang, Xu, &amp; Mutoh, 2006 )</ref>, the so-called T-stresses criteria <ref type="bibr" target="#b36">( Williams &amp; Ewing, 1984 )</ref>, and many others. Clearly, the applicability of any specific approach should be justified on a case by case basis, using the strength properties of the materials involved in the study, the loading conditions and available experimental data to validate the selection of criterion. It follows that there is no universal criterion valid for all possible applications. However, in many situations the discrepancies in prediction given by the different criteria are not large and are usually observable only in the deviation from the pure Mode I load (especially for the infinitesimal kinks most of the criteria coincide -see <ref type="bibr" target="#b10">Cotterell &amp; Rice (1980)</ref> ).</p><p>When considering hydraulic fracture (HF), the prediction of the possible crack propagation path becomes even more challenging, as the interaction between the pressurised fluid and the solid and complicated fracture network substantially increases the complexity of the problem <ref type="bibr" target="#b31">Salimzadeh, Paluszny, &amp; Zimmerman, 2017 )</ref>. Moreover, the sets of credible data that could be used to verify theoretical models are limited or inaccessible. There have also been arguments that cast doubt on the applicability of some of the fracture criteria when applied to brittle fracture <ref type="bibr" target="#b9">( Chudnovsky &amp; Gorelik, 1996 )</ref> and hydraulic fracture <ref type="bibr" target="#b7">( Cherny et al., 2017 )</ref>).</p><p>Wrobel, Mishuris, and Piccolroaz (2017) introduced a modified formulation of the HF problem, accounting for a hydraulically induced tangential (asymmetrical) traction at the crack faces. It was shown that, due to the order of the tip singularity of the hydraulic shear stress, this component of the load cannot be omitted when computing ERR. A new parameter, the hydraulic shear stress intensity factor ( K f ), was introduced and proved to play an important role in the HF process. The amended crack propagation criterion, under remote Mode I loading conditions, was formulated as:</p><formula xml:id="formula_2">E = 1 − ν 2 E K 2 I + 4(1 − ν) K I K f = E C .<label>(3)</label></formula><p>This formula includes both, the standard stress intensity factor for Mode I, K I , and the newly introduced hydraulic shear stress intensity factor, K f . Here we analyse how the shear stress induced by moving fluid at the crack faces influences the crack propagation direction in the most general case, when all fracture modes (Mode I, II, III) are taken into account. We focus on two commonly used criteria, Maximum Circumferential Stress (MCS) and Minimum Strain Energy Density (MSED). Presently, we could not find any experimental data to verify the results and therefore determine which of the two criteria is more relevant to hydraulic fracture problems.</p><p>The structure of this paper is as follows. In Section 2 a methodology for the computation of the ERR in presence of the hydraulically induced shear stress for mixed mode loading is presented. An asymptotic representation of the stress and strain fields in the vicinity of the fracture tip is given. In Section 3 , in a new setting, two criteria are chosen for use in determining the crack propagation angle in the presence of hydraulic tangential traction. Corresponding results are analysed with respect to various crack propagation regimes and values of the Poisson's ratio, and are compared with one another. Finally, we summarise our conclusions in Section 4 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Computation of the energy release rate accounting for the shear stress induced by fluid in a mixed mode setting</head><p>In the framework of the LEFM, the ERR is computed using the standard J -integral argument <ref type="bibr" target="#b16">( Huber, Nickel, &amp; Kuhn, 1993;</ref><ref type="bibr" target="#b29">Rice, 1968;</ref><ref type="bibr" target="#b30">Richard, Fulland, &amp; Sander, 2004 )</ref>:</p><formula xml:id="formula_3">E (z) = lim δ→ 0 J δ x (z) = lim δ→ 0 δ 1 2 ( σ • ε ) n x − t n • ∂ u ∂x ds,<label>(4)</label></formula><p>where δ is a circular contour of radius δ around the fracture tip, contained in a plane orthogonal to the crack front, n is the outward normal to the contour δ , and t n = σn is the traction vector along δ (see <ref type="figure" target="#fig_0">Fig. 1</ref> ).</p><p>The classical fracture criterion (1) is derived directly from formula (4) , for an arbitrary mixed mode deformation and smooth crack front. It has been widely adopted in the analysis of hydraulic fracture <ref type="bibr" target="#b0">( Adachi, Siebrits, Peirce, &amp; Desroches, 2007;</ref><ref type="bibr" target="#b3">Bunger, Detournay, &amp; Garagash, 2005;</ref><ref type="bibr" target="#b12">Garagash, 2006;</ref><ref type="bibr" target="#b13">Garagash &amp; Detournay, 1999;</ref><ref type="bibr" target="#b27">Perkowska, Wrobel, &amp; Mishuris, 2016;</ref><ref type="bibr" target="#b38">Wrobel &amp; Mishuris, 2015 )</ref> on the ad hoc assumption that the hydraulically induced tangential traction is small compared to the net fluid pressure and can thus be neglected. However, <ref type="bibr" target="#b39">Wrobel et al. (2017)</ref> showed that the singularity of the hydraulic shear stress is stronger than that of the fluid pressure, and therefore the former cannot be omitted when  deriving the integrals in (4) . Indeed, in accordance with lubrication theory, the shear stress acting on the crack faces can be computed as (see e.g. <ref type="bibr" target="#b1">Batchelor, 1976 )</ref>:</p><formula xml:id="formula_4">τ(r, θ , z) | θ= ±π = ∓ w y (r, z) 2 ∇ (r,z) p(r, z) = ∓ 1 2 w y ∂ p ∂r e r + ∂ p ∂z e z ,<label>(5)</label></formula><p>where w y (r, z) is the width of the crack opening in the direction orthogonal to the crack faces, p(r, z) = p f (r, z) − σ 0 is the so-called net fluid pressure in the channel ( p f -fluid pressure, see <ref type="figure">Fig.</ref> 2 ), and e r , e z denote the respective unit vectors. When considering the tip asymptotics of HF in the so-called toughness dominated regime, which was proved in <ref type="bibr" target="#b39">Wrobel et al. (2017)</ref> to be the only permissible type of solution behaviour in the vicinity of the fracture front, we obtain the following estimates for Mode I:</p><formula xml:id="formula_5">w y (r, z) = w 0 (z) √ r + O (r) , p(r, z) = p 0 (z) log (r) + O (1) , r → 0 , (6) and τ r (r, θ , z) | θ= ±π = ∓ τ 0 (z) √ r + O (1) , r → 0 ,<label>(7)</label></formula><p>where the multipliers of the leading asymptotic terms are interrelated:</p><formula xml:id="formula_6">τ 0 (z) = 1 2 p 0 (z) w 0 (z) .<label>(8)</label></formula><p>In the general case, the complete asymptotic expansions of the displacement and stress fields in the near-tip region ( r → 0) are:</p><formula xml:id="formula_7">u (r, θ , z) = r 2 π K I I (θ ) + K II II (θ ) + K I I I I I I (θ ) + K f τ (θ ) + O ( r log r ) , (9) σ(r, θ , z) = 1 √ 2 π r K I I (θ ) + K II II (θ ) + K I I I I I I (θ ) + K f τ (θ ) + O ( log r ) ,<label>(10)</label></formula><p>where { r , θ , z } is a local polar coordinate system (see <ref type="figure" target="#fig_0">Fig. 1</ref> ), K I , K II and K III are the classical stress intensity factors (SIFs) and K f is the hydraulic shear stress intensity factor (HSSIF) related to the hydraulic shear stress, τ (see <ref type="formula" target="#formula_5">7</ref>). The functions j ( θ ) and j ( θ ) define the polar angle dependence and are given in Appendix A . Clearly, all the stress intensity factors in the asymptotic relationships (9) -(10) depend on z , while the vector-functions j and j are z -independent. Since we will only analyse the local (2D) problem in this paper, we will omit the z variable henceforth. The above representations were constructed as a superposition of four displacement and stress fields, three of which are related to the classical fracture mechanics loads (Mode I, II and III, where the traction vanishes at the crack surfaces) and the fourth, which is a result of the hydraulic action of fluid via the shear stresses induced on the crack faces.</p><p>The asymptotics corresponding respectively to the components of the crack opening, w j (r) = u j (r, + π ) − u j (r, −π ) , can be expressed by:</p><formula xml:id="formula_8">w y (r) = γ (K I + K f ) √ r + O (r) , r → 0 , (11) w x (r) = γ K II √ r + O (r 3 / 2 ) , w z (r) = γ K I I I √ r + O (r 3 / 2 ) , r → 0 . (12)</formula><p>Comparing these with (6) gives:</p><formula xml:id="formula_9">w 0 = γ (K I + K f ) , K f = π 2 τ 0 1 − ν , γ = 8 √ 2 π 1 − ν 2 E .<label>(13)</label></formula><p>We note that K I and K f are not independent. Indeed, combining (8) and (13) we find:</p><formula xml:id="formula_10">K f = K I , = p 0 G − p 0 &gt; 0 ,<label>(14)</label></formula><p>where G = E 2(1+ ν) is the shear modulus of the elastic material, and the dimensionless parameter varies from 0 to ∞ . For more details, see <ref type="bibr" target="#b39">Wrobel et al. (2017)</ref> .</p><p>A new formula for the ERR, following from (4) and (9) -(10) , can now be given as:</p><formula xml:id="formula_11">E = 1 + ν E (1 − ν) K 2 I + K 2 II + 4(1 − ν) K I K f + K 2 I I I ,<label>(15)</label></formula><p>which leads to the fracture criterion:</p><formula xml:id="formula_12">K 2 I + K 2 II + 4(1 − ν) K I K f + 1 1 − ν K 2 I I I = K 2 IC .<label>(16)</label></formula><p>We note that conditions (1) and (3) are particular forms of the general formula (16) . When the stress intensity factors K II and K III are defined by the external conditions, the expression:</p><formula xml:id="formula_13">K ef f IC = K 2 IC − K 2 II − 1 1 − ν K 2 I I I<label>(17)</label></formula><p>can be considered to be an "effective toughness" for the hydraulic fracture problem under the mixed load.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Normalisation</head><p>In order to facilitate the parametric study, we now introduce the following natural scaling:</p><formula xml:id="formula_14">ˆ K I = K I K IC , ˆ K II = K II K IC , ˆ K I I I = K I I I K IC , ˆ K f = K f K IC .<label>(18)</label></formula><p>The fracture criterion (16) now becomes:</p><formula xml:id="formula_15">ˆ K 2 I + ˆ K 2 II + 4(1 − ν) ˆ K I ˆ K f + 1 1 − νˆ K 2 I I I = 1 .<label>(19)</label></formula><p>We note that, under such a normalization, the material resistance to brittle fracture described by K IC , is introduced implicitly. On the other hand, identification of the crack propagation regime (viscosity dominated, small and large toughness modes) hinges on this property. Thus, we introduce a dimensionless parameter ˜</p><formula xml:id="formula_16">p 0 = 2 π p 0 (1 − ν 2 ) /E, related to material toughness</formula><p>(compare with equation <ref type="formula">71</ref>in the work of <ref type="bibr" target="#b39">Wrobel et al. (2017)</ref> ), that combines the stress intensity factors ˆ K I and ˆ K f in the same manner as in Eq. <ref type="formula" target="#formula_10">14</ref>:</p><formula xml:id="formula_17">= ˜ p 0 π (1 − ν) −˜ p 0 , ˆ K f = ˆ K I , 0 &lt; ˜ p 0 &lt; π (1 − ν) .<label>(20)</label></formula><p>The values of the parameter ˜ p 0 and the stress intensity factors are not independent. As was shown by <ref type="bibr" target="#b39">Wrobel et al. (2017)</ref> for the Mode I deformation ( K II = K I I I = 0 ), parameter ˜ p 0 determines the crack propagation regime ( ˜ p 0 → 0 corresponds to the toughness dominated one, while ˜ p 0 → π (1 − ν) defines the viscosity dominated mode). Taking <ref type="formula" target="#formula_13">17</ref>into account, we conclude that:</p><formula xml:id="formula_18">K IC •ˆ K ef f IC → ∞ ⇔ ˆ K I → 1 and ˜ p 0 → 0 ,<label>(21)</label></formula><p>and</p><formula xml:id="formula_19">K IC •ˆ K ef f IC → 0 ⇔ ˆ K I → 0 and ˜ p 0 → π (1 − ν) ,<label>(22)</label></formula><p>where the normalised effective toughness is defined as follows:</p><formula xml:id="formula_20">ˆ K ef f IC = 1 −ˆ K 2 II − 1 1 − νˆ K 2 I I I .<label>(23)</label></formula><p>The combination of (19) and <ref type="formula" target="#formula_17">20</ref> </p><formula xml:id="formula_21">ˆ K I = π (1 − ν) −˜ p 0 π (1 − ν) + ˜ p 0 (3 − 4 ν) ˆ K ef f IC .<label>(24)</label></formula><p>After substitution of (20) into <ref type="formula" target="#formula_21">24</ref>, and some algebra, we obtain a relation for ˆ K f :</p><formula xml:id="formula_22">ˆ K f = ˜ p 0 π (1 − ν) −˜ p 0 π (1 − ν) + ˜ p 0 (3 − 4 ν) ˆ K ef f IC .<label>(25)</label></formula><p>It can be easily seen that for any fixed values of ˆ K II and ˆ K I I I we have, when comparing with (24) and <ref type="formula" target="#formula_22">25</ref>:</p><formula xml:id="formula_23">lim ˜ p 0 → π (1 −ν ) ˆ K f ˆ K I = 1 4(1 − ν) ˆ K ef f IC 2 .<label>(26)</label></formula><p>Finally, we note that for ˆ K I I I = 0 and ˜ p 0 = 0 (classical mixed Mode I and II), both normalised stress intensity factors, ˆ K I = 1 −ˆ K 2 II and ˆ K f = 0 , are independent of ν.</p><p>Eqs. (24) and (25) provide a relationship between the normalised symmetric SIFs, ˆ K I and ˆ K f , and the normalised antisymmetric SIFs, ˆ K II and ˆ K I I I , while also taking into account the influence of the hydraulically induced shear stresses through the pressure parameter ˜ p 0 . This allows for a parametric analysis of the fracture propagation angle, where the independent parameters are ˆ K II , ˆ K I I I and ˜ p 0 . This analysis is given in the next section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Determination of the fracture propagation angle</head><p>If the crack is only under a Mode I load ( ˆ K II = ˆ K I I I = 0 ), it propagates in a self-similar fashion (so that the fracture propagation angle θ f is equal to zero). However, fractures are often subjected to mixed-mode loadings <ref type="bibr" target="#b28">( Qian &amp; Fatemi, 1996 )</ref>.</p><p>Therefore, an accurate prediction of the fracture orientation is crucial to defining the path of a crack kink.</p><p>In the analysis below, the propagation angle, θ f , will be determined in the most general case, when all three modes are present. However, when examining the influence of the hydraulically induced shear stress, the analysis will be restricted to the case of mixed Mode I and II ( K I I I = 0 ). In fact, most fractures in geological formations occur under such loading <ref type="bibr" target="#b22">( Li, Xie, Ren, Xie, &amp; Wang, 2013 )</ref>. On the other hand, the applicability of the classical crack redirection criteria raises doubts when accounting for the impact of severe Mode III loading <ref type="bibr" target="#b19">( Lazarus, Buchholz, Fulland, &amp; Wiebesiek, 2008 )</ref>. Recently, an attempt has been made to tackle such cases <ref type="bibr" target="#b7">( Cherny et al., 2017;</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Maximum circumferential stress (MCS) criterion</head><p>The MCS criterion was introduced by <ref type="bibr" target="#b11">Erdogan and Sih (1963)</ref> . It states that the crack will propagate in the direction where the hoop stress σ θθ reaches its maximum over the interval −π &lt; θ &lt; π : </p><formula xml:id="formula_24">θ f = θ σ θθ = σ max θθ .<label>(27)</label></formula><formula xml:id="formula_25">K II ∈ [0 , 1] and ˜ p 0 ∈ [0 , π (1 − ν)] for ν = 0 . 3 .</formula><p>Taking <ref type="formula" target="#formula_7">10</ref>into account, we have:</p><formula xml:id="formula_26">σ θθ (r, θ ) = K IC √ 2 π r ˆ K I cos 3 θ 2 − 3 ˆ K II sin θ 2 cos 2 θ 2 + 2(1 − ν) ˆ K f cos 3 θ 2 .<label>(28)</label></formula><p>According to this formula, the direction of the crack propagation does not depend on the Mode III component or the material toughness K IC . Instead, it hinges on the relationship between the normalised stress intensity factors ˆ K I , ˆ K II , ˆ K f and the Poisson's ratio, ν, if ˆ K f &gt; 0 . It is important to note that there exists only one value of θ f in the interval −π &lt; θ &lt; π that satisfies Eq. (28) .</p><p>The fracture propagation angle θ f computed according to the MCS criterion (27) is presented in <ref type="figure" target="#fig_2">Fig. 3</ref> for ν = 0 . 3 , and for all admissible values of ˆ K II ∈ [0 , 1] and ˜</p><formula xml:id="formula_27">p 0 ∈ [0 , π (1 − ν)] .</formula><p>The limiting regimes, defined in the parametric space in which the fracture evolves, are denoted by vertices A , B , C , D in <ref type="figure" target="#fig_2">Fig. 3</ref> b.</p><p>The value of θ f in the case of classical linear elastic fracture mechanics ( ˜ p 0 = 0 or edge AD ) was found analytically (see <ref type="bibr" target="#b11">Erdogan &amp; Sih, 1963 )</ref>:</p><formula xml:id="formula_28">θ f = 2 arctan ˆ K I 4 ˆ K II − 1 2 + ˆ K 2 I 16 ˆ K 2 II .<label>(29)</label></formula><p>On the edge CD ( ˆ K II = 1 ), we have from (22) and (24) that K ef f IC = ˆ K I = 0 , while the angle θ f can also be found from (29) .</p><p>This conclusion is, however, not true at the corner C, which also lies on the edge BC corresponding to the so-called viscosity dominated regime ( ˜</p><formula xml:id="formula_29">p 0 → π (1 − ν)</formula><p>, the amount of energy dissipated in the viscous fluid flow is much greater than that released in the brittle fracture). Here, we have θ f = 0 , as the maximum value of the circumferential stress in this case is defined by the third term in (28) .</p><p>To derive the value of θ f on the last edge, AB ( ˆ K II = 0 ), we must simultaneously maximise the first and the last terms in (28) , which holds for θ f = 0 .</p><p>We note that in the vicinity of corner C , we observe high sensitivity in the angle of crack propagation, θ f , to changes in the parameters ˜ p 0 and ˆ K II . In fact, the function θ f ˜ p 0 , ˆ K II does not possess a limit at point (1, 1). Indeed, when using the asymptotic estimate (26) and the relationship (22) we have:</p><formula xml:id="formula_30">ˆ K f ∼ 1 −ˆ K 2 II 4(1 − ν) ˆ K I as ˜ p 0 → π (1 − ν) ,<label>(30)</label></formula><p>where both the numerator and the denominator tend to zero as ˜</p><formula xml:id="formula_31">p 0 → π (1 − ν)</formula><p>. As a result, the ratio describing the coefficient in the third term in (28) is indeterminate. Therefore, θ f depends on the load history, and for this reason the limit of expression (30) does not exist at point C. Physically, this phenomenon can be explained by the competition between pure Mode II fracture and the viscosity dominated regime of crack propagation (each of these having different propagation angles).  Let us now analyse a possible impact of the Poisson's ratio on the direction of crack propagation <ref type="figure" target="#fig_3">( Fig. 4 )</ref>. As expected, for the standard mixed-mode case (without accounting for the singular term induced by the fluid, that is ˜ p 0 = 0 , ˆ K f = 0 ), the redirection angle does not depend on the Poisson's ratio ν. This follows immediately from Eq. (28) or (29) and can be seen in <ref type="figure" target="#fig_3">Fig. 4</ref> a.</p><formula xml:id="formula_32">π (1 −ν ) = 0 , b) ˜ p 0 π (1 −ν ) = 0 . 5 , c) ˜ p 0 π (1 −ν ) = 0 . 9 .</formula><p>In the general case of ˜ p 0 &gt; 0 , the impact of the Poisson's ratio is relatively weak and vanishes when approaching the ends of the interval ( ˆ K II = 0 and ˆ K II = 1 ). As ˜ p 0 increases, the maximal deviations between respective propagation angles (for various ν) are located closer to the right end of the ˆ K II interval (see <ref type="figure" target="#fig_4">Fig. 5</ref> ). However, the differences between the redirection angles for various Poisson's ratios are hardly distinguishable, giving maximal deviations between respective results of up to 4 °(compare <ref type="figure" target="#fig_4">Fig. 5</ref> ). Thus, according to the MCS criterion, the influence of the Poisson's ratio on crack redirection can be neglected for practical applications, regardless of the fracture propagation regime.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Minimum strain energy density (MSED) criterion</head><p>Another popular fracture propagation criterion is based on the minimum strain energy density (MSED). It was proposed by <ref type="bibr" target="#b23">Liebowitz and Sih (1968)</ref> and <ref type="bibr" target="#b32">Sih (1974)</ref> . For the strain energy density:  </p><formula xml:id="formula_33">W = 1 2 σ • ε ,<label>(31)</label></formula><formula xml:id="formula_34">p 0 ∈ [0 , π (1 − ν)] for ν = 0 . 3 .</formula><p>it is assumed that the factor S = W r takes its minimal value in the direction of possible crack propagation:</p><formula xml:id="formula_35">θ f = θ S= S min .<label>(32)</label></formula><p>In the setting of the present paper, the factor S is computed as:</p><formula xml:id="formula_36">S(θ ) = 1 + ν 2 π E K 2 IC ˆ K 2 I 2 cos 2 θ 2 [ 3 − 4 ν − cos θ ] + ˆ K 2 II 8 [ 9 − 8 ν − 4(1 − 2 ν) cos θ + 3 cos 2 θ ] + ˆ K 2 I I I + 4(1 − ν) 2 ˆ K 2 f + ˆ K I ˆ K II sin θ [ 2 ν − 1 + cos θ ] + (1 − ν) ˆ K f 2 ˆ K I sin 2 θ + ˆ K II sin 2 θ .<label>(33)</label></formula><p>We note that according to this criterion, and in contrast to MCS, the value of θ f depends on both the stress intensity factor for Mode III, ˆ K I I I , and the Poisson's ratio, ν, even in the case of classical LEFM ( ˜ p 0 = 0 ). However, to remain in the same parametric space in our analysis, the Mode III component will be assumed to be zero.</p><p>In <ref type="figure" target="#fig_5">Fig. 6</ref> the graphs of S / S min are plotted for three values of ν = { 0 , 0 . 3 , 0 . 5 } . Each graph refers to a fixed value of ˜ p 0 / (π (1 − ν)) = { 0 , 0 . 5 , 0 . 9 } and a fixed value of ˆ</p><formula xml:id="formula_37">K II = { 0 . 1 , 0 . 5 , 0 . 9 } .</formula><p>In each case, it can be seen that there are two local minima (similar behaviour was observed for the classical LEFM by <ref type="bibr" target="#b33">Sih &amp; Macdonald (1974)</ref> ) that cause ambiguity in identification of the crack redirection angle, that was noticed by <ref type="bibr" target="#b6">Chang (1982)</ref> . Moreover, in the work of <ref type="bibr" target="#b34">Swedlow (1976)</ref> there were indications that, for many combinations of loading modes, the selection of the global minimum of the strain energy density, which in turn corresponds to a global relative maximum of potential energy, leads to incorrect values of the redirection angle. As a result of this analysis, a modification to Sih's statement was proposed that the sought energy minimum does not need to be global. Instead, a local value that corresponds to a positive tensile circumferential stress can be taken:</p><formula xml:id="formula_38">θ f = θ { S= S min }∧{ σ θθ &gt; 0 } .<label>(34)</label></formula><p>Furthermore, in the work of <ref type="bibr" target="#b2">Baydoun and Fries (2012)</ref> , it was suggested that "the smaller absolute angle is considered as the propagation angle ". We have checked computationally that both assumptions lead to the same result or, in other words, that the minimum of S obtained for the smallest value of θ is also the one that corresponds to σ θθ &gt; 0. We believe that those assumptions represent a natural choice for the fracture propagation angle according to the MSED criterion.</p><p>We now analyse the fracture propagation angle θ f , as computed in (32) , for ν = 0 . 3 and all admissible values of ˆ</p><formula xml:id="formula_39">K II ∈ [0 , 1] and ˜ p 0 ∈ [0 , π (1 − ν)]</formula><p>. The corresponding results are presented in <ref type="figure" target="#fig_6">Fig. 7</ref> . On the edge AB ( K II = 0 ) the angle of crack propagation is θ f = 0 . Furthermore, for pure Mode II ( ˆ K II = 1 or edge CD) the solution can be found analytically:</p><formula xml:id="formula_40">θ f = − arctan 2 √ 2 + ν − ν 2 1 − 2 ν .<label>(35)</label></formula><p>We recall that for the MCS criterion, the corresponding result was θ f = −2 arctan (1 / √ 2 ) . However, the biggest difference with MCS appears along the edge BC (viscosity dominated regime, ˆ K I = 0 ), where the redirection angle was previously equal to zero.  In <ref type="figure" target="#fig_7">Fig. 8 -Fig. 9</ref> , we show the dependence of θ f on the Poisson's ratio. The impact of ν is much more pronounced here than in the case of the MCS criterion. The discrepancies between the respective results increase with increasing ˆ K II . Moreover, for ˜ p 0 = 0 , the difference between the angles obtained for ν = 0 and ν = 0 . 5 is the greatest, amounting to a maximum of 12 °(see <ref type="figure" target="#fig_8">Fig. 9</ref> ).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Conclusions</head><p>In the framework of classical Linear Elastic Fracture Mechanics, the existing criteria for determination of the deflection angle for a small kink give similar results. All of them utilise the asymptotic analysis of the strain-stress fields in the near-tip zone, and the obtained redirection angles usually depend on the relationship between the stress intensity factors (see, for example, the here discussed MSC and MSED criteria for ˜ p 0 = 0 ). We showed that accounting for the hydraulically induced tangential traction on the fracture walls, by introducing one more component of loading, changes the corresponding results with respect to those predicted by the classical criteria. The greatest discrepancies are obtained in the case of substantial external shear load ( ˆ K II → 1 ), which occurs when the position of the initial crack does not match the orientation of the principal stresses for small material toughness (while approaching the so-called viscosity dominated regime ˜ p 0 → π (1 − ν) ). In such a situation the crack redirection angle is extremely sensitive to the values of both, ˆ K II and ˜ p 0 . The criteria analysed in this paper, MCS and MSED, exhibit different sensitivity to the value of Poisson's ratio. Clearly, the predictions made here need to be verified experimentally, which constitutes a real technical challenge.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>A planar crack and its local coordinate system.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Sketch of a plane-strain fluid driven fracture.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>MCS: Predicted propagation angle θ f for ˆ</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 .</head><label>4</label><figDesc>MCS: Redirection angle, θ f , for various values of Poisson's ratio and: a) ˜ p 0</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 .</head><label>5</label><figDesc>MCS: Absolute (a) and relative (b) deviations of the redirection angle, θ f , from a reference value obtained in the case of ν = 0 . 3 for two limiting values of the Poisson's ratio: ν = 0 and ν = 0 . 5 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 6 .</head><label>6</label><figDesc>MSED: Value of S ( θ)/ S min for various values of Poisson's ratio and fixed ˆ K II and ˜ p 0 . The grey regions on the graphs correspond to the areas where σ θθ &lt; 0.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 7 .</head><label>7</label><figDesc>MSED: Predicted propagation angle θ f for ˆ K II ∈ [0 , 1] and ˜</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 8 .</head><label>8</label><figDesc>MSED: Redirection angle, θ f , for various values of Poisson's ratio and: a) ˜ p 0π (1 −ν ) = 0 , b) ˜ p 0 π (1 −ν ) = 0 . 5 , c) ˜ p 0 π (1 −ν ) = 0 . 9 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 9 .</head><label>9</label><figDesc>MSED: Absolute (a) and relative (b) deviations of the redirection angle, θ f , from a reference value obtained in the case of ν = 0 . 3 for two limiting values of the Poisson's ratio: ν = 0 and ν = 0 . 5 .</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The authors gratefully acknowledge financial support from the European Union 's Seventh Framework Programme FP7/2007-2013/ under REA Grant agreement numbers: PCIG13-GA-2013-618375-MeMic (A.P.), PITN-GA-2013-606878-CERMAT2 (M.P.) and IRSES-GA-2013-610547-TAMER (M.W.). One of the authors, G. Mishuris, thanks for a support during his visit to Russia by grant 14.Z50.31.0036 awarded to R. E. Alexeev Nizhny Novgorod Technical University by Department of Education and Science of the Russian Federation. Finally, the authors are thankful to Prof. M. Kachanov for fruitful discussions and useful comments.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Finally, other classical criteria for the fracture redirection should be revisited when considering the problem of a fluid driven crack. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Computer simulation of hydraulic fractures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Adachi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Siebrits</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Peirce</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Desroches</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Rock Mechanics and Mining Sciences</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="739" to="757" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">An introduction to fluid mechanics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Batchelor</surname></persName>
+		</author>
+		<idno>978-0-521-09817-5</idno>
+		<imprint>
+			<date type="published" when="1976" />
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Crack propagation criteria in three dimensions using the XFEM and an explicit-implicit crack description</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Baydoun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">P</forename><surname>Fries</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">178</biblScope>
+			<biblScope unit="page" from="51" to="70" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Toughness-dominated hydraulic fracture with leak-off</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bunger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Detournay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Garagash</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="175" to="190" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A general mixed-mode brittle fracture criterion for cracked materials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Mutoh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1249" to="1263" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">On the maximum strain criterion -a new approach to the angled crack problem</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">J</forename><surname>Chang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="107" to="124" />
+			<date type="published" when="1981" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">A further examination on the application of the strain energy density theory to the angled crack problem</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">J</forename><surname>Chang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="377" to="382" />
+			<date type="published" when="1982" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Prediction of fracture initiation zones on the surface of three-dimensional structure using the surface curvature</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cherny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Esipov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kuranakov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Lapin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Chirkov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Astrakova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">172</biblScope>
+			<biblScope unit="page" from="196" to="214" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Simulating fully 3d non-planar evolution of hydraulic fractures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cherny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Lapin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Esipov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kuranakov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Avdyushenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Lyutov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Karnakov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">201</biblScope>
+			<biblScope unit="page" from="181" to="211" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Tortuosity of crack path, fracture toughness and scale effect in brittle fracture</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Chudnovsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gorelik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Size-scale effects in the failure mechanisms of materials and structures</title>
+		<editor>A. Carpinteri</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>E&amp;FN Spon</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="97" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Slightly curved or kinked cracks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Cotterell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Rice</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="155" to="169" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">On the crack extension in plates under plane loading and transverse shear</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Erdogan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">C</forename><surname>Sih</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Basic Engineering</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="519" to="525" />
+			<date type="published" when="1963" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Transient solution for a plane-strain fracture driven by a shear-thinning, power-law fluid</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Garagash</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal for Numerical and Analytical Methods in Geomechanics</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="1439" to="1475" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The tip region of a fluid-driven fracture in an elastic medium</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Garagash</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Detournay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="183" to="192" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Brittle fracture of solids with arbitrary cracks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">V</forename><surname>Goldstein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">L</forename><surname>Salganik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="507" to="523" />
+			<date type="published" when="1974" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The calculation of stress intensity factors for combined tensile and shear loading</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">K</forename><surname>Hellen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">S</forename><surname>Blackburn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="605" to="617" />
+			<date type="published" when="1975" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">On the decomposition of the j -integral for 3d crack problems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Huber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nickel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Kuhn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="339" to="348" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Strain energy release rate for a crack under combined mode i and mode II</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Hussain</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Pu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">H</forename><surname>Underwood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fracture analysis ASTM STP</title>
+		<imprint>
+			<biblScope unit="volume">560</biblScope>
+			<biblScope unit="page" from="2" to="28" />
+			<date type="published" when="1974" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Analysis of stresses and strains near the end of a crack traversing a plate</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Irwin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="361" to="364" />
+			<date type="published" when="1957" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Comparison of predictions by mode II or mode III criteria on crack front twisting in three or four point bending experiments</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Lazarus</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">G</forename><surname>Buchholz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fulland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wiebesiek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">153</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="141" to="151" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Crack paths in plane situations general form of the expansion of the stress intensity factors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B</forename><surname>Leblond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1311" to="1325" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Vector CTD criterion applied to mixed mode fatigue crack growth</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fatigue &amp; Fracture of Engineering Materials &amp; Structures</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="65" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Evaluating the applicability of fracture criteria to predict the crack evolution path of dolomite based on SCB experiments and FEM</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note>Mathematical problems in engineering</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Mathematical theories of brittle fracture</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Liebowitz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">C</forename><surname>Sih</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1968" />
+			<publisher>Academic Press</publisher>
+			<pubPlace>Waltham</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Propagation of a crack under general, in-plane tension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Palaniswamy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">G</forename><surname>Knauss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="114" to="117" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Modelling of primary fragmentation in block caving mines using a finite-element based fracture mechanics approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Paluszny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Geomechanics and Geophysics for Geo-Energy and Geo-Resources</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="121" to="130" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Crack initiation under biaxial loading</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Papadopoulos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="585" to="598" />
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Universal hydrofracturing algorithm for shear-thinning fluids: Particle velocity based simulation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Perkowska</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wrobel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Mishuris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers and Geotechnics</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="page" from="310" to="337" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Mixed mode fatigue crack growth: A literature survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Fatemi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="969" to="990" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A path independent integral and the approximate analysis of strain concentration by notches and cracks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Rice</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="379" to="386" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Theoretical crack path prediction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">A</forename><surname>Richard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fulland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Sander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fatigue &amp; Fracture of Engineering Materials &amp; Structures</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="3" to="12" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Three-dimensional poroelastic effects during hydraulic fracturing in permeable rocks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Salimzadeh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Paluszny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="page" from="153" to="163" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Strain-energy-density factor applied to mixed mode crack problems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">C</forename><surname>Sih</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="305" to="321" />
+			<date type="published" when="1974" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Fracture mechanics applied to engineering problems -strain energy density fracture criterion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">C</forename><surname>Sih</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Macdonald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="361" to="386" />
+			<date type="published" when="1974" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Criteria for growth of the angled crack</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">L</forename><surname>Swedlow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Cracks and fracture, ASTM STP 601, american society for testing and materials</title>
+		<imprint>
+			<date type="published" when="1976" />
+			<biblScope unit="page" from="506" to="521" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The t-criterion applied to ductile fracture</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Theocaris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">P</forename><surname>Andrianopoulos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="125" to="130" />
+			<date type="published" when="1982" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Fracture under complex stress -the angled crack problem</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">G</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">D</forename><surname>Ewing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="346" to="351" />
+			<date type="published" when="1984" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">On the stress distribution at the base of a stationary crack</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">L</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="109" to="114" />
+			<date type="published" when="1957" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Hydraulic fracture revisited: Particle velocity based simulation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wrobel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Mishuris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="23" to="58" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Energy release rate in hydraulic fracture: Can we neglect an impact of the hydraulically induced shear stress?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wrobel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Mishuris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Piccolroaz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="page" from="28" to="51" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Distortional strain energy density criterion: The y-criterion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">A B</forename><surname>Yehia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering Fracture Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="477" to="485" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

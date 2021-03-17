@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The examination system in Bangladesh and its impact: on curriculum, students, teachers and society</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Md</roleName><forename type="first">Al</forename><surname>Amin</surname></persName>
+							<idno type="ORCID">0000-0002-6867-1594</idno>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Canterbury</orgName>
+								<address>
+									<settlement>Christchurch</settlement>
+									<country key="NZ">New Zealand</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Janinka</forename><surname>Greenwood</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Canterbury</orgName>
+								<address>
+									<settlement>Christchurch</settlement>
+									<country key="NZ">New Zealand</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The examination system in Bangladesh and its impact: on curriculum, students, teachers and society</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-018-0060-9</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Examination</term>
+					<term>Bangladesh</term>
+					<term>English language teaching</term>
+					<term>Test impact</term>
+					<term>Social forces</term>
+					<term>Washback</term>
+					<term>High-stake tests</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Examinations are designed to test knowledge and skills, but in some cases they acquire a power of their own that influences curriculum and attitudes to learning and teaching and that stabilised by widely held social expectations and practices. This article reports an investigation of the role of examinations in Bangladesh secondary education and their impact on curriculum students, teachers, parents and wider society. It focuses on the field of English language teaching. It first reports quantitative data that indicates a gap between teachers&apos; perceptions of curriculum expectations and their acknowledged practices. It then reports elements of a further qualitative study of the influence of the examination system on students, teachers and other stakeholders, and of the factors that in turn uphold the current examination system. Two narratives of students&apos; experiences are presented as a basis for discussion of the process and impact of the examination system and these are followed by further reports from teachers and teacher educators as well as analysis of curriculum documents and comments from media. The current role of the examination system is summarised in a model that notes both its impact and the influences that sustain it. The need for change is acknowledged but it is also recognised that it is not only the examination that needs to change.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>High stakes testing is prevalent throughout Asia. It is perhaps common knowledge that such testing creates considerable educational and societal pressures. It is also, unfortunately, widely recognised that, despite various studies of the inadequacies of various countries' examination systems <ref type="bibr" target="#b3">(Alderson 2017;</ref><ref type="bibr">Cheng and Curtis 2010)</ref>, assessment reform is not easy. While specific aspects of various Asian countries' examination systems have been researched, reported and critiqued (for example, <ref type="bibr" target="#b28">Kwon et al. 2017;</ref><ref type="bibr" target="#b38">Qi 2007;</ref><ref type="bibr" target="#b39">Qian and Cumming 2017)</ref>, there is still relatively little published research about the operations and impact of examinations within Bangladesh. Although countries in Asia share certain broad conditions, such neighbourhood within global geography and histories of difference from so-called western countries, they also differ considerably from one another, in culture, in specifics of history and in economic power. Because Asia is not a homogenous area, the study of the practices and conditions of a specific country is important, intrinsically, for two reasons: it has the potential to benefit the country itself and it adds further dimensions to knowledge of the complexities of the region as a whole. This article examines how examinations influence English language teaching and learning in Bangladesh. It examines the role examinations play in shaping operational curriculum, teacher attitudes and behaviours, student perceptions and behaviours, parental expectations and behaviours, and societal attitudes and expectations. It explores the relationship between examinations and the development of the business of private coaching. It also examines how social factors in turn bolster the power of the examination.</p><p>The findings reported in this article are drawn from a wider investigation into the factors that influence English language teaching in Bangladesh (Al <ref type="bibr" target="#b0">Amin 2017)</ref>. That study also explored processes of teacher education and professional development, national and global pressures for the development of communicative competence and the extent to which communicative skills are addressed in the operational curriculum, the gap in resources between urban and rural school and the impact of current and historical international influences. While the contextual factors that influence the ways English language is taught are interrelated, each calls for separate scrutiny.</p><p>It has already been reported <ref type="bibr" target="#b18">(Das et al. 2014;</ref><ref type="bibr" target="#b27">Khan 2010;</ref><ref type="bibr" target="#b40">Rahman 2015</ref>) that within the schooling system of Bangladesh testing, and in fact almost all evaluation of students learning, is dominated by the national examination system. This article reviews key aspects of the nature of the examination system and of its limitations, and relates these to existing literature. It then reports elements of a survey of secondary English language teachers and discusses the tensions that appeared between their claimed understandings of the curriculum and their reports of practices. It next proffers two narratives of student experiences as a springboard for exploring the impact of the examination system on students, teachers, parents, coaching enterprises and wider society, and draws on other participants' accounts to illustrate issues. It draws together a tentative model of how the examination system operates in Bangladesh and draws a number of conclusions. First, however, a brief account of the methodological approach is given.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>The design of the wider study was an emergent one <ref type="bibr" target="#b44">(Robson 2011)</ref>. It began with a quantitative survey of the attitudes and perceptions of 216 secondary school English teachers (146 male and 66 female) from different regions of Bangladesh. The survey asked participants about their beliefs about the qualities of an effective teacher, their understandings of the expectations of the curriculum and their classroom practices. A final open-ended question asked teachers to identify barriers to their teaching of the national curriculum. A full account of the survey findings is reported elsewhere (Al Amin 2017). This article reports items relating to the English examination.</p><p>Analysis of the survey indicated a number of areas where there were contradictions between respondents' claimed understandings of curriculum and their reports of their practices. This prompted a qualitative examination of gaps that appeared between reported understanding of the curriculum and practice, as well as of the issues that were identified as barriers to implementing the curriculum. Specific issues that were identified included the experience and training of teachers, the complexities in prevalent understandings of the Communicative Language Teaching approach to English, the inequalities between urban and rural schools, the impact of international influences as well as the power of the examination system in directing the teaching practices.</p><p>The qualitative investigation, on which most of this article is based, involved interviews, collated through a snowball approach <ref type="bibr" target="#b11">(Bryman 2015)</ref> with students (n-42), teachers (n-35), teacher trainers (n-12), principals (n-4), parents (n-12), and other related professionals (n-15), observation of practice and content analysis of various official documents and media accounts. Only some of these participants are cited in this article. All names are pseudonyms to preserve the confidentiality of participants.</p><p>As is practice in qualitative case study, the aim was to elicit rich data <ref type="bibr" target="#b21">(Geertz 1988;</ref><ref type="bibr" target="#b48">Stake 2013</ref>) that would capture participants' backgrounds, teaching or learning philosophies, expectations and plans, day to day activities, what they considered when they took decisions about their teaching or study, and barriers and enablers that they encountered. Analysis was interpretive and focused both on emerging themes and individual narratives of experience <ref type="bibr" target="#b17">(Connelly and Clandinin 1990;</ref><ref type="bibr" target="#b43">Riessman 2008)</ref>. Elements of the narratives are reported here to reflect the way the examination system both impacts on and is sustained by the experiences and expectations of those involved on the process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The curriculum, the examination system and what is reported in existing literature</head><p>The present curriculum for English (2012) emphasises acquiring competence in listening, speaking, reading and writing and developing ability to use these competencies for effective communication in real life situations. A number of national initiatives have been taken to improve English language teaching including the production and free distribution of textbooks embodying a communicative language approach <ref type="bibr" target="#b19">(Farooqui 2010)</ref> , adopting various donor-loan funded projects <ref type="bibr" target="#b22">(Hamid 2010)</ref> and incrementally training teachers. Despite the aspirational aims and goals of present English curriculum, a growing number of research studies criticise the gap between policy aim and actual practice. <ref type="bibr" target="#b27">Khan (2010)</ref> reviewed the Secondary School Certificate (S.S.C) and Higher Secondary Certificate (H.S.C) tests format, question patterns and mark allocation for various questions, and highlighted the need to include an oral component in the English examination. <ref type="bibr" target="#b34">Podder (2013)</ref> highlighted the gap between policy and practice in terms of assessing oral skills in the English examination at the secondary and higher secondary levels. <ref type="bibr" target="#b16">Choudhury (2010)</ref> and <ref type="bibr" target="#b30">Maniruzzaman and Hoque (2010)</ref> reported that teachers feel pressure to teach according to what they believe will appear in the examinations. <ref type="bibr" target="#b18">Das et al. (2014)</ref> identified how the existing assessment system drives students to memorise answers, and pointed out that although there have been reviews of the examination format since the introduction of a communication-based curriculum, a very significant gap still exists between what is intended to be taught and what is tested in the examination.</p><p>The relationship between examinations and the development of a de facto curriculum is widely discussed in international research literature. The impact of testing on teaching and learning is generally referred to as washback <ref type="bibr" target="#b4">(Alderson and Wall 1993;</ref><ref type="bibr" target="#b9">Bailey 1996)</ref> or backwash (Bachman and Palmer 2010). <ref type="bibr" target="#b14">Cheng and Curtis (2004)</ref> defined the term washback as the impact of testing on the focus of teaching and learning, while <ref type="bibr" target="#b8">Bachman and Palmer (2010)</ref>   <ref type="bibr" target="#b13">(Cheng 1998;</ref><ref type="bibr" target="#b20">Ferman 2004;</ref><ref type="bibr" target="#b45">Saif 2006)</ref>. <ref type="bibr" target="#b12">Buck (1988)</ref>, <ref type="bibr" target="#b29">Loschert, Gleason and Carter (2000)</ref> and <ref type="bibr" target="#b46">Shohamy (2014)</ref> have examined the particular impact of high-stake examinations. <ref type="bibr" target="#b26">Johnson, Johnson and Ness (2008)</ref> stated that a test is high stake when it determines students' success, teachers' accountability and school funding.</p><p>Conversely, <ref type="bibr" target="#b32">Phelps (2006)</ref> argued that high-stake tests provide more reliable information on students' performance and achievement as high-stake tests are associated with standards, administered in tight security and are assessed following set standards, and thus are less likely to be affected by teachers' biasness, and other related factors. <ref type="bibr" target="#b6">Andrews et al. (2002)</ref>, while examining the impact of changes in the Hong Kong Advanced Supplementary (AS) test, found that inclusion of the oral component in the university admission test resulted in improvement in students' oral performance. <ref type="bibr" target="#b20">Ferman (2004)</ref> found a strong and positive washback effect of the Oral Matriculation test on teachers and students in Israel. He concluded that, because of the test, students and teachers paid more attention to oral language skills. <ref type="bibr" target="#b45">Saif (2006)</ref> also suggested that testing improves learning outcomes. <ref type="bibr" target="#b52">Tsagari and Cheng (2017)</ref> have argued that further research is still needed on the impact of test on stakeholders who are not directly associated with classroom such as parents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The survey</head><p>As stated above a survey was made of the attitudes and perceptions of 216 secondary school English teachers from across Bangladesh. A number of survey items asked respondents about different aspects of teaching for the examination. <ref type="table">Table 1</ref> details the items and the percentages of responses.</p><p>While a majority of teachers agreed that an effective teacher would arrange mock tests for students, there was a predominantly negative response to the suggestions that an effective English teacher "is someone who teaches only what will be important for the final exam" and "who prepares possible questions and answers for the final exam for his/her students". These results indicate awareness by most of the respondents that more is required in teaching English than merely preparation for the examination, but it is noteworthy that over 10% agreed that an effective teacher teaches only what will be important for the final examination and that over 30% acknowledged that they did not teach portions of the textbook that they considered less important for the examination.</p><p>The teachers surveyed largely agreed that they felt pressured, by head teachers, parents, and particularly students, to teach in ways that would achieve good marks in the examination. They largely agreed that they actively prepared students for the examination, not only arranging mock class tests but also teaching answers to expected questions, and interestingly a majority acknowledged that their teaching style would have been different if there was no examination. Nearly 90% of the teachers agreed that reading and listening tests needed to be included in the national examination process.</p><p>A further open section of the survey asked teachers to identify barriers to implementing the curriculum in their practice. A majority identified the content of the examination and the pressure to achieve good student grades as barriers to implementation of the intentions of the curriculum and as forces that shaped their actual teaching practice.</p><p>To a large extent the results of the survey could be argued to align with existing criticisms of the examination system: that it dominates schooling <ref type="bibr" target="#b2">(Alam 2016;</ref><ref type="bibr" target="#b25">Hossain 2009)</ref>, that it reduces the national curriculum to an operational curriculum that only addresses reading and writing <ref type="bibr" target="#b33">(Podder 2011)</ref>, and that it encourages rote learning (Asian Development Bank 2015). In addition, the results indicate that many teachers are aware of the gap between what the curriculum asks them to do and what they actually do in their practice. They also indicate a need to further exploration of the motivation, expectations and behaviours of those who experience the impact of the <ref type="table">Table 1</ref> Teachers' beliefs and practice about teaching for the exam examination on the processes of teaching and learning. The narratives and discussion that follow explore those human elements. The stories of two students, Priya and Eva, are told first. They are followed by accounts from other stakeholders. These stories have been selected because they resonate with other accounts collated during the research and with what is socially accepted as common practice. They suggest areas for further quantitative as well as qualitative research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Priya's story</head><p>Priya is a sixteen year old student in a village school. Her parents, although not highly educated, have an ardent commitment to their children's education. Her father works in the Middle East and regularly phones to exhort his daughter to study and always ensures there is money for private tuition.</p><p>Priya was preparing for the Secondary School Certificate (S.S.C) examination in the following year and showed she was acutely aware of its importance. She would study while others in the family watched television. She attended school classes regularly and also attended private tuition early in the morning and in the late afternoon, and afterschool coaching classes in the school.</p><p>Priya appeared to always carry the Nobodut Guide that the teacher would use in private tuition. Although bought a little over a year ago, the book seemed old and the pages were torn. "We study from this book" she said, explaining that her friends in the private tuition group all had the same book. She added: "Our teacher teaches from this book in the classroom and in the coaching." She showed a collection of photocopied papers that she had collected from her private tutor and from her school English teacher. Some contained sample compositions, such as paragraphs, emails, formal and informal letters. Others had grammatical rules, with sample exercises and correct answers. The papers were well worn, indicating their frequent use.</p><p>When asked about her English textbook she looked puzzled for a moment. "Oh, the main book," she said finally, and started searching for it. Eventually she located it in a locked drawer. The book seemed new. Her class teacher never taught from the book, she explained, and he had told the class that there would be nothing from the textbook in the examination. "From the beginning of the school," she said, "our teacher suggested the Nobodut Guide. There are many model tests in it. Our teacher selects which ones will be important and teaches us accordingly."</p><p>She had recently sat a test examination, which the school held in preparation for the national final examination, and showed the test paper which was a compilation of various leading schools' test examination questions. She asserted that she would now focus on the areas where she had weakness and would attend all the further model tests in her school coaching centre and do more tests in her private tuition classes.</p><p>Priya's story emphasises the importance given by students and their families to success in the national examination. Her dedication to her study and her parents' willingness to invest in private classes are typical of many students and families throughout Bangladesh. The number of coaching classes she attends is also common for those in her age group with parents who can afford it. It is significant that the formal textbook, which focuses on communicative English, was tucked away in a locked drawer and instead she and her teachers (both at school and in private tuition) relied on a commercial study guide and crib sheets of grammar exercises and adaptable compositions. Her experiences are suggestive of ways that examinations shape teaching and learning at secondary level, especially in encouraging a predominance of rote learning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Eva's story</head><p>Eva is two years younger than Priya. Her school is in a small town. She finds English hard. She likes to go to school, meet her friends, but did not seem to attend the classes. Her parents were worried about her progress in English. Her older brother, who had achieved GPA5 in his S.S.C examination, could well teach her various subjects including English, but Eva preferred to go to private tuition.</p><p>She would wake early in the morning and go for private tuition at the home of one of her school's English teachers. Sometimes she would go on to school from there, but mostly she went home. In addition there was a private tutor who came to her house in the evening to teach her other subjects. Like Priya, she had her guidebook and some sheets of compositions collected from her private tutor.</p><p>Towards the end of the year she sat the school's test examination and passed it, ensuring she could sit for the national Junior School Certificate examination. Her attention to study increased dramatically.</p><p>The national examination was held in a different school. Attendees came from surrounding villages and some had to find out temporary accommodation in the town. Police guarded the gate of the examination centre. "I have never seen police from so close," she said. "I thought if we do something wrong they will take us to the police station."</p><p>In one of the examinations she suddenly fainted. The local hospital was called, a medical officer provided medication and her mother rushed to the examination centre. Eva recovered, was given extra time and her mother was allowed to stay with her.</p><p>Her anxiety was rampant as the day of results publication approached. On the day she hid in her room and refused to go to school to learn the result. Instead her father and elder brother went. It turned out she attained an overall A, which was beyond her most hopeful dreams. Immediately there was joy everywhere: all her relatives and friends phoned with the news, sweets were distributed, and gifts came from her father and other relatives. Now Eva determined to study hard in the next class. She informed her father that she needed to go to Mr Rahman for private tuition. "Everyone from my class will attend private tuition with Mr Rahman Sir," she said. "If I don't go he will not let me pass in the examination."</p><p>Eva's story highlights the fear and the pressure on young students caused by the national examination. It also illustrates the reliance students and parents place on private tuition and coaching centres, rather than government provided free classes. There is suggestion perhaps that some teachers do not teach effectively in class, and even suggestion that some may deliberately reserve their best efforts for private after-school classes. This suggestion is reinforced by other recent studies <ref type="bibr" target="#b1">(Alam 2013;</ref><ref type="bibr" target="#b24">Hasnat 2017)</ref>.</p><p>Eva turned out to be successful and so could celebrate with everyone, but her fear signals how terrifying failure can be for a candidate. A second attempt to pass generates a comment of irregular in the academic transcript and follows a student throughout their future career. Every year there are reports of suicides after failure in the national examinations (for instance, Prothom Alo 2015a; The Dhaka Tribune 2017). The surprise that Eva felt at her unexpectedly good result hints at the politicisation of the examination results: schools seek to increase their pass percentages, teachers are judged by the results they achieve through private tuition rather than by their classroom teaching <ref type="bibr" target="#b2">(Alam 2016)</ref>. The government is also keen to see high rates of success as it is then shown to be successful in raising educational achievement <ref type="bibr" target="#b41">(Rahman 2012)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The impact of examinations on the secondary English curriculum</p><p>As stated earlier, the national English curriculum is planned to achieve comprehensive communicative competencies. At secondary level the curriculum includes the following two objectives (National Curriculum 2012):</p><p>1. To help students develop competence in all four language skills, i.e. Listening, Speaking, Reading, Writing. 2. To help students use these competencies for effective communication in real life situations.</p><p>It proposes that students will be able to "describe people and places, follow instructions, directions, requests, announcements and responds accordingly in social situations", that they will be able to "narrate incidents in logical situations, ask for and give permission/ suggestions, participate in conversations, discussions and debates", and that they will also be able to "recognise and use English sounds, stress, and intonation appropriately while listening and speaking" (National Curriculum 2012). Free textbooks, based on communicative approaches to language learning and offering tasks in speaking and listening as well as reading and writing, have been developed by the government and issued to all schools (United Nations Educational, Scientific and Cultural Organization 2016). However, as Priya's story illustrates, many English teachers do not use the textbook, perhaps because they are not confident in using interactive communicative strategies, or perhaps because they focus only on teaching towards the national examination.</p><p>The structure of the national examination only allows assessment of skills in reading, and writing, and because it permits success through rote learning of answers (United Nations Educational, Scientific and Cultural Organization 2011) it does not assess if students can use their English language skills in real life contexts. Since the learning goals set by the national curriculum are not assessed in the examination, they often do not receive attention in schools. Instead a different, and more limited, operational curriculum functions in both school and coaching centres.</p><p>Many of the teachers interviewed talked about how they felt pressured to teach to the examination, and some insisted that the examination needed to change if the language skills required by the national curriculum were to be taught. Shohrab Hossain was one who believed the content and structure of examinations were driving classroom curriculum: Our whole examination system needs to change. It should develop like the IELTS where students are required to prove their language skills. There must be a speaking and listening test in our examination systems. Then students will be motivated to learn speaking and listening. There are many students every year who take preparation for the IELTS examination in Bangladesh and you can see they do not try to memorise any composition. They know that the essay topics will not be common and it is not possible to answer by memorising. So they develop their language skills.</p><p>Change is perhaps not as simple as Hossain suggests. However, his comments illustrate widely held teacher perceptions that what is in the examination is more important than what is in the official curriculum or in the mandated textbooks because students will only be motivated to study what will bring them high marks in the examination.</p><p>The problem of a constricted operational curriculum does not occur only in Bangladesh. Similar trends have been identified and reported by in other countries such as <ref type="bibr" target="#b28">Kwon et al. (2017)</ref> in South Korea, Shohamy (2014) in Israel, Allen (2016) in Japan, <ref type="bibr" target="#b55">Xie (2015)</ref> and <ref type="bibr" target="#b56">Zhan and Andrews (2014)</ref> in China.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The examination as shaper of learning</head><p>Just as the examination shapes the operational curriculum it also shapes the nature of students' learning. Bangladesh's education policy (Ministry of Education 2010) emphasises the importance of developing students' latent talents and creativity. It is questionable whether this goal can be achieved in the face of the rote learning and the emotional pressure associated with the examination system.</p><p>The stories of Priya and Eva are illustrative of widespread dependence, by parents as well as students, on commercial examination guidebooks and on private tuition that, in English, drills students in grammar exercises and model compositions. Students attend tuition classes and rote learns model answers. And schools also drill examination questions and answers, and arrange sequences of model tests.</p><p>Some of the teachers interviewed claimed that they try to teach all the chapters in the mandated textbooks, but acknowledged that when the examination gets closer they focus on what is more important for the examination. Many of the teachers interviewed stated that time did not allow them cover all the chapter and they could ignore those chapters that do not have passages that are likely to be used for comprehension tests.</p><p>In contrast, teachers interviewed stressed the importance of examination papers from past years, explaining these give a clear indication of the format and content of future examinations. Local publishers collect all the test papers from leading schools and publish them together with the past year's examination papers. These collections are eagerly sought by almost all candidates and generally used by teachers. Observation revealed how various schools would create an extensive formal schedule of solving different schools' test questions, and how teachers in coaching centres would compile answers for various questions and make a summary sheet for students. Comments by teachers included:</p><p>If any students solved the test questions of various schools and the past examination questions, I think they would definitely pass the examination. I follow past examination papers and the test examination papers of different schools while I teach students. I think it is helpful to get an idea about the question patterns of the final examination. It helps me to decide what is more important for the final examination. I suggest students solve past examination papers as much as possible.</p><p>Mock tests are very popular with both students and teachers and can take many hours of school time. Many of the interviewed teachers justified this use of time, offering comments similar to the following:</p><p>When the examination is nearer I give more emphasis on mock tests similar to the S.S.C examination format in type and length. It helps students a lot, especially to practice for a three hours examination.</p><p>It helps students to learn how to manage their time for the examination and it helps to reduce stress about the examination.</p><p>I have been teaching for many years and from my experience I can say it really helps students to get good marks in the examination.</p><p>Language learning in this context becomes the acquisition of a series of right answers rather than the development of a means of communicating and thinking. Students can pass examinations without necessarily gaining the ability to understand the patterns or meaning of the phrases they have learned, far less use them in real life contexts. The rote learning endorsed by the examination process thus leads to narrow perceptions of what learning can be and narrow experiences of how to learn.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The examination as source of professional and social capital</head><p>Priya's and Eva's parents were, like so many parents in Bangladesh, very willing to pay for private tuition. Their commitment points to the value attached to examination success. Success in Secondary School Certificate and Higher Secondary Certificate examinations has high significance for students' future lives, for parents' social standing, for teachers' and schools' reputations, and for the government's public image.</p><p>For students the overt stakes are entry into further education and into professional pathways. After secondary school there will be further high stake examinations. Universities and public service rely extensively on examinations to determine eligibility. The GPAs attained at school level are the beginning of accumulative record that will enable or limit a student's career progress and even their desirability as a marriage partner. But there are also other, indirect, pressures on students: parents lean on their children's examination success as a base for social approval, teachers build their reputation as coaches on their students' grades; schools justify their social, and till recently formal, ranking on their percentages of top GPAs. Thus students feel the pressure of not only their own hopes for their futures but also the need to live up to the expectations of their parents, teachers and schools. It could be argued that such a build-up of pressures causes students to think of their educational aspirations only in terms of gaining success in the examinations.</p><p>Although a formal government ranking has recently been discontinued, schools and colleges are still openly ranked on the basis of their examination results (Prothom Alo 2015b). The higher the percentage of GPA5s a school or college produces, the higher its desirability and popular fame. The consequent fame allows the institution to be increasingly selective in selecting students who gained high scores in previous examinations.</p><p>Kamrul Hasan, a deputy principal of a highly reputed institution, explained how consistently good results in the S.S.C and H.S.C examinations built his institution's fame:</p><p>This institution is a relatively new, founded by a famous businessperson. Within a few years of its establishment we were among the top institutions in terms of results. Our success was reported in the newspaper and media and since then we received a huge number of applications for admission. As a result we now have the luxury to choose students. Because we are a private institution we charge relatively high monthly tuition fees, but still students want to study in our institution. At present we have students from thirty-seven districts of Bangladesh.</p><p>When results are announced newspapers often carry photographs of successful teachers who are garlanded and applauded. A teacher who leads the students in his private coaching group to high examination grades will be assured of filling all his available sessions in the following year.</p><p>A number of the students from less prestigious schools claimed that teachers only paid attention to high achieving students, and several teachers from such schools acknowledged that in a large class they could not give individual support to all students so they would focus on those who were seen to apply themselves to their study. Inevitably neglect of low achieving students widens existing achievement gaps.</p><p>In a national context where ordinary teachers receive a low salary <ref type="bibr" target="#b2">(Alam 2016)</ref>, the pressures of the examination offer opportunistic, though questionably honest, means of augmenting income. It is interesting that Eva, who is an active member of her sports team, fainted in the examination hall and that just after the examination she realised the importance of attending private tuition at her teacher's home. There are reported instances of teachers compelling students to come for private tuition <ref type="bibr" target="#b49">(Tarek 2017)</ref>. It is a widespread belief, voiced by students from poor families as well as rich ones <ref type="bibr" target="#b24">(Hasnat 2017)</ref>, that if they do not go for private tuition to a particular teacher, they will not get good marks in the preparatory test, and may not even be allowed to sit the examination. The government has taken measures to ban coaching abuses. A law, drafted and in process of consultation on the ministry's website <ref type="bibr" target="#b42">(Rashid 2016)</ref>, proposes imprisonment and fines for teachers who involved in private tuition of their own schools' students, and there are other measure to control coaching centres, and publishers of guidebooks and notebooks. Nevertheless, the practice of teachers privately coaching their own students persists and is strongly reinforced by parents who see immediate, if costly, benefits for their children. The practice is to some extent both a reflection and a cause of a lack of effectiveness and rigour within the schooling system: if teachers are not giving sufficient attention to students in their classroom, then after-school coaching seems inevitable, but when teachers focus their energy on entrepreneurial tuition services they are often have little energy left for the classroom <ref type="bibr" target="#b1">(Alam 2013;</ref><ref type="bibr" target="#b24">Hasnat 2017</ref>).</p><p>Eva's father was not atypical in going to get his daughter's results. The results are all important for the family. Sajedur Rahman, a primary school teacher, described his efforts to help her daughter, Bushrah, before her J.S.C examination.</p><p>During her J.S.C examination time I took holidays from my job to help my daughter's preparation. For example, if she was memorising an answer I would ask her to say it from her memory and matched it with the book from where she learnt it. If she wrote an answer I then checked that and it matched with the book, and also looked if there were any spelling mistakes.</p><p>During her examination days I took her to the examination centre. I waited outside while she was attending the examination. When the examination was finished the first thing I checked on returning home was whether the questions were what she expected, and she checked different multiple choice or true false answers with the book. Then on the day of the publication of the result I went to her school in the morning and like other parents I waited in the school and tried to get her result from the Ministry of Education's website, but on that day the website did not work as the load was too great.</p><p>Students' and parents' reactions after publication of results underline the importance of good grades. For those who achieve GPA5 there are immediate celebrations, distribution of sweets among relatives, friends and teachers, and exchanges of gifts. Later there will be garlanded school processions. Those who fail, or underachieve, often plunge into depression and some receive derogatory comments from their parents for whom their child's failure is a matter of social shame. As mentioned above there have been media reports of students who commit suicide after the publication of the results. A very controversial example was reported in The Daily Star: a student died jumping from a building after learning that he had failed in the S.S.C. examination, but when the script was re-examined it was found that he had passed with comfortably and an error had apparently been made by the head examiner in assessing the script (The Daily Star 2016).</p><p>In the school, and sometimes even in a student's family, special prayers, milad, are offered for candidates. Eva, Priya and Bushrah all recounted how their school held milad before their examination. Another candidate related that his parents went to a famous pir, a priest, to request his prayers for success in the examination.</p><p>Not all parents can afford to pay for private coaching. Those who can afford the costs are in a better position to harvest good grades. Rural peasants and urban day labourers do not have the means. Thus parents' financial capacity is a big factor in determining examination outcomes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A complex problem</head><p>Both the survey and the qualitative inquiry clearly indicated that the current national examination system makes achievement of curriculum goals and objectives impractical. They also indicated that it would be falsely optimistic to hope for substantive changes in teaching and learning before the national system of examination is made more consistent with curriculum goals.</p><p>Researchers <ref type="bibr" target="#b23">(Hasan 2013</ref>; Maniruzzaman and Hoque 2010) sometimes seem to blame English teachers for teaching exclusively to the examination rather than implementing the tenets of communicative language. However, this study suggests that teachers are caught in a complex system in the same ways as students, parents, and even policy-makers are. Whatever the original reasons for the current shape and influence of the examination system, it has now gathered a multi-facetted power of its own. The government may formulate policy and curriculum that is related to life needs and that intends to allow all students to benefit from education. Teachers may want to implement the curriculum and may be progressively trained to do so. However the examination system intervenes. It is a tool for assessment, even though its fairness and its scope are questioned. However, it is also a means of social construction: those who hold power (and those who are able to struggle to gain more opportunity for their children) value and uphold a system that maintains existing social status and opportunity. <ref type="figure">Figure 1</ref> illustrates the relationships.</p><p>The examination is a significant component of education in Bangladesh. It has the power to disrupt, and even block, government initiatives in curriculum change. The power of the examination system exists because it is not only a formal means of assessing learning, but because it serves as a process of social construction that sustains existing distributions of wealth and power. As an instrument of assessment it could perhaps be relatively easy to change. However, it is upheld by the conscious and unconscious patterns of parental expectation. Those who have the money to send their children to highly reputed schools and to pay for private tuition currently have a reasonable expectation that their children can gain the so called Golden GPA, the solid A+ grade, in the national examinations. Those who hope to lift the social and economic status of their children allocate hard-earned money to pay for the coaching that will facilitate their children's progress through the examination system to further opportunities. Their expectations, shaped by the current situation, give political strength to the current system. Change, if it is to come, will require governmental initiative. It will also require change in societal expectations. That the examination system is not satisfactory seems evident, and it also seems evident that change needs to occur. Creating change and ensuring better outcome is a complex challenge that requires further investigation and strategic planning for implementation. <ref type="figure">Fig. 1</ref> The role of the examination system</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Possibilities of change to the examination</head><p>However, not all the teachers interviewed upheld good examinations results as a sufficient goal. For example, Shafiqur Rahman, a rural teacher, while acknowledging the importance of results, added that they are not enough to obtain employment. Those who are good at English, he explained, especially in speaking English, have more chance of success in their career.</p><p>Shopan, another English teacher, recounted how he integrated examination preparation with teaching students to be fluent in spoken English. He stated:</p><p>At least forty marks in the examination are based on two reading passages. So my first priority is to teach students the prescribed national textbook texts, develop their reading skills and teach vocabularies from the texts. I strongly encourage my students to read various kinds of English texts. I have introduced a system that I called passwords. I select new words from the textbooks and students need to use these words in class.</p><p>He explained how he sought to bring material students memorised to life and encourage improvised variations:</p><p>Students need to write dialogues in the examination. Various types of model dialogues are available in different guidebooks, like a dialogue between a student and a teacher, a doctor and a patient, two friends, a shop keeper and a customer. Students generally memorise those. I ask students to role play these in the class and during speaking hour. Sometimes I ask them to write sentences that they have heard from others.</p><p>Despite the absence of tests for oracy and for active communication skills in the existing examination system, there are teachers throughout Bangladesh who use their own initiative, sometimes supported by their school, to teach a rich range of language skills. However, they are not the norm.</p><p>As the survey suggested, many of the teachers in this study were aware of the importance of listening and speaking in the development of English competency but they contended the examination needed to change to include these components before they would fit into classroom practices. Teacher educators interviewed also advocated the introduction of speaking and listening tests in high-stakes examinations. However, there was general acknowledgement that it would not be easy to find workable models for such tests. Several participants who said they encouraged speaking in their English class complained that they had no directives for evaluation. Some argued for models similar to the IELTS speaking test, with sections arranged in increasing levels of complexity. The form of the test was one challenge; the mechanics another. Would there be one examiner and one candidate at a time? Or could there be more complex arrangements that would allow students to hold conversations or debates? Some doubts were expressed about what would happen if oral components were tested through any form of internal assessment. Many teachers voiced distrust of the fairness of their colleagues. Abdur Rahim, an English teacher, pointed out that problems already exist when teachers mark work:</p><p>At the moment there is no rubric for marking students' writing. Teachers award marks according to their own criteria. In an essay one teacher gives 8 of 10, whereas another teacher may give 6 for the same essay. If a student writes from his own imagination there may be some mistakes in sentence structure or spelling mistakes; on the other hand if a student writes from memorisation these kinds of mistakes are not visible. So, even though he is writing from memorisation, he is getting better marks than the first one.</p><p>Several teachers talked about possible misuses of power: if teachers had authority to award marks towards students' final grades, might they not use it as weapon for exploiting students for private tuition? A rural English teacher, Nurul Amin, articulated his fears:</p><p>If speaking and listening tests are included in the S.S.C examination and teachers are given power to award marks, then in most cases teachers will abuse it. If they have any personal clash with any student then they will give very poor marks. There may be some benefits of adding a speaking and listening test, but it will create more problems and corruption than the benefit it will bring. Nurul Amin's concern and the existing abuses that give rise to it indicate the inclusion in students' final grade of internally assessed listening and speaking, would require careful measures to reduce abuses that could come through the change. Change seems to be necessary, but strategic planning as well as aspirational ideals are required to bring about a system that is equitable as well as congruent with curriculum goals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>The quantitative data, personal stories and discussion in this article indicate how deeply entrenched in social as well as education systems the current examination process is, and also suggest that, while reform appears necessary, it is not easy to implement.</p><p>As discussed, there are clearly evident problems in the existing system. Perhaps the most obvious, and educationally most detrimental, is that not only do examinations not serve to evaluate learning according to national curriculum goals, but, through a washback effect, they reduce classroom teaching and learning to a curriculum focused almost entirely on what is expected in the examination. In addition, examinations tend to reduce academic curiosity, exert great pressure on young students' lives, encourage a parallel education industry involving coaching centres and commercial publishers, and advantage those who can afford to pay for extra tuition.</p><p>However, the power of the examination is also reinforced and upheld by similar factors. Because of the emphasis both parents and students place on examination results teachers are discouraged from teaching a richer curriculum and coaching centres are rewarded. The opportunity for underpaid teachers to earn further income through after-school coaching also encourages them to shift their focus from attempting to meet national curriculums goals to focusing on the restricted frame of examinable material. It could also be argued that those who currently gain social prestige and future career opportunities for their children would not want radical change in the examination system.</p><p>Nevertheless, it appears obvious that change is needed. If Bangladesh is to achieve its goals of preparing its students to be competent in spoken as well as written English and to be effective communicators in real life situations, then its education processes need to include not only practice in oral language but also opportunities for spontaneous, creative and contextually relevant use of language, rather than the rote learning that currently widely predominates. Such change, we argue, will need to address not only the content and format of the examinations themselves, but also re-evaluation of the role of teachers and discussion of wider social issues. In particular, we argue, there is need for a comprehensive system of pre-service teacher education and of continuing processional development, as well as a rigorous, if necessarily gradual, process of increasing teacher salaries. If teachers are to be instruments of achieving national curriculum goals in reality, as well as in idealistic theory, then it is vital to recruit and retain the best.</p><p>That problems exist now is perhaps inevitable. The historic and current factors that lead to Bangladesh being branded as a developing country involve economic as well as systemic difficulties. As Bangladesh plays the game of global catch-up, it is important that policy maker attend to the complexity rather than only the surface of problems. We argue that the examination system does indeed require significant reform. We also argue that such reform requires concurrent re-evaluation of the role of teachers and the development of a teaching profession that is financially viable as well as professionally responsible. Social attitudes also need to change. It might validly be hoped that these may begin to shift as the benefits of richer classroom learning become evident.</p></div>		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>We would like to thank all the participants for their time and effort. We would also like to thank creativity and change lab members for their valuable advice and feedback.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Authors' contributions MA collected data, analysed and then wrote the first draft of this article. The article was based on first author's PhD study. JG provided critical comments, feedback and suggestion for further improvement. Both authors read and approved the final manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare that they have no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's Note</head><p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p><p>Received: 8 October 2017 Accepted: 14 March 2018</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Charting the River: A case study of English language teaching in Bangladesh</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Al</forename><surname>Amin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+		<respStmt>
+			<orgName>Christchurch: University of Canterbury</orgName>
+		</respStmt>
+	</monogr>
+	<note>PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Operational curriculum and citizenship: An exploration of what happens in the Bangladesh secondary school classrooms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Alam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Research &amp; Educational Change in</title>
+		<editor>J Greenwood, J Everatt, AH Kabir, S Alam</editor>
+		<meeting><address><addrLine>Bangladesh; Dhaka</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Dhaka Press</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="17" to="33" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Teachers, collaboration, praxis: A case study of a participatory action research project in a rural school of Bangladesh</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Alam</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<pubPlace>Christchurch</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Canterbury</orgName>
+		</respStmt>
+	</monogr>
+	<note>PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Foreword to the special issue &quot;the common European framework of reference for languages (CEFR) for English language assessment in China&quot; of language testing in Asia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40468-017-0049-9</idno>
+		<ptr target="https://doi.org/10.1186/s40468-017-0049-9" />
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wall</surname></persName>
+		</author>
+		<title level="m">Does washback exist? Applied Linguistics</title>
+		<imprint>
+			<date type="published" when="1993" />
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="115" to="129" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Japanese cram schools and entrance exam washback</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Allen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Asian Journal of Applied Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="54" to="67" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Targeting washback-A case-study. System</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fullilove</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wong</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="207" to="223" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Policy reform in Bangladesh&apos;s secondary education (1993-2013) tracing causal processes and examining ADB&apos;s contribution</title>
+		<ptr target="https://www.adb.org/sites/default/files/evaluation-document/177777/files/topical-ban-sec-educ.pdf" />
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+	<note>Asian Development Bank [ADB</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Language assessment in practice: Developing language assessments and justifying their use in the real world</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">F</forename><surname>Bachman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Palmer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>As (</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Working for washback: A review of the washback concept in language testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">M</forename><surname>Bailey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="257" to="279" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Exploring the Washback of the TOEIC in South Korea: A sociocultural perspective on student test activity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Booth</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+		<respStmt>
+			<orgName>Auckland: University of Auckland</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bryman</surname></persName>
+		</author>
+		<title level="m">Social research methods</title>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford university press</publisher>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Testing listening comprehension in Japanese university entrance examinations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Buck</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JALT Journal</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="12" to="42" />
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Impact of a public English examination change on students&apos; perceptions and attitudes toward their English learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Studies in Educational Evaluation</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="279" to="301" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Washback or backwash: A review of the impact of testing on teaching and learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Curtis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Washback in language testing: Research contexts and methods</title>
+		<editor>L Cheng, Y Watanabe, A Curtis</editor>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="3" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">English language assessment and the Chinese learner</title>
+		<editor>Routledge: Taylor&apos;s &amp; Francis Group</editor>
+		<imprint>
+			<date type="published" when="2010" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Appropriateness and relevancy of Communicative Language Teaching (CLT) for Bangladesh:a perspective from Bangladeshi rural secondary school English teachers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">K</forename><surname>Choudhury</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Columbia University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Stories of experience and narrative inquiry</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">M</forename><surname>Connelly</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Clandinin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Educational Researcher</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2" to="14" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Policy versus ground reality: Secondary English language assessment system in Bangladesh</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shaheen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Shrestha</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Khan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Curriculum Journal</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="326" to="343" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">The new textbook for teaching English language in secondary education in Bangladesh: teachers&apos; practices and training</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Farooqui</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+		<respStmt>
+			<orgName>Sydney: University of Sydney</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The washback of an EFL national oral matriculation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Ferman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Washback in language testing: Research contexts and methods</title>
+		<editor>L Cheng, Y Watanabe, A Curtis</editor>
+		<meeting><address><addrLine>Mahwah, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence Erlbaum Associates</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="191" to="210" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Works and lives: The anthropologist as author</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Geertz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988" />
+			<publisher>Stanford University Press</publisher>
+			<pubPlace>Stanford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Globalisation, English for everyone and English teacher capacity: Language policy discourses and realities in Bangladesh</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">O</forename><surname>Hamid</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Current Issues in Language Planning</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="289" to="310" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Teachers&apos; and students perceived difficulties in implementing Communicative Language Teaching in Bangladesh: a critical study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">K</forename><surname>Hasan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>The Open University</publisher>
+			<pubPlace>UK</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Rural parents&apos; engagement in education in Bangladesh: Problems and possibilities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Hasnat</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+		<respStmt>
+			<orgName>Christchurch: University of Canterbury</orgName>
+		</respStmt>
+	</monogr>
+	<note>doctoral thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Creative questions: Validity and reliability of secondary school certificate examination</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">Z</forename><surname>Hossain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bangladesh Education Journal</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="31" to="41" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Stop high-stakes testing: An appeal to America&apos;s conscience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Farenga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Ness</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>Rowman &amp; Littlefield</publisher>
+			<pubPlace>Lanham</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">English language assessment in Bangladesh: Developments and challenges</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Khan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">South Korea: Asia TEFL</title>
+		<editor>Y Moon, B Spolsky</editor>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="121" to="157" />
+		</imprint>
+	</monogr>
+	<note>Language assessment in Asia: Local, regional or global?</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Educational assessment in the Republic of Korea: Lights and shadows of high-stake exam-based education system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Shin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Assessment in Education: Principles, Policy &amp; Practice</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="60" to="77" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Raising the ante for students, teachers, and schools. Alexandria: Association for Supervision and Curriculum Development</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Loschert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B &amp;</forename><surname>Gleason</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">G</forename><surname>Carter</surname></persName>
+		</author>
+		<ptr target="http://www.ascd.org/publications/newsletters/policy-priorities/nov00/num23/toc.aspx" />
+		<imprint>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">How does washback work on the EFL syllabus and curriculum? A case study at the HSC level in Bangladesh</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Maniruzzaman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Hoque</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language in India</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="49" to="88" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Dhaka: Government of the People&apos;s Republic of Bangladesh</title>
+		<ptr target="http://nctb.portal.gov.bd/sites/default/files/files/nctb.portal.gov.bd/files/6d9b9671_f815_460c_b8ef_c58a1b829f55/English.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Ministry of Education</title>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note>National Education Policy 2010 (final)</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Characteristics of an effective student testing system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>Phelps</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Educational Horaizons</title>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="19" to="29" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Barriers and Enablers for Teachers Assessing Listening and Speaking Skills at Secondary level in Bangladesh (masters thesis)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Podder</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<pubPlace>Christchurch</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Canterbury</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">English aural-oral skills assessment policy and practices in Bangladesh secondary school</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Podder</surname></persName>
+		</author>
+		<editor>J Greenwood, J Everatt, AH Kabir, S Alam</editor>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="53" to="68" />
+			<pubPlace>Bangladesh; Dhaka</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Dhaka</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Prothom</forename><surname>Alo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">; ফেল করায় আত্ মহত্ যা!</forename><surname>Dhaka</surname></persName>
+		</author>
+		<ptr target="http://www.prothom-alo.com/bangladesh/article/542386/" />
+	</analytic>
+	<monogr>
+		<title level="j">Prothom Alo</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Top 10 schools of Dhaka</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Prothom</forename><surname>Alo</surname></persName>
+		</author>
+		<ptr target="http://en.prothom-alo.com/bangladesh/news/68001/Top-10-schools-of-Dhaka" />
+	</analytic>
+	<monogr>
+		<title level="j">Dhaka: Prothom Alo</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Stakeholders&apos; conflicting aims undermine the washback function of a high-stakes test</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Qi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="142" to="173" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Is testing an efficient agent for pedagogical change? Examining the intended washback of the writing task in a high-stakes English test in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Qi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Assessment in Education</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="74" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Researching English language assessment in China: Focusing on high-stakes testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">D</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Cumming</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Assessment Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="97" to="100" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">English language policy initiatives and implementation in Bangladesh: Micro political issues</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Rahman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Asian EFL journal</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="59" to="96" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Sh ; জিপিএ-৫ প্ রাপ্ তরা নিদারু ণভাবে অযোগ্ য!</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Dhaka</surname></persName>
+		</author>
+		<ptr target="http://archive.prothom-alo.com/detail/date/2012-12-26/news/316122" />
+	</analytic>
+	<monogr>
+		<title level="j">Prothom Alo</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Jail, fine cannot stop pvt coaching, say experts</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Rashid</surname></persName>
+		</author>
+		<ptr target="http://www.theindependentbd.com/printversion/details/40286" />
+	</analytic>
+	<monogr>
+		<title level="m">The Independent</title>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Narrative methods for the human sciences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">K</forename><surname>Riessman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<pubPlace>Los Angeles; Sage</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Real world research: A resource for users of social research methods in applied settings</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Robson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Chichester: Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note>3rd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Aiming for positive washback: A case study of international teaching assistants. Language Testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Saif</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1" to="34" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">The power of tests: A critical perspective on the uses of language tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Shohamy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Routledge</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">The negative effects of high-stakes testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Spann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kaufman</surname></persName>
+		</author>
+		<ptr target="http://www.luc.edu/media/lucedu/law/centers/childlaw/childed/pdfs/2015studentpapers/Spann.pdf" />
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Multiple case study analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Stake</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Guilford Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M ; প্ রাইভেট ও কোচিং বাণিজ্ য আর</forename><surname>Tarek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>নয়</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Dhaka</surname></persName>
+		</author>
+		<ptr target="http://www.ittefaq.com.bd/print-edition/sub-editorial/2017/07/15/208855.html" />
+		<title level="m">The Daily Ittefaq</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Barisal suicide victim finally passes SSC exam after re-scrutiny</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">The</forename><surname>Daily</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Star</forename></persName>
+		</author>
+		<ptr target="http://www.thedailystar.net/city/barisal-suicide-victim-finally-passes-ssc-exams-after-re-scrutiny-1225153" />
+	</analytic>
+	<monogr>
+		<title level="m">The Daily Star</title>
+		<meeting><address><addrLine>Dhaka</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">Four failed SSC examinees commit suicide. Dhaka: The Dhaka Tribune</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>The Dhaka Tribune</surname></persName>
+		</author>
+		<ptr target="http://www.dhakatribune.com/bangladesh/nation/2017/05/05/four-ssc-examinees-failed-pass-commit-suicide/" />
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Language Testing and Assessment. Encyclopedia of Language and Education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Tsagari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L ( ; E</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Shohamy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Or</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>May</surname></persName>
+		</author>
+		<ptr target="http://www.ibe.unesco.org/fileadmin/user_upload/Publications/WDE/2010/pdf-versions/Bangladesh.pdf" />
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Springer</publisher>
+			<pubPlace>Cham</pubPlace>
+		</imprint>
+	</monogr>
+	<note>World data on education</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Bangladesh: Global Education data on Education</title>
+		<ptr target="http://unesdoc.unesco.org/images/0024/002457/245752e.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Scientific and Cultural Organization</title>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Monitoring report</note>
+	<note>7th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Examination washback: The Sri Lankan impact study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Alderson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Validation in language testing</title>
+		<editor>A Cumming, R Berwick</editor>
+		<meeting><address><addrLine>Philadelphia</addrLine></address></meeting>
+		<imprint>
+			<publisher>Multilingual Matters</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="194" to="221" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Do component weighting and testing method affect time management and approaches to test preparation? A study on the washback mechanism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Xie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">System</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="56" to="68" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Washback effects from a high-stakes examination on out-of-class English learning: Insights from possible self theories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zhan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Andrews</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Assessment in Education: Principles, policy &amp; practice</title>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="71" to="89" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

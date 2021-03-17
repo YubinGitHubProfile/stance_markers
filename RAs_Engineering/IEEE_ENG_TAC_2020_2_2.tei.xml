@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Emotion Recognition in Simulated Social Interactions</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christian</forename><surname>Mumenthaler</surname></persName>
+							<idno type="ORCID">0000-0001-5829-7837</idno>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S R</forename><surname>Manstead</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Psychology</orgName>
+								<orgName type="department" key="dep2">Swiss Center for Affective Sciences</orgName>
+								<orgName type="laboratory">are with the Laboratory for the Study of Emotion Elicitation and Expression (E3Lab)</orgName>
+								<orgName type="institution" key="instit1">University of Geneva</orgName>
+								<orgName type="institution" key="instit2">University of Geneva</orgName>
+								<address>
+									<postCode>1205</postCode>
+									<settlement>Geneva</settlement>
+									<region>GE</region>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">School of Psychology</orgName>
+								<orgName type="institution">Cardiff University</orgName>
+								<address>
+									<postCode>10 3AT</postCode>
+									<settlement>Cardiff</settlement>
+									<region>CF</region>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Emotion Recognition in Simulated Social Interactions</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TAFFC.2018.2799593</idno>
+					<note type="submission">Manuscript received 19 Apr. 2017; revised 11 Jan. 2018; accepted 24 Jan. 2018. Date of publication 19 Mar. 2018; date of current version 29 May 2020.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Emotion recognition</term>
+					<term>cognitive appraisal</term>
+					<term>facial expressions</term>
+					<term>social inferences</term>
+					<term>social interaction</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Social context plays an important role in everyday emotional interactions, and others&apos; faces often provide contextual cues in social situations. Investigating this complex social process is a challenge that can be addressed with the use of computer-generated facial expressions. In the current research, we use synthesized facial expressions to investigate the influence of socioaffective inferential mechanisms on the recognition of social emotions. Participants judged blends of facial expressions of shame-sadness, or of anger-disgust, in a target avatar face presented at the center of a screen while a contextual avatar face expressed an emotion (disgust, contempt, and sadness) or remained neutral. The dynamics of the facial expressions and the head/gaze movements of the two avatars were manipulated in order to create an interaction in which the two avatars shared eye gaze only in the social interaction condition. Results of Experiment 1 revealed that when the avatars engaged in social interaction, target expression blends of shame and sadness were perceived as expressing more shame if the contextual face expressed disgust and more sadness when the contextual face expressed sadness. Interestingly, perceptions of shame were not enhanced when the contextual face expressed contempt. The latter finding is probably attributable to the low recognition rates for the expression of contempt observed in Experiment 2.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>SOCIAL context plays an important role in everyday emotional interactions and others' faces often provide contextual cues in social situations. This social information is particularly useful when we are confronted with uncertainty-inducing situations, in which relevant information can be inferred from the facial expressions of others to correctly evaluate the situation <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b1">[2]</ref>. Investigating such complex social processes is a challenge that can be addressed with the use of computer-generated facial expressions.</p><p>Numerous lines of research have shown that emotional contextual information can strongly modulate the perception of emotion in faces (for a review, see <ref type="bibr" target="#b2">[3]</ref>). Because we often perceive people when they are surrounded by other people, the faces of others are common contextual cues in social situations and provide crucial information. However, it is important to make a distinction between the effect of general affective information presented in contextual faces (e.g., contextual faces looking sad may make perceivers more likely to see sadness in a target face) from a more specific inferential process that occurs when the emotions of others appear to be directed at a certain person (e.g., contextual faces looking angrily at someone may make perceivers more likely to see fear in a target face). On this account, a minor physical difference in the observed interaction (i.e., a change in gaze direction) could have strong psychological effects.</p><p>Recent research using synthesized facial expressions shows that emotional reactions apparently directed towards a target avatar exert specific influences on the perception of the target's facial expressions <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>. This socioaffective inferential mechanism is particularly strong when two emotions share a functional relationship. For instance, a subtle facial expression of fear in a target face was better recognized as expressing fear if another synthesized face looking at the target expressed anger than if it looked away or expressed a neutral emotion. Observers therefore based their judgments on the whole simulated social situation and inferred that another person's angry facial expression implied that the target was feeling afraid.</p><p>The functional relation between the emotion pairing of anger and fear proved to be strong in a simulated social situation, when the contextual face looked at the target <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>. However, in these studies the two avatars did not 'interact,' in the sense that there was no mutual gaze. This leaves open the possibility that, in the absence of clear social interaction between both avatars, the subtle facial expression of fear on the target face was not perceived as a reaction to the contextual person's emotional expression, but instead as a reaction to an environmental threat. To understand how socioaffective inferential mechanisms that occur during social interaction influence emotion recognition, it makes sense to investigate emotions such as shame, embarrassment, jealousy or admiration that are, by definition, fundamentally dependent on other people's thoughts, feelings or actions <ref type="bibr" target="#b5">[6]</ref>. An inferential mechanism for such emotions could be observed, for instance, in a situation where other people's disgusted facial expressions imply that a target should feel ashamed <ref type="bibr" target="#b6">[7]</ref>.</p><p>In the current research, we investigate the influence of such socioaffective inferential mechanisms on the recognition of social emotions. Modeling such a process using synthesized facial expressions allowed us to focus not simply on a restricted subset of facial movements, but also to include other movements (e.g., head movements) that serve communicative purposes, adjusting dynamically to changing events. Specifically, we focused on the recognition of facial expression blends of shame-sadness because of the functional relation that exists between shame, on the one hand, and the emotions of contempt and disgust, on the other. We expected that, in a social interaction condition, such expression blends would be perceived as expressing greater shame when the contextual face expressed disgust or contempt, relative to a control condition in which the two avatars did not interact. From a participant's perceptive, the interaction between the avatars could reflect a functional relation between a disgusted contextual face, expressing a signal of rejection or disapproval, and a target face that is perceived as expressing shame. We also expected a 'contagion' effect where there was congruency between the emotion expressed by the target and the contextual faces because, from a participant's perspective, the target face could be seen as reacting in the same way to a shared situation.</p><p>Investigating the specificity of a socioaffective inferential mechanisms to the situation in which the emotion expressed by both faces share a functional relation was important for our study, so we also used a second target expression blend (anger-disgust) in which there was a less clear-cut functional relation with the emotion expressed by the contextual face. Although it could be argued that one person could in principle respond angrily to another person's expression of disgust, this is arguably a less 'natural' functional relation than the one between shame and disgust. We therefore did not expect perceptions of anger in the target face to be enhanced by the presence of a disgusted contextual face, especially given the fact that the target face breaks eye contact with the contextual face, rather than engaging in the confrontational gaze typical of anger. However, perceptions of an anger-disgust target expression could be influenced by assumptions about emotional contagion if the contextual face also expressed disgust. We therefore expected that target expression blends of anger and disgust would be perceived as expressing greater disgust, relative to the control condition, when the contextual face also expressed disgust. One technical advantage of selecting blend expressions of shamesadness and anger-disgust is that, in both cases, the respective prototypical facial expressions share common facial features and are commonly confused.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">EXPERIMENT I 2.1 Method</head><p>Participants. Sixty-seven undergraduate students (64 females, 3 males; mean age: 19:2 AE 1:1 years) at Cardiff University, UK, participated in partial fulfillment of a course requirement. The sample size was defined in advance on the basis of results from previous experiments <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>.</p><p>Stimuli. Dynamic emotional facial expressions were generated by using FACSGen (software developed at the Swiss Center of Affective Sciences <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b8">[9]</ref>). The software was designed to manipulate expressions in three-dimensional faces with exact control of the muscle parameters derived from the Facial Action Coding System <ref type="bibr" target="#b9">[10]</ref>. This tool allowed us to perform highly controlled manipulations of temporal features for gaze movement and unfolding of dynamic facial expression. Photorealistic skin textures were mapped onto FACSGen faces using FaceGen Modeller <ref type="bibr" target="#b10">[11]</ref>. These photofits give a human-like appearance to the faces <ref type="bibr" target="#b7">[8]</ref>. Seven photofits were generated on the basis of male human faces selected from the Radboud Faces Database <ref type="bibr" target="#b11">[12]</ref>. Three of these were used for the target face. Each displayed four blends of shame-sadness expressions and four blends of anger-disgust expressions. A pilot experiment conducted to control the ambiguity of the four expression blends of shame-sadness is presented as online material available on the Computer Society Digital Library at http://doi. ieeecomputersociety.org/10.1109/TAFFC.2018.2799593, and information about the four expression blends of anger-disgust was published as supplementary materials in a previous publication <ref type="bibr" target="#b4">[5]</ref>. The other four photofits were used for the contextual face and these displayed expressions of contempt, disgust, sadness or a neutral state. These facial expressions were validated in previous work <ref type="bibr" target="#b7">[8]</ref>.</p><p>Procedure. Participants were told that two faces would be presented on the screen, one at the center, the other in the periphery, and that their task would be to assess the emotion expressed by the central face using four rating scales. Each trial began with a fixation cross for 500 ms, followed by a dynamic sequence in which the head/gaze movements of the two avatars were manipulated in order to create the illusion of a social interaction between the two avatars. As shown in <ref type="figure">Fig. 1</ref>, in the social interaction condition the two faces looked at each other and engaged in a mutual gaze, while <ref type="figure">Fig. 1</ref>. Illustration of the dynamic sequence presented to the participants in the two context conditions (social interaction vs mere context). After the presentation of the fixation cross, both faces appeared on the screen (1), followed by a shift of the head/gaze of both faces (2). In the social interaction condition, the faces looked at each other and shared a mutual gaze, while in the mere context condition they looked into opposite directions. Following the head/gaze shift, the contextual face expressed an emotion (3), and then the target face expressed an emotion (4).</p><p>in the mere context condition the two faces looked in opposite directions (i.e., away from the other face and from the participant) and did not share any gaze contact. In both conditions, the head/ gaze movements of the two faces were followed by (1) the emotional expression displayed on the peripheral face (hereafter, contextual face: contempt, disgust, sadness or neutral) and then by the emotional expression displayed by the central face (hereafter, target face: blends of shame-sadness or blends of anger-disgust). The duration of head/gaze movement of the two faces was the same in the two conditions (social interaction and mere context). The total duration of the sequence in all conditions was 5:07 s (þ500 ms for the fixation cross presented at the beginning of each trial). A response window containing four rating scales was presented next. The emotion labels for these scales were disgust, sadness, anger, and shame. Participants reported the extent to which these four emotions were perceived in the target face by moving a slider between 0 and 10. Participants completed all emotion scales (but could choose 0 if they felt that a given emotion was not present in the target face). Video S1 in the Supplemental Material, available online illustrates the task performed by the participants. The order of emotion category scales on the screen was constant for any given participant, but was randomized across participants. The order of stimulus presentation was counterbalanced across participants.</p><p>All participants took part in all 16 experimental conditions: 2 (context: social interaction and mere context) Â 2 (target emotion: blends of anger-disgust and blends of shame-sadness) Â 4 (contextual emotion: contempt, disgust, sadness, and neutral). Each condition was represented by four trials, making a total of 64 trials per participant.</p><p>Data analysis. We computed two indices reflecting which of two emotions sharing similar facial features was judged to be more present in the target face. The shame index characterized the response of each participant to facial expression blends of shame-sadness, and reflected how much shame relative to sadness was perceived in these expressions. It was calculated as the difference between the scores on the rating scales for shame and sadness. Positive scores indicate that participants made higher ratings of shame than of sadness. Similarly, the disgust index reflected the response of each participant to facial expression blends of anger-disgust. It was calculated as the difference between the scores on the rating scales for disgust and anger, with positive scores reflecting higher ratings of disgust than of anger. Means and standard deviations for each rating scale are available as online Supplemental Material, which can be found on the Computer Society Digital Library at http://doi.ieeecomputersociety.org/ 10.1109/TAFFC.2018.2799593. <ref type="table" target="#tab_0">Table S1</ref> presents values for target facial expression blends of shame-sadness, whereas <ref type="table">Table S2</ref> presents values for target facial expression blends of anger-disgust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Results</head><p>Perception of shame. A repeated-measures analysis of variance (ANOVA) was performed on shame index scores, with Condition (social interaction vs mere context) and Contextual Emotion (neutral, contempt, disgust, sadness) as within-subjects factors. There was a significant main effect of Contextual Emotion, F ð3; 198Þ ¼ 20:03, p &lt; :001, h 2 p ¼ :233, and an interaction between the Condition and Contextual Emotion, F ð3; 198Þ ¼ 7:16, p &lt; :001, h 2 p ¼ :098. Confirming our primary hypothesis, planned contrasts revealed that shame-sadness blends were perceived as expressing more shame when the avatars interacted and the contextual face expressed disgust. As shown in <ref type="figure">Fig. 2</ref>, when the contextual face expressed disgust, scores on the shame perception index were significantly higher in the social interaction condition than in the mere context condition, F ð1; 66Þ ¼ 15:59, p &lt; :001, h 2 p ¼ :19. Interestingly, this effect was specific for a contextual expression of disgust; it was not observed when the contextual emotion was contempt, F ð1; 66Þ ¼ 0:5, p ¼ :480, h 2 p ¼ :01. Planned contrasts also revealed that shame-sadness blends were perceived as expressing more sadness in the social interaction condition when the contextual face also expressed sadness. Scores on the shame perception index were significantly lower in the social interaction condition than in the mere context condition when the contextual face expressed sadness, F ð1; 66Þ ¼ 4:96, p ¼ :029, h 2 p ¼ :07. There was no difference between the social interaction and the mere context condition when the contextual face was neutral, F ð1; 66Þ ¼ 2:42, p ¼ :124, h 2 p ¼ :04. Perception of disgust. A repeated-measures ANOVA on disgust index scores with Condition (mere context, social interaction) and Contextual Emotion (neutral, contempt, disgust, sadness) as within-subjects factors revealed no significant effects (all ps &gt; :1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">EXPERIMENT II</head><p>Results of Experiment 1 clearly showed an effect on emotion perception in the social interaction condition when the contextual face expressed disgust, but not when it expressed contempt. However, from a theoretical perspective, at least in its complex forms, disgust reflects a social function of protecting the self from nonphysical threats <ref type="bibr" target="#b12">[13]</ref> whereas contempt is entirely defined by its social component that implies a negative evaluation of others <ref type="bibr" target="#b13">[14]</ref>. Therefore, although both of these contextual emotions provide a clear signal of rejection or disapproval in a social situation, a stronger effect should have been observed when the contextual face was expressing contempt, because it signals a punitive social sentiment. Given the fact that the emotional expressions of contempt used in Experiment I were previously validated in a French-speaking population in Geneva, a possible explanation for the observed results is that our English-speaking participants in Cardiff did not recognize the facial expression of contempt as expressing such emotion. Experiment 2 was designed to test this hypothesis by checking how well a new set of Cardiff participants recognized the emotions expressed by the contextual face used in Experiment 1. <ref type="figure">Fig. 2</ref>. Mean rating on the shame perception index for target facial expression blends of shame-sadness, when the contextual face was neutral or was expressing contempt, disgust or sadness, and when the two faces looked at each other and shared a mutual gaze (social interaction condition), or when they looked in opposite directions (mere context condition). Error bars indicate within participant 95 percent confidence intervals. The asterisks indicate a significant difference between context conditions (Ãp &lt; :05; ÃÃp &lt; :01).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Method</head><p>Participants. Thirty undergraduate students (26 females, 3 males; mean age: 19 AE 0:7 years) at Cardiff University, UK, took part in the study. They were paid £3.00 for their participation.</p><p>Procedure. Facial expressions displayed by the contextual face in Experiment 1 (contempt, disgust and sadness) were presented as part of a web-based experiment designed to evaluate the recognition of dynamic emotional expressions in faces. Participants were shown the same animated sequence performed by the contextual face in Experiment 1: head/gaze movements of the contextual face to the right or to the left, followed by the emotional expression. A response window containing seven rating scales was presented next (labeled as disgust, sadness, anger, happiness, contempt, embarrassment, and shame). A definition of each emotion term was presented at the start of the experiment (details in online material). As in Experiment 1, participants used these scales to report the extent to which they perceived each emotion. Participants responded using all scales. The order of the emotion scales was kept constant for any given participant, but was randomized across participants. The order of stimulus presentation was counterbalanced across participants. All participants evaluated each facial expression on two different avatars and with a head/gaze movement of the face to the right and to the left, for a total of four measures for each expression.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Results</head><p>Mean scores on each emotion scale for the displayed emotions of contempt, disgust and sadness are shown in <ref type="table" target="#tab_0">Table 1</ref>. A repeated measures analysis of variance was conducted on each portrayed emotion with the Head/Gaze Direction (right or left) and the Emotion Rating (disgust, sadness, anger, happiness, contempt, embarrassment and shame) as within-subject factors. Analyses revealed that for each portrayed emotion, there was a significant main effect of Emotion Rating (contempt: F ð6; 168Þ ¼ 14:27, p &lt; :001, h 2 p ¼ :338; disgust: F ð6; 168Þ ¼ 95:38, p &lt; :001, h 2 p ¼ :773; sadness: F ð6; 168Þ ¼ 111:03, p &lt; :001, h 2 p ¼ :799) but no significant effect of the Head/Gaze Direction ðp &gt; :1Þ and no significant two-way interaction ðp &gt; :1Þ.</p><p>Planned comparisons in which the displayed emotion served as the reference category revealed that expressions of disgust and sadness were well recognized. Scores on the disgust and sadness scales were significantly higher than the scores on each of the other six emotion scales ðp &lt; :01Þ. By contrast, the expression of contempt was not recognized as expressing contempt, but instead was confused with happiness. Indeed, there was no significant difference between scores on the contempt and happiness scales, F ð1; 28Þ ¼ :23, p ¼ :634, h 2 p ¼ :008, although the scores on the contempt scale were significantly higher than the scores on each of the other five emotion scales ðp &lt; :01Þ.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">DISCUSSION</head><p>We found support for the prediction that when two avatars are seen to be engaged in a simulated social interaction, the emotion perceived in the target's facial expression is influenced by the emotion expressed by the contextual face. In Experiment 1, when avatars were engaged in a social interaction (relative to when they were not), expression blends of shame and sadness were perceived as expressing more shame when the contextual face expressed disgust. The functional relationship between disgust and shame means that a target is seen as feeling ashamed because of the disapproval message conveyed by the disgust contextual face <ref type="bibr" target="#b14">[15]</ref>. Future studies could test other functionally related emotion pairings, such as an angry contextual face signaling that a target feels guilt, or an amused contextual face signaling that a target feels embarrassment.</p><p>The interpretation of these findings is limited by the fact that our hypotheses were tested by comparing a situation in which two faces looked at each other (social interaction condition) with a condition in which there was no mutual gaze (mere context condition). From a participant's perspective, the mere context condition could be seen as an unusual dyadic interaction that might in turn influence the emotion perceived in the target face. For example, not looking at another person could encourage perceivers to interpret the interaction as an aversive one. The rationale for comparing the social interaction condition with the mere context condition in order to test our specific hypotheses was that, from a perceptual point of view, the same emotional and social information was present in both cases, in the sense that the same expressions were present in the two faces, and the two avatars moved their heads in the same way. The only difference was that these head movements enabled or prevented mutual gaze. Thus, our findings show that a relatively minor change in the situation (i.e., whether or not the avatars looked at each other) had a strong impact on how perceivers judged the target face.</p><p>Results also revealed that what appeared to be emotional contagion between avatars led participants to perceive more sadness in the same facial expression blends of shame and sadness. When avatars were engaged in social interaction, expression blends of shame and sadness were perceived as expressing more sadness when the contextual face also expressed sadness. These findings may be specific to certain expression blends, because it was not observed when contextual disgust faces were engaged in social interaction with a target face that expressed a blend of anger and disgust, perhaps because disgust is less susceptible to emotional contagion.</p><p>A further possible limitation is that the judgment of target expressions was influenced by seeing the target's head movement, given that a sideways and downward head movement is argued to signal shame or embarrassment <ref type="bibr" target="#b15">[16]</ref>. However, given that this movement was seen in all conditions, such an influence could not account for the fact that shame was judged to be more intense when the contextual face expressed disgust than when it expressed sadness or neutrality, but only if there appeared to be social interaction between the avatars.</p><p>Findings of Experiment 2 revealed that the expression of disgust displayed by the contextual face used in Experiment 1 was unambiguously recognized as expressing disgust. However, the corresponding facial expression of contempt was not recognized as expressing contempt, but instead was confused with happiness. It follows that the contextual expression of contempt would not have conveyed a clear message of disapproval that could be used to disambiguate the situation <ref type="bibr" target="#b13">[14]</ref>. This explains why, in the social interaction condition of Experiment 1, the contextual facial expression of contempt did not enhance ratings of shame when participants judged blends of shame and sadness expressions. Interestingly, the facial expression of contempt used in Experiment 1 had previously been validated in a French-speaking population in Geneva, Switzerland <ref type="bibr" target="#b7">[8]</ref>. By contrast, Experiment 2 was conducted in an English-speaking population in Cardiff, UK. The difference in these findings could be explained by cultural variation in the perception of facial contempt <ref type="bibr" target="#b16">[17]</ref>, <ref type="bibr" target="#b17">[18]</ref>, <ref type="bibr" target="#b18">[19]</ref>. Indeed, there is evidence of a cultural bias on the part of English speakers, who appear to be unable to label contempt expressions as "contempt" <ref type="bibr" target="#b19">[20]</ref>. A final limitation worth acknowledging is that the social interactions that served as stimuli in the current study were clearly simulations. Emotional expressions in computer-generated virtual faces have become increasingly realistic and can be used as well-controlled and dynamic stimuli in emotion research <ref type="bibr" target="#b20">[21]</ref>, <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b22">[23]</ref>. Although the validity of virtual emotion expressions in comparison to real emotion displays is still debated, experimental research tends to show that emotions expressed by a virtual face are recognized in a comparable way to emotions expressed by natural faces <ref type="bibr" target="#b23">[24]</ref> but are influenced by specific factors such as the type of emotion and participant's age <ref type="bibr" target="#b24">[25]</ref>. The major advantage of these stimuli are that they can be easily animated and systematically varied according to the experimenter's needs. Achieving the same degree of experimental control over the stimulus material using real faces would be highly challenging, but it would obviously be beneficial to replicate the current findings using naturalistic stimuli.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">CONCLUSION</head><p>The purpose of our research was to investigate the influence of socioaffective inferential mechanisms on the recognition of social emotions. Investigating this complex mechanism was made possible thanks to synthesized facial expressions that allowed us to create a simulated social interaction between two avatars, while having a total control over our stimuli.</p><p>Generally speaking, our research highlights the importance of social contextual information in disambiguating facial expressions. Although our results cannot be generalized to the perception of all ambiguous facial expressions, the present findings suggest that future models of emotion recognition should be revised to include the influence of contextual factors, and especially the socioaffective inferential mechanisms that play an important role in everyday emotional interactions.</p><p>We believe that these findings open new perspectives such as using synthesized faces to investigate how affective mechanisms influence personality impression from facial appearance <ref type="bibr" target="#b25">[26]</ref> and decision-making processes <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b27">[28]</ref>.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1 Means</head><label>1</label><figDesc></figDesc><table><row><cell></cell><cell cols="2">of Ratings</cell><cell></cell></row><row><cell></cell><cell cols="2">Emotion Displayed</cell><cell></cell></row><row><cell>Emotion Scale</cell><cell>Contempt</cell><cell>Disgust</cell><cell>Sadness</cell></row><row><cell>Disgust</cell><cell>1:81 ðAE:807Þ</cell><cell>8:48 ðAE:517Þ</cell><cell>1:41 ðAE:714Þ</cell></row><row><cell>Sadness</cell><cell>2:51 ðAE:880Þ</cell><cell>1:36 ðAE:663Þ</cell><cell>8:43 ðAE:456Þ</cell></row><row><cell>Anger</cell><cell>1:96 ðAE:777Þ</cell><cell>5:07 ðAE:975Þ</cell><cell>0:81 ðAE:464Þ</cell></row><row><cell>Happiness</cell><cell>4:54 ðAE:770Þ</cell><cell>0:62 ðAE:356Þ</cell><cell>0:51 ðAE:305Þ</cell></row><row><cell>Contempt</cell><cell>4:83 ðAE1:028Þ</cell><cell>4:5 ðAE1:142Þ</cell><cell>1:26 ðAE:573Þ</cell></row><row><cell>Embarrassme</cell><cell>2:18 ðAE:742Þ</cell><cell>0:9 ðAE:502Þ</cell><cell>3:2 ðAE:930Þ</cell></row><row><cell>Shame</cell><cell>2:21 ðAE: 776Þ</cell><cell>1:04 ðAE :583Þ</cell><cell>3:54 ðAE:918Þ</cell></row><row><cell cols="4">Means (and 95% confidence intervals) of ratings on the seven emotion scales</cell></row><row><cell cols="2">for each emotion displayed in Experiment 2.</cell><cell></cell><cell></cell></row></table><note></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">IEEE TRANSACTIONS ON AFFECTIVE COMPUTING, VOL. 11, NO. 2, APRIL-JUNE 2020</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>Many thanks to Elena Lemonaki who contributed to the acquisition of data for the Experiment 2. This work was supported by the National Centre of Competence in Research (NCCR) for the Affective Sciences, financed by the Swiss National Science Foundation [grant number 51NF40-104897], and hosted by the University of Geneva; and by the Economic and Social Research Council (ESRC) grant number ES/L016486/1.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Social appraisal as a cause of collective emotions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bruder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S R</forename><surname>Manstead</surname></persName>
+		</author>
+		<editor>Collective Emotions, C. von Scheve and M. Salmela</editor>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Oxford University Press</publisher>
+			<biblScope unit="page" from="141" to="155" />
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Reading people&apos;s minds from emotion expressions in interdependent decision making</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>De Melo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Carnevale</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Read</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gratch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="88" />
+			<date type="published" when="2014-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Faces in context: A review and systematization of contextual influences on affective face processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Wieser</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Brosch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers Psychology</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">471</biblScope>
+			<date type="published" when="2012-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Social appraisal influences recognition of emotions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Mumenthaler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1118" to="1135" />
+			<date type="published" when="2012-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Automatic integration of social information in emotion recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Mumenthaler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Exp. Psychol. Gen</title>
+		<imprint>
+			<biblScope unit="volume">144</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="392" to="399" />
+			<date type="published" when="2015-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">What&apos;s social about social emotions?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hareli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Parkinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Theory Social Behaviour</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="131" to="156" />
+			<date type="published" when="2008-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Social cuing of guilt by anger and of shame by disgust</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Giner-Sorolla</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Espinosa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol. Sci</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="53" />
+			<date type="published" when="2011-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">FACSGen 2.0 animation software: Generating three-dimensional FACS-valid facial expressions for emotion research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">G</forename><surname>Krumhuber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Tamarit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">B</forename><surname>Roesch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Scherer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="351" to="363" />
+			<date type="published" when="2012-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">FACSGen: A tool to synthesize emotional facial expressions through systematic manipulation of facial action units</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">B</forename><surname>Roesch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Tamarit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Reveret</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Grandjean</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Scherer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Nonverbal. Behav</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2011-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">The Facial Action Coding System: A Technique for the Measurement of Facial Movement</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">V</forename><surname>Friesen</surname></persName>
+		</author>
+		<imprint>
+			<publisher>Consulting Psychologists Press</publisher>
+			<pubPlace>Palo Alto, CA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Facegen</forename><surname>Modeller</surname></persName>
+		</author>
+		<ptr target="http://www.facegen.com" />
+	</analytic>
+	<monogr>
+		<title level="j">Computer Software]. Singular Inversions Inc</title>
+		<imprint>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Retrieved from [Online</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Presentation and validation of the radboud faces database</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Langner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Dotsch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Bijlstra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">H J</forename><surname>Wigboldus</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">T</forename><surname>Hawk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Van Knippenberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cognition Emotion</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1377" to="1388" />
+			<date type="published" when="2010-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Disgust,&quot; in The Oxford companion to emotion and the affective sciences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Rozin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Haidt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Mccauley</surname></persName>
+		</author>
+		<editor>D. Sander and K. R. Scherer</editor>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>Oxford University Press</publisher>
+			<biblScope unit="page" from="99" to="100" />
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Contempt</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Hess</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Oxford Companion to Emotion and the Affective Sciences</title>
+		<editor>D. Sander and K. R. Scherer</editor>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="99" to="100" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The moral emotions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Haidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Affective Sciences</title>
+		<editor>R. J. Davidson, K. R. Scherer, and H. H. Goldsmith</editor>
+		<meeting><address><addrLine>Oxford, England</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="852" to="870" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Signs of appeasement: Evidence for the distinct displays of embarrassment, amusement, and shame</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Keltner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="441" to="454" />
+			<date type="published" when="1995-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">On the universality and cultural specificity of emotion recognition: A meta-analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">A</forename><surname>Elfenbein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ambady</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol. Bull</title>
+		<imprint>
+			<biblScope unit="volume">128</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="203" to="235" />
+			<date type="published" when="2002-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A new pan-cultural facial expression of emotion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">V</forename><surname>Friesen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Motivation Emotion</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="159" to="168" />
+			<date type="published" when="1986-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">On the form and universality of the contempt expression: A challenge to Ekman and Friesen&apos;s claim of discovery</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">E</forename><surname>Izard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><forename type="middle">M</forename><surname>Haynes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Motivation Emotion</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="1988-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The relationship among expressions, labels, and descriptions of contempt</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Matsumoto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Personality Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="529" to="540" />
+			<date type="published" when="2004-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Integration of gaze direction and facial expression in patients with unilateral amygdala damage</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Cristinzio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>N'diaye</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Seeck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Vuilleumier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="248" to="261" />
+			<date type="published" when="2010-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Self-relevance processing in the human amygdala: Gaze direction, facial expression, and emotion intensity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>N'diaye</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Vuilleumier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="798" to="806" />
+			<date type="published" when="2009-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Psychophysics of emotion: The QUEST for emotion perception</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">B</forename><surname>Roesch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Mumenthaler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kerzel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Scherer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Vis</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2010-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Making faces: Creating three-dimensional parameterized models of facial expression</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Spencer-Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Wild</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">H</forename><surname>Innes-Ker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Townsend</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Duffy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ervin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Merrit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Pair</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Behavior Res. Methods Instruments Comput</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="115" to="123" />
+			<date type="published" when="2001-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Recognition profile of emotions in natural and virtual faces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Dyck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Winbeck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Leiberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Gur</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mathiak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS One</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2008-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Personality impressions from facial appearance,&quot; in Oxford Handbook of Face Perception</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">T</forename><surname>Todorov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Said</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Verosky</surname></persName>
+		</author>
+		<editor>Rhodes, A. Calder, M. Johnson, and J. V. Haxby</editor>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Oxford University Press</publisher>
+			<biblScope unit="page" from="631" to="652" />
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Bursting with anxiety: Adult social referencing in an interpersonal balloon analogue risk task (BART)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Parkinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Phiri</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Simons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emotion</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="817" to="826" />
+			<date type="published" when="2012-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Worry spreads: Interpersonal transfer of problem-related anxiety</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Parkinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Simons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cognition Emotion</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="462" to="479" />
+			<date type="published" when="2012-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

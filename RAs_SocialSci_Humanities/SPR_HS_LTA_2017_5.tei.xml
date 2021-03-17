@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Calibrating the CEFR against the China Standards of English for College English vocabulary education in China</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wen</forename><surname>Zhao</surname></persName>
+							<email>zhaowen@fsc.neu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Northeastern University</orgName>
+								<address>
+									<settlement>Shenyang</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Boran</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Northeastern University</orgName>
+								<address>
+									<settlement>Shenyang</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">David</forename><surname>Coniam</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Northeastern University</orgName>
+								<address>
+									<settlement>Shenyang</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Bingxue</forename><surname>Xie</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Northeastern University</orgName>
+								<address>
+									<settlement>Shenyang</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Calibrating the CEFR against the China Standards of English for College English vocabulary education in China</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-017-0036-1</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>CEFR</term>
+					<term>Vocabulary descriptors</term>
+					<term>College English</term>
+					<term>China Standards of English</term>
+					<term>Validation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Background: The Common European Framework of Reference (CEFR) (Council of Europe 2001) has, over the past decade, come to be widely used as a reference tool for teaching, learning and assessment (Alderson 2002; North 2014). The focus of the current study is on scaling the China Standards of English (CSE) vocabulary descriptors for College English education in Mainland China, where College English education refers to English language education for non-English major students at tertiary level. A review of the CEFR and the College English Curriculum Requirements (CECR) (Ministry of Education 2007) indicated that the vocabulary descriptors in both documents were inadequate to describe vocabulary knowledge for College English education in China. Method: On the basis of the CEFR and CECR descriptors, a pool of 39 descriptors were collected and categorized. Twenty-two English teachers from a Mainland China university were invited to participate in the study. They were first given the CEFR and CECR vocabulary descriptors, after which they were asked to scale the descriptors with the CEFR as the reference point. Multi-Faceted Rasch Measurement (MFRM) was used to validate teachers&apos; scaling of the vocabulary descriptors. Results: The MFRM analysis showed that while the descriptors at C1 level were generally ranked as expected, teachers had difficulties in ranking descriptors at the CEFR B1, B1+ and B2 levels. Conclusion: The study indicates that teacher judgement of the scales provides evidence of the CSE scales, and can be a source of valuable information for the future improvement of the CSE.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>As elsewhere around the world, English language teaching, learning and assessment in Mainland China are undergoing substantive change towards the establishment of a common framework of English language ability scales -the China Standards of English (CSE). This change is in answer to the pressing needs of constructing a transparent and coherent framework, taking the CEFR as a reference point, since a wide range of language curricula and assessments currently exist at different stages and levels of education (e.g., <ref type="bibr" target="#b6">Han 2006;</ref><ref type="bibr" target="#b23">Yang and Gui 2007)</ref>. For non-English major students' College English education in China, the College English Curriculum Requirements (CECR) (Ministry of Education 2007) serve as a guideline for College English teaching, learning and assessment. College English education in Mainland China refers to English language education for non-English major students at tertiary level. As a response to educational and curriculum changes, a trial version of the CECR was first issued in 2004 by the Ministry of Education in Mainland China. Following a 3-year trial of experiment and revision, a revised version was launched in 2007. In addition to its guiding role for College English teaching, learning and textbook writing, the CECR also serves as a guideline for the nation-wide CET (College English Test) Band 4 and Band 6 tests.</p><p>Along with the CEFR, the aim of the CECR is to cultivate learners' communicative language competence, with vocabulary knowledge considered key to language comprehension and communicative ability <ref type="bibr" target="#b19">(Staehr 2008)</ref>. In developing a new set of vocabulary descriptive scales for the CSE, in particular CSE vocabulary descriptors for College English in China, an outline of the descriptive vocabulary scales of the CEFR and the CECR will first be described to lay out the background to the study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Review of vocabulary descriptors</head><p>Vocabulary descriptor scales in the CEFR The core conceptual framework of the CEFR consists of a taxonomic descriptive scheme and Common Reference Levels. The descriptive scheme covers domains of language use, communicative language activities, strategies, and communicative language competences for analyzing what is involved in language use and language learning. The Common Reference Levels describes proficiency in terms of three broad levels of basic user (A1 = Breakthrough; A2 = Waystage), independent user (B1 = Threshold; B2 = Vantage), and proficient user (C1 = Effective Operational Proficiency; C2 = Mastery) and in scales of illustrative descriptors across five qualitative categories: Range, Accuracy, Fluency, Interaction and Coherence <ref type="bibr" target="#b16">(North 2014)</ref>. These scales are of practical value in assessing learning and achievement <ref type="bibr" target="#b2">(Alderson 2004)</ref>.</p><p>Among the CEFR's 53 illustrative scaled descriptors, there are two qualitative categories: Range and Control, which are used to describe a learner's vocabulary knowledge (see <ref type="table" target="#tab_0">Table 1</ref>, adapted from the Council of <ref type="bibr">Europe 2001, p. 112)</ref>. <ref type="table" target="#tab_0">Table 1</ref> lists vocabulary descriptor scales of range and control at three CEFR bands and six levels. The descriptors used in the scales have all been empirically validated in terms of teachers' perceptions of how different levels of actual learner performance might be most consistently described. Each descriptor is stated in positive terms, and presents an independent criterion. The table indicates that in the CEFR learners are expected to know, recognise and produce a broad lexical repertoire to complete various tasks in different domains, contexts and topics.</p><p>The range of vocabulary expands as levels of proficiency advance. The lexical repertoire at the A levels covers words, phrases and everyday expressions, which are mostly an indicator of the breadth of vocabulary knowledge. The repertoire at the B levels describes a much wider range of vocabulary connected to fields and most general topics. The repertoire at the C levels, moreover, covers more idiomatic expressions, colloquialisms and connotative meanings, which focus more on the depth of vocabulary knowledge. The control of vocabulary states the degree and extent of vocabulary mastery across levels, with no description of vocabulary control contained at the A1 level.</p><p>The CEFR, however, is a general reference document which is at times somewhat problematic to use due to its language-neutral scope, and due to the fact that it "has little to say about the nature of vocabulary in particular languages, or about the nature of lexical ability" <ref type="bibr">(Alderson 2005, p. 192)</ref>. It is "a concertina-like reference tool, not an instrument to be applied" <ref type="bibr" target="#b16">(North 2007)</ref>. Although the CEFR descriptors state what learners at a certain level can do, very little is stated about what they should know in order to carry out related language tasks.</p><p>The CEFR, as a general reference document, has been criticized for the opaqueness of some descriptors, inconsistencies in its terminology use <ref type="bibr" target="#b3">(Alderson et al. 2006)</ref>, and insufficiency in describing vocabulary constructs <ref type="bibr" target="#b8">(Huhta and Figueras 2004)</ref>. Many Consistently correct and appropriate use of vocabulary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C1</head><p>Has a good command of a very broad lexical repertoire allowing gaps to be readily overcome with circumlocutions; little obvious searching for expressions or avoidance strategies. Good command of idiomatic expressions and colloquialisms.</p><p>Occasional minor slips, but no significant vocabulary errors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Independent User B2</head><p>Has a good range of vocabulary for matters connected to his/her field and most general topics. Can vary formulation to avoid frequent repetition, but lexical gaps can still cause hesitation and circumlocution.</p><p>Lexical accuracy is generally high, though some confusion and incorrect word choice does occur without hindering communication.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B1</head><p>Has a sufficient vocabulary to express him/herself with some circumlocutions on most topics pertinent to his/her everyday life such as family, hobbies and interests, work, travel, and current events.</p><p>Shows a good control of elementary vocabulary but major errors still occur when expressing more complex thoughts or handling unfamiliar topics and situations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Basic User A2</head><p>Has sufficient vocabulary to conduct routine, everyday transactions involving familiar situations and topics. Has a sufficient vocabulary for the expression of basic communicative needs. Has a sufficient vocabulary for coping with simple survival needs.</p><p>Can control narrow repertoire dealing with concrete everyday needs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A1</head><p>Has a basic vocabulary repertoire of isolated words and phrases related to particular concrete situations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>No descriptor available.</head><p>terms in the CEFR are undefined, and there are problems with the wording of some descriptors. For instance, it is not easy to decide what is 'simple' and what is 'very simple'. Similar statements in the descriptors are found at different levels or some terms appear only at certain levels <ref type="bibr">(Alderson, Kuijper, Nold, and Tardieu 2006, p. 9)</ref>. <ref type="bibr">Weir (2005, p. 12)</ref> observes that "the CEFR provides little assistance in identifying the breadth and depth of productive or receptive lexis that might be needed to operate at the various levels." The CEFR, moreover, is more a user-oriented set of scales than a constructor-oriented set of scales <ref type="bibr" target="#b0">(Alderson 1991)</ref>. Even the developers of the CEFR admit that its scales are primarily a taxonomy that is aimed at, and makes sense to, practitioners <ref type="bibr">(North and Schneider 1998, p. 242-243)</ref>.</p><p>Vocabulary descriptor scales in the CECR Like the CEFR, the CECR adopts a functional approach in describing language skills and linguistic knowledge. The descriptive scheme in the CECR consists of three levels of requirements: Basic, Intermediate and Advanced. The vocabulary knowledge covers two dimensions: Range and Control (see <ref type="table" target="#tab_1">Table 2</ref>) (adapted from Ministry of Education 2007, p. 3-5). <ref type="table" target="#tab_1">Table 2</ref> indicates that, in College English education in China, learners are expected to have a command and make skillful use of a broad lexical repertoire to make meaningful communication. The range of vocabulary extends as levels of proficiency progress, as shown in its reference wordlist, phrase list and wordlist of active words. The CECR reference wordlist lays out its set of lexical items at three levels, with items at the Basic Requirement level unmarked, items at the Intermediate and Advanced Requirement levels marked with different symbols respectively (*for the Intermediate Requirement level; Δ for the Advanced Requirement level). The phrase list includes phrases and verbal phrases, with no inclusion of idioms, collocations or word chunks. The wordlist of active words is mainly a brief list of high frequency words.</p><p>The vocabulary repertoire at the Basic Requirement level covers 4,795 words, 700 phrases and expressions, the repertoire at the Intermediate Requirement level a much larger size of vocabulary (6,395 words, and 1,200 phrases and expressions), and the repertoire at the Advanced Requirement level a moderate increase of nearly 7,675 words and 1,870 phrases and expressions. The range of three levels of requirements gives only quantitative descriptions of vocabulary size, with the inclusion of the vocabulary learned at senior secondary education and vocabulary learned at previous levels. The depth of vocabulary knowledge and tasks such as collocation, semantic meaning, and word formation are not stated in the document. Other than the description of vocabulary size, the domains, situations and topics relevant to vocabulary use are not stated in the CECR wordlist. The CECR is organized by dictionary headword on the basis of corpus-based frequency information, with reference to the Bank of English (COBUILD Corpus). The CECR wordlists contain only lexical items with no provision of phonetic pronunciation, grammar and usage information, word definitions, dictionary examples and corpus-based learner examples. The CECR phrase list is also arranged alphabetically, with no word senses provided. It is therefore incumbent upon material writers, test developers as well as teachers to determine at what level and in what sense different lexical items should be selected or included.</p><p>The control of vocabulary, however, is only stated at the Basic Requirement level, requiring learners to be "able to make skillful use in spoken and written English". At the Intermediate Requirement and Advanced Requirement levels, there are no illustrative descriptors pertaining to vocabulary control. In comparison with the descriptors in the CEFR, the descriptors in the CECR are even more inadequate, inconsistent and underdefined in describing the constructs of vocabulary knowledge.</p><p>The analyses of the vocabulary descriptor scales in both the CEFR and the CECR indicate that the descriptors in both documents are for general rather than specific purposes. Moreover, these descriptors are not sufficient, and other descriptors need to be taken into account in developing CSE vocabulary descriptors for College English education in China.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>The purpose of the study is to conduct an external validation of the CSE vocabulary descriptors with reference to the CEFR vocabulary descriptors. The development of the CSE vocabulary descriptors will hence provide a more transparent, coherent and consistent guideline for College English teaching, learning and assessment in China, enrich the linking practice currently practiced in the development of the CSE, and make scales of vocabulary knowledge and their descriptors comparable by using the CEFR as the reference point. To this end, the research question in the current study may be framed as:</p><p>How well do the CECR vocabulary descriptors align with those of the CEFR?</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head><p>In mid 2016, 22 English teachers from a mainland China university were invited to take part in the study. All were experienced female English teachers who had knowledge of College English teaching. Five of them had taught College English between 5 and 9 years, seven between 10 and 19 years, eight between 20 and 29 years, and two between 30 and 39 years. In terms of qualifications, 21 held an MA, and one a BA. All were familiar with the CECR, CET (College English Test) Band 4 and Band 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Procedure</head><p>Given the critical review of the inherent weaknesses of the vocabulary descriptive scales in the CEFR and the CECR, a pool of illustrative scales of vocabulary descriptors was collected, with the intention of covering three levels of requirements (i.e., Basic Requirement, Intermediate Requirement, and Advanced Requirement). These three levels roughly correspond to three CEFR levels (i.e., B1+, B2 and C1) and are equivalent to CSE's 6-8 levels:</p><p>CSE1 (CEFR A1) is specified as the target for the end of primary school, CSE3 (CEFR A2) for the end of junior secondary school, CSE5 (CEFR B1) for the end of senior secondary school, CSE6 (CEFR B1+) for the Basic Requirement level of the CECR, CSE7 (CEFR B2) for the Intermediate Requirement level of the CECR, and CSE8 (CEFR C1) for the Advanced Requirement of the CECR.</p><p>The scope of the current study is limited to CSE5, CSE6, CSE7 and CSE8, as CSE5 is the entry English level for tertiary education. The scale construction followed the methods adopted in the scale construction of the CEFR. A pool of existing scaled descriptors were collected, whose sources are DIALANG <ref type="bibr" target="#b2">(Alderson 2005)</ref>, the CEFR in Finnish AMMKIA <ref type="bibr">(North 2014, p. 79-80)</ref>, and the CECR. DIALANG, a project which was explicitly developed using the CEFR as the basis <ref type="bibr" target="#b2">(Alderson 2005)</ref>, provides online diagnostic tests of listening, reading, writing, structures, and vocabulary in 14 languages at six CEFR levels. DIALANG vocabulary incorporates four dimensions of word meaning (i.e., word meaning, semantic relations, combinations, and word formation) in creating tasks. The AMMKIA descriptors for vocabulary were also scaled to the CEFR levels with considerable detail and the inclusion of vocabulary size <ref type="bibr" target="#b10">(Kaftandjieva and Takala 2002)</ref>. The vocabulary descriptors in both DIALANG and the Finnish AMMKIA were developed with the CEFR as the basis and contain more detailed illustrative descriptors.</p><p>In terms of vocabulary size, both the DIALANG and AMMKIA projects include vocabulary sizes at different levels. The suggested vocabulary size for C1 is 5,000 words. The vocabulary for B2 is, however, only 2,500-3,000 words, which might appear somewhat limited in number in comparison with the CECR and the English Curriculum of Senior Secondary Education (ECSSE) (Ministry of Education 2006). According to the ECSSE and the CECR, the vocabulary ranges for the suggested four levels are: 3,000 words for CSE5, 5,000 words for CSE6 (Basic Requirement level in the CECR), 6,000 words for CSE7 (Intermediate Requirement level in the CECR), and 8,000 words for CSE8 (Advanced Requirement level in the CECR). According to <ref type="bibr" target="#b7">Hirsh and Nation (1992)</ref> there are two thresholds of vocabulary use: 2,000 word families is sufficient for 95% of typical texts encountered; 5,000 word families is sufficient for 99% of typical texts and for 'pleasurable reading'. In both DIALANG and the Finnish AMMKIA, 5,000 words is associated with C1, and 6,000 words with C2 <ref type="bibr" target="#b16">(North 2014</ref>). In the CECR, however, 5,000 words is the minimum requirement for the Basic Requirement Level or CSE6. In the Chinese context, the vocabulary size issue was thus adapted according to the CECR to be in harmony with the teaching, learning, textbook writing and assessment. In addition to vocabulary breadth or vocabulary size, vocabulary depth is also taken into account. Verbs such as know, recognize, and produce are used to describe what learners are expected to do at different levels of proficiency <ref type="bibr" target="#b1">(Alderson 2002)</ref>.</p><p>The descriptors provide both quantitative and qualitative information. The collected vocabulary descriptors were further moderated to form a bank of 39 positively-worded descriptors, among which 8 descriptors were from B1 (SCE5), 7 from B1+ (SCE6), 11 from B2 (SCE7), and 13 from C1 (SCE8) (see Appendix 1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data collection</head><p>The 22 participants involved in the study were first given the CEFR general descriptive scales as well as the CEFR vocabulary descriptive scales. They were also given the CECR descriptive scales and its vocabulary descriptive scales. They were then given a brief introduction to the CEFR and the CECR to provide them with a clear overview of the descriptive scales.</p><p>A questionnaire was then prepared on the basis of the pool of 39 descriptors. The descriptors, containing both quantitative and qualitative information, were ordered according to the degree of cognition and degree of difficulty. The qualitative descriptors were sequenced before the quantitative descriptors on a four-point Likert scale, representing the four CEFR levels and the corresponding CSE levels (i.e., 1 = B1-CSE5, 2 = B1 + -CSE6, 3 = B2-CSE7, and 4 = C1-CSE8).</p><p>Participants were then asked to complete the survey online, and to scale the descriptors to appropriate levels on the four-point scale. The survey ensured complete anonymity, with all information used solely for purposes of the current study. No other person was permitted access to the information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data analysis</head><p>Linking was carried out via Multi-Faceted Rasch Measurement (MFRM) <ref type="bibr" target="#b12">(Linacre and Wright 1994)</ref>. MFRM is based on Item Response Theory (IRT), a branch of Latent Trait Theory. The advantage of MFRM lies in the fact that all facets (i.e., items [descriptors in the current instance], persons [participating teachers in the current instance] and judge [the participants' use of the rating scales]) can be compared on a common linear 'logit' scale <ref type="bibr" target="#b14">(McNamara 1996)</ref>. MFRM has been used to obtain information about severity and consistency of participants, the use of rating scales and items, as well as in studies investigating scales <ref type="bibr" target="#b16">(North 2000)</ref>.</p><p>The software FACETS 3.67 <ref type="bibr" target="#b11">(Linacre 2005</ref>) produces a graph known as the 'all-facet vertical ruler map' or 'all-facet vertical summary'. FACETS also produces a measurement report for each facet of measurement. Fit statistics indicate how well the empirical data fit the measurement model's requirements. When fit values suggest that the data fit the Rasch model to an acceptable extent, unidimensionality is upheld. The fit values of the descriptors in the FACETS determined which descriptors would subsequently be included in the illustrative scales. Logit values were also considered in setting cut scores between adjacent levels <ref type="bibr" target="#b18">(Papageorgiou 2009)</ref>. The main output from the FACETS program is in the form of an all-facet overview and the facet reports, presented through charts and tables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>The FACET ruler map is a useful tool in that it summarizes the position of the elements of each facet on the logit scale. It presents the information of the scattering of descriptors, participant ability and their use of rating scales (see <ref type="figure" target="#fig_0">Fig. 1</ref>).</p><p>The all-facet ruler map is useful for eyeballing initial problems with facets on the logit scale. The first column (labeled "Measurement") is the logit scale, an arbitrary measurement scale centered on 0, running from -2 up to +3 logits. The second column (labeled "Item") contains 39 descriptors, each marked with an ID number, its CEFR level, and its intended CSE level (e.g., V35-C1-CSE8). The descriptors were calibrated in rank order on the logit scale. The third column (labeled "Rater") -with each participant having been assigned an ID number (e.g., T1 for Teacher 1) -shows each participant's ability in discriminating between descriptor levels. The use of levels is demonstrated in the last 21 columns, where S.1 stands for the use of the scales by T1, S.2 for T2, etc.</p><p>The second column ("Item") starts between the -2 and -1 logits, with two B1 descriptors (V31 &amp; V11) and one B2 descriptor (V13). Between -1 and 0 logits cluster B1, B1+, and B2 descriptors, with B1+ descriptors overlapping with B1 and B2 descriptors. All the C1 descriptors are higher above 0 logits, with a mixture of one B1 descriptor (V5) and two B2 descriptors (V16 &amp; 34). V5 is judged to be fairly difficult although it is taken from the B1 level. It is evident that participating teachers considered these aspects of vocabulary knowledge to be more demanding than that stated in the CEFR. The spread of the descriptors is around the center of the scale. Descriptors closer to the bottom are considered easier, with those closer to the top more difficult. The logit spread (-1 to +2 logits) indicates that the descriptor difficulty range is narrow, with considerable overlap between B1, B1+, and B2 levels between -1 and 0 logits.</p><p>The third column ("Rater") compares the participating teachers with regard to their level of severity/leniency, covering a 5-logit spread (i.e., between -2 and +3 logits). More severe participants appear higher, while more lenient participants lower. Thus, participants T20, T4, T5 and T6 come out with appropriate severity; T18 as extremely lenient.</p><p>The 21 columns to the right side of the map show participants' application of the four levels to the descriptors. The all-facet ruler map does not contain information for rater T12. As shown in <ref type="figure" target="#fig_0">Fig. 1</ref>, T1 did not apply the full level range in rating. T4 assigned lower levels than T3. T18 rarely used B1 level, because the cut-off line between B1 and B1+ was not clear. T10 used all four levels in rating, rating items at B1+, B2, C1 levels more than at B1 level. The cut-offs between B1, B1+ and B2 are not consistent. In sum, the C1 level descriptors appear to be better distinguished, but considerable overlap may be noted among B1, B1+, and B2 levels, with participants' judgements varying considerably at these levels.</p><p>The participant measurement report in <ref type="table" target="#tab_2">Table 3</ref> shows the measures of participant variation in terms of severity/leniency.</p><p>The teachers in the first column (labelled "participant") are ordered from the most severe (T12) to the most lenient (T18). Participants' logit value (labelled "Logit") in the second column is shown in descending order, indicating the degree of severity of participants in rating the scales. Participants do not cluster around the center, but are scattered, showing varying severity from around -1.5 to +2.5 logits. According to <ref type="bibr" target="#b18">Papageorgiou (2009)</ref>, a participant whose logit value is positive "+" is a stricter rater than one whose logit value is negative "-". Two participants (T12 and T1) were very strict in rating the descriptors, with logit values being +2.37 and +2.11 logits respectively. Given that floor and ceiling effects tend to render calibrations outside the central range of -2.0 logit up to +2.0 logit unreliable <ref type="bibr" target="#b16">(North 2000)</ref>, T12 was removed due to the extreme scores at the C1 level. Three participants (T18, T17 and T2) were extremely lenient, with logit values being -0.97, -0.78 and -0.75. Most participants were in the range of -1 to +1 logits, covering a range of 3 logits. Participants with good model fit were able to discriminate the descriptors well. The standard error in the third column (labelled "S.E.") shows an estimate of the precision of the logit value. Fit statistics -infit and outfit mean square statistics -in the fourth column show the differences in the calibration between expected and observed values. The Infit MnSq (Infit mean square) is "a transformation of the residuals, the difference between the predicted and the observed, for easy interpretation. Its expected value is 1" <ref type="bibr">(Bond and Fox 2007, p. 310)</ref>. More than 1 indicates misfit, which signals greater variation than expected; less than 1 shows overfit, which indicates less variation than expected: "a result a bit too  <ref type="table" target="#tab_0">T12  T1  T7  T14  T15  T21  T13  T11  T22  T9  T4  T5  T6  T20  T10  T8  T16  T3  T19  T17  T2</ref>  good to be true" <ref type="bibr">(North 2000, p. 231)</ref>. The mean-square values in the range of 0.5 to 1.5 is conventionally considered indicative of "useful fit" <ref type="bibr" target="#b20">(Weigle 1998)</ref>. Fourteen participating teachers had infit mean-square fit statistics that were located within the defined fit range. Descriptors with values above 1.5 show misfit. <ref type="table" target="#tab_2">Table 3</ref> shows a considerable amount of misfit among participants, with four participants (T7, T14, T13 and T5) showing heightened degrees of misfit or noisiness <ref type="bibr" target="#b16">(North 2000</ref>) -suggesting that these participants' ratings were somewhat unpredictable and inconsistent. <ref type="figure">Figure 2</ref> displays how participants (especially T5, T7, T13 and T14) used the levels in rating the descriptor scales.</p><p>Descriptors with values below 0.5 indicates overfit. The infit mean square values of the following four participants (T6, T16, T17, and T2) were below 0.5 (see <ref type="table" target="#tab_2">Table 3</ref>), indicating slight overfit and muted ratings towards a central tendency, although these participants did use the full range of scales in their ratings (see <ref type="figure" target="#fig_1">Fig. 3</ref>).</p><p>FACETS provides a reliability index, with a low reliability index being desired for the participant facet <ref type="bibr" target="#b11">(Linacre 2005)</ref>. <ref type="table" target="#tab_4">Table 4</ref> denotes differences in leniency among participants, because of the high reliability value of 0.91, and the chi square value (χ 2 (21) = 183.7, p &lt; .00) was statistically significant at the 1% level. On this basis, the null hypothesis (i.e., there is no variation in participants' discrimination of descriptors) is therefore rejected. <ref type="table" target="#tab_5">Table 5</ref> summarizes descriptor measurement on the vertical scale. The descriptors and corresponding original levels are arranged in descending logit value order. Infit mean square values indicate the degree to which the scaling of descriptors can be viewed as successful. Wrong scaling can be indicated by examining the logit values in Column 3. For example, V34 is a B2 descriptor but has a logit value of +0.90 which is higher than V2, V4, V39, V18 and V1. These descriptors are C1 descriptors. To elucidate: descriptor V13 was ranked below -1 logit. Descriptor V10 had a similar scaling <ref type="figure">Fig. 2</ref> Misfitting participants problem in that it was scaled below 0 logits. V26 was judged to be more difficult than V22 and V25. At 0 logits, there were B1 (V21) and B1+ (V23, V26) descriptors. Descriptors V13, V14, V15, V16 were originally taken from the same descriptor (Can recognize and use a range of vocabulary, idioms, colloquial expressions and technical jargon), but these appeared at different positions, with V13 at -1 logit value, V14 and V15 at the -0.5 logit value, and V16 at around 0 logit value. All the C1 descriptors clustered between 0 and +2 logits -clearly higher than the other descriptors. Descriptor V34 was ranked as more difficult. Descriptors V5 and V16 appeared at the C1 level, although these were from B1+ and B2 respectively. These descriptors around the center of the scale were ranked as either easier or more difficult.</p><p>Out of 39 descriptors, 17 descriptors (V34, V5, V9, V30, V21, V23, V26, V33, V19, V15, V14, V24, V27, V28, V29, V10, and V13) showed higher or lower logit values than those reported for the original CEFR levels.</p><p>The acceptable range of infit mean square value for descriptors is 0.4 to 1.2 <ref type="bibr" target="#b12">(Linacre and Wright 1994)</ref>. Descriptors V35, V3, V6, V16, V32, V36 and V31 have misfit statistics, possibly indicative of greater variation in ratings than expected and suggesting disagreement between ratings. These descriptors do not therefore appear to be sufficiently robust in their descriptions and should not be used as anchor descriptors in future descriptor scaling. An infit mean square below 0.4 indicates overfit. The following four descriptors (V39, V21, V22 and V25) show overfit, suggesting that while ratings varied a little more than expected, generally, there was consistency between participants in their rating of these descriptors. The general consistency suggests that there may well be interdependency between certain descriptors.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The results of the data analysis indicated that considerable variation exists in scaling the CSE vocabulary descriptors to those of the CEFR. The data analysis shows that the top level -C1-CSE8 -was clearly separated, although two descriptors (V34 and V5) were varied more greatly than expected (see <ref type="table" target="#tab_7">Table 6</ref>). Descriptors at B1-CSE5, B1 + -CSE6 and B2-CSE7 were ranked in a mixed order of difficulty. A few descriptors at levels of B1-CSE5 (V21, V24, V27) and B1 + -CSE6 (V5, V23, V26, V33, V19) were ranked as higher levels, whereas several descriptors at levels of B2-CSE7 (V15, V14, V28, V29, V10, V13) as lower levels. There was considerable overlap between B1+ and B1, B2 levels, suggesting that participants had difficulty in scaling these descriptors.</p><p>Of the 39 descriptors, there were 17 problematic descriptors (V34, V5, V9, V30, V21, V23, V26, V33, V19, V15, V14, V24, V27, V28, V29, V10, and V13), which ranged across more than three levels. These problematic descriptors were all rated one level higher or one level lower than the original CEFR levels. Descriptors V33 and V34, denoting size of vocabulary knowledge, were along with V19, V24, and V27, ranked one level higher  than their original CEFR levels. Descriptors V5 and V21 were ranked two levels higher than those in the original CEFR levels. Descriptors V9 and V30 were scored one level lower at B2 level, and V15, V14, V28 were also scored one level lower at B1+ level. Descriptors V29, V10, V13 -at B2 level -were rated two levels lower than their original CEFR levels. V26 and V23 -interrelated descriptors -were originally from the same CEFR level (B1 + -CSE6), but were ranked one level above. Participants' judgements resulted in problematic misfitting and overfitting descriptors, among which there were qualitative and quantitative descriptors (see <ref type="table" target="#tab_7">Table 6</ref>). Possible reasons for mismatch might be due to participants having difficulty in distinguishing such terms as "a wide range of", "a large number of" and "a range of". Take descriptor V34, for example. This descriptor (knows about 6,000 words, and words from the AWL (Academic Word List) and 1,200 phrases, among which 2,200 are active words) had a comparatively high logit value (0.90), and was rated as more difficult than its original B2 level. According to the CECR, "Has a command of a lexical repertoire of 7,675 words and 1,870 phrases" is the requirement for advanced users. So the participants rated the descriptor one level higher. It is also likely that the vocabulary size stipulated in the CECR has greater discrepancy in comparison with the CEFR. Descriptor V5 was also rated as more difficult than its CEFR level. Descriptor V21 showed overfit, with an infit mean square of 0.35. The most problematic scaling lay with the B1+ level in that there were different degrees of overlap between B1+ and B1, B1+ and B2 level. It is likely that the closeness of the intervals between B1, B1+, and B2 led to the overlap between these levels. <ref type="table" target="#tab_8">Table 7</ref> summarizes discrepancies between participants' ratings and the different levels of descriptor.</p><formula xml:id="formula_0">C1-CSE8 C1-CSE8 C1-CSE8 C1-CSE8 C1-CSE8 C1-CSE8 B2-CSE7 C1-CSE8 C1-CSE8 C1-CSE8 C1-CSE8 C1-CSE8 B1 + -CSE6 C1-CSE8 C1-CSE8 B2-CSE7 B1-CSE5 B1 + -CSE6 B1 + -CSE6 B2-CSE7 B1 + -CSE6 B1 + -CSE6 B2-CSE7 B2-CSE7 B2-CSE7 B1 + -CSE6 B2-CSE7 B1-CSE5 B1-CSE5 B1 + -CSE6 B2-CSE7 B2-CSE7 B1-CSE5 B1-CSE5 B1-CSE5 B2-CSE7 B1-CSE5 B2-CSE7 B1-CSE5</formula><p>Among the 39 descriptors, seven misfitting descriptors showed that there were considerable differences between participants' ratings and the original CEFR levels, indicating a big variation in ratings. Level disagreement was one reason for misfit. For example, two teachers rated V35 as B1+, two teachers rated it as B2, and the remaining 17 teachers rated it as C1. V36, with a logit value of -0.75, belonged to B1 level, but was ranked higher above its original CEFR level.</p><p>There were four descriptors whose logit values showed overfit, as can be seen from <ref type="table" target="#tab_9">Table 8</ref>.</p><p>The overfit in <ref type="table" target="#tab_9">Table 8</ref> might be attributed to two issues. The first is a lack of variation in judgement-making, indicating more consistency between participants in rating descriptors; the second is descriptor interdependency <ref type="bibr" target="#b14">(McNamara 1996)</ref>. The overfit for V22 and V25, for example, can be attributed to interdependency. These two descriptors were originally from the same B2 descriptor (Can produce synonyms and antonyms of most common words in different contexts), but were ranked by participants as descriptors at different levels. The logit value of V22 was -0.11, while the logit value of V25 was -0.26. The reason for this might be because participants perceived "synonyms" as more difficult than "antonyms". As for V39 and V21, the variation in judgementmaking was a little greater than expected.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>This paper has reported a pilot study with the aims of constructing CSE descriptor scales for College English vocabulary education in China. The study has provided an objective measurement from teachers' subjective judgements of the CEFR-based CSE vocabulary descriptor scales. A Multi-Faceted Rasch Measurement analysis of the data indicated that considerable variation existed among teachers in the attempt to align the CSE descriptors with those of the CEFR. The results present a mixed picture, with some scales matching, and others not.</p><p>While participants were familiar with CECR descriptors, they were less familiar with those of the CEFR, in particular descriptors at the B levels. On the basis of the 39 descriptor scaling, more descriptors should be collected and categorized to enrich the current pool of descriptors. Further, more representative tasks should be designed in relation to each CSE level to enable participants to have a better understanding of the descriptive scales. In addition to the quantitative study, qualitative follow-up interviews should also be conducted to investigate in greater depth participants' perceptions with relation to their judgement-making. The current study constitutes external validation of participating teachers' judgements of how well the CECR vocabulary descriptors align with those of the CECR. In light of the MFRM analysis, it can be concluded that descriptors at the top level (i.e., C1 in the CEFR/CSE 8 in the CECR) were clearly separated and ranked as expected while the most problematic overlapping scaling lay with the intermediate levels (i.e., B1, B1+, and B2/CSE 5, CSE6, and CSE 7) -indicating the difficulty that participants experienced in ranking the intermediate levels.</p><p>As with many projects, the current study has its limitations. Pressure of time and resources limited the number of participants and their familiarization with the descriptors. Although participating teachers were given a brief introduction to the CEFR, it is quite likely that they were not adequately familiar with the CEFR levels, in particular B1, B1+, and B2 levels. More training might be needed to familiarize participants with the CEFR in order to have sufficient understanding and detailed knowledge of the CEFR vocabulary descriptors so that they can reach a better agreement on the scales. Further, the findings of the study suggest that participant judgment alone was not sufficient. Multiple sources of evidence should also be provided to triangulate the empirical evidence so that consistent interpretation and modification can be provided.</p><p>While the study offered a manageable approach for calibrating the CEFR against the CSE for tertiary English education in China, further in-depth teacher training with a set of more experienced teachers is recommended for conducting a future external validation study since it is somewhat unlikely that a single one-off study will provide sufficient evidence of alignment <ref type="bibr" target="#b13">(Martyniuk 2010)</ref>. Iterative cycles of testing and revision should be provided to develop more comprehensive illustrative vocabulary descriptors representative enough to adequately reflect the range of CSE illustrative scales.</p><p>As <ref type="bibr" target="#b9">Kaftandjieva (2004)</ref> notes, the CEFR scales are valid, but this does not guarantee that the scales will be validly interpreted as standards in all contexts in which they may be used. The current study has shown that validation evidence of the CSE vocabulary scales can be provided as a reference point when scale values of the descriptors and participant agreement are calculated. Participants' informed judgements are important to establish the validity of the CSE scales in aligning them with the CEFR, with the CSE vocabulary descriptors continuing to be expanded to enrich the CSE descriptive and illustrative scales. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>All-facet ruler map</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3</head><label>3</label><figDesc>Overfitting participants</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Vocabulary descriptors in the CEFR</figDesc><table><row><cell>Bands</cell><cell cols="2">Levels Range</cell><cell>Control</cell></row><row><cell>Proficient User</cell><cell>C2</cell><cell>Has a good command of a very broad</cell></row><row><cell></cell><cell></cell><cell>lexical repertoire including idiomatic</cell></row><row><cell></cell><cell></cell><cell>expressions and colloquialisms; shows</cell></row><row><cell></cell><cell></cell><cell>awareness of connotative levels of</cell></row><row><cell></cell><cell></cell><cell>meaning.</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Vocabulary descriptors in the CECR</figDesc><table><row><cell cols="2">Levels of requirements Range &amp; control</cell></row><row><cell>Basic</cell><cell>Has a command of a lexical repertoire of 4,795 words and 700 phrases (including the</cell></row><row><cell></cell><cell>vocabulary learned at senior secondary education), among which 2,000 words are</cell></row><row><cell></cell><cell>active vocabulary, which a learner should be able to make skillful use in spoken and</cell></row><row><cell></cell><cell>written English on the basis of recognition.</cell></row><row><cell>Intermediate</cell><cell>Has a command of a lexical repertoire of 6,395 words and 1,200 phrases (including</cell></row><row><cell></cell><cell>the vocabulary learned at senior secondary education and vocabulary learned at Basic</cell></row><row><cell></cell><cell>Requirement level), among which 2,200 words are active vocabulary (including the</cell></row><row><cell></cell><cell>vocabulary learned at Basic Requirement level).</cell></row><row><cell>Advanced</cell><cell>Has a command of a lexical repertoire of 7,675 words and 1,870 phrases (including</cell></row><row><cell></cell><cell>the vocabulary learned at senior secondary education, vocabulary learned at Basic and</cell></row><row><cell></cell><cell>Intermediate Requirement levels), among which 2,360 words are active vocabulary</cell></row><row><cell></cell><cell>(including the vocabulary learned at Basic and Intermediate Requirement levels).</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Participant measurement report: Fit analysis</figDesc><table><row><cell>Participant</cell><cell>Logit</cell><cell>S.E.</cell><cell>Infit MnSq</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4</head><label>4</label><figDesc>Participant measurement report: Differences in participants</figDesc><table><row><cell>Statistics</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5</head><label>5</label><figDesc>Descriptor measurement report</figDesc><table><row><cell>Descriptor</cell><cell>Level</cell><cell>Logit</cell><cell>S.E.</cell><cell>Infit MnSq</cell></row><row><cell>V35</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V3</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V7</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V20</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V6</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V8</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V34</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V2</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V4</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V39</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V18</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V1</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V5</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V9</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V30</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V16</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V21</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V23</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V26</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V22</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V33</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V19</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V25</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V17</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V15</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V38</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V14</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V24</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V27</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V12</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V28</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V29</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V32</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V37</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V36</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V10</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V11</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V13</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>V31</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 6</head><label>6</label><figDesc>Descriptors with scaling problems</figDesc><table><row><cell>Logit</cell><cell>ID</cell><cell>CEFR-CSE level</cell><cell>Rated level</cell><cell>Descriptor wording</cell></row><row><cell>.90</cell><cell>V34</cell><cell>B2-CSE7</cell><cell>C1-CSE8</cell><cell>Knows about 6,000 words, and words from the AWL</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>(Academic Word List) and 1,200 phrases, among</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>which 2,200 are active words</cell></row><row><cell>.26</cell><cell>V5</cell><cell>B1 + -CSE6</cell><cell>C1-CSE8</cell><cell>Knows many most frequently used idioms</cell></row><row><cell>.26</cell><cell>V9</cell><cell>C1-CSE8</cell><cell>B2-CSE7</cell><cell>Knows expressions based on polysemy</cell></row><row><cell>.19</cell><cell>V30</cell><cell>C1-CSE8</cell><cell>B2-CSE7</cell><cell>Finds several vocabulary options in almost all speaking</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>and writing situations</cell></row><row><cell>.04</cell><cell>V21</cell><cell>B1-CSE5</cell><cell>B2-CSE7</cell><cell>Can produce synonyms of basic words in different contexts</cell></row><row><cell>.04</cell><cell>V23</cell><cell>B1 + -CSE6</cell><cell>B2-CSE7</cell><cell>Can produce the synonyms to the most common words</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>of most parts of speech</cell></row><row><cell>-.04</cell><cell>V26</cell><cell>B1 + -CSE6</cell><cell>B2-CSE7</cell><cell>Can produce the antonyms to the most common words of</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>most parts of speech</cell></row><row><cell>-.11</cell><cell>V33</cell><cell>B1 + -CSE6</cell><cell>B2-CSE7</cell><cell>Knows the meaning of about 5,000 words and words from</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>the AWL (Academic Word List), and 700 phrases, among</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>which 2,000 are active words</cell></row><row><cell>-.26</cell><cell>V19</cell><cell>B1 + -CSE6</cell><cell>B2-CSE7</cell><cell>Can use a range of affixations to produce basic words</cell></row><row><cell>-.42</cell><cell>V15</cell><cell>B2-CSE7</cell><cell>B1 + -CSE6</cell><cell>Can recognize and use a range of colloquial expressions</cell></row><row><cell>-.50</cell><cell>V14</cell><cell>B2-CSE7</cell><cell>B1 + -CSE6</cell><cell>Can recognize and use a range of idioms</cell></row><row><cell>-.58</cell><cell>V24</cell><cell>B1-CSE5</cell><cell>B1 + -CSE6</cell><cell>Can produce antonyms of basic words in different contexts</cell></row><row><cell>-.58</cell><cell>V27</cell><cell>B1-CSE5</cell><cell>B1 + -CSE6</cell><cell>Can produce some frequent collocations</cell></row><row><cell>-.66</cell><cell>V28</cell><cell>B2-CSE7</cell><cell>B1 + -CSE6</cell><cell>Can express meanings by adding affixation to familiar words,</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>e.g., have a review</cell></row><row><cell>-.66</cell><cell>V29</cell><cell>B2-CSE7</cell><cell>B1-CSE5</cell><cell>Has a good command of vocabulary related to everyday</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>situations</cell></row><row><cell>-.84</cell><cell>V10</cell><cell>B2-CSE7</cell><cell>B1-CSE5</cell><cell>Knows a number of principles of word formation, e.g., agree -</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>agreeable</cell></row><row><cell>−1.22</cell><cell>V13</cell><cell>B2-CSE7</cell><cell>B1-CSE5</cell><cell>Can recognize and use a range of vocabulary</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 7</head><label>7</label><figDesc>Reasons for item misfit</figDesc><table><row><cell>ID</cell><cell>Descriptor wording</cell><cell>Level</cell><cell>Reason for misfit</cell></row><row><cell>V35</cell><cell>Knows the meaning of about 8,000 words and</cell><cell>C1-CSE8</cell><cell>Level disagreement</cell></row><row><cell></cell><cell>words from the AWL (Academic Word List), and</cell><cell></cell><cell></cell></row><row><cell></cell><cell>2,000 phrases</cell><cell></cell><cell></cell></row><row><cell>V3</cell><cell>Understands and uses a wide range of technical jargon</cell><cell>C1-CSE8</cell><cell>Level disagreement</cell></row><row><cell>V6</cell><cell>Knows quite a large number of less usual idioms</cell><cell>C1-CSE8</cell><cell>Level disagreement</cell></row><row><cell>V16</cell><cell>Can recognize and use a range of technical jargon</cell><cell>B2-CSE7</cell><cell>Level disagreement</cell></row><row><cell>V32</cell><cell>Knows the meaning of 400-500 idioms or fixed collocations</cell><cell>B1-CSE6</cell><cell>Level disagreement</cell></row><row><cell>V36</cell><cell>Can recognize the meaning of 1,500-2,000 most frequent</cell><cell>B1-CSE6</cell><cell>Level disagreement</cell></row><row><cell></cell><cell>everyday vocabulary related to a range of basic personal</cell><cell></cell><cell></cell></row><row><cell></cell><cell>and familiar situations</cell><cell></cell><cell></cell></row><row><cell>V31</cell><cell>Knows the meaning of 3,000 words</cell><cell>B1-CSE6</cell><cell>Level disagreement</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 8</head><label>8</label><figDesc>Reasons for item overfit</figDesc><table><row><cell>ID</cell><cell>Descriptor wording</cell><cell>Level</cell><cell>Reason for overfit</cell></row><row><cell>V39</cell><cell>Has a good command of over 5,000 words</cell><cell>C1-CSE8</cell><cell>Level agreement</cell></row><row><cell>V21</cell><cell>Can produce synonyms of basic words in different contexts</cell><cell>B1-CSE5</cell><cell>Level agreement</cell></row><row><cell>V22</cell><cell>Can produce synonyms of most common words in different contexts</cell><cell>B2-CSE7</cell><cell>Interdependency</cell></row><row><cell>V25</cell><cell>Can produce antonyms of most common words in different contexts</cell><cell>B2-CSE7</cell><cell>Interdependency</cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>We would like to thank Professor JIN Yan and Professor YU Guoxing for their valuable suggestions on earlier drafts of the manuscript.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix 1</head><p>Submit your manuscript to a journal and benefi t from:</p><p>7 Convenient online submission 7 Rigorous peer review 7 Immediate publication on acceptance 7 Open access: articles freely available online 7 High visibility within the fi eld 7 Retaining the copyright to your article Submit your next manuscript at 7 springeropen.com</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Bands and scores</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Language testing in the 1990s</title>
+		<editor>J. C. Alderson &amp; B. North</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Macmillan</publisher>
+			<date type="published" when="1991" />
+			<biblScope unit="page" from="71" to="86" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Common European Framework of Reference for Languages: Learning, teaching, assessment: Case studies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<pubPlace>Strasbourg</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">The shape of things to come: Will it be the normal distribution? Cambridge</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Continuum</publisher>
+			<pubPlace>Alderson, J. C; London</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Diagnosing foreign language proficiency</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Analysing tests of reading and listening in relation to the Common European Framework of Reference: The experience of the Dutch CEFR construct project</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Kuijper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Nold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Tardieu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Assessment Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="30" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Applying the Rasch model: Fundamental measurement in the Human Sciences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">G</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Fox</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Lawrence Erlbaum Associates</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Europass and the CEFR: Implications for language teaching in Korea. English Language and Literature Teaching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Finch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="71" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">A review of foreign language proficiency scales. Foreign Language Teaching and Research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Han</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="443" to="450" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">What vocabulary size is needed to read unsimplified texts for pleasure? Reading in a Foreign Language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Hirsh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Nation</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="689" to="696" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Using the CER to promote language learning through diagnostic testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Huhta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Figueras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Insights from the Common European Framework</title>
+		<editor>K. Morrow</editor>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="65" to="76" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Standard setting. Section B of the Reference Supplement to the preliminary version of the Manual for relating language examinations to the Common European Framework of Reference for Languages: Learning, teaching, assessment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Kaftandjieva</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<pubPlace>Strasbourg</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Council of Europe scales of language proficiency: A validation study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Kaftandjieva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Takala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Common European Framework of Reference for Languages: Learning, teaching, assessment. Case studies</title>
+		<editor>J. C. Alderson</editor>
+		<meeting><address><addrLine>Strasbourg</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="106" to="129" />
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">FACETS Rasch measurement computer program version 3.58</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+		<editor>Winsteps.com</editor>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Reasonable mean-square fit values</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">D</forename><surname>Wright</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rasch Measurement Transactions</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">370</biblScope>
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Aligning tests with the CEFR: Refelections on using the Council of Europe&apos;s draft Manual</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Martyniuk</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Cambridge University Press</publisher>
+			<biblScope unit="volume">33</biblScope>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">English Curriculum for Senior Secondary Education. Beijing: Beijing Normal University. Ministry of Education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Mcnamara</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>Higher Education Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+	<note>College English Curriculum Requirements</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A progress report on the development of the CEFR-J</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Negishi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Takada</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Tono</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Exploring language frameworks</title>
+		<editor>E. Galaczi &amp; C. J. Weir</editor>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="135" to="163" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The development of a common framework scale of language proficiency</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>North</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The CEFR in Practice</title>
+		<editor>Peter Lang. North, B.</editor>
+		<meeting><address><addrLine>New York; Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="656" to="659" />
+		</imprint>
+	</monogr>
+	<note>The CEFR illustrative descriptor scales</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Scaling descriptors for language proficiency scales</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>North</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Schneider</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="217" to="262" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Setting performance standards in Europe: The judges&apos; contribution to relating language examinations to the Common European Framework of Reference</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Papageorgiou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>Peter Lang</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Vocabulary size and the skills of listening, reading and writing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">S</forename><surname>Staehr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Learning Journal</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="139" to="152" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Using FACETS to model rater training effects. Language Testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">C</forename><surname>Weigle</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="263" to="287" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Limitations of the Common European Framework for developing comparable examinations and tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">J</forename><surname>Weir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="281" to="300" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Policy perspectives from Taiwan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Common European Framework of Reference: The globalisation of language education policy</title>
+		<editor>M. Byram</editor>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">23</biblScope>
+		</imprint>
+	</monogr>
+	<note>Multilingual matters</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">On developing a unified Asian framework of English rating scales. Foreign Languages in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gui</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+			<publisher>Cambridge University Press</publisher>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="34" to="37" />
+			<pubPlace>Strasbourg</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe. ; Council of Europe/Cambridge</orgName>
+		</respStmt>
+	</monogr>
+	<note>Common European framework of reference for languages: Learning, teaching, assessment (CEFR)</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Developing the China Standards of English: challenges at macropolitical and micropolitical levels</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yan</forename><surname>Jin</surname></persName>
+							<email>yjin@sjtu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Zunmin</forename><surname>Wu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Charles</forename><surname>Alderson</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Weiwei</forename><surname>Song</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Developing the China Standards of English: challenges at macropolitical and micropolitical levels</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-017-0032-5</idno>
+					<note type="submission">Received: 21 September 2016 Accepted: 27 January 2017</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>English language education</term>
+					<term>China Standards of English (CSE)</term>
+					<term>Macropolitical challenges</term>
+					<term>Micropolitical challenges</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Background: A project has recently been proposed by the National Education Examinations Authority, P. R. China, to develop a national framework of reference for English language education, provisionally called China Standards of English (CSE). In this article, we argue for the necessity of developing the framework of reference in China and challenges facing such an important endeavor. Methods: We first reviewed relevant documents of English language education in China to identify the overlaps and inconsistencies in the curricular requirements at different educational stages. We then explored the need for improving the transparency in policies and practices of English language education. Finally, challenges facing the development and implementation of the CSE were discussed based on Alderson&apos;s (2009) conceptualization of politics in language education. Results: For governmental organizations, coordinating resources and negotiating views of different educational stages may prove challenging due to the segmental management structure of English language education in China. Micropolitically, the CSE project may face technical challenges due to the innovative nature of the work involved. Resistance may also be encountered from practitioners who may pay lip service to the new framework and feel reluctant to change their pedagogical and assessment practices. Conclusions: The discussion of challenges facing the development of a national framework for English, the first of its kind in China, is intended to influence and inform decisions on how the CSE can be developed, and more importantly, how the framework can be implemented so as to achieve the ultimate purpose of improving English teaching, learning and assessment in China.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>English language education is currently a compulsory requirement for education at all levels in China. Few attempts, however, have been made to investigate the consistency of English curricula at different levels. Theoretical models underpinning curricular requirements and empirical evidence supporting level descriptions are not publicly available. To improve the coherence and efficiency of English language education, a project was proposed and funded by the Foreign Language Teaching and Research Press (FLTRP) to develop a national framework for English language education in China, provisionally called the Common Chinese Framework of Reference for English (CCFR-E): Teaching, Learning, Assessment.</p><p>The development of such a framework in a country where the number of English learners exceeds that of English native speakers around the world conveys no doubt a strongly political message. The CCFR-E project was initiated in 2014 by the FLTRP, which invited the authors of this article to participate in the project as a member of the expert group or a senior consultant. The project, however, was suspended 1 year after its inception because of the inauguration of the China Standards of English (CSE) 1 project (see <ref type="bibr" target="#b29">Liu 2015)</ref> by the National Education Examinations Authority (NEEA) in late 2014. The NEEA is an institution founded in 1987 under the supervision of the Ministry of Education and appointed by the Ministry to undertake educational examinations. This transition from the initiation of a project by a commercial publisher to a national project under the auspices of a governmental organization has sent a clear message of the politics of such an important endeavor, and of the challenges inherent in such an ambitious project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>The macropolitics of education, according to <ref type="bibr" target="#b3">Alderson (2009)</ref>, addresses the agendas and issues within the purview of national or local government (p. 2). While recognizing the central role of educational policy-making and implementation at the macropolitical level, <ref type="bibr" target="#b3">Alderson (2009)</ref> also attaches great weight to individual factors: the personality of the players themselves, their emotions, their ambitions, their agendas and their influence (p. 2). Macro-level educational policy often involves innovations in language education, which requires individuals within an educational institution to respond to and to take actions. It is therefore argued that "politics with a small p includes not only institutional politics, but also personal politics: the motivation of the actors themselves and their agendas. And personal politics can influence language education both in day-to-day affairs, and in projects for innovation and change" <ref type="bibr">(Alderson 2009, p. 3)</ref>.</p><p>In this article, we will adopt <ref type="bibr">Alderson' s (2009)</ref> view on the role of politics in language education to examine the political dimensions of the CSE project. To be specific, we attempt to unravel the complexities of the issues involved in the development and implementation of a national framework of reference for English in China by seeking answers to the following questions:</p><p>1. Why do we need a national framework of reference for English in <ref type="bibr">China?</ref> 2. Why do we create a new framework instead of adopting or adapting an existing one? 3. What are the challenges facing government organizations in the process of constructing and implementing a national framework? 4. What are the challenges facing the individuals involved in or having stakes in the construction and development of a national framework?</p><p>In the following sections, we will provide a rationale for such a national endeavor by reviewing the management structure of education within the China's government system and the status quo of English language education and assessment in China (Question 1). Based on this review, we discuss the issues with the Common European Framework of Reference for Languages (CEFR) (Council of Europe 2001) and the benefits of developing a national framework specific to the Chinese context (Question 2). We will then discuss the macropolitical challenges facing the construction and implementation of a national framework (Question 3). Finally we will identify and pinpoint the challenges posed by the CSE project to individuals who will be involved in or affected by the project (Question 4). This will hopefully lead to the development of a more nuanced approach to the very idea of such a national framework given the complexities of the Chinese context.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and discussion</head><p>English language education in China: the need for a national framework</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Inconsistencies in curricular requirements</head><p>The management structure of education in China is a segmented system with different governmental departments taking charge of education at different stages (see <ref type="figure">Fig. 1</ref>, retrieved on June 1, 2015 at http://en.moe.gov.cn/About_the_Ministry/Departments/). The Department of Basic Education I, for example, is in charge of elementary and junior secondary education; kindergarten and senior secondary education is the responsibility of Department of Basic Education II. The divided management structure of education is understandable given China's large population and its vast area. Such a "segmental" structure, however, has brought about an inconsistent and incoherent English language education system in terms of educational requirements.</p><p>National curricula for English language education have been developed and implemented under the auspices of the different departments of the Ministry of Education (see <ref type="table">Table 1</ref> below for a summary). One benefit of having a separate curriculum for English language education at each stage is that curricular requirements can be fine-tuned to suit the needs and levels of targeted learners. Instructional objectives for young learners (elementary and junior secondary), for example, include not only language knowledge and skills but also affective attitudes, learning strategies, and cultural awareness <ref type="bibr" target="#b8">(Cheng and Dan 2012)</ref>. The curriculum for college English learners (non-English majors), on the other hand, encourages the development of learner autonomy by promoting the "computerand classroom-based teaching model". In such a model, the role of college English teachers should be more of a facilitator than an instructor <ref type="bibr" target="#b37">(Wang 2008)</ref>.</p><p>A major problem arising from such a management structure is the inconsistent learning objectives specified in the curricula for Chinese learners of English at different educational stages. In other words, the benefit of having a separate curriculum for each educational stage may well be offset by the apparent lack of coherence across the <ref type="figure">Fig. 1</ref> The management structure of education in China requirements of the different stages. For example, there is no shared understanding of what constitutes the ability to communicate in a foreign language among curricula developers working for different departments of education. There is also a lack of consistency in terms of the proficiency levels to be attained at each educational stage (e.g., speed of reading, fluency in speaking, grammatical knowledge, etc.). A comprehensive and detailed analysis is beyond the scope of this article. Examples of the most obvious inconsistencies are therefore used to support our argument. One such issue is reflected in the requirement of vocabulary size (see <ref type="table" target="#tab_0">Table 2</ref>) and vocabulary list (words to be learnt), both clearly specified in curricula and playing a key role in textbook writing and assessment development for learners at a particular educational stage.</p><p>Our review indicates that there is a lack of key information about the vocabulary requirements and that the requirements do not form an inherently coherent system. First, it is not clear whether the vocabulary sizes are cumulative across educational stages or each stage is independent of the others. Nor is it clear whether lexical items at a lower level are included in the lists of higher levels. Words of food and fruit such as "pancake", "dumpling", "cherry", and "watermelon", for example, appear in the wordlist of junior secondary curriculum, but not that of the non-English-major undergraduate curriculum. Second, no information is available as to whether lexical items in the <ref type="table">Table 1</ref> National curricula for English language education in China lists are word families or lemmas. Data provided on the Language <ref type="bibr" target="#b27">Data (2016)</ref> shows that they are certainly not word families. In the 700 items of the vocabulary list for elementary education, for example, there are only 404 word families. Third, core lexical items or items new to each educational stage are not indicated, making it difficult for teachers, textbook writers and assessment developers to focus on the items essential to education at a particular stage. More importantly, the rationale for and utility of these vocabulary lists appears to be lacking. These lists were developed by different groups of experts working for different governmental departments, who probably conceptualized "core general vocabulary" or "essential English vocabulary" in different ways and disagreed on the principles of creating a wordlist (see <ref type="bibr" target="#b6">Brezina and Gablasova 2015)</ref>. When a corpus-based approach was adopted for developing a wordlist, different corpora may have been consulted and different frequency and dispersion statistics may have been used, leading to inconsistencies in the selection and counting of vocabulary items <ref type="bibr" target="#b21">(Han and Feng 2004;</ref><ref type="bibr" target="#b23">Huang 1999;</ref><ref type="bibr" target="#b24">Huang, Chen, Xu, Li, and Fu 2004;</ref><ref type="bibr" target="#b46">Xi 1998)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Inconsistencies in the proficiency levels of national assessments</head><p>The other type of inconsistency is reflected in the proficiency levels of national assessments, which are aligned to the curriculum at each educational stage. The divided management structure of education in China has led to the development of a number of national English assessments. Depending on their purposes, these assessments fall into three broad categories: admission test, program exit test and proficiency test. A summary of major national English assessments currently in use is provided in <ref type="table" target="#tab_1">Table 3</ref>.</p><p>At the elementary level of education, there are no unified national assessments of English. Classroom assessments are used to monitor the progress of students. Junior secondary school graduates take admission tests developed by local (provincial or municipal) education examinations authorities. Senior secondary school graduates sit the National Matriculation English Test (NMET). For higher education, there are exit tests for various English programs: Practical English Test for Colleges (PRETCO) for vocational school students, College English Test (CET) Band 4 and Band 6 for non-English majors, and Test for English Majors (TEM) Band 4 and Band 8 for English majors. For graduate school admission, the Graduate School Entrance English Examination (GSEEE) is developed and administered by the NEEA. The Public English Test System (PETS) Band 1 to Band 5 is a suite of English proficiency tests for learners at all levels and used for a variety of purposes, including mainly admission, promotion, overseas study, and so on. These national tests are developed and administered by different testing organizations under the auspices of local or national examinations authorities. Similar to curriculum development, there is a lack of communication among assessment developers working for different examinations authorities. Take the NMET as an example. There are one national version and 16 provincial or municipal versions. The national version is developed and administered by the NEEA whereas local versions are operated by local examinations authorities. A significant issue with these different versions is the lack of a quality control mechanism in the process of test development and scoring. As the design and the task difficulty differ from one version to another, scores of the local versions are not comparable. Admission officers may wish to know, for example, whether test takers in Beijing with a score of 100 are at the same proficiency level as those sitting the Shanghai version test with the same score. A common scale will facilitate test construction and score interpretation. If we have a common English proficiency scale and local versions of the NMET are aligned to the scale, the proficiency levels of the test takers in different parts of the country will be comparable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The need for a transparent English language education system</head><p>Apart from the internal needs and interests of the Chinese government to improve English language education, there is increased external influence on the Chinese government to respond to the challenge of globalization by making its education system more transparent to the outside world. The development of a national framework of reference for English language education is one of such responses to the need for a more transparent education system.</p><p>Since the late 1970s, following the major economic reforms that opened the country to the outside world, China has witnessed a growing interest in English language education and a substantial increase in the number of English learners. The national college entrance examination was resumed in 1977 after a 10-year hiatus due to the Cultural Revolution, a sociopolitical movement that took place in China from 1966 to 1976 which brought China's education system to a virtual halt for a decade. In the examination, English language became one of the three compulsory components, accounting for one third of the total score. This further spurred educators at all levels to give great importance to English language education. Over the three decades, English language education in China has matured into a full-fledged system (see <ref type="bibr" target="#b11">Dai 2008;</ref><ref type="bibr" target="#b38">Wang and Xu 2014;</ref><ref type="bibr" target="#b40">Wen and Xu 2011</ref><ref type="bibr" target="#b42">, 2013</ref>. However, in response to the profound impact of globalization on education, the English language education system in China needs further opening up.</p><p>On the one hand, the Ministry of Education is aware of the influence of the CEFR in Europe and around the world and hopes to learn from the European experience and develop a scale of its own. The government hopes that, through the CSE project, the standards of English language education in China can be aligned to international frameworks. It is also hoped that the CSE would contribute to the recognition of China's curricula and assessments by other countries and regions in the world. On the other hand, China's fast social and economic development and its growing influence in the global arena make some people believe that it is now less urgent for Chinese to learn English or other foreign languages. However, preparing learners to be a global citizen <ref type="formula">Israel  2012</ref>is not only about equipping them with the ability to communicate, but also about enabling them to know about the culture, custom, and history of a foreign country so as to better adjust themselves to the new working or living environment. It is therefore hoped that the new framework of reference for English language education and the revised curricula and assessments will better prepare Chinese people to become a global citizen.</p><p>The review of the status quo of English language education in this section indicates the internal needs and interests of the Chinese government to improve consistencies and coherence of curricular requirements. Externally, the development of a national framework will improve the transparency of China's policies and practices of English language education and better prepare Chinese people to live and work in an increasingly globalized world. In the next section, we will address the second question, also a key issue under debate at the outset of the CSE project, that is, how a national framework should be developed so as to best suit the needs and interests of Chinese learners of English.</p><p>Adopting, adapting or creating a language framework? A measure of language proficiency is a complex multi-dimensional system that takes into account language use situations, language functions, linguistic elements, strategic abilities, and communicative competencies, and captures the so-called criterial features <ref type="bibr" target="#b22">(Hawkins and Filipović 2012)</ref> that distinguish learners at different proficiency levels. Within such a system, it is difficult to determine the number of levels needed for a language proficiency measure and to measure the distance between the levels. The levels of a language proficiency measure are in fact arbitrary. De <ref type="bibr" target="#b12">Jong (2004)</ref> commented on the strength of the CEFR, which was reflected in its comprehensiveness: a qualitative dimension, i.e., a descriptive system or taxonomy of language activities, and a quantitative dimension, i.e., the use of different reference levels (54 quantified sets of descriptors and six consecutive intervals).</p><p>More importantly, measures of language proficiency can have powerful political, economic, cultural, educational and social influences on virtually every aspect of life. The CEFR has affected such aspects of life as social mobility, job opportunity, language policy, language education, cultural identity of language learners and so on. <ref type="bibr" target="#b34">North (2000)</ref> said that the CEFR is "a common European metric for recording language competence" and that "the motivation for a common framework (or metric) is more pragmatic, more socio-political than academic" (p. 4).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Issues with the CEFR</head><p>Initiated as a means to encourage "language learning for European citizenship" (Council of Europe 2001), the CEFR was intended to be a common credit system for adult language learners in Europe. The political impetus, according to the Council of Europe <ref type="bibr" target="#b9">(1996</ref><ref type="bibr" target="#b10">( , 2001</ref><ref type="bibr">( , cited in Fulcher 2004</ref>, was "to encourage mobility, to promote understanding and cooperation, and to overcome prejudice and discrimination" (p. 256). Since its inception, the framework has gained substantial influence in Europe and increasingly world-wide. <ref type="bibr" target="#b1">Alderson (2005)</ref> noted that the publication of the CEFR was "the most significant event on the language education scene in Europe" (p. 275).</p><p>Some inherent limitations of the CEFR, however, have affected its applicability in Europe and other parts of the world. One of the obvious limitations, according to <ref type="bibr" target="#b2">Alderson (2007)</ref>, is the lack of empirical research to underpin the descriptive scheme and reference-level descriptions of the CEFR. In particular, insufficient attention has been paid to "empirical findings from 30 years of research into second language acquisition" (p. 660). A better understanding of how second and foreign language proficiency develops is considered essential for the CEFR to become truly useful to language education in general. The other problem associated with the use of the CEFR is that of "quality assurance, or, to put it bluntly, the policing of the CEFR levels" <ref type="bibr">(Bonnet 2007, p. 671</ref>). An example is that "examination providers, textbook publishers, and curriculum developers make claims about the relationship between their products and the CEFR, but little empirical evidence has been produced to back up their claims" <ref type="bibr">(Alderson 2007, p. 661)</ref>.</p><p>Issues have also been identified with the use of the CEFR for developing comparable examinations or tests. <ref type="bibr" target="#b35">Papageorgiou (2010)</ref>, for example, identified problems with the CEFR descriptors when used for setting cut scores. Participants of his standard-setting study reported that the context-free characteristics of the framework made it less applicable to a language testing context. Quoting <ref type="bibr" target="#b34">North (2004)</ref>, Papageorgiou explained that "as a reference resource for language learning, teaching and assessment, the CEFR was not designed specifically for test specifications and language testing contexts" (p. 273). The participants of the study also found that the real-life descriptions used in the CEFR were not helpful when making judgments in an exam context. The study has also confirmed the findings of <ref type="bibr" target="#b4">Alderson, Figueras, Kuijper, Nold, Takala, and Tardieu (2006)</ref> that key words in some descriptors are ill defined and inconsistent in the scales. It is not clear, for example, whether verbs such as "understand" and "follow" in the descriptors of things that learners "Can Do" are used as synonyms or to indicate different processes. It is also noted that the descriptors are adult-oriented and unsuitable for young learners. And it is criticized for lacking descriptors for particular aspects of performance and levels (e.g., grammar, task fulfillment criteria, missing C2 descriptors in reading scales).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Adoption or adaptation of the CEFR in Asia</head><p>In countries and regions in Asia, the CEFR is also widely used, but not without problems. In Taiwan, the CEFR has been adopted for establishing a common standard of English proficiency and aligning local examinations to the standard. The experience of aligning the GEPT (General English Proficiency Test, see www.lttc.ntu.edu.tw) with the CEFR has suggested within the CEFR a lack of sufficiently detailed descriptors for describing how well learners at a particular CEFR level perform (see <ref type="bibr" target="#b44">Wu and Wu 2007;</ref><ref type="bibr" target="#b45">Wu 2014)</ref>.</p><p>In Japan, efforts were made by the Japan Language Testing Association (JLTA) to adapt the CEFR to the local context. A Japanese version of the CEFR, the CEFR-J, has been developed and validated (www.cefr-j.org). The adaptation involves mainly two things: adjusting the difficulty level of SASs (self-assessment statements) and investigating the distribution of learners' proficiency across the CEFR levels. Major changes to the CEFR include level adjustment, wording of some descriptors, and supplementing descriptors with examples to facilitate understanding. The surveys on Japanese learners' English proficiency conducted by the Eiken Foundation in Japan among the lower secondary school students in a prefecture and employees of an electronics manufacturer revealed that more than 80% of Japanese EFL learners are non/basic users (A1 or A2), less than 20% at B levels (independent users) and almost none at C levels (proficient users) (see Negishi 2012 for a report of the surveys). The resultant CEFR-J therefore has a level A with six sub-levels (Pre-A1, A1.1, A1.2, A1.3, A2.1, and A2.2), a level B with four sub-levels (B1.1, B1.2, B2.1 and B2.2), and a level C with two sub-levels (C1 and C2) (see <ref type="bibr" target="#b33">Negishi and Tono 2014)</ref>.</p><p>Despite interest in the development and implementation of the CEFR-J, <ref type="bibr">Runnels (2014, p. 169)</ref> noted that the functioning of the CEFR-J as an assessment or a selfassessment instrument in Japan is under-researched. One exception is the impact study conducted through the analysis of "big data", which contained 15,579,018 texts, written in Japanese by researchers, practitioners, or news reporters in Japan from August 2012 to September 2013 on topics related to the CEFR-J (Negishi and Tono 2014). The study showed that the impact of the CEFR-J on English language education in Japan had been limited compared with that of language tests such as TOEIC and TOEFL. More importantly, it was found that "Can Do" descriptors were too narrowly focused to be useful for teachers to reflect on teaching and construct teaching syllabus.</p><p>Creating a language framework for China <ref type="bibr" target="#b7">Byrnes (2007)</ref> cautioned against "simple and inappropriate transfer of CEFR content decisions to other educational contexts" and called for CEFR-based research to focus more on "how a context-free, though by no means context-indifferent, framework like the CEFR can, should, and even must be translated into context-relevant forms in diverse educational environments in order to be implemented" (p. 642-643). In our view, in a country as vast as China with a cultural, educational, and socio-economic context dramatically different from that of Europe, either adoption or adaptation of the CEFR would be a simplistic and problematic solution to the need for a national framework.</p><p>A key difference between the CEFR and the CSE lies in the targeted users of the framework. The CSE has been intended for Chinese learners of English at all educational stages, from young learners in elementary schools to adult learners in universities. The CEFR, however, was developed to aid foreign language learning in the adult context in Europe. In recent years, due to perceptions of its usefulness and currency and only a partial understanding of its aims, the CEFR, as noted by <ref type="bibr" target="#b17">Figueras (2012)</ref>, "has been used widely at all education levels, also with L1, and with languages for specific purposes" (p. 483). The research of the applicability of the CEFR for young learners, for L1 education, and for languages for specific purposes, however, is inadequate.</p><p>There is also an issue with the proficiency level of the CEFR if it were used in the Chinese context. The six-level structure is neat and simple and has been substantiated to some extent by empirical evidence. Such a structure, however, may not suit the need of the CSE for providing guidance to English language teaching and learning in China. Although the Council of Europe argues that the CEFR has an open and flexible structure which allows the breakdown of a major level into sub-levels (e.g., A1.1, A1.2), a new framework with a structure of proficiency levels tailored to the needs of English language education in China will no doubt be more functionally efficient and user friendly (see The implementation plan of the CSE project below).</p><p>A further benefit of creating a framework to the Chinese context is that the process of framework construction and implementation will offer us opportunities to effect changes on a larger scale and at a deeper level than adopting a ready-made model or adapting the CEFR to Chinese learners. The creation of a Chinese framework of reference for English (i.e. the CSE), by necessity, will involve investigation of the current status of English language education in China and discussion or even debate on possible adjustments to educational policies. By so doing, the CSE project will hopefully encourage policy makers, researchers and practitioners to reflect and try to reach agreement on some fundamental questions on English language education in China.</p><p>For example, to determine the overall structure and the scope of the CSE, the project team needs to investigate the motivations for Chinese people to learn English and the major domains in which English is used in China; to define the language proficiency model to be used in the CSE, the team needs to find out what skills of English are useful to Chinese learners, the relative importance of these skills and the urgency for Chinese learners to develop the skills; to describe English listening ability, the team needs to make informed decisions on the varieties of English to be taught and learnt in China; and most important of all, the team needs to describe explicitly and in minute detail the proficiency levels to be attained by learners of English at each educational stage.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The implementation plan of the CSE project</head><p>To develop the CSE, the NEEA has set up a project team which consists of eight groups, each working on one of the eight components of essential knowledge or skills of English language ability: listening, reading, speaking, writing, translation, interpretation, pragmatics, and linguistic knowledge (see National Education Examinations Authority 2014, p. 19 for the theoretical model of the CSE). It is interesting to note that the structure of the CSE includes both translation and interpretation, in addition to the four major language skills. As mediating activities, translation and interpretation occupy an important place in the normal linguistic functioning of the Chinese society and are taught and learnt as a language skill in tertiary education. Translation is also employed in locally developed language tests to assess learners' ability to reproduce the source text content in fluent and idiomatic target language. The project team, therefore, decided to develop sub-scales of translation and interpretation at the upper-intermediate to advanced levels of the CSE. The other interesting point to note is that master or PhD students majoring in linguistics and applied linguistics have been invited to participate in the project and work under the guidance of the group leaders because the construction of the CSE involves highly labor-intensive work (see the implementation plan discussed below).</p><p>A three-stage implementation plan has been designed for the development of the CSE (see <ref type="figure" target="#fig_1">Fig. 2</ref>). The first stage aims at establishing a descriptor pool through a review of documents for collecting existing descriptors and writing new descriptors. A pool of typical language activities for Chinese learners of English is also expected to be developed at this stage. The second stage focuses on the categorization of the descriptors based on the theoretical framework developed for each component skill and revision of the categories through expert judgment and teacher surveys. The third stage is to decide the level of the descriptors through expert judgment and large-scale surveys among teachers, learners and users.</p><p>The flowchart in fact provides only a thumbnail sketch of the stages involved in the project. The actual development and implementation of the CSE will prove to be much more complex than what has been expected. Initially the CSE will be only a descriptive scheme, or a multi-functional framework of reference. Similar to the CEFR, the CSE will use can-do statements with calibrated difficulty levels to facilitate communication among teachers, learners, and curriculum and assessment developers and users. After the initial construction stage, the NEEA has planned to take a step further by using the framework as a guideline and working closely with language policy makers, i.e., various departments of education in the Ministry of Education, curriculum developers working for these departments, and assessment developers working for examinations authorities (see Inconsistencies in curricular requirements and Inconsistencies in the proficiency levels of national assessments) to turn the framework into national standards of English. The use of the term "standards" as the title of the framework has signaled the NEEA's expectation to exert significant influence on national curricula and assessments. As noted by Fulcher (2010a), standards are "powerful expressions of what political authorities wish an educational system to deliver in the interests of the nation's future" (p. 226). Therefore, to effectively implement the CSE, reform of English language education in China is inevitable, and this will meet resistance, both active and passive. In the next sections, we will follow <ref type="bibr" target="#b3">Alderson's (2009)</ref> view on politics in language education and discuss the challenges at the macro and micro-political levels facing the CSE project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Constructing and implementing the CSE: macro-political challenges</head><p>Coordination between the NEEA and educational policy-makers</p><p>The aim of the CSE is to increase communication among policy-makers within and across educational stages in order to achieve greater consistency in policies and practices. This may involve a common curricular structure, a common credit system, content comparability for various language programs (e.g., vocational, non-English major undergraduate, English major undergraduate and graduate programs), and content specifications for entrance and exit assessments of English (e.g., NMET, PRETCO, CET, TEM, GSEEE). The CSE, therefore, is expected to introduce a degree of commonality in terms of the national-level educational policy in English teaching, learning and assessment, leading ultimately to improvement in the efficiency and effectiveness of English education in China. The "consistency" or "commonality" intended by the CSE, however, is likely to meet resistance from educational policymakers.</p><p>As mentioned in Inconsistencies in curricular requirements, policies of English language education at different educational stages are made by various governmental departments (see <ref type="figure">Fig. 1</ref>). The construction of the CSE, however, was the responsibility of the NEEA, an institution under the supervision of the Ministry of Education to undertake educational examinations. It is true that the NEEA is more suitable than other educational departments to undertake the CSE project because it is able to mobilize and coordinate resources at all levels of English language education in China. Reconciling and negotiating the different views and vested interests of different educational stages will however be challenging due to an apparent lack of effective communication between the NEEA and the educational departments and among professionals and policymakers working with or for these different departments.</p><p>The very essence of constructing a unified framework is to accurately measure and describe the distance between the levels in order to provide specific guidance on the revision or re-design of curricula. There is a danger, however, that this objective could be hijacked by policymakers due to the inherent governmental resistance to change. For example, it is likely that the Department of Basic Education II thinks senior secondary is a key stage and a level on the CSE (e.g., CSE4 in <ref type="table" target="#tab_2">Table 4</ref> below) should be designated to English education in senior secondary schools. The potential benefit is that future alignment of the senior secondary curriculum with the CSE might be easier and minimum efforts might be needed to revise its existing curriculum, assessments and textbooks. If each department of education had such an expectation, the CSE would have to designate a level to each stage of English language education (i.e., elementary, junior secondary, senior secondary, secondary vocational, vocational, non-English-major undergraduate, English-major undergraduate, graduate). Empirical data however may not support such a division of Chinese learners' English proficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The power of enforcement</head><p>The implementation of the CSE may present an even greater challenge to the NEEA than the construction of the framework. Similar to the Council of Europe, which "can only propose, advise, and encourage" but "cannot intervene directly in the educational policy and practice of its member states" <ref type="bibr">(Little 2007, p. 647)</ref>, the NEEA, which is leading the development of the CSE, has a strong voice in educational assessment, but not in curricula, nor in pedagogy.</p><p>The curricula for English language education at different stages are developed by committees or working groups under the auspices of governmental departments of each educational stage (see <ref type="table">Table 1</ref>). These committees or groups consist of experts in English language education, most of whom may not have participated in the CSE project. It is therefore uncertain whether the new framework will be accepted and welcomed by these governmental departments and the curriculum developers working for the departments, and how motivated they will be to redesign curricula and prepare teachers for new curriculum requirements. The relationship of the CSE and English curricula will not be established if the governmental departments and curricula developers are unwilling to align their curricular requirements to the new framework. The NEEA, therefore, is expected to engage stakeholders, especially policymakers, in the development of the new framework so as to facilitate the implementation of the CSE. A vice minister of the Ministry of Education, for example, was invited by the NEEA to participate in the inaugural meeting of the CSE project in October 2014, when she had an opportunity to listen to experts' views and gain a better understanding of the complexity involved in such an important endeavor.</p><p>The other macro-level challenge facing the implementation of the new framework is that national or local governmental organizations may pay lip service to the new framework by claiming a link between the curricula or assessments and the CSE levels in Note. "non major" = students whose major is not English language and literature; "major" = students majoring in English language and literature order to be considered politically correct. A superficial alignment could be detrimental to the development of English language education in China, where diversity is perhaps unavoidable and transition to a new system will have to be gradual and smooth.</p><p>Constructing and implementing the CSE: micro-political challenges</p><p>The construction of the framework Similar to the CEFR, whose level labels and level descriptors have high value, or "common currency" <ref type="bibr">(Figueras 2012, p. 479)</ref>, the reference levels and illustrative descriptors of a national framework would be most useful for English language education in China. The experience of developing a speaking proficiency scale for Chinese learners of English, however, has proved that constructors of a national framework would face great challenges in the way in which reference levels are described and scaled (see <ref type="bibr" target="#b47">Yang et al. 2012)</ref>. Funded by the National Philosophy and Social Science Project, the team spent 3 years in drafting and validating a pool of descriptors of speaking proficiency for tertiary-level English learners.</p><p>Based on the data collected from 183 experienced teachers/raters, who were trained to use the descriptors for evaluating performances of 10 students at different levels of oral proficiency, a total of 65 descriptors were categorized and scaled.</p><p>In terms of the levels of the CSE, we would welcome a framework with a finer grained scale of levels because it would be more informative and motivating to learners and easier for the alignment with curricula and assessments. It is however difficult to empirically construct and validate a framework with many levels, because distances between the levels need to be determined empirically by scaling the difficulty of descriptors as perceived by experts and experienced teachers. A proper balance between the usefulness of a framework and the practicality of developing the framework needs to be maintained when the decision on the number of reference levels is to be made.</p><p>As a starting point of the CSE project, a nine-level structure of the framework has been hypothesized based on China's educational system and the annual test population of some national English assessments (e.g., NMET, CET, GSEEE) (see <ref type="table" target="#tab_2">Table 4</ref> above). In such a structure, the CSE could have a basic level with three sub-levels (CSE1-3), an intermediate level with three sub-levels (CSE4-6), and an advanced level with three sub-levels (CSE7-9). The hypothesis will be verified at the third stage of the project.</p><p>When purposes of English use are considered, it would be challenging, but especially significant, for the CSE to meet the needs of using English for a variety of purposes, including English for professional purposes, for workplaces, for academic exchanges, for social interactions, and so on. Scales of English for specific purposes (ESP) will be most useful to address the needs of adult learners and the future needs of learners at school.</p><p>It is also a great challenge to construct and validate the illustrative descriptors of a language framework <ref type="bibr" target="#b48">(Zhu 2015</ref>). On the one hand, descriptors are difficult to write as they "need to be expressed in language-specific functional, linguistic, and socio-cultural exponents" <ref type="bibr">(Figueras 2007, p. 674</ref>). If CEFR descriptors or descriptors of other existing frameworks are to be translated into Chinese and used in the CSE, care needs to be taken of embedded cultural values and pragmatic appropriateness. On the other hand, descriptors are often criticized for being not informative about what learners should have learnt in order to perform the tasks specified at a particular level. Can-do descriptors describe performances typical of a proficiency level, which are observable, measurable and describable, rather than underlying competences, which are not directly observable and therefore difficult to measure and describe. <ref type="bibr" target="#b43">Westhoff (2007)</ref> noted that "although the CEFR descriptors tell us a lot about what learners at a certain level can do, very little is stated about what they should know in order to carry out these language tasks" (p. 676). Therefore, in addition to teacher/rater perceptions of what second language learner proficiency entails, attention also needs to be paid to the theory of second-language acquisition when typical performances of a proficiency level are described <ref type="bibr" target="#b25">(Hulstijn 2007;</ref><ref type="bibr" target="#b43">Westhoff 2007)</ref>.</p><p>Difficulties of framework construction also lie in the selection of so-called typical tasks to be described in illustrative scales. On the one hand, given the large number and various backgrounds of learners in the country, it is difficult to reach consensuses on the typical communicative tasks of a particular proficiency level. "Casual/informal conversation", for example, might be a typical oral interactive task for learners in major cities where there are opportunities for them to communicate with foreigners in English. In less developed areas, learners can only practise English speaking with teachers or classmates through typical instructional activities like "role play". On the other hand, while illustrative scales are useful for describing proficiency levels, a framework can only include a limited number of typical communicative tasks. That is, it is not possible for the framework to be sufficiently comprehensive to cover all the tasks that are being used or hoped to be used in classroom teaching and assessment. As a result, the message conveyed by the framework might be misinterpreted by teachers and assessors, who are likely to pay particular attention to the tasks illustrated in the framework and ignore other less typical but nonetheless important ones.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The implementation of the framework</head><p>At the stage of implementation, the project is likely to meet considerable individual resistance. Practitioners of English language education in China may find it difficult to understand and apply the proficiency levels and illustrative descriptors in their routine practices. <ref type="bibr">Little (2007, p. 648)</ref> noted that "its (the CEFR's) impact on language testing far outweighs its impact on curriculum design and pedagogy" because "supporting foreign language proficiency development through the stages described in the CEFR requires a shift in pedagogic routines for those practitioners who are used to teaching in traditional ways" <ref type="bibr">(Westhoff 2007, p. 676)</ref>. Eleven years after its official publication, few empirical investigations have been conducted to look into the impact of the CEFR on teachers and learners. <ref type="bibr" target="#b17">Figueras (2012)</ref> questioned with some regret the usefulness of the CEFR for classroom teaching and learning: "despite the huge amount of work that has been put into changing language syllabi, changing methodologies, and changing assessment practice, and despite the discussions, debates, seminars, and congresses on the usefulness of the CEFR, it is still not possible to say that these language policies have been effectively transferred to classrooms or to teaching materials" (p. 478).</p><p>It is envisaged that there is a long way to go before the CSE could have a significant impact on English teaching and learning in China. Existing large-scale assessments will be aligned to the framework and the NEEA has planned to develop a new assessment system of English proficiency based on the new framework. Benchmark samples at each of the levels on the proficiency scale will be selected through standard-setting from performances on assessments aligned to the new framework. These samples will be used for training teachers to evaluate their students. Even so, it is anticipated that teachers may be reluctant to explore new pedagogic approaches and take on a new set of requirements; publishers might be keen to apply the CSE, but they might do it inadequately and not sufficiently empirically; local or school-based assessment developers may feel obliged to align their assessments to the CSE levels, but the alignment is a highly professional job with many caveats (see <ref type="bibr" target="#b18">Fulcher 2004</ref><ref type="bibr" target="#b20">Fulcher , 2010b</ref><ref type="bibr" target="#b39">Weir 2005)</ref>. A mechanism for quality assurance must be in place to monitor the application of the CSE at the implementation stage of the project. It is also worth noting that, in the revision or re-designing process of curricula and assessments, voices of learners and their parents, both important stakeholders of the CSE, should be heard in such matters as the clarity of descriptions of learning objectives, the feasibility of achieving the objectives, and resources available to help learners achieve the objectives.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>The chief purpose of the CSE, similar to the CEFR, is to increase communication about aims and outcomes of English language education through the use of a common terminology and interpretation of its meaning so as to facilitate the implementation of language education policy in China. Scaled curricula and assessments will improve the coherence of curriculum and assessment requirements, as well as the coherence of curriculum and assessment content specifications, leading to better efficiency of teaching and learning. A sensible way forward for English language education in China therefore is to use the framework as a guide to "bring curricula, pedagogy, and assessment into fruitful interaction with one another" <ref type="bibr">(Little 2007, p. 652)</ref>.</p><p>The construction and implementation of such a national framework will necessitate substantial research and strategic planning to form a coherent theory and systematic practice of English language education specific to the Chinese context. English teaching, learning and assessment in China will hopefully benefit from the process of developing such a framework of reference. The project is also hoped to promote cooperation among educational institutions and facilitate communication between educational institutions and government organizations. In addition, the project is intended to contribute to the debate on whether a common European framework (i.e., the CEFR) would suffice for language education worldwide, whether local versions of the CEFR (e.g., the CEFR-J) should be developed, or whether new frameworks (e.g., the CSE) should be developed and implemented in a country where English is taught, learnt and used as a foreign language.</p><p>The aim of the CSE project is not simply to search for or borrow a yardstick against which learners' proficiency can be measured, but to develop, validate and continuously improve the yardstick. This ongoing process intends to improve the coherence and transparency of English language education at different levels and contexts within and across China. More importantly, the process could improve the understanding and increase the acceptability of the CSE because stakeholders, including policymakers, will be involved in or informed of the development of the framework. Posteriori studies of the impact of the CSE on English language education in China are essential to empirically validate and improve the newly developed language framework. A number of alignment projects have been planned to link English language assessments, domestically produced or internationally recognized, to the CSE. The alignment studies will feed back into and further improve the CSE.</p><p>A language framework could have a pervasive effect on society, institutions as well as individuals. The power of the framework however could be both a blessing and a curse. While the CSE has the potential to improve the coherence and transparency of English language education system in China, the dominance of one framework could mean less diversity and less choice when the framework is used for setting educational standards. Fulcher (2010b) cautioned against "the indiscriminate exportation of the CEFR for use in standards-based education and assessment in non-European contexts, such as Hong <ref type="bibr">Kong and Taiwan" (p. 16)</ref>. In a country as vast as China, where there are 56 ethnic groups, a large number of dialects, and 34 provinces and municipalities, we should be fully aware of the possible dangers of implementing one national language framework for standards-setting. Therefore, in our view, the development and the implementation of a language framework is not simply a professional endeavor but a complex political initiative, at both macro and micro levels.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endnotes</head><p>1 To avoid possible confusion, we decided to use CSE, instead of CCFR-E, to refer to the national framework of reference for English to be developed by the NEEA.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>The nature of language proficiency measures Measures of language proficiency are meant to be a meta language shared by language teachers, learners and assessors. For various political, social, cultural and economic reasons, however, different measures of language proficiency have been developed in different parts of the world. Apart from the CEFR, important language frameworks (or scales, guidelines, ratings) include the Interagency Language Roundtable (ILR) scale, American Council on the Teaching of Foreign Languages (ACTFL) Guidelines, Association of Language Testers in Europe (ALTE) Can-Do Statements, Canadian Language Benchmarks (CLB), the British National Language Standards, the Eurocentres Scale of Language Proficiency, Australian/International Second Language Proficiency Ratings, and so on (see Fan and Jin 2010 for a review).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2</head><label>2</label><figDesc>The procedure of developing the CSE (adapted from National Education ExaminationsAuthority,  2014, p. 114)   </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 2</head><label>2</label><figDesc>Requirements of English vocabulary sizes at different educational stages</figDesc><table><row><cell>Educational stage</cell><cell cols="2">Requirement of vocabulary size a No. of word families new</cell></row><row><cell></cell><cell></cell><cell>to each list b</cell></row><row><cell>Elementary (year 1-6)</cell><cell>700</cell><cell>404</cell></row><row><cell>Junior secondary (year 7-9)</cell><cell>1500</cell><cell>941</cell></row><row><cell>Senior secondary (year 10-12)</cell><cell>3500</cell><cell>1682</cell></row><row><cell>Non-English major undergraduate (basic)</cell><cell>4795</cell><cell>1204</cell></row><row><cell cols="2">Non-English major undergraduate (intermediate) 6395</cell><cell>1073</cell></row><row><cell>Non-English major undergraduate (advanced)</cell><cell>7675</cell><cell>1059</cell></row><row><cell cols="3">Notes. a The information was obtained from the national curricula; b The information was provided by Dr. Tan Jin and</cell></row><row><cell cols="3">Dr. Baichuan Li (Language Data 2016, retrieved on February 12, 2016 at http://languagedata.net/lpa/); A word family</cell></row><row><cell cols="3">is the base form of a word plus its inflected forms and derived forms made from affixes (https://en.wikipedia.org)</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3</head><label>3</label><figDesc>National assessments for English language education in China</figDesc><table><row><cell>Educational stage</cell><cell>Assessment</cell></row><row><cell>Elementary</cell><cell>No national assessments for elementary education</cell></row><row><cell>Junior secondary</cell><cell>Provincial or municipal assessments for senior secondary admission</cell></row><row><cell>Senior secondary</cell><cell>National Matriculation English Test (NMET) for college admission</cell></row><row><cell>Secondary vocational &amp; vocational</cell><cell>Practical English Test for Colleges (PRETCO) for vocational English</cell></row><row><cell></cell><cell>program exit</cell></row><row><cell>Undergraduate (non-English major)</cell><cell>College English Test (CET) Band 4 &amp; Band 6 for College English</cell></row><row><cell></cell><cell>program exit</cell></row><row><cell>Undergraduate (English major)</cell><cell>Test for English Majors (TEM) Band 4 &amp; Band 8 for English major</cell></row><row><cell></cell><cell>program exit</cell></row><row><cell>Graduate (non-English major)</cell><cell>Graduate School Entrance English Examination (GSEEE) for graduate</cell></row><row><cell></cell><cell>school admission</cell></row><row><cell>All stages</cell><cell>Public English Test System (PETS) Band 1~5 for admission,</cell></row><row><cell></cell><cell>promotion, overseas study, etc.</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4</head><label>4</label><figDesc>A hypothetical proficiency scale of the CSE (adapted from National Education ExaminationsAuthority, 2014, p. 43)    </figDesc><table><row><cell>CSE</cell><cell>Targeted Chinese learners of English</cell><cell>Major proficiency</cell></row><row><cell>level</cell><cell></cell><cell>levels</cell></row><row><cell>CSE1</cell><cell>Elementary year 1-3</cell><cell>Basic level: A1</cell></row><row><cell>CSE2</cell><cell>Elementary year 4-6</cell><cell>Basic level: A2</cell></row><row><cell>CSE3</cell><cell>Junior secondary year 7-9</cell><cell>Basic level: A3</cell></row><row><cell>CSE4</cell><cell>Senior secondary year 10-12, secondary vocational</cell><cell>Intermediate level: B1</cell></row><row><cell>CSE5</cell><cell>Vocational, undergraduate year 1-2 (non major), undergraduate year 1</cell><cell>Intermeidate level: B2</cell></row><row><cell></cell><cell>(major)</cell><cell></cell></row><row><cell>CSE6</cell><cell>Undergraduate year 3-4 (non major), undergraduate year 2 (major)</cell><cell>Intermediate level: B3</cell></row><row><cell>CSE7</cell><cell>Undergraduate year 3-4 (major)</cell><cell>Advanced level: C1</cell></row><row><cell>CSE8</cell><cell>Postgraduate (major)</cell><cell>Advanced level: C2</cell></row><row><cell>CSE9</cell><cell>Advanced learners of interpretation and translation</cell><cell>Advanced level: C3</cell></row></table><note></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>This article was based on the project "The Applicability of the CEFR for English Language Education in China" (GZ20140100) funded by Foreign Language Teaching and Research Press and the Key Project of Philosophy and Social Sciences "The Development of China Standards of English" (15JZD049) funded by the Ministry of Education, P. R. China.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Authors' contributions YJ and ZW participated in the China Standards of English (CSE) project as group leaders. CA was invited by the Foreign Language Teaching and Research Press (FLTRP) to be the senior consultant to the Common Chinese Framework of Reference for English (CCFR-E) project. WS was in charge of the CCFR-E project on behalf of the FLTRP. YJ drafted the manuscript; the other authors, in particular CA, provided insightful comments on the draft. All authors read and approved the final manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare that they have no competing interests. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">English Major Curriculum Requirements</title>
+	</analytic>
+	<monogr>
+		<title level="m">Ministry of Education</title>
+		<meeting><address><addrLine>Shanghai</addrLine></address></meeting>
+		<imprint>
+			<publisher>Shanghai Foreign Language Education Press</publisher>
+			<date type="published" when="2000" />
+		</imprint>
+		<respStmt>
+			<orgName>Advisory Committee of College Foreign Language Education (English Group</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Diagnosing Foreign Language Proficiency: the interface between learning and assessment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>London: Continuum</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The CEFR and the need for more research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="659" to="663" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">The politics of language education: individuals and institutions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>Multilingual Matters</publisher>
+			<pubPlace>Bristol</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Analysing tests of reading and listening in relation to the Common European Framework of Reference: the experience of the Dutch CEFR Construct Project</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Alderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Figueras</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Kuijper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Nold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Takala</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Tardieu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Assessment Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="30" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The CEFR and education policies in Europe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Bonnet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="669" to="672" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Is there a core general vocabulary? Introducing the new general service list</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Brezina</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Gablasova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Byrnes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Perspectives. The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="641" to="645" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Interpretation of the core rationale of English Curriculum of Basic Education. Curriculum, Teaching Material and Method</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Dan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="57" to="63" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Common European framework of reference for language learning and teaching: Language learning for European citizenship</title>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>Author</publisher>
+			<pubPlace>Stragbourg, France</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The Common European Framework of Reference for Languages: Learning, Teaching, Assessment</title>
+		<imprint>
+			<date type="published" when="2001" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Council of Europe</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Book series on China&apos; s Foreign Language Education Development over 30 years of reform and openingup</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Dai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>Shanghai Foreign Language Education Press</publisher>
+			<pubPlace>Shanghai</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Relating tests to the Common European Framework. Language Testing Update</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">De</forename><surname>Jong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">P. R. China</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="80" to="83" />
+			<date type="published" when="2000" />
+			<publisher>Higher Education Press</publisher>
+		</imprint>
+	</monogr>
+	<note>Vocational English Curriculum Requirements</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">College English Curriculum Requirements</title>
+	</analytic>
+	<monogr>
+		<title level="j">P. R. China</title>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Shanghai Foreign Language Education Press</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Higher Education, Ministry of Education</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Graduate School English Teaching Syllabus for Non-English Majors</title>
+		<imprint>
+			<date type="published" when="1993" />
+			<publisher>Chongqing University Press</publisher>
+			<pubPlace>Chongqing</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Editing Group of Graduate School English Teaching Syllabus for Non-English Majors.</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A study of language testing standards: review, reflection and inspiration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Jin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foreign Language World</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="82" to="91" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The CEFR, a lever for the improvement of language professionals in Europe</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Figueras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="673" to="675" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The impact of the CEFR</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Figueras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ELT Journal (Special issue)</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="477" to="485" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Deluded by artifices? The Common European Framework and harmonization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Fulcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Assessment Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="253" to="266" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Practical language testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Fulcher</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Hodder Education</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The reification of the Common European Framework of Reference (CEFR) and effect-driven testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Fulcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Research on Language Acquisition and Teaching</title>
+		<editor>A. Psyaltou-Joycey &amp; M. Matthaioudakis</editor>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="15" to="26" />
+		</imprint>
+	</monogr>
+	<note type="report_type">GALA: Thessaloniki</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">On the principles and problems in the selection of lexical items for College English Teaching Syllabus</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Feng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Shanghai University (Social Science)</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="96" to="101" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Criterial features in L2 English: specifying the reference levels of the Common European Framework</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Filipović</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">On the wordlist of College English Teaching Syllabus (revised version)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foreign Language World</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="26" to="30" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">On the revision of the wordlist of College English Curriculum Requirements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Fu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foreign Language World</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="2" to="9" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The shaky ground beneath the CEFR: quantitative and qualitative dimensions of language proficiency</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hulstijn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="663" to="667" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">What Does it Mean to be a Global Citizen?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Israel</surname></persName>
+		</author>
+		<ptr target="http://www.kosmosjournal.org/article/what-does-it-mean-to-be-a-global-citizen/" />
+	</analytic>
+	<monogr>
+		<title level="j">Kosmos. Spring.Summer. Retrieved on December</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">The development and use of English Vocabulary Profile: A manual</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Language</forename><surname>Data</surname></persName>
+		</author>
+		<ptr target="http://languagedata.net/lpa/" />
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">12</biblScope>
+		</imprint>
+	</monogr>
+	<note>Retrieved on February</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Common European Framework of Reference for Languages: perspectives on the making of supranational language education policy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Little</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="645" to="655" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">On the development of China Standards of English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China Examinations</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="11" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Beijing: People&apos;s Education Press. Ministry of Education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>China</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Secondary Vocational English Curriculum Requirements</title>
+		<meeting><address><addrLine>Beijing</addrLine></address></meeting>
+		<imprint>
+			<publisher>Higher Education Press</publisher>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+	<note>English Curriculum of Senior Secondary Education</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Beijing: Beijing Normal University Press. National Education Examinations Authority</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>China</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Implementation Plan of the National Scale Project. Document issued by the NEEA on October</title>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">12</biblScope>
+		</imprint>
+	</monogr>
+	<note>English Curriculum of Basic Education</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">New perspectives for foreign language teaching in higher education: Exploring the possibilities of application of CEFR</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Negishi</surname></persName>
+		</author>
+		<ptr target="http://www.tufs.ac.jp/common/fs/ilr/EU_kaken/_userdata/negishi2.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Tokyo: WOLSEC, Tokyo University of Foreign Studies. Retrieved on</title>
+		<editor>N. Tomimori, M. Furihata, K. Haida, N. Kurosawa, &amp; M. Negishi</editor>
+		<imprint>
+			<date type="published" when="2012-08-18" />
+			<biblScope unit="page" from="105" to="116" />
+		</imprint>
+	</monogr>
+	<note>The development of the CEFR-J: where we are, where we are going</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">An update on the CEFR-J project and its impact on English language education in Japan</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Negishi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Tono</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>ALTE</publisher>
+			<pubPlace>Paris</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Europe&apos;s framework promotes language discussion, not directives. Retrieved</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>North</surname></persName>
+		</author>
+		<ptr target="http://education.guardian.co.uk/tefl/story/0,1191130,00.html" />
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>Peter Lang. North, B</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>The development of a common framework scale of language proficiency</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Investigating the decision-making process of standard setting participants</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Papageorgiou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="261" to="282" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Japanese English learners&apos; self-assessments on the CEFR-J&apos;s A-level can-do statements using four and five-point response scales</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Runnels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Asian Journal of Applied Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="167" to="177" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">On the revision of College English Curriculum requirements. Foreign Language in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="4" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Annual Report of Foreign Language Education in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Foreign Language Teaching and Research Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Limitations of the Common European Framework for developing comparable examinations and tests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Weir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Annual report of foreign language education in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Foreign Language Teaching and Research Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Annual report of foreign language education in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Foreign Language Teaching and Research Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Annual report of foreign language education in China</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Foreign Language Teaching and Research Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Challenges and opportunities of the CEFR for reimagining foreign language pedagogy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Westhoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="676" to="679" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Paper presented at the Fourth European Association for Language Testing and Assessment (EALTA) Conference</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Spain: Sitges. Using the CEFR in Taiwan: the perspective of a local examination board</title>
+		<imprint>
+			<date type="published" when="2007-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Validating Second Language Reading Examinations: Establishing the validity of the GEPT through alignment with the Common European Framework of Reference (Studies in Language Testing 41)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Wu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">On the wordlist of teaching syllabus for College English majors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Xi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Shaanxi Normal University (Social Science)</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="113" to="116" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Research of the common framework of english for China: theory, methodology and empirical studies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Fang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Shanghai Foreign Language Education Press</publisher>
+			<pubPlace>Shanghai</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Issues in the development of a descriptor bank for China Standards of English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China Examinations</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="11" to="17" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

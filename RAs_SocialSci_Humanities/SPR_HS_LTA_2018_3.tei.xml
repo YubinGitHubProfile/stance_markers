@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Developing a test of L2 Chinese pragmatic comprehension ability</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Shuai</forename><surname>Li</surname></persName>
+							<email>sli12@gsu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of World Languages and Cultures</orgName>
+								<orgName type="institution">Georgia State University</orgName>
+								<address>
+									<addrLine>25 Park Place, Suite 1933</addrLine>
+									<postCode>30303</postCode>
+									<settlement>Atlanta</settlement>
+									<region>GA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Developing a test of L2 Chinese pragmatic comprehension ability</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s40468-018-0054-7</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>L2 Chinese</term>
+					<term>Pragmatic comprehension</term>
+					<term>Implicature</term>
+					<term>Implied meaning</term>
+					<term>Argument-based approach to validation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>Background: This study aims to develop a test for assessing pragmatic comprehension ability in Chinese as a second language (L2). Following the framework of an argument-based approach to test validation, this study attempts to obtain backing for the Evaluation and Explanation inferences. Methods: Test items were developed based on two sources of authentic language use (i.e., field notes and a corpus of natural language use). Following a series of piloting, 107 examinees of L2 Chinese completed the test (k = 39) in the main study. Among them, nine examinees had retrospective interviews that probed the knowledge, strategies and processes involved in completing the test. Results: The assumption underlying the Evaluation inference was supported by satisfactory statistical characteristics of the test (e.g., item/test difficulty, item discrimination, distractor functioning, and item/person fit); moreover, the two assumptions associated with the Explanation inference were backed by quantitative and qualitative evidence demonstrating that variations in test performance were attributable to the targeted construct of pragmatic comprehension ability. Conclusion: The test appears to be a reliable instrument for assessing pragmatic comprehension ability in L2 Chinese. The test results can be used to inform decisionmaking on curriculum development for interested Chinese programs.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>researchers in L2 pragmatics assessment face, along with issues regarding test practicality, coping with examinees with a wide range of proficiency, and linking test scores to real-world implications <ref type="bibr" target="#b22">(Taguchi and Roever 2017)</ref>. Moreover, with very few exceptions (e.g., Yamashita 1996), the bulk of published studies in the field have focused on English. There is thus a need to expand the target language repertoire so as to examine the generalizability of existing findings and to serve a wider examinee population.</p><p>In response to the calls for research on assessing under-represented pragmatic constructs and for targeting languages other than English, this study aimed at developing a test of L2 Chinese pragmatic comprehension ability (i.e., the ability to understand non-literal, implied meaning). Only a few studies have focused on assessing pragmatic comprehension ability <ref type="bibr" target="#b10">(Roever 2005</ref><ref type="bibr" target="#b11">(Roever , 2006</ref><ref type="bibr" target="#b19">Taguchi 2009;</ref><ref type="bibr" target="#b25">Walters 2009)</ref>. These studies have shown a lack of consensus on how pragmatic comprehension ability is defined, operationalized, and empirically linked to test performance. Moreover, existing studies have all employed multiple-choice questions as the format of assessment, but there is a need to further investigate this assessment format by exploring optimal ways of delivering prompts and alternative strategies for developing distractors. Finally, previous research exclusively focused on L2 English. Aside from <ref type="bibr" target="#b21">Taguchi et al.'s (2013)</ref> study, which focused on acquisition rather than assessment, little is known about what can be done to assess L2 Chinese pragmatic comprehension ability. To fill these gaps in the literature, this study followed an argument-based approach to test validation <ref type="bibr" target="#b6">(Kane 2013)</ref> and examined the soundness of the evaluation and explanation inferences in a validity argument associated with developing a L2 Chinese pragmatic comprehension test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pragmatic comprehension ability: definition and operationalization</head><p>Pragmatic comprehension ability refers to the ability to understand non-literal, implied meaning during verbal communication. Such implied meaning is called conversational implicature <ref type="bibr" target="#b4">(Grice 1975)</ref>, as shown in the following example:</p><p>Man: Has Jim come back from school? Woman: It is not 3:00 pm yet. In this example, for the man to correctly interpret the woman's implied meaning (i.e., whether Jim has come home or not), he must assume that the woman's utterance is relevant to their communication; he also needs to process certain contextual information (e.g., Jim's daily routine, the current time of the day, etc.).</p><p>As the relevance theory <ref type="bibr" target="#b15">(Sperber and Wilson 1995)</ref> posits, implicature comprehension is heavily influenced by implicature strength, which is related to the amount of contextual cues that one must process for meaning interpretation. Comprehension of a weakly conveyed implicature entails processing a larger amount of contextual information before one can reach an interpretation, and this leads to greater processing effort; in contrast, understanding a strongly conveyed implicature requires processing a smaller amount of contextual information, therefore reducing the processing effort necessary for meaning interpretation.</p><p>Pragmatics research has shown that conventionality can enhance implicature strength <ref type="bibr" target="#b18">(Taguchi 2008</ref><ref type="bibr" target="#b19">(Taguchi , 2009</ref>. Conventionality refers to "common knowledge of the way things are done" and comprises of conventions of language and conventions of usage <ref type="bibr">(Morgan 1978, p. 279)</ref>. Concerning conventions of language, certain linguistic forms are conventionalized to convey pragmatic functions (hereafter Lin). For example, people say there you go to express agreement. For conventions of usage, certain discourse patterns can reliably convey communicative functions (hereafter Dis). For example, people often provide a reason (e.g., I have already had another plan.) without explicitly saying no to reject an invitation (e.g., Would you like to join us for dinner?). When implicatures are conveyed through conventionalized linguistic forms (Lin) or predicable discourse patterns (Dis), listeners do not have to extensively process contextual cues for meaning interpretation, because meaning can be derived directly from those conventionalized features. Consequently, the processing effort involved in implicature comprehension is reduced.</p><p>On the other hand, implicatures can be expressed without conventionalized features (hereafter Non), such as in the example shown at the beginning of this section. Different from implicatures encoded through conventionalized means (i.e., Lin and Dis), the linguistic forms and discourse patterns people use to convey a non-conventionalized implicature are numerous and unpredictable <ref type="bibr" target="#b18">(Taguchi 2008)</ref>. Moreover, due to lack of conventionality, comprehension of non-conventionalized implicatures is typically effortful because listeners must draw on various sources of contextual information.</p><p>In summary, drawing on the insights from the relevance theory, this study understands pragmatic comprehension ability from the perspective of implicature strength and the associated processing load. Due to the critical role of conventionality in influencing implicature strength and because of the two types of theorized conventionality (i.e., conventions of language and conventions of usage), pragmatic comprehension ability is operationalized as the ability to correctly interpret the meaning of three types of implicatures, i.e., implicatures conveyed through conventionalized linguistic forms (Lin), fixed discourse patterns (Dis), and non-conventionalized utterances (Non).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research on assessing L2 pragmatic comprehension</head><p>In L2 pragmatics assessment, only a few studies <ref type="bibr" target="#b10">(Roever 2005</ref><ref type="bibr" target="#b11">(Roever , 2006</ref><ref type="bibr" target="#b19">Taguchi 2009;</ref><ref type="bibr" target="#b25">Walters 2009</ref>) pioneered to develop instruments for testing pragmatic comprehension ability. These studies operationalized pragmatic comprehension ability in different ways; moreover, they reported mixed findings regarding the success of their instruments. These observations entail further empirical research in this area.</p><p>Informed by conversation analysis (CA), <ref type="bibr" target="#b25">Walters (2009)</ref> operationalized pragmatic comprehension as the ability to understand three types of communicative actions: assessment responses, compliment responses, and pre-sequence responses. He developed a 10-item test in L2 English. Each item included an aural prompt (i.e., a dialog) and four written multiple-choice options. While Walter's study did not adopt an argument-based approach to validation, the results raised issues relevant to the evaluation and explanation inferences of a validity argument for assessing pragmatic comprehension. To illustrate, Walter's test items exhibited various degrees of sequential indeterminacy, i.e., the response turn in a conversation can be highly variable among individuals. Therefore, even the native speakers of his study often failed to choose the correct answers, leading to a wide range of item means (from 37 to 93%). The noticeable sequential indeterminacy, in addition to the low reliability of the test (Spearman-Brown split-half coefficient r = −.137), indicates a need to investigate the appropriateness of the prompts (i.e., a dialog), the functioning of multiple-choice options, and the scoring criteria. Walter's study would thus benefit from examining the types of empirical evidence in support of a (hypothetical) evaluation inference. Moreover, Walters did not provide theoretical and empirical evidence to demonstrate the link between expected test performance and the focal construct measured by his test. Hence, it was not clear to what extent test performance reflected pragmatic comprehension ability as operationalized in his study. In other words, the backing for a (hypothetical) explanation inference was missing.</p><p>In another study, <ref type="bibr" target="#b10">Roever (2005</ref><ref type="bibr" target="#b11">Roever ( , 2006</ref> developed a test battery for assessing pragmatic knowledge involved in speech act production, routine judgment, and implicature comprehension. Again, the target language was English. Pragmatic comprehension ability, as assessed by the implicature section of the test battery, was operationalized as the ability to understand idiosyncratic implicatures (equivalent to the Non type as discussed above) and formulaic implicatures (incorporating the Dis and Lin types). The implicature section contained 12 multiple-choice items. Each item included a brief scenario description, a short written dialog, and four options. Among the four options, the correct one was derived from native English speakers' interpretation of the targeted implicature, whereas the three distractors were developed based on non-native speakers' misconceptions. The mean scores of the 12 items ranged from 31.44 to 78.95% with an average of 60.41% (Cronbach's α = .80). Test scores increased with proficiency level (operationalized as class levels) but were not affected by L2 exposure (i.e., comparing exposure and non-exposure learner scores). Formulaic implicatures were found to be more difficult than idiosyncratic implicatures.</p><p>Roever's instrument can be further improved when viewed from the perspective of an argument-based approach to validation. In terms of the evaluation inference, the written mode of prompt delivery does not resemble how people typically produce and comprehend conversational implicatures. Presenting prompts aurally can better simulate the way implicatures are conveyed in real life. In addition, because only four of Roever's 12 items targeted implicatures conveyed through fixed discourse patterns (Dis) or conventionalized linguistic forms (Lin), more items are needed to represent these two implicature types. Moreover, additional item analyses (e.g., item discrimination, distractor analysis, and examination of fit) other than item means and test reliability would be necessary to better evaluate item/test functioning. Viewed against the explanation inference, additional evidence is desirable to better evaluate the link between pragmatic comprehension ability and test performance. For example, Roever conceptualized the focal construct of his instrument as comprising of two different types of implicatures. To support this theorized structure of pragmatic comprehension ability, he reported a significant difference in test scores based on the two implicature types. Additional backing, such as differences in the knowledge, strategies, and processes involved in comprehending different types of implicatures <ref type="bibr" target="#b18">(Taguchi 2008)</ref>; a strong correlation between the implicature types; and appropriate Rasch-calibrated item fit statistics, would be needed to further support the argument for the explanation inference (construct validity) involved in his test.</p><p>The literature review suggests a need for researching what constitutes appropriate backing to support the evaluation and explanation inferences in a validity argument associated with developing instruments for assessing L2 pragmatic comprehension ability. To this end, scholars can be informed by related interlanguage pragmatics research, notably Taguchi's studies on L2 English <ref type="bibr">(2005,</ref><ref type="bibr">2009)</ref>, L2 Japanese (2008), and L2 Chinese <ref type="bibr" target="#b21">(Taguchi et al. 2013</ref>). Of particular relevance is <ref type="bibr" target="#b21">Taguchi et al.'s (2013)</ref> study, which is the only one addressing pragmatic comprehension in L2 Chinese. The researchers developed a computerized instrument for assessing the comprehension of implicatures encoded through indirect refusals, conventionalized linguistic forms, and non-conventionalized utterances. Each item included an aurally delivered dialog followed by four written multiple-choice options. Taguchi et al. reported, among other things, a positive proficiency effect on comprehension accuracy, an effect of implicature type on comprehension accuracy (e.g., implicatures encoded through indirect refusals were the easiest to comprehend compared with implicatures conveyed through conventionalized linguistic forms and non-conventionalized utterances). These findings constitute a good reference for evaluating the soundness of the assumptions underlying the explanation inference for future research. However, Taguchi et al. did not report reliability coefficients for their instrument, nor did they provide individual item statistics (e.g., difficulty, discrimination, and fit statistics) and results of the distractor analysis. Therefore, it was not possible to examine their instrument against the assumptions of the evaluation inference. Finally, because the multiple-choice options of Taguchi et al.'s instrument were written in English, the instrument has a restricted application to only those who know English. A test that can be administered to learners with various L1 backgrounds would be desirable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>This study: rationale and purpose</head><p>The literature review reveals several issues surrounding research on developing instruments for assessing L2 pragmatic comprehension ability: different construct definition and operationalization with insufficient evidence to support the theorized structure of the targeted construct, non-optimal item delivery format, mixed findings of test reliability, and insufficient analyses for evaluating item/test functioning (e.g., distractor analysis). From the perspective of an argument-based approach to test validation <ref type="bibr" target="#b6">(Kane 2013)</ref>, those issues appear to be related to the evaluation and explanation inferences. For example, appropriate item delivery format and distractor analyses are within the scope of the evaluation inference, which concerns the conditions that allow test performance to be appropriately evaluated to reflect the targeted construct (i.e., pragmatic comprehension ability). On the other hand, operationalization of the construct of pragmatic comprehension ability, and collecting sufficient evidence to establish the link between test performance and the targeted construct being assessed, falls under the explanation inference.</p><p>This study thus focused on obtaining backing in support of the evaluation and explanation inferences in a validity argument associated with developing a L2 Chinese pragmatic comprehension test. <ref type="table" target="#tab_0">Table 1</ref> outlines the inferences, warrants, assumptions, and backing of this study. The evaluation inference in this study is based on the assumption that test performance is appropriately evaluated to reflect examinees' pragmatic comprehension ability (Assumption 1). To this end, an investigation into the various statistical characteristics of the test (e.g., item difficulty, item discrimination, item/person fit, item/person separation, and distractor functioning) can help evaluate the soundness of this assumption.</p><p>The explanation inference in this study rests upon two assumptions showing that test performance is attributable to pragmatic comprehension ability. First, the assumption that test performance varies according to known factors affecting pragmatic comprehension (Assumption 2) can be supported by demonstrating the well-documented effects of proficiency on pragmatic comprehension (e.g., <ref type="bibr" target="#b10">Roever 2005</ref><ref type="bibr" target="#b11">Roever , 2006</ref><ref type="bibr" target="#b18">Taguchi 2008</ref><ref type="bibr" target="#b19">Taguchi , 2009</ref><ref type="bibr" target="#b21">Taguchi et al. 2013)</ref>. Second, the assumption that the internal structure of the test corresponds to a theoretical view of the construct of pragmatic comprehension ability (Assumption 3) can be backed by three lines of evidence based on theoretical predictions and existing empirical findings: (a) because the three types of implicature are conceptualized to represent different facets of a shared construct, one can expect strong relationships in test performance between them; (b) according to the pragmatics theories reviewed earlier, the varying degrees of conventionality (e.g., with or without conventionalized features) and the different kinds of conventionality (i.e., conventions of language and conventions of use) require different levels of processing effort, leading to variations in test performance; and (c) comprehension of the three types of implicature likely draws on different knowledge, processes, and strategies because of the differences in conventionality (e.g., <ref type="bibr" target="#b18">Taguchi 2008)</ref>. This study was guided by three research questions (RQs):</p><p>RQ1: To what extent are the statistical characteristics of the test appropriate for assessing pragmatic comprehension ability among learners with a relatively wide proficiency range? <ref type="table" target="#tab_0">(Assumption 1)</ref> RQ2: To what extent does test performance vary according to proficiency of L2 Chinese? <ref type="table" target="#tab_1">(Assumption 2)</ref> RQ3: To what extent does the internal structure of the test correspond to a theoretical view of pragmatic comprehension ability? (Assumption 3) </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Item development and piloting</head><p>Test items were developed based on a corpus of natural spoken Chinese and field notes taken in China. The corpus, Chinese Annotated Dialogue and Conversation Corpus 1 , was the only available natural Chinese speech corpus found for the purpose of this study. The corpus consists of 12 extended free-topic conversations (approximately 16.2 h in total) between native Chinese speakers (e.g., classmates, colleagues) recorded in daily settings (e.g., dorms, offices). The researcher read through the transcripts and identified 29 utterances expressing implied meaning. The other resource was the researcher's field notes taken in China in 2013 for this project. The field notes contained utterances encoding Chinese indirect communication that the researcher observed in daily settings (e.g., university campus, restaurants, offices, and home) between friends, relatives, colleagues, and strangers. The researcher read through the field notes and identified 19 utterances expressing implied meaning. For example, one field note entry documented the use of 再说吧 (literal meaning: "Say it again"; implied meaning: "Let's discuss it later") to turn down an invitation between two friends, and this utterance was later included in the instrument. Based on the identified utterances, 48 dialogs (i.e., test prompts) were developed with the last turn of each dialog encoding implicature. To ensure examinees' familiarity with the topics and scenarios presented in the test prompts, the researcher analyzed the elementary-level textbooks used by the targeted examinees and identified two generic categories of daily interaction scenarios: campus life and personal life. The former category contains topics such as discussing classes, talking about textbooks/books/assignments, making appointments, scheduling activities/events, and borrowing/lending stuff, and the latter category includes topics such as talking about traveling experiences; shopping; discussing food, movies, and scenic spots; making personal plans; and discussing personal items. These scenarios and topics were represented in the 48 dialogs. In this way, the target language domain was operationalized as daily interactions represented in the textbooks used by the targeted examinee population.</p><p>The researcher then developed a meta-pragmatic judgment questionnaire including the 48 dialogs, with the last turn of each dialog underlined. Fifteen native Chinese speakers completed the questionnaire for which they (a) wrote out their interpretations of the underlined turn (which contained a targeted implicature) and (b) rated the degree of real-life authenticity for each dialog on a 5-point scale (i.e., 1 point being least plausible in real life and 5 points being truly authentic). Subsequent interviews were held with each native speaker to collect alternative interpretations and comments on the authenticity of the dialogs. Seven dialogs showed varied interpretations, and another two were found with low authenticity scores (i.e., with a mean below 3.5 out of 5). These nine dialogs were removed and 39 dialogs remained.</p><p>Four multiple-choice options were created for each dialog: one correct answer, one incorrect answer containing words/phrases from the last turn of the dialog (type A), one incorrect answer based on the meaning of the entire dialog (type B), and one incorrect answer with the opposite interpretation (type C). The three distractor types represented common error types reported in previous research (e.g., <ref type="bibr" target="#b18">Taguchi 2008</ref><ref type="bibr" target="#b19">Taguchi , 2009</ref><ref type="bibr" target="#b21">Taguchi et al. 2013</ref>).</p><p>According to <ref type="bibr" target="#b18">Taguchi (2008)</ref>, type A distractor is based on the recency effect <ref type="bibr" target="#b2">(Deese and Kaufman, 1957)</ref>, that is, listeners tend to best recall the last words/phrases that they hear. Type B distractor is based on the keyword processing strategy reported in research on L2 listening comprehension <ref type="bibr" target="#b14">(Ross 1997)</ref>, that is, listeners tend to rely on initial keywordreferent association for comprehension. Finally, type C distractor is based on the finding that, when listeners are not able to correctly derive the implied meaning, they sometimes reach a completely opposite interpretation.</p><p>In order to minimize the confounding influence of examinees' varied grammatical/ lexical knowledge on pragmatic comprehension, all prompts and multiple-choice options were written with the 600 words and 16 categories of grammatical structures outlined in the level-3 syllabus of the new HSK test <ref type="bibr" target="#b5">(Hanban 2010)</ref>.</p><p>Two domain experts reviewed the 39 items. The experts were both native Chinese speakers with Ph.D. degrees in applied linguistics. They both have published on L2 Chinese pragmatics and have been involved in L2 Chinese education for more than 10 years. For each test item, the experts (a) decided whether the item assessed pragmatic comprehension ability and if yes, whether the intended option was the only correct answer; (b) reviewed whether the multiple-choice options conformed to the development guidelines described above; and (c) categorized the items into one of the three implicature types (i.e., Lin, Dis, and Non). The researcher reviewed the experts' written responses, conducted follow-up interviews for clarification, and revised the items accordingly. As a result, there were 13 Lin, 13 Dis, and 13 Non items. Two native Chinese speakers (one male, one female) with experience of teaching college Chinese language courses read the 39 dialogs with a speed adjusted to those who have learnt three semesters of college Chinese. <ref type="table" target="#tab_1">Table 2</ref> lists the technical features of the test. The Appendix lists three sample items.</p><p>The 39 items were computerized with the software LiveCode (http://livecode.com). The order of the items and the multiple-choice options were randomized, and a common random order was used across examinees. For each item, examinees first listened to a dialog. Immediately afterwards, four multiple-choice options appeared on the computer screen. Examinees pressed 1, 2, 3, or 4 on the keyboard to indicate their choices. The computer program then automatically started the next item till the end of the test.</p><p>The 39 items were first piloted with 30 native Chinese speakers. The p values (proportion-correct) ranged from 93.33 to 100.00% across the items, with a mean of 99.11%. The eight items that did not reach 100% accuracy rate were reviewed and revised. The researcher then recruited eight examinees of L2 Chinese with various L1 backgrounds and proficiency levels to complete the revised version of the test. They reported no unknown words/grammatical structures, nor did they have a problem with the testing procedures. Examinees from first and second year classes found the speed of speech appropriate, while those from 3rd and 4th year classes found the speed somewhat slower than what they were able to handle. Because these comments on the speed of speech were expected, no change was made to the test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Examinees</head><p>A total of 107 learners of L2 Chinese were recruited from a university in China for the main study. Among these examinees, 98 completed the computerized test and nine completed one-on-one retrospective interviews (see the "Procedures" section below). The 98 examinees came from first year (n = 36), second year (n = 24), third year (n = 26), and fourth year (n = 12) Chinese classes, and there were 59 females and 39 males (mean age = 23.35 years, SD = 3.84); moreover, they represented various L1 backgrounds including Bahasa Indonesia (n = 12), Bulgarian (n = 1), English (n = 3), French (n = 3), Hindi (n = 1), Italian (n = 5), Japanese (n = 1), Kazakhstan (n = 3), Korean (n = 25), Lao (n = 1), Mongolian (n = 4), Nepali (n = 1), Persian (n = 1), Russian (n = 2), Romanian (n = 1), Spanish (n = 9), Swedish (n = 1), Thai (n = 10), Turkish (n = 1), Urdu (n = 1), Uzbekistan (n = 11), and Visayan (n = 1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Procedures</head><p>The 98 examinees completed the test individually in a quiet room on campus. After familiarizing themselves with the testing procedure with two practice items, they completed the test, followed by a demographic background survey. The test sessions were monitored by research assistant(s). As for the interviews, each of the nine examinees completed the test item by item in a quiet room on campus with the researcher. Upon completing each item, the researcher asked the same question 你为什么选这个? (Why did you select this option?) to prompt the examinees to report the rationale underlying their choices as well as their thinking processes involved in completing the test item. All verbal reports were audio recorded and later transcribed for analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data analyses</head><p>Comprehension accuracy was operationalized as test scores based on correct answers. Each correct response received one point, and each incorrect response received no point. The score range of the test was thus 0 to 39. The researcher used WINSTEPS version 3.80.1 to conduct data analysis with the Rasch dichotomous model. Both raw scores and logits were reported as descriptive statistics. Inferential statistics were performed with SPSS 16.0. Unless stated otherwise, Rasch-calibrated measures were used for statistical analyses. In cases where the assumptions underlying certain parametric procedures were not met, alternative non-parametric procedures were used. Finally, following <ref type="bibr" target="#b18">Taguchi (2008)</ref>, the interview data were qualitatively analyzed with a focus on the strategies and processes involved in interpreting the implied meaning encoded through the three types of implicature. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>RQ1 focused on the statistical characteristics of the test. The Cronbach's α of the test was .91 (based on raw scores). <ref type="table" target="#tab_2">Table 3</ref> presents the item measures. The individual item means (p values based on raw scores) ranged from 0.16 (16%) to 0.96 (96%) with an average of 0.73 (73%). Individual item discrimination statistics (item-total correlation coefficients based on raw scores) ranged between .26 and .62 with an average of .46. Rasch analyses showed that item difficulty spanned over 6.28 logits from − 2.56 to 3.72 logits (a positive logit value denotes a higher level of item difficulty than a negative logit value does). The item separation index was 3.58 (5.11 strata) with a reliability coefficient of .93. The item infit mean square (MNSQ) statistics were all within the acceptable range of 0.5 to 1.5 <ref type="bibr">(Boone et al. 2014, p.166;</ref><ref type="bibr" target="#b26">Wright and Linacre 1994)</ref> and that the item infit z standardized (ZSTD) statistics were not lower than − 2.0 or higher than 2.0. Examinee ability showed a wide range of 8.00 logits spanning from − 2.31 to 5.69 logits with a mean of 1.49 logits (SD = 1.48 logits) (a positive logit value denotes a higher level of examinee ability than a negative logit value does). The person separation index was 2.32 (3.43 strata) with a reliability coefficient of .84. The person infit MNSQ statistics showed that all but three (3.06%) examinees were within the acceptable range Type A an incorrect answer containing words/phrases from the last turn, Type B an incorrect answer based on the meaning of the entire dialog, Type C an incorrect answer with opposite interpretation of 0.5 to 1.5. Similarly, the person infit ZSTD statistics revealed that three out of the 98 examinees (3.06%) had a value greater than 2.0 (but less than 3.0). <ref type="table" target="#tab_3">Table 4</ref> displays the results of the distractor analysis. Third year and fourth year examinees were grouped together (i.e., Chinese as a second language (CSL)-3&amp;4) due to the small sample size of the latter group. All three distractor types led to incorrect responses regardless of item type and proficiency level. Type A distractors (i.e., containing words/phrases from the last turn) showed the strongest effect of distraction. On the other hand, the distracting effects were more or less comparable between type B (i.e., based on the meaning of the entire dialog) and type C (i.e., an incorrect answer with opposite interpretation) for Dis and Non items; for Lin items, type C distractors resulted in considerably higher percentages of incorrect responses than type B distracters did. In fact, for Lin items, the distracting effect of type C approached that of type A. <ref type="table" target="#tab_3">Table 4</ref> also shows the average logit values of the examinees who made incorrect selections. Type A distractors demonstrated the highest mean logit values across item types. On the other hand, the mean logit values for type B distractors were higher than those for type C distractors in terms of Lin and Non items; however, the pattern was reversed for Dis items.</p><p>RQ2 asked whether proficiency affected test performance. <ref type="table" target="#tab_4">Table 5</ref> lists the descriptive statistics based on the entire test and based on the three item types. <ref type="table">Table 6</ref> shows the results of statistical comparisons. Proficiency was operationalized as three class levels (i.e., CSL-1, CSL-2, and CSL-3&amp;4). One-way between-subject ANOVA revealed that proficiency significantly affected overall test performance, F(2, 95) = 14.62, p &lt; .001, η p 2 = .24. Follow-up pairwise comparisons with Bonferroni corrections showed significant differences between the CSL-1 and CSL-2 groups (p = .049), between the CSL-1 and CSL-3&amp;4 groups (p &lt; .001), but not between the CSL-2 and CSL-3&amp;4 groups (p = .062). Turning to between-group differences within each of the three implicature types, oneway ANOVA revealed a significant effect of proficiency on performance on the Lin items, F(2, 95) = 13.46, p &lt; .001, η p 2 = .22. Subsequent pairwise comparisons with Bonferroni corrections showed significant differences between the CSL-1 and CSL-2 groups (p = .010), between the CSL-1 and CSL-3&amp;4 groups (p &lt; .001), but not between the CSL-2 and CSL-3&amp;4 groups (p = .388) ( <ref type="table">Table 6</ref>). Regarding the other two item types (i.e., Dis and Non), because the data did not meet the normality assumption, Kruskal- Wallis tests were performed, with Mann-Whitney U tests as follow-up procedures whenever applicable (the alpha level was adjusted to .017 with Bonferroni corrections).</p><p>The results showed that proficiency significantly affected performance on the Dis items, χ 2 (2, N = 98) = 15.74, p &lt; .001. Follow-up comparisons showed no significant difference between CSL-1 and CSL-2 groups (Z = − 1.61, p = .110), a significant difference between CSL-1 and CSL-3&amp;4 groups (Z = − 3.79, p &lt; .001), and no significant difference between CSL-2 and CSL-3&amp;4 groups (Z = − 2.32, p = .020). Finally, in terms of the Non items, proficiency again significantly affected test performance, χ 2 (2, N = 98) = 15.83, p &lt; .001. Subsequent comparisons showed no significant difference between CSL-1 and CSL-2 groups (Z = − 1.72, p = .087), a significant difference between CSL-1 and CSL-3&amp;4 groups (Z = − 3.85, p &lt; .001), and no significant difference between CSL-2 and CSL-3&amp;4 groups (Z = − 2.11, p = .034). In summary, the CSL-3&amp;4 group consistently outperformed the CSL-1 group in test performance across item types and based on the entire test. The CSL-2 group outperformed the CSL-1 group on the Lin items and on the entire test. There was no other significant contrast. RQ3 investigated the internal structure of the test. In examining the strength of correlation between performances on the three types of items, Spearman's ρ statistics were calculated due to the violation of the normality assumption. There were strong correlations between the Lin and Dis items, ρ = .70 (p &lt; .001); between the Lin and Non items, ρ = .72 (p &lt; .001); and between the Dis and Non items, ρ = .61 (p &lt; .001).</p><p>Regarding the effects of implicature type on test performance, because the data did not meet the normality assumption, Friedman tests were performed, with Wilcoxon tests as follow-up procedures whenever applicable (the alpha level was adjusted to .017 with Bonferroni corrections). <ref type="table" target="#tab_5">Table 7</ref> summarizes the results of the statistical comparisons. Implicature type led to significant difference in test performance for all examinees as a group, χ 2 (2, n = 98) = 78.25, p &lt; .001. Follow-up comparisons revealed significant differences for all three contrasts <ref type="table" target="#tab_5">(Table 7)</ref>. Moreover, the significant effects of implicature type on comprehension were found within each of the three examinee groups, including the CSL-1 group, χ 2 (2, n = 36) = 36.78, p &lt; .001; the CSL-2 group, χ 2 (2, n = 24) = 13.00, p = .001; and the CSL-3&amp;4 group, χ 2 (2, n = 38) = 31.63, p &lt; .001. Follow-up analyses showed that test performance was significantly different between the three <ref type="table">Table 6</ref> Effects of proficiency on comprehension accuracy <ref type="bibr">Total (k = 39)</ref> Lin (k = 13) Dis (k = 13) Non (k = 13) CSL-1 vs. CSL-2 p = .049* p = .010* p = .110 p = .087 CSL-1 vs. CSL-3&amp;4 p &lt; .001* p &lt; .001* p &lt; .001* p &lt; .001* CSL-2 vs. CSL-3&amp;4 p = .062 p = .388 p = .020 p = .034 *denotes statistically significant contrasts at 0.5 and .01 levels implicature types within each examinee group (see <ref type="table" target="#tab_5">Table 7)</ref>, with the only exception being the contrast between Dis and Non items for the CSL-2 group. In additional to the above analyses, examinees' retrospective protocols were analyzed to examine whether different knowledge, inferential processes, and strategies were involved in comprehending the three types of implicature. As it turned out, comprehending implicature encoded through fixed discourse patterns appeared to be the most straightforward process. Because the majority of the Dis items involved indirect refusals, examinees justified their meaning interpretations by directly citing the reason(s) that the interlocutor provided in the dialog, as shown in the following excerpt:</p><p>Excerpt 1: Dis item (item #2 in the Appendix) Examinee #2 (CSL-1, correct interpretation): "女的说7点去的时候,路上车很多,开不 快。所以女的意思是早去比较好。". "The woman says when leaving at 7 o'clock, there will be many cars in the street, (so they) won't be able to drive fast. Therefore the woman means that it is better to leave earlier." In contrast, in comprehending implicatures conveyed through non-conventionalized utterances, examinees typically explained their inference chain based on the content of the most relevant adjacency pair, and, in doing so, they often drew on background knowledge and personal experience to justify their interpretations. For example, in the following excerpt, the examinee first repeated the last adjacency pair containing the implicature; she then explained her (incorrect) interpretation by referring to a courteous behavior that routinely occurs, that is, closing the door before playing loud music so as to not disturb other people.</p><p>Excerpt 2: Non item (item #3 in the Appendix) Examinee #5 (CSL-2, incorrect interpretation): "这个男的说你想不想听我唱歌,女的 说她关门,意思是说她想听,不想打扰别的人。". "The man says do you want to hear me singing the song, and the woman says she will close the door, meaning that she wants to listen, (but) does not want to disturb other people." Finally, the processes involved in comprehending implicatures encoded through conventionalized linguistic forms differed according to whether examinees had acquired the relevant pragmalinguistic knowledge. When examinees already knew the pragmatic function of a conventionalized linguistic form, they often directly referred to the linguistic form and paraphrased the implied meaning. For example, in the following excerpt, the examinee correctly explained the conventionalized meaning of the phrase kě bú shì ma ("tell me about it" or "you are right").</p><p>Excerpt 3: Lin item (item #1 in the Appendix) Examinee #7 (CSL-3, correct interpretation): "…女的说'可不是嘛'。 '可不是嘛'的意 思是'对啊'。".</p><p>"…the woman says 'kě bú shì ma'. 'kě bú shì ma' means 'yes'."</p><p>On the other hand, when examinees did not have the necessary pragmalinguistic knowledge, they tended to be attracted to the literal meaning of the conventionalized phrase and reach incorrect interpretations, as shown in excerpt 4 (based on the same item as excerpt three). Interestingly, the examinee actually repeated the conventionalized linguistic in its entirety (kě bú shì ma); however, in explaining his interpretation, the examinee left out the first character of the phrase and therefore completely altered the intended meaning. This is because without the first character kě, the remaining bú shì ma ("not right") no longer encodes the conventionalized pragmatic meaning of agreement but instead expresses a disagreement. Clearly, although the examinee was able to repeat the targeted linguistic form, he did not have the required pragmalinguistic knowledge and failed to reach correct pragmatic comprehension.</p><p>Excerpt 4: Lin item (item #1 in the Appendix). Examinee #1 (CSL-1, incorrect interpretation): "男人说长林是冷还没有意思。女人 说'可不是嘛'。这样说的, '不是嘛'的意思是有意思。对不对?" "The man says Changlin is cold and not interesting. The woman says kě bú shì ma.</p><p>In saying so, bú shì ma (in this context) means (Changlin is) interesting. Am I right?" Still another finding emerged from the protocol analyses was that examinees often appeared to be tentative in their meaning interpretation when they were drawn to the literal meaning of the conventionalized linguistic forms. Their uncertainty was demonstrated in their attempts to seek verification from the interviewer, as shown in the end of excerpt 4. This strategy of seeking external verification was not observed in the verbal reports for Dis and Non items.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>This section first discusses the research findings in light of the three assumptions outlined in <ref type="table" target="#tab_0">Table 1</ref> and then provides a validity argument for the two targeted inferences.</p><p>Assumption 1: Appropriateness of the statistical characteristics of the test for its intended purpose</p><p>The first backing for Assumption 1 comes from the finding that individual item discrimination statistics were all above the commonly accepted threshold of .25 <ref type="bibr">(Fulcher and Davidson 2007, p.104)</ref>. Furthermore, the test was found to be able to reliably differentiate more than three levels of pragmatic comprehension ability (3.34 strata, with a reliability coefficient of .84). Because the test was intended for learners enrolled in a 4-year Chinese program, one would expect three to four levels of pragmatic comprehension ability among them. Although three examinees' performance did not fit the Rasch model, the percentage was below the 5% misfit ratio by chance.</p><p>Turning to the difficulty measure of the test, the 39 items showed a wide range of difficulty <ref type="table" target="#tab_2">(Table 3)</ref>, and they represented nearly six levels of difficulty (i.e., 5.73 strata, with a reliability coefficient of .94). The descriptive statistics in <ref type="table" target="#tab_4">Table 5</ref> indicate that the test was somewhat easy, particularly for the CSL-3&amp;4 group. There are two possible explanations. First, the test items were developed by using a restricted set of vocabulary and grammar structures (see the "Methods" section), which limited the sentence complexity and vocabulary width of the test prompts (i.e., dialogs). Consequently, the CSL-3&amp;4 group was probably in a more advantageous position compared with the CSL-1 and CSL-2 groups because the former group was likely to be more familiar with the words and sentence structures. However, the use of a restricted pool of vocabulary and grammar structures was justified in this study because the test was not intended to assess vocabulary/grammar knowledge but rather the ability to infer the implied meaning of utterances, for which understanding the literal meanings of utterances is a prerequisite. A second and more plausible explanation is that proficiency has well-documented strong positive effects on pragmatic comprehension (e.g., <ref type="bibr" target="#b10">Roever 2005</ref><ref type="bibr" target="#b11">Roever , 2006</ref><ref type="bibr" target="#b12">Roever , 2013</ref><ref type="bibr" target="#b16">Taguchi 2005</ref><ref type="bibr" target="#b18">Taguchi , 2008</ref><ref type="bibr" target="#b19">Taguchi , 2009</ref><ref type="bibr" target="#b21">Taguchi et al. 2013)</ref>. A study worth discussing here is Roever (2013), which reported a ceiling effect among a group of advanced ESL learners who took the implicature test developed by <ref type="bibr" target="#b10">Roever (2005</ref><ref type="bibr" target="#b11">Roever ( , 2006</ref>. Because Roever did not use a restricted set of vocabulary and grammar structures in developing his items, the ceiling effect he reported suggests that examinees with advanced proficiency can be expected to do well on a pragmatic comprehension test, and the performance of the CSL-3&amp;4 group in this study confirmed this expectation. Nevertheless, it would be desirable to explore ways to create more difficult items in the future. Given the higher level of difficulty of the Lin items compared with Dis and Non items <ref type="table" target="#tab_4">(Table 5)</ref>, one possibility is to increase the percentage of Lin items in a future pragmatic comprehension test.</p><p>The results of distractor analyses also lent support to Assumption 1 in that all three types of distractors functioned as expected. Different from existing pragmatics assessment studies that either did not specify the rationale for distractor development <ref type="bibr" target="#b25">(Walters, 2009)</ref> or used L2 learners' incorrect interpretations as distractors but did not explain why certain incorrect interpretations were selected to be included in tests (e.g., <ref type="bibr" target="#b10">Roever 2005;</ref><ref type="bibr" target="#b7">Liu 2006</ref>), this study followed <ref type="bibr" target="#b21">Taguchi et al. (2013)</ref> to develop distractors based on relevant psychological theories and SLA research findings. The results showed that all three types of distractors led to incorrect responses. Type A distractors (based on the recency effect) demonstrated the strongest distracting effect across item types and proficiency levels, resulting in the highest percentages of incorrect responses as well as the highest average examinee ability who selected this distractor. This result corroborated previous research findings <ref type="bibr" target="#b18">(Taguchi 2008)</ref> and suggests that, when the implied meaning is not readily accessible, examinees tend to rely on memory of the most recent information for meaning inference.</p><p>The distracting effects of type B (based on the keyword processing strategy) and type C (representing an opposite interpretation) distractors differed according to item types. In terms of percentage of incorrect responses (see <ref type="table" target="#tab_3">Table 4</ref>), type B and type C distractors were more or less comparable for Dis and Non items; yet for Lin items, the examinees were more likely attracted to type C distractors than to type B distractors. Meanwhile, in terms of the average ability of the examinees who chose these two distractors (see <ref type="table" target="#tab_3">Table 4</ref>), the ability level associated with type B distractors was higher than that associated with type C distractors for Lin and Non items; in contrast, when it comes to Dis items, the ability level associated with type B distractors was lower than that associated with type C distractors. These findings led to two observations. First, for items requiring the knowledge of conventionalized form-function mappings (i.e., Lin items), a lack of such knowledge tends to lead to completely opposite meaning interpretations, and this is particularly the case for lower ability examinees. Excerpt 4 of the protocol analysis is a good example here: the examinee (from the CSL-1 group) was attracted to the literal meaning of the conventionalized utterances, which led to the opposite meaning interpretation. Second, for items assessing knowledge of fixed discourse patterns (i.e., Dis items), lower ability examinees are most likely to rely on the content of an entire dialog for meaning interpretation. This makes sense because, as illustrated in excerpt 1, comprehension of the implied meanings embedded in Dis items requires examinees to successfully identify the key turn in an adjacency pair and understand its meaning. Lower ability examinees may not be able to do so and instead may search an entire dialog for cues that can help with meaning interpretation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Assumption 2: Effects of proficiency on test performance</head><p>Appropriate backing for Assumption 2 needs to demonstrate positive effects of proficiency on test performance, because proficiency is the only examinee factor that has consistently been reported to affect pragmatic comprehension (e.g., <ref type="bibr" target="#b10">Roever 2005</ref><ref type="bibr" target="#b11">Roever , 2006</ref><ref type="bibr" target="#b16">Taguchi 2005</ref><ref type="bibr" target="#b18">Taguchi , 2008</ref><ref type="bibr" target="#b20">Taguchi , 2011</ref><ref type="bibr" target="#b21">Taguchi et al. 2013)</ref>.This expectation was confirmed in this study, particularly by the comparison between the CSL-1 and CSL-3&amp;4 groups: the latter group consistently outperformed the former group on the entire test and across item types. In comparing adjacent proficiency groups, however, the effects of proficiency were less prominent across item types. For example, between the CSL-1 and CSL-2 groups, significant difference in test performance was observed only for Lin items. Comparing the CSL-2 and CSL-3&amp;4 groups, there was no significant contrast at all. In this study, the examinees were enrolled in an intensive language program with approximately 20 h of formal instruction each week, and they were presumably able to access abundant learning opportunities afforded by the study abroad environment to improve pragmatic comprehension ability. Yet, without focused pragmatics instruction, the pace of acquiring the ability to comprehend implicatures appeared to be quite slow: after all, the examinee went through the first 2 to 3 years of the curriculum before realizing statistically significant, all-round development in this ability (i.e., comparing the CSL-1 and CSL-3&amp;4 groups). Focused instruction on implicature may be needed to facilitate the development of pragmatic comprehension ability.</p><p>Assumption 3: The internal structure of the test corresponds to a theoretical view of pragmatic comprehension ability</p><p>The first backing to support Assumption 3 entails evidence demonstrating that the test is measuring a unidimensional latent construct. This was confirmed by the results of the Rasch analyses showing that the item infit MNSQ statistics and the item infit ZSTD values were all within acceptable ranges. In addition, the strong correlations between performances on the three types of implicature further supported the claim that the test items measured a shared construct.</p><p>Due to the theorized differences in the degree of conventionality encoded in the three types of implicature, additional backing to support Assumption 3 requires evidence demonstrating differential test performance according to the three item types. Indeed, implicatures conveyed through fixed discourse structures (Dis) were the easiest to comprehend. The retrospective protocols (e.g., excerpt 1) complemented this quantitative finding in showing that examinees were able to utilize the conventionalized discourse structure to reduce the processing effort involved in comprehension. This result was consistent with previous research findings <ref type="bibr" target="#b18">(Taguchi 2008;</ref><ref type="bibr" target="#b21">Taguchi et al. 2013)</ref> and demonstrated the facilitative effects of conventions of usage <ref type="bibr" target="#b8">(Morgan 1978)</ref> on interpreting implied meaning.</p><p>Interestingly, implicatures encoded through conventionalized linguistic forms (Lin) were found to be more difficult to comprehend than non-conventionalized implicature (Non) regardless of examinee proficiency level. This result contrasted with <ref type="bibr" target="#b21">Taguchi et al.'s (2013)</ref> findings, which showed that Non items were more difficult than Lin items. The discrepancy is likely due to the specific linguistic conventions included in the two studies. Among Taguchi et al.'s 12 Lin items, five items included rhetorical questions and five ellipsis sentences (i.e., utterances that are intentionally left incomplete in order to convey implied meaning), which they argued to be relatively easy to interpret due to cross-cultural similarity in pragmatic function. This study, however, only included three items with rhetorical questions and one item with ellipsis sentences, and these items (i.e., L2, L9, L12, and L13) received the highest mean scores (p values) among the Lin items ( <ref type="table" target="#tab_2">Table 3)</ref>. The remaining nine items were similar to the sample Lin item (Appendix) in the sense that examinees without the required pragmalinguistic knowledge would likely be drawn to the literal meaning of the utterances and reach incorrect interpretations (see excerpt 4). The lower percentage of conventionalized linguistic features whose pragmatic functions are shared cross-culturally might have made the Lin items in this study difficult. Moreover, analyses of the retrospective verbal reports revealed that the examinees were more tentative in responding to the Lin items (e.g., explicitly requesting external verification) than to the Dis and Non items. This showed that processing implicature encoded through conventionalized linguistic forms was more effortful than processing the other two types of implicature, leading to less accurate meaning interpretations for Lin items than for Dis and Non items. These results suggest that the facilitative effect of conventions of language on implicature interpretation cannot be taken for granted among L2 examinees. Such conventions can reduce processing effort in implicature interpretation only after examinees have acquired the necessary pragmalinguistic knowledge.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Summary: a validity argument for the evaluation and explanation inferences</head><p>The evaluation inference focused on the conditions for ensuring appropriate evaluation of test performance so that test scores reflect examinees' pragmatic comprehension ability. Developed based on authentic materials (corpus and field notes), the test items were piloted with native speakers and comparable examinees and were standardized to reduce the influences of potentially confounding variables (e.g., unfamiliar grammar and vocabulary, length of prompts and options, real-life authenticity). Although these measures do not directly support the evaluation inference as specified in <ref type="table" target="#tab_0">Table 1</ref>, they constitute the prerequisite conditions for ensuring the soundness of this inference.</p><p>Turning to the assumption (Assumption 1) underlying the evaluation inference, it received backing from the satisfactory item discrimination statistics and distractor functioning. Admittedly, the test turned out to be relatively easy for examinees with advanced proficiency in Chinese (i.e., the CSL-3&amp;4 group). Yet, given the welldocumented positive effects of proficiency on L2 pragmatic comprehension <ref type="bibr" target="#b18">(Taguchi 2008</ref><ref type="bibr" target="#b20">(Taguchi , 2011</ref><ref type="bibr" target="#b21">Taguchi et al. 2013;</ref><ref type="bibr" target="#b10">Roever 2005</ref><ref type="bibr" target="#b11">Roever , 2006</ref>, particularly the ceiling effect among advanced ESL examinees as reported in <ref type="bibr" target="#b12">Roever (2013)</ref>, the CSL-3&amp;4 group's test performance likely reflected their real pragmatic comprehension ability. In supporting the evaluation inference, a unique contribution of this study to the pragmatics assessment literature was to show the feasibility of an alternative approach to developing distractors that functioned satisfactorily. Interestingly, the different types of distractors showed differential distracting effects across implicature types. Such interaction between distractor type and implicature type has not been reported in the literature and warrants future research.</p><p>As mentioned earlier, the explanation inference concerns the extent to which test performance can be explained by the targeted construct of pragmatic comprehension ability. The two assumptions (Assumptions 2 and 3) underlying this inference were supported by empirical evidence showing that test performance conformed to a theoretical view of the construct of pragmatic comprehension ability. Rasch analyses, correlation analyses, and retrospective protocol analyses together demonstrated that the test measured three different but highly related facets of a shared latent construct (Assumption 3). The pragmatics theories employed for test development, in addition to the experts' review of the content of the test items, lent further backing to the claim that the test measured pragmatic comprehension ability conceptualized as comprising of three components (Assumption 3). Finally, the confirmation of positive effects of proficiency on pragmatic comprehension was consistent with existing research findings on L2 pragmatic comprehension, thereby supporting Assumption 2. Because previous research on assessing L2 pragmatic comprehension ability has not fully specified the types of empirical evidence that can help verify the internal structure of pragmatic comprehension ability, the results of this study (particularly those for RQ3) can serve as a reference for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>One practical use of the results of this study would be to inform decisions on curriculum development for the Chinese program where the examinees came from, because implicature was not a unit of focused instruction in the program. First, regarding whether focused instruction on implicature comprehension is needed, the results showed that the advanced learners (i.e., CSL-3&amp;4) may not necessarily need focused instruction due to their good performance. However, the relatively large standard deviation of the CSL3&amp;4 group showed a lack of homogeneity in pragmatic comprehension ability among the learners in this group. Considering the examinees' test performance across proficiency levels, it seems appropriate to include implicature instruction into the lower division of the Chinese curriculum. Second, regarding the sequence of instruction, implicatures conveyed through fixed discourse patterns (Dis) can be introduced first due to relative easiness. Moreover, because implicatures encoded in pragmalinguistic forms (i.e., those assessed by the Lin items) and implicatures expressed without linguistic conventions (i.e., those assessed by the Non items) were found to be generally difficult, these two implicature types can be introduced later in the curriculum and with more instructional attention.</p><p>In terms of how to incorporate implicature comprehension into L2 classroom instruction, interested readers can refer to <ref type="bibr" target="#b17">Taguchi (2007)</ref> for detailed suggestions that can be applied to the context of L2 Chinese instruction. Briefly, instructors can highlight typical discourse patterns (e.g., providing excuses to turn down a request/invitation) and note their role in assisting understanding implied meaning. As for implicatures conveyed through conventionalized linguistic forms, instructors should explicitly teach such pragmalinguistic forms and discuss their pragmatic functions. To this end, it would be efficient to focus on certain categories of pragmalinguistic structures (rather than individual forms), such as ellipsis sentences and rhetoric questions as included in this test. Finally, regarding non-conventionalized implicatures, instructors can encourage learners to utilize multiple contextual cues for meaning interpretation, such as certain paralinguistic cues (e.g., intonation, tone of speech), personal experience, and background knowledge.</p><p>This study has several limitations. First, although the results showed that the distractors functioned properly, in hindsight, there is one major limitation in distractor development: type C distractor and the correct answer (the key) contrast directly with each other. As a reviewer pointed out, because type C distractor and the key account for all the possibilities, examinees can quickly develop test-taking strategy, particularly in high-stake test environments, and choose between these two options as the key. This would lead to improper item functioning. Further development of this test should involve revising the rule for writing type C distractor. Second, proficiency was operationalized in terms of learners' class levels. Although this is a widely adopted approach in L2 pragmatic comprehension research (e.g., <ref type="bibr" target="#b10">Roever 2005</ref><ref type="bibr" target="#b11">Roever , 2006</ref><ref type="bibr" target="#b18">Taguchi 2008;</ref><ref type="bibr" target="#b21">Taguchi et al. 2013)</ref>, it may not allow a precise understanding of the relationship between proficiency and pragmatic comprehension ability. Future studies should include a standardized proficiency test to better understand how proficiency affects pragmatic comprehension. Finally, given the limited scope of this study, it was not possible to address fundamental issues involved in the test validation process such as fairness of the test. This topic is to be researched during the next phase of this project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endnotes</head><p>That is singing while speaking. Now many people like listening to it. Do you want me to sing it for you? 女:你一唱歌呀,我就得关门。.</p><p>Whenever you sing, I have to close the door.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">女的很喜欢听男的唱歌</head><p>The woman likes to hear the man singing very much.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">女的得关着门听男的唱歌</head><p>The woman has to close the door in order to listen to the man singing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">女的和男的都喜欢唱歌</head><p>The woman and the man both like singing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">女的不想听男的唱歌</head><p>The woman does not like to listen to the man singing. (Correct)</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>An overview of the evaluation and explanation inferences</figDesc><table><row><cell>Inferences</cell><cell>Warrants</cell><cell>Assumptions</cell><cell>Backing</cell></row><row><cell>Evaluation</cell><cell>1. Observations of performance</cell><cell>1. Statistical characteristics</cell><cell>1. Item/test statistics (e.g.,</cell></row><row><cell></cell><cell>on the test are properly</cell><cell>of test items are appropriate</cell><cell>item/test difficulty, item</cell></row><row><cell></cell><cell>evaluated to provide observed</cell><cell>for the intended purpose</cell><cell>discrimination, item fit,</cell></row><row><cell></cell><cell>scores reflective of pragmatic</cell><cell>of the test.</cell><cell>distractor analysis) are</cell></row><row><cell></cell><cell>comprehension ability.</cell><cell></cell><cell>within an expected range.</cell></row><row><cell>Explanation</cell><cell>2. Expected scores are</cell><cell>2. Test performance varies</cell><cell>2. Positive effects of</cell></row><row><cell></cell><cell>attributable to a construct</cell><cell>according to well-documented</cell><cell>proficiency on test</cell></row><row><cell></cell><cell>of pragmatic comprehension</cell><cell>examinee factor(s) affecting</cell><cell>performance.</cell></row><row><cell></cell><cell>ability.</cell><cell>pragmatic comprehension.</cell><cell></cell></row><row><cell></cell><cell></cell><cell>3. The internal structure of</cell><cell>3a. Strong correlations</cell></row><row><cell></cell><cell></cell><cell>the test conforms to a</cell><cell>between different types of</cell></row><row><cell></cell><cell></cell><cell>theoretical view of the</cell><cell>implicatures.</cell></row><row><cell></cell><cell></cell><cell>construct of pragmatic</cell><cell>3b. Different implicature</cell></row><row><cell></cell><cell></cell><cell>comprehension ability.</cell><cell>types lead to different test</cell></row><row><cell></cell><cell></cell><cell></cell><cell>performance.</cell></row><row><cell></cell><cell></cell><cell></cell><cell>3c. Different linguistic</cell></row><row><cell></cell><cell></cell><cell></cell><cell>knowledge, processes, and</cell></row><row><cell></cell><cell></cell><cell></cell><cell>strategies are involved in</cell></row><row><cell></cell><cell></cell><cell></cell><cell>interpreting different types</cell></row><row><cell></cell><cell></cell><cell></cell><cell>of implicatures.</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Item features</figDesc><table><row><cell></cell><cell>Dialog length</cell><cell>Audio length</cell><cell>Speech rate</cell><cell>Number</cell><cell>Total option length</cell><cell>Real-life</cell></row><row><cell></cell><cell>(in syllables)</cell><cell>(in seconds)</cell><cell>(syllables per 60 s)</cell><cell>of turns</cell><cell>(in characters)</cell><cell>authenticity rating</cell></row><row><cell cols="2">Mean 67.02</cell><cell>25.42</cell><cell>158.19</cell><cell>5.13</cell><cell>40.92</cell><cell>4.42</cell></row><row><cell>SD</cell><cell>0.81</cell><cell>0.32</cell><cell>2.11</cell><cell>0.86</cell><cell>0.84</cell><cell>0.35</cell></row><row><cell>Min.</cell><cell>66.00</cell><cell>25.03</cell><cell>153.37</cell><cell>4.00</cell><cell>40.00</cell><cell>3.50</cell></row><row><cell>Max.</cell><cell>68.00</cell><cell>25.98</cell><cell>163.00</cell><cell>6.00</cell><cell>42.00</cell><cell>4.93</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Item statistics</figDesc><table><row><cell>Item</cell><cell>Mean</cell><cell>SD</cell><cell>Corrected</cell><cell>Rasch analysis</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>item-total correlation</cell><cell>Measure</cell><cell>Model S.E.</cell><cell>Infit MNSQ</cell><cell>Infit ZSTD</cell></row><row><cell>L1</cell><cell>0.66</cell><cell>0.48</cell><cell>0.34</cell><cell>0.55</cell><cell>0.25</cell><cell>1.17</cell><cell>1.4</cell></row><row><cell>L2</cell><cell>0.83</cell><cell>0.38</cell><cell>0.44</cell><cell>− 0.63</cell><cell>0.30</cell><cell>0.96</cell><cell>− 0.1</cell></row><row><cell>L3</cell><cell>0.62</cell><cell>0.49</cell><cell>0.49</cell><cell>0.79</cell><cell>0.25</cell><cell>0.95</cell><cell>− 0.4</cell></row><row><cell>L4</cell><cell>0.76</cell><cell>0.43</cell><cell>0.42</cell><cell>− 0.06</cell><cell>0.27</cell><cell>1.04</cell><cell>0.3</cell></row><row><cell>L5</cell><cell>0.63</cell><cell>0.48</cell><cell>0.62</cell><cell>0.73</cell><cell>0.25</cell><cell>0.78</cell><cell>− 2.0</cell></row><row><cell>L6</cell><cell>0.51</cell><cell>0.50</cell><cell>0.32</cell><cell>1.43</cell><cell>0.24</cell><cell>1.17</cell><cell>1.6</cell></row><row><cell>L7</cell><cell>0.59</cell><cell>0.49</cell><cell>0.49</cell><cell>0.97</cell><cell>0.24</cell><cell>0.94</cell><cell>− 0.6</cell></row><row><cell>L8</cell><cell>0.43</cell><cell>0.50</cell><cell>0.27</cell><cell>1.89</cell><cell>0.24</cell><cell>1.21</cell><cell>2.0</cell></row><row><cell>L9</cell><cell>0.76</cell><cell>0.43</cell><cell>0.40</cell><cell>− 0.06</cell><cell>0.27</cell><cell>1.07</cell><cell>0.6</cell></row><row><cell>L10</cell><cell>0.66</cell><cell>0.48</cell><cell>0.53</cell><cell>0.55</cell><cell>0.25</cell><cell>0.92</cell><cell>− 0.6</cell></row><row><cell>L11</cell><cell>0.16</cell><cell>0.37</cell><cell>0.29</cell><cell>3.72</cell><cell>0.32</cell><cell>0.88</cell><cell>− 0.6</cell></row><row><cell>L12</cell><cell>0.77</cell><cell>0.43</cell><cell>0.30</cell><cell>− 0.14</cell><cell>0.28</cell><cell>1.19</cell><cell>1.3</cell></row><row><cell>L13</cell><cell>0.68</cell><cell>0.47</cell><cell>0.33</cell><cell>0.42</cell><cell>0.25</cell><cell>1.20</cell><cell>1.6</cell></row><row><cell>D1</cell><cell>0.79</cell><cell>0.41</cell><cell>0.43</cell><cell>− 0.29</cell><cell>0.28</cell><cell>1.01</cell><cell>0.1</cell></row><row><cell>D2</cell><cell>0.88</cell><cell>0.33</cell><cell>0.33</cell><cell>− 1.15</cell><cell>0.34</cell><cell>1.12</cell><cell>0.6</cell></row><row><cell>D3</cell><cell>0.78</cell><cell>0.42</cell><cell>0.57</cell><cell>− 0.21</cell><cell>0.28</cell><cell>0.84</cell><cell>− 1.1</cell></row><row><cell>D4</cell><cell>0.71</cell><cell>0.45</cell><cell>0.52</cell><cell>0.22</cell><cell>0.26</cell><cell>0.92</cell><cell>− 0.6</cell></row><row><cell>D5</cell><cell>0.88</cell><cell>0.33</cell><cell>0.42</cell><cell>− 1.15</cell><cell>0.34</cell><cell>0.91</cell><cell>− 0.3</cell></row><row><cell>D6</cell><cell>0.96</cell><cell>0.20</cell><cell>0.34</cell><cell>− 2.56</cell><cell>0.54</cell><cell>0.93</cell><cell>0.0</cell></row><row><cell>D7</cell><cell>0.83</cell><cell>0.38</cell><cell>0.52</cell><cell>− 0.63</cell><cell>0.30</cell><cell>0.88</cell><cell>− 0.7</cell></row><row><cell>D8</cell><cell>0.56</cell><cell>0.50</cell><cell>0.52</cell><cell>1.14</cell><cell>0.24</cell><cell>0.94</cell><cell>− 0.5</cell></row><row><cell>D9</cell><cell>0.91</cell><cell>0.29</cell><cell>0.50</cell><cell>− 1.55</cell><cell>0.38</cell><cell>0.77</cell><cell>− 0.8</cell></row><row><cell>D10</cell><cell>0.90</cell><cell>0.30</cell><cell>0.37</cell><cell>− 1.40</cell><cell>0.37</cell><cell>1.04</cell><cell>0.3</cell></row><row><cell>D11</cell><cell>0.91</cell><cell>0.29</cell><cell>0.52</cell><cell>− 1.55</cell><cell>0.38</cell><cell>0.79</cell><cell>− 0.8</cell></row><row><cell>D12</cell><cell>0.68</cell><cell>0.47</cell><cell>0.48</cell><cell>0.42</cell><cell>0.25</cell><cell>0.99</cell><cell>0.0</cell></row><row><cell>D13</cell><cell>0.81</cell><cell>0.40</cell><cell>0.50</cell><cell>− 0.46</cell><cell>0.29</cell><cell>0.92</cell><cell>− 0.5</cell></row><row><cell>N1</cell><cell>0.46</cell><cell>0.50</cell><cell>0.49</cell><cell>1.71</cell><cell>0.24</cell><cell>0.91</cell><cell>− 0.9</cell></row><row><cell>N2</cell><cell>0.77</cell><cell>0.43</cell><cell>0.28</cell><cell>− 0.14</cell><cell>0.28</cell><cell>1.22</cell><cell>1.5</cell></row><row><cell>N3</cell><cell>0.79</cell><cell>0.41</cell><cell>0.49</cell><cell>− 0.29</cell><cell>0.28</cell><cell>0.95</cell><cell>− 0.3</cell></row><row><cell>N4</cell><cell>0.70</cell><cell>0.46</cell><cell>0.30</cell><cell>0.29</cell><cell>0.26</cell><cell>1.24</cell><cell>1.8</cell></row><row><cell>N5</cell><cell>0.76</cell><cell>0.43</cell><cell>0.58</cell><cell>− 0.06</cell><cell>0.27</cell><cell>0.84</cell><cell>− 1.1</cell></row><row><cell>N6</cell><cell>0.67</cell><cell>0.47</cell><cell>0.56</cell><cell>0.48</cell><cell>0.25</cell><cell>0.89</cell><cell>− 0.9</cell></row><row><cell>N7</cell><cell>0.86</cell><cell>0.35</cell><cell>0.59</cell><cell>− 0.93</cell><cell>0.32</cell><cell>0.77</cell><cell>− 1.2</cell></row><row><cell>N8</cell><cell>0.75</cell><cell>0.44</cell><cell>0.36</cell><cell>0.01</cell><cell>0.27</cell><cell>1.14</cell><cell>1.0</cell></row><row><cell>N9</cell><cell>0.77</cell><cell>0.43</cell><cell>0.33</cell><cell>− 0.14</cell><cell>0.28</cell><cell>1.16</cell><cell>1.1</cell></row><row><cell>N10</cell><cell>0.83</cell><cell>0.38</cell><cell>0.57</cell><cell>− 0.63</cell><cell>0.30</cell><cell>0.79</cell><cell>− 1.2</cell></row><row><cell>N11</cell><cell>0.79</cell><cell>0.41</cell><cell>0.46</cell><cell>− 0.29</cell><cell>0.28</cell><cell>0.99</cell><cell>0.0</cell></row><row><cell>N12</cell><cell>0.60</cell><cell>0.49</cell><cell>0.55</cell><cell>0.91</cell><cell>0.24</cell><cell>0.88</cell><cell>− 1.1</cell></row><row><cell>N13</cell><cell>0.93</cell><cell>0.26</cell><cell>0.31</cell><cell>− 1.87</cell><cell>0.43</cell><cell>1.02</cell><cell>0.2</cell></row><row><cell>Mean</cell><cell>0.73</cell><cell>-</cell><cell>0.44</cell><cell>0.00</cell><cell>.29</cell><cell>0.98</cell><cell>0.0</cell></row><row><cell>SD</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>1.15</cell><cell>.06</cell><cell>0.14</cell><cell>1.0</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc>Distractor analyses</figDesc><table><row><cell></cell><cell cols="4">Correct response Distractor type A Distractor type B Distractor type C</cell></row><row><cell>Linguistic (Lin, k = 13)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CSL-1 (n = 36)</cell><cell>48.50%</cell><cell>23.93%</cell><cell>5.56%</cell><cell>22.01%</cell></row><row><cell>CSL-2 (n = 24)</cell><cell>65.38%</cell><cell>16.98%</cell><cell>6.09%</cell><cell>11.54%</cell></row><row><cell>CSL-3&amp;4 (n = 38)</cell><cell>72.67%</cell><cell>12.75%</cell><cell>5.06%</cell><cell>9.51%</cell></row><row><cell>Total (N = 98)</cell><cell>63.34%</cell><cell>18.21%</cell><cell>5.65%</cell><cell>14.84%</cell></row><row><cell>Average logit (N = 98)</cell><cell>1.99</cell><cell>0.70</cell><cell>0.62</cell><cell>0.31</cell></row><row><cell>Discourse (Dis, k = 13)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CSL-1 (n = 36)</cell><cell>72.22%</cell><cell>17.09%</cell><cell>4.27%</cell><cell>6.41%</cell></row><row><cell>CSL-2 (n = 24)</cell><cell>82.05%</cell><cell>9.29%</cell><cell>5.13%</cell><cell>3.53%</cell></row><row><cell>CSL-3&amp;4 (n = 38)</cell><cell>89.68%</cell><cell>6.28%</cell><cell>2.63%</cell><cell>1.42%</cell></row><row><cell>Total (N = 98)</cell><cell>81.40%</cell><cell>10.99%</cell><cell>3.84%</cell><cell>3.77%</cell></row><row><cell>Average logit (N = 98)</cell><cell>1.82</cell><cell>0.58</cell><cell>− 0.24</cell><cell>0.13</cell></row><row><cell>Non-conventional (Non, k = 13)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CSL-1 (n = 36)</cell><cell>63.03%</cell><cell>17.74%</cell><cell>8.97%</cell><cell>10.26%</cell></row><row><cell>CSL-2 (n = 24)</cell><cell>74.68%</cell><cell>15.06%</cell><cell>5.45%</cell><cell>4.81%</cell></row><row><cell>CSL-3&amp;4 (n = 38)</cell><cell>84.61%</cell><cell>8.50%</cell><cell>3.44%</cell><cell>3.44%</cell></row><row><cell>Total (N = 98)</cell><cell>74.25%</cell><cell>13.50%</cell><cell>5.96%</cell><cell>6.28%</cell></row><row><cell>Average logit (N = 98)</cell><cell>1.91</cell><cell>0.38</cell><cell>0.23</cell><cell>0.02</cell></row><row><cell>All items (k = 39)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CSL-1 (n = 36)</cell><cell>61.25%</cell><cell>19.59%</cell><cell>6.27%</cell><cell>12.89%</cell></row><row><cell>CSL-2 (n = 24)</cell><cell>74.04%</cell><cell>13.78%</cell><cell>5.56%</cell><cell>6.62%</cell></row><row><cell>CSL-3&amp;4 (n = 38)</cell><cell>82.32%</cell><cell>9.18%</cell><cell>3.71%</cell><cell>4.79%</cell></row><row><cell>Total (N = 98)</cell><cell>72.55%</cell><cell>14.13%</cell><cell>5.10%</cell><cell>8.21%</cell></row><row><cell>Average logit (N = 98)</cell><cell>1.93</cell><cell>0.53</cell><cell>0.14</cell><cell>0.05</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5</head><label>5</label><figDesc>Descriptive statistics of comprehension accuracy</figDesc><table><row><cell></cell><cell>Total (k = 39)</cell><cell></cell><cell>Lin (k = 13)</cell><cell></cell><cell>Dis (k = 13)</cell><cell></cell><cell>Non (k = 13)</cell><cell></cell></row><row><cell></cell><cell>Mean</cell><cell>SD</cell><cell>Mean</cell><cell>SD</cell><cell>Mean</cell><cell>SD</cell><cell>Mean</cell><cell>SD</cell></row><row><cell>Based on raw scores</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CSL-1 (n = 36)</cell><cell>0.61</cell><cell>0.21</cell><cell>0.49</cell><cell>0.21</cell><cell>0.72</cell><cell>0.24</cell><cell>0.63</cell><cell>0.26</cell></row><row><cell>CSL-2 (n = 24)</cell><cell>0.74</cell><cell>0.17</cell><cell>0.65</cell><cell>0.21</cell><cell>0.82</cell><cell>0.19</cell><cell>0.74</cell><cell>0.21</cell></row><row><cell>CSL-3&amp;4 (n = 38)</cell><cell>0.82</cell><cell>0.14</cell><cell>0.72</cell><cell>0.19</cell><cell>0.89</cell><cell>0.15</cell><cell>0.84</cell><cell>0.16</cell></row><row><cell>Total (N = 98)</cell><cell>0.73</cell><cell>0.20</cell><cell>0.62</cell><cell>0.22</cell><cell>0.81</cell><cell>0.20</cell><cell>0.74</cell><cell>0.22</cell></row><row><cell>Based on logits</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>CSL-1 (n = 36)</cell><cell>0.64</cell><cell>1.26</cell><cell>0.16</cell><cell>1.16</cell><cell>1.54</cell><cell>1.71</cell><cell>0.84</cell><cell>1.77</cell></row><row><cell>CSL-2 (n = 24)</cell><cell>1.49</cell><cell>1.18</cell><cell>0.94</cell><cell>1.40</cell><cell>2.23</cell><cell>1.45</cell><cell>1.57</cell><cell>1.36</cell></row><row><cell>CSL-3&amp;4 (n = 38)</cell><cell>2.28</cell><cell>1.41</cell><cell>1.49</cell><cell>1.56</cell><cell>3.05</cell><cell>1.41</cell><cell>2.38</cell><cell>1.34</cell></row><row><cell>Total (N = 98)</cell><cell>1.48</cell><cell>1.47</cell><cell>0.74</cell><cell>1.55</cell><cell>2.29</cell><cell>1.66</cell><cell>1.61</cell><cell>1.64</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 7</head><label>7</label><figDesc>Effects of implicature type on comprehension accuracy</figDesc><table><row><cell></cell><cell>Total (N = 98)</cell><cell>CSL-1 (n = 36)</cell><cell>CSL-2 (n = 24)</cell><cell>CSL-3&amp;4 (n = 38)</cell></row><row><cell>Lin vs. Dis</cell><cell>p &lt; .001*</cell><cell>p &lt; .001*</cell><cell>p &lt; .001*</cell><cell>p &lt; .001*</cell></row><row><cell>Lin vs. Non</cell><cell>p &lt; .001*</cell><cell>p &lt; .001*</cell><cell>p = .017*</cell><cell>p &lt; .001*</cell></row><row><cell>Dis vs. Non</cell><cell>p &lt; .001*</cell><cell>p = .002*</cell><cell>p = .026</cell><cell>p = .002*</cell></row></table><note>*denotes statistically significant contrasts at 0.5 and .01 levels</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1">For more information, please visit: http://paslab.phonetics.org.cn/index.php/achievements/resources/cadcc-_han_yu_pu_tong_hua_zi_ran_kou_yu_dui_hua_yu_liao_ku</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>I would like to thank Dr. Naoko Taguchi, Dr. Sara C. Weigle, Dr. Dongbo Zhang, Dr. Feng Xiao, and colleagues at Carnegie Mellon University and Beijing Language and Culture University for their generous support at various stages of this project.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample items (English translation not available in the actual test)</head><p>Item one: conventionalized linguistic form (Lin) 男:下个星期你要去长林,是吗?</p><p>Next week you are going to Changlin, right? 女:对,我要去长林看我一个朋友。 Yes, I am going to Changlin to visit a friend of mine.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>男:现在是冬天,长林非常冷啊。</head><p>It is winter now, Changlin is very cold. 女:是啊。</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Definitely. 男:而且长林那个地方没什么好玩儿的,城市也很小,真的没什么意思。</head><p>And Changlin has no fun places to visit, the city is very small, (it is) really not interesting.</p><p>女:可不是嘛! Tell me about it!</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">女的常常去长林看她朋友</head><p>The woman often goes to Changlin to visit her friend.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">女的觉得长林没有意思</head><p>The woman feels that Changlin is boring. (Correct)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">女的喜欢长林这个地方</head><p>The woman likes Changlin.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">女的可不是没去过长林</head><p>The woman has not been to Changlin before. Then I will go after dinner. Let's drive there together at Seven, OK? 女:那个时候路上的车会很多,开不快。</p><p>There will be lots of cars on the road at that time. (We) won't be able to drive fast enough</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">女的开车开得不快</head><p>The woman cannot drive fast.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">女的想七点开车去看比赛</head><p>The woman wants to drive to the match at 7 o'clock.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">女的觉得七点走不好</head><p>The woman doesn't consider it a good idea to leave (for the match) at 7 o'clock. (Correct)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">女的常常和男的一起看比赛</head><p>The woman and the man often watch matches together. Authors' contributions Shuai Li is the sole author of this manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The author declares that he has no competing interests.</p><p>Received: 2 November 2017 Accepted: 12 January 2018</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Language assessment in practice: developing language tests and justifying their use in the real world</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">F</forename><surname>Bachman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Palmer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>As (</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Rasch analysis in the human sciences</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">J</forename><surname>Boone</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Staver</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yale</forename><surname>Jr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Ms</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Springer</publisher>
+			<pubPlace>Dordrecht</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Serial effects in recall of unorganized and sequentially organized verbal material</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Deese</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kaufman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Experimental Psychology</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="180" to="187" />
+			<date type="published" when="1957" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Language testing and assessment: an advanced resource book</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Fulcher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Davidson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Routledge</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Logic and conversation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">P</forename><surname>Grice</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Syntax and Semantics</title>
+		<editor>P. Cole &amp; J. Morgan</editor>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="41" to="58" />
+			<date type="published" when="1975" />
+			<publisher>Academic Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Chinese proficiency test syllabus-level 3</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Hanban</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>The Commercial Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Validating the interpretations and uses of test scores</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Kane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The pragmatics of politeness</title>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="1" to="73" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Measuring interlanguage pragmatic knowledge of EFL learners. Frankfort am Main</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Peter Lang</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Two types of convention in indirect speech acts</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">L</forename><surname>Morgan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Syntax and semantics</title>
+		<editor>P. Cole</editor>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1978" />
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="261" to="281" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Assessing grammar</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Purpura</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Testing EFL pragmatics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Roever</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Peter Lang</publisher>
+			<pubPlace>Frankfurt</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Validation of a web-based test of ESL pragmalinguistics. Language Testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Roever</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="229" to="256" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Testing implicature under operational conditions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Roever</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Assessing second language pragmatics</title>
+		<editor>S. Ross &amp; G. Kasper</editor>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Palgrave Macmillan</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="43" to="64" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Testing ESL sociopragmatics: development and validation of a web-based test battery</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Roever</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Fraser</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">(</forename><surname>Elder</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Peter Lang</publisher>
+			<pubPlace>Frankfurt</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">An introspective analysis of listener inferencing on a second language listening test</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ross</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Communication strategies: psycholinguistic and sociolinguistic perspectives</title>
+		<editor>G Kasper, E Kellerman</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Longman</publisher>
+			<date type="published" when="1997" />
+			<biblScope unit="page" from="216" to="237" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Relevance: communication and cognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sperber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wilson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Comprehension of implied meaning in English as a second language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="543" to="562" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Development of speed and accuracy in pragmatic comprehension in English as a foreign language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TESOL Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="313" to="338" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Pragmatic comprehension in Japanese as a foreign language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Modern Language Journal</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="558" to="576" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Corpus-informed assessment of comprehension of conversational implicatures in L2 English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TESOL Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="738" to="749" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The effect of L2 proficiency and study-abroad experience in pragmatic comprehension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Learning</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="904" to="939" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Comprehension of conversational implicature in L2 Chinese</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pragmatics and Cognition</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="139" to="157" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Taguchi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Roever</surname></persName>
+		</author>
+		<title level="m">Second language pragmatics</title>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Assessing intercultural language learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Timpe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Peter Lang</publisher>
+			<pubPlace>Frankfurt</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Defining and operationalizing the construct of pragmatic competence: review and recommendations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Timpe-Laughlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wain</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Schmidgall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ETS Research Report Series</title>
+		<imprint>
+			<biblScope unit="volume">2015</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="43" />
+			<date type="published" when="2015" />
+			<publisher>ETS</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A conversation analysis-informed test of L2 aural pragmatic comprehension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Walters</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TESOL Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="29" to="54" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Reasonable mean-square fit values</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">D</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rasch measurement transactions</title>
+		<editor>370. Yamashita, S. O.</editor>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="1994" />
+		</imprint>
+		<respStmt>
+			<orgName>University of Hawai&apos;i, Second Language Teaching and Curriculum Center</orgName>
+		</respStmt>
+	</monogr>
+	<note>Six measures of JSL pragmatics</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Validity argument for assessing L2 pragmatics in interaction using mixed methods</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Youn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Language Testing</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="199" to="225" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

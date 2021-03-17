@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2015-08-18">18 August 2015</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Melanie</forename><forename type="middle">P</forename><surname>Lutz</surname></persName>
+							<email>melanie.lutz@solano.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Departments of Physics and Engineering</orgName>
+								<orgName type="institution">Solano Community College</orgName>
+								<address>
+									<settlement>Fairfield</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Robert</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+							<email>r.w.zimmerman@imperial.ac.uk</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Earth Science and Engineering</orgName>
+								<orgName type="institution">Imperial College</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2015-08-18">18 August 2015</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2015.07.006</idno>
+					<note type="submission">Received 15 June 2015 Accepted 15 July 2015</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Micromechanics Effective conductivity Composite materials Functionally graded materials Interphase zone Maxwell effective medium theory</keywords>
+			</textClass>
+			<abstract>
+				<p>An analytical model is developed for the conductivity (diffusivity, permeability, etc.) of a material that contains a dispersion of spherical inclusions, each surrounded by an inhomogeneous interphase zone in which the conductivity varies radially according to a power law. The method of Frobenius series is used to obtain an exact solution for the problem of a single such inclusion in an infinite matrix. Two versions of the solution are developed, one of which is more computationally convenient for interphase zones that are less conductive than the pure matrix, and vice versa. Maxwell&apos;s homogenization method is then used to estimate the effective macroscopic conductivity of the medium. The developed model is used to analyze some data from the literature on the ionic diffusivity of concrete. Use of the model in an inverse mode permits the estimation of the local diffusivity variation within the interphase, and in particular at the interface with the inclusion.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Most modeling of the behavior of composite materials is carried out under the assumption that the "matrix" and "inclusions" are both homogenous, and that there is a clearly defined interface between them. The usual interface conditions are that all relevant fields (traction, displacement, temperature, heat flux, etc.) are continuous across the matrix/inclusion interface. But there are many situations in which either the interface is not sharp, or else one of the two components (matrix, inclusion) has a gradient in its physical properties. For example, a binding agent is sometimes applied to the fibers in a polymer composite, so as to promote adhesion between the fiber and the matrix <ref type="bibr" target="#b7">(Drzal, Rich, Koenig, &amp; Lloyd, 1983)</ref>. This binding agent diffuses into the matrix during the curing process, leading to a gradient in resin concentration, which in turn may lead to gradients in physical properties within the so-called "interphase zone". Another well known and technologically important example of materials containing such interphase zones is concrete, in which the local porosity in the cement paste increases in the vicinity of the aggregate or sand inclusions, leading to a local variation of all properties that depend on porosity, such as the elastic moduli and the transport properties <ref type="bibr" target="#b6">(Crumbie, 1994;</ref><ref type="bibr" target="#b15">Lutz, Monteiro, &amp; Zimmerman, 1997)</ref>.</p><p>In a seminal paper on the effective properties of materials that possess spatially-varying local properties, <ref type="bibr">Kanaun and Kudryavtseva (1986) used</ref> Green's functions to analyze the stresses and displacements in a spherically-layered inclusion, located in a homogeneous matrix, and subjected to uniform far-field stress. This model of an inclusion composed of thin concentric layers, each having its own set of physical properties, has been widely used since then, for both the calculation of effective elastic (i.e., <ref type="bibr" target="#b10">Hervé, 2002)</ref> and conductive (i.e., <ref type="bibr" target="#b3">Caré &amp; Hervé, 2004)</ref> properties.</p><p>Another model that is often used to account for the effect of an interphase zone can be traced back to another early paper by <ref type="bibr" target="#b12">Kanaun (1984)</ref>, on so-called "singular inclusions". Developed originally in the context of elasticity, when translated into the context of conductivity problems, Kanaun's method considers, for example, a very thin interphase shell that has a very high conductivity. In the limit in which the thickness of the zone goes to zero, and the conductivity becomes infinite, so that their product approaches some constant value, the annular shell can be replaced by a "flux discontinuity" boundary condition at the interface between a homogeneous inclusion and a homogeneous matrix. The case in which the conductivity and the thickness of the interphase each go to zero, while their ratio approaches a finite value, leads to an interface condition in which the temperature undergoes a jump discontinuity. This type of model has been used in conductivity problems by, for example, <ref type="bibr" target="#b4">Cheng and Torquato (1997)</ref>, <ref type="bibr" target="#b2">Benveniste and Miloh (1999)</ref>, <ref type="bibr" target="#b9">Hashin (2001)</ref>, and Benveniste (2012), among others.</p><p>Numerous other methods have been proposed to analyze the problem of an inclusion surrounded by a thin interphase zone. <ref type="bibr" target="#b22">Sevostianov and Kachanov (2007)</ref>, for example, considered the addition of a thin layer around a spherical inclusion, and aimed to replace this "inner sphere plus thin shell" by an equivalent homogeneous inclusion. In the limit of an infinitesimally thin shell, this led to an ordinary differential equation for the evolution of the conductivity of the equivalent homogeneous inclusion. A similar method had been applied in the elasticity context by <ref type="bibr" target="#b25">Shen and Li (2005)</ref>.</p><p>The present paper will approach this problem along the lines developed by <ref type="bibr">Zimmerman (1996, 2005)</ref>. Instead of modeling the interphase zone as a region of finite thickness, having uniform or piecewise-uniform properties, the conductivity outside of the inclusion will be assumed to vary smoothly according to a power-law variation, approaching that of the "pure matrix" phase at far distances from the inclusion. The problem of a single such spherical inclusion subjected to an otherwise uniform external gradient can be solved exactly using the power series method of Frobenius. The effective conductivity of a material containing a dispersion of such spherical inclusions will be estimated by using Maxwell's effective medium method to approximately account for the finite concentration of inclusions.</p><p>The mathematical problem of calculating the "effective conductivity" has application to numerous transport-type processes that are governed by mathematically analogous sets of constitutive and balance equations. For example, according to the classical theory of heat conduction, the heat flux is proportional to the temperature gradient, through a constant of proportionality known as the thermal conductivity. Under steady-state conditions, the divergence of the heat flux must vanish. For a homogeneous material with a piecewise-uniform thermal conductivity, this leads to a Laplace equation for the temperature. For a material with a smoothly varying thermal conductivity, the conductivity appears inside the flux term, and cannot be factored out to yield a Laplace equation (see Section 2). Other physical processes that are governed by exactly analogous sets of equations include electrical conduction, ionic diffusion, and fluid flow of a slightly compressible fluid through a porous medium <ref type="table" target="#tab_0">(Table 1)</ref>.</p><p>For specificity, and since heat conduction lends itself to a simple physical interpretation and simple verbal discussion, the problem described above will be presented and solved within the context of thermal conductivity, although the results will be immediately applicable to other transport properties. The developed model will then be used to analyze some data from the literature, on the ionic diffusivity of concrete.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Single inclusion surrounded by a radially inhomogeneous interphase zone</head><p>The effective thermal conductivity problem can be analyzed by solving the basic problem of an inclusion that perturbs a uniform temperature gradient of magnitude G in an otherwise homogeneous body. A spherical coordinate system (r, θ , φ) is used, with its origin at the center of the inclusion, and the z-axis aligned with the far-field temperature gradient. The thermal conductivity is assumed to be a function of the radial co-ordinate, r. In the steady state, this problem is governed by (see <ref type="table" target="#tab_0">Table 1</ref>)</p><formula xml:id="formula_0">∇ • [k(r)∇T (r, θ , φ)] = 0.</formula><p>(1) Using the expression for the gradient operator in spherical co-ordinates <ref type="bibr" target="#b0">(Arfken &amp; Weber, 2012)</ref> </p><formula xml:id="formula_1">, Eq. (1) takes the form 1 r 2 ∂ ∂r r 2 k(r) ∂T ∂r + k(r) r 2 sin θ ∂ ∂θ sin θ ∂T ∂θ + k(r) r 2 sin 2 θ ∂ 2 T ∂φ 2 = 0.<label>(2)</label></formula><formula xml:id="formula_2">∇ • q = 0 * μ = fluid viscosity.</formula><p>The far-field boundary conditions for the temperature are</p><formula xml:id="formula_3">as r → ∞, T ≈ T o + Gz = T o + Gr cos θ ,<label>(3)</label></formula><p>where θ is the angle of inclination from the z-axis ( <ref type="figure" target="#fig_0">Fig. 1</ref>).</p><p>Since the far-field temperature varies as cos θ , with the variable term approaching Gr cos θ as r → ∞, the full temperature field can be assumed to be of the form T (r, θ , φ) = T o + f (r) cos θ . Insertion of this expression into Eq. (2) yields the following differential equation for f (r):</p><formula xml:id="formula_4">k(r) d 2 f dr 2 + 2 r df dr − 2 r 2 f + k (r) df dr = 0.<label>(4)</label></formula><p>Boundary condition (3) implies that f (r) → Gr as r → ∞.</p><p>The thermal conductivity of the matrix is assumed to vary smoothly and monotonically with radius, and approach that of the "pure matrix" component as r → ∞. This assumption implicitly requires that the interphase zones should be sufficiently localized so that the interphase zones of neighboring inclusions do not overlap. For most materials containing interphase zones, this is not a practical limitation. One simple but versatile function for the radial dependence of the conductivity outside of the inclusion is a constant plus a power law, as was used by <ref type="bibr" target="#b26">Theocaris (1992)</ref> and <ref type="bibr" target="#b16">Lutz and Zimmerman (1996)</ref> to model variations in local elastic moduli:</p><formula xml:id="formula_5">k(r) = k m + (k i f − k m )(r/a) −β , (5)</formula><p>where a is the radius of the inclusion, subscript m refers to the "pure" matrix, and subscript if refers to the interface with the inclusion <ref type="figure" target="#fig_1">(Fig. 2)</ref>. The exponent β controls the thickness δ of the interphase zone. If the interphase zone is defined such that the conductivity perturbation at r = a + δ, as given by the power law term in Eq. <ref type="formula">5</ref>, is 10% as large as it is at r = a, it can be shown that δ = 2.3a/β, which is to say, β = 2.3(a/δ) <ref type="bibr" target="#b15">(Lutz et al., 1997)</ref>.</p><p>In order for the resulting differential equation for f (r) to be amenable to analytical treatment, β must be an integer. Theocaris (1992) fit power-law-type curves to the elastic moduli in an interphase zone in a set of E-glass fiber/epoxy resin composites, and found values of β on the order of 100. <ref type="bibr" target="#b15">Lutz et al. (1997)</ref> found that values of β on the order of 20 were needed to fit the porosity gradient in the interfacial transition zone of concrete, based on data from <ref type="bibr" target="#b6">Crumbie (1994)</ref>. Hence, restricting β to take on only integral values will not pose any practical limitation. As all conductive properties are closely related to the porosity, a porosity profile that can be fit by an equation of the form (5) will give rise to a conductivity profile of roughly the same form. Specifically, if one uses any effective medium theory to express the variation of, say, the thermal conductivity with porosity, and linearizes the resulting expression about the porosity of the pure matrix, a porosity profile of the form given by Eq. (5) will lead precisely to a conductivity profile having the same algebraic form. Substitution of the conductivity variation given by Eq. (5) into Eq. (4) yields the following ordinary differential equation in the region r &gt; a outside of the inclusion:</p><formula xml:id="formula_6">k m + (k i f − k m )a β r −β d 2 f dr 2 + 2 r df dr − 2 r 2 f − βa β (k i f − k m )r −(β+1) df dr = 0.<label>(6)</label></formula><p>Provided that β is a positive integer, this equation has a regular singular point at infinity, and consequently can be solved using a Frobenius series. This equation is similar to the one that governs the elasticity problem of an inclusion with a radially inhomogeneous interphase, under far-field hydrostatic loading <ref type="bibr" target="#b16">(Lutz &amp; Zimmerman, 1996)</ref>. Hence, the solution, which can be found through a tedious but standard procedure <ref type="bibr" target="#b5">(Coddington, 1961)</ref>, will be presented here without detailed derivation. The general solution has the form  where A 1 and A 2 are arbitrary constants, 0 and 3 are equal to 1, and the remaining non-zero n are obtained from the following recursion relationship:</p><formula xml:id="formula_7">f (r) = A 1 r ∞ n=0 nβ (a/r) nβ + A 2 r ∞ n=0 nβ+3 (a/r) nβ+3 ,<label>(7)</label></formula><formula xml:id="formula_8">n+β = − k i f − k m k m [n 2 + (β − 3)n − β] (n + β)(n + β − 3) n .<label>(8)</label></formula><p>Application of the ratio test shows that both of the series in Eq. <ref type="formula" target="#formula_7">7</ref>will converge for all r &gt; a if 0 &lt; k i f &lt; 2k m , i.e., if the conductivity at the interface is either less than that of the pure matrix, or if it is no more than twice as high as that of the pure matrix. For cases in which k i f &gt; 2k m , the resulting divergent series can be summed by applying an Euler transformation <ref type="bibr" target="#b11">(Hinch, 1991;</ref><ref type="bibr" target="#b14">Lutz &amp; Ferrari, 1993</ref>). An alternative approach that avoids the cumbersome Euler transformation, by reformulating the problem in terms of resistivity instead of conductivity, will be presented in Section 4.</p><p>The general solution inside the inclusion, which is assumed to be homogeneous, is readily found from Eq. (4) to be of the form</p><formula xml:id="formula_9">f (r) = B 1 r + B 2 r −2 . (9)</formula><p>Four boundary conditions are needed in order to determine the four constants that appear in Eqs. (7) and (9). In order for the temperature to be bounded at the center of the inclusion, B 2 must vanish. The boundary condition at infinity, which specifies that f (r) → Gr as r → ∞, implies that A 1 = G. Continuity of the temperature at the interface between the inclusion and matrix, where r = a, leads to the condition</p><formula xml:id="formula_10">G ∞ n=0 nβ + A 2 ∞ n=0 nβ+3 = B 1 . (10)</formula><p>Continuity of the component of the heat flux normal to the interface, which implies continuity of the product k(r) f (r), leads to the condition</p><formula xml:id="formula_11">k i f G ∞ n=0 (1 − nβ) nβ − k i f A 2 ∞ n=0 (2 + nβ) nβ+3 = k i B 1 ,<label>(11)</label></formula><p>where k i is the conductivity of the inclusion. Eqs. (10) and (11) can be solved to yield</p><formula xml:id="formula_12">A 2 = −G (k i − k i f ) ∞ n=0 nβ + k i f ∞ n=0 nβ nβ (k i − k i f ) ∞ n=0 nβ+3 + k i f ∞ n=0 (nβ + 3) nβ+3 ,<label>(12)</label></formula><p>with B 1 given by Eq. (10). This completes the solution to the single inclusion problem.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Calculation of the effective conductivity</head><p>Numerous methods have been proposed to derive the effective conductivity from the solution to the single-inclusion problem. It is not the intention of the current paper to review these methods, or to enter into the debate of which homogenization method is preferable. One classical and simple method that has recently received renewed attention, and which seems to be reasonably accurate, is Maxwell's method <ref type="bibr" target="#b19">(Maxwell, 1873;</ref><ref type="bibr" target="#b20">Mogilevskaya, Stolarski, &amp; Crouch, 2012;</ref><ref type="bibr" target="#b21">Sevostianov, 2014</ref>; Sevostianov, Levin, &amp; Radi, 2015; Zimmerman, 1996).</p><p>Maxwell's approach utilizes the leading term of the far-field temperature perturbation caused by the inclusion, and can be explained as follows. Imagine a spherical region of radius b, containing N randomly located identical inclusions, where in the present case each inclusion is surrounded by its own interphase zone. Each inclusion gives rise to a temperature perturbation in the far field, whose leading term is of the order r −2 . The total far-field perturbation due to all N inclusions is then assumed to simply be the sum of the perturbations due to each individual inclusion. Next, this entire spherical region of radius b is replaced with a homogeneous region having conductivity k eff , and the temperature perturbation due to this hypothetical inclusion is calculated. Equating the leading term of the temperature perturbation due to the "equivalent inclusion" to the leading term of the perturbation due to the collection of individual inclusions then provides an implicit equation for k eff . For materials containing homogeneous spherical inclusions, Maxwell's method leads to an expression for k eff that coincides with one of the Hashin-Shtrikman bounds, and with the predictions of Hashin's composite sphere assemblage <ref type="bibr" target="#b8">(Hashin, 1983)</ref>.</p><p>As each of the temperature perturbation terms varies as cos θ , Maxwell's method can be implemented by equating the f (r) terms. According to Eq. (7), since A 1 = G, the two leading terms in the far-field behavior of f for a single inclusion are f (r) = Gr + A 2 a 3 r −2 , with A 2 given by Eq. (12). Since the term Gr reflects the applied temperature gradient, the perturbation due to the inclusion is A 2 a 3 r −2 . If there are N inclusions within the spherical region of radius b, the total perturbation in f is given by A 2 Na 3 r −2 . The perturbation in f caused by a single inclusion of radius b, having conductivity k eff , is given by <ref type="bibr" target="#b18">(Markov, 2000)</ref>. Equating these two expressions, and noting that Na 3 /b 3 is the volume fraction of the inclusions, leads to</p><formula xml:id="formula_13">Gb 3 r −2 (k m − k e f f )/(2k m + k e f f )</formula><formula xml:id="formula_14">k e f f k m = 1 − (2A 2 /G)c 1 + (A 2 /G)c .<label>(13)</label></formula><p>The case in which there is no interphase zone can be recovered by setting k i f = k m in Eq. (12). Since Eq. <ref type="formula" target="#formula_8">8</ref>shows that the only non-zero n terms will be 0 = 3 = 1, Eq. <ref type="formula" target="#formula_12">12</ref> </p><formula xml:id="formula_15">= 1 + [2(k i − k m )/(k i + 2k m )]c 1 − [(k i − k m )/(k i + 2k m )]c .<label>(14)</label></formula><p>The above results can be written in a slightly simpler form by putting −A 2 /G = α, in which case Eqs. <ref type="formula" target="#formula_12">12</ref>and <ref type="formula" target="#formula_14">13</ref> </p><formula xml:id="formula_16">= 1 + 2αc 1 − αc ,<label>(15)</label></formula><formula xml:id="formula_17">α = (k i − k i f ) ∞ n=0 nβ + k i f ∞ n=0 nβ nβ (k i − k i f ) ∞ n=0 nβ+3 + k i f ∞ n=0 (nβ + 3) nβ+3 .<label>(16)</label></formula><p>In the important special case of a material containing non-conductive inclusions, Eq. (16) reduces to</p><formula xml:id="formula_18">α = ∞ n=0 (nβ − 1) nβ ∞ n=0 (nβ + 2) nβ+3 .<label>(17)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Alternative formulation for a highly conductive interphase zone</head><p>As mentioned above, the series that appear in Eq. (16) will diverge if the conductivity at the interface is more than twice as high as the conductivity of the pure matrix phase. Unfortunately, the case of a highly conductive interphase is precisely what one would expect for concrete, for example, where the excess porosity near the aggregate inclusions lead to an increased permeability, electrical conductivity, or ionic diffusivity <ref type="bibr" target="#b24">(Shane, Mason, Jennings, Garboczi, &amp; Bentz, 2000;</ref><ref type="bibr" target="#b27">Xie, Corr, Jin, Zhou, &amp; Shah, 2015)</ref>. Although these divergent series can be summed by applying an Euler transformation <ref type="bibr" target="#b11">(Hinch, 1991)</ref>, a solution containing only convergent series can be developed in these cases by formulating the problem in terms of resistivity rather than conductivity.</p><p>In terms of the resistivity ρ, where ρ = 1/k, the governing equation (4) for f takes the form ρ(r)</p><formula xml:id="formula_19">d 2 f dr 2 + 2 r df dr − 2 r 2 f − ρ (r) df dr = 0,<label>(18)</label></formula><p>which is identical to Eq. (4), except for the changed sign in front of the term involving the derivative of the transport property. The spatial variation in resistivity can now be represented by</p><formula xml:id="formula_20">ρ(r) = ρ m + (ρ i f − ρ m )(r/a) −β .<label>(19)</label></formula><p>Although this function is not precisely the inverse of Eq. (5) for the conductivity, it has the desired behavior at the interface with the inclusion, and at infinity, and again caused the interphase to be localized within a distance that is on the order of a/β from the inclusion.</p><p>The solution to Eq. (18), with Eq. (19) used for the resistivity variation, taking into account the far-field boundary condition and the continuity conditions at the interface, is</p><formula xml:id="formula_21">f (r) = Gr ∞ n=0 nβ (a/r) nβ + A 2 r ∞ n=0 nβ+3 (a/r) nβ+3 ,<label>(20)</label></formula><p>where 0 = 3 = 1, and the remaining non-zero coefficients are obtained from the following recursion relationship (compare with Eq. (8)):</p><formula xml:id="formula_22">n+β = − ρ i f − ρ m ρ m [n 2 − (β + 3)n + β] (n + β)(n + β − 3) n .<label>(21)</label></formula><p>With this new recursion relationship, A 2 is again found from Eq. <ref type="formula" target="#formula_12">12</ref>, and the effective conductivity is given by Eqs. <ref type="formula" target="#formula_16">15</ref>and <ref type="formula" target="#formula_17">16</ref>, with k if = 1/ρ if , etc. The temperature field inside the inclusion is</p><formula xml:id="formula_23">T = T o + B 1 r cos θ = T o + B 1 z,</formula><p>where B 1 is now found from Eqs. (10) and (21). The series appearing in Eq. <ref type="formula" target="#formula_21">20</ref>will converge, for all r &gt; a, provided that ρ if &lt; 2ρ m ; in particular, these series will converge whenever the interface is more conductive than the pure matrix.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Some numerical examples</head><p>The normalized effective conductivity k eff /k m , is a function of four dimensionless parameters: the ratio of inclusion to matrix conductivity, k i /k m ; the ratio of the conductivity at the interface to the conductivity of the pure matrix, k if /k m ; the exponent β that controls the interphase thickness; and the inclusion concentration, c. The large parameter space precludes an exhaustive presentation of results. A few numerical examples will now be presented, with a brief discussion of the trends to be expected for other parameter values. <ref type="figure" target="#fig_4">Fig. 3</ref> shows the normalized effective conductivity as a function of the inclusion concentration, for the case where the inclusions are five times more conductive than the pure matrix, for several values of the ratio k if /k m . The exponent is taken to be β = 10, which corresponds to an interphase zone whose thickness is about 1/8th of an inclusion diameter. The curve for k if /k m = 1 coincides with the Maxwell prediction for materials containing homogeneous inclusions, as well as with the Hashin-Shtrikman lower bound for a material having matrix conductivity k m and inclusion conductivity k i <ref type="bibr" target="#b8">(Hashin, 1983)</ref>. The effective conductivity increases as the interface conductivity increases, as would be expected. The deviations from the k if /k m = 1 case would be smaller for larger values of β (i.e., for more localized interphase zones), and larger for smaller values of β, although smaller values of β would correspond to unrealistically thick interphase zones. An important special case is that of a material containing non-conductive inclusions, as would be the case for the permeability, diffusivity, or electrical conductivity of concrete -although not the thermal conductivity, since the aggregate particles are thermally conductive. <ref type="figure">Fig. 4</ref> shows the normalized effective conductivity of a material containing non-conductive inclusions, for several values of the ratio k if /k m , again for the case β = 10. The interphase zone in concrete, known as the interfacial transition zone (ITZ), is more porous than the bulk cement paste, and so the electrical conductivity or ionic diffusivity of the interphase is expected to be higher than that of the pure matrix.</p><p>Two competing trends are evident in this graph, as the non-conductive inclusions tend to cause the effective macroscopic conductivity to decrease, whereas the enhanced conductivity of the ITZ tends to causes k eff to increase. The curve for k if /k m = 1 coincides with the classical Maxwell result for non-conductive inclusions in a homogeneous matrix, (1 − c)/(1 + 0.5c). As k if /k m increases, the effective conductivity curves shift upwards. When k if /k m equals 46.2, the enhanced conductivity of the ITZ precisely compensates for the reduced conductivity of the inclusion, creating a so-called "neutral inclusion" <ref type="bibr" target="#b2">(Benveniste &amp; Miloh, 1999)</ref> that leaves the far-field gradient, and hence the effective conductivity, unchanged. If k if /k m &gt; 46.2, the conductivity enhancement of the ITZ overshadows the effect of the non-conductive inclusions, causing k eff to exceed k m , and to increase as the volume fraction of inclusions increases. (This critical value of k if /k m = 46.2 varies with β, and increases as β increases, since larger β values correspond to thinner interphases, and a thin interphase would need to be more conductive to overshadow the effect of the non-conductive inclusion.) For very high values of k if /k m , the effect of the thin super-conducting ITZ renders the nonconductive inclusions irrelevant, and the normalized conductivity approaches the classical Maxwell result for super-conductive spherical inclusions in a homogeneous matrix, (1 + 2c)/(1 − c).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Application of model to data on diffusivity of concrete</head><p>Some data on conductive/diffusive properties of concrete will now be analyzed using the model developed above. <ref type="bibr" target="#b28">Yang and Su (2002)</ref> measured the chloride ion diffusivity in a suite of mortar specimens that contained differing volume concentrations of aggregate particles. Two or three samples were prepared and tested at each of five different volume fractions (c) of aggregate. In order to reduce scatter, the average diffusivity at each volume fraction will be used in the analysis, as was done by Yang et al. The diffusivity of the pure cement paste, estimated from the samples having c = 0, was 2.03 × 10 −12 m 2 /s. The diffusivity reduced to 1.34 × 10 −12 m 2 /s when the inclusion concentration reached 40%. The diffusivities are plotted in <ref type="figure" target="#fig_5">Fig. 5</ref>, as a function of inclusion (i.e., aggregate particle) concentration. The error bars indicate the roughly ±7% spread of the diffusivities that were measured at each concentration.</p><p>The mean inclusion radius, estimated from <ref type="table">Table 5</ref> of <ref type="bibr" target="#b28">Yang and Su (2002)</ref>, is about 0.6 mm, or 600 mm. Although actual inclusion particles are not perfectly spherical, it is known that when inclusions are non-conductive, small deviations from sphericity are of little consequence <ref type="bibr" target="#b29">(Zimmerman, 1989</ref>). An ITZ thickness of about 40 mm will be assumed, which is in the range of values commonly reported or estimated <ref type="bibr" target="#b24">(Shane et al., 2000)</ref>, which tend to lie between 15 and 50 mm. If Eq. (19) is used to model the diffusivity profile, rather than Eq. (5), the 1:15 ratio of interphase thickness to inclusion radius <ref type="figure">Fig. 4</ref>. Normalized conductivity a material containing non-conductive spherical inclusions, each surrounded by an interphase zone that is more conductive than the matrix. The interphase has a power-law parameter of β = 10.  All of the measured diffusivities lie above the lowest curve, labeled as D if /D m = 1, which corresponds to predictions of the Maxwell model for a material with no interphase zone, i.e., D eff /D m = (1 − c)/(1 + 0.5c). This curve also coincides with the Hashin-Shtrikman upper bound for a two-phase material consisting of pure cement paste and non-conductive inclusions. The fact that the measured diffusivities lie above the H-S upper bound immediately suggests the presence of a highly diffusive interphase zone. The value D if /D m = 3 provides a good fit to the data, indicating a local diffusivity at the interface with the inclusion that is about three times that of the bulk cement paste. <ref type="bibr" target="#b28">Yang and Su (2002)</ref> obtained an ITZ/bulk diffusivity ratio of 1.76, using an approximate "engineering" approach in which an extra term was added in parallel to the diffusivity, to reflect the effect of an ITZ that was modeled as a thin, locally homogeneous layer. Their value of D i f = 1.76D m therefore represents some sort of average diffusivity throughout the ITZ, and so is roughly consistent with the ratio of 3 obtained in the present analysis. But models such as those used by Yang et al. are not capable of accounting for the fact that the diffusivity varies locally within the interphase region, which implies, for example, that the diffusivity at the interface is much higher than the mean diffusivity of the ITZ.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Summary and conclusions</head><p>An analytical model was developed for the conductivity (diffusivity, permeability, etc.) of a material that contains a dispersion of spherical inclusions, each surrounded by an inhomogeneous interphase zone in which the conductivity varies radially according to a power law. The Frobenius series method was used to obtain an exact solution for the problem of a single such inclusion in an infinite matrix. Two versions of the solution were developed, one of which is more computationally convenient for interphase zones that are less conductive than the pure matrix, and vice versa. Maxwell's homogenization method was then used to estimate the effective macroscopic conductivity of the medium.</p><p>Some numerical examples were plotted to indicate the general trends predicted by the model. As the interface conductivity varies, the predicted effective conductivity varies between the classical Maxwell prediction for a two-phase material containing non-conductive inclusions, and the prediction for a material containing superconductive inclusions.</p><p>The developed model was then used to analyze some data from the literature on the ionic diffusivity of concrete. The measured diffusivities lied above the Hashin-Shtrikman upper bound, implying the existence of a conductive interphase zone. In concrete, local properties vary continuously through the interphase zone, and so the present model should be more realistic than a model in which the interphase is treated as a thin, locally homogeneous layer. Use of the analytical model in an inverse mode permits the estimation of the local conductivity variation within the interphase, and in particular at the interface with the inclusion.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Inclusion of radius a, surrounded by an interphase zone of "thickness" δ, subjected to a far-field temperature gradient of magnitude G, aligned along the z-axis.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Local variation of conductivity within and around an inclusion of radius a. The "thickness" of the interphase zone is δ.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>then leads to A 2 /G = (k i − k m )/(k i + 2k m ), and Eq. (13) reduces to Maxwell'</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 3 .</head><label>3</label><figDesc>Normalized conductivity a material containing spherical inclusions that are five times more conductive than the pure matrix, each surrounded by an interphase zone. The interphase has a power-law parameter of β = 10. The different curves correspond to different values of the local conductivity at the interface.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5 .</head><label>5</label><figDesc>Chloride ion diffusivity of a set of mortar specimens containing various volume concentrations of non-diffusive aggregate particles. Data are from<ref type="bibr" target="#b28">Yang and Su (2002)</ref>, with each data point representing the average of the diffusivities measured for three specimens having that same concentration. The interphase has a power-law parameter of β = 10. The model predictions are made from Eqs.(14)-(16),(20), using different values of the diffusivity at the interface between the mortar and the inclusions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head></head><label></label><figDesc>is roughly consistent with a power-law exponent of β = 10. The normalized diffusivity curves predicted from Eqs.(15), (16), (21), for five different values of the parameter D if /D m , are shown in Fig. 5.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Transport processes governed by analogous constitutive and conservation laws.</figDesc><table><row><cell>Process</cell><cell>Potential</cell><cell>Flux</cell><cell>Constitutive law</cell><cell>Constitutive parameter</cell><cell>Conservation law</cell></row><row><cell>Heat conduction</cell><cell>Temperature, T</cell><cell>Heat flux, q</cell><cell>Fourier's law, q = −k∇T</cell><cell>Thermal conductivity, k</cell><cell>∇ • q = 0</cell></row><row><cell>Electrical conduction</cell><cell>Electric field, E</cell><cell>Electrical current, i</cell><cell>Ohm's law, i = −σ ∇E</cell><cell>Electrical conductivity, σ</cell><cell>∇ • i = 0</cell></row><row><cell>Solute diffusion</cell><cell>Concentration, c</cell><cell>Solute mass flux, q</cell><cell>Fick's law, q = −D∇c</cell><cell>Diffusivity, D</cell><cell>∇ • q = 0</cell></row><row><cell>Fluid flow in porous media</cell><cell>Pressure, p</cell><cell>Volumetric flowrate, q</cell><cell>Darcy's law, q = −(k/μ</cell><cell></cell><cell></cell></row></table><note>* )∇p Permeability, k</note></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">B</forename><surname>Arfken</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">J</forename><surname>Weber</surname></persName>
+		</author>
+		<title level="m">Mathematical methods for physicists</title>
+		<meeting><address><addrLine>San Diego</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>7th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Two models of three-dimensional thin interphases with variable conductivity and their fulfillment of the reciprocal theorem</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Benveniste</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="1740" to="1752" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Neutral inhomogeneities in conduction phenomena</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Benveniste</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Miloh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="762" to="781" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Application of a n-phase model to the diffusion coefficient of chloride in mortar</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Caré</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Hervé</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Transport in Porous Media</title>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="119" to="135" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Effective conductivity of dispersions of spheres with a superconducting interface</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Torquato</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society of London Series A</title>
+		<imprint>
+			<biblScope unit="volume">453</biblScope>
+			<biblScope unit="page" from="1331" to="1344" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">An introduction to ordinary differential equations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Coddington</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1961" />
+			<publisher>Prentice-Hall</publisher>
+			<pubPlace>Englewood Cliffs, N.J.</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Characterisation of the microstructure of concrete</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">K</forename><surname>Crumbie</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994" />
+			<pubPlace>London, UK: Imperial College</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Ph.D. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Adhesion of graphite fibers to epoxy matrices: II. The effect of fiber finish</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">T</forename><surname>Drzal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Rich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Koenig</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">F</forename><surname>Lloyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Adhesion</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="133" to="152" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Analysis of composite materials: A survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Hashin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="481" to="505" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Thin interphase/imperfect interface in conduction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Hashin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="2261" to="2267" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Thermal and thermoelastic behaviour of multiply coated inclusion-reinforced composites</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Hervé</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="1041" to="1058" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Perturbation methods</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Hinch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">On singular models of a thin inclusion in a homogeneous elastic medium</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Kanaun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Prikl. Matem. Mekhan</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="50" to="58" />
+			<date type="published" when="1984" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Spherically layered inclusions in a homogeneous elastic medium</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Kanaun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">T</forename><surname>Kudryavtseva</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Prikl. Matem. Mekhan</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="633" to="643" />
+			<date type="published" when="1986" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Compression of a sphere with radially varying elastic moduli</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Lutz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ferrari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Composites Engineering</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="873" to="884" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Inhomogeneous interfacial transition zone model for the bulk modulus of mortar</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Lutz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J M</forename><surname>Monteiro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cement and Concrete Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1113" to="1122" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Effect of the interphase zone on the bulk modulus of a particulate composite</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Lutz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="855" to="861" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Effect of an inhomogeneous interphase zone on the bulk modulus and conductivity of a particulate composite</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Lutz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="429" to="437" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Elementary micromechanics of heterogeneous media</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">Z</forename><surname>Markov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Heterogeneous media: Micromechanics, modeling, methods and simulations</title>
+		<editor>K. Markov, &amp; L. Preziosi</editor>
+		<meeting><address><addrLine>Boston</addrLine></address></meeting>
+		<imprint>
+			<publisher>Birkhauser</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="1" to="162" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">A treatise on electricity and magnetism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Maxwell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1873" />
+			<publisher>Clarendon Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">On Maxwell&apos;s concept of equivalent inhomogeneity: When do the interactions matter</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">G</forename><surname>Mogilevskaya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">K</forename><surname>Stolarski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Crouch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="391" to="417" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">On the shape of effective inclusion in the Maxwell homogenization scheme for anisotropic elastic composites</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sevostianov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanics of Materials</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="page" from="45" to="59" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Effect of interphase layers on the overall elastic and conductive properties of matrix composites: Applications to nanosize inclusion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sevostianov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kachanov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="1304" to="1315" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Effective properties of linear viscoelastic microcracked materials: Application of Maxwell homogenization scheme</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sevostianov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Levin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Radi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanics of Materials</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="28" to="43" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Effect of the interfacial transition zone on the conductivity of Portland cement mortars</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Shane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">O</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">M</forename><surname>Jennings</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Garboczi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">P</forename><surname>Bentz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Ceramic Society</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="1137" to="1144" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Homogenization of a fibre/sphere with an inhomogeneous interphase for the effective elastic moduli of composites</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society of London Series A</title>
+		<imprint>
+			<biblScope unit="volume">461</biblScope>
+			<biblScope unit="page" from="1475" to="1504" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The elastic moduli of the mesophase as defined by diffusion processes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Theocaris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Reinforced Plastics and Composites</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="537" to="551" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Experimental study of the interfacial transition zone (ITZ) of model rock-filled concrete (RFC). Cement and Concrete Composites</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">T</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Corr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">P</forename><surname>Shah</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="223" to="231" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Approximate migration coefficient of interfacial transition zone and the effect of aggregate content on the migration coefficient of mortar</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">K</forename><surname>Su</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cement and Concrete Research</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="1559" to="1565" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Thermal conductivity of fluid-saturated rocks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Petroleum Science and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="219" to="227" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Effective conductivity of a two-dimensional medium containing elliptical inclusions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Zimmerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society of London Series A</title>
+		<imprint>
+			<biblScope unit="volume">452</biblScope>
+			<biblScope unit="page" from="1713" to="1727" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

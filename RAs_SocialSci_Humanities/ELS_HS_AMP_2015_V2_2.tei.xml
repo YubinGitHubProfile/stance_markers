@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A critical evaluation of two approaches to defining perceptual salience</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2015-07-10">10 July 2015</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Bethany</forename><surname>Macleod</surname></persName>
+							<email>beth_macleod@carleton.ca.</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Linguistics and Language Studies</orgName>
+								<orgName type="institution">Carleton University</orgName>
+								<address>
+									<addrLine>236 Paterson Hall, 1125 Colonel By Drive</addrLine>
+									<postCode>K1S 5B6</postCode>
+									<settlement>Ottawa</settlement>
+									<region>Ontario</region>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A critical evaluation of two approaches to defining perceptual salience</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2015-07-10">10 July 2015</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.amper.2015.07.001</idno>
+					<note type="submission">Received 22 November 2014 Received in revised form 15 June 2015 Accepted 8 July 2015</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-01-11T17:38+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Phonetics Phonology Sociolinguistics Laboratory phonology Perceptual salience Phonetic accommodation</keywords>
+			</textClass>
+			<abstract>
+				<p>The notion of perceptual salience is frequently invoked as an explanatory factor in discussions of various linguistic phenomena, but the way salience is defined varies between studies. This paper provides a critical evaluation of two approaches to operationalizing perceptual salience that have been applied to studies of phonetic accommodation: the criteria-list approach and the experimental approach. The purpose is to provide a starting point for researchers interested in exploring the role of perceptual salience in linguistic patterns, such as phonetic accommodation. In addition, the paper aims to consider the nature of the information captured by the different approaches, to explore how these approaches might be best used, and to examine how they reflect changes in theorizing on linguistic variables more generally.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction and background</head><p>What do we mean when we say that a linguistic variable is more salient than another? Most of the definitions of salience proposed by various authors include the notions of awareness or prominence. <ref type="bibr" target="#b23">Kerswill and Williams (2002)</ref> define salience as "the property of a linguistic item or feature that makes it in some way perceptually and cognitively prominent" (p. 81). For <ref type="bibr" target="#b44">Siegel (2010)</ref>, salience "refers to the characteristic of being easily noticeable, prominent or conspicuous" (p. 129). Similarly, <ref type="bibr" target="#b21">Hickey (2000)</ref> states that "salience is a reference to the degree to which speakers are aware of some linguistic feature" (p. 57). However, Hickey also notes that salience is "a phenomenon which is generally recognized by linguists but which is notoriously difficult to quantify" (p. 57). Relatedly, <ref type="bibr" target="#b47">Torbert (2004)</ref> suggests that "every sociolinguist knows what salience means and possesses some notion of which linguistic variables are highly salient, but such notions remain under-investigated and largely un-reflected upon" (p. 2). He also points out that "definitions and explorations of salience are few and far between" (p. 2).</p><p>Despite this difficulty in defining and quantifying it, salience likely plays a role in linguistic patterns such as the perception of dialect variation and the subsequent categorization of dialects, as suggested by <ref type="bibr" target="#b12">Clopper and Pisoni (2002)</ref>. Investigating how salience mediates dialect perception and categorization would further our understanding of production patterns in cross-dialectal interaction such as those that fall under the Change-by-Accommodation model of language change <ref type="bibr" target="#b37">(Niedzielski and Giles, 1996)</ref>. These patterns include short-term phonetic accommodation, the acquisition of a second dialect, and community-level changes such as dialect levelling or mixing. Phonetic accommodation is the adjustment of the phonetic properties of speech in response to an interlocutor or to a change in the ambient language or dialect. There is a growing body of research on this process (discussed in x5), which has found that it is affected by many different social, linguistic, and situational factors, of which salience might be one.</p><p>Deciding on the appropriate way to measure salience is the first step to determining its role in patterns like accommodation. The purpose of this paper is to provide a critical evaluation of two approaches to defining salience that have been applied to investigations of phonetic accommodation. The approaches are evaluated and compared in terms of 4 properties: ease of use, adaptability to social context, ability to capture individual variation in perception, and ability to represent salience as a gradient concept. The goal is to provide a starting point for researchers interested in exploring the role of perceptual salience in linguistic patterns, such as phonetic accommodation. In addition, the paper aims to consider the nature of the information captured by the different approaches and to explore how these approaches might best be used and how they reflect changes in theorizing on linguistic variables more generally.</p><p>The first approach to be reviewed is the criteria-list approach and the second the experimental approach. Under the criteria-list approach, a linguistic variable is said to be salient if it meets a list of criteria. Under the experimental approach, a linguistic variable is defined as salient to the extent that the presence of that variable in the speech signal contributes to accurate performance by listeners in a perceptual experiment. In many of the studies discussed below, listener participants are asked to categorize model speakers on the basis of some social characteristic (such as ethnicity), and the accuracy with which they do so is calculated. The remainder of the paper is structured as follows.</p><p>x2 discusses the criteria list approach and studies that have applied it. x3 does the same for the experimental approach. x4 evaluates the two approaches by considering the advantages and disadvantages of each.</p><p>x5 provides a discussion of the two approaches in terms of the type of information they capture, how they might be best applied to different types of studies, and how they might reflect two different conceptualizations of the linguistic variable. Lastly, x6 provides the conclusions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">The criteria-list approach to salience</head><p>The most frequently cited example of the criteria-list approach to defining salience comes from <ref type="bibr" target="#b49">Trudgill (1986)</ref>. In his discussion of accommodation between dialects, Trudgill notes that "in contact with speakers of other language varieties, speakers modify those features of their own varieties of which they are most aware" <ref type="bibr">(p. 11)</ref>. He also suggests that accommodation occurs "by the modification of those aspects of the segmental phonology that are salient in the accent to be accommodated to" (p. 20). Trudgill proposes four characteristics of linguistic variables that will cause speakers to be more aware of them than other variables. A linguistic variable will be salient if it: 1) is stigmatized; 2) is undergoing linguistic change; 3) has variants that are "phonetically radically different" <ref type="bibr">(Trudgill, 1986: 11)</ref>; or 4) is involved in the maintenance of a phonological contrast. <ref type="bibr" target="#b0">Auer et al. (1998)</ref> review criteria-list definitions of salience proposed in the sociolinguistic literature by other authors <ref type="bibr" target="#b22">(Hinskens, 1996</ref><ref type="bibr" target="#b42">, Schirmunski, 1930</ref>, including Trudgill's criteria, and make a distinction between objective and subjective criteria for salience. Objective criteria are based on a description of the structural properties of a dialect and do not necessarily reflect the speakers' actual perceptions. In contrast, subjective criteria for salience are taken to reflect how speakers perceive the differences between two dialects. The objective and subjective criteria for salience that <ref type="bibr" target="#b0">Auer et al. (1998)</ref> consider in their study are listed in <ref type="table">Table 1</ref>.</p><p>Here we see some overlap between Trudgill's criteria and those proposed by other authors. Within the objective criteria, articulatory distance could be the same as Trudgill's phonetically radically different criterion if the term 'phonetic' is meant to include articulatory and not just acoustic measures. It is expected that the greater the distance, the more salient the difference between the variants will be. Similarly, phonemicity (equivalent to Trudgill's involved in phonological contrast) will cause a variant to be salient. The more geographically widespread a given dialectal variant is geographically, the more salient it is predicted to be (areal distribution). The continuous versus dichotomous criterion suggests that linguistic variables that have only two variants with no intermediate forms are more salient than those that have a gradient realization. Variables involved in phonological rules that are lexicalized (i.e. only apply in particular lexical items) are predicted to be more salient than those that apply uniformly throughout the lexicon (lexicalization). Within the subjective criteria, the greater the perceptual distance between a dialect 1 (D1) and a dialect 2 (D2) variant, the greater the salience. A variant is predicted to be salient if it is used in code-switching (usage in code-alternation) or in writings by non-linguists (representation in lay dialect writing). Overlapping with Trudgill's stigmatization criterion, the stereotyping/mimicking criterion suggests that those variants that are included when imitating or joking about a dialect will be salient. Lastly, if the difference between a D1 and a D2 variant is likely to hinder comprehensibility, then the difference is said to be salient.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Studies that have applied the criteria-list approach</head><p>The idea in using the criteria-list approach for salience is that a researcher would consider a particular linguistic variable or contrast in the light of each of the criteria. If the criteria were met, then the variable would be considered salient. This section explores some of the work on dialect acquisition and contact that has applied some of these criteria to determine how salient individual linguistic variables are. <ref type="bibr" target="#b0">Auer et al. (1998)</ref> present a longitudinal study of dialect accommodation of 56 speakers of Upper Saxonian Vernacular (USV) German who moved to other dialect regions. The study considers the role of salience in the loss of USV features over a 2-year period in which the participants were interviewed 8 times. In the interviews, the researchers counted the instances of USV realizations of 12 variables that differed between USV and the new dialect (nine involved vowels and three involved consonants). Salience of the variables was defined by applying the criteria given in <ref type="table">Table 1</ref>.</p><p>Taking the application of all the criteria together, two variables (differences in realization of /ai/and /au/) between the dialects emerge as most salient. These differences are lexicalized, dichotomous, they involve a merger (i.e. they are merged in one dialect, but not the other), they are found in lay dialect writing, mimicking, and stereotypical knowledge, and are found in code-switching. In contrast, the criteria identify another two variables (differences in realization of /o:/ and /u:/) as least salient. These variables are continuous, non-lexicalized, do not involve a merger, are not used in mimicry or included in stereotypical knowledge, and are not usually present in lay dialect writing. The authors take the remaining variables to have an intermediate level of salience since they meet fewer criteria than the most salient differences, but more than the least salient differences.</p><p>Auer and colleagues note that if the subjective and objective criteria are considered separately, they make differing predictions about which variables are most or least salient. Furthermore, the results reveal that the subjective criteria are more effective than the objective in accounting for which variants of the D1 would be lost first, at least for the variables that had intermediate forms. The three least salient variables as determined by the subjective criteria were lost at rates of À7%, 17%, and 18%. The two variables with medium salience were lost at rates of 25% and 39%, while the three most salient variables were lost at rates of 26%, 30%, and 47%. This result shows alignment between degree of salience and degree of loss of the D1 variables. In contrast, when applying the objective criteria, the most salient variables were lost at rates of À3%, 20%, and 72%, while the least salient variables were lost at rates of 44%, 49%, and 65%, showing a lack of alignment between salience and <ref type="table">Table 1</ref> Objective and subjective criteria for salience <ref type="bibr" target="#b0">(Auer et al., 1998)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Objective criteria</head><p>Subjective criteria</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Articulatory distance Perceptual distance Areal distribution</head><p>Usage in code-alternation Phonemicity Representation in lay dialect writing Continuous vs. dichotomous Stereotyping/mimicking Lexicalization Comprehensibility degree of loss. <ref type="bibr" target="#b23">Kerswill and Williams (2002)</ref> review studies on salience and suggest that they can "detect an element of circularity" (p. 85), noting that previous authors claim to explain the patterning of a particular linguistic variable simply by labelling it as 'salient'. According to Kerswill and Williams, to avoid circularity, the definition of salience must make reference to extra-linguistic factors, such as social relations between the two dialect communities in contact, time scale, intensity of contact, and the involvement of adults or children in the contact situation. <ref type="bibr" target="#b23">Kerswill and Williams (2002)</ref> also examine how salience affects dialect levelling between northern and southern urban centres in England to determine the roles of extra-linguistic factors, such as those listed above, and language-internal factors, such as the involvement of a variable in a phonological contrast. Eight variables (4 involving vowels and 4 involving consonants) were investigated. The results show that one of the consonantal features (dropping of /h/) had a different pattern of spread from the southern to the northern areas as compared to the other consonantal variables. Kerswill and Williams conclude that Trudgill's criteria do not help to explain the exceptional patterning of /h/-dropping since they do not distinguish between the salience of /h/-dropping and the other consonantal variables. Similarly, the results for the vocalic variables suggest no relationship between Trudgill's criteria and the pattern of spread between the towns. <ref type="bibr">1</ref> Kerswill and Williams conclude that it is the extra-linguistic factors that actually motivate speakers to behave in a particular way, making these features essential to a functional definition of salience. However, in their description of their model of salience, it is not clear how these extra-linguistic factors should be incorporated.</p><p>The studies discussed above show how the criteria-list approach to defining salience can be applied to explorations of accommodation in situations of dialect contact.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">The experimental approach to salience</head><p>Studies that apply the experimental approach to defining salience incorporate methods from sociolinguistics, cognitive psychology, social psychology, and phonetics. The idea behind this approach is that the salience of a variable can be measured by the extent to which the presence of the variable contributes a particular social meaning to listeners. If the presence of a variable results in greater accuracy in identifying some social characteristic of a model speaker than another variable, then the first is more salient than the second within the particular context of identification. 2 For example, some studies test listeners' abilities to accurately identify speaker ethnicity based on the presence of particular linguistic variables <ref type="bibr" target="#b19">(Graff et al., 1986;</ref><ref type="bibr" target="#b46">Thomas and Reaser, 2004;</ref><ref type="bibr" target="#b47">Torbert, 2004</ref><ref type="bibr" target="#b48">Torbert, , 2010</ref>. Others look at identifying regional dialect or foreign accents <ref type="bibr" target="#b8">(Boughton, 2006;</ref><ref type="bibr" target="#b13">Clopper and Pisoni, 2004;</ref><ref type="bibr" target="#b18">Fridland et al., 2004;</ref><ref type="bibr" target="#b47">Torbert, 2004</ref><ref type="bibr" target="#b48">Torbert, , 2010</ref><ref type="bibr" target="#b31">MacLeod, 2012;</ref><ref type="bibr" target="#b49">van Bezooijen and Gooskens, 1999;</ref><ref type="bibr" target="#b50">Williams et al., 1999)</ref>. The following section provides examples of studies that have used the experimental approach to defining salience.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Studies that have applied the experimental approach</head><p>Among the first to use the experimental approach, <ref type="bibr" target="#b19">Graff et al. (1986)</ref> consider the relative salience of two variables, /aw/ and /o/, in the identification of ethnicity (Black or White speakers of American English). Each of the vowels had been found to be produced as more front by White speakers and further back by Black speakers. The authors synthesized the vowels to vary between front and back realizations and embedded them in two sentences produced by White speakers and Black speakers. Listener judges rated each utterance on a scale of 1e7, where 1 was "sounds very Black" and 7 was "sounds very White". The results show that the number of listeners who rated a fronted /aw/ variant as having a "more White" value was 3 times higher than the number of listeners who rated the same fronted /aw/ variants as "more Black", suggesting that the variants of /aw/ are salient for speakers in perceiving ethnicity. In contrast, front and back /o/ produced no significant difference in rating of Whiteness or Blackness, indicating that /aw/ is a more salient variable than /o/ for identifying perceived ethnicity. This result does not mean that the difference between front and back /aw/ is inherently more salient than the difference between front and back /o/, but rather that the difference is more socially salient as an identifier of ethnicity for these listeners. <ref type="bibr" target="#b18">Fridland et al. (2004)</ref> use a similar methodology to study which vowels are most salient in listeners' identification of regional dialect. Their study tests whether speakers of Southern US English from Memphis, Tennessee, use vowel formants as a cue to the regional dialect of a model speaker (as Southern or Northern) for 7 vowels:/i, i, e, 3, u, ʊ, ow/. The participants heard two repetitions of a word that included vowels that had been synthesized to reflect either Northern or Southern pronunciation and chose which of the two repetitions sounded more Southern. The participants' responses were calculated as %-correct (accuracy). The results show that the accuracy rate for /e/ was highest at 84% and the lowest was for /i / at 39% with the other vowels falling in between these two extremes. Fridland and colleagues conclude that /e/ is the most salient vowel for identifying regional dialect between Northern and Southern US English. The variation in accuracy rates suggests that salience of these variables is gradient, with the values falling along a continuum.</p><p>A similar finding was obtained in MacLeod (2012), which investigates the role of salience in short-term phonetic accommodation between speakers of Buenos Aires Spanish and Madrid Spanish. In that study, salience is defined as the extent to which the presence of one of 6 variables that differed between the dialects contributes to the correct identification of pre-recorded stimuli as having been produced by a speaker of Buenos Aires Spanish or Madrid Spanish. In each trial of a perception task, participants heard two productions of a particular stimulus that contained just one of 6 variables. Their task was to decide which of the two productions reflected the pronunciation norms of their native dialect.</p><p>The findings indicate that the dialectal differences vary in how perceptually salient they are with mean accuracy rates for the 6 differences ranging from 24% to 82%, suggesting that the variables are not simply salient or not salient, but rather are perceived along a continuum of salience. In addition, the study found evidence of interspeaker variation in how perceptually salient the 6 dialectal differences were. For example, one of the differences investigated was the realization of orthographic &lt;c&gt; (before &lt;e&gt; or &lt;i&gt;) and &lt;z&gt; as /q/ in Madrid Spanish and as /s/ in Buenos Aires Spanish. The 1 That the dialectal differences that showed unique patterns of spread were not isolated by the criteria list does not necessarily mean that the criteria did not accurately identify the most salient variables. It could be that salience does not affect accommodation, as assumed by both <ref type="bibr">Kerswill and Williams and Auer et al. (1998)</ref>, although that is the prediction made by Trudgill as well.</p><p>2 A reviewer points out that there are other factors that could affect accuracy rates in this type of experiment besides salience of the variables involved, such as whether or not a particular sound is native or non-native to the listener. In some cases these factors could be dealt with by controlling the characteristics of the listeners themselves (e.g. restricting the listeners to only native speakers or second language speakers with particular linguistic backgrounds and proficiencies).</p><p>mean accuracy rate for this difference was 82%, but the accuracy rates for the individual participants ranged from 36% to 100%. <ref type="bibr" target="#b47">Torbert (2004)</ref> explores the perception of the English of the Southern US with respect to two different social characteristics: ethnicity and regional dialect. Two variables are considered: the realization of /o/ as fronted or back (predicted to index ethnicity) and the realization of /ai/ with a weak glide or not (predicted to index regional dialect: Northern or Southern). Participants heard speech samples of one or two words containing /o/ or /ai/, with no other known markers of ethnicity or region, and made a judgment about the model speaker's ethnicity (White or African American) and region of origin on a scale of 1e5, where 1 was "least Southern" and 5 "most Southern". The results show that White model speakers who produced fronted /o/ were accurately identified by the participants 82% of the time and African American model speakers producing back /o/ were correctly identified 63.2% of the time. In addition, there was no difference in the participants' ratings of "Southerness" depending on the realization of /o/. Torbert concludes that the variants of /o/ are salient for identifying ethnicity but not for regional dialect.</p><p>The opposite result was found for the realization of /ai/. Stimuli that included weak gliding of /ai/ were rated with a mean "Southerness" rating that was significantly higher (i.e. more Southern) than the stimuli that contained /ai/ produced with a stronger glide. On the other hand, the realization of the glide as weak or not had no effect on the identification of the ethnicity of the model speakers. These findings suggest that weak gliding of /ai/ is salient for identification of region, but not ethnicity, the opposite of what was found for /o/.</p><p>Other studies consider the role of different linguistic levels in identifying regional dialects. For example, van Bezooijen and Gooskens (1999) present experiments using forced-choice perceptual categorization tasks to explore the extent to which listeners use prosodic and segmental information in identifying Dutch and United Kingdom (UK) English dialects. In the first experiment, 24 listeners attempted to identify the country, region, and province of origin of 15e20 s speech fragments recorded by 3 speakers of 4 different regional dialects of Dutch. The second experiment was similar except that 5 regional dialects of UK English were included. The speech fragments were presented in 3 conditions: integral, verbal, and prosodic. In the integral condition, the speech samples were natural and unmodified. In the verbal condition, the pitch contour of the speech fragments was monotonized so that only segmental information and non-pitch prosodic information were retained. In the prosodic condition, the speech samples were low pass filtered to remove all segmental information, with only prosodic content maintained. The percentage of correct (%-correct) identification by country, region, and province was calculated for each dialect.</p><p>For the Dutch experiment, the %-correct for the integral and verbal conditions were comparable (90% and 83%, respectively), but the %-correct for the prosodic condition was significantly lower than the other two (61%). The findings were similar for the English experiment, with 92% correct for the integral condition, 88% for the verbal condition, and 74% for the prosodic condition. These findings suggest that segmental information was more salient than the prosodic information in the identification of regional dialects of Dutch and English, although prosody still clearly played a role. In addition, the %-correct for the prosodic conditions were higher for the English dialects than for the Dutch, suggesting that prosody is more salient for the identification of English dialects than for Dutch.</p><p>The above studies rely on either ratings of a social characteristic (e.g. Very Southern, or Very Black) or the value of %-correct to quantify salience, but other studies take a different approach. For example, <ref type="bibr" target="#b13">Clopper and Pisoni (2004)</ref> explore the relationship between the acoustic properties of 6 dialects of American English and the pattern of dialect categorization of 2 sentences produced by 66 male talkers (11 from each region) by 18 listeners. During the perception experiment, the listeners heard each sentence one at a time and indicated which of 6 regions they thought the speaker was from by touching one of 6 partial maps on a touchscreen. Overall, the listeners were able to accurately categorize the dialect of the model talkers in about 30% of trials. The sentences used in the perception task were analyzed for 11 acoustic measurements intended to capture differences in regional pronunciation: four for consonants and seven for vowels. Clopper and Pisoni then conduct regression analyses with the acoustic measurements as independent variables and the proportion of correct categorizations as the dependent variable. The purpose of these analyses was to determine to what extent the listeners used each of the acoustic measurements in making their categorizations. The findings show that many of the acoustic measurements are significant for categorizing the dialects, but that which ones are significant depends on the dialect of the model speakers. For example, r-lessness is a significant predictor for the New England dialect, but not for the other dialects. Similarly, fricative voicing of /s/ is significant for the Southern talkers, but not for other dialects.</p><p>The findings of the studies discussed above show how the experimental approach to defining salience can be applied, generating a numerical value to measure salience within a particular context, such as the identification of ethnicity or regional dialect.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Evaluation</head><p>The following sections compare the criteria-list and experimental approaches to defining salience in terms of 4 aspects, highlighting the advantages and disadvantages of each approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Ease of use</head><p>One disadvantage of the criteria-list approach is that it is not always clear how to apply the criteria. For example, Trudgill's last criterion for salience is that a variable will be salient if it is involved in a phonological contrast. Although this criterion seems logical, it is not immediately clear how this criterion should be applied. One possibility is that if there is a phonological contrast in the D1 which is neutralized in the D2 or vice versa, then it is the difference in the status of the contrast as phonemic that matters. Another possibility is that it is the status of a pair of sounds as being in phonological contrast in only the D1 that matters, with any phonological contrast in the D1 being salient, such that, for example, the /ɑ/-/ɔ/ contrast in dialects of English that maintain this contrast would be salient for speakers of that dialect because it is contrastive for them. Or perhaps it is the status of a pair of sounds as being in contrast in the D2 that matters. For example, speakers of dialects of English that do not maintain the /ɑ/ e/ ɔ/ contrast might find the difference between these two sounds salient because they are contrastive in a different dialect. As noted by <ref type="bibr" target="#b0">Auer et al. (1998)</ref>, "what constitutes a phonological merger in the acquisition of variety A by speakers of variety B constitutes a phonological split in the opposite acquisition process" (p. 166). This suggests that whether a particular dialectal difference would meet Trudgill's phonological contrast criterion for salience would be different for speakers of the two dialects.</p><p>Another example of the difficulty of applying the criteria comes from Trudgill's third criterion for salience, which states that linguistic variables whose variants are "phonetically radically different" (p. 11) will be considered salient. Defining phonetic distance between two variants is a difficult task; phonetic distance (or similarity) may reflect articulatory, acoustic, or perceptual similarity <ref type="bibr" target="#b33">(Mielke, 2012)</ref>. In the literature, phonetic similarity has commonly been quantified using acoustic measurements, particularly for vowels, which have been shown to be reasonably well represented in a two-dimensional acoustic space using the first and second formants (F1eF2 space). While acoustic measurement allows us to quantify similarity to some degree, there are some difficulties with this method. The main problem is that differences between vowels within the F1eF2 space may stem from factors other than phonemic difference. Variation due to coarticulation, formality, and prosodic and phonological patterns along with interspeaker variability from physiological differences, all may cause a difference between two vowels in the F1eF2 space. In addition, the F1eF2 space does not capture other acoustic measures that may be exploited as cues to the perception of vowels by listeners, such as fundamental frequency, duration or formant movement <ref type="bibr" target="#b15">(Flege et al., 1997)</ref>.</p><p>To the extent that listeners use different cues beyond the first and second formants to perceive similarity between vowels, phonetic similarity as determined via F1 and F2 does not align with perceptual similarity, or how the listeners actually perceive the similarity between two vowels. For example, <ref type="bibr" target="#b11">Cebrian (2002)</ref> considered the perception of English vowels by Catalan speakers. According to his acoustic analysis of F1 and F2, the three pairs of English-Catalan vowels he considered (/i/-/i/, /i/-/e/, and / 3/-/ 3/) had comparable degrees of similarity. However, the results of a vowel identification and category goodness judgement task found that Catalan listeners perceived the /i/-/e/ pair to be less similar than the other two pairs. This finding highlights how a common measure of phonetic similarity in vowels (the F1eF2 space) does not always reflect the way listeners perceive similarity of vowel phones. <ref type="bibr" target="#b27">Levy and Strange (2008)</ref> also found evidence of a distinction between phonetic and perceptual similarity in their study of the discrimination of Parisian French vowel pairs by English speakers who differed in experience with French. Although spectrally the French vowel pair /i/-/y/ is much more similar than the pair /y/-/u/, the participants in Levy and Strange's study nevertheless were much more accurate at discriminating between the former pair than the latter, indicating that spectral similarity is not the only factor at play in determining how well listeners can distinguish between vowels. 3 These studies suggest that perceptual similarity cannot always be deduced solely from phonetic similarity or distance <ref type="bibr" target="#b15">(Flege et al., 1997)</ref>.</p><p>Applying the experimental approach may also be somewhat difficult, but in a different way from the problems with the criterialist approach discussed above. The main difficulty with the experimental approach comes from the careful preparation of the experimental materials and planning of the procedure. To be able to draw conclusions about the salience of dialectal differences, stimuli must be generated that accurately capture the nature of the different dialect variants without introducing other cues that listeners could potentially use in their judgments. Avoiding these undesired cues can be difficult because while a certain set of dialectal differences are actively included in the investigation, it is not always known what other potential variants could be indexing the same social characteristic. One way to help avoid the effects of unknown dialect variants is to include control trials that are similar in structure to the test trials but do not contain any of the dialectal differences of interest, as was done in MacLeod (2012). The response accuracy on the control trials can then be compared to chance levels. If the control trials were accurately responded to more often than chance would predict, this would indicate that the listeners were making use of an unknown but at least somewhat reliable aspect of the acoustic signal to make their judgments. If, on the other hand, the accuracy rates of the control trials did not exceed chance, then researchers could be fairly sure that any deviation from chance on the test trials was due to the effect of dialectal differences of interest, giving an accurate representation of the salience of those differences.</p><p>In order to be certain that the stimuli used in the experimental approach accurately capture the dialectal differences in question, acoustic or articulatory analysis would likely be necessary to confirm whether the stimuli actually reflected the expected difference between the dialects or not. This type of analysis would certainly be required for naturally produced stimuli, but not for synthetically generated stimuli in which the acoustic characteristics are the defining feature in how they are created.</p><p>There are also many factors to consider about the procedure of testing the perceptions of listeners. For example, how will the stimuli be presented? Should the listeners also see the written form of the stimuli? How will the listeners give their responses? How can bias in the responses be avoided? How can experimenter error be avoided? Using the experimental approach requires careful consideration of many issues that are not relevant in applying the criteria list approach. There are difficulties involved with both approaches, but these difficulties are of different types.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Social context</head><p>As noted by Campbell-Kibler (2010), social evaluation studies have found that listeners have a mental link between linguistic structures and social information. For example, as we saw earlier, <ref type="bibr" target="#b47">Torbert (2004)</ref> found that the realization of /o/ was used by listeners to identify the ethnicity, but not the region of origin, of the speaker, while the realization of /ai/ was a cue for listeners in identifying the region of origin of the speakers, but not their ethnicity. These results show that the same variables can have social salience in a particular context, but not another.</p><p>To what extent are the two approaches able to capture this context-specific salience? To evaluate the salience of a particular variable or dialectal difference via the criteria list, each criterion in the list is considered for that variable and it is determined whether each one suggests that the variable will be salient or not. Sticking with the example of the variation in /ai/ discussed in <ref type="bibr" target="#b47">Torbert (2004)</ref>, the criteria list would assign a level of salience to this variable, but that level of salience would not be explicitly related to region of origin or ethnicity or any other social characteristic. There is nothing inherent in the criteria list approach that allows the flexibility to determine the salience of variables in different contexts. For a list of criteria to be sensitive to social context it would need to be indexed for each context in which a variable is perceived. This would result in a stipulative list for each combination of dialect, variable, and social context, and would likely nullify the advantage of having a list to begin with.</p><p>Furthermore, the variation in salience that depends on social context is not limited to region of origin and ethnicity; phonetic variation can index a whole range of different social meanings. Studies have found that speakers use particular linguistic variables to signal social characteristics such as gender, regional dialect, ethnicity, intelligence, education level, and sexual orientation <ref type="bibr" target="#b25">(Klatt and Klatt, 1990;</ref><ref type="bibr" target="#b5">Bachorowski and Owren, 1999;</ref><ref type="bibr" target="#b45">Strand, 1999;</ref><ref type="bibr" target="#b47">Torbert, 2004</ref><ref type="bibr" target="#b48">Torbert, , 2010</ref><ref type="bibr" target="#b34">Munson and Babel, 2007;</ref><ref type="bibr" target="#b10">Campbell-Kibler, 2010</ref>).</p><p>3 A reviewer points out that the ongoing fronting of /u/ in many dialects of English may have also contributed to the participants' difficulty with the French /y/-/ u/ contrast. This fronting gives rise to a range of possible realizations of /u/, spanning from [u] to <ref type="bibr">[y]</ref>. When the English-speaking participants in Levy and Strange's study heard the phone [y], they might have categorized it as an /u/ since the front realization is also possible, not only in "fronting" contexts (i.e. between alveolar consonants, such as in dune, or after the palatal glide, such as in music), but also more generally (e.g. <ref type="bibr" target="#b30">Maclagan et al., 2009)</ref>.</p><p>As noted in x2.1, <ref type="bibr" target="#b23">Kerswill and Williams' (2002)</ref> approach to defining salience acknowledges that social factors must be incorporated into the definition for salience to be a predictive notion. They suggest that the definition should make reference to extralinguistic factors. Kerswill and Williams "see the social psychological property of 'salience', which may be attached to a feature by language users, as being linked to internal and extra-linguistic factors …" (p. 105). However, the authors do not make clear how this insight could be integrated into the criteria-list approach.</p><p>The experimental approach attempts to be sensitive to this context-specific salience by asking listeners to categorize model speaker voices on the basis of some social characteristic. However, many patterns of linguistic variation trigger more than one social evaluation. For example, the realization of eing as either <ref type="bibr">[in]</ref> or <ref type="bibr">[is]</ref> in North American English has been found to correlate with several different social evaluations, including region of origin, formality, education level, and urban versus rural <ref type="bibr" target="#b9">(Campbell-Kibler, 2005</ref>. <ref type="bibr" target="#b10">Campbell-Kibler (2010)</ref> found that North American English speakers who realized eing as [is] were rated as more intelligent or educated, more articulate, and more likely to be gay than those who produced eing as <ref type="bibr">[in]</ref>. <ref type="bibr" target="#b29">Mack (2010)</ref> found the same type of clustering of social evaluations in her study on the perception of sexual orientation and other social characteristics of Puerto Rican Spanish speakers. Her results showed that speakers who were rated as more gay sounding were also rated as shorter, and speakers who were rated as being taller were perceived as being older and from a higher social class. If patterns of linguistic variation potentially trigger many social evaluations of a model speaker, how can we be sure that the experimental approach to measuring salience is actually tapping the particular social evaluation we are interested in? Although in these studies the listeners are asked to make their evaluations based on a particular social characteristic, it is not clear that this would always be done independently of any related social evaluations.</p><p>Further complicating the picture is the fact that the direction of the effect can also be the opposite. Linguistic variation can trigger particular social evaluations, but listeners' perceptions of the social characteristics of speakers can also influence their perception of linguistic variation. For example, <ref type="bibr" target="#b36">Niedzielski (1999)</ref> tested the perception of Canadian Raising (the realization of the diphthongs /aj, aw/ as [ʌj, ʌw] before voiceless consonants) by Detroit English speakers to determine whether listeners use perceived social information, specifically region of origin, in their perception of phonological variables. She recorded a Detroit English speaker reading words containing various vowels, including the diphthong /aw/, which is actually realized as the raised variant [ʌw] before voiceless consonants in both Detroit English and Canadian English. Participants then listened to the words along with synthesized vowels reflecting the same formants as the recording, a more canonical [aw] or a "super-low" variant in which the [a] portion was lower than the canonical [a]. The participants' task was to select the synthesized vowel that most closely matched the vowel they heard in the word spoken by the Detroit English speaker. However, half of the participants marked their responses on a sheet that had the word 'Michigan' on the top and the other had a sheet labelled 'Canadian'. Niedzielski found that in the Canadian condition the participants reported that the vowel in the words containing /aw/ most closely matched the synthesized vowel with raised formants 60% of the time, whereas in the Detroit condition they only reported the raised variant 11% of the time. <ref type="bibr" target="#b20">Hay et al. (2006)</ref> replicated Niedzielski's study by asking speakers of New Zealand English to match synthesized tokens of /i/ to a vowel taken from a naturally-produced sentence./i/ differs between New Zealand and Australian English, with speakers of the former producing a centralized, lower variant and the latter producing a raised and fronted variant. The response sheets had either 'Australian' or 'New Zealand' at the top. The findings showed that the female participants were more likely to select higher and more front variants in the Australian condition, despite the model speaker being a New Zealander.</p><p>Since the experimental approach asks participants to evaluate model speakers on the basis of some social characteristic, it is possible to capture the necessary behaviour of the participants to measure perceptual salience within that particular social context. However, since the perception of linguistic variation can trigger more than one social evaluation and since perceived social categories can influence the perception of linguistic variation, very careful design of the experiment is paramount.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Individual variation in perception</head><p>As explained by <ref type="bibr" target="#b52">Yu (2013)</ref>, the factors that contribute to individual variation in the perception of linguistic variables fall into two broad categories: experiential and cognitive-biological.</p><p>Previous studies that have considered the role of experience in dialect categorization have found that greater experience leads to higher accuracy. For example, <ref type="bibr" target="#b6">Baker et al. (2009)</ref> found that as their experience with the Utah English dialect increased, participants were more able to perceive a difference between the accent of speakers from Utah and other Western states. <ref type="bibr" target="#b50">Williams et al. (1999)</ref> found a similar result in their study of young adults' recognition of 6 Welsh dialects of English. The participants listened to 30-s snippets of a story told by speakers from each region and determined which of 6 regions they believed the speaker to be from. In general, the participants performed poorly, with the dialect of the speakers only accurately identified between 15% and 44% of the time, depending on the region. However, when perceiving speakers of their own dialects, the listeners were able to correctly categorize the speakers about 45% of the time, suggesting a possible benefit of greater experience with the dialect. For Spanish, Schmidt (2013) investigated the perception of the allophonic variants of /s/-weakening in Colombian Spanish and found that speakers of the Andean variety (which does not weaken /s/) were more accurate at identifying [h] as a variant of /s/if they had more social contacts from the Caribbean region (which does weaken /s/to <ref type="bibr">[h]</ref>), suggesting that these listeners would have greater experience with the Caribbean variety.</p><p>On the cognitive-biological side, variation stems from differences in the physiological and cognitive aspects of the individual. For example, <ref type="bibr" target="#b16">Fox (1982)</ref> found significant individual variation in the perception of English vowels that related to differences in the individuals' own vowel spaces, where such differences are at least partly related to variation in the speakers' physiological characteristics. Focussing more on the cognitive area, Yu (2010) investigated individual variation in perceptual compensation stemming from differences in cognitive processing style measured via Autism-Quotient (AQ) score <ref type="bibr" target="#b7">(Baron-Cohen et al., 2001)</ref>. The results showed significant differences in compensation for the effect of following vocalic context and talker voice in an English /s/-/ʃ/ continuum that was related to AQ score and gender.</p><p>Below I will compare the ability of the two approaches to defining salience to represent these types of individual variation. Focussing first on the criteria-list approach, recall that <ref type="bibr" target="#b0">Auer et al. (1998)</ref> make a distinction between objective and subjective criteria for salience. The objective criteria are primarily things that linguists know and can describe about a dialect and its variables. An example of an objective criterion is areal distribution, which refers to how geographically widespread a particular dialectal variant is, with the prediction that the more widespread a variant is, the more salient it will be. 4 By definition, the objective criteria apply uniformly to all listeners and so cannot capture any potential individual variation in perception of dialect variables. However, the objective criteria may operate well in reflecting properties of this perception that are common to all listeners. Since the areal distribution of a particular linguistic variable is whatever it is regardless of whom you ask, it is logical to apply the effect of this factor in the same way to all listeners.</p><p>However, applying an objective criterion such as areal distribution equally to all listeners assumes that it is the linguists' knowledge of the pattern that matters in predicting language behaviour patterns such as accommodation. It is possible that some language users would have knowledge about the areal distribution of a dialectal variant, as studies in perceptual dialectology have suggested (e.g. <ref type="bibr" target="#b40">Preston, 1993)</ref>; but, it must certainly be true that other speakers would have little or no knowledge about where the geographic boundaries of linguistic variables would be. <ref type="bibr" target="#b0">Auer et al. (1998)</ref> comment on this as well, saying that areal distribution "is intended to be objective, although the question remains whether dialect speakers' knowledge of the areal distribution of certain variables is identical with the dialectologist's objective data" (p. 167). It is unlikely that linguists' and non-linguist language users' determinations of the areal distribution of a dialectal variant would perfectly align <ref type="bibr" target="#b41">(Preston, 1989;</ref><ref type="bibr" target="#b28">Long, 1999)</ref>. In addition, there would likely be discrepancies in how well the geographical distributions of particular dialectal variants were known among speakers. For example, those variants that are highly stereotyped might be better known than those that are not stereotyped.</p><p>The idea of the subjective criteria is that they reflect the perceptions of language users more directly and are not solely based on linguists' knowledge. Although the subjective criteria are intended to align more closely with language users' perceptions and, as such, should represent a type of knowledge that differs from what the objective criteria represent, they are still applied equally to all listeners. That is, the subjective criteria are still not applied at the individual listener level and therefore cannot capture the type of individual variation in perception discussed above.</p><p>Without exploring individual speakers' perceptions of linguistic variables there are two assumptions made that could be incorrect. First, we assume that our expectation of how speakers perceive a given variable is accurate. Second, we assume that all speakers perceive the variable in the same way. By definition, the objective criteria are expected to apply equally to all speakers, but the subjective criteria should not necessarily be expected to apply this way. Different groups, such as speakers of different dialects, may find certain variables salient whereas others would not <ref type="bibr" target="#b21">(Hickey, 2000)</ref>. In addition, interspeaker variation in perception that depends on characteristics of the individual also exists <ref type="bibr" target="#b16">(Fox, 1982</ref><ref type="bibr" target="#b17">(Fox, , 1983</ref><ref type="bibr" target="#b32">Makashay, 2003)</ref>, indicating that there may also be patterns that could not be predicted without testing the perceptions of the individual.</p><p>Moving now to the experimental approach, it is clear that some of the difficulties faced by the criteria-list approach are no longer a problem. Most specifically, the fact that in any experimental study it is individual speakers who take part means that the data collected can be analyzed at the level of the individual. This means that variation in perception that depends on individual characteristics can be captured at the very least and actively explored if relevant to the particular study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Salience as a gradient concept</head><p>Studies using the experimental approach assume that if the presence of a particular variable in a perceptual trial contributes more to the accurate performance of participants (such as in the categorization of the dialect of model speakers) than another variable, then we can say that the first is more salient than the second. Furthermore, we can quantify the salience of these two variables to a specific value through the percentage of trials involving the two variables that were correctly identified. As discussed in x3, several studies that have investigated sociophonetic perception of individual dialect variants have shown that the extent to which the presence of these variables in the speech signal contributes to the correct identification of the stimuli can vary. For example, <ref type="bibr" target="#b18">Fridland et al. (2004)</ref> found that 7 vowels varied in how salient they were for the identification of the regional dialect of speakers of Northern or Southern US English. The accuracy rates of the trials involving those 7 vowels (/i/, /i/, /e/, / 3/, /u/, /ʊ/, and /o/) were 39%, 49%, 51%, 54%, 62%, 67%, and 84%. These accuracy rates did not obviously fall into categories, such as low and high salience, but rather were distributed more or less evenly throughout the range from lowest to highest. This finding shows that the perceptual salience of variables can be gradient and that the experimental approach captures this gradient nature via the representation of salience by accuracy rate or other numerical measures.</p><p>How could this variation be represented in the criteria-list approach? If a variable meets more criteria than another variable, is the first more salient than the second, as assumed by <ref type="bibr" target="#b0">Auer et al. (1998)</ref>? Does meeting each criterion result in an equal increase in salience per criterion or are some criteria weighted more heavily in predicting salience than others? These questions are not addressed in the studies incorporating the criteria-list approach, but some of the criticism directed at Trudgill's criteria suggests that other researchers have interpreted Trudgill's conception of salience as dichotomous, not gradient. <ref type="bibr" target="#b22">Hinskens (1996)</ref> and <ref type="bibr" target="#b23">Kerswill and Williams (2002)</ref> consider the idea given in <ref type="bibr" target="#b49">Trudgill (1986)</ref> that more salient dialectal variants will be accommodated to, but that variants that have 'extra-strong salience' will not be accommodated to, and suggest that such a conception is circular since "salience is sometimes used as an explanation for accommodation … and sometimes to explain why accommodation does not take place" <ref type="bibr">(Hinskens, 1996: 11, emphasis in original)</ref>. If salience is binary e a variant is salient or it is not salient e then Kerswill and Williams' and Hinskens' arguments against Trudgill's notion of 'extra-strong salience' are valid, since a third level of salience is not possible in a binary relation; however, if salience is gradient, with linguistic variables varying in perceptual salience along a continuum, then the notion of extra-strong salience is not problematic. Trudgill does not explicitly state whether his conception of salience is binary or gradient, but if it is intended to be gradient, the formulation of salience via a list of criteria does not lend itself easily to reflecting the gradience.</p><p>Lastly, since the experimental approach generates numbers to capture salience, researchers can perform statistical analysis using repeated-measures ANOVA, mixed effects models, or other techniques to assess whether the difference in salience between individual variables is statistically significant or not. Determining the statistical significance of variation in salience under the criteria-list approach would not be as straightforward.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head><p>As mentioned earlier, <ref type="bibr" target="#b12">Clopper and Pisoni (2002)</ref> suggest that perceptual salience likely has an effect on various linguistic patterns, such as those involved in cross-dialectal interaction. These patterns include short-term phonetic accommodation, the acquisition of a second dialect by individual speakers, and communitylevel changes such as dialect levelling. As the body of research considering accommodation in the linguistic literature increases, we see that there are many social and linguistic factors, of which perceptual salience might be one, that can affect the phenomenon. Previous studies have found that phonetic accommodation is affected by a speaker's attitude towards a model speaker <ref type="bibr">(Abrego-Collier et al., 2011)</ref>, prototypicality of a model speaker's voice <ref type="bibr" target="#b4">(Babel et al., 2012)</ref>, attractiveness of a model speaker <ref type="bibr" target="#b3">(Babel, 2012)</ref>, implicit racial bias <ref type="bibr" target="#b1">(Babel, 2009)</ref>, regional dialect bias <ref type="bibr" target="#b2">(Babel, 2010)</ref>, gender <ref type="bibr" target="#b35">(Namy et al., 2002)</ref>, conversational role <ref type="bibr" target="#b39">(Pardo et al., 2010)</ref>, and closeness between speakers <ref type="bibr" target="#b38">(Pardo et al., 2012)</ref>. In addition, linguistic factors have been shown to affect phonetic accommodation such as the variability of the sounds involved <ref type="bibr" target="#b1">(Babel, 2009)</ref>, "language distance" between the speakers involved in conversation <ref type="bibr" target="#b24">(Kim et al., 2011)</ref>, and the need to maintain a phonological contrast <ref type="bibr" target="#b38">(Nielsen, 2011)</ref>.</p><p>A handful of studies have also considered what the role of perceptual salience might be in the process of phonetic accommodation. <ref type="bibr">Trudgill (1986: 11)</ref> defines salience via a list of criteria and predicts that the most salient variables will be the ones to exhibit the greatest convergence in a cross-dialectal interaction. This prediction found partial support in MacLeod <ref type="formula">2012</ref>, which explored the effect of perceptual salience on the accommodation of 6 differences between 2 dialects of Spanish. The main finding was that as perceptual salience of the differences increased, the magnitude of the changes made also increased, but that the direction of the effect (convergence or divergence) depended on the individual speaker. However, <ref type="bibr" target="#b2">Babel (2010)</ref> reports that it was the least salient variable that was imitated most by the experimental participants and the most salient differences showed less adjustment. In that study, Babel investigated the spontaneous imitation of an Australian English model speaker by 42 New Zealand English (NZE) participants. The participants first read a list of hVd words, then shadowed a recording of the Australian speaker saying the same words, and finally read the word list a second time. The stimuli included words from 7 different lexical sets, capturing monophthongs expected to differ between the dialects. The results showed that one vowel in particular, the DRESS vowel, was imitated to a much greater extent (as measured via acoustic analysis) than the other vowels. In Babel's study, the salience of the vowels was determined through reference to research by <ref type="bibr" target="#b20">Hay et al. (2006)</ref> and studies cited therein, which suggests that the DRESS vowel is noticed less than the KIT vowel, since the latter is explicitly commented on by speakers when discussing differences between the dialects and is included in mimicking and jokes. In this way, salience is defined through some of the subjective criteria discussed in x2, most notably representation in lay dialect writing and stereotyping/ mimicking.</p><p>That these studies come to different conclusions about the effect of salience on accommodation is likely partly due to the complex nature of salience and the phenomenon of accommodation itself, but also partly to the different ways that salience was defined in the studies. In any case, the results do seem to suggest that the perceptual salience of the differences between two dialects will have some effect on the pattern of phonetic accommodation. Since perceptual salience seems to affect accommodation, the method by which we define salience is important.</p><p>Although the purpose of this paper was to compare and evaluate the criteria-list approach in opposition to the experimental approach, it might be useful to break down the comparison into 3 parts: the objective criteria for salience, the subjective criteria, and the experimental approach. As discussed in x2, the objective criteria for salience are things that linguists know while the subjective criteria are things language users know. <ref type="bibr" target="#b0">Auer et al. (1998)</ref> found that the subjective criteria were more effective than the objective in predicting which elements of a German D1 would be lost first during acquisition of a D2. It is perhaps not surprising that the subjective criteria would perform better in explaining the pattern of dialect accommodation (assuming that salience does indeed affect dialect accommodation). Since language users (rather than linguists) are the ones accommodating to other speakers and making judgements in dialect perception tasks, it is reasonable to assume that the characteristics of a particular dialectal variant that make it salient to language users must be known to them on some level. That is, what makes a variant salient must be based on the subjective perceptions of language users as well as potentially conscious or subconscious knowledge of language patterns concerning a D2 variant. The objective criteria might be known to language users, but maybe not, or maybe not in the same way as to linguists. To the extent that the subjective criteria more closely reflect language users' actual perceptions of dialect variation than the objective criteria, perhaps going a step further and performing an experimental study to observe individuals' perceptions of dialect variation would further improve the power of the concept of salience in predicting and explaining patterns of accommodation. In this way we can see the approaches along a continuum of capturing language users' perceptions: the objective criteria occupy one extreme where language users' perceptions are not a part of the criteria, the experimental approach occupies the other end, with the potential to capture perception at the individual level, and the subjective criteria fall somewhere in the middle. If we consider the methods of defining salience in this way, split into objective criteria, subjective criteria, and the experimental approach, it seems that the nature of the information that they capture about salience is different. The objective criteria may not always reflect how groups of speakers perceive dialectal differences, and how a group perceives a difference may not always jibe with how individuals within that group perceive it, but at each level, the method of defining salience of that dialectal difference does capture something meaningful about the salience of that difference. Perhaps these approaches to defining salience are best applied to different types of studies investigating patterns of accommodation at distinct levels. For example, in studies looking at how salience affects short term patterns of phonetic accommodation, where a relatively small group of participants take part in a laboratory experiment, applying the experimental approach to capture those individuals' specific patterns is feasible and would allow an examination of inter-and intra-speaker variation in perception. In larger-scale studies looking at community-level patterns of accommodation, especially those that involve changes over time, testing individual speakers would not be feasible and, in fact, could introduce variability into the definition of salience that might not be relevant at that high level. Perhaps the more abstract, less individual-specific picture of salience provided by the criteria list approach would be more appropriate when investigating changes in language patterns in large groups, such as communities, regions or countries.</p><p>Stepping back from the perspective of accommodation to consider these approaches to defining salience more broadly, the nature of the two approaches might be relevant for discussions of the nature of the linguistic variable. Campbell-Kibler (2010) discusses third-wave variationist research (such as <ref type="bibr" target="#b14">Eckert, 2000)</ref> that characterizes the linguistic variable as an object that exists in the social world. She explains that this shift in perspective changes the linguistic variable from a heuristic device without real-world status to an empirical object. Under this new(er) approach, the linguistic variable is "linguistic structure tied to social content" (p. 426). Campbell-Kibler's study, discussed briefly in x4.2, explored the linguistic variable eing in North American English and found that its two variants, [is] and [in], operated as social markers independently from each other. She suggests that [is] indexes intelligence and education, while [in] indexes informality. These social meanings are related, but different. Campbell-Kibler explains how this finding is significant for researchers theorizing on the nature of the linguistic variable: "This independence is difficult or even impossible to detect through methods that contrast one variant against the other because the binary choice creates the illusion that the two variants are social flip sides of the same coin. When compared against a neutral alternative, however, we are able to see the two variants influencing different dimensions of social perception" (p. 435).</p><p>This distinction in perspective on the nature of the linguistic variable seems to mirror the difference between the two approaches to defining perceptual salience discussed in this paper. Many of the criteria, in both the objective and subjective lists, must be evaluated by comparing one variant against the other; in other words, they compel a binary choice. For example, determining whether a dialectal difference is "phonetically radically different" <ref type="bibr">(Trudgill, 1986: 11)</ref> requires comparing two variants. Similarly, the criteria of articulatory distance and perceptual distance certainly require a comparison of two variants in order to measure those distances. The criterion of continuous vs. dichotomous assumes that there are at least two variants of a linguistic variable: two in the case of a dichotomous variable, but potentially considerably more than two in a continuous variable. <ref type="bibr">Siegel (2010:120)</ref> indicates support for this approach of comparing two variants when he notes that awareness or salience likely results from noticing a contrast or difference in how a linguistic variable is realized between two dialects, rather than the inherent salience of a particular variant itself. However, Campbell-Kibler (2010) suggests that in fact it is the particular variant itself that might be relevant, with different variants potentially influencing different aspects of social perception. If, as under her conception, the variable is "linguistic structure tied to social content" (p. 426), and where that linguistic structure is not a cluster of two variants, but rather a single variant, then the nature of the perceptual salience of that linguistic structure might be operationalized as the extent to which the variant is tied to social meaning in the minds of language users. The experimental approach has the potential to quantify this extent via the percentage of trials in a perception task that are correctly responded to: the higher the percentage, the tighter the tie between a particular linguistic variant and particular social content. Since the nature of the social content could vary widely (including region of origin, gender, ethnicity, informality, education level, intelligence, etc.), in order to quantify the extent of the connection between a variant and social content, the method of quantifying would have to be sensitive to social context. This was discussed in x4.2 where it was indicated that the criteria list approach was likely not sensitive enough to capture different dimensions of social perception. Furthermore, if the salience of a variant is the extent to which the variant is tied to social content in the minds of speakers, then that extent could vary among speakers. In x4.3, the flexibility of the two approaches to salience were considered in terms of their capacity to reflect individual variation and it seemed that the experimental approach more readily captured variation at that level.</p><p>Perhaps the two approaches to defining salience reflect two perspectives on the nature of the linguistic variable and thus each may be more appropriate depending on which perspective a researcher is taking. If the linguistic variable is seen as a class of variants that differ from each other along a particular dimension (as in <ref type="bibr" target="#b26">Labov, 1966)</ref>, then determining the perceptual salience of that variable might be more readily represented by an approach that makes use of criteria that appeal to those differences between the variants. If the linguistic variable is seen, rather, as "linguistic structure tied to social content", where that structure need not be the more traditional definition of a class of variants, but rather could be a single variant, then evaluating the perceptual salience of that structure might be accomplished more directly by exploring individual speakers' perceptions of that variant as in the experimental approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusions</head><p>Studies on phonetic accommodation have found that the process is affected by many different factors, of which perceptual salience seems to be one. The conflicting findings of studies that have explored the effect of salience on phonetic accommodation might be partly explained by the use of differing methods of defining salience. The purpose of this paper was to provide a critical evaluation of two approaches to defining salience by explaining how they work, discussing studies that have applied them, and comparing the two approaches in terms of four aspects. The comparison found more disadvantages for the criteria list approach since it faces difficulties in capturing individual variation in perception, the social meaning of dialect variation, and the nature of salience as gradient. In x5, the two approaches were split apart into three: the objective criteria, the subjective criteria, and the experimental approach. It was suggested that the nature of the information that these approaches capture about salience might be different and that they might align better with different types of studies on accommodation. In particular, perhaps the criteria list approach would work better for larger studies in which the data come from historical linguistic patterns, while the experimental approach would be more appropriate for studies of individuals' patterns of short-term phonetic accommodation. Determining how well these different approaches align with studies aimed at different levels will be left to future work.</p><p>Finally, x5 also considered how the two approaches to defining salience might mirror two conceptualizations of the linguistic variable in the sociolinguistic literature. Since the criteria in the criteria list approach often appeal to differences between two variants of a linguistic variable, it might be that this approach would be better aligned with research that takes the view that the linguistic variable is a class of variants that are arranged along a continuum of a particular dimension. On the other hand, since the experimental approach allows the evaluation of the extent of the association of a particular variant with social meaning, research that takes the view of the linguistic variable as "linguistic structure tied to social content" might be better served by this approach.</p><p>In sum, this paper concludes that there are pros and cons to each of the two approaches to defining salience explored here, with each approach likely tapping into different kinds of information about the salience of a variable. Which approach a researcher should take will depend on the goals of the particular study and the perspective taken on the nature of the linguistic variable.</p></div>			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">B. MacLeod / Ampersand 2 (2015) 83e92</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4">A reviewer notes that even dialect variants that are spoken in a geographicallyrestricted area can become salient if they come to be stereotyped, such as variants of the New York City dialect of English. These variants are often considered highly salient and well known to many speakers of English, but they belong to a dialect that covers a relatively small geographical area. This indicates that the prediction that variants with a large areal distribution will be more salient may not always be correct, even if the evaluation of the distribution were straightforward.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>This research was supported by:SSHRC Doctoral Fellowship #752-2010-2115. SGS Research Travel Grant. Canada Research Chair in Linguistics and Aboriginal Studies (Keren Rice) Generous support of Yoonjung Kang.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Subjective and objective parameters determining &quot;salience&quot; in long-term dialect accommodation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Auer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Barden</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Grosskopf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Socioling</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="163" to="187" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Phonetic and Social Selectivity in Speech Accommodation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Babel</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+		<respStmt>
+			<orgName>University of California, Berkeley</orgName>
+		</respStmt>
+	</monogr>
+	<note>Unpublished doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Dialect divergence and convergence in New Zealand English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Babel</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Lang. Soc. 39</publisher>
+			<biblScope unit="page" from="437" to="456" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Evidence for phonetic and social selectivity in spontaneous phonetic imitation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Babel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phon</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="178" to="189" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Imitation of individual voices varying in attractiveness and prototypicality</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Babel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Mcguire</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Nicholls</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Walters</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Conf. Sources Individ. Linguist. Differ. University of Ottawa</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Acoustic correlates of talker sex and individual talker identity are present in a short vowel segment produced in running speech</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-A</forename><surname>Bachorowski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Owren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Acoust. Soc. Am</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1054" to="1063" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Dialect identification: the effects of region of origin and amount of experience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Eddington</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Nay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am. Speech</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="48" to="71" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The autism-spectrum quotient (AQ): evidence from Asperger Syndrome/highfunctioning Autism, males and females, scientists and mathematicians</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Baron-Cohen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Wheelwright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Skinner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Clubley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Autism Dev. Disord</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="17" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">When perception isn&apos;t reality: accent identification and perceptual dialectology in French</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Boughton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fr. Lang. Stud</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="277" to="304" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Listener Perceptions of Sociolinguistic Variables: the Case of (ING)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Campbell-Kibler</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+	<note>Unpublished doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The sociolinguistic variant as a carrier of social meaning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Campbell-Kibler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lang. Var. Change</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">03</biblScope>
+			<biblScope unit="page" from="423" to="441" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Phonetic Similarity, Syllabification and Phonotactic Constraints in the Acquisition of a Second Language Contrast</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cebrian</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+		</imprint>
+		<respStmt>
+			<orgName>University of Toronto</orgName>
+		</respStmt>
+	</monogr>
+	<note>Unpublished doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">) perception of dialect variation: some implications for current research and theory in speech perception 1 perception of dialect variation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">G</forename><surname>Clopper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">B</forename><surname>Pisoni</surname></persName>
+		</author>
+		<idno>No. 25</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Some Implic. Curr. Res</title>
+		<imprint>
+			<biblScope unit="issue">25</biblScope>
+			<biblScope unit="page">25</biblScope>
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Progress report</note>
+	<note>Research on spoken language processing</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Some acoustic cues for the perceptual categorization of American English regional dialects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">G</forename><surname>Clopper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">B</forename><surname>Pisoni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phon</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="111" to="140" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Linguistic Variation as Social Practice: the Linguistic Construction of Identity in Belten High</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Eckert</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>Blackwell Publishers</publisher>
+			<pubPlace>Malden, Mass</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Effects of experience on non-native speakers&apos; production and perception of English vowels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Flege</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O.-S</forename><surname>Bohn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Jang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phon</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="437" to="470" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Individual variation in the perception of vowels: implications for a perception-production link</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Fox</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phonetica</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="1982" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Perceptual structure of monophthongs and diphthongs in English</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Fox</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lang. Speech</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="21" to="60" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Do you hear what I hear? Experimental measurement of the perceptual salience of acoustically manipulated vowel variants by Southern speakers in Memphis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Fridland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bartlett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kreuz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TN. Lang. Var. Change</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Testing listeners&apos; reactions to phonological markers of ethnic identity: a new method for sociolinguistic research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Graff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Labov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">A</forename><surname>Harris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Curr Issues Linguist Theory. John Benjamins</title>
+		<editor>Sankoff, D.</editor>
+		<meeting><address><addrLine>Amsterdam/ Philadelphia</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1986" />
+			<biblScope unit="page" from="45" to="58" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">From fush to feesh: exemplar priming in speech perception</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Nolan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Drager</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Linguist. Rev</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="251" to="379" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Salience, stigma and standard</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Hickey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Dev Stand English 1300-1800</title>
+		<editor>Wright, L.</editor>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="57" to="72" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Dialect levelling in Limburg: structural and sociolinguistic aspects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Hinskens</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>Tübingen Niemeyer 3e24</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Salience&quot; as an explanatory factor in language change: evidence from dialect levelling in urban England</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Kerswill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Williams</surname></persName>
+		</author>
+		<editor>Jones, M.C., Esch, E.</editor>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Mouton de Gruyter</publisher>
+			<biblScope unit="page" from="81" to="110" />
+			<pubPlace>Berlin, New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Lang Chang Interplay Internal, Extern Extra-linguistic Factors</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Phonetic convergence in spontaneous conversations as a function of interlocutor language distance</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">S</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">R</forename><surname>Bradlow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lab. Phonol. 125e156</title>
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Analysis, synthesis, and perception of voice quality variations among female and male talkers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">H</forename><surname>Klatt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">C</forename><surname>Klatt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Acoust. Soc. Am</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="820" to="857" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The linguistic variable as a structural unit</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Labov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Washingt. Linguist. Rev</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="4" to="22" />
+			<date type="published" when="1966" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Perception of French vowels by American English adults with and without French language experience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">S</forename><surname>Levy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Strange</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phon</title>
+		<editor>Strange W</editor>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="141" to="157" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Geographical perceptions of Japanese dialect regions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Long</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Handb Percept Dialectol. Benjamins</title>
+		<editor>Preston, D.</editor>
+		<imprint>
+			<biblScope unit="page" from="177" to="198" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A sociophonetic analysis of perception of sexual orientation in Puerto Rican Spanish</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Mack</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lab. Phonol</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="41" to="63" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Maclagan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">I</forename><surname>Watson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Harlow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Keegan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lang. Var. Change</title>
+		<editor>M aori and New Zealand English</editor>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">02</biblScope>
+			<biblScope unit="page">175</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">The Effect of Perceptual Salience on Cross-dialectal Phonetic Convergence in Spanish</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Macleod</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+		<respStmt>
+			<orgName>University of Toronto</orgName>
+		</respStmt>
+	</monogr>
+	<note>Unpublished doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Individual Differences in Speech and Non-speech Perception of Frequency and Duration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Makashay</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+		</imprint>
+		<respStmt>
+			<orgName>The Ohio State University</orgName>
+		</respStmt>
+	</monogr>
+	<note>Unpublished doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Phonetically-based phonetic similarity metric</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Mielke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lingua</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="145" to="163" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Loose lips and silver tongues, or, projecting sexual orientation through speech</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Munson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Babel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lang. Linguist. Compass</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="416" to="449" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Gender differences in vocal accommodation: the role of perception</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">L</forename><surname>Namy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">C</forename><surname>Nygaard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Sauerteig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Lang. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="422" to="432" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The effect of social information on the perception of sociolinguistic variables</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Niedzielski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Lang. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="62" to="85" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Kontaktlinguistik e Ein Int Handb Zeitgen€ ossischer Forsch</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Niedzielski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Giles</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Goebl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Nelde</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Starý</surname></persName>
+		</author>
+		<editor>W€ olck, W.</editor>
+		<imprint>
+			<date type="published" when="1996" />
+			<publisher>Mouton de Gruyter</publisher>
+			<biblScope unit="page" from="332" to="342" />
+			<pubPlace>Berlin/New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Linguistic accommodation</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Specificity and abstractness of VOT imitation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Pardo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Gibbons</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Suppes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Krauss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phon</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note>J. Phon</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Conversational role influences speech imitation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Pardo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">C</forename><surname>Jay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Krauss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Atten. Percept. Psychophys</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2254" to="2264" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Lang Var North Am English Res Teach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Preston</surname></persName>
+		</author>
+		<editor>Glowka, W., Lance, D.M.</editor>
+		<imprint>
+			<date type="published" when="1993" />
+			<publisher>Modern Language Association of America</publisher>
+			<biblScope unit="page" from="105" to="118" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Folk dialect maps</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Perceptual Dialectology: Nonlinguists&apos; Views of Areal Linguistics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">R</forename><surname>Preston</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989" />
+			<publisher>Foris Publications</publisher>
+			<pubPlace>Dordrecht, Holland; Providence, R.I</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Sprachgeschichte und siedlungsmundarten</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Schirmunski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ger. Rom. Monatsschrift</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="171" to="88" />
+			<date type="published" when="1930" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Regional variation in the perception of sociophonetic variants of Spanish /s</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">B</forename><surname>Schmidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Sel Proc 6th Work Spanish Socioling</title>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="189" to="202" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Second Dialect Acquisition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Siegel</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge, New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Uncovering the role of gender stereotypes in speech perception</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Strand</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Lang. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="86" to="99" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Delimiting perceptual cues used for the ethnic labeling of African American and European American voices</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">R</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Reaser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Socioling</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="54" to="87" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Southern Vowels and the Social Construction of Salience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">C</forename><surname>Torbert</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note>Unpublished doctoral dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">The salience of two Southern vowel variants: fronted /o/ and weak-glided /ai</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">C</forename><surname>Torbert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">South J. Linguist</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="36" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Identification of language varieties: the contribution of different linguistic levels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Trudgill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Oxford</forename><surname>Blackwell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Van Bezooijen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Gooskens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Lang. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="48" />
+			<date type="published" when="1986" />
+		</imprint>
+	</monogr>
+	<note>Dialects in Contact</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Dialect recognition and speech community focusing in new and old towns in England</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Coupland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Handb Percept Dialectol. Benjamins</title>
+		<editor>Preston, D.</editor>
+		<imprint>
+			<biblScope unit="page" from="345" to="358" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Autistic&quot; traits: implications for models of sound change</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C L</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS One</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">11950</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note>Perceptual compensation is correlated with individuals</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Origins of Sound Change: Approaches to Phonologization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C L</forename><surname>Yu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

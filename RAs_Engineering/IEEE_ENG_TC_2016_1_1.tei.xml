@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">LNS with Co-Transformation Competes with Floating-Point</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Coleman</surname></persName>
+							<email>j.n.coleman@ncl.ac.uk</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">Che</forename><surname>Ismail</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electrical and Electronic Engineering</orgName>
+								<orgName type="institution">University of Newcastle upon Tyne</orgName>
+								<address>
+									<postCode>NE1 7RU</postCode>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">School of Microelectronic Engineering</orgName>
+								<orgName type="institution">Universiti Malaysia Perlis</orgName>
+								<address>
+									<postCode>02600</postCode>
+									<settlement>Arau</settlement>
+									<country key="MY">Malaysia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">LNS with Co-Transformation Competes with Floating-Point</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1109/TC.2015.2409059</idno>
+					<note type="submission">received 28 Apr. 2013; revised 14 Nov. 2014; accepted 23 Dec. 2014. Date of publication 15 Mar. 2015; date of current version 16 Dec. 2015.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>High-speed arithmetic, logarithmic number system</keywords>
+			</textClass>
+			<abstract>
+				<p>The logarithmic number system has been proposed as an alternative to floating-point arithmetic. Multiplication, division and square-root operations are accomplished with inexpensive fixed-point methods, but addition and subtraction are considerably more challenging. Recent work has demonstrated that these operations too can be done with similar speed and accuracy to their FP equivalents, but the necessary circuitry is complex. In particular, it is dominated by the need for large ROM tables for the storage and interpolation of non-linear functions. We describe a new co-transformation procedure that eliminates much of the ROM space and allows the easy synthesis of the remainder in logic, and we then evaluate several interpolation methods that might benefit from it. Synthesised 32-bit implementations are compared with floating-point units, and show substantial reductions in delay, with equivalent accuracy and area.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>T HERE are five parameters of interest in the design of a real arithmetic unit: wordlength (which governs range and precision), accuracy (i.e., error, both in quantisation and processing), speed, area, and power dissipation. The floating-point (FP) system is commonly implemented at wordlengths of 32, 64 and 80-bits, and has a maximum error of 0.5 l.s.b.. The other three parameters are open-ended and therefore subject to continuous attempts at improvement.</p><p>In 2008 we described a 32-bit microprocessor in which the real arithmetic subsystems had been replaced by ones based on the Logarithmic Number System (LNS) <ref type="bibr" target="#b0">[1]</ref>. We showed that its speed and accuracy exceeded that of a commercial FP device fabricated in a similar technology, and concluded that further improvements in LNS techniques would open a clear gap between these and FP implementations. Herein, we describe such a development.</p><p>In an LNS a real number is represented as its fixed-point logarithm. Range and precision of the represented numbers are very similar to floating-point values of the same wordlength. Multiplication, division and square root operations become fixed-point addition, subtraction and right shift respectively. Unlike their FP counterparts, these operations are fast and cheap (often effectively cost-free, as they share the existing fixed-point unit), and multiplication and division return exactly quantised results. Until recently, however, these inherent advantages were offset by the difficulty of implementing addition and subtraction, which involve the evaluation of the non-linear functions <ref type="bibr" target="#b0">(1)</ref> and <ref type="bibr" target="#b1">(2)</ref>. For i ¼ log 2 x, j ¼ log 2 y, r ¼ j À i, and assuming j i:</p><formula xml:id="formula_0">log 2 ð2 i þ 2 j Þ ¼ i þ log 2 ð1 þ 2 r Þ ¼ i þ F A ðrÞ;</formula><p>(1)</p><formula xml:id="formula_1">log 2 ð2 i À 2 j Þ ¼ i þ log 2 ð1 À 2 r Þ ¼ i þ F S ðrÞ:<label>(2)</label></formula><p>The functions F A ðrÞ and F S ðrÞ, generically referred to as F(r), are illustrated in <ref type="figure" target="#fig_1">Fig. 1</ref>. Up to about 20 bits these function values can be stored directly in a ROM. Being irrational, they are subject to a rounding error. Beyond this, memory requirements become prohibitive, and instead the function is stored at intervals with intervening values obtained by interpolation, which adds to the error. Following an operation the error in a result can be exponentiated into the linear domain and compared directly with the corresponding FP error, as described in Section 2 below. A desirable objective has always been to keep it within the worst-case FP error of 0.5 l.s.b., but this has not always been achieved. The problem is compounded by the singularity in the subtraction function, where the rapidly changing derivative as r ! 0 necessitates the use of successively smaller interpolation intervals that require a significant increase in storage, often to the point of impracticality. To some extent the issues of function evaluation in general, and dealing with the singularity in particular, have been addressed separately.</p><p>Interpolation increases the delay and also introduces its own error. A variety of interpolation techniques have been devised, some of which maintain better accuracy than FP arithmetic. Of these, some operate over the entire range of the subtraction curve and consequently have a large storage requirement. Others do not attempt to operate near the singularity, instead deploying some algebraic technique that transforms subtractions in this region into an equivalent calculation comprising only of easier operations. This itself introduces further delays, arithmetic elements and storage, and while the impact of these might be significantly less than that of an interpolation in this region, they still impose a burden that is vastly disproportionate to the small part of the range that these subtractions represent.</p><p>Section 2 will illustrate the problem and set the baseline for this work by reviewing a number of existing 32-bit interpolators, all of which achieve FP-equivalent accuracy. They vary in their treatment of r close to zero, but all manifest the basic difficulty in dealing with subtractions in this region.</p><p>The method we describe in this paper is sometimes referred to as co-transformation. It takes i and r, and converts them to new values where r is of larger magnitude and hence easier to interpolate. We will take an existing first-order co-transform and develop it into a second-order arrangement (cf. <ref type="bibr" target="#b9">[10]</ref> eqn (30)). By doing so, we will significantly reduce its storage to an extent that allows the remaining tables to be conveniently synthesised in logic. By removing explicit ROM elements from the design, together with their associated timing and layout considerations, a significant increase in speed is also achieved. The trade-off is that, whenever the new transform is used, the subsequent interpolation needs to be performed twice.</p><p>Sections 3 and 4 deal, respectively, with the algebra of the original and modified co-transforms, while Section 5 deals with the specific question of what proportion of subtractions will require its use. Section 6 revisits the interpolator schemes introduced in Section 2, and shows how each would be affected if used with the new co-transform. Two interpolators are then chosen for further development, one emphasising high speed and the other a small area. Section 7 will then develop these latter two schemes into full arithmetic units, which will be compared with a variety of FP units independently designed by other workers using a similar fabrication technology. Previous studies, e.g. <ref type="bibr" target="#b18">[19]</ref>, <ref type="bibr" target="#b19">[20]</ref>, have concluded that the choice between FP and LNS is best made individually for each application. We will show that, for general use, 32-bit LNS arithmetic offers significantly less delay than FP, roughly equal area, and equivalent accuracy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">EXISTING METHODS</head><p>In this section we will describe a number of existing LNS implementations that achieve accuracy equivalent to that of floating-point arithmetic. The relevant definitions of 'accuracy' were presented in <ref type="bibr" target="#b3">[4]</ref> and, for ease of reference, we open with a short summary of this material.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Measurement of Accuracy</head><p>In an FP system, assuming that both operands represent exact values, a resultÂ as returned by a practical implementation can be regarded as an approximation to the corresponding exact result A. Each result is thus in error by e ¼Â À A. This error may be quoted relative to the exact result itself and, with an f-bit mantissa, may be expressed in terms of the weight of the l.s.b.. In <ref type="bibr" target="#b3">[4]</ref> we denoted this quantity as the 'relative arithmetic error',</p><formula xml:id="formula_2">e rel arith ¼ 1 2 ÀfÂ À A A :<label>(3)</label></formula><p>In the equivalent LNS (i.e., with f-bit fractional part), it may be correspondingly assumed that the inputs to an operation are exact. Direct comparison can be made between the two number systems by exponentiating the LNS operands and result to their FP representation.</p><p>For f ¼ 23, FP arithmetic has worst-case errors e max rel arith % 0:5, e min rel arith % À0:5, and mean errors e av rel arith ¼ 0, jej av rel arith ¼ 0:1733.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">LNS Implementation Methods</head><p>Lewis A high-order polynomial interpolator was presented by Lewis <ref type="bibr" target="#b1">[2]</ref>, and was the first published 32-bit design that maintained FP-equivalent accuracy. Its coefficients were calculated dynamically which imposed a delay but, apart from the storage for the subtraction function in the range r ! À1, its memory was extremely compact. The interpolator tables were optimally partitioned, but implemented with an address generator that mapped each partition into a single physical device. The lookup table sizes, shown in <ref type="figure" target="#fig_0">Fig. 2</ref>, row 1, illustrate the problem associated with subtractions for which r is close to zero. The segment to the left represents the storage for the addition operation. The middle segment ('Sub (lo)') shows the storage for subtractions in the range r &lt; À1, and the rightmost segment ('Sub (hi)') that for r ! À1. The latter is 9.2 times that needed for the remainder of the subtraction curve, and accounts for 83 percent of the total storage in this design. A fabricated variant [3]  therefore relaxed the requirement for accurate interpolation in this region, as did other implementations e.g. <ref type="bibr" target="#b8">[9]</ref> which is based on multipartite tables.</p><p>ELM We described an alternative 32-bit interpolation technique <ref type="bibr" target="#b3">[4]</ref> that was based on a first-order Taylor approximation with a correction scheme that approximated the combined effect of the higher-order terms. The two curves were each partitioned at successive powers of 2. Each partition was divided into 256 intervals, n, of width D. The value of D doubled from one partition to the next, although for clarity in what follows we shall omit reference to this variation. For each interval was stored the value of the function F(ÀnD) at the start of the interval, together with the slope of the tangent, D(ÀnD), at that point. The error in an interpolation increased as the interpolation point d moved along the tangent away from the stored point, up to a maximum E(ÀnD) immediately before the next stored point. This maximum error was also stored for each interval. It was observed that the error at d, expressed as a proportion of the maximum error E for that interval, was approximately constant in all intervals on both curves. By calculating this proportion throughout one interval and storing its values on another table, P, the error in any particular interpolation could be determined by multiplying the interval-specific value E(n) by P(d). This was accumulated with dD(ÀnD) and F(ÀnD) to obtain the result. That is, F ðÀnD À dÞ % F ðÀnDÞ À dDðÀnDÞ þ EðnÞP ðdÞ:</p><p>This maintained FP-equivalent accuracy and offered a much shorter delay path than hitherto because inputs to the multipliers were delivered directly from the tables. These were implemented as physically separate devices for each partition, (and it is interesting to note that such a multi-table structure has been identified as a useful factor in power reduction <ref type="bibr" target="#b26">[26]</ref>). However, it did not attempt to operate near the singularity. Instead, a co-transform <ref type="bibr" target="#b6">[7]</ref> was applied in the case of any subtraction with r close to zero (&gt;À0.5), which it converted to an equivalent subtraction with r well away from zero. The co-transform is implemented with two tables F1 and F2, which together comprise a far smaller amount of storage than would the tables necessary for accurate interpolation. These two techniques were combined in the first 32-bit silicon with FP-equivalent accuracy, the European Logarithmic Microprocessor <ref type="bibr" target="#b0">[1]</ref>. <ref type="figure" target="#fig_3">Fig. 3</ref> shows an outline of the arrangement.</p><p>The storage sizes for this scheme are shown in row 2 of <ref type="figure" target="#fig_0">Fig. 2</ref>. The co-transform unit comprises F1 and F2 tables each of 2,048 words, 63,488 and 65,536 bits respectively, or 129,024 bits in total. It is now 1.3 times that of the remainder of the subtraction curve ('Sub (lo)'), and accounts for 36 percent of the total storage. A die plot of the ELM was shown in <ref type="bibr" target="#b21">[21]</ref>. There are two adder/subtractor units, known as 'multi-cycle ALUs'. The logic for the two units is merged, but their tables are mirrored on either side of the die. The F1 and F2 co-transform tables (labeled G on the plot), in exact agreement with the proportion of bits that they contain, comprise 36 percent of the total ROM area.</p><p>Chester An improvement to this interpolation technique was suggested by Chester <ref type="bibr" target="#b7">[8]</ref>, who proposed using a chord as the interpolating line. This reduced the size of the F and E tables at the expense of a larger P table, a significant decrease in the net total. Values of D were calculated dynamically, by looking up and subtracting two consecutive values of F, which was therefore held in an interleaved memory. Thus Calculation of the indices to the F tables imposed an additional delay, but the subtraction to obtain D passed a carry-save result to the following multiplier and elimination of the D table resulted in a further substantial memory saving. Implementation of the co-transform was unchanged from <ref type="bibr" target="#b3">[4]</ref>. The co-transform tables were now 4.1 times the size of the remaining subtraction table and accounted for 53 percent of total storage <ref type="figure" target="#fig_0">(Fig. 2, row 3)</ref>.</p><p>FloPoCo An alternative co-transform was proposed in <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref>, <ref type="bibr" target="#b12">[13]</ref>, <ref type="bibr" target="#b13">[14]</ref>. It converts r for a subtraction into an argument to the addition function which, having no singularity, is easier to interpolate. Hardware complexity is roughly equivalent to that of <ref type="bibr" target="#b6">[7]</ref>. The most recent version of this scheme <ref type="bibr" target="#b13">[14]</ref> is used in FloPoCo <ref type="bibr" target="#b14">[15]</ref>, a VHDL generator for FPGA arithmetic. Additions and direct subtractions are executed with an extension of multipartite table methods that allow the evaluation of polynomials of any degree <ref type="bibr" target="#b15">[16]</ref>, and have a maximum error of one FP-equivalent l.s.b.. The co-transformation is applied as r approaches zero (the actual threshold is configurable), but such subtractions may then have a larger error <ref type="bibr" target="#b16">[17]</ref>.</p><p>Minimax Fu <ref type="bibr" target="#b17">[18]</ref> examined the Minimax algorithm as a solution to the interpolation of F(r), and devised an FPGA-based arrangement. Equations (1) and (2) were rearranged to bring r onto the positive axis, and an adaptive technique selected the most optimal intervals for the application of a Minimax algorithm: for F A ðrÞ 416 intervals were required to cover the interpolated range. As in Lewis' design, an address generating circuit provided an address input to a single physical ROM, but to maintain time-efficiency the coefficients were then delivered directly to the multipliers. At 32 bits, a second-degree polynomial achieved FP-equivalent accuracy, and an economical datapath layout evaluated this by Horner's method:</p><formula xml:id="formula_3">F A ðrÞ ¼ c 2 x 2 þ c 1 x þ c 0 ¼ c 0 þ ðc 1 þ c 2 xÞx:</formula><p>A similar approach was used for F S ðrÞ, except in the region close to the singularity, in this case r &lt; 4. Using a technique first proposed by Paliouras and Stouraitis <ref type="bibr" target="#b4">[5]</ref>, these subtractions decomposed F S ðrÞ into two separate functions, both easier to interpolate than F S ðrÞ itself. However, they required an additional interpolator and tables for their evaluation. The scheme is particularly suitable for use on an FPGA where multiplication hardware is abundant, but it is difficult to extrapolate an estimate of its size or performance in a silicon implementation.</p><p>It will be evident from <ref type="figure" target="#fig_0">Fig. 2</ref> that the storage requirement for the subtraction curve as it approaches zero accounts for a vastly disproportionate amount of the storage overall. A figure of 83 percent when these values are interpolated (in <ref type="bibr" target="#b1">[2]</ref>) improves to 36 or 53 percent when the co-transform is applied ( <ref type="bibr" target="#b3">[4]</ref> and <ref type="bibr" target="#b7">[8]</ref>), but even this is far more than is commensurate with the proportion of operations lying in this region. In the following two sections we will review the co-transform algebra, and then describe a development of it that substantially reduces this storage. As a result, the entire ALU can now be synthesised in logic.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">FIRST-ORDER CO-TRANSFORMATION</head><p>The co-transformation was originally conceived for use with an interpolator based on a first-order Taylor approximation. We will describe its development within the context of that interpolator, but it should be noted that the resulting algebra is independent of this and pertains only to the region À1 &lt; r &lt; 0. It can therefore be applied in conjunction with any interpolating scheme that adequately handles the remainder of the curve. From hereon we shall be concerned only with the subtraction function so, for clarity, we abbreviate all references to F S ðrÞ to F(r).</p><p>For most of the range of r, F(r) can be obtained by interpolation, using tables of the function (F) and derivative (D). The tables are stored at intervals of D, which is a power of 2, and is the largest possible value that permits accurate interpolation. To accommodate the varying nonlinearity, the function is partitioned at varying powers of 2, with the value of D in each partition being half that of the partition to its left. As r ! 0 the subtraction function exhibits a singularity in which the rapidly changing derivative makes accurate interpolation difficult without continuing the partitioning through several negative powers of 2, so massively increasing the storage requirement.</p><p>The co-transformation simplifies the subtraction operation by obviating the interpolation in the region À1 &lt; r &lt; 0, eliminating table D and reducing substantially the size and complexity of table F, using instead two much smaller and regularly organised tables. At and below r ¼ À1, the F and D tables are implemented as before, but in this region are small. It relies on the replacement of subtraction 2 i À 2 j with two successive subtractions</p><formula xml:id="formula_4">2 i À 2 j ¼ ð2 i À 2 jþk½1 Þ À 2 jþk½2 ;<label>(4)</label></formula><p>where 2 k½1 þ 2 k½2 ¼ 1; i:e:;k½2 ¼ log 2 ð1 À 2 k½1 Þ:</p><p>Factor 2 k½1 is individually chosen for each value of r ¼ j À i such that the index r <ref type="bibr" target="#b0">[1]</ref> for the inner subtraction falls on the nearest modulo-D <ref type="bibr" target="#b0">[1]</ref> boundary beneath j À i, where D <ref type="bibr" target="#b0">[1]</ref> is now fixed at a large value. F(r <ref type="bibr" target="#b0">[1]</ref>) can therefore be obtained directly from lookup table F1, which contains F(r) for À1 &lt; r &lt; ÀD½1 at modulo-D <ref type="bibr" target="#b0">[1]</ref> intervals. Factor k <ref type="bibr" target="#b0">[1]</ref> is constrained to lie in the range ÀD½1 k½1 &lt; 0, and can therefore be used to index another lookup table F2, containing F(r) for all possible values of r between ÀD½1 &lt; r &lt; 0, to obtain k <ref type="bibr" target="#b1">[2]</ref>. Since 2 k½1 % 1, k[2] is a large negative value. This has the effect of increasing the magnitude of the index for the outer subtraction, r <ref type="bibr" target="#b1">[2]</ref>, such that r½2 &lt; À1. It therefore falls in the linear region of F(r <ref type="bibr" target="#b1">[2]</ref>), and can be obtained by interpolation from the small remaining F and D tables covering this region.</p><p>Thus:</p><formula xml:id="formula_6">r½1 ¼ ðððj À iÞ DIV D½1Þ À 1Þ Â D½1 ¼ j þ k½1 À i; (6) k½1 ¼ Àðððj À iÞ MOD D½1Þ þ D½1Þ ¼ i À j þ r½1; (7) k½2 ¼ F ðk½1Þ:<label>(8)</label></formula><p>The original values i and j are modified to yield the following operands to the outer subtraction:</p><formula xml:id="formula_7">i½2 ¼ i þ F ðr½1Þ; (9) j½2 ¼ j þ F ðk½1Þ ¼ j þ k2;<label>(10)</label></formula><p>and the subtraction becomes</p><formula xml:id="formula_8">2 i À 2 j ¼ 2 iþF ðr½1Þ À 2 jþF ðk½1Þ :<label>(11)</label></formula><p>This generates an index r[2]</p><formula xml:id="formula_9">r½2 ¼ j À i þ F ðk½1Þ À F ðr½1Þ ¼ j À i þ log 2 ðð1 À 2 iÀjþr½1 Þ=ð1 À 2 r½1 ÞÞ:<label>(12)</label></formula><p>The value of r[2] can be considered in three regions, depending on the original operands i and j. For j À i À1, r <ref type="bibr" target="#b1">[2]</ref> is taken directly as j À i, and will lie in the linear region of F from which F(r) can be obtained by interpolation. For À1 &lt; j À i &lt; ÀD½1, r[2] is derived as shown above, and as it also lies in the linear region of F, F(r) is similarly obtained by interpolation. For the third region, ÀD½1 j À i &lt; 0, the derived value of r <ref type="bibr" target="#b1">[2]</ref> rises above À1. However, this range is covered by the F2 table, and F(r) is therefore already available as k <ref type="bibr" target="#b1">[2]</ref>. The modified values r <ref type="bibr" target="#b1">[2]</ref> and i <ref type="bibr" target="#b1">[2]</ref> are passed to the interpolator for completion of the outer subtraction.</p><p>Following interpolation of F(r <ref type="bibr" target="#b1">[2]</ref>), the result of the subtraction is</p><formula xml:id="formula_10">log 2 ð2 i À 2 j Þ ¼ i þ F ðr½1Þ þ F ðr½2Þ:<label>(13)</label></formula><p>The arrangement is illustrated in <ref type="figure" target="#fig_4">Fig. 4</ref>. It is shown in <ref type="bibr" target="#b6">[7]</ref> that the combined size of the F1 and F2 tables is about one-seventh of that of the F and D tables that would be required to yield an interpolation of similar accuracy.</p><p>A number of simplifications are possible in an implementation of this scheme. In the calculation of k <ref type="bibr" target="#b0">[1]</ref> and r <ref type="bibr" target="#b0">[1]</ref> the subtraction j À i is not necessary because this term is already available as r. Operation DIV returns a truncated result, and since D[1] is a power of 2 the DIV, MOD and Â operations involve only bit-partitioning and concatenation of zeroes. Thus the only arithmetic operations required in these calculations are the addition or subtraction of the single-bit constants D[1] and 1. However, it will be noted that there is a deterministic relationship between the bit-partitioned values of r and the functions k <ref type="bibr" target="#b0">[1]</ref> and r <ref type="bibr" target="#b0">[1]</ref> that form the indices to the F1 and F2 tables. The addition and subtraction can therefore be avoided completely by rearranging the mapping of addresses to function values in these tables. Calculation of the index r <ref type="bibr" target="#b0">[1]</ref> and coefficient k <ref type="bibr" target="#b0">[1]</ref> can thus be done with no time overhead at all. Finally, the subtraction to obtain r[2] can be rearranged to use the precalculated value of r, and to use cumulative additions instead of an addition and a subtraction. The entire unit can thus be implemented with a worst-case delay of one ROM access, a carry-propagate adder and a carry-save stage.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">SECOND-ORDER CO-TRANSFORMATION</head><p>The fractionating coefficient k[1] can be applied recursively. Substituting</p><formula xml:id="formula_11">2 jþk½2 ¼ 2 j À 2 jþk½1</formula><p>into (4), and designating a new value k <ref type="bibr" target="#b10">[11]</ref> for use in a manner analogous to k[1]:</p><formula xml:id="formula_12">2 i À 2 j ¼ ð2 i À 2 jþk½1 Þ À ð2 j À 2 jþk½1 Þ ¼ ð2 i À 2 jþk½1 Þ À ðð2 j À 2 jþk½1þk½11 Þ À 2 jþk½1þk½12 Þ; (14)</formula><p>where 2 k½11 þ 2 k½12 ¼ 1; i:e:;k½12 ¼ log 2 ð1 À 2 k½11 Þ:</p><p>The four subtractions comprising <ref type="bibr" target="#b13">(14)</ref>, and their respective indices r, will now be numbered as follows:  <ref type="bibr" target="#b10">[11]</ref> boundary beneath j þ k½1 À j ¼ k½1, and F(r <ref type="bibr" target="#b10">[11]</ref>) is obtained from table F11 which contains F(r) for ÀD½1 r &lt; ÀD½11 at modulo-D <ref type="bibr" target="#b10">[11]</ref> intervals. This reduces the index to the F11 table by the number of bits representing D <ref type="bibr" target="#b10">[11]</ref>. The final coefficient, k <ref type="bibr" target="#b11">[12]</ref>, is obtained by lookup of table F12 indexed by k <ref type="bibr" target="#b10">[11]</ref>, itself represented by the same number of bits as D <ref type="bibr" target="#b10">[11]</ref>. The conceptual arrangement is shown in <ref type="figure" target="#fig_5">Fig. 5</ref>. The index r has effectively been split into three  partitions, each of which will optimally be about a third of the length of the original.</p><formula xml:id="formula_14">2 i À 2 j ¼ ð2 i À 2 jþk½1 Þ |fflfflfflfflfflfflfflffl ffl{zfflfflfflfflfflfflfflffl ffl} 1 À ð ð2 j À 2</formula><p>Thus:</p><formula xml:id="formula_15">r½1 ¼ ðððj À iÞ DIV D½1Þ À 1Þ Â D½1 ¼ j þ k½1 À i; (16) k½1 ¼ Àðððj À iÞ MOD D½1Þ þ D½1Þ ¼ i À j þ r½1; (17) r½11 ¼ Àðððj À iÞ MOD D½1Þ þ D½1Þ þ ððj À iÞ MOD D½11Þ ¼ k½1 þ k½11; (18) k½11 ¼ ððj À iÞ MOD D½11Þ ¼ r½11 À k½1; (19) k½12 ¼ F ðk½11Þ:<label>(20)</label></formula><p>Subtractions 11 and 1 of (14A) are performed directly by lookup of their respective function tables. Subtraction 12 then generates an index</p><formula xml:id="formula_16">r½12 ¼ k½1 þ F ðk½11Þ À F ðr½11Þ ¼ k½1 þ log 2 ðð1 À 2 k½11 Þ=ð1 À 2 k½1þk½11 ÞÞ:<label>(21)</label></formula><p>The value of r <ref type="bibr" target="#b11">[12]</ref> varies with the original r as shown in <ref type="figure" target="#fig_6">Fig. 6</ref>, where À2D½1 &lt; r &lt; ÀD½1, i.e., r lies across the range of one D <ref type="bibr" target="#b0">[1]</ref>. In the arrangement used for this illustration, D[11] is 6 bits and D[1] is 13, i.e., r is partitioned into low, middle and high-order segments of 6, 7 and 10 bits respectively. This is not the most optimal partitioning, but was chosen for this illustration to keep the graph to a manageable size. The modified value r <ref type="bibr" target="#b11">[12]</ref> exhibits a repeating pattern of subintervals across each D <ref type="bibr" target="#b10">[11]</ref>. With the exception, discussed below, of the extreme left subinterval, r½12 &lt; À1. Note, in fact, that for the point in each subinterval where k½11 ¼ 0, r½12 ¼ À1. These points have been omitted from the graph, and in practice they are ignored because the subsequent calculation of F(r <ref type="bibr" target="#b11">[12]</ref>) is consequently zero.</p><p>To illustrate the difference between the leftmost subinterval and the others, it is necessary to consider the behaviour of r <ref type="bibr" target="#b11">[12]</ref> as r progresses across the range of D <ref type="bibr" target="#b0">[1]</ref>. In the first subinterval at the left of the figure k½1 &lt; D½11, and k½1 þ k½11 ¼ D½11. To the far left of this subinterval, k½11 % D½11, and since k[1] is small, r½12 % 0. Throughout this subinterval the middle partition is zero. It is therefore possible to treat this subinterval as a special case of the first-order arrangement, in which the second-order coefficient k <ref type="bibr" target="#b10">[11]</ref>, table F12 and index r <ref type="bibr" target="#b11">[12]</ref> are analogous to the first-order k <ref type="bibr" target="#b0">[1]</ref>, F2 and r <ref type="bibr" target="#b1">[2]</ref>. The new value r <ref type="bibr" target="#b1">[2]</ref> bypasses the first interpolator and is passed directly to the second interpolation stage. Throughout the next subinterval, k½1 þ k½11 ¼ 2D½11. To the far left of this subinterval, again, k½11 % D½11, but since k <ref type="bibr" target="#b0">[1]</ref> and k <ref type="bibr" target="#b10">[11]</ref> are both small, the exponential terms are approximately linear in behaviour and r <ref type="bibr" target="#b11">[12]</ref> is therefore %À1. From here on, r½12 &lt; À1. Except in the case just mentioned, subtraction 12 in (14A) is then completed in the first interpolator, which is positioned as shown in <ref type="figure" target="#fig_5">Fig. 5</ref>.</p><p>The result of subtraction 12 is then itself subtracted from the result of subtraction 1. Its index r[2] is</p><formula xml:id="formula_17">r½2 ¼ j À i þ F ðr½12Þ þ F ðr½11Þ À F ðr½1Þ ¼ j À i þ F ðr½12Þ þ log 2 ðð1 À 2 k½1þk½11 Þ=ð1 À 2 k½1þjÀi ÞÞ: (22)</formula><p>The value of r <ref type="bibr" target="#b1">[2]</ref> is plotted in <ref type="figure" target="#fig_7">Fig. 7</ref>. In all cases, r½2 &lt; À1, as illustrated in the plot over the range À1 &lt; r &lt; ÀD½1. The subtraction can therefore be performed with a second pass of the interpolator. The result, again, is</p><formula xml:id="formula_18">log 2 ð2 i À 2 j Þ ¼ i þ F ðr½1Þ þ F ðr½2Þ:<label>(23)</label></formula><p>In a manner analagous to that of the first-order arrangement, in which the value of r[2] falls into one of three regions, here it is separated into four. Again, this depends on the original operands i and j. For j À i À1, r[2] is taken directly as j À i, and will lie in the linear region of F from which F(r) is obtained by interpolation. For À1 &lt; j À i &lt; ÀD½1, r[2] is derived as shown above, and now has a maximum of approximately À1. Thus it also lies in the linear region of F, and F(r) is similarly obtained by interpolation. In the third region, ÀD½1 j À i &lt; ÀD½11, the high-order partition is zero and subtractions in this region can therefore be processed with a first-order technique using the F11 and F12 tables. Finally, F(r) for ÀD½11 j À i &lt; 0 is taken directly from the F12 table.  In terms of hardware implementation, it is possible to make optimisations similar to those used in the first-order arrangement. The initial calculation of r <ref type="bibr" target="#b0">[1]</ref>, k <ref type="bibr" target="#b0">[1]</ref> and k <ref type="bibr" target="#b10">[11]</ref> can be done by rearranging the bits internally, and although several additions and subtractions are required, they can be reordered so that only additions are involved. Although <ref type="figure" target="#fig_5">Fig. 5</ref> shows the conceptual algebraic layout, the co-transformation unit itself terminates after the calculation of r <ref type="bibr" target="#b11">[12]</ref> and i <ref type="bibr" target="#b11">[12]</ref>. These values are passed to the interpolator where subtraction 12 of (14A) is completed, giving j <ref type="bibr" target="#b1">[2]</ref>. The arrangement of <ref type="figure" target="#fig_3">Fig. 3</ref> is modified with a feedback path to return this result to the top of the ALU, where i <ref type="bibr" target="#b1">[2]</ref> has now been stored in a holding register. These values form the inputs to subtraction 2 which, having r &lt; À1, automatically bypasses the co-transform unit and proceeds directly to the second interpolation.</p><p>Rows 4, 5 and 6 of <ref type="figure" target="#fig_0">Fig. 2</ref> review the three interpolators in rows 1, 2 and 3, each of them now in conjunction with a second-order co-transform optimally partitioned with respect to table size, i.e., with k[11] at 8 bits and k[1] at 16. The results will be discussed in Section 6, but it is immediately evident that the co-transform is now realised in 21,248 bits (640 words) instead of 129,024 (4,096 words). The F1, F11 and F12 tables are now 4,096, 8,448 and 8,704 bits (128, 256 and 256 words) respectively. This represents a reduction to about 16 percent of the original size, and has the major practical advantage that the tables can now be conveniently synthesised in logic. It does, however, come at the expense of a vastly increased delay for subtractions using the cotransformation. These now require two passes through the interpolator, and will therefore have around twice the delay of a direct subtraction.</p><p>From this, two questions follow. The first concerns the best region of application of the transform, which can consist of all or any part of the range r &gt; À1. Reducing the range will reduce the number of subtractions using it, while also reducing the co-transform table sizes but increasing those of the interpolator. A second question relates to the desirable properties of the interpolator itself. Each of these questions raises a number of related issues, which are examined in the following two sections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">USE OF THE CO-TRANSFORMATION</head><p>The first-order co-transform, as implemented on the ELM, relied on two tables with 11 address bits each; that is, it was applied only over the range r &gt; À0:5. This minimised the overall storage in this unit. The second-order arrangement has much smaller tables, and, by eliminating the corresponding interpolator table, minimal storage will consequently occur now when it is applied over its full operative range of r &gt; À1. On the other hand, this will increase the number of subtractions using it, and hence the time penalty in doing so. To quantify this, we analysed two examples of the more advanced types of digital filter, this being the area that has probably aroused the most interest as an application for LNS processing. Each application was programmed in optimised assembly language and executed on the ELM simulator, which had been modified to count the number of subtractions lying in the ranges over which the co-transform might be deployed.</p><p>The first application comprised a QR-Recursive Least Squares filter of order 16, running over 2,000 timesteps. This was introduced in <ref type="bibr" target="#b0">[1]</ref>, and the program, input data and results were exactly as described there. The second was based on the Fast Affine Projection algorithm, used here for echo cancellation. From the noisy signal presented to its input, it yielded an estimate of the error at each timestep. This was also run over 2,000 timesteps. In each case, input data made significant use of all parts of the dynamic range.</p><p>The proportion of subtractions lying within the fullest range of deployment of the co-transform unit is shown in <ref type="table" target="#tab_1">Table 1</ref>, col. 2. Normally, however, the same hardware will be used both for additions and subtractions, so any penalty resulting from the use of the transform will be incurred relative to the total number of additive operations. This is shown in col. 3, which is itemised to show the lower and higher halves of the range.</p><p>These results provide little reason to restrict the application of the co-transform unit. Even when deployed over its full range of r &gt; À1, only about 5 percent of additive operations will use it in RLS, and less than 2 percent in FAP. On the other hand, this study is based on only two specific examples, and we are aware of evidence from other workers suggesting that some applications might have a higher proportion of subtractions for which r is close to zero. In what follows in this paper, we have applied the co-transform throughout its full range r &gt; À1, but this is undoubtedly an area that needs further work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">INTERPOLATION WITH SECOND-ORDER CO-TRANSFORMATION</head><p>The second-order co-transform can be applied to any of the interpolators described in Section 2 and shown in the first three rows of <ref type="figure" target="#fig_0">Fig. 2</ref>. Note, however, that interpolation is not the focus of this paper; rather it is the purpose of this section to discuss the issues relating to the integration of the interpolator with the co-transform unit, and to illustrate the performance of the co-transform in operation in a practical setting. For full details of the interpolators the reader is referred to the referenced publications.  <ref type="figure" target="#fig_0">Fig. 2, rows 4, 5 and 6</ref> show the storage requirements for each of the interpolators previously discussed, this time in tandem with a second-order transform. In Lewis' interpolator, storage for subtractions near the singularity will now account for 30 percent of the total, which itself will see a reduction to about 25 percent of its original size. This is by far the most compact arrangement in terms of storage, but its delay path is longer than the others. With the ELM interpolator and that of Chester, storage for subtractions close to the singularity is reduced to 9 and 16 percent respectively, and the totals have been reduced to 65 and 54 percent of their original values. Chester's has less storage overall, but a longer delay path. Both, however, include large P tables of 1 kword or more, synthesis of which would be inefficient and timeconsuming.</p><p>An ideal interpolator for use with the co-transform would have the shortest possible delay path, both because high speed is an objective in itself, and to avoid an unreasonably long delay when the co-transform is used twice. Coefficients would be delivered directly from the table to the multipliers, and separate tables for each partition would simplify address generation. For ease of synthesis the tables themselves would be small. Two further interpolator designs were of interest from this perspective.</p><p>Modified Chester A modification of Chester's design was also described in <ref type="bibr" target="#b7">[8]</ref> and some minor changes to it in <ref type="bibr" target="#b21">[21]</ref>. There is no run-time subtraction to derive D, the values of which are instead held on a separate table, and therefore no need to interleave the F table. It uses a smaller P table, at the expense of larger F, D and E tables. Essentially this arrangement is the same as the ELM interpolator, except that the D table represents the slope of the chord instead of the tangent, and the E and P tables are recalculated accordingly. Its storage requirements are given in <ref type="figure" target="#fig_0">Fig. 2, row 7</ref>.</p><p>Minimax We also developed a Minimax-based system with negative r. Unlike Fu, we did not minimise the hardware by evaluating the polynomial with Horner's method but, rather, minimised the delay by direct evaluation using three multipliers.</p><p>Similar in complexity to Modified Chester, the F, D and E tables of the latter are replaced by tables of the 0th, 1st and 2nd order coefficients. These tables have been calculated with the Sollya utility <ref type="bibr" target="#b24">[24]</ref>, which minimises the storage requirement for results of a specified accuracy. The P table of the Modified Chester interpolator is correspondingly replaced by a multiplier that forms the square of its argument. Each partition is divided into 128 intervals. Storage for this scheme is shown in <ref type="figure" target="#fig_0">Fig. 2, row 8</ref>.</p><p>In both the latter interpolators, delay paths were further minimised, e.g., by combining consecutive arithmetic elements to eliminate carry-propagate additions from all but the last element in a chain. No more aggressive optimisation was attempted, however, and it is possible that either arrangement could be further improved.</p><p>An error analysis for the two interpolators is presented in <ref type="table" target="#tab_2">Table 2</ref>. They are broadly similar except that Minimax has a smaller bias, which reflects the objective of the utility with which it was designed. Worst-case accuracy in each case is within FP-equivalent limits. The Modified Chester interpolator requires 183,296 bits of table space, against 110,080 for Minimax.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">LNS ALUS COMPARED WITH FP</head><p>These two designs were synthesised and routed in the Faraday UMC 0.18 mm technology, using Synopsis Silicon Compiler and Cadence SoC Encounter. Areas and delays are presented in <ref type="figure">Fig. 8</ref>. Areas are itemised between those of the multiplication-division units and the combined addition-subtraction units. Delays are itemised for multiplication-division, addition-direct subtraction, and cotransformed subtraction.</p><p>The Minimax interpolator includes an additional multiplier that forms the quadratic term, so there is less difference in the silicon areas than in the lookup table sizes. The area of the Modified Chester interpolator is 583,550 mm 2 , and that of Minimax 474,438 mm 2 . The Modified Chester design has a delay of 6.97 ns. Its P table returns values in which each bit is a function of its nine address inputs. For Minimax, the longer delay of 9.30 ns is due to the extra multiplier. Studies, e.g. <ref type="bibr" target="#b22">[22]</ref>, <ref type="bibr" target="#b23">[23]</ref>, have shown that a dedicated squaring circuit can reduce the delay of a general multiplier by up to 25 percent. This would amount to something less than a nanosecond in this case, but is an improvement that might be attempted. Kwon et al. <ref type="bibr" target="#b5">[6]</ref> present a comparison of two 32-bit FP designs, also synthesised and routed for 0.18 mm fabrication, and include data for speed and area. The first design, DIVA, is optimised for minimal area. It is clocked at 266 MHz, and performs addition and multiplication in five cycles and division in 12. It has a synthesised area of 481,635 mm 2 . MONARCH is also clocked at 266 MHz, but is optimised for speed. Delays and silicon areas for these devices are summarised in <ref type="figure" target="#fig_8">Fig. 9</ref>. (Kwon does not disaggregate the areas of the various functional units so the total areas are used throughout).</p><p>Also shown in <ref type="figure" target="#fig_8">Fig. 9</ref> are the corresponding figures for the two LNS designs, the delay times of which have been fitted into a multiple of this 266 MHz clock period. With the Modified Chester arrangement, addition and direct subtraction could be completed in two cycles (7.52 ns) and cotransformed subtractions in 4 (15.04 ns). Multiplication and division would complete in one cycle, although this includes a large amount of slack time. The routed area of this ALU, including that of the multiplicative operators, would be 593,071 mm 2 . For Minimax, addition would require three cycles (11.28 ns) and co-transformed subtractions 6 (22.56 ns). Its routed area is 483,959 mm 2 .</p><p>The similarity in areas between the faster LNS and FP designs, Modified Chester and MONARCH, conveniently allows for a direct comparison of their speeds. The LNS design completes in 67 percent of the time of its FP counterpart, except in co-transformed subtractions where the ratio is 133 percent. On the assumption, based on the figures presented in <ref type="table" target="#tab_1">Table 1</ref>, that 5 percent of subtractions require the use of the co-transform, then the LNS will have an average delay 70 percent of that of FP. The two slower designs, Minimax and DIVA, are likewise very similar in area and here the LNS design has 60 percent of the delay of the FP unit, or 120 percent for co-transformed subtractions, an average of 63 percent. Multiplications are accelerated between three and five times, and divisions up to 12.</p><p>In <ref type="bibr" target="#b25">[25]</ref>, Saleh and Swartzlander report the area and flowthrough delays for 32-bit FP arithmetic in a more recent 45 nm fabrication. Their objective was to develop a fused dot-product unit, but they give the metrics for the discrete operators in <ref type="bibr" target="#b25">[25]</ref>, <ref type="table" target="#tab_2">Table 2</ref>. These are reproduced here in <ref type="table" target="#tab_3">Table 3</ref>, col. 1.</p><p>We do not have access to an equivalent 45 nm process, but were able to resynthesise and route the two LNS designs for the Faraday UMC 65 nm process. Results for these two units are given in <ref type="table" target="#tab_3">Table 3</ref>, cols 2 and 3.</p><p>Interpretation of these results is a little tenuous, being circumscribed not only by the different geometries but also by the fact that the FP unit does not perform division. The 65 nm Modified Chester arrangement performs an addition or direct subtraction with 55 percent of the delay of the 45 nm FP unit in col. 1, and a co-transformed subtraction with 118 percent of this delay. Using the weighted average described above, a mixture of direct and co-transformed subtractions will complete with 58 percent of the FP delay. Multiplications are about 14 times faster. With a reduction to 45 nm fabrication, these speeds could only improve. The LNS design does occupy almost three times the area of the FP unit, but applying a 50 percent reduction as one moves from 65 to 45 nm, it would become 1.5 times the size. The comparison would then have to account for the assumed size of an FP division unit. If this were taken to be, say 25 percent of that of the adder and multiplier, then this LNS design might occupy 1.2 times the area of the FP unit. This improvement to 58 percent of the delay (or better at 45 nm) with 1.2 times the area seems roughly consistent with the results observed at 0.18 mm: 70 percent of the delay with equal area.</p><p>In the case of the Minimax design additive delays are 75 percent of those of the FP unit, and co-transformed subtraction 158 percent, a weighted average of 79 percent. On the same assumptions as above, a 45 nm realisation would occupy a similar area to that of the FP unit.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">PROCESSOR INTEGRATION</head><p>We will now consider the integration of this unit into a processor. In <ref type="bibr" target="#b0">[1]</ref> we discussed the architectural implications that arose in the ELM. Reasoning that the main strength of the LNS is the low latency and small resource requirement of its multiplicative operations, we developed a short vector machine with parallel replicated multipliers and, as far as  With the removal of any explicit ROM cells, the last point in this justification becomes invalid. Registers can now be inserted at any convenient point in the adder datapath and, with regard not to have an unduly adverse impact on latency, a modest degree of pipelining can be considered. The latencies shown in col. 2 of <ref type="table" target="#tab_3">Table 3</ref> would then suggest that an operating frequency approaching 2 GHz will be achievable with a two-stage adder pipeline and single-stage multiplier.</p><p>On the ELM there are two parallel addition/subtraction units that stride through consecutive pairs of elements in a vector. These units are not pipelined, and normally complete in three cycles. If either element requires a cotransform then the system simply stalls for an additional cycle to allow time for it. Although this will hold up the other unit, which may not have needed the co-transform service, the relatively infrequent occurrence of these transforms and the fact that the system stalls for only one cycle more than the default three, render this a minor loss of efficiency. A vector of length n that does not involve a co-transform will execute in 3n/2 cycles. If, however, t elements require the transform (assuming they are not located in the same pair), then this will increase to ð3n=2Þ þ t cycles, degrading the throughput by a factor of 3n=ð3n þ 2tÞ.</p><p>With the two parallel units now pipelined into two stages, a pair of intermediate results including one that requires the co-transform, emerging from the second stage will now be recycled to the first. Including a one-cycle leadoff, a vector with no co-transformed elements will occupy ðn=2Þ þ 1 cycles, increasing to ðn=2Þ þ 1 þ t when the cotransform is involved. The performance degradation for various values of n and t, where t/n is in broad agreement with the values reported in <ref type="table" target="#tab_1">Table 1</ref>, are shown in <ref type="table" target="#tab_4">Table 4</ref>.</p><p>The pipelined implementation will evidently lose up to about 11 percent of its peak performance, under workloads representative of those used in Section 5. This de-rating factor could be applied to any of the designs developed in Section 7. A pipelined version of the Modified Chester design, for example, with a clock period 55 percent that of an FP unit, would see this relative advantage reduce to 62 percent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="9">CONCLUSION</head><p>The LNS promises to outperform FP arithmetic, at least at 32 bits, but one of the most cumbersome aspects of the design of an LNS arithmetic unit is the size of the ROM-based lookup tables required for accurate interpolation of the subtraction function. Whereas the addition curve is well behaved, and uses tables that are small enough to permit convenient synthesis, that for subtraction exhibits a difficult singularity. Although a study of some sample DSP programs revealed that subtractions in this region would comprise no more than about 5 percent of executed additive operators, examination of different arithmetic units indicated that storage of the necessary values for these subtractions could account for up to 83 percent of storage overall.</p><p>Here, we have described a development that substantially reduces the storage needed to implement these subtractions. It could be used either as a replacement for the existing co-transform in units that currently include one, or as a replacement for the large amounts of storage involved in interpolating directly. Storage for the respective subtractions would now account for 30 percent or less of the totals, which themselves would be reduced to between 65 and 25 percent of their previous sizes. The removal of these large tables brings within easy reach the possibility of synthesising the remaining smaller ones, thereby eliminating the timing and layout problems associated with ROM elements, facilitating a significant improvement in speed, and enabling a pipelined architecture if desired.</p><p>The drawback of this modified transform is that, in the few percent of additive operations that require it, it necessitates the re-use of the interpolator.</p><p>In order to illustrate the benefits of the new co-transform unit in what might be a contemporary setting, we studied two other interpolators in detail, both with good speed and area characteristics, and both easy to synthesise. These were developed into complete arithmetic units, which were compared with FP designs that had been independently designed in comparable geometries. LNS units performing the four primary operations will occupy a broadly similar area to those of their FP equivalents, and additive operations will deliver equivalent accuracy. Additive delays will be between about a half and three-quarters of those of FP, and the units can be pipelined.</p><p>Co-transforms of the third (or higher) orders are possible, but would require a third pass through the interpolator and at 32 bits would yield only a marginal reduction in storage. They might, however, hold promise at longer wordlengths. Apart from continuing improvements at 32 bits, this is another avenue for exploration.</p><p>Aside from this, the question of power dissipation is coming increasingly to the fore, and remains for further consideration. Likewise, the widespread interest in custom datapaths, or compound primitives like fused multiply-add, may lead to some interesting application studies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>The idea of partitioning r into three segments instead of two was suggested by the late David Kinniment, on reading the draft of <ref type="bibr" target="#b6">[7]</ref> before it was submitted. The initial high-level code for the Recursive Least Squares algorithm was written by Jiri Kadlec, and that for the Fast Affine Projection by Felix Albu. Section 3, which forms the background to the new work presented in this paper, is based on <ref type="bibr" target="#b6">[7]</ref>, which was originally published by the IEE. The authors are grateful to the reviewers for their comments, including a particularly helpful suggestion as to the line of approach that was subsequently adopted. J.N. Coleman is the corresponding author.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2 .</head><label>2</label><figDesc>Storage requirements for various LNS interpolation schemes.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1 .</head><label>1</label><figDesc>LNS addition and subtraction functions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>F</head><label></label><figDesc>ðÀnD À dÞ % F ðÀnDÞ À ðd=DÞ½F ðÀnDÞ À F ðÀfn þ 1gDÞ þ EðnÞP ðdÞ:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3 .</head><label>3</label><figDesc>Block diagram of ELM ALU (from<ref type="bibr" target="#b3">[4]</ref>).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 4 .</head><label>4</label><figDesc>Conceptual arrangement of first-order co-transformation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5 .</head><label>5</label><figDesc>Conceptual arrangement of second-order co-transformation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 6 .</head><label>6</label><figDesc>Value of r<ref type="bibr" target="#b11">[12]</ref> for À2D½1 &lt; r &lt; ÀD½1.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 7 .</head><label>7</label><figDesc>Value of r<ref type="bibr" target="#b1">[2]</ref> for À1 &lt; r &lt; ÀD½1.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 9 .</head><label>9</label><figDesc>Area and delay of pipelined LNS and FP units routed at 0.18 m.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>Again, k<ref type="bibr" target="#b0">[1]</ref> is selected such that index r<ref type="bibr" target="#b0">[1]</ref> falls on the nearest modulo-D<ref type="bibr" target="#b0">[1]</ref> boundary beneath j À i, and F(r<ref type="bibr" target="#b0">[1]</ref>) is obtained directly from lookup table F1, containing F(r) for À1 &lt; r &lt; ÀD½1 at modulo-D<ref type="bibr" target="#b0">[1]</ref> intervals. However, D<ref type="bibr" target="#b0">[1]</ref> is now fixed at a larger value than was the case in the firstorder arrangement, thereby shortening the index to the F1 table by the number of additional bits used. Previously, this would have caused a corresponding increase in size of the index to the F2 table. Now, however, coefficient k<ref type="bibr" target="#b10">[11]</ref> is similarly selected such that r<ref type="bibr" target="#b10">[11]</ref> falls on the modulo-D</figDesc><table><row><cell>jþk½1þk½11 Þ |fflfflfflfflfflfflfflfflfflfflfflfflffl ffl{zfflfflfflfflfflfflfflfflfflfflfflfflffl ffl}</cell><cell>À2 jþk½1þk½12 Þ</cell><cell>:</cell></row><row><cell cols="2">11 |fflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflffl ffl{zfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflffl ffl}</cell><cell></cell></row><row><cell cols="2">12 |fflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflffl{zfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflfflffl}</cell><cell></cell></row><row><cell>2</cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">(14A)</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 1 Analysis</head><label>1</label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell cols="2">of Subtractions in Application Examples</cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">1. No. of Additive</cell><cell>2. % Subtractions in the</cell><cell cols="2">3. % Additive Operations</cell></row><row><cell></cell><cell cols="2">Operations</cell><cell>Range</cell><cell cols="2">Comprised by Subtractions</cell></row><row><cell></cell><cell></cell><cell>(millions)</cell><cell></cell><cell>in the Range</cell><cell></cell></row><row><cell></cell><cell>Add</cell><cell>Subtract</cell><cell>À1 &lt; r</cell><cell>À1 &lt; r À0:5</cell><cell>À0:5 &lt; r</cell></row><row><cell>Recursive Least Squares</cell><cell>0.52</cell><cell>0.46</cell><cell>11.0</cell><cell>1.09</cell><cell>4.08</cell></row><row><cell>Fast Affine Projection</cell><cell>4.42</cell><cell>3.55</cell><cell>3.20</cell><cell>0.72</cell><cell>0.71</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 2 Error</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell cols="4">Analysis of Selected Interpolators with Second-Order Co-Transform</cell><cell></cell></row><row><cell></cell><cell></cell><cell>e max rel arith</cell><cell>e min rel arith</cell><cell>e av rel arith</cell><cell>jej av rel arith</cell></row><row><cell>Modified Chester</cell><cell>Add Subtract</cell><cell>þ0.4527 þ0.4987</cell><cell>À0.4623 À0.4604</cell><cell>þ0.0077 þ0.0024</cell><cell>þ0.1745 þ0.1738</cell></row><row><cell>Minimax</cell><cell>Add Subtract</cell><cell>þ0.4720 þ0.4626</cell><cell>À0.4944 À0.4617</cell><cell>À0.0015 þ0.00055</cell><cell>þ0.1721 þ0.1719</cell></row></table><note>Fig. 8. Area and delay of flowthrough LNS units routed at 0.18 m.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 3</head><label>3</label><figDesc>Delay and Area of Some Arithmetic Units Routed in Smaller Geometries</figDesc><table><row><cell></cell><cell cols="2">1. Saleh &amp; Swartzlander</cell><cell cols="2">2. Modified Chester 65 nm</cell><cell cols="2">3. Minimax 65 nm</cell></row><row><cell></cell><cell></cell><cell>45 nm</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Delay (ns)</cell><cell>Area (mm 2 )</cell><cell>Delay (ns)</cell><cell>Area (mm 2 )</cell><cell>Delay (ns)</cell><cell>Area (mm 2 )</cell></row><row><cell>Add / Sub Sub (Co-tr)</cell><cell>1.644 -</cell><cell>3,811 -</cell><cell>0.91 1.94</cell><cell>38,661</cell><cell>1.24 2.60</cell><cell>31,432</cell></row><row><cell>Mul Div</cell><cell>1.804 -</cell><cell>9,482 -</cell><cell>0.13</cell><cell>537</cell><cell>0.13</cell><cell>537</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 4 Throughput</head><label>4</label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell cols="2">Degradation of Co-Transformed Operations</cell><cell></cell><cell></cell></row><row><cell></cell><cell>n ¼ 16</cell><cell>n ¼ 32</cell><cell>n ¼ 32</cell><cell>n ¼ 64</cell><cell>n ¼ 64</cell></row><row><cell></cell><cell>t ¼ 1</cell><cell>t ¼ 1</cell><cell>t ¼ 2</cell><cell>t ¼ 1</cell><cell>t ¼ 4</cell></row><row><cell>ELM</cell><cell>0.96</cell><cell>0.98</cell><cell>0.96</cell><cell>0.99</cell><cell>0.96</cell></row><row><cell>Pipeline</cell><cell>0.90</cell><cell>0.94</cell><cell>0.89</cell><cell>0.97</cell><cell>0.89</cell></row></table><note></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">This work is licensed under a Creative Commons Attribution 3.0 License. For more information, see http://creativecommons.org/licenses/by/3.0/</note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The European logarithmic microprocessor</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Coleman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">I</forename><surname>Softley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kadlec</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Matousek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tichy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Pohl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hermanek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">F</forename><surname>Benschop</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="532" to="546" />
+			<date type="published" when="2008-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Interleaved memory function interpolators with application to an accurate LNS arithmetic unit</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">M</forename><surname>Lewis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="974" to="982" />
+			<date type="published" when="1994-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">114 MFLOPS logarithmic number system arithmetic unit for DSP applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">M</forename><surname>Lewis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE J. Solid State Circuits</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1547" to="1553" />
+			<date type="published" when="1995-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Arithmetic on the European logarithmic microprocessor</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Coleman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">I</forename><surname>Chester</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">I</forename><surname>Softley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kadlec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="702" to="715" />
+			<date type="published" when="2000-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A novel algorithm for accurate logarithmic number system subtraction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Paliouras</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Stouraitis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Symp. Circiuts Syst</title>
+		<meeting>IEEE Int. Symp. Circiuts Syst</meeting>
+		<imprint>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="268" to="271" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Design trade-offs in floating-point unit implementation for embedded and processing-inmemory systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T-J</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sondeen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Draper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Symp. Circuits Syst</title>
+		<meeting>IEEE Int. Symp. Circuits Syst</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="3331" to="3334" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Simplification of table structure in logarithmic arithmetic</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Coleman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electron. Lett</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="1905" to="1906" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">The LNS and its application in a high-performance matrix processor</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">I</forename><surname>Chester</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<pubPlace>Newcastle Upon Tyne, U.K.</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Univ</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Ph.D. dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A VHDL library of LNS operations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Detrey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>De Dinechin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 37th Asilomar Conf. Signals, Syst. Comput</title>
+		<meeting>37th Asilomar Conf. Signals, Syst. Comput</meeting>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="2227" to="2231" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Arithmetic co-transformations in the real and complex logarithmic number systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Arnold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">A</forename><surname>Bailey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Cowles</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Winkel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="777" to="786" />
+			<date type="published" when="1998-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">An improved co-transformation for logarithmic subtraction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Arnold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Symp. Circuits Syst</title>
+		<meeting>IEEE Int. Symp. Circuits Syst</meeting>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="752" to="755" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">LNS subtraction using novel cotransformation and/or interpolation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Vouzis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Collange</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Arnold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Int. Conf. Appl. Specific Syst., Archit. Process</title>
+		<meeting>IEEE Int. Conf. Appl. Specific Syst., Archit. ess</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="107" to="114" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Cotransformation provides area and acuracy improvement in an HDL library for LNS subtraction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Vouzis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Collange</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Arnold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 10th Euromicro Conf. Digital Syst. Des., Archit. Tools</title>
+		<meeting>10th Euromicro Conf. Digital Syst. Des., Archit. Tools</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="85" to="93" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A novel cotransformation for LNS subtraction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">D</forename><surname>Vouzis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Collange</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Arnold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Signal Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="29" to="40" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Designing custom arithmetic datapaths with FloPoCo</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>De Dinechin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Pasca</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Design Test Comput</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="18" to="27" />
+			<date type="published" when="2011-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Table-based polynomials for fast hardware function evaluation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Detrey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>De Dinechin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 16th Int. Conf. Appl.-Specific Archit. Process</title>
+		<meeting>16th Int. Conf. Appl.-Specific Archit. ess</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="328" to="333" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Institut National de Recherche en Informatique et en Automatique (INRIA)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Collange</surname></persName>
+		</author>
+		<imprint>
+			<pubPlace>Rennes, France</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Former developer of FloPoCo</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">FPGA designs with optimised logarithmic arithmetic</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Mencer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Luk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1000" to="1006" />
+			<date type="published" when="2010-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A comparison of floating point and logarithmic number systems for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Haselman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Beauchamp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Hauck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Underwood</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">S</forename><surname>Hemmert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 15th Annu. Symp. Field Programm</title>
+		<meeting>15th Annu. Symp. Field Programm</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="181" to="190" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Floating point or LNS: Choosing the right arithmetic on an application basis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Collange</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>De Dinechin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Detrey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 9th</title>
+		<meeting>9th</meeting>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Euromicro Conf. Digital Syst. Des., Archit. Tools</title>
+		<imprint>
+			<biblScope unit="page" from="197" to="203" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">ROM-less LNS</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Che</forename><surname>Ismail</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">N</forename><surname>Coleman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 20th IEEE Symp</title>
+		<meeting>20th IEEE Symp</meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="43" to="51" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Parallel squarer design using pre-calculated sums of partial products</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K.-J</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-G</forename><surname>Chung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electron. Lett</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">25</biblScope>
+			<biblScope unit="page" from="1414" to="1416" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A multiplier and squarer generator for high performance DSP applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Pihl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Aas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 39th Midwest Symp. Circuits Syst</title>
+		<meeting>IEEE 39th Midwest Symp. Circuits Syst</meeting>
+		<imprint>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="109" to="112" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Sollya: An environment for the development of numerical codes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Chevillard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Joldes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Lauter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 3rd Int. Congress Conf. Math. Softw</title>
+		<meeting>3rd Int. Congress Conf. Math. Softw</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="28" to="31" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A floating-point fused dot-product unit</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Saleh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">E</forename><surname>Swartzlander</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 26th Int. Conf. Comput. Des</title>
+		<meeting>IEEE 26th Int. Conf. Comput. Des</meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="427" to="431" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Low-power digital filtering based on the logarithmic number system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Basetas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Kouretas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Paliouras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc Comput. Sci. IC Syst. Des.: Power Timing Modeling</title>
+		<meeting>Comput. Sci. IC Syst. Des.: Power Timing Modeling</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">4644</biblScope>
+			<biblScope unit="page" from="546" to="555" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">after spending a short time in commercial applications and systems programming, he joined Plessey Telecommunications Research Ltd, Poole, Dorset, initially as a software engineer but later as a hardware engineer. Here, he worked on the specification and design of a custom processor for real-time production test of the System-X telephone exchange</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Nicholas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">He then entered Brunel University</title>
+		<imprint/>
+		<respStmt>
+			<orgName>Coleman received the BA degree in music from the University of York. Subsequently</orgName>
+		</respStmt>
+	</monogr>
+	<note>to work for a PhD in the area of CPU architectures for VLSI design acceleration. On graduation, he joined the Department of Electrical and Electronic Engineering at the University of Newcastle upon Tyne. He lectures in computer and digital engineering, and was the co-ordinator of the ESPRIT. project that resulted in the development of the ELM, and which forms the basis of the work presented here. His research interests are in high-speed processor design, and processor-intensive applications such as graphics. He is a chartered engineer</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">He is now a senior lecturer in the School of Microelectronic Engineering, Universiti Malaysia Perlis, and is engaged in designing low-power and high-speed architectures for digital systems</title>
+	</analytic>
+	<monogr>
+		<title level="m">Microelectronics System Design</title>
+		<imprint>
+			<publisher>British Computer Society</publisher>
+			<date type="published" when="2012" />
+		</imprint>
+		<respStmt>
+			<orgName>Rizalafande Che Ismail received the PhD degree from Newcastle University, United Kingdom</orgName>
+		</respStmt>
+	</monogr>
+	<note>He is a senior member of the Institute of. and of the Board of Engineers Malaysia (BEM</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">For more information on this or any other computing topic, please visit our Digital Library at www</title>
+		<ptr target=".computer.org/publications/dlib" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

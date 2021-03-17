@@ -1,0 +1,1697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /opt/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">International Journal of Engineering Science</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2018-03-27">27 March 2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Michael</forename><surname>Poluektov</surname></persName>
+							<email>m.poluektov@warwick.ac.uk</email>
+							<affiliation key="aff0">
+								<orgName type="department">International Institute for Nanocomposites Manufacturing</orgName>
+								<orgName type="institution" key="instit1">WMG</orgName>
+								<orgName type="institution" key="instit2">University of Warwick</orgName>
+								<address>
+									<postCode>CV4 7AL</postCode>
+									<settlement>Coventry</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Alexander</forename><forename type="middle">B</forename><surname>Freidin</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Institute for Problems in Mechanical Engineering of Russian Academy of Sciences</orgName>
+								<address>
+									<addrLine>61 Bolshoy Pr. V.O</addrLine>
+									<postCode>199178</postCode>
+									<settlement>St. Petersburg</settlement>
+									<country key="RU">Russia</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="institution">Peter the Great St. Petersburg Polytechnic University</orgName>
+								<address>
+									<addrLine>29 Polytechnicheskaya Str</addrLine>
+									<postCode>195251</postCode>
+									<settlement>St. Petersburg</settlement>
+									<country key="RU">Russia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Łukasz</forename><surname>Figiel</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">International Institute for Nanocomposites Manufacturing</orgName>
+								<orgName type="institution" key="instit1">WMG</orgName>
+								<orgName type="institution" key="instit2">University of Warwick</orgName>
+								<address>
+									<postCode>CV4 7AL</postCode>
+									<settlement>Coventry</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">International Journal of Engineering Science</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2018-03-27">27 March 2018</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1016/j.ijengsci.2018.03.007</idno>
+					<note type="submission">Received 22 November 2017 Revised 26 February 2018 Accepted 13 March 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1" ident="GROBID" when="2021-03-16T04:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Chemical affinity tensor Chemo-mechanical processes Silicon lithiation Non-linear viscoelastic material Finite strains Spherically symmetric problem</keywords>
+			</textClass>
+			<abstract>
+				<p>This paper aims at modelling stress-affected chemical reactions in spherical particles by adopting the chemo-mechanical framework based on the chemical affinity tensor and combining it with the finite-strain non-linear viscoelastic constitutive model. The model is applied to the chemical reaction between lithium (Li) ions and silicon (Si), which has been considered as promising successor to graphite for use as active material in lithium-ion battery (LIB) anodes. However, during charging of LIBs, Si enters into the chemical reaction with Li ions, causing large volumetric expansion of Si particles, which leads to the emergence of mechanical stresses, which, in turn, can affect the kinetics of the chemical reaction even up to the reaction arrest. In this paper, the propagation of the reaction front separating the chemically transformed and the untransformed phases is modelled, and the coupled stress-diffusion-reaction problem is solved using the finite element approach. The model predicts the retardation and the locking of the chemical reaction in Si depending on the values of the chemical energy parameter, which corresponds to experimental observations.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>In recent years, special attention has been paid to the enhancement of the capacity of lithium-ion batteries by investigating the applicability of various active materials, such as silicon, that can accommodate larger amount of lithium atoms than commonly used graphite. The main challenge for the application of Si as a novel anode active material is its large volumetric expansion of up to 300% in the charged state <ref type="bibr" target="#b46">( McDowell, Lee, Nix, &amp; Cui, 2013 )</ref>, which leads to the emergence of the mechanical stress and the degradation/failure of the anode during charge/discharge cycling. Various Si nano-structures such as nanowires, spherical particles embedded into a graphite matrix, porous Si-C composites and special coatings applied to Si particles have been proposed to solve this problem <ref type="bibr" target="#b41">( Lukatskaya, Dunn, &amp; Gogotsi, 2016;</ref><ref type="bibr" target="#b42">Luo, Wu, Luo, Huang, &amp; Dravid, 2014;</ref><ref type="bibr" target="#b43">Magasinski et al., 2010 )</ref>. However, at the moment, there are no straightforward solutions to this problem and deeper understanding of the chemical reaction with Li ions and interaction of Si particles with the surrounding material is required.</p><p>From the physical point of view, there is a difference between the mechanism of reaction between Li and graphite and between Li and Si -in the case of graphite, the mechanism is based on the intercalation into the host lattice, while in the case of Si, it is the formation of new chemical compounds <ref type="bibr">("alloying")</ref>  . Thus, the reaction between Li ions and Si can be understood as a chemical transformation. Term "lithiation" of a material is often used in literature to refer to the chemical reaction of the material with Li ions. Therefore, in this paper, the reaction between Li ions and Si is also referred to as the lithiation of Si.</p><p>During the initial lithiation (i.e. upon the first cycle) of either crystalline or amorphous Si nano-particles, the existence if two distinct phases, the untransformed and the transformed Si, is observed, while the chemical reaction is localised at the reaction front of nanometre thickness that separates unlithiated and lithiated Si <ref type="bibr" target="#b9">( Cubuk &amp; Kaxiras, 2014;</ref><ref type="bibr" target="#b27">van Havenbergh, Turner, Marx, &amp; van Tendeloo, 2016;</ref><ref type="bibr" target="#b29">Jia &amp; Li, 2015;</ref><ref type="bibr" target="#b45">McDowell, Lee, Harris et al., 2013;</ref><ref type="bibr" target="#b47">McDowell et al., 2012;</ref><ref type="bibr" target="#b59">Yang et al., 2012 )</ref>. This process is referred to as "the two-phase lithiation" in literature. It should be also mentioned that a process, with a smooth change of Li concentration within Si particle (i.e. without a reaction front), was observed upon the subsequent lithiation-delithiation cycles <ref type="bibr" target="#b45">( McDowell, Lee, Harris et al., 2013 )</ref>, which was referred to as "one-phase lithiation". In the case the two-phase process, the lithiation rate is limited by the rate of the chemical reaction taking place at the reaction front. Two modelling concepts of the reaction localisation exist. One type of models deals with a smooth spatial distribution of the lithium concentration and a transition layer with a rapidly changing concentration that connects concentration-poor and concentration-rich phases. For example, in <ref type="bibr" target="#b7">Chen et al. (2014)</ref> , a phase-field model was proposed and applied to the case of a single spherical Si particle, and lithiation-induced stresses were analysed. Another type of models considers a chemical reaction front as a sharp interface, e.g. <ref type="bibr" target="#b11">Cui, Gao, and Qu (2013)</ref> and <ref type="bibr" target="#b29">Jia and Li (2015)</ref> . In the present paper a sharp reaction front is considered.</p><p>The volumetric expansion of Si particles during lithiation leads to mechanical stresses, which influence the kinetics of the reaction between Si and Li. Therefore, from the mechanical perspective, there has been an extensive research focus on modelling of stresses produced by the lithiation, e.g. <ref type="bibr" target="#b15">Dimitrijevic, Aifantis, and Hackl (2012)</ref> . But the influence of stresses on the lithiation kinetics still remains unclear and must be captured to model the battery charging process accurately. Since Li is delivered to the reaction front by diffusion, stresses may affect the lithiation process via the diffusion flux rate and via the lithiation reaction rate. It should be noted that coupling of stresses, diffusion and chemical reaction has been also intensively discussed in the context of Si oxidation, which is a transformation process of a solid body that is similar to lithiation. In a number of papers, the well-known Deal-Grove model of oxidation <ref type="bibr" target="#b14">( Deal &amp; Grove, 1965 )</ref> has been modified by considering the classical diffusion equation with the stress-dependent diffusion coefficient and the stress-dependent reaction rate parameter. The choice of stress characteristics (the first invariant, the normal stresses, or the intensity of shear stresses), which affect the reaction and the diffusion parameters, was made intuitively by using the notion of the activation volume, e.g. <ref type="bibr" target="#b32">Kao, McVittie, Nix, and Saraswat (1988)</ref> , <ref type="bibr">Sutardja and Oldham (1989)</ref> and <ref type="bibr">Rafferty (1990)</ref> . Additionally, a concentration-dependent volumetric expansion was introduced, which led to the total stress-diffusion coupling, e.g. <ref type="bibr">Rao and</ref> Hughes (20 0 0) and <ref type="bibr">Rao,</ref><ref type="bibr">Hughes,</ref><ref type="bibr">and Garikipati (20 0 0)</ref> . A reaction-controlled diffusion model for the lithiation process of a spherical Si particle, in which the reaction front kinetics was modelled as a pressure-dependent process, was proposed in <ref type="bibr" target="#b62">Zhang, Lee, Lee, Cui, and Linder (2015)</ref> . The influence of stresses on diffusion via additional terms in the diffusion equation in various chemo-mechanical processes has been also considered, e.g. <ref type="bibr" target="#b36">Knyazeva (2003)</ref> and <ref type="bibr" target="#b56">Toribio, Kharin, Lorenzo, and Vergara (2011)</ref> .</p><p>Another group of models includes the influence of stresses on the diffusion flux and the chemical reaction rate via a scalar chemical potential, which depends on the concentration and the stresses, and gradient of which governs the flux of the reactant, e.g. <ref type="bibr" target="#b40">Loeffel and Anand (2011)</ref> , <ref type="bibr" target="#b2">Bower and Guduru (2012)</ref> ; <ref type="bibr" target="#b4">Bower, Guduru, and Sethuraman (2011)</ref> , <ref type="bibr" target="#b10">Cui, Gao, and Qu (2012)</ref> , <ref type="bibr">Suo (2012, 2013)</ref> , <ref type="bibr">Attariani (2013, 2014)</ref> , <ref type="bibr" target="#b3">Bower, Guduru, and Chason (2015)</ref> and <ref type="bibr" target="#b13">Dal and Miehe (2015)</ref> . For example, in <ref type="bibr" target="#b13">Dal and Miehe (2015)</ref> , a stress-diffusion model was presented, in which the isotropic volumetric expansion depends linearly on the concentration of Li, while the diffusion is driven by the spatial gradient of the chemical potential, which is the function of the concentration and the pressure. In <ref type="bibr" target="#b11">Cui et al. (2013)</ref> , previously developed stress-diffusion model, in which a stress-dependent chemical potential was proposed and applied to the problem of lithiation of a spherical Si particle , was extended to the problem with a chemical reaction as a kinetics governing process. It should also be mentioned that the velocity of the reaction front can be controlled by the reaction rate at the reaction front rather than by the diffusivity of the reactant (see e.g. Jia &amp; Li, 2015 and reference therein), which is Li ions in the case of lithiation.</p><p>The coupled stress-diffusion-reaction models were also extended to describe additional physical effects, such as damage of Si particles upon lithiation. For example, in <ref type="bibr" target="#b61">Zhang, Krischok, and Linder (2016)</ref> , the approach of <ref type="bibr" target="#b62">Zhang et al. (2015)</ref> was extended and the effective damage field was introduced. In <ref type="bibr">Klinsmann, Rosato, Kamlah, and McMeeking (2016a,b)</ref> , a coupled stress-diffusion model was used to study a crack growth during the lithiation process.</p><p>In the present paper, the thermodynamically consistent approach to mechanochemistry of reaction fronts based on the notion of the chemical potential is further developed. In the last decades of the twentieth century it became clear that chemical potentials are tensorial quantities in the case of solid phase transformations, which are related to the Eshelby energy-momentum tensors (see e.g. <ref type="bibr" target="#b26">Grinfeld, 1991 and</ref><ref type="bibr" target="#b0">Abeyaratne &amp;</ref><ref type="bibr" target="#b0">Knowles, 2006 and</ref><ref type="bibr">references therein)</ref>. This can be explained by the fact that the phase equilibrium takes place at a surface element oriented with respect to the axis of the stress tensor. The tensorial nature of the chemical potential, in turn, leads to the tensorial nature of the chemical affinity, for which chemical reactions are to be considered at an oriented element of a surface that passes through a point, as opposed to a reaction just at a point. The tensorial nature of the chemical affinity was also pointed out in <ref type="bibr">Rusanov (20 05,</ref><ref type="bibr">20 06)</ref> . The detailed derivation of the expression of the chemical affinity tensor in the case of large deformations, made for materials of arbitrary rheology with the use of the mass, the linear momentum, and the energy balance equations and the entropy inequality, can be found in <ref type="bibr" target="#b19">Freidin (2015)</ref> and <ref type="bibr" target="#b22">Freidin, Vilchevskaya, and Korolev (2014)</ref> .</p><p>Up to now, the approach based on the chemical affinity tensor was applied to a number of boundary value problems for elastic solids undergoing chemical reactions only in the case of infinitesimally small strains <ref type="bibr" target="#b20">( Freidin, Korolev, Aleshchenko, &amp; Vilchevskaya, 2016;</ref><ref type="bibr" target="#b21">Freidin, Morozov, Petrenko, &amp; Vilchevskaya, 2016;</ref><ref type="bibr" target="#b22">Freidin et al., 2014 )</ref>. However, modelling of problems such as lithiation of Si particles requires capturing large non-linear viscoelastic deformations. Therefore, the aim of this paper is to study the kinetics of the reaction front governed by the chemical affinity tensor in the case of large deformations and non-linear viscoelastic constitutive material model of the reaction product and to apply the proposed model for the simulation of the stress-affected kinetics of the two-phase lithiation of spherical Si particles.</p><p>The paper is organised as follows: a brief summary of the framework and the concept of chemical affinity tensor is given first in Section 2 , along with the formulation of a general quasi-static problem involving the mechanical, the diffusion, and the chemical reaction parts. This is followed by the problem formulation for the case of the two-phase lithiation in Si particles in the framework of finite elastic and non-linear viscoelastic deformations and also by some details of the finite element solution process ( Section 3 ). Results of finite element simulations are discussed in Section 4 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Summary of the approach based on the chemical affinity tensor</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Chemical thermodynamics background</head><p>In classical chemical thermodynamics, the chemical affinity A appears in the expression for the entropy production P <ref type="bibr">[ S ]</ref> as a multiplier of the reaction rate ω:</p><formula xml:id="formula_0">P [ S ] = T −1 Aω,<label>(1)</label></formula><p>where T is temperature, e.g. <ref type="bibr" target="#b52">Prigogine and Defay (1954)</ref> . The chemical affinity is expressed via the combination of the chemical potentials of the reaction constituents. For example, for the reaction</p><formula xml:id="formula_1">n − B − + n * B * → n + B +<label>(2)</label></formula><p>the chemical affinity is as follows</p><formula xml:id="formula_2">A = n − M − μ − + n * M * μ * − n + M + μ + ,<label>(3)</label></formula><p>where μ − , μ * , and μ + are the chemical potentials of the constituents per unit of mass; M − , M * , and M + are the molar masses of the constituents; n − , n * , and n + are the stoichiometric coefficients.</p><p>Since the chemical affinity acts as a thermodynamic force, the reaction rate is a function of the affinity:</p><formula xml:id="formula_3">ω = ω(A ) .<label>(4)</label></formula><p>In the case of the chemical reaction between gaseous or liquid constituents, the following kinetic equation for the dependence of the reaction rate on the affinity was proposed <ref type="bibr" target="#b25">( Glansdorff &amp; Prigogine, 1971 )</ref>:</p><formula xml:id="formula_4">ω = ω f 1 − exp − A R g T ,<label>(5)</label></formula><p>where ω f is the so-called partial reaction rate, which is proportional to the concentrations of reacting constituents, R g is the universal gas constant. Therefore, the influence of external actions on the chemical reaction rate can be considered as the influence on the chemical affinity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Chemical affinity tensor</head><p>Only essential summary of the theory that is used in this paper is given below, the detailed explanation is provided in Freidin (2015) , <ref type="bibr" target="#b22">Freidin et al. (2014</ref><ref type="bibr" target="#b21">) , Freidin, Morozov et al. (2016</ref> and <ref type="bibr" target="#b20">Freidin, Korolev et al. (2016)</ref> . A chemical reaction between a solid and a diffusive constituents is considered, where B − , B * , and B + are the chemical formulae of an initial solid constituent (untransformed), a diffusive constituent (reactant) and a transformed solid constituent, respectively; n − , n * , and n + are corresponding stoichiometric coefficients. Reactant B * diffuses through the transformed material B + and the reaction is localised at an infinitely thin reaction front, which separates the transformed and the untransformed materials. The reactant is entirely consumed at the reaction front.</p><p>In the case of a chemical reaction between a solid and a gaseous constituents, the entropy production due to the chemical reaction that is localised at an oriented surface takes the form</p><formula xml:id="formula_5">P [ S ] = T −1 A NN ω N ,<label>(6)</label></formula><p>where A NN = N • A • N is the normal component of chemical affinity tensor A (see <ref type="bibr" target="#b18">Freidin, 2013;</ref><ref type="bibr" target="#b19">Freidin, 2015 and</ref><ref type="bibr" target="#b22">Freidin et al. (2014)</ref> for the derivation of the tensor); N is the normal to the image of the surface element in the reference configuration of one of the solid constituents (the reference configuration of the constituent B − is used below); ω N is the reaction rate at the surface element with normal N . It should be noted that ω N is the rate of the reaction per unit surface, while ω in (1), (5) is the reaction rate per unit volume.</p><p>The expression for tensor A is similar to the expression for the scalar chemical affinity, (3) , however the scalar chemical potentials are replaced with the chemical potential tensors, μ − and μ + , that are equal to the Eshelby energy-momentum tensors, divided by the reference mass densities. Thus, the chemical affinity tensor in a quasi-static approach is given by • P − does not change when all the values are recalculated with respect to the reference configuration of B + . Thus, the choice of the reference configuration does not affect the chemical potential tensors which characterise the thermodynamic state of the material (see e.g. <ref type="bibr" target="#b22">Freidin et al., 2014 )</ref>.</p><formula xml:id="formula_6">A = n − M − μ − + n * M * μ * I − n + M + μ + , (7) μ − = f − I − 1 ρ − F T − • P − , μ + = f + I − 1 ρ + F T + • P + ,<label>(8)</label></formula><p>Taking A NN instead of A in Eq. (5) with the partial reaction rate between gaseous and solid constituents equal to ω f = k * c where k * is the kinetic coefficient, c is the molar concentration of the diffusive reactant (concentration of the solid constituent is taken equal to 1 in this case), gives the following kinetic equation:</p><formula xml:id="formula_7">ω N = k * c 1 − exp − A NN R g T .<label>(9)</label></formula><p>The mass balance at the propagating reaction front results in the expression for the normal component of the reaction front velocity with respect to the reference configuration of constituent</p><formula xml:id="formula_8">B − : V = n − M − ρ − ω N = n − M − ρ − k * c 1 − exp − A NN R g T .<label>(10)</label></formula><p>The chemical potential of the diffusive constituent is taken in a form:</p><formula xml:id="formula_9">M * μ * = η * + R g T ln c c * (11)</formula><p>where c is the concentration of the reactant B * taken per unit volume of the reference configuration of B − ; c * is some reference molar concentration; η * is a reference chemical potential of B * (the so-called "chemical energy").</p><p>For materials B − and B + , it is assumed that the Helmholtz free energy can be represented as the sum of the chemical energy (the free energy volume density of the solid constituent in a stress-free state) and the strain energy:</p><formula xml:id="formula_10">ρ − f − = η − + W − , ρ + f + = η + + W + ,<label>(12)</label></formula><p>where W − , W + are the strain energy densities of B − , B + , respectively, and η − , η + are the chemical energies of B − , B + , respectively, defined per unit volumes of the reference configurations of B − and B + .</p><p>If the contribution of the pressure, produced by the diffusive constituent B * , to the linear momentum balance equation at the reaction front is neglected in comparison with stresses in solid constituents, then the normal component of the chemical affinity tensor can be represented 1 as <ref type="bibr" target="#b18">Freidin (2013</ref><ref type="bibr" target="#b19">Freidin ( , 2015</ref> ; <ref type="bibr" target="#b22">Freidin et al. (2014)</ref> </p><formula xml:id="formula_11">A NN = n − M − ρ − γ + W − − g 3 W + + P − : F + n * R g T ln c c * ,<label>(13)</label></formula><p>where γ is the temperature-dependent combination of the chemical energies of the constituents,</p><formula xml:id="formula_12">γ = η − + ρ − n − M − n * η * − g 3 η + ,<label>(14)</label></formula><p>g 3 is the volumetric expansion ratio due to the chemical transformation, the double square brackets denote the jump of the variable at the reaction front:</p><formula xml:id="formula_13">F = F 0 + − F − ,<label>(15)</label></formula><p>where deformation gradient F 0 + is the deformation gradient of material B + with respect to the reference configuration of B − . It is related to F + via the chemical deformation gradient, F g ,</p><formula xml:id="formula_14">F 0 + = F + • F g .<label>(16)</label></formula><p>In this paper, notation A : B = A i j B i j is used for the convolution. From the mass balance and the reaction formula it follows that the volumetric expansion ratio due to the chemical transformation can be calculated as</p><formula xml:id="formula_15">g 3 = det F g = n + M + ρ + ρ − n − M − .<label>(17)</label></formula><p>Further the chemical deformation gradient is assumed to be isotropic:</p><formula xml:id="formula_16">F g = g I .<label>(18)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">General problem formulation</head><p>The general problem formulation is split into three parts: the mechanical, the diffusion, and the chemical reaction parts. These parts are presented below.</p><p>The problem is assumed to be quasistatic. Thus, the equilibrium equation</p><formula xml:id="formula_17">∇ • σ = 0 ,<label>(19)</label></formula><p>where σ is the Cauchy stress tensor, is to be satisfied within domains υ − and υ + , which are occupied by materials B − and B + , respectively, with the boundary conditions at the outer surface of the body, and with the displacement and the traction continuity conditions at the reaction front (the contribution of the pressure, which is produced by the diffusive constituent, to stresses is neglected). Operator ∇ is defined with respect to the current configuration; however, when Eq. <ref type="formula" target="#formula_17">19</ref>is solved numerically, it is rewritten with respect to the reference configuration. The constitutive relations can be arbitrary. In this paper, the non-linear viscoelastic material behaviour is considered ( Section 3.2 ). The reaction front moves due to the consumption of the reactant B * , which diffuses through the transformed material B + from the outer surface of υ + to the reaction front. In the case of finite strains, it is convenient to project the diffusion flux onto the reference configuration of one of the solid constituents, i.e. to consider the Lagrangian diffusion <ref type="bibr" target="#b19">( Freidin, 2015;</ref><ref type="bibr" target="#b58">Wilmanski, 1998 )</ref>. In this paper, the diffusion is projected onto the reference configuration of material B − . It is assumed that the diffusion process happens on a much faster time scale than the chemical reaction. This assumption is also motivated by the choice of the parameters that are used in the calculations, as discussed at the end of Section 3.5 . Hence, the stationary diffusion equation is considered,</p><formula xml:id="formula_18">0 c = 0 ,<label>(20)</label></formula><p>with boundary conditions</p><formula xml:id="formula_19">D N • ∇ 0 c + n * V ρ − n − M − = 0 ,<label>(21)</label></formula><p>at the reaction front mapped onto the reference</p><formula xml:id="formula_20">configuration of B − , D N • ∇ 0 c + α( c − c * ) = 0 ,<label>(22)</label></formula><p>at the outer surface of υ + mapped onto the reference configuration of B − , were D is the diffusion coefficient of the reactant B * through B + ; α is the surface mass transfer coefficient; c * is the solubility of B * in material B + . Operators ∇ 0 and 0 are defined with respect to the reference configuration of B − . When A NN = 0 , the chemical equilibrium takes place and, thus, the reaction front does not move. Therefore, equilibrium concentration c eq can be introduced <ref type="bibr" target="#b22">( Freidin et al., 2014 )</ref>, such that at a given stress-strain state</p><formula xml:id="formula_21">A NN | c= c eq = 0 . (23)</formula><p>Quantity A NN is a function of the reactant concentration c , according to Eq. (13) , and due to the solid skeleton approach, the concentration affects A NN only through the chemical potential of the diffusive constituent. In this case, the normal component of the chemical affinity tensor can be rewritten in terms of the equilibrium concentration, which depends on the stresses and the strains, and actual concentration c at the reaction front:</p><formula xml:id="formula_22">A NN = n * M * ( μ * ( c ) − μ * ( c eq ) ) .<label>(24)</label></formula><p>If the chemical potential of the diffusive constituent is given by the expression (11) , then, according to (10) , the normal component of the reaction front velocity becomes the function of the equilibrium concentration and the current concentration at the reaction front <ref type="bibr" target="#b20">( Freidin, Korolev et al., 2016 )</ref>:</p><formula xml:id="formula_23">V = n − M − ρ − k * c 1 − c eq c n * .<label>(25)</label></formula><p>After substituting Eq. <ref type="formula" target="#formula_23">25</ref>into Eq. (21) , the boundary condition for the diffusion equation at the image of the reaction front is reformulated in terms of c and c eq :</p><formula xml:id="formula_24">D N • ∇ 0 c + n * k * c 1 − c eq c n * = 0 .<label>(26)</label></formula><p>In the case of n * = 1 , which is considered further, the velocity expression and the boundary condition for the diffusion equation become</p><formula xml:id="formula_25">V = n − M − ρ − k * ( c − c eq ) ,<label>(27)</label></formula><formula xml:id="formula_26">D N • ∇ 0 c + k * ( c − c eq ) = 0 .<label>(28)</label></formula><p>Eq. <ref type="formula" target="#formula_23">25</ref>or, in the case of n * = 1 , Eq. <ref type="formula" target="#formula_25">27</ref> In the case of elastic constituents, stresses and strains are uniquely determined by the front position. If the front has a simple geometry (e.g. flat or spherical front) and can be described by a number of geometrical parameters, the equations can be solved independently, thus, the problem can be solved step by step. First, stresses and strains are to be found from the equilibrium Eq. (19) as the functions of the geometrical parameters, which characterise the front position. Then, stresses and strains are to be substituted into the expression for A NN . Afterwards, Eq. <ref type="formula">23</ref>is to be solved for c eq , and the dependence of c eq on the geometrical parameters of the front position is to be found. Then, the current concentration at the reaction front is to be found from the diffusion problem with boundary condition (26) or (28) as the function of the geometrical parameters of the reaction front. When both concentrations are found, the kinetic equation takes a form of a differential equation that relates the time derivatives of the front geometrical parameters and the parameters themselves. Integration of the equation gives the time evolution of the front. Such step-by-step solution was realised analytically for simple problems in <ref type="bibr" target="#b21">Freidin, Morozov et al. (2016)</ref> ; <ref type="bibr" target="#b22">Freidin et al. (2014)</ref> .</p><p>In the case of a viscoelastic constituents, stresses and strains depend not only on the position of the front but also on time through the history of the front propagation. The problem of finding the stress-strain state and the front velocity cannot be split even in simple cases, as it can be done in the case of elasticity. The reason for this is that in the case of viscoelasticity, the constitutive equations contain internal variables, such as the viscous deformation, which are determined by a time-dependent differential equation. Since the current concentration, c , is found from the diffusion equation with the boundary condition on the moving reaction front, the spatial distribution of the concentration also depends on the history of the process. Thus, to describe the front propagation, the coupled stress-diffusion-reaction problem has to be solved.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Problem formulation</head><p>In this section, the general problem is reformulated for the two-phase lithiation of spherical particles upon the first lithiation cycle. Specific 3D constitutive equations for solid constituents are presented first. Afterwards, the problem is formulated in spherical coordinates. Finally, some aspects of the finite element solution procedure of the problem are highlighted.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Geometrical model of a spherical Si particle undergoing two-phase lithiation</head><p>An idealised spherical Si particle is used to represent a typical Si particle utilised in Li-ion battery anodes. Since, in many cases, amorphous Si (a-Si) is used as the active material in battery electrodes <ref type="bibr" target="#b45">( McDowell, Lee, Harris et al., 2013 )</ref>, the present paper is focused on the case of a-Si, 2 which transforms into a-Li 3.75 Si. The particle has an initial external radius of R 0 . Insertion of Li ions into a-Si upon the very first lithiation cycle is assumed to follow the chemical formula:</p><formula xml:id="formula_27">n − Si + n * Li → Li n * Si n −<label>(29)</label></formula><p>where n * /n − ranges from 2.5 to 3.75 . In the calculations of this paper, the normalised stoichiometric coefficients are used: n − = 4 / 15 , n * = 1 , n + = 1 / 15 . The lithiation process is localised at the reaction front and leads to the formation of a circular layer that underwent a chemical transformation <ref type="figure">( Fig. 1 )</ref>. The outer layer, which is referred to as the shell, is the lithiated Si, while the inner part, <ref type="figure">Fig. 1</ref>. The geometry of a spherical Si particle undergoing a lithiation process, in which the reaction front is present.</p><p>which is referred to as the core, is a-Si. The two phases are separated by spherical chemical reaction front Γ of radius R Γ .</p><p>The reaction front moves towards the centre of the particle during lithiation, i.e. R Γ decreases. The external surface of the particle is considered to be traction-free.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Constitutive behaviour of the material</head><p>Two constitutive models have to be specified -the models for the behaviour of the transformed and the untransformed materials.</p><p>The spherical core of the particle consists of the untransformed material, B − , and is subjected to a volumetric deformation. It is modelled as a non-linear elastic material under the deformation gradient F − , which is isotropic, i.e.</p><formula xml:id="formula_28">F − = ( J − ) 1 / 3 I ,</formula><p>where J − = det F − . The following form of the strain energy density for this material is assumed:</p><formula xml:id="formula_29">W − = K − ( J − − 1 − ln J − ) ,<label>(30)</label></formula><p>where K − is the bulk modulus. The Kirchhoff stress tensor is obtained from the expression:</p><formula xml:id="formula_30">τ − = ∂W − ∂ F − • F − T .<label>(31)</label></formula><p>Then the Cauchy stress tensor:</p><formula xml:id="formula_31">σ − = 1 J − τ − = K − 1 − 1 J − I .<label>(32)</label></formula><p>The transformed material, B + , is modelled as the finite-strain non-linear viscoelastic solid. Within the adopted framework, a solid skeleton assumption is made for the diffusion -the diffusion of B * through B + does not lead to any additional deformations of B + . This allows focusing on stresses produced by the chemical reaction only, since the chemical reaction becomes the only source of the deformation. It should be noted that since the derivation of the chemical affinity tensor does not rely on the form of the constitutive laws, it is possible to introduce additional concentration-dependent deformation gradient (similar to temperature-dependent thermal expansion deformation gradient) into the multiplicative decomposition of the total deformation gradient. This will allow to take into account the volume change associated with the diffusing Li atoms.</p><p>For the formulation of the constitutive equations of the transformed material B + , it is natural to start with the stress-free configuration. Thus, deformation gradient F + , which characterises the deformation with respect to the reference (stress-free) configuration of B + , is introduced. In addition to this, deformation gradient F 0 + is defined with respect to the stress-free configuration of B − , as was introduced in Eq. (16) . The constitutive model is similar to the standard linear solid model. However, the compressible neo-Hookean springs are used instead of the linear springs and the non-linear stress-dependent viscosity is used instead of the linear viscosity <ref type="figure">( Fig. 2 a)</ref>. The spring with the deformation gradient F e is connected sequentially with the dashpot, which represents the deformation gradient F p .</p><p>The dependence of the viscosity on the stress is chosen such that the material demonstrates the behaviour that is very similar to the elasto-plastic behaviour (as illustrated in stress-strain diagrams in <ref type="figure">Fig. 2 b)</ref>. This motivates notation F p with subscript "p", which is usually used for plastic deformations, and F p is further referred to as the plastic deformation gradient. The reason for adopting such model is twofold. First of all, such viscoelastic framework with highly non-linear viscosity (according to the power law or the Eyring-like relation) is one of the standard ways of modelling many materials, from metals (e.g. <ref type="bibr" target="#b44">Maresca, Kouznetsova, &amp; Geers, 2016 )</ref> to polymers (e.g. <ref type="bibr" target="#b35">Klompen, Engels, Govaert, &amp; Meijer, 2005 )</ref>, and allows describing both short-term and long-term (i.e. creep or relaxation) behaviour. Secondly, when such a model is used for lithiated Si, the available experimental data for this material allows estimating the viscosity parameter directly (see the end of the subsection and Section 3.5 ).</p><p>A parallel spring represents the deformation gradient F + such that</p><formula xml:id="formula_32">F + = F e • F p .<label>(33)</label></formula><p>Isochoric Finger tensors B e and B + are then given by B e = ( J e ) − 2 <ref type="figure">Fig. 2</ref>. The schematic representation of the constitutive material model (a), and the stress-strain behaviour of the model that is used for the transformed material (lithiated Si) under uniaxial tension at various true strain rates, under uniaxial repeated loading, and under uniaxial cyclic deformation (b). The parameters of the model are given in <ref type="table" target="#tab_1">Table 1</ref> .</p><formula xml:id="formula_33">B + = ( J e ) − 2 3 F + • F + T ,<label>(35)</label></formula><p>where the bar denotes that a tensor is isochoric. The strain energy density of the material B + is defined as 3 :</p><formula xml:id="formula_34">W + = W s + W h , W s = K + ( J e − 1 − ln J e ) + G s 2 tr B e − 3 , W h = G h 2 tr B + − 3 ,<label>(36)</label></formula><p>where K + is the bulk modulus, G h is the hardening modulus, and the total shear modulus of material B + is G + = G s + G h . In Eq. <ref type="formula" target="#formula_34">36</ref>, the strain energy density W + is divided into two parts, W s and W h , which correspond to strain energy densities of two different springs in the rheological model. The Kirchhoff stress tensor is derived from the expression for the strain energy density <ref type="bibr" target="#b24">( Geers, 2004 )</ref>:</p><formula xml:id="formula_35">τ + = ∂W + ∂ F e • F e T .<label>(37)</label></formula><p>where W + depends on F e through both B e and B + , while the dependence of B + on F e at given F p follows from (35) and (33) . It can be shown that representation (37) is mathematically equivalent to</p><formula xml:id="formula_36">τ + = ∂W s ∂ F e • F e T + ∂W h ∂ F + • F + T ,<label>(38)</label></formula><p>which means that the Kirchhoff stress tensor can also be calculated as the sum of the stresses acting in the springs, which, in turn, are calculated through the derivatives of the strain energy densities of the springs with respect to the corresponding deformation gradients F e and F + .</p><p>Eqs. (36) and (37) lead to the expression for the Cauchy stress tensor, which is split into the hydrostatic stress, σ v , the deviatoric stress that is driving the plastic deformation, σ d s , and the deviatoric stress that governs the hardening behaviour,</p><formula xml:id="formula_37">σ d h : σ + = 1 J e τ + = σ v + σ d s + σ d h ,<label>(39)</label></formula><formula xml:id="formula_38">σ v = K + 1 − 1 J e I ,<label>(40)</label></formula><formula xml:id="formula_39">σ d s = G s 1 J e B d e , B d e = B e − 1 3 tr B e I ,<label>(41)</label></formula><formula xml:id="formula_40">σ d h = G h 1 J e B d + , B d + = B + − 1 3 tr B + I .<label>(42)</label></formula><p>3 Various strain energy densities for the compressible neo-Hookean material exist <ref type="bibr" target="#b28">( Horgan &amp; Saccomandi, 2004 )</ref>. Here the following form of the neo-Hookean strain energy density is used <ref type="bibr" target="#b28">( Horgan &amp; Saccomandi, 2004;</ref><ref type="bibr" target="#b49">Ogden, 1972 )</ref>:</p><formula xml:id="formula_41">W = K ( J − 1 − ln J ) + G 2 tr J − 2 3 F • F T − 3 , J = det F ,</formula><p>which consists of the volumetric and deviatoric parts. Since rheological model, which is considered in this paper, contains two springs, additional deviatoric contribution appears in W + .</p><p>The constitutive model is completed by specifying the evolution law for the plastic strains (the flow relationship):</p><formula xml:id="formula_42">D p = σ d s 2 η ,<label>(43)</label></formula><p>where η is the viscosity. The rate of deformation tensor D p is defined as</p><formula xml:id="formula_43">D p = 1 2 L p + L p T , L p = F e • d F p d t • F −1 p • F −1 e .<label>(44)</label></formula><p>Moreover, the plastic deformation is assumed to be isochoric ( det F p = 1 ) and spin-free ( L p − L p T = 0 ). It can be shown that constitutive Eqs. (39) -(42) with the flow law (43) satisfy the Clausius-Duhem inequality. It should be noted that this may be not true for such a model in the case of a different flow relationship <ref type="bibr" target="#b50">( Palmov, 1997;</ref><ref type="bibr">20 0 0 )</ref>. It can also be shown that objectivity is satisfied for the total Cauchy stress, the deviatoric driving stress and the plastic strain rate.</p><p>The power law is adopted for the viscosity:</p><formula xml:id="formula_44">η = τ 0 σ 0 σ 0 σ s q , σ s = 3 2 σ d s : σ d s ,<label>(45)</label></formula><p>where σ s is the equivalent deviatoric driving stress, τ 0 , σ 0 , and q are material constants. Parameter σ 0 is introduced just to avoid using dimensional units in power q , and σ 0 = 1 GPa is taken in the numerical simulations.</p><p>As mentioned above, the highly non-linear stress-dependent viscosity leads to the material behaviour that is naturally to call a rate-dependent elasto-plastic behaviour, as illustrated in <ref type="figure">Fig. 2</ref> b. According to Eq. (45) , the plastic part of the constitutive model is controlled by two parameters: q and τ 0 , both of which influence the value of the yield stress. Parameter q controls the dependence of the yield stress on the strain rate (for power law (45) , the dependence of the yield stress on the strain rate is linear in the log-log scale) and can be measured ( Section 3.5 ). Thus, if q is measured and the yield stress at a specific strain rate is measured, τ 0 can be fitted.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Equations for stresses and strains</head><p>In this section, general 3D equilibrium and constitutive equations from Section 2.3 are simplified and rewritten in the spherical coordinates, taking the advantage of the spherical symmetry of the problem. The coordinates of a material point in the reference and the current configurations are denoted as ( R, Θ, Φ ) and ( r , θ , φ), respectively.</p><p>In the case of a spherical symmetry, the base vectors of the spherical coordinate system in the reference and the current configurations coincide: e R = e r , e Θ = e θ , e Φ = e φ .</p><p>Variable r is a function of R and is split into two parts:</p><formula xml:id="formula_46">r = r − ( R ) , R &lt; R Γ , r + ( R ) , R &gt; R Γ ,<label>(47)</label></formula><p>Thus, the total deformation gradients of the transformed and the untransformed materials and the plastic deformation are given by</p><formula xml:id="formula_47">F − = d r − d R e R e R + r − R ( I − e R e R ) , F 0 + = d r + d R e R e R + r + R ( I − e R e R ) ,<label>(48)</label></formula><formula xml:id="formula_48">F p = λ p e R e R + 1 λ p ( I − e R e R ) ,<label>(49)</label></formula><p>where λ p is the plastic stretch ratio.</p><p>The equilibrium Eq. (19) , becomes</p><formula xml:id="formula_49">d σ R d R + 2 R ( σ R − σ Θ ) = 0 ,<label>(50)</label></formula><p>where σ Θ = σ Φ is used and ∇ is rewritten with respect to the reference configuration ( ∇ = F −T • ∇ 0 ). Here the Cauchy stress components σ R and σ Θ are treated as functions of R , as this is convenient for the numerical scheme. Moreover, subscripts R and Θ are used because of (46) .</p><p>The computational domain of the particle is divided into the core and the shell by the chemical reaction front, the position of which is denoted as R Γ . The boundary and the interface conditions take the following form:</p><formula xml:id="formula_50">r | R =0 = 0 ,<label>(51)</label></formula><p>r | R = R Γ = 0 (the displacement continuity condition),</p><p>σ R | R = R Γ = 0 (the traction continuity condition), <ref type="formula">53</ref>σ R | R = R 0 = 0 (the stress-free boundary condition).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>(54)</head><p>The constitutive equations of the untransformed material under the hydrostatic stress state, (30) and (32) , become</p><formula xml:id="formula_52">W − = K − r 3 R 3 − 1 − ln r 3 R 3 , σ R − = σ Θ− = K − 1 − R 3 r 3 .<label>(55)</label></formula><p>Substitution of (48) and <ref type="formula" target="#formula_48">49</ref>into the constitutive equations of the transformed material, (36), (39) -(43), (45) results in:</p><formula xml:id="formula_53">W + = K + χ ζ − 1 − ln χ ζ + G s 2 1 λ 2 p χ 4 / 3 + 2 λ p χ −2 / 3 − 3 + G h 2 χ 4 / 3 + 2 χ −2 / 3 − 3 ,<label>(56)</label></formula><formula xml:id="formula_54">ζ = g 3 R 3 r 3 , χ = d r d R R r ,<label>(57)</label></formula><formula xml:id="formula_55">σ R + = σ v R + σ d s R + σ d h R , σ Θ+ = σ v Θ + σ d s Θ + σ d h Θ ,<label>(58)</label></formula><p>where</p><formula xml:id="formula_56">σ v R = σ v Θ = K + 1 − ζ χ , σ d s R = 2 3 G s ζ χ 1 λ 2 p χ 4 / 3 − λ p χ −2 / 3 , σ d s Θ = − 1 3 G s ζ χ 1 λ 2 p χ 4 / 3 − λ p χ −2 / 3 ,<label>(59)</label></formula><formula xml:id="formula_57">σ d h R = 2 3 G h ζ χ χ 4 / 3 − χ −2 / 3 , σ d h Θ = − 1 3 G h ζ χ χ 4 / 3 − χ −2 / 3 ,<label>(60)</label></formula><formula xml:id="formula_58">and 1 λ p d λ p d t = 1 3 η σ * s = 1 3 τ 0 σ * s σ 0 | σ * s | σ 0 q , σ * s = σ d s R − σ d s Θ .<label>(61)</label></formula><p>Due to the spherical symmetry, the equivalent deviatoric driving stress defined in (45) becomes</p><formula xml:id="formula_59">σ s = σ d s R − σ d s Θ , while</formula><p>Eq. (43) transforms into (61) . Thus, σ * s is introduced that satisfies σ s = | σ * s | . It should be noted that σ * s can be positive and negative and can be referred to as the signed equivalent deviatoric driving stress. This stress is used further, instead of σ s , as it contains the information on the sign of the time derivative of λ p , such that λ p increases for positive σ * s and decreases for negative σ * s .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Kinetic equation for the spherical reaction front</head><p>The position of the reaction front in the spherical coordinates is determined by integrating the stress-dependent velocity, which is defined as</p><formula xml:id="formula_60">V = − d R Γ d t .<label>(62)</label></formula><p>Since only the forward reaction is considered in the present paper, the reaction front velocity is always non-negative. For the spherical symmetry, Eq. (20) with boundary conditions (28) and (22) can be easily solved, and the concentration at the reaction front can be obtained. Afterwards, this concentration can be substituted into Eq. (25) , which results in Freidin, Morozov et al.</p><formula xml:id="formula_61">V = ( c * − c eq ) n − M − ρ − 1 1 k * + ( 1 − ξ ) 2 α + ξ ( 1 − ξ ) D 0 , ξ = R 0 − R Γ R 0 , D 0 = D R 0 ,<label>(2016)</label></formula><p>where ξ ∈ [0; 1] and the equilibrium concentration is obtained by equating the normal component of the chemical affinity tensor to zero (i.e. by solving (13) and (24) with respect to c eq and using n * = 1 ):</p><formula xml:id="formula_63">c eq = c * exp − 1 R g T n − M − ρ − γ + W − − g 3 W + + P − : F .<label>(64)</label></formula><p>It should be noted that in the case of a spherical symmetry,</p><formula xml:id="formula_64">P − : F = r 2 R 2 σ R d r d R ,<label>(65)</label></formula><p>where all quantities are taken at the reaction front, R = R Γ . It should be noted that, due to the hydrostatic state of the core, at the reaction front, σ R = −p, where p is pressure acting in the core. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Model parameters</head><p>In this section, the model parameters that were used to simulate the lithiation of the spherical Si particle are summarised. Two different materials are involved in modelling: the untransformed material, i.e. the pure amorphous Si, and the transformed material, which is assumed to be Li 3.75 Si, and which is formed at room temperature <ref type="bibr" target="#b48">Obrovac &amp; Krause, 2007 )</ref>. The full list of parameters is provided in <ref type="table" target="#tab_1">Table 1</ref> .</p><p>The untransformed material deforms only volumetrically, therefore, according to the accepted constitutive model, it cannot deform plastically. Thus, it is characterised only by the bulk modulus, which was calculated from the Young's modulus E − and the Poisson's ratio ν − , which are taken from <ref type="bibr" target="#b23">( Freund &amp; Suresh, 2009 )</ref>, using the relation,</p><formula xml:id="formula_65">K − = E − / ( 3 − 6 ν − ) .</formula><p>The Yong's modulus E + and the power law parameter q are taken from <ref type="bibr" target="#b1">Berla, Lee, Cui, and Nix (2015)</ref> where the mechanical behaviour of the amorphous lithiated silicon was studied experimentally by nanoindentation, the Young's modulus was measured, and the viscoplastic behaviour was described by the power law relation 4 Also, in <ref type="bibr" target="#b1">Berla et al. (2015)</ref> , the yield stress of a-Li 3.75 Si was measured to be σ y = 0 . 43 GPa at the true strain rate of ˙ ε = 0 . 05 s −1 . Similar values of the yield stress were reported in Chon, Sethuraman, McCormick, Srinivasan, and Guduru (2011) (thin film curvature measurement)</p><p>and  ) (molecular dynamics). Based on this, the reference relaxation time for the transformed material, τ 0 , was fitted under the uniaxial compression. Parameter σ 0 is introduced only to preserve the correct units for τ 0 , which is evident from Eq. (61) . The bulk modulus K + was taken from <ref type="bibr" target="#b60">Zeng et al. (2013)</ref> , where it was obtained by in-situ X-ray diffraction on the crystalline Li 15 Si 4 that was subjected to a hydrostatic pressure. The hardening modulus, G h , was fitted based on the MD results of <ref type="bibr" target="#b17">Fan et al. (2013)</ref> , such that σ ≈ 0.9 GPa is achieved at ε = 0 . 35 (same loading conditions as for fitting of τ 0 were used). It should be noted that the total shear modulus, G + = G h + G s , is calculated from E + and K + using the relation, <ref type="figure">Fig. 2</ref> b, the simulation of the stress-strain behaviour of the transformed material is shown, using parameters from <ref type="table" target="#tab_1">Table 1</ref> and the constitutive model presented above. It should be noted that the authors did not find any experimental or MD simulation data on unloading and cyclic loading of lithiated Si. The unloading and cyclic curves in <ref type="figure">Fig. 2 b are</ref> shown to demonstrate the behaviour of the constitutive model, parameters of which were estimated using multiple sources. The Bauschinger effect in the current constitutive model results from the connection of elastic and viscous elements, as shown in <ref type="figure">Fig. 2 a.</ref> The chemical expansion factor g was calculated in <ref type="bibr" target="#b9">Cubuk and Kaxiras (2014)</ref> using Density Functional Theory (DFT). The diffusion coefficient of Li in lithiated Si was taken from <ref type="bibr" target="#b30">Johari, Qi, and Shenoy (2011)</ref> , where it was extrapolated from high-temperature ab initio molecular dynamics simulations. The density of Si was taken from <ref type="bibr" target="#b12">Custer et al. (1994)</ref> .</p><formula xml:id="formula_66">G + = 3 K + E + / ( 9 K + − E + ) . In</formula><p>The solubility of the reactant in the transformed material is defined as the maximum achievable concentration of the reactant (Li) in the transformed material (Li 3.75 Si). As mentioned above, Li atoms that belong to the transformed material are not taken into account for the diffusion process. Maximum saturation of Li in Si is achieved for Li 4.4 Si <ref type="bibr" target="#b45">( McDowell, Lee, Harris et al., 2013 )</ref>, hence, with the approach taken in this paper, there are x = 4 . 4 − 3 . 75 = 0 . 65 free Li atoms (which are taken into account for the diffusion process) per each Si atom within the transformed material. Although the existence of bonded/unbonded atoms is not confirmed by experiments, such assumption is used in other papers on Si lithiation, e.g. <ref type="bibr" target="#b16">Drozdov (2014)</ref> . Hence the solubility in the chemically transformed configuration is given by</p><formula xml:id="formula_67">c g * = N * N A υ = x N + N A υ = x ρ + M + = x ρ − M − n + n − 1 g 3 ,<label>(66)</label></formula><p>where N * is the number of free Li atoms, N + is the number of Si atoms in the transformed material, N A is the Avogadro constant and υ is the volume of the transformed material in the chemically transformed configuration. The solubility with respect to the reference configuration of B − is calculated in the following way:</p><formula xml:id="formula_68">c * = g 3 c g * = x ρ − M − n + n − .<label>(67)</label></formula><p>In <ref type="bibr" target="#b39">Liu et al. (2011)</ref> , the propagation of the reaction front along the length of thin Si nanowires was investigated. The average approximate propagation speed of 15 nm/s was selected from the results presented in <ref type="bibr" target="#b39">Liu et al. (2011)</ref> . In the 1D case, the stationary diffusion problem (with c = c * boundary condition at the edge of the nanowire, which is in contact with the Li plate) can be solved analytically, and the following concentration at the reaction front x Γ can be found:</p><formula xml:id="formula_69">c | x = x Γ = D D + n * k * ( L − x Γ ) c * ,<label>(68)</label></formula><p>where D n * k * ( L − x Γ ) can be used. This leads to the following reaction front velocity for the 1D case:</p><formula xml:id="formula_70">V ≈ n − M − ρ − k * c * ,<label>(69)</label></formula><p>from which k * was estimated. From <ref type="table" target="#tab_1">Table 1</ref> it can be seen that the characteristic speed of the diffusion of Li ions through the lithiated shell, which is proportional to D/R 0 = 2 • 10 3 nm/s, is much larger than the reaction rate, which is determined by the reaction rate parameter k * . In this case, the diffusion process reaches the stationary regime much faster than the time scale of the reaction rate. This motivates the consideration of the stationary diffusion (see also <ref type="bibr" target="#b59">Yang et al., 2012 )</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">Numerical aspects</head><p>Stress equilibrium Eq. <ref type="formula" target="#formula_49">50</ref>, with the boundary conditions (51) and (54) is solved numerically with respect to the unknown variable r , which is a function of known variable R .</p><p>Variable R is meshed with the fixed spatial step R = R 0 /N, resulting in N + 1 nodes. The finite element method is used, hence the following system of non-linear equations (with respect to the unknown nodal values of r , which are denoted here as r i ) is constructed:</p><formula xml:id="formula_71">− R 0 0 σ R d φ i d R d R + R 0 0 2 R ( σ R − σ Θ ) φ i d R = 0 , i = 1 , . . . , N,<label>(70)</label></formula><formula xml:id="formula_72">˜ r = N i =1 r i φ i , φ i R j = 1 , j = i, 0 , j = i, R j = j R,<label>(71)</label></formula><p>where φ i are continuous and The plastic flow Eq. (61) , is discretised using the following implicit scheme:</p><formula xml:id="formula_73">φ i ( R ), R ∈ R j−1 ; R j are linear ∀ i , j . Function ˜ r ( R )</formula><formula xml:id="formula_74">λ p , j = λ p , j−1 exp 1 3 η j σ * s , j t ,<label>(72)</label></formula><p>where j and j − 1 indicate that a quantity belongs to the current and the previous time step, respectively. To solve Eq. (72) with respect to λ p, j at each integration point, Matlab's fzero function is used. However, since Eq. (72) is highly non-linear, the convergence with respect to the initial guess is improved by replacing the original equation with a linear equation in a region far from the root of the original equation, while keeping the function continuously differentiable everywhere. Within the numerical scheme, which is used in this paper, the position of the reaction front can only take the nodal values of R . The movement of the reaction front is modelled as the change of the position of the front by R each time step t . Since the spatial step is fixed, the time step becomes an additional unknown. Therefore, additional equation R = V t is required, the implicit form of which is used in the framework, i.e. V is calculated for the current position of the reaction front R i , while t is the time required for the reaction front to move from the previous position R i −1 to the current position R i . Since the reaction front can only be located at the node, each element can either belong to the core or to the shell. The material parameters of the transformed and the untransformed materials are used to calculate the element stresses corresponding to the shell and the core, respectively. The strain energies and the stretch ratios to the left and to the right of the reaction front are required to calculate V and are taken at the integration points of the elements, which share the reaction front node. The radial stress at the reaction front is calculated as an average of the radial stresses at the integration points of these elements.</p><p>Within this approach, the interface conditions (52) and (53) are fulfilled automatically. Resulting system of N + 1 nonlinear equations is solved using the standard Newton-Raphson method with respect to unknowns r i ( i = 1 , . . . , N) and t each time step.</p><p>The convergence of the scheme was tested using the parameters given in <ref type="table" target="#tab_1">Table 1</ref> . The movement of the reaction front from the edge of the particle up to R Γ = 0 . 5 R 0 was modelled and the nodal solution at R Γ = 0 . 5 R 0 was considered for the error analysis. The convergence rate, which is calculated as where ˆ r kN are nodal solutions on different grids that are taken at coinciding grid points, was found to be 1.028 (nodal average value) for N = 320 . In the presented numerical scheme, the convergence is limited by the first-order method that is used for the integration of the plastic flow and the velocity equations. The results, which are presented in Section 4 , were calculated for the case of N = 1280 .</p><formula xml:id="formula_75">log 2 ˆ r N −ˆ r 2 N ˆ r 2 N −ˆ r 4 N ,</formula><p>The results corresponding to a small V were not calculated due to a numerical limitation. In this case, t becomes large (since R is fixed) and the Jacobian matrix in the Newton-Raphson procedure becomes ill-conditioned which affects the convergence of the Newton-Raphson procedure. Hence, the calculated dependence V = V ( R Γ ) does not reach zero exactly.</p><p>Also, in <ref type="figure" target="#fig_2">Fig. 3</ref> , it is noticeable that ε p and σ * s do not reach R Γ exactly. As was mentioned above, stresses and λ p (and hence ε p ) are defined at the integration points and, since there should be a discontinuity at R Γ , which is located at the node, the curves that correspond to ε p and σ * s end at the integration points of the elements to the left and to the right of the reaction front node. Obviously, the decrease of the mesh size reduces the horizontal gap between the end of the curve and the line R = R Γ , i.e. in the limit R → 0 there is only a discontinuity of the first kind at the point R = R Γ .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results and discussion</head><p>All presented results and figures correspond to the parameters listed in Table 1 . In the case when specific parameters are varied <ref type="figure">( R 0 , α, or γ )</ref>, the values are indicated in figures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Stress and strain analysis</head><p>The distributions of the radial and the hoop Cauchy stresses along the radius of the particle are shown in <ref type="figure" target="#fig_2">Fig. 3 a, b</ref> at different positions of the reaction front, i.e. at different stages of lithiation. The stresses in the core are homogeneous and hydrostatic. The dependence of the pressure in the core of the particle on the position of the reaction front is shown in <ref type="figure">Fig. 4 a (positive pressure, p , means that the stress is compressive)</ref>. The highest magnitude of the hoop stress is achieved at the reaction front for all positions of the front, while the highest magnitude of the radial stress, is initially at the reaction front and shifts away from the front as the front moves towards the centre of the particle.</p><p>It can be seen that the stress in the core (as well as the radial stress at the reaction front) changes from tension to compression during the reaction front propagation. Moreover, the hoop stress in a layer adjacent to the edge of the particle changes from compression to tension. This can be explained as follows. When the chemical reaction starts, the reaction front is close to the outer edge of the particle, R Γ ≈ R 0 , and the shell produces the tensile stress in the core. Indeed, if an expanded shell and an unexpanded core are considered separately, then, in order to satisfy the compatibility condition <ref type="figure">Fig. 4</ref>. The dependence of the equivalent stress σ VM at the edge of the particle ( R = R 0 ) and dependence of pressure p in the core, which is also equal to the radial stress at the reaction front with the minus sign, on the position of the reaction front (a). The region where σ VM reaches the maximum value is magnified (b). The dependence of the jump of the radial stretch ratio at the reaction front ( R = R Γ ), which is reduced by the volumetric expansion factor of the transformed material, and the dependence of the current particle radius r ( R 0 ), which is normalised by R 0 , on the position of the reaction front (c).</p><p>at the reaction front, the inner surface of the shell has to be moved towards the centre of the particle, while the outer surface of the core has to be moved away from the centre. These deformations produce the tensile radial stress. However, due to the large magnitude of the stresses, the shell undergoes plastic deformation, which results in a stress relaxation in the shell behind the reaction front and decreases the tensile stress in the core. As the reaction front moves, another portion of the material undergoes the chemical transformation and, thus, the volumetric expansion. This may be viewed as a volumetric expansion of a thin layer near the reaction front. This expansion produces the radial compressive stress, which is superposed with the "previous" radial stress. As a result, starting from some position of the reaction front, the radial stress at the reaction front (as well as in the core) becomes compressive <ref type="figure" target="#fig_2">( Fig. 3 a)</ref>, while hoop stress in a layer adjacent to the edge of the particle becomes tensile <ref type="figure" target="#fig_2">( Fig. 3 b)</ref>.</p><p>The above reasoning is also confirmed by the distributions of the radial plastic strain, ε p = ln λ p , along the radius of the particle at various positions of the reaction front <ref type="figure" target="#fig_2">( Fig. 3 c)</ref>. The radial plastic strain rapidly decreases along the radial coordinate. The radial plastic strain at the edge of the particle ( R = R 0 ) decreases as the reaction front moves towards the centre of the particle. This happens due to the build up of the tensile hoop stress that drives the increase of the hoop plastic strain, which is −0 . 5 ln λ p , and, thus, the decrease of the radial plastic strain.</p><p>The radial plastic strain, ε p , reaches the maximum value in the region close the reaction front, as seen in <ref type="figure" target="#fig_2">Fig. 3 c;</ref> however, the magnification shows that there is a small plateau next to the reaction front <ref type="figure" target="#fig_2">( Fig. 3 d)</ref>. This plateau is the result of the change of σ * s , which is governing the plastic flow according to Eq. (61) , from a positive value of 0.54 GPa at the reaction front to a negative value of −0 . 43 GPa at the distance of 0.007 R 0 from the reaction front <ref type="figure" target="#fig_2">( Fig. 3 e)</ref>.</p><p>Stress σ * s reaches the maximum positive value at the reaction front and produces large plastic deformation, while the maximum negative σ * s (compressive stress) in the rest of the shell leads to the decreasing ε p in time, which is seen in <ref type="figure" target="#fig_2">Fig. 3</ref> c. It should be noted that, as discussed above, ε p always decreases for a fixed radial coordinate due to the compressive stress σ * s . The analysis of stress σ * s shows that the behaviour of the model is indeed very similar to an elasto-plastic model with hardening, i.e. where the plasticity is modelled by the "slider" element. As seen in <ref type="figure" target="#fig_2">Fig. 3</ref> e, stress σ * s has almost constant value of −0 . 43 GPa within nearly entire shell, which results in the unlocking of the viscous element, i.e. only hardening spring is active, while the other spring is locked. In the region close to the reaction front, the absolute value of stress σ * s is not large enough and the viscous element is locked, i.e. both springs are unlocked and work in parallel. According to the selected power law, which is given by Eq. <ref type="formula" target="#formula_58">61</ref>, intermediate values of σ * s are not large enough to generate a plastic flow within the modelling time scale (since the exponent in the power law, q + , is relatively large); therefore, the plastic deformation within the small region behind the reaction front (region of the intermediate values of σ * s ) is frozen. Obviously, very similar behaviour will also be observed, if the ideal plastic element (with rate-dependent yield stress) is used instead of the non-linear viscous element.</p><p>The equivalent stress σ VM = (1 . 5 σ d : σ d ) 1 / 2 at the edge of the particle is plotted in <ref type="figure">Fig. 4</ref> a as a function of the position of the reaction front. It can be seen that when the position of the reaction front is close to 0.73 R 0 , the equivalent stress is close to zero. The profile of the equivalent stress is non-monotonic due to the change of the sign of the hoop stress, while the equivalent stress is always non-negative. As discussed above, there is a small region behind the reaction front with the frozen plastic deformation. This creates the change in the slope of σ VM at the edge of the particle, as illustrated in <ref type="figure">Fig. 4 b,</ref> as the end of the frozen plastic deformation zone crosses the boundary of the domain.</p><p>The results regarding the total radial strain are not shown in figures; however it is useful to note that the maximum value of the total radial strain in the shell is achieved at the reaction front. This value is always positive since it includes the transformation-induced volumetric expansion. When the position of the reaction front approaches the centre of the particle, the total radial strain is almost constant along the radius, apart from the region neighbouring the reaction front where it peaks.</p><p>Another quantity that defines the behaviour of the system is the jump of the radial stretch ratio at the reaction front,</p><formula xml:id="formula_76">λ r = d r/ d R .</formula><p>It corresponds to the radial component of the deformation gradient jump, F R , which is the only non-  zero component of F . The evolution of this quantity is shown in <ref type="figure">Fig. 4</ref> c. The jump of the stretch ratio changes nonmonotonically with R Γ , with the initial increase and the subsequent decrease. This quantity highly influences the velocity of the reaction front, as discussed below. The relative size of the particle, r / R 0 at R = R 0 , monotonically increases up to a value that is close to the expansion ratio g .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Reaction front kinetics</head><p>The velocity of the reaction front as a function of the position of the front is plotted in <ref type="figure" target="#fig_3">Fig. 5</ref> a for various values of the chemical energy parameter, γ . The velocity profile is non-monotonic, which results from the interplay between various terms of the chemical affinity (the details are provided in Section 4.3 ).</p><p>The initial velocity of the reaction front (at R Γ = R 0 ) decreases with the decrease of γ , and the velocity is close to zero for γ = 4 J/mm 3 . Therefore, when γ is below a certain threshold value, which can be referred to as a critical value, γ * , the chemical reaction cannot start at the surface of the particle. This is a result of internal stresses that would be produced by the transformation strain if the reaction started, and this was also shown analytically for the case of elastic small strains <ref type="bibr" target="#b21">( Freidin, Morozov et al., 2016 )</ref>. It should be emphasised that the threshold effect is absent if the contribution of stresses to the chemical affinity is neglected, i.e. in this case, the reaction proceeds at any γ &gt; 0. The thickness of the shell (the transformed material) depending on time is plotted in <ref type="figure" target="#fig_4">Fig. 6</ref> for various γ .</p><p>Initially, the velocity increases as the reaction front propagates, then varies slowly, and afterwards the velocity starts to decrease and practically drops to zero, which means the blocking of the reaction. This velocity drop does not happen if stresses are neglected in the expression for the chemical affinity (curves marked with "no stresses in A NN "). Thus, the blocking effect originates from the competition between the mechanical and the chemical parts of the affinity tensor, and it can be seen that the reaction retardation starts earlier if the input of the chemical energy, γ , decreases.</p><p>The blocking effect can be also explained in terms of the equilibrium concentration of the diffusive constituent. The front can propagate only if c eq &lt; c * , according to Eq. (63) . The equilibrium concentration, in turn, depends on stresses and strains according to Eq. (64) , while stresses and strains depend on the front position. The direct reaction cannot proceed if c eq approaches c * as the reaction front approaches a certain position. As this happens, the concentration of the diffusive component in the shell also approaches c * .</p><p>These results qualitatively correspond to the experimental evidence of the influence of stresses on the kinetics of the reaction between Li and Si. <ref type="bibr" target="#b27">In van Havenbergh et al. (2016)</ref> , various coatings were applied to Si particles. Different coatings provided different mechanical constrains for the Si particle and thereby led to different internal stresses. The final size of the remaining untransformed Si core varied depending on the coating. Thus, the connection between stresses and the reaction arrest was experimentally observed. Moreover, in <ref type="bibr" target="#b48">Obrovac and Krause (2007)</ref> , it was also observed that the Si core is maintained during charge/discharge cycling. According to the model proposed in this paper, at γ = 5 J/mm 3 , the lithiation time from R Γ = R 0 to R Γ = 0 . 125 R 0 is t = 95 . 51 s. This is quantitatively comparable to the results reported in <ref type="bibr" target="#b45">McDowell, Lee, Harris et al. (2013)</ref> , where particles of radius 285 nm underwent full lithiation in 129 s.</p><p>As seen in <ref type="figure" target="#fig_3">Fig. 5</ref> , the dependence of V changes from concave to convex when the reaction is close to being blocked. This is an indication that the reaction locking is approached asymptotically. It should be noted that, since the transformed material is viscoelastic, the stresses undergo the relaxation process, which can lead to unblocking of the reaction. However, since the material has a highly non-linear viscosity resulting in the elasto-plastic behaviour of the material, the stress relaxation process may require very large time scales and cannot be observed within the time scales of the simulations performed in this paper. It should be noted that if the transformed material demonstrates linear viscosity, the relaxation time becomes comparable to the chemical reaction time scale and the stress relaxation near the reaction front plays a significant role.</p><p>The influence of the internal stresses decreases with the increase of γ , although the reaction blocking effect is still present at the end of the transformation. For example, for γ = 7 J/mm 3 , the internal stresses do not affect the reaction rate in the wide range of the reaction front positions. The curve for the dependence of the reaction front velocity on the front position practically coincides with the curve plotted without taking the stresses into account until the particle is almost completely transformed. Term exp −A NN /R g T in Eq. (10) becomes small at large γ , and the reaction front velocity becomes almost proportional to the concentration, <ref type="figure" target="#fig_3">( Figs. 5 a, b)</ref>.</p><formula xml:id="formula_77">V ≈ ( n − M − /ρ − ) k * c</formula><p>From the numerical point of view, when the reaction front velocity drops, longer time steps t are required for moving the reaction front by the constant spatial step R , as is done in the numerical procedure. In this case, the numerical method, which is used in this paper, looses accuracy due to a coarse discretisation of the equations in time. The case of small reaction front velocities should be studied separately using the finite element technique with a non-conforming mesh with respect to the reaction front. In this paper, the simulations were terminated when V reached small values, as explained in Section 3.6 .</p><p>The influence of the surface mass transfer coefficient, α, on the velocity profile is shown in <ref type="figure" target="#fig_3">Fig. 5</ref> c. From Eq. (63) , it can be seen that the decrease of parameter α reduces the reaction front velocity. This is an expected result, since the front velocity should decrease when the diffusive delivery of the constituent B * is delayed. It can also be seen that α affects the front velocity stronger when ξ 1, i.e. at the initial stage of the transformation. When ξ → 1, the distance between the outer surface and the reaction front increases and, therefore, the relative role of the diffusion coefficient D increases, denominator in Eq. (63) becomes dominated by ξ / D 0 . These qualitative observations are fully confirmed by the dependencies in <ref type="figure" target="#fig_3">Fig. 5</ref> c.</p><p>One of the ways of optimising the capacity of lithium-ion batteries is using small Si particles. The dependence of the reaction front velocity on the front position, for which the initial particle radius, R 0 , was varied, is presented in <ref type="figure" target="#fig_3">Fig. 5</ref> d. From Eq. (63) , it can be seen that the variation of the particle radius is mathematically equivalent to the variation of the diffusion coefficient, as they both enter the equation for the velocity only via parameter D 0 . It can be seen that the variation of R 0 in the range of 50-50 0 0 nm <ref type="figure" target="#fig_3">( Fig. 5 d)</ref> practically does not affect the reaction front velocity, V , but, therefore, strongly affects the relative lithiation rate, V / R 0 , which increases with the decrease of R 0 . Note that in the case of nano-size particles, the surface tension, which is not considered in the paper, may produce additional input into the stresses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Role of various terms of A NN</head><p>Changes in the velocity profile of the reaction front are governed by the normal component of the chemical affinity tensor. As seen in <ref type="figure" target="#fig_3">Fig. 5</ref> a, for γ = 5 J/mm 3 , the non-monotonic behaviour of the velocity is observed. It follows the A NN profile, which is illustrated in <ref type="figure" target="#fig_5">Fig. 7</ref> a. According to Eq. (13) , A NN is represented by the sum of a number of terms: the temperature-dependent chemical energies, the term related to the work done by the stresses on the jump of the deformation gradient at the reaction front, the strain energy densities of the untransformed and the transformed materials, and the term related to the concentration of the reactant at the reaction front, A</p><formula xml:id="formula_78">A NN = n − M − ρ − γ + 4 k =1 A k NN ,<label>(73)</label></formula><formula xml:id="formula_79">1 NN = n − M − ρ − P − : F , A 2 NN = n − M − ρ − W − ,<label>(74)</label></formula><formula xml:id="formula_80">A 3 NN = − n − M − ρ − g 3 W + , A 4 NN = n * R g T ln c c * .<label>(75)</label></formula><p>These terms are plotted in <ref type="figure" target="#fig_5">Fig. 7</ref> as the functions of the reaction front position, where it can be seen that the increase of A NN and its subsequent decrease are the result of the specific changes in P − : F , which, in turn, result from the spherical geometry and the non-linear constitutive behaviour of the transformed and the untransformed materials. In the case of spherical symmetry, this term is given by Eq. <ref type="formula" target="#formula_64">65</ref>, where r / R is close to 1 at the reaction front due to small volumetric expansion of the core (which is the result of a relatively large bulk modulus of the untransformed material). Therefore, P − : F is mainly determined by the product of the pressure in the core with the minus sign and the jump in the radial stretch ratio, λ r , which are illustrated in <ref type="figure">Fig. 4</ref> . The strain energy terms, W − and W + , at the reaction front, are varying only slightly with the position of the front and their contribution to A NN remains approximately constant. The term related to the concentration of the reactant at the reaction front is relatively small, i.e. in this case, A NN is mainly governed by the mechanical contribution and chemical energies of the constituents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>In this paper, the problem of stress-affected two-phase lithiation kinetics in Si particles was considered. A coupled chemo-mechanical model was proposed by combining for the first time the concept of the chemical affinity tensor with a finite-strain non-linear viscoelastic model. In the proposed model, the diffusion flux does not depend on the stresses and the concentration of the diffusive constituent does not enter the mechanical constitutive model. However, from the mathematical point of view, viscoelastic strains lead to the total stress-diffusion-reaction coupling even in the case of spherical symmetry, as opposed to the elastic case. The coupled problem was solved using the finite element approach to predict propagation of the reaction front and the stress-strain state during a two-phase lithiation of the spherical Si particle.</p><p>The stress distribution within the particle and the evolution of stresses during the reaction front propagation were studied in detail. Similar to the elastic case, the radial and the hoop stress in the transformed material are tensile and compressive, respectively, at the initial stage of lithiation. However, due to the non-linear viscosity of the lithiated Si, which leads to the behaviour similar to plasticity, the hoop stress in the outer region of the transformed material becomes tensile at later stages of lithiation.</p><p>The influence of mechanical stresses on the kinetics of the reaction front was shown. At certain values of the chemical energy parameter, the model captured the reaction blocking effect, which had been observed experimentally. It was also shown that the relative lithiation rate increases with the decrease of the particle radius.</p><p>The results of the paper may be helpful to design efficient Si particle-based anodes in future Li-ion batteries. The developed model can be extended to complex anode microstructures, and the research on that is ongoing.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>is the differential equation for the unknown time-dependent position of the reaction front. The velocity on the left-hand side of the equation contains time derivatives of the geometrical parameters of the front position. The right-hand side contains the current concentration, c , and the equilibrium concentration, c eq , at the reaction front. The current concentration is determined by the stationary diffusion Eq. (20) with one of the boundary conditions enforced at the reaction front, (26) or (28) , and containing the equilibrium concentration, c eq . The equilibrium concentration is, in turn, determined by stresses and strains at the reaction front according to Eq. (23) . Stresses and strains are, in turn, determined by the mechanical equilibrium Eq. (19) in domains υ − and υ + , which are separated by the reaction front.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>is the finite element approximation of the exact solution of the differential Eq. (50) . Stresses σ R and σ Θ are functions of ˜ r , d ˜ r / d R and λ p . The integrals in the system of Eq. (70) are approximated by the midpoint rule within each element, which means that stresses as well as λ p are defined at the integration point in the middle of the element.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>The profiles of the radial stress (a), the hoop stress (b) and the plastic radial strain (c) within the particle at different positions of the reaction front.The region where εp at R Γ = 0 . 85 R 0 reaches the maximum value is magnified (d) and the corresponding and the signed equivalent deviatoric driving stress is shown (e). The vertical lines indicate different positions of the reaction front. The magnified region is indicated with the grey arrow. Curves εp and σ * s do not reach R Γ exactly, as discussed in Section 3.6 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 .</head><label>5</label><figDesc>The dependence of the reaction front velocity, V , on the relative position of the reaction front at various values of the chemical energy parameter, γ , at different scales (a), (b), at various values of the surface mass transfer coefficient, α, (c), and at various values of the initial radius of the particle, R 0 , (d). The magnified region is highlighted with the grey arrows.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 6 .</head><label>6</label><figDesc>The dependence of the actual thickness of the transformed material (thickness in the current configuration), r 0 − r Γ , on time at different values of the chemical energy parameter, γ . The thickness is normalised by R 0 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 7 .</head><label>7</label><figDesc>The dependence of different com ponents of A NN on the position of the reaction front plotted at different magnitudes, γ = 5 J/mm 3 . All components are normalised by R g T . The magnified regions are highlighted with the grey arrows.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>where F − and F + are the deformation gradients of constituents B − and B + , respectively; P − and P + are the first Piola-Kirchhoff stress tensors of constituents B − and B + , respectively, f − and f + are the mass densities of the Helmholtz free energies of constituents B − and B + , respectively; ρ − and ρ + are the mass densities of constituents B − and B + , respectively.</figDesc><table><row><cell>The deformation gradients, the first Piola-Kirchhoff stress tensors and the mass densities of the constituents B − and B + in</cell></row><row><cell>(8) are defined in with respect to the reference configurations of B − and B + , respectively. However, term ρ −1 + F + not change when all the values are recalculated with respect to the reference configuration of B − . Likewise, term ρ −1 T • P + does − F − T</cell></row></table><note></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1</head><label>1</label><figDesc>The material parameters that were used in the simulations.</figDesc><table><row><cell>parameter</cell><cell>E − [GPa]</cell><cell>ν−[ −]</cell><cell>K + [GPa]</cell><cell>E + [GPa]</cell><cell>G h [GPa]</cell><cell>q [ −]</cell><cell>τ 0 [ns]</cell></row><row><cell>value</cell><cell>80</cell><cell>0.22</cell><cell>28.5</cell><cell>41</cell><cell>0.5</cell><cell>24</cell><cell>2</cell></row><row><cell>parameter value</cell><cell>σ 0 [GPa] 1</cell><cell>g [ −] 3 √ 4</cell><cell>M − [ g/mol ] 28.0855</cell><cell>ρ−[g/cm 3 ] 2.285</cell><cell>n − [ −] 4/15</cell><cell>n  *  [ −] 1</cell><cell>n + [ −] 1/15</cell></row><row><cell>parameter</cell><cell>D [m 2 /s]</cell><cell>R 0 [nm]</cell><cell>α [nm/s]</cell><cell>c  *  [mol/cm 3 ]</cell><cell>k  *  [nm/s]</cell><cell>γ [J/mm 3 ]</cell><cell>T [K]</cell></row><row><cell>value</cell><cell>10 −12</cell><cell>500</cell><cell>20 0 0</cell><cell>0.053</cell><cell>86</cell><cell>5</cell><cell>293</cell></row></table><note></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1">Here, following<ref type="bibr" target="#b22">Freidin et al. (2014)</ref> , strain energy density W + of material B + is taken per unit volume of the stress-free chemically transformed material; however, in Eq. (13) , the consistency is maintained, since g 3 W + is the strain energy density of material B + recalculated per unit volume of the reference configuration of B − .</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2">There is a difference between the lithiation of the crystalline and the amorphous Si -in the case of crystalline Si (c-Si), the lithiation rate depends on the orientation of the crystallographic plane on which the reaction takes place<ref type="bibr" target="#b31">( Jung, Lee, Yeo, Lee, &amp; Han, 2015 )</ref>. When c-Si reacts with Li, at first amorphous Li 3.75 Si (a-Li 3.75 Si) is formed, which at room temperature crystallises into Li 15 Si 4 that is the highest achievable capacity at ambient temperature<ref type="bibr" target="#b48">( Obrovac &amp; Krause, 2007 )</ref>. Also, the spherical symmetry assumption cannot be used when the c-Si particle is modelled, since the material is anisotropic.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3">F e • F e T , J e = det F e .(34)</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4">Due to different definitions, the value of the power law parameter q , which is used in the present paper, is smaller by one than the value reported in<ref type="bibr" target="#b1">Berla et al. (2015)</ref> .</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The first (MP) and third (ŁF) authors would like to acknowledge the financial support from the EU Horizon 2020 project "Silicon based materials and new processing technologies for improved lithium-ion batteries (Sintbat)" No. 685716 . The second author (AF) acknowledges the financial support from the joint project of German Research Foundation (Deutsche Forschungsgemeinschaft) and the Russian Foundation for Basic Research (Grant No. 17-51-12055 ).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Evolution of phase transitions: A continuum theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Abeyaratne</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">K</forename><surname>Knowles</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2014.09.073</idno>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Mechanical behavior of electrochemically lithiated silicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">A</forename><surname>Berla</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">D</forename><surname>Nix</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2014.09.073</idno>
+		<idno>doi: 10. 1016/j.jpowsour.2014.09.073</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="page" from="41" to="51" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A simple finite element model of diffusion, finite deformation, plasticity and fracture in lithium ion insertion electrode materials. Modelling and Simulation in</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">F</forename><surname>Bower</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Guduru</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0965-0393/20/4/045004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Materials Science and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">45004</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Analytical solutions for composition and stress in spherical elastic-plastic lithium-ion electrode particles containing a propagating phase boundary</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">F</forename><surname>Bower</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Guduru</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Chason</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="page" from="328" to="342" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A finite strain model of stress, diffusion, plastic flow, and electrochemical reactions in a lithium-ion half-cell</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">F</forename><surname>Bower</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Guduru</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">A</forename><surname>Sethuraman</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jmps.2011.01.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="804" to="828" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Reactive flow in large-deformation electrodes of lithium-ion batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Brassart</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Suo</surname></persName>
+		</author>
+		<idno type="DOI">10.1142/S1758825112500238</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Applied Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">1250023</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Reactive flow in solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Brassart</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Suo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jmps.2012.09.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="61" to="77" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A phase-field model coupled with large elasto-plastic deformation: Application to lithiated silicon electrodes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">Z</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1149/2.0171411jes</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Electrochemical Society</title>
+		<imprint>
+			<biblScope unit="volume">161</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Real-time measurement of stress and damage evolution during initial lithiation of crystalline silicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Chon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">A</forename><surname>Sethuraman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mccormick</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">R</forename><surname>Guduru</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.107.045503</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">45503</biblScope>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Theory of structural transformation in lithiated amorphous silicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">D</forename><surname>Cubuk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Kaxiras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="4065" to="4070" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A finite deformation stress-dependent chemical potential and its applications to lithium ion batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">W</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Qu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jmps.2012.03.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1280" to="1295" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Interface-reaction controlled diffusion in binary solids with applications to lithiation of silicon in lithium-ion batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">W</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Qu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jmps.2012.11.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="293" to="310" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Density of amorphous Si</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Custer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">O</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">C</forename><surname>Jacobson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Poate</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Roorda</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">C</forename><surname>Sinke</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.111121</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Physics Letters</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="437" to="439" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Computational electro-chemo-mechanics of lithium-ion battery electrodes at finite strains</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Dal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Miehe</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00466-014-1102-5</idno>
+		<idno>doi: 10.10 07/s0 0466-014-1102-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Mechanics</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="303" to="325" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">General relationship for the thermal oxidation of silicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">E</forename><surname>Deal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">S</forename><surname>Grove</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physics</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3770" to="3778" />
+			<date type="published" when="1965" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The influence of particle size and spacing on the fragmentation of nanocomposite anodes for Li batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">J</forename><surname>Dimitrijevic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">E</forename><surname>Aifantis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Hackl</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2012.01.065</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">206</biblScope>
+			<biblScope unit="page" from="343" to="348" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Viscoplastic response of electrode particles in Li-ion batteries driven by insertion of lithium</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">D</forename><surname>Drozdov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Solids and Structures</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="690" to="705" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Mechanical properties of amorphous Li x Si alloys: A reactive force field study. Modelling and Simulation in</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">F</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Raju</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Datta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">B</forename><surname>Shenoy</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0965-0393/21/7/074002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Materials Science and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">74002</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Chemical affinity tensor and stress-assist chemical reactions front propagation in solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Freidin</surname></persName>
+		</author>
+		<idno type="DOI">10.3103/S0025654415030048</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the asme 2013 international mechanical engineering congress and exposition</title>
+		<meeting>the asme 2013 international mechanical engineering congress and exposition</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="9" to="10" />
+		</imprint>
+	</monogr>
+	<note>The American Society of Mechanical Engineers</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">On the chemical affinity tensor for chemical reactions in deformable materials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Freidin</surname></persName>
+		</author>
+		<idno type="DOI">10.3103/S0025654415030048</idno>
+		<idno>doi: 10.3103/ S0 025654415030 048</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="260" to="285" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Chemical affinity tensor and chemical reaction front propagation: Theory and FE-simulations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Freidin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">K</forename><surname>Korolev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">P</forename><surname>Aleshchenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">N</forename><surname>Vilchevskaya</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10704-016-0155-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Fracture</title>
+		<imprint>
+			<biblScope unit="volume">202</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="245" to="259" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Chemical reactions in spherically symmetric problems of mechanochemistry</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Freidin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Morozov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Petrenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">N</forename><surname>Vilchevskaya</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00707-015-1423-2</idno>
+		<idno>doi: 10.10 07/s0 0707-015-1423-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Mechanica</title>
+		<imprint>
+			<biblScope unit="volume">227</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="56" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Stress-assist chemical reactions front propagation in deformable solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">B</forename><surname>Freidin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">N</forename><surname>Vilchevskaya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">K</forename><surname>Korolev</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijengsci.2014.03.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engineering Science</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="57" to="75" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Thin film materials: Stress, defect formation and surface evolution</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">B</forename><surname>Freund</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Suresh</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Finite strain logarithmic hyperelasto-plasticity with softening: A strongly non-local implicit gradient framework</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G D</forename><surname>Geers</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cma.2003.07.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods in Applied Mechanics and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">193</biblScope>
+			<biblScope unit="page" from="3377" to="3401" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Glansdorff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Prigogine</surname></persName>
+		</author>
+		<title level="m">Thermodynamic theory of structure, stability and fluctuations</title>
+		<imprint>
+			<publisher>John Wiley &amp; Sons Ltd</publisher>
+			<date type="published" when="1971" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Thermodynamic methods in the theory of heterogeneous systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Grinfeld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Longman Sc &amp; Tech</title>
+		<imprint>
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The mechanical behavior during (de)lithiation of coated silicon nanoparticles as anode material for lithium-ion batteries studied by insitu transmission electron microscopy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Havenbergh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Marx</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Van Tendeloo</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/ente.201600057</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Technology</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1005" to="1012" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Constitutive models for compressible nonlinearly elastic materials with limiting chain extensibility</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">O</forename><surname>Horgan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Saccomandi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2014.11.081</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Elasticity</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="123" to="138" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Stress-modulated driving force for lithiation reaction in hollow nano-anodes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2014.11.081</idno>
+		<idno>doi: 10.1016/j. jpowsour.2014.11.081</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">275</biblScope>
+			<biblScope unit="page" from="866" to="876" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The mixing mechanism during lithiation of Si negative electrode in Li-ion batteries: An ab-initio molecular dynamics study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">B</forename><surname>Shenoy</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/nl203302d</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="5494" to="5500" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Atomistic observation of the lithiation and delithiation behaviors of silicon nanowires using reactive molecular dynamics simulations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">C</forename><surname>Yeo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">R</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/jp5094756</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physical Chemistry C</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="3447" to="3455" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Two-dimensional thermal-oxidation of silicon-II. Modeling stress effects in wet oxides</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">B</forename><surname>Kao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">P</forename><surname>Mcvittie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">D</forename><surname>Nix</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">C</forename><surname>Saraswat</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/16.2412</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions On Electron Devices</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="25" to="37" />
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Modeling crack growth during Li extraction and insertion within the second half cycle</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Klinsmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Rosato</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kamlah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Mcmeeking</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2016.08.142</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">331</biblScope>
+			<biblScope unit="page" from="32" to="42" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Modeling crack growth during Li insertion in storage particles using a fracture phase field approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Klinsmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Rosato</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kamlah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Mcmeeking</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jmps.2016.04.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="313" to="344" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Modeling of the postyield response of glassy polymers: Influence of thermomechanical history</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">T J</forename><surname>Klompen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">A P</forename><surname>Engels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">E</forename><surname>Govaert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">E H</forename><surname>Meijer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Macromolecules</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="6997" to="7008" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Cross effects in solid media with diffusion</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Knyazeva</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Mechanics and Technical Physics</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="373" to="384" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Anisotropic compositional expansion and chemical potential for amorphous lithiated silicon under stress tensor</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">I</forename><surname>Levitas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Attariani</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/srep01615</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">1615</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Anisotropic compositional expansion in elastoplastic materials and corresponding chemical potential: Large-strain formulation and application to amorphous lithiated silicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">I</forename><surname>Levitas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Attariani</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jmps.2014.04.012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Mechanics and Physics of Solids</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="84" to="111" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Anisotropic swelling and fracture of silicon nanowires during lithiation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Huan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Karki</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">Q</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/nl201684d</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="3312" to="3318" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">A chemo-thermo-mechanically coupled theory for elastic-viscoplastic deformation, diffusion, and volumetric swelling due to a chemical reaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Loeffel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Anand</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijplas.2011.04.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Plasticity</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1409" to="1431" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Multidimensional materials and device architectures for future hybrid energy storage</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">R</forename><surname>Lukatskaya</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Gogotsi</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ncomms12647</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">12647</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Dynamics of electrochemical lithiation/delithiation of graphene-encapsulated silicon nanoparticles studied by in-situ TEM</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">L</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">Y</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">X</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">P</forename><surname>Dravid</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/srep03863</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">3863</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">High-performance lithium-ion anodes using a hierarchical bottom-up approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Magasinski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Dixon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Hertzberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kvit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ayala</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Yushin</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/NMAT2725</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Materials</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="353" to="358" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Predictive modeling of interfacial damage in substructured steels: Application to martensitic microstructures. Modelling and Simulation in</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Maresca</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">G</forename><surname>Kouznetsova</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">D</forename><surname>Geers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Materials Science and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page">25006</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">In situ TEM of two-phase lithiation of amorphous silicon nanospheres</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Mcdowell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">T</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">A</forename><surname>Korgel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">D</forename><surname>Nix</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/nl3044508</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="758" to="764" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">25th anniversary article: Understanding the lithiation of silicon and other alloying anodes for lithium-ion batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Mcdowell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">D</forename><surname>Nix</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/adma.201301795</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Materials</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">36</biblScope>
+			<biblScope unit="page" from="966" to="970" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Studying the kinetics of crystalline silicon nanoparticle lithiation with in situ transmission electron microscopy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Mcdowell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Ryu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">D</forename><surname>Nix</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<idno type="DOI">10.1149/1.2402112</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Materials</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">45</biblScope>
+			<biblScope unit="page" from="6034" to="6041" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Reversible cycling of crystalline silicon powder</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">N</forename><surname>Obrovac</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">J</forename><surname>Krause</surname></persName>
+		</author>
+		<idno type="DOI">10.1149/1.2402112</idno>
+		<idno>doi: 10.1149/ 1.2402112</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Electrochemical Society</title>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="103" to="108" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Large deformation isotropic elasticity: On the correlation of theory and experiment for compressible rubberlike solids</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Ogden</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspa.1972.0096</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences</title>
+		<imprint>
+			<biblScope unit="volume">328</biblScope>
+			<biblScope unit="page" from="567" to="583" />
+			<date type="published" when="1575" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Large strains in viscoelastoplasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">A</forename><surname>Palmov</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/BF01177303</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Mechanica</title>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">1-4</biblScope>
+			<biblScope unit="page" from="129" to="139" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">Comparison of different approaches in viscoelastoplasticity for large strains</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">A</forename><surname>Palmov</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/1521-4001(200011)80:11/1212801</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="801" to="806" />
+		</imprint>
+		<respStmt>
+			<orgName>Zeitschrift für Angewandte Mathematik und Mechanik</orgName>
+		</respStmt>
+	</monogr>
+	<note>20 0 0)</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Stress effects in silicon oxidation-simulation and experiments</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Prigogine</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Defay</surname></persName>
+		</author>
+		<editor>Longmans, Green . Rafferty, C. S.</editor>
+		<imprint>
+			<date type="published" when="1954" />
+		</imprint>
+		<respStmt>
+			<orgName>Stanford University</orgName>
+		</respStmt>
+	</monogr>
+	<note>Chemical thermodynamics. Ph.D. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">On modelling thermal oxidation of silicon I: Theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">S</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">J R</forename><surname>Hughes</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/(SICI)1097-0207(20000110/30)47:1/312341</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal for Numerical Methods in Engineering</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="341" to="358" />
+		</imprint>
+	</monogr>
+	<note>20 0 0)</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">On modelling thermal oxidation of silicon II: Numerical aspects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">S</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">J R</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Garikipati</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/(SICI)1097-0207(20000110/30)47:1/312359</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal for Numerical Methods in Engineering</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="359" to="377" />
+		</imprint>
+	</monogr>
+	<note>20 0 0)</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Modeling of stress effects in silicon oxidation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">I</forename><surname>Rusanov</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/16.43661</idno>
+		<idno>doi: 10.1109/16. 43661</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Electron Devices</title>
+		<editor>Russian Sutardja, P., &amp; Oldham, W. G.</editor>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">5-8</biblScope>
+			<biblScope unit="page" from="2415" to="2421" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+	<note>Surface Science Reports</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Role of drawing-induced residual stresses and strains in the hydrogen embrittlement susceptibility of prestressing steels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Toribio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Kharin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Lorenzo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Vergara</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.corsci.2011.06.012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Corrosion Science</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="3346" to="3355" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Two-phase electrochemical lithiation in amorphous silicon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">F</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/nl304379k</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="709" to="715" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">Thermomechanics of continua</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Wilmanski</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Springer-Verlag</publisher>
+			<pubPlace>Berlin Heidelberg</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Orientation-dependent interfacial mobility governs the anisotropic swelling in lithiated silicon nanowires</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">F</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">T</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><forename type="middle">H</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/nl204437t</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Letters</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1953" to="1958" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Elastic moduli of polycrystalline Li 15 Si 4 produced in lithium ion batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><forename type="middle">D</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><forename type="middle">S</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">X</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jpowsour.2013.05.121</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Power Sources</title>
+		<imprint>
+			<biblScope unit="volume">242</biblScope>
+			<biblScope unit="page" from="732" to="735" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">A variational framework to model diffusion induced large plastic deformation and phase field fracture during initial two-phase lithiation of silicon electrodes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Krischok</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Linder</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cma.2016.05.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods in Applied Mechanics and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">312</biblScope>
+			<biblScope unit="page" from="51" to="77" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">A reaction-controlled diffusion model for the lithiation of silicon in lithium-ion batteries</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Linder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Extreme Mechanics Letters</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="61" to="75" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
